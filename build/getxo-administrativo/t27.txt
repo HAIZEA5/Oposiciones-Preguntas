@@ -1,0 +1,159 @@
+Q Según el art. 1 del Reglamento de Población, ¿a quién corresponde la división del término municipal en distritos y barrios?
+= Al Ayuntamiento
+- A la Comunidad Autónoma
+- A la Diputación Foral
+- Al Instituto Nacional de Estadística
+E El término municipal está formado por territorios continuos, aunque pueden mantenerse las discontinuidades reconocidas.
+R RD 1690/1986 art. 1.4
+
+Q ¿Cuál de estas NO es una forma de alteración de términos municipales según el art. 2?
+= La división de un municipio en dos provincias
+- La incorporación de uno o más municipios a otro limítrofe
+- La fusión de dos o más municipios limítrofes
+- La segregación de parte del territorio para agregarla a otro municipio limítrofe
+E También la segregación de parte del territorio para constituir un municipio independiente. Todo municipio pertenece a una sola provincia.
+R RD 1690/1986 art. 2
+
+Q La creación de nuevos municipios solo puede hacerse sobre la base de:
+= Núcleos de población territorialmente diferenciados, con recursos suficientes y sin disminuir la calidad de los servicios
+- Una petición de la mitad de los vecinos
+- Un acuerdo de la Diputación
+- Una ley orgánica
+E Art. 3.
+R RD 1690/1986 art. 3
+
+Q Las certificaciones de los datos del padrón municipal tienen carácter de:
+= Documento público y fehaciente para todos los efectos administrativos
+- Documento privado
+- Mera información sin valor probatorio
+- Prueba plena solo ante los tribunales
+E Art. 53.1. Los datos del padrón son prueba de la residencia y del domicilio habitual.
+R RD 1690/1986 art. 53.1
+
+Q Los datos obligatorios del padrón se ceden a otras Administraciones sin consentimiento del afectado:
+= Solo cuando les sean necesarios para el ejercicio de sus competencias y para asuntos en los que la residencia o el domicilio sean datos relevantes
+- Siempre que lo pidan
+- Nunca
+- Solo a la Agencia Tributaria
+E También pueden servir para estadísticas oficiales sometidas al secreto estadístico.
+R RD 1690/1986 art. 53.2
+
+Q Las personas menores de edad no emancipadas tienen la misma vecindad que:
+= Los padres que tengan su guarda y custodia o, en su defecto, sus representantes legales
+- El municipio donde nacieron
+- El municipio donde estudian
+- El municipio que ellas elijan
+E Salvo autorización por escrito de estos para residir en otro domicilio o municipio.
+R RD 1690/1986 art. 54.2
+
+Q La inscripción en el padrón de quien reside en el municipio pero carece de domicilio solo puede hacerse:
+= Después de poner el hecho en conocimiento de los servicios sociales competentes
+- Con autorización judicial
+- Si tiene contrato de trabajo
+- No es posible
+E Art. 54.3.
+R RD 1690/1986 art. 54.3
+
+Q ¿Cada cuánto deben renovar su inscripción padronal los extranjeros no comunitarios sin autorización de residencia de larga duración?
+= Cada dos años
+- Cada año
+- Cada cinco años
+- No deben renovarla
+E Si no la renuevan, puede acordarse la caducidad de la inscripción (art. 54 bis.3).
+R RD 1690/1986 art. 54 bis
+
+Q ¿De cuántos municipios se puede ser vecino?
+= Solo de uno
+- De dos como máximo
+- De tantos como municipios en los que se tenga vivienda
+- De uno por provincia
+E El conjunto de vecinos constituye la población del municipio (art. 55).
+R RD 1690/1986 art. 55
+
+Q ¿Cuál de estos datos es obligatorio en la inscripción padronal según el art. 57?
+= La nacionalidad
+- El estado civil
+- La profesión
+- El número de teléfono
+E Datos obligatorios: nombre y apellidos, sexo, domicilio habitual, nacionalidad, lugar y fecha de nacimiento, número de DNI o documento equivalente, certificado o título escolar o académico, y los necesarios para el censo electoral.
+R RD 1690/1986 art. 57.1
+
+Q ¿Quién firma la hoja padronal?
+= Todos los vecinos cuyos datos figuren en ella o, en su caso, su representante legal
+- Solo el cabeza de familia
+- El funcionario del padrón
+- El propietario de la vivienda
+E Puede firmarse de forma manuscrita o por los sistemas de firma electrónica admitidos.
+R RD 1690/1986 art. 59.1
+
+Q ¿Quién expide las certificaciones del padrón municipal?
+= La persona que ocupe la Secretaría del Ayuntamiento o el funcionario con habilitación nacional que la sustituya
+- El Alcalde
+- El concejal de Hacienda
+- El Instituto Nacional de Estadística
+E Art. 61.
+R RD 1690/1986 art. 61
+
+Q Si un Ayuntamiento no mantiene actualizado su padrón, el INE, previo informe del Consejo de Empadronamiento:
+= Puede acudir a la ejecución sustitutoria del art. 60 de la LBRL
+- Puede disolver el Ayuntamiento
+- Debe pedir autorización judicial
+- No puede hacer nada
+E Art. 62.2.
+R RD 1690/1986 art. 62
+
+Q Los vecinos deben comunicar al Ayuntamiento las variaciones de sus circunstancias personales:
+= En la medida en que modifiquen los datos obligatorios del padrón
+- Cada año, aunque no haya cambios
+- Solo cuando cambien de municipio
+- No tienen esa obligación
+E En el caso de menores, la obligación corresponde a sus padres o tutores.
+R RD 1690/1986 art. 68
+
+Q El Ayuntamiento debe notificar a cada vecino los datos de su inscripción padronal de forma que pueda conocerlos al menos:
+= Una vez cada cinco años
+- Una vez al año
+- Una vez cada dos años
+- Solo si lo pide
+E Art. 69.3.
+R RD 1690/1986 art. 69.3
+
+Q Cuando una persona cambia de municipio de residencia, debe solicitar:
+= El alta en el padrón del municipio de destino, que comunica la inscripción al INE para que el de procedencia dé de baja al vecino sin más trámite
+- La baja en el municipio de origen y luego el alta en el nuevo
+- Solo la baja en el municipio de origen
+- Un certificado de traslado del Registro Civil
+E Art. 70.
+R RD 1690/1986 art. 70
+
+Q La baja de oficio por inscripción indebida, si el interesado no manifiesta su conformidad, requiere:
+= Informe favorable del Consejo de Empadronamiento
+- Autorización judicial
+- Acuerdo del Pleno
+- Informe de la policía local
+E Se tramita en expediente con audiencia del interesado (art. 72).
+R RD 1690/1986 art. 72
+
+Q ¿Con referencia a qué fecha aprueban los Ayuntamientos la revisión anual de sus padrones?
+= El 1 de enero de cada año
+- El 31 de diciembre de cada año
+- El 1 de julio de cada año
+- La fecha de las elecciones municipales
+E La cifra de población resultante se remite al INE (art. 81).
+R RD 1690/1986 art. 81
+
+Q ¿Cómo se aprueban las cifras oficiales de población de los municipios españoles?
+= Por Real Decreto del Gobierno, a propuesta del Presidente del INE con informe favorable del Consejo de Empadronamiento, publicado en el BOE
+- Por orden del Ministerio de Hacienda
+- Por acuerdo de cada Ayuntamiento
+- Por ley de las Cortes
+E Art. 82.2.
+R RD 1690/1986 art. 82.2
+
+Q ¿Cómo deben gestionarse todos los padrones municipales según el art. 60?
+= Por medios electrónicos e interconectados con el INE
+- En papel, con copia anual al INE
+- Como cada Ayuntamiento decida
+- Por la Diputación Foral exclusivamente
+E Las Diputaciones Forales, entre otras, apoyan técnica y económicamente a los municipios para ello.
+R RD 1690/1986 art. 60.2

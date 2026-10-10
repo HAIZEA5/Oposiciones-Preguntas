@@ -1,0 +1,167 @@
+Q Según el art. 11 de la LBRL, son elementos del Municipio:
+= El territorio, la población y la organización
+- El territorio, el Ayuntamiento y el presupuesto
+- La población, el Alcalde y el Pleno
+- El término municipal y los vecinos
+E El Municipio es la entidad local básica de la organización territorial del Estado, con personalidad jurídica y plena capacidad.
+R LBRL art. 11
+
+Q El término municipal es:
+= El territorio en que el Ayuntamiento ejerce sus competencias
+- El conjunto de vecinos inscritos en el padrón
+- El núcleo urbano principal del municipio
+- La capitalidad del municipio
+E Cada municipio pertenece a una sola provincia (art. 12).
+R LBRL art. 12
+
+Q La creación o supresión de municipios y la alteración de términos municipales se regulan por:
+= La legislación de las Comunidades Autónomas sobre régimen local
+- Ley orgánica de las Cortes
+- Ordenanza municipal
+- Real Decreto del Gobierno
+E Sin que la alteración pueda suponer modificación de los límites provinciales (art. 13.1).
+R LBRL art. 13
+
+Q ¿Qué población mínima exige la LBRL para crear nuevos municipios?
+= 5.000 habitantes
+- 1.000 habitantes
+- 10.000 habitantes
+- 20.000 habitantes
+E Además, deben ser financieramente sostenibles y no suponer merma de calidad de los servicios (art. 13.2).
+R LBRL art. 13.2
+
+Q Según el art. 15, toda persona que viva en España está obligada a inscribirse en:
+= El Padrón del municipio en el que resida habitualmente
+- El Registro Civil de su municipio
+- El censo electoral
+- El registro de extranjeros
+E Quien viva en varios municipios se inscribe solo en el de residencia durante más tiempo al año.
+R LBRL art. 15
+
+Q ¿Qué condición adquieren los inscritos en el Padrón municipal?
+= La de vecinos en el momento de su alta
+- La de electores automáticamente
+- La de residentes permanentes
+- La de contribuyentes
+E Art. 15.
+R LBRL art. 15
+
+Q El Padrón municipal es:
+= El registro administrativo donde constan los vecinos de un municipio; sus datos constituyen prueba de la residencia y del domicilio habitual
+- Un registro público de acceso libre
+- El censo electoral
+- El registro de la propiedad del municipio
+E Las certificaciones que se expidan tienen carácter de documento público y fehaciente (art. 16.1).
+R LBRL art. 16.1
+
+Q ¿Quién forma, mantiene, revisa y custodia el Padrón municipal?
+= El Ayuntamiento
+- El Instituto Nacional de Estadística
+- La Diputación Foral
+- El Registro Civil
+E El INE coordina los padrones y comprueba su exactitud (art. 17).
+R LBRL art. 17
+
+Q ¿Cuál de estos es un derecho de los vecinos según el art. 18?
+= Ser elector y elegible de acuerdo con la legislación electoral
+- No pagar tributos locales
+- Elegir al Secretario municipal
+- Vetar las ordenanzas
+E También participar en la gestión municipal, utilizar los servicios públicos, ser informado y pedir consultas populares, entre otros.
+R LBRL art. 18
+
+Q ¿Qué órganos existen en todos los Ayuntamientos según el art. 20?
+= El Alcalde, los Tenientes de Alcalde y el Pleno
+- El Alcalde, el Pleno y la Junta de Gobierno Local
+- El Pleno y la Comisión Especial de Cuentas únicamente
+- El Alcalde y el Secretario
+E La Junta de Gobierno Local existe en los municipios de más de 5.000 habitantes y en los de menos si así lo disponen su reglamento orgánico o el Pleno.
+R LBRL art. 20.1
+
+Q La Comisión Especial de Cuentas existe:
+= En todos los municipios
+- Solo en los de más de 5.000 habitantes
+- Solo en los de gran población
+- Solo si lo acuerda el Pleno
+E Art. 20.1.e.
+R LBRL art. 20.1.e
+
+Q ¿Cuál de estas atribuciones corresponde al Alcalde según el art. 21?
+= Dirigir el gobierno y la administración municipal y ejercer la jefatura superior de todo el personal
+- Aprobar el presupuesto
+- Aprobar las ordenanzas
+- Aprobar la plantilla de personal
+E Las otras tres son atribuciones del Pleno (art. 22).
+R LBRL art. 21.1
+
+Q ¿Qué órgano municipal aprueba los presupuestos?
+= El Pleno
+- El Alcalde
+- La Junta de Gobierno Local
+- La Comisión Especial de Cuentas
+E Art. 22.2.e.
+R LBRL art. 22.2.e
+
+Q ¿Cuántos miembros puede tener como máximo la Junta de Gobierno Local, además del Alcalde?
+= Un número no superior al tercio del número legal de concejales
+- La mitad del número legal de concejales
+- Cinco concejales en todo caso
+- Todos los concejales del equipo de gobierno
+E Son nombrados y separados libremente por el Alcalde, que da cuenta al Pleno (art. 23.1).
+R LBRL art. 23.1
+
+Q ¿A quién corresponde designar a los Tenientes de Alcalde?
+= Al Alcalde, que los nombra libremente entre los miembros de la Junta de Gobierno Local o, donde no exista, entre los concejales
+- Al Pleno por mayoría absoluta
+- A los vecinos
+- Al Secretario
+E Sustituyen al Alcalde en los casos de vacante, ausencia o enfermedad (art. 23.3).
+R LBRL art. 23.3
+
+Q ¿En qué municipios deben prestarse, como mínimo, los servicios de biblioteca pública y tratamiento de residuos?
+= En los de población superior a 5.000 habitantes
+- En todos los municipios
+- En los de más de 20.000 habitantes
+- En los de más de 50.000 habitantes
+E Art. 26.1.b. En todos los municipios: alumbrado, cementerio, recogida de residuos, limpieza viaria, abastecimiento de agua, alcantarillado, acceso a núcleos y pavimentación.
+R LBRL art. 26.1.b
+
+Q ¿En qué municipios es servicio obligatorio el transporte colectivo urbano de viajeros?
+= En los de más de 50.000 habitantes
+- En los de más de 20.000 habitantes
+- En los de más de 5.000 habitantes
+- En todos los municipios
+E También el medio ambiente urbano (art. 26.1.d).
+R LBRL art. 26.1.d
+
+Q ¿Qué servicio es obligatorio en los municipios de más de 20.000 habitantes?
+= Protección civil y prevención y extinción de incendios
+- Transporte colectivo urbano
+- Biblioteca pública
+- Cementerio
+E También evaluación de la situación de necesidad social e instalaciones deportivas de uso público (art. 26.1.c).
+R LBRL art. 26.1.c
+
+Q Funcionan en régimen de Concejo Abierto:
+= Los municipios que tradicional y voluntariamente cuenten con ese singular régimen de gobierno y administración, y aquellos en que su localización geográfica u otras circunstancias lo hagan aconsejable
+- Todos los municipios de menos de 1.000 habitantes
+- Los municipios de más de 100 habitantes
+- Las capitales de provincia
+E Art. 29. En él, el gobierno corresponde a un Alcalde y una Asamblea vecinal de la que forman parte todos los electores.
+R LBRL art. 29
+
+Q ¿Cuál de estas materias está entre las competencias propias del municipio del art. 25.2?
+= Urbanismo: planeamiento, gestión, ejecución y disciplina urbanística
+- Legislación laboral
+- Defensa nacional
+- Relaciones internacionales
+E También medio ambiente urbano, abastecimiento de agua, infraestructura viaria, policía local, tráfico, promoción del deporte, cultura y turismo, entre otras.
+R LBRL art. 25.2
+
+Q La delegación de competencias del Estado o de las Comunidades Autónomas en los Municipios debe:
+= Determinar su alcance, contenido, condiciones y duración (mínimo cinco años) e ir acompañada de la correspondiente financiación
+- Hacerse por tiempo indefinido
+- Ser aceptada tácitamente
+- No tiene requisitos
+E Art. 27.
+R LBRL art. 27
