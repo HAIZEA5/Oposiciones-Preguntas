@@ -1,0 +1,167 @@
+Q ¿Qué contratos del sector público califica la Sección 1.ª del Capítulo II del Título Preliminar de la LCSP?
+= Obras, concesión de obras, concesión de servicios, suministro y servicios
+- Obras, suministro, servicios y gestión de servicios públicos
+- Obras, suministro, consultoría y asistencia
+- Solo los contratos administrativos especiales
+E Los demás contratos se califican según las normas de derecho administrativo o privado que les sean aplicables.
+R LCSP art. 12
+
+Q Según la LCSP, se entiende por «obra»:
+= El resultado de un conjunto de trabajos de construcción o ingeniería civil, destinado a cumplir por sí mismo una función económica o técnica, que tenga por objeto un bien inmueble
+- Cualquier trabajo realizado por una empresa constructora
+- La redacción de un proyecto arquitectónico
+- La reparación de bienes muebles
+E También los trabajos que modifiquen la forma o sustancia del terreno o de su vuelo, o de mejora del medio físico o natural.
+R LCSP art. 13.2
+
+Q Como regla general, los contratos de obras deben referirse a:
+= Una obra completa, susceptible de ser entregada al uso general o al servicio correspondiente
+- Una fase de la obra
+- Un lote de trabajos independientes
+- Un presupuesto anual
+E Pueden contratarse partes con proyectos independientes si son de utilización independiente o pueden definirse sustancialmente, con autorización del órgano de contratación.
+R LCSP art. 13.3
+
+Q En la concesión de obras, la contraprestación del concesionario consiste en:
+= El derecho a explotar la obra, solo o acompañado del de percibir un precio
+- Un precio cierto pagado por la Administración
+- La propiedad de la obra construida
+- Una subvención anual
+E Art. 14.1.
+R LCSP art. 14.1
+
+Q El derecho de explotación en las concesiones debe implicar la transferencia al concesionario de:
+= Un riesgo operacional, que abarque el riesgo de demanda, el de suministro o ambos
+- La titularidad del servicio público
+- El riesgo de fuerza mayor únicamente
+- Ningún riesgo
+E Existe riesgo operacional si no está garantizado que, en condiciones normales, el concesionario recupere sus inversiones y costes.
+R LCSP art. 14.4
+
+Q En el contrato de concesión de servicios, los poderes adjudicadores encomiendan a título oneroso:
+= La gestión de un servicio de su titularidad o competencia, a cambio del derecho a explotarlo o de ese derecho y un precio
+- La ejecución de una obra pública
+- La entrega de bienes muebles
+- El ejercicio de autoridad
+E Art. 15.1. También implica transferir el riesgo operacional (art. 15.2).
+R LCSP art. 15
+
+Q Son contratos de suministro los que tienen por objeto:
+= La adquisición, el arrendamiento financiero o el arrendamiento, con o sin opción de compra, de productos o bienes muebles
+- La adquisición de bienes inmuebles
+- La cesión de propiedades incorporales
+- La prestación de servicios de hacer
+E No son suministro los contratos sobre propiedades incorporales o valores negociables, salvo los programas de ordenador del art. 16.3.b.
+R LCSP art. 16.1
+
+Q La adquisición de programas de ordenador desarrollados a medida se considera contrato de:
+= Servicios
+- Suministro
+- Obras
+- Concesión de servicios
+E Los programas no desarrollados a medida y los equipos informáticos son suministro (art. 16.3.b).
+R LCSP art. 16.3.b
+
+Q Un contrato en el que el empresario se obliga a entregar una pluralidad de bienes de forma sucesiva y por precio unitario, sin cuantía total exacta, es:
+= Un contrato de suministro
+- Un contrato de servicios
+- Un acuerdo marco
+- Un contrato mixto
+E Art. 16.3.a.
+R LCSP art. 16.3.a
+
+Q La adquisición de energía primaria o transformada es un contrato de:
+= Suministro
+- Servicios
+- Concesión de servicios
+- Contrato privado
+E Art. 16.3.d.
+R LCSP art. 16.3.d
+
+Q Según el art. 17, ¿qué servicios NO pueden ser objeto de un contrato de servicios?
+= Los que impliquen ejercicio de la autoridad inherente a los poderes públicos
+- Los de limpieza
+- Los de consultoría
+- Los de mantenimiento informático
+E Son contratos de servicios las prestaciones de hacer distintas de una obra o un suministro.
+R LCSP art. 17
+
+Q En un contrato mixto que comprende prestaciones de obras, suministros o servicios, la adjudicación se rige por:
+= El carácter de la prestación principal
+- Las normas del contrato de obras siempre
+- Las normas más exigentes de todas
+- El contrato de mayor duración
+E Si mezcla servicios y suministros, el objeto principal es el de mayor valor estimado.
+R LCSP art. 18.1.a
+
+Q Si en un contrato mixto uno de sus elementos es una obra que supera ______, debe elaborarse un proyecto:
+= 50.000 euros
+- 40.000 euros
+- 15.000 euros
+- 100.000 euros
+E Se tramita conforme a los arts. 231 y siguientes.
+R LCSP art. 18.3
+
+Q Para que un contrato esté sujeto a regulación armonizada, además de superar el umbral, la entidad contratante debe tener el carácter de:
+= Poder adjudicador
+- Administración Pública territorial
+- Entidad pública empresarial
+- Sociedad mercantil pública
+E También los contratos subvencionados del art. 23.
+R LCSP art. 19.1
+
+Q ¿Cuál es el umbral de regulación armonizada de los contratos de obras, concesión de obras y concesión de servicios según el texto del temario?
+= 5.404.000 euros
+- 216.000 euros
+- 750.000 euros
+- 1.000.000 euros
+E Los umbrales se actualizan periódicamente conforme a las Directivas europeas.
+R LCSP art. 20.1
+
+Q Los contratos de suministro de una entidad local están sujetos a regulación armonizada a partir de:
+= 216.000 euros
+- 140.000 euros
+- 750.000 euros
+- 5.404.000 euros
+E 140.000 euros rige para la Administración General del Estado, sus organismos autónomos y las entidades gestoras de la Seguridad Social.
+R LCSP art. 21.1
+
+Q Los contratos de servicios sociales y otros servicios específicos del anexo IV están sujetos a regulación armonizada a partir de:
+= 750.000 euros
+- 216.000 euros
+- 140.000 euros
+- 1.000.000 euros
+E Art. 22.1.c.
+R LCSP art. 22.1.c
+
+Q En un contrato de obras por lotes sujeto a regulación armonizada, pueden exceptuarse los lotes de valor inferior a:
+= Un millón de euros, siempre que el total exceptuado no supere el 20 % del valor acumulado
+- 80.000 euros, sin límite
+- 500.000 euros, hasta el 50 %
+- 216.000 euros
+E En suministros y servicios, el límite por lote es de 80.000 euros.
+R LCSP art. 20.2
+
+Q ¿Cuál de estos contratos NO está sujeto a regulación armonizada cualquiera que sea su valor?
+= Los declarados secretos o reservados
+- Los de suministro de material de oficina
+- Los de limpieza de edificios
+- Los de obras de urbanización
+E También los servicios jurídicos de representación y defensa, los de defensa del art. 346 TFUE y otros del art. 19.2.
+R LCSP art. 19.2
+
+Q Son contratos subvencionados sujetos a regulación armonizada los de obras y servicios subvencionados por poderes adjudicadores de forma directa y en más del:
+= 50 % de su importe
+- 25 % de su importe
+- 75 % de su importe
+- 100 % de su importe
+E Y que pertenezcan a las categorías del art. 23.1 (p. ej., construcción de hospitales, centros deportivos o edificios escolares de valor igual o superior a 5.404.000 euros).
+R LCSP art. 23.1
+
+Q ¿A qué norma remite el art. 19 para calcular el valor estimado?
+= Al art. 101
+- Al art. 100
+- Al art. 102
+- Al art. 118
+E El art. 100 regula el presupuesto base de licitación y el 102, el precio.
+R LCSP art. 19.1

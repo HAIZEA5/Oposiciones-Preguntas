@@ -1,0 +1,167 @@
+Q Según el art. 99.1 de la LCSP, el objeto de los contratos del sector público debe ser:
+= Determinado, pudiendo definirse en atención a las necesidades o funcionalidades que se pretenden satisfacer
+- Genérico, para permitir mejoras
+- Determinado y cerrado a una solución única
+- Fijado por el contratista
+E No debe cerrarse a una solución única, especialmente si pueden incorporarse innovaciones.
+R LCSP art. 99.1
+
+Q Fraccionar un contrato para disminuir su cuantía y eludir los requisitos de publicidad o del procedimiento de adjudicación está:
+= Prohibido
+- Permitido si se justifica
+- Permitido en contratos menores
+- Permitido con autorización del Pleno
+E Art. 99.2.
+R LCSP art. 99.2
+
+Q Siempre que la naturaleza del contrato lo permita, la LCSP establece como regla:
+= La división del objeto en lotes
+- La adjudicación a un único contratista
+- La tramitación urgente
+- El procedimiento negociado
+E El órgano de contratación puede no dividirlo si hay motivos válidos justificados en el expediente, salvo en la concesión de obras.
+R LCSP art. 99.3
+
+Q ¿Cuál de estos es un motivo válido para no dividir en lotes según el art. 99.3?
+= Que la ejecución independiente de las prestaciones dificulte la correcta ejecución desde el punto de vista técnico
+- Que la división encarezca la tramitación administrativa
+- Que haya pocas empresas interesadas
+- Que el contrato sea de servicios
+E El otro motivo es el riesgo de restringir injustificadamente la competencia, previo informe de la autoridad de defensa de la competencia.
+R LCSP art. 99.3
+
+Q Si se alega que la división en lotes restringe la competencia, el órgano de contratación debe:
+= Solicitar informe previo a la autoridad de defensa de la competencia
+- Pedir dictamen al Consejo de Estado
+- Consultar a los licitadores
+- Acordarlo sin más trámite
+E Art. 99.3.a.
+R LCSP art. 99.3.a
+
+Q En los contratos por lotes, salvo otra previsión en el pliego:
+= Cada lote constituye un contrato, salvo en las ofertas integradoras
+- Todos los lotes forman un único contrato
+- Cada lote requiere un expediente distinto
+- Solo puede adjudicarse un lote a cada licitador
+E Con oferta integradora, todas las ofertas constituyen un contrato.
+R LCSP art. 99.7
+
+Q ¿Qué se entiende por presupuesto base de licitación?
+= El límite máximo de gasto que puede comprometer el órgano de contratación, incluido el IVA, salvo disposición en contrario
+- El importe total sin IVA estimado por el órgano de contratación
+- El precio ofertado por el adjudicatario
+- El valor del contrato incluidas sus prórrogas
+E El valor estimado, en cambio, no incluye el IVA.
+R LCSP art. 100.1
+
+Q En los contratos en que los salarios forman parte del precio, el presupuesto base de licitación debe indicar los costes salariales:
+= De forma desglosada, con desagregación de género y categoría profesional, a partir del convenio de referencia
+- Solo en total
+- Únicamente si lo piden los sindicatos
+- No es necesario indicarlos
+E Art. 100.2.
+R LCSP art. 100.2
+
+Q ¿Es necesario aprobar un presupuesto base de licitación antes de tramitar un acuerdo marco?
+= No
+- Sí, siempre
+- Solo si supera el umbral armonizado
+- Solo en los acuerdos marco de obras
+E Tampoco en los sistemas dinámicos de adquisición.
+R LCSP art. 100.3
+
+Q En los contratos de obras, suministros y servicios, el valor estimado es:
+= El importe total, sin incluir el IVA, pagadero según las estimaciones del órgano de contratación
+- El importe total con IVA
+- El presupuesto base de licitación
+- El precio de adjudicación
+E En las concesiones, el importe neto de la cifra de negocios sin IVA que generará el concesionario.
+R LCSP art. 101.1
+
+Q ¿Cuál de estos conceptos debe tenerse en cuenta en el cálculo del valor estimado?
+= Las eventuales prórrogas del contrato
+- El IVA
+- Los tributos locales
+- El beneficio del licitador que pierda
+E También cualquier opción eventual, las primas a licitadores y las modificaciones previstas en el pliego.
+R LCSP art. 101.2
+
+Q Si el pliego prevé la posibilidad de modificar el contrato, el valor estimado será:
+= El importe máximo que pueda alcanzar, teniendo en cuenta todas las modificaciones al alza previstas
+- El importe inicial sin modificaciones
+- La media entre el importe inicial y el máximo
+- El importe inicial más un 10 %
+E Art. 101.2.c.
+R LCSP art. 101.2.c
+
+Q ¿Dónde debe figurar el método de cálculo del valor estimado?
+= En los pliegos de cláusulas administrativas particulares
+- En el anuncio de formalización
+- En la memoria anual
+- En el contrato firmado
+E Además, el método no puede elegirse para sustraer el contrato a las normas de adjudicación aplicables.
+R LCSP art. 101.4 y 5
+
+Q La estimación del valor estimado debe estar referida al momento:
+= Del envío del anuncio de licitación o, si no se requiere, del inicio del procedimiento de adjudicación
+- De la formalización del contrato
+- De la aprobación del gasto
+- De la recepción de la prestación
+E Teniendo en cuenta los precios habituales en el mercado.
+R LCSP art. 101.7
+
+Q En un contrato de servicios sin precio total y de duración superior a cuarenta y ocho meses, el valor estimado es:
+= El valor mensual multiplicado por 48
+- El valor anual multiplicado por 4
+- El valor de toda su duración
+- El valor mensual multiplicado por 12
+E Si la duración es igual o inferior a 48 meses, el valor total de toda su duración.
+R LCSP art. 101.11.d
+
+Q Para los acuerdos marco se toma como valor estimado:
+= El valor máximo estimado, sin IVA, del conjunto de contratos previstos durante toda su duración
+- El valor del primer contrato basado
+- La media anual de los contratos basados
+- El presupuesto del primer año
+E Igual para los sistemas dinámicos de adquisición.
+R LCSP art. 101.13
+
+Q Según el art. 102.1, los contratos del sector público tendrán siempre:
+= Un precio cierto, que se abona en función de la prestación realmente ejecutada
+- Un precio aproximado
+- Un precio revisable cada año
+- Un precio fijado por la Junta Consultiva
+E El IVA se indicará como partida independiente.
+R LCSP art. 102.1
+
+Q El precio del contrato puede formularse:
+= En precios unitarios o a tanto alzado, total o parcialmente
+- Solo a tanto alzado
+- Solo en precios unitarios
+- Solo en moneda extranjera
+E Art. 102.4. Con carácter general se expresa en euros.
+R LCSP art. 102.4
+
+Q En los contratos celebrados con precios provisionales:
+= No cabe la revisión de precios
+- La revisión de precios es obligatoria
+- El precio se fija libremente al final
+- No se fija precio máximo
+E Solo caben, excepcionalmente, tras un procedimiento negociado, un diálogo competitivo o una asociación para la innovación.
+R LCSP art. 102.7
+
+Q El pago aplazado del precio en los contratos de las Administraciones Públicas:
+= Está prohibido, salvo en el arrendamiento financiero, el arrendamiento con opción de compra o cuando una ley lo autorice
+- Está permitido sin límite
+- Solo se permite en obras
+- Requiere autorización del Consejo de Ministros
+E Art. 102.8.
+R LCSP art. 102.8
+
+Q En los servicios cuyo coste principal son los costes laborales, para fijar el precio deben considerarse:
+= Los convenios colectivos sectoriales aplicables en el lugar de prestación
+- Solo el salario mínimo interprofesional
+- Los salarios de los empleados públicos
+- Lo que proponga el licitador
+E Art. 102.3.
+R LCSP art. 102.3

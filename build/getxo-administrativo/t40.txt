@@ -1,0 +1,159 @@
+Q Cuando una Administración pretende demandar ante la jurisdicción contencioso-administrativa la anulación de un acto propio, debe previamente:
+= Declararlo lesivo para el interés público
+- Revocarlo de oficio
+- Pedir dictamen al Consejo de Estado
+- Interponer recurso de reposición
+E Es la declaración de lesividad del art. 43.
+R LJCA art. 43
+
+Q En los litigios entre Administraciones públicas:
+= No cabe interponer recurso en vía administrativa, aunque puede hacerse un requerimiento previo
+- Hay que agotar siempre la vía administrativa
+- Solo cabe recurso de alzada
+- Es obligatorio el requerimiento previo
+E El requerimiento previo es potestativo.
+R LJCA art. 44.1
+
+Q El requerimiento previo entre Administraciones debe hacerse en el plazo de:
+= Dos meses desde la publicación de la norma o desde que la Administración requirente conozca el acto
+- Un mes
+- Diez días
+- Seis meses
+E Se entiende rechazado si no se contesta en el mes siguiente a su recepción.
+R LJCA art. 44.2 y 3
+
+Q Por regla general, el recurso contencioso-administrativo se inicia mediante:
+= Un escrito reducido a citar la disposición, acto, inactividad o vía de hecho impugnada y a solicitar que se tenga por interpuesto el recurso
+- Una demanda completa con fundamentos de derecho
+- Una reclamación previa ante la Administración
+- Un recurso de alzada
+E Salvo cuando la ley disponga otra cosa (por ejemplo, el recurso de lesividad o contra disposiciones generales, que pueden iniciarse por demanda).
+R LJCA art. 45.1
+
+Q ¿Qué documento NO hay que acompañar al escrito de interposición según el art. 45.2?
+= La proposición de prueba
+- El documento que acredite la representación del compareciente
+- La copia de la disposición o acto expreso que se recurra
+- Si es una persona jurídica, el documento que acredite el cumplimiento de los requisitos para entablar acciones
+E La prueba se propone después, en la demanda o en el trámite correspondiente.
+R LJCA art. 45.2
+
+Q El plazo para interponer recurso contencioso-administrativo contra un acto expreso que pone fin a la vía administrativa es de:
+= Dos meses desde el día siguiente a su notificación o publicación
+- Un mes
+- Tres meses
+- Seis meses
+E Contra disposiciones generales, dos meses desde su publicación.
+R LJCA art. 46.1
+
+Q Según el art. 46.1, si el acto no es expreso, el plazo para recurrir es de:
+= Seis meses desde el día siguiente a aquel en que se produzca el acto presunto
+- Dos meses
+- Un año
+- No hay plazo
+E El Tribunal Constitucional ha declarado que contra la desestimación por silencio no corre plazo, pero el test pregunta por el texto de la ley.
+R LJCA art. 46.1
+
+Q Contra una actuación en vía de hecho, si no se ha hecho requerimiento, el plazo para recurrir es de:
+= Veinte días desde que se inició la actuación
+- Diez días desde que se inició
+- Dos meses
+- Seis meses
+E Si se hizo requerimiento, el plazo es de diez días desde que terminó el plazo del art. 30.
+R LJCA art. 46.3
+
+Q Si se interpuso recurso de reposición potestativo, el plazo para el recurso contencioso se cuenta desde:
+= El día siguiente a aquel en que se notifique la resolución expresa del recurso o en que deba entenderse desestimado
+- La notificación del acto inicial
+- La interposición del recurso de reposición
+- El día en que se cumpla un año del acto
+E Art. 46.4.
+R LJCA art. 46.4
+
+Q En el recurso de lesividad, el plazo para interponerlo es de:
+= Dos meses desde el día siguiente a la fecha de la declaración de lesividad
+- Cuatro años
+- Seis meses
+- Un mes
+E Art. 46.5.
+R LJCA art. 46.5
+
+Q ¿Quién reclama el expediente administrativo a la Administración?
+= El letrado o letrada de la Administración de Justicia
+- El juez de forma personal
+- El recurrente
+- El Ministerio Fiscal
+E Lo reclama al órgano autor de la disposición o acto, o al que se imputa la inactividad o vía de hecho.
+R LJCA art. 48.1
+
+Q ¿En qué plazo debe la Administración remitir el expediente administrativo al Juzgado o Tribunal?
+= En el plazo improrrogable de veinte días
+- En diez días prorrogables
+- En un mes
+- En quince días hábiles
+E Se cuenta desde que la comunicación judicial entra en el registro general del órgano requerido.
+R LJCA art. 48.3
+
+Q Si la Administración no remite el expediente en plazo, tras reiterar la reclamación, el órgano judicial puede:
+= Imponer multas coercitivas a la autoridad o empleado responsable
+- Dictar sentencia estimatoria
+- Archivar el recurso
+- Declarar la caducidad
+E Art. 48.7, con multas coercitivas reiteradas.
+R LJCA art. 48.7
+
+Q La resolución que acuerda remitir el expediente se notifica a los interesados en el plazo de:
+= Cinco días, emplazándoles para personarse como demandados en nueve días
+- Diez días, para personarse en quince
+- Tres días, para personarse en cinco
+- Quince días, para personarse en veinte
+E Art. 49.1.
+R LJCA art. 49.1
+
+Q Las Administraciones públicas se entienden personadas en el recurso contencioso-administrativo:
+= Por el envío del expediente
+- Cuando comparece su abogado
+- Cuando presentan la contestación a la demanda
+- Desde la interposición del recurso
+E Y su emplazamiento se entiende efectuado por la reclamación del expediente.
+R LJCA art. 50
+
+Q Un demandado que se persona fuera del plazo concedido:
+= Es tenido por parte para los trámites no precluidos
+- No puede intervenir en el proceso
+- Debe pagar una multa
+- Hace que se repitan todos los trámites
+E Si no se persona, el procedimiento sigue sin notificarle nada.
+R LJCA art. 50.3
+
+Q ¿Cuál de estas NO es una causa de inadmisión del art. 51.1?
+= Que la cuantía del recurso sea inferior a 30.000 euros
+- La falta de jurisdicción o la incompetencia del órgano
+- La falta de legitimación del recurrente
+- Haber caducado el plazo de interposición
+E También haberse interpuesto contra actividad no susceptible de impugnación.
+R LJCA art. 51.1
+
+Q El Juzgado o Sala puede inadmitir el recurso cuando:
+= Se hubieran desestimado en el fondo otros recursos sustancialmente iguales por sentencia firme
+- El recurrente no aporte prueba
+- La Administración se oponga
+- El acto ya se haya ejecutado
+E Art. 51.2, mencionando las resoluciones desestimatorias.
+R LJCA art. 51.2
+
+Q Antes de inadmitir el recurso por las causas del art. 51, el órgano judicial debe:
+= Oír a las partes por un plazo común de diez días
+- Pedir informe a la Administración
+- Celebrar vista oral
+- Dar traslado al Ministerio Fiscal en todo caso
+E Art. 51.4. Contra el auto de inadmisión caben los recursos previstos en la ley.
+R LJCA art. 51.4
+
+Q ¿En qué parte de la Ley 29/1998 están los arts. 43 a 51?
+= Al Título IV, procedimiento contencioso-administrativo en primera o única instancia (diligencias preliminares e interposición)
+- Al Título III, recurso contencioso-administrativo
+- Al Título V, procedimientos especiales
+- Al Título VI, disposiciones comunes
+E Sección 1.ª, diligencias preliminares (arts. 43-44); sección 2.ª, interposición del recurso y reclamación del expediente (arts. 45-51).
+R LJCA, estructura

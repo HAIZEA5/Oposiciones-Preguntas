@@ -1,0 +1,159 @@
+Q Según el art. 2 de la Ley 38/2003, ¿cuál de estos requisitos NO es necesario para que exista subvención?
+= Que el beneficiario sea una persona jurídica
+- Que la entrega se realice sin contraprestación directa de los beneficiarios
+- Que esté sujeta al cumplimiento de un objetivo, la ejecución de un proyecto o la realización de una actividad
+- Que el proyecto o actividad tenga por objeto el fomento de una actividad de utilidad pública o interés social
+E Subvención es toda disposición dineraria a favor de personas públicas o privadas que cumpla esos tres requisitos.
+R LGS art. 2.1
+
+Q ¿Cuál de estas NO está comprendida en el ámbito de aplicación de la Ley General de Subvenciones?
+= Las prestaciones contributivas y no contributivas del Sistema Nacional de Seguridad Social
+- Las subvenciones de las entidades locales
+- Las subvenciones de las comunidades autónomas
+- Las ayudas en especie que cumplan los requisitos de subvención
+E Tampoco las pensiones asistenciales, las prestaciones a favor de afectados por VIH o las de los mutilados de guerra, entre otras (art. 2.4).
+R LGS art. 2.4
+
+Q Las aportaciones dinerarias entre diferentes Administraciones públicas para financiar globalmente su actividad:
+= No están comprendidas en el ámbito de aplicación de la ley
+- Son subvenciones nominativas
+- Son subvenciones directas
+- Requieren concurrencia competitiva
+E Art. 2.2.
+R LGS art. 2.2
+
+Q Según el art. 8, ¿qué deben concretar con carácter previo los órganos que propongan establecer subvenciones?
+= Un plan estratégico de subvenciones, con objetivos, plazo, costes previsibles y fuentes de financiación
+- Un convenio con los beneficiarios
+- Un informe del Tribunal de Cuentas
+- Un estudio de mercado
+E Siempre supeditado al cumplimiento de los objetivos de estabilidad presupuestaria.
+R LGS art. 8.1
+
+Q ¿Cuál de estos principios rige la gestión de las subvenciones según el art. 8.3?
+= Publicidad, transparencia, concurrencia, objetividad, igualdad y no discriminación
+- Discrecionalidad y oportunidad
+- Jerarquía y competencia
+- Subsidiariedad y suficiencia
+E Además, eficacia en el cumplimiento de objetivos y eficiencia en la asignación de los recursos públicos.
+R LGS art. 8.3
+
+Q Con carácter previo al otorgamiento de las subvenciones deben aprobarse:
+= Las normas que establezcan sus bases reguladoras
+- Los convenios con cada beneficiario
+- Las resoluciones de reintegro
+- Los planes de control financiero
+E Art. 9.2.
+R LGS art. 9.2
+
+Q ¿Quiénes son beneficiarios de subvenciones según el art. 11?
+= Las personas que hayan de realizar la actividad que fundamentó su otorgamiento o que se encuentren en la situación que legitima su concesión
+- Solo las personas jurídicas sin ánimo de lucro
+- Solo las Administraciones públicas
+- Cualquier persona empadronada
+E Pueden serlo también agrupaciones sin personalidad, si lo prevén las bases.
+R LGS art. 11
+
+Q ¿Qué son las entidades colaboradoras?
+= Las que, actuando en nombre y por cuenta del órgano concedente, entregan y distribuyen los fondos o colaboran en la gestión sin que se consideren beneficiarias
+- Las que cofinancian la actividad subvencionada
+- Las que reciben la subvención y la reparten a sus socios
+- Las que auditan la justificación
+E Art. 12.
+R LGS art. 12
+
+Q ¿Cuál de estas circunstancias impide obtener la condición de beneficiario según el art. 13?
+= No hallarse al corriente de las obligaciones tributarias o frente a la Seguridad Social
+- Tener deudas con particulares
+- Haber recibido otras subvenciones
+- Ser una entidad de nueva creación
+E Otras: haber sido condenado por ciertos delitos, estar declarado en concurso o tener la residencia fiscal en un paraíso fiscal.
+R LGS art. 13.2
+
+Q ¿Cuál de estas es una obligación del beneficiario según el art. 14?
+= Justificar ante el órgano concedente el cumplimiento de los requisitos y la realización de la actividad
+- Devolver siempre el 10 % de la subvención
+- Contratar personal de la Administración
+- Publicar la subvención en el BOE
+E Además: cumplir el objetivo, someterse a las actuaciones de comprobación, comunicar otras ayudas y conservar los justificantes.
+R LGS art. 14
+
+Q ¿Qué contenido mínimo deben tener las bases reguladoras según el art. 17.3?
+= El objeto, los requisitos de los beneficiarios, los criterios objetivos de otorgamiento y la cuantía o criterios para determinarla, entre otros
+- Solo el importe total
+- La lista de beneficiarios
+- El nombre de los miembros de la comisión
+E También el plazo y forma de justificación y los criterios de graduación de los incumplimientos.
+R LGS art. 17.3
+
+Q En las corporaciones locales, las bases reguladoras de las subvenciones se aprueban:
+= En el marco de las bases de ejecución del presupuesto, mediante una ordenanza general de subvenciones o mediante una ordenanza específica
+- Por decreto de Alcaldía en todo caso
+- Por la Junta de Gobierno exclusivamente
+- Por ley autonómica
+E Art. 17.2.
+R LGS art. 17.2
+
+Q ¿Qué sistema opera como sistema nacional de publicidad de subvenciones?
+= La Base de Datos Nacional de Subvenciones (BDNS)
+- El BOE
+- El perfil de contratante
+- La Plataforma de Contratación del Sector Público
+E Las administraciones concedentes le remiten las convocatorias y las resoluciones de concesión.
+R LGS art. 18 y 20
+
+Q El importe de las subvenciones, aisladamente o en concurrencia con otras ayudas:
+= No puede superar el coste de la actividad subvencionada
+- Puede superar el coste si lo prevén las bases
+- Debe ser como mínimo el 50 % del coste
+- No tiene límite
+E Art. 19.3.
+R LGS art. 19.3
+
+Q ¿Qué plazo máximo de vigencia tienen los convenios de colaboración con entidades colaboradoras?
+= Cuatro años, con prórroga posible sin superar en total seis
+- Dos años
+- Un año
+- Diez años
+E Art. 16.
+R LGS art. 16
+
+Q ¿Qué naturaleza tiene la información incluida en la Base de Datos Nacional de Subvenciones?
+= Reservada, sin que pueda cederse a terceros salvo en los supuestos tasados
+- Pública en su totalidad
+- Secreta en todo caso
+- Accesible solo a los beneficiarios
+E Sin perjuicio de la publicidad de convocatorias y concesiones.
+R LGS art. 20
+
+Q La gestión de las subvenciones se realiza de acuerdo con el principio de:
+= Eficacia en el cumplimiento de los objetivos fijados por la Administración otorgante
+- Máxima discrecionalidad
+- Prioridad de los beneficiarios públicos
+- Concesión automática
+E Junto con eficiencia, publicidad, transparencia, concurrencia, objetividad, igualdad y no discriminación.
+R LGS art. 8.3
+
+Q Para poder otorgar una subvención es requisito previo:
+= La existencia de crédito adecuado y suficiente
+- La firma de un contrato
+- La autorización del Parlamento
+- El aval del beneficiario
+E Art. 9.4, junto con la competencia del órgano, la fiscalización previa y la aprobación del gasto.
+R LGS art. 9.4
+
+Q ¿Quién no puede obtener la condición de beneficiario por tener la residencia fiscal en un territorio calificado como:
+= Paraíso fiscal
+- Comunidad autónoma con régimen foral
+- Estado miembro de la UE
+- Municipio de menos de 5.000 habitantes
+E Art. 13.2.f.
+R LGS art. 13.2.f
+
+Q Los beneficiarios deben conservar los documentos justificativos de la aplicación de los fondos:
+= Mientras puedan ser objeto de actuaciones de comprobación y control
+- Durante un año
+- Hasta que cobren la subvención
+- No tienen obligación
+E Art. 14.1.g.
+R LGS art. 14.1.g

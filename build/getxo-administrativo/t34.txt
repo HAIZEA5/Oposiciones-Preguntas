@@ -1,0 +1,191 @@
+Q El expediente de contratación se inicia por el órgano de contratación:
+= Motivando la necesidad del contrato y publicándolo en el perfil de contratante
+- A petición del contratista
+- Por acuerdo del Pleno en todo caso
+- Con la firma del contrato
+E Art. 116.1, en relación con el art. 28.
+R LCSP art. 116.1
+
+Q ¿Qué documentos se incorporan al expediente de contratación según el art. 116.3?
+= Los pliegos de cláusulas administrativas particulares y de prescripciones técnicas, el certificado de existencia de crédito y la fiscalización previa, en su caso
+- Solo el contrato firmado
+- La oferta del adjudicatario
+- El acta de recepción
+E En el diálogo competitivo, los pliegos se sustituyen por el documento descriptivo.
+R LCSP art. 116.3
+
+Q ¿Qué informe debe justificarse en el expediente de los contratos de servicios?
+= El informe de insuficiencia de medios
+- El informe del Consejo de Estado
+- El informe de impacto ambiental
+- El informe del Tribunal de Cuentas
+E Art. 116.4.f.
+R LCSP art. 116.4.f
+
+Q ¿Cuál de estos extremos NO debe justificarse expresamente en el expediente según el art. 116.4?
+= El nombre del futuro adjudicatario
+- La elección del procedimiento de licitación
+- El valor estimado con todos sus conceptos
+- La decisión de no dividir en lotes
+E También la clasificación exigida, los criterios de solvencia y adjudicación y la necesidad de la Administración.
+R LCSP art. 116.4
+
+Q La resolución que aprueba el expediente de contratación y dispone la apertura del procedimiento implica también, como regla general:
+= La aprobación del gasto
+- La adjudicación del contrato
+- La formalización del contrato
+- La recepción de la prestación
+E Salvo que el presupuesto no se hubiera podido establecer previamente o la desconcentración o delegación disponga otra cosa.
+R LCSP art. 117.1
+
+Q ¿Cuándo es contrato menor un contrato de obras?
+= Cuando su valor estimado es inferior a 40.000 euros
+- Cuando su valor estimado es inferior a 15.000 euros
+- Cuando su valor estimado es inferior a 50.000 euros
+- Cuando su duración es inferior a un año
+E En suministros y servicios, el límite es 15.000 euros.
+R LCSP art. 118.1
+
+Q En un contrato menor de servicios, el valor estimado debe ser inferior a:
+= 15.000 euros
+- 40.000 euros
+- 18.000 euros
+- 5.000 euros
+E Art. 118.1.
+R LCSP art. 118.1
+
+Q ¿Qué exige la tramitación de un contrato menor?
+= Informe motivado del órgano de contratación sobre la necesidad y de que no se altera el objeto para evitar los umbrales, aprobación del gasto y factura
+- Pliegos de cláusulas administrativas y técnicas
+- Publicación previa en el BOE
+- Mesa de contratación
+E En el menor de obras, además, el presupuesto y, si procede, el proyecto.
+R LCSP art. 118
+
+Q El informe justificativo del contrato menor no es necesario cuando el pago se hace por anticipos de caja fija y el valor estimado no excede de:
+= 5.000 euros
+- 3.000 euros
+- 15.000 euros
+- 1.000 euros
+E Art. 118.5.
+R LCSP art. 118.5
+
+Q En la tramitación urgente, los órganos que intervienen disponen para emitir sus informes de un plazo de:
+= Cinco días, prorrogable hasta diez
+- Diez días, prorrogable hasta veinte
+- Tres días
+- Quince días
+E Art. 119.2.a.
+R LCSP art. 119.2.a
+
+Q En la tramitación urgente, ¿qué plazo NO se reduce a la mitad?
+= El periodo de espera de quince días hábiles antes de la formalización del contrato (art. 153.3)
+- El plazo de adjudicación
+- El plazo de licitación en contratos no armonizados
+- El plazo de formalización ordinario
+E También hay otras excepciones para contratos armonizados y para el procedimiento abierto simplificado.
+R LCSP art. 119.2.b
+
+Q En los expedientes urgentes, el plazo de inicio de la ejecución no puede exceder de:
+= Un mes desde la formalización
+- Quince días
+- Tres meses
+- Diez días
+E Art. 119.2.c.
+R LCSP art. 119.2.c
+
+Q En la tramitación de emergencia, el órgano de contratación puede:
+= Ordenar la ejecución de lo necesario o contratar libremente, sin tramitar expediente e incluso sin crédito suficiente
+- Adjudicar solo por procedimiento negociado con publicidad
+- Contratar solo si existe crédito
+- Esperar la autorización del Pleno
+E Procede ante acontecimientos catastróficos, grave peligro o necesidades de la defensa nacional.
+R LCSP art. 120.1.a
+
+Q En la tramitación de emergencia, si el inicio de la ejecución supera un mes desde el acuerdo:
+= La contratación requerirá la tramitación de un procedimiento ordinario
+- Se prorroga automáticamente
+- Se resuelve el contrato con indemnización
+- No tiene consecuencias
+E Art. 120.1.c.
+R LCSP art. 120.1.c
+
+Q Los pliegos de cláusulas administrativas particulares deben aprobarse:
+= Antes de la autorización del gasto o conjuntamente con ella, y siempre antes de la licitación
+- Después de la adjudicación
+- Junto con la formalización
+- Cuando lo pida el contratista
+E Después solo pueden modificarse por error material, de hecho o aritmético; si no, hay retroacción de actuaciones.
+R LCSP art. 122.1
+
+Q ¿Quién aprueba los pliegos de cláusulas administrativas particulares?
+= El órgano de contratación
+- La Junta Consultiva de Contratación
+- El Interventor
+- La Mesa de contratación
+E Puede aprobar modelos de pliegos para contratos de naturaleza análoga.
+R LCSP art. 122.5
+
+Q Los pliegos de contratos que impliquen tratar datos personales por cuenta del responsable deben recoger, como obligación esencial:
+= La declaración del adjudicatario sobre dónde estarán ubicados los servidores y desde dónde se prestarán los servicios asociados
+- La nacionalidad de los trabajadores
+- El número de cuenta del contratista
+- La póliza de seguros del contratista
+E También la finalidad de la cesión y el sometimiento a la normativa de protección de datos.
+R LCSP art. 122.2
+
+Q Según el art. 122.4, los contratos se ajustarán al contenido de:
+= Los pliegos de cláusulas administrativas particulares, cuyas cláusulas son parte integrante de ellos
+- La oferta del contratista exclusivamente
+- Los pliegos de prescripciones técnicas generales
+- El anuncio de licitación
+E Art. 122.4.
+R LCSP art. 122.4
+
+Q En las entidades locales, el Alcalde es órgano de contratación cuando el valor estimado no supera:
+= El 10 % de los recursos ordinarios del presupuesto ni seis millones de euros
+- El 20 % de los recursos ordinarios ni tres millones
+- El 5 % de los recursos ordinarios
+- Un millón de euros
+E Incluidos los plurianuales de duración no superior a cuatro años, prórrogas incluidas.
+R LCSP DA 2.ª.1
+
+Q ¿Quién aprueba en la entidad local los pliegos de cláusulas administrativas generales?
+= El Pleno
+- El Alcalde
+- La Junta de Gobierno Local, salvo en gran población
+- La Mesa de contratación
+E También en los municipios de gran población el Pleno aprueba los pliegos generales.
+R LCSP DA 2.ª.2 y 4
+
+Q En la Mesa de contratación de una entidad local, los miembros electos no pueden suponer más de:
+= Un tercio del total de miembros
+- La mitad de los miembros
+- Dos miembros
+- El 25 % de los miembros
+E La Mesa tiene al menos tres miembros y forman parte necesariamente el Secretario y el Interventor.
+R LCSP DA 2.ª.7
+
+Q ¿Puede formar parte de una Mesa de contratación el personal eventual?
+= No, en ningún caso, ni puede emitir informes de valoración de ofertas
+- Sí, como vocal
+- Sí, si lo autoriza el Pleno
+- Solo como secretario
+E El personal interino solo puede formar parte cuando no haya funcionarios de carrera suficientemente cualificados.
+R LCSP DA 2.ª.7
+
+Q En las entidades locales, ¿quién emite los informes que la LCSP asigna a los servicios jurídicos?
+= El Secretario
+- El Interventor
+- El Tesorero
+- El Alcalde
+E Es preceptivo su informe en la aprobación de expedientes, modificaciones, revisión de precios, prórrogas, interpretación y resolución.
+R LCSP DA 3.ª.8
+
+Q En los contratos de las entidades locales para adquirir bienes inmuebles, el pago puede aplazarse hasta:
+= Cuatro años
+- Dos años
+- Diez años
+- No puede aplazarse
+E DA 3.ª.9.
+R LCSP DA 3.ª.9

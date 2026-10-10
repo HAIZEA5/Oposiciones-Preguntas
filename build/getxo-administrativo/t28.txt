@@ -1,0 +1,215 @@
+Q Según el art. 77 del ROF, las sesiones del Pleno pueden ser:
+= Ordinarias, extraordinarias y extraordinarias de carácter urgente
+- Ordinarias y extraordinarias únicamente
+- Ordinarias, extraordinarias y secretas
+- Ordinarias, urgentes y públicas
+E Son tres tipos.
+R ROF art. 77
+
+Q La periodicidad de las sesiones ordinarias del Pleno la fija:
+= El propio Pleno, en sesión extraordinaria convocada dentro de los treinta días siguientes a la sesión constitutiva
+- El Alcalde por decreto
+- La ley, que fija una sesión mensual
+- La Junta de Portavoces
+E No puede exceder del límite trimestral del art. 46.2.a de la LBRL.
+R ROF art. 78.1
+
+Q ¿Qué parte de los miembros de la Corporación puede solicitar la celebración de una sesión extraordinaria del Pleno?
+= La cuarta parte, al menos, del número legal de miembros
+- La tercera parte de los miembros presentes
+- La mitad más uno
+- Cualquier grupo municipal
+E La solicitud debe hacerse por escrito razonado, firmado personalmente por todos los que la suscriben.
+R ROF art. 78.2
+
+Q Pedida una sesión extraordinaria por los miembros de la Corporación, su celebración no puede demorarse más de:
+= Dos meses desde que el escrito tuviera entrada en el Registro
+- Un mes
+- Quince días
+- Tres meses
+E La convocatoria debe hacerse dentro de los cuatro días siguientes a la petición.
+R ROF art. 78.3
+
+Q Entre la convocatoria y la celebración de una sesión del Pleno no pueden transcurrir menos de:
+= Dos días hábiles, salvo en las extraordinarias urgentes
+- Veinticuatro horas
+- Tres días naturales
+- Cinco días hábiles
+E En la Junta (Comisión) de Gobierno, el mínimo es de veinticuatro horas.
+R ROF art. 80.4
+
+Q En una sesión extraordinaria urgente, ¿qué debe incluirse como primer punto del orden del día?
+= El pronunciamiento del Pleno sobre la urgencia
+- La aprobación del acta anterior
+- Los ruegos y preguntas
+- La lectura de la convocatoria
+E Si el Pleno no aprecia la urgencia, se levanta acto seguido la sesión.
+R ROF art. 79
+
+Q ¿Quién fija el orden del día de las sesiones del Pleno?
+= El Alcalde o Presidente, asistido de la Secretaría
+- El Secretario
+- La Junta de Portavoces
+- El Pleno en la sesión anterior
+E Puede recabar la asistencia de la Junta de Gobierno o de los Tenientes de Alcalde y consultar a los portavoces.
+R ROF art. 82.1
+
+Q En el orden del día de las sesiones ordinarias se incluirá siempre el punto de:
+= Ruegos y preguntas
+- Mociones de urgencia
+- Comparecencias
+- Informes de la Alcaldía
+E Art. 82.4.
+R ROF art. 82.4
+
+Q Son nulos los acuerdos adoptados en sesiones extraordinarias:
+= Sobre asuntos no comprendidos en su convocatoria
+- Sin la presencia de todos los concejales
+- Fuera del horario habitual
+- Por mayoría simple
+E En las ordinarias, sobre materias no incluidas en el orden del día, salvo previa declaración de urgencia con la mayoría absoluta del art. 47.3 LBRL.
+R ROF art. 83
+
+Q ¿Desde cuándo debe estar a disposición de los concejales la documentación de los asuntos del orden del día?
+= Desde el mismo día de la convocatoria, en la Secretaría
+- Desde el día anterior a la sesión
+- Desde que la pidan por escrito
+- Solo durante la sesión
+E Pueden obtener copias de documentos concretos, pero los originales no pueden salir de donde se encuentren.
+R ROF art. 84
+
+Q Para la válida constitución del Pleno se requiere la asistencia de:
+= Un tercio del número legal de miembros, nunca inferior a tres, y del Presidente y el Secretario
+- La mayoría absoluta del número legal de miembros
+- La mitad de los concejales, incluido el Alcalde
+- Un cuarto del número legal de miembros
+E El quórum debe mantenerse durante toda la sesión.
+R ROF art. 90.1
+
+Q Si en primera convocatoria no hay quórum, la sesión del Pleno se entiende convocada automáticamente:
+= A la misma hora, dos días después
+- Una hora después
+- Al día siguiente
+- A la semana siguiente
+E Si tampoco hay quórum entonces, se pospone el estudio de los asuntos a la siguiente sesión.
+R ROF art. 90.2
+
+Q En la aprobación del acta de la sesión anterior:
+= Solo cabe subsanar errores materiales o de hecho, nunca modificar el fondo de los acuerdos
+- Puede modificarse cualquier acuerdo
+- Se vota punto por punto
+- Debe leerse siempre íntegra
+E Si no hay observaciones, se considera aprobada.
+R ROF art. 91.1
+
+Q ¿Cómo se llama la propuesta sometida al Pleno tras el estudio del expediente por la Comisión Informativa?
+= Dictamen
+- Proposición
+- Moción
+- Enmienda
+E La proposición se refiere a un asunto no dictaminado incluido por urgencia (art. 82.3); la moción se presenta directamente por urgencia (art. 91.4).
+R ROF art. 97.1
+
+Q El ruego formulado en el Pleno:
+= Puede debatirse, pero en ningún caso someterse a votación
+- Se vota siempre al final de la sesión
+- Debe presentarse por escrito
+- Solo pueden formularlo los portavoces
+E Pueden plantearlo todos los miembros de la Corporación o los grupos a través de sus portavoces.
+R ROF art. 97.6
+
+Q Las preguntas formuladas por escrito con veinticuatro horas de antelación se contestan:
+= Ordinariamente en la sesión o, por causas motivadas, en la siguiente
+- Siempre por escrito en un plazo de diez días
+- En la sesión siguiente obligatoriamente
+- Solo si lo autoriza el Alcalde
+E Las orales se contestan generalmente en la sesión siguiente.
+R ROF art. 97.7
+
+Q ¿Cuándo existe mayoría simple según el ROF?
+= Cuando los votos afirmativos son más que los negativos
+- Cuando votan a favor más de la mitad de los presentes
+- Cuando votan a favor más de la mitad del número legal
+- Cuando no hay votos en contra
+E La mayoría absoluta exige más de la mitad del número legal de miembros.
+R ROF art. 99
+
+Q Los concejales que se ausentan del salón una vez iniciada la deliberación y no están presentes en la votación:
+= Se considera que se abstienen
+- Se considera que votan en contra
+- Se considera que votan a favor
+- Anulan la votación
+E Si vuelven antes de la votación, pueden participar en ella.
+R ROF art. 100.1
+
+Q En caso de empate en una votación del Pleno:
+= Se repite la votación y, si persiste, decide el voto de calidad del Presidente
+- Se entiende rechazada la propuesta
+- Decide el Secretario
+- Se aplaza a la sesión siguiente
+E Art. 100.2.
+R ROF art. 100.2
+
+Q ¿Para qué puede utilizarse la votación secreta?
+= Solo para la elección o destitución de personas
+- Para cualquier asunto si lo pide un grupo
+- Para los presupuestos
+- Para las ordenanzas fiscales
+E El sistema normal es la votación ordinaria; la nominal requiere solicitud de un grupo aprobada por mayoría simple.
+R ROF art. 102
+
+Q En la votación nominal, ¿quién vota en último lugar?
+= El Presidente
+- El concejal de menor edad
+- El Secretario
+- El portavoz del grupo mayoritario
+E Se llama por orden alfabético de apellidos y cada miembro responde «sí», «no» o «me abstengo».
+R ROF art. 101
+
+Q Entre la presentación de una moción de censura al Alcalde y la sesión extraordinaria deben transcurrir al menos:
+= Siete días
+- Tres días
+- Diez días
+- Quince días
+E Dentro de los dos días siguientes a la convocatoria pueden presentarse mociones alternativas.
+R ROF art. 107.3
+
+Q Si no hay previsión en el Reglamento orgánico, la Junta (Comisión) de Gobierno celebra sesión ordinaria:
+= Cada quince días como mínimo
+- Cada semana
+- Cada mes
+- Cada trimestre
+E El Alcalde fija por decreto el día y la hora.
+R ROF art. 112.2
+
+Q Las sesiones de la Junta (Comisión) de Gobierno:
+= No son públicas, y en diez días debe enviarse copia del acta a todos los miembros de la Corporación
+- Son públicas, como las del Pleno
+- Son públicas solo si ejerce competencias delegadas
+- Son secretas y no se comunican sus acuerdos
+E Para su constitución se requiere la mayoría absoluta de sus componentes; en segunda convocatoria, una hora después, basta un tercio (mínimo tres).
+R ROF art. 113.1
+
+Q La delegación de atribuciones se entiende aceptada tácitamente si el delegado no manifiesta lo contrario en:
+= Tres días hábiles desde la notificación
+- Diez días hábiles
+- Un mes
+- Veinticuatro horas
+E Salvo que se disponga otra cosa, la delegación es por término indefinido (art. 118).
+R ROF art. 114.1
+
+Q ¿Puede un órgano delegar en un tercero las atribuciones recibidas por delegación de otro?
+= No, en ningún caso
+- Sí, con autorización del Pleno
+- Sí, si es por término definido
+- Sí, si lo comunica al delegante
+E Art. 117.
+R ROF art. 117
+
+Q La Asamblea vecinal en régimen de concejo abierto celebra sesión ordinaria:
+= Como mínimo una vez al trimestre, en día festivo
+- Una vez al mes
+- Una vez al año
+- Cada quince días
+E Puede convocarse a toque de campana, por pregón, por anuncio u otro medio tradicional.
+R ROF art. 111.2

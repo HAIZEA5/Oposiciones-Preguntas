@@ -1,0 +1,207 @@
+Q ¿Cuál de estos NO figura entre los recursos de las Haciendas de las entidades locales de Bizkaia según el art. 2 de la Norma Foral 9/2005?
+= Las cuotas de la Seguridad Social
+- Los ingresos procedentes de su patrimonio y demás de Derecho privado
+- El producto de las multas y sanciones en el ámbito de sus competencias
+- Las participaciones en los tributos concertados, no concertados y demás ingresos públicos
+E Recursos: patrimonio, tributos propios y recargos, participaciones en tributos, subvenciones, precios públicos, operaciones de crédito, multas y sanciones y demás prestaciones de derecho público.
+R NF 9/2005 art. 2
+
+Q Según la Norma Foral 9/2005, los tributos propios de las entidades locales se clasifican en:
+= Impuestos, tasas y contribuciones especiales
+- Impuestos, tasas y precios públicos
+- Tasas, precios públicos y contribuciones especiales
+- Impuestos directos e indirectos
+E Los precios públicos no son tributos.
+R NF 9/2005 art. 2.1.b
+
+Q Para aplicar sus tributos, las entidades locales de Bizkaia gozan de las prerrogativas y garantías previstas en:
+= La Norma Foral General Tributaria
+- La Ley General Tributaria del Estado
+- La Ley 39/2015
+- El Concierto Económico
+E Art. 2.3: prerrogativas, garantías y facultades de la Hacienda Foral.
+R NF 9/2005 art. 2
+
+Q Los ingresos por la enajenación de bienes patrimoniales pueden destinarse a gastos corrientes:
+= Solo si se trata de parcelas sobrantes de vías públicas no edificables o de efectos no utilizables en servicios municipales
+- Siempre que lo apruebe el Pleno
+- En ningún caso
+- Siempre, sin limitación
+E Es la limitación de destino del art. 5.
+R NF 9/2005 art. 5
+
+Q ¿Cuál de estos NO es un principio de la tributación local según el art. 6?
+= Gravar los rendimientos obtenidos fuera del territorio de la entidad cuando el contribuyente esté empadronado en ella
+- No someter a gravamen bienes situados fuera del territorio de la entidad
+- Respetar la libertad de circulación y establecimiento de personas y la libre circulación de bienes, capitales y servicios
+- No gravar negocios o actos celebrados fuera del territorio de la entidad
+E Los tributos locales no pueden gravar bienes, actividades, rendimientos ni gastos de fuera del territorio de la entidad.
+R NF 9/2005 art. 6
+
+Q Los actos de aplicación de los tributos locales se impugnan en reposición:
+= Ante el mismo órgano que dictó el acto, en el plazo de un mes
+- Ante el Pleno, en el plazo de tres meses
+- Ante la Diputación Foral, en el plazo de un mes
+- Ante el Tribunal Económico-Administrativo Foral, en quince días
+E El mes se cuenta desde la notificación expresa o desde el fin de la exposición pública de padrones o matrículas.
+R NF 9/2005 art. 13
+
+Q La interposición del recurso de reposición contra un acto tributario local:
+= No suspende la ejecución del acto, salvo que se aporten garantías suficientes (con algunas excepciones para deudas pequeñas)
+- Suspende siempre la ejecución
+- Suspende la ejecución durante tres meses
+- Impide recaudar los intereses
+E Art. 13.3.
+R NF 9/2005 art. 13.3
+
+Q ¿Qué municipios de Bizkaia pueden tener un órgano propio para resolver reclamaciones económico-administrativas?
+= Bilbao y, previa aprobación de las Juntas Generales, los de más de 75.000 habitantes
+- Todos los de más de 20.000 habitantes
+- Solo Bilbao
+- Los de régimen de gran población
+E Su resolución pone fin a la vía administrativa y solo cabe recurso contencioso-administrativo.
+R NF 9/2005 art. 14
+
+Q Los acuerdos provisionales de aprobación o modificación de las ordenanzas fiscales se exponen en el tablón de anuncios durante:
+= Treinta días
+- Quince días
+- Veinte días hábiles
+- Dos meses
+E Dentro de ese plazo los interesados pueden examinar el expediente y presentar reclamaciones.
+R NF 9/2005 art. 16.1
+
+Q ¿Qué entidades deben publicar además el anuncio de exposición de las ordenanzas fiscales en un diario de los de mayor difusión de Bizkaia?
+= Las de población de derecho superior a diez mil habitantes
+- Las de más de cinco mil habitantes
+- Todas
+- Solo Bilbao
+E Todas deben publicarlo en el Boletín Oficial de Bizkaia.
+R NF 9/2005 art. 16.2
+
+Q Si durante la exposición pública de una ordenanza fiscal no se presentan reclamaciones:
+= El acuerdo provisional se entiende definitivamente adoptado, sin necesidad de acuerdo plenario
+- Hay que repetir la exposición
+- El Pleno debe aprobarla de nuevo
+- La ordenanza no entra en vigor
+E Art. 16.3.
+R NF 9/2005 art. 16.3
+
+Q Contra las ordenanzas fiscales de las entidades locales cabe:
+= Solo el recurso contencioso-administrativo, desde su publicación en el BOB
+- Recurso de reposición y después contencioso
+- Recurso de alzada ante la Diputación
+- Reclamación económico-administrativa
+E Art. 18.1.
+R NF 9/2005 art. 18.1
+
+Q ¿Cuál de estos impuestos es de exigencia obligatoria para las entidades locales de Bizkaia?
+= El Impuesto sobre Actividades Económicas
+- El Impuesto sobre Construcciones, Instalaciones y Obras
+- El Impuesto sobre el Incremento de Valor de los Terrenos de Naturaleza Urbana
+- El Impuesto sobre Gastos Suntuarios
+E Obligatorios: IBI, IAE e IVTM. Potestativos: ICIO e IIVTNU.
+R NF 9/2005 art. 20
+
+Q El ICIO y el IIVTNU son impuestos:
+= Potestativos: las entidades pueden establecerlos previo acuerdo de imposición y ordenanza fiscal
+- Obligatorios en todos los municipios
+- Obligatorios solo en los de más de 5.000 habitantes
+- Concertados de la Diputación Foral
+E Art. 20.2.
+R NF 9/2005 art. 20.2
+
+Q ¿Por cuál de estos servicios NO pueden exigir tasas las entidades locales?
+= Alumbrado de vías públicas
+- Recogida de basuras
+- Expedición de documentos administrativos
+- Licencias urbanísticas
+E Tampoco por abastecimiento de agua en fuentes públicas, vigilancia pública general, protección civil, limpieza de la vía pública y enseñanza obligatoria.
+R NF 9/2005 art. 22.1
+
+Q En las tasas por servicios que benefician a los ocupantes de viviendas o locales, es sustituto del contribuyente:
+= El propietario del inmueble, que puede repercutir las cuotas
+- El ocupante
+- La comunidad de propietarios
+- El Ayuntamiento
+E En las de licencias urbanísticas lo son los constructores y contratistas; en las de extinción de incendios, las aseguradoras.
+R NF 9/2005 art. 24.2
+
+Q ¿Cuándo es obligatorio el informe técnico-económico para establecer una tasa?
+= Para tasas por utilización privativa o aprovechamiento especial del dominio público, o para financiar nuevos servicios
+- Siempre que se modifique cualquier tasa
+- Solo si la tasa supera 3.000 euros
+- Nunca, es potestativo
+E No hace falta en las revalorizaciones generales ni en las disminuciones (salvo reducción sustancial del coste).
+R NF 9/2005 art. 26
+
+Q Las tasas de devengo periódico, si lo determina la ordenanza, se devengan:
+= El 1 de enero de cada año, con período impositivo del año natural
+- El 1 de julio
+- El día de alta en el padrón cada año
+- El 31 de diciembre
+E Con prorrateo en los casos de inicio o cese.
+R NF 9/2005 art. 27.2
+
+Q El hecho imponible de las contribuciones especiales es:
+= La obtención de un beneficio o de un aumento de valor de los bienes por obras públicas o por el establecimiento o ampliación de servicios públicos
+- La utilización privativa del dominio público
+- La realización de construcciones o instalaciones
+- La titularidad de bienes inmuebles
+E Art. 30.
+R NF 9/2005 art. 30
+
+Q La base imponible de las contribuciones especiales está constituida, como máximo, por:
+= El 90 % del coste que soporte la entidad local
+- El 100 % del coste de la obra
+- El 50 % del coste
+- El 75 % del presupuesto de licitación
+E Art. 33.1.
+R NF 9/2005 art. 33.1
+
+Q Las cantidades recaudadas por contribuciones especiales:
+= Solo pueden destinarse a sufragar los gastos de la obra o servicio por el que se exigieron
+- Pueden destinarse a cualquier gasto de inversión
+- Se ingresan en el Udalkutxa
+- Pueden destinarse a gastos corrientes
+E Art. 31.3.
+R NF 9/2005 art. 31.3
+
+Q ¿Cómo se llama el Fondo Foral de Financiación Municipal de Bizkaia?
+= Udalkutxa
+- Udalaguntza
+- Bizkaibus
+- Eudel
+E Es la participación de los municipios en los tributos concertados.
+R NF 9/2005 art. 41
+
+Q El importe de los precios públicos debe cubrir, como mínimo:
+= El coste del servicio prestado o de la actividad realizada
+- El 50 % del coste
+- El 90 % del coste
+- El valor de mercado del servicio
+E Pueden fijarse por debajo por razones sociales, benéficas, culturales o de interés público, consignando en el presupuesto la diferencia.
+R NF 9/2005 art. 47
+
+Q ¿Qué órgano establece o modifica los precios públicos?
+= El Pleno, que puede delegar en la Junta de Gobierno Local
+- El Alcalde
+- La Comisión de Hacienda
+- La Diputación Foral
+E Los organismos autónomos pueden fijarlos por atribución, salvo que no cubran su coste.
+R NF 9/2005 art. 50
+
+Q Las operaciones de crédito a corto plazo para necesidades transitorias de tesorería no pueden superar, en conjunto:
+= El 30 % de los ingresos liquidados por operaciones corrientes del ejercicio anterior
+- El 10 % del presupuesto
+- El 50 % de los ingresos corrientes
+- El 110 % de los ingresos corrientes
+E Su plazo no puede exceder de un año.
+R NF 9/2005 art. 54
+
+Q La concertación o modificación de operaciones de crédito debe acordarse previo informe de:
+= La Intervención
+- La Secretaría
+- La Tesorería
+- El Tribunal Vasco de Cuentas Públicas
+E Además, deben estar incluidas en el presupuesto definitivo en vigor y respetar el principio de prudencia financiera.
+R NF 9/2005 art. 53

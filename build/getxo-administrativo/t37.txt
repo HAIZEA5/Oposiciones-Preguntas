@@ -1,0 +1,159 @@
+Q Según el art. 22 de la Ley 38/2003, el procedimiento ordinario de concesión de subvenciones se tramita en régimen de:
+= Concurrencia competitiva
+- Concesión directa
+- Adjudicación negociada
+- Libre designación
+E Se comparan las solicitudes y se establece una prelación según los criterios de valoración de las bases.
+R LGS art. 22.1
+
+Q ¿Cuál de estas subvenciones puede concederse de forma directa según el art. 22.2?
+= Las previstas nominativamente en los presupuestos
+- Las de cuantía inferior a 3.000 euros
+- Las solicitadas por asociaciones vecinales
+- Las de carácter plurianual
+E También las impuestas por una norma de rango legal y, con carácter excepcional, las que acrediten razones de interés público, social, económico o humanitario.
+R LGS art. 22.2
+
+Q En la concurrencia competitiva, el procedimiento se inicia siempre:
+= De oficio, mediante convocatoria aprobada por el órgano competente
+- A solicitud del interesado
+- Por convenio
+- Por resolución judicial
+E La convocatoria se publica en la BDNS y un extracto en el diario oficial correspondiente.
+R LGS art. 23
+
+Q ¿Qué órgano formula la propuesta de resolución provisional en la concurrencia competitiva?
+= El órgano instructor, a la vista del expediente y del informe del órgano colegiado
+- El órgano colegiado de valoración
+- La Intervención
+- El órgano concedente
+E El órgano colegiado emite informe con el resultado de la evaluación.
+R LGS art. 24
+
+Q Si no se notifica la resolución en el plazo máximo, las solicitudes de subvención se entienden:
+= Desestimadas por silencio administrativo
+- Estimadas
+- Caducadas
+- Archivadas sin efectos
+E Art. 25.5. El plazo máximo de resolución no puede exceder de seis meses, salvo que una ley o la normativa comunitaria fije otro.
+R LGS art. 25
+
+Q El plazo máximo para resolver y notificar en los procedimientos de concesión no puede exceder de:
+= Seis meses, salvo previsión legal o comunitaria
+- Tres meses
+- Un año
+- Dos meses
+E Se computa desde la publicación de la convocatoria, salvo que esta posponga sus efectos.
+R LGS art. 25.4
+
+Q La rendición de la cuenta justificativa constituye un acto obligatorio del:
+= Beneficiario o la entidad colaboradora
+- Órgano concedente
+- Interventor
+- Tribunal de Cuentas
+E Debe incluir una declaración de las actividades realizadas y su coste, con el desglose de los gastos.
+R LGS art. 30
+
+Q Cuando el importe del gasto subvencionable supera las cuantías del contrato menor, el beneficiario debe solicitar como mínimo:
+= Tres ofertas de diferentes proveedores
+- Dos presupuestos
+- Una oferta y un informe técnico
+- Cinco ofertas
+E Salvo que no haya en el mercado suficiente número de entidades que lo presten o suministren.
+R LGS art. 31.3
+
+Q ¿Se consideran gastos subvencionables los intereses deudores de las cuentas bancarias?
+= No, en ningún caso
+- Sí, siempre
+- Sí, si lo prevén las bases
+- Solo en subvenciones de capital
+E Tampoco los intereses, recargos y sanciones administrativas y penales ni los gastos de procedimientos judiciales (art. 31.7).
+R LGS art. 31.7
+
+Q El pago de la subvención se realiza, con carácter general:
+= Previa justificación de la realización de la actividad
+- Antes de iniciar la actividad
+- Al conceder la subvención en todo caso
+- Al año de la concesión
+E Pueden preverse pagos anticipados y abonos a cuenta si lo establecen las bases.
+R LGS art. 34.3
+
+Q ¿Puede pagarse una subvención a un beneficiario que no esté al corriente de sus obligaciones tributarias?
+= No
+- Sí, si lo autoriza el órgano concedente
+- Sí, en las nominativas
+- Sí, si presenta aval
+E Tampoco si es deudor por resolución de procedencia de reintegro.
+R LGS art. 34.5
+
+Q ¿Cuál de estas es causa de nulidad de la resolución de concesión según el art. 36?
+= La carencia o insuficiencia de crédito
+- El retraso en la justificación
+- El cambio de domicilio del beneficiario
+- La falta de publicidad del logotipo
+E Junto a las causas generales de nulidad de la Ley 39/2015.
+R LGS art. 36.1
+
+Q ¿Cuál de estas es causa de reintegro según el art. 37?
+= Obtener la subvención falseando las condiciones requeridas u ocultando las que lo hubieran impedido
+- Terminar la actividad antes del plazo
+- Cambiar de representante legal
+- Pedir otra subvención
+E También el incumplimiento total o parcial del objetivo, de la obligación de justificación o la resistencia al control financiero.
+R LGS art. 37.1
+
+Q En caso de reintegro, ¿desde cuándo se exige el interés de demora?
+= Desde el momento del pago de la subvención hasta la fecha en que se acuerde la procedencia del reintegro
+- Desde la notificación de la resolución de reintegro
+- Desde la fecha de la convocatoria
+- No se exige interés
+E Art. 37.1.
+R LGS art. 37.1
+
+Q El interés de demora aplicable a las cantidades a reintegrar es el interés legal del dinero:
+= Incrementado en un 25 %, salvo que la Ley de Presupuestos establezca otro
+- Sin incremento
+- Duplicado
+- Incrementado en un 10 %
+E Las cantidades a reintegrar tienen la consideración de ingresos de derecho público.
+R LGS art. 38
+
+Q ¿En qué plazo prescribe el derecho de la Administración a reconocer o liquidar el reintegro?
+= Cuatro años
+- Cinco años
+- Tres años
+- Diez años
+E Se computa, en general, desde el vencimiento del plazo de justificación.
+R LGS art. 39.1
+
+Q ¿Quiénes responden solidariamente de la obligación de reintegro?
+= Los miembros de las agrupaciones sin personalidad, en proporción a sus compromisos
+- Los proveedores del beneficiario
+- Los funcionarios que tramitaron la subvención
+- Los vecinos del municipio
+E Art. 40.2.
+R LGS art. 40
+
+Q El plazo máximo para resolver y notificar la resolución del procedimiento de reintegro es de:
+= Doce meses desde el acuerdo de iniciación
+- Seis meses
+- Tres meses
+- Dos años
+E Si vence sin resolución, se produce la caducidad (art. 42.4).
+R LGS art. 42.4
+
+Q La resolución del procedimiento de reintegro:
+= Pone fin a la vía administrativa
+- Es recurrible en alzada
+- No es recurrible
+- Requiere confirmación judicial
+E Art. 42.5.
+R LGS art. 42.5
+
+Q La subvención concedida para una actividad puede alterarse en su resolución de concesión:
+= Por la alteración de las condiciones tenidas en cuenta y la obtención concurrente de otras ayudas
+- Libremente por el beneficiario
+- Nunca
+- Solo por el Pleno
+E Art. 19.4.
+R LGS art. 19.4

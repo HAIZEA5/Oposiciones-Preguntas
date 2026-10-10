@@ -1,0 +1,191 @@
+Q Según el art. 35 de la Ley vasca 1/2023, ¿puede imponerse una sanción sin tramitar el procedimiento?
+= No, en ningún caso
+- Sí, en las infracciones leves
+- Sí, si el infractor reconoce los hechos
+- Sí, en la tramitación simplificada
+E Es la regla del art. 35.1.
+R Ley 1/2023 art. 35.1
+
+Q ¿Cómo se inician los procedimientos sancionadores según el art. 35.2?
+= De oficio, por propia iniciativa, orden superior, iniciativa de personas interesadas, petición razonada de otros órganos o denuncia
+- Solo por denuncia
+- Solo a solicitud del perjudicado
+- Por acuerdo judicial
+E La Ley 1/2023 añade la iniciativa de personas interesadas, que no recoge la Ley 39/2015 en la iniciación de oficio.
+R Ley 1/2023 art. 35.2
+
+Q La petición razonada de otro órgano para iniciar un procedimiento sancionador:
+= No vincula al órgano competente, que debe comunicar su decisión y los motivos si no inicia
+- Obliga a iniciar el procedimiento
+- Solo puede formularla un órgano superior
+- Debe ser aprobada por el Pleno
+E Art. 35.10.
+R Ley 1/2023 art. 35.10
+
+Q Si la persona denunciante lo solicita, la Administración:
+= Adoptará medidas de protección de su identidad
+- Debe archivar la denuncia
+- Le dará la condición de interesada
+- Le concederá una recompensa
+E Art. 35.13.
+R Ley 1/2023 art. 35.13
+
+Q La presentación de una denuncia:
+= No confiere, por sí sola, la condición de persona interesada
+- Convierte siempre al denunciante en interesado
+- Obliga a abrir un periodo de prueba
+- Suspende la prescripción
+E El denunciante no interesado solo tiene derecho a que se le comunique si se abre o no el procedimiento y, en su caso, la resolución.
+R Ley 1/2023 art. 35.16
+
+Q En la iniciación a instancia de parte, de la solicitud se da traslado a los presuntos responsables para que aleguen en un plazo común de:
+= Diez días
+- Cinco días
+- Quince días
+- Un mes
+E Después, el órgano competente decide sobre su admisibilidad.
+R Ley 1/2023 art. 36.2
+
+Q ¿Cuál de estas es una causa de inadmisión de la solicitud de apertura a instancia de parte, sin posibilidad de subsanación?
+= Que carezca notoriamente de fundamento
+- Que le falte la firma
+- Que no indique el domicilio
+- Que se presente en papel
+E Tampoco es subsanable presentarla quien no es persona interesada.
+R Ley 1/2023 art. 36.4
+
+Q ¿Cuál de estos contenidos NO es obligatorio en el acuerdo de iniciación según el art. 37?
+= La sanción definitiva que se impondrá
+- La identificación de la persona presuntamente responsable
+- La persona instructora y su régimen de recusación
+- La identificación de la víctima
+E Se indican las sanciones que pudieran corresponder, sin perjuicio de lo que resulte de la instrucción.
+R Ley 1/2023 art. 37.1
+
+Q Notificado el acuerdo de iniciación, los interesados disponen para alegar y proponer prueba de un plazo de:
+= Quince días
+- Diez días
+- Cinco días
+- Un mes
+E Igual que en la Ley 39/2015 (art. 64.2.f).
+R Ley 1/2023 art. 37.2
+
+Q Según el art. 37.7, los informes y declaraciones de los agentes de la autoridad:
+= Deben ser motivados y coherentes y admiten prueba en contrario
+- Hacen prueba plena sin admitir prueba en contrario
+- No tienen valor probatorio
+- Solo valen si los ratifica un juez
+E Para garantizar los principios de contradicción e igualdad.
+R Ley 1/2023 art. 37.7
+
+Q ¿Qué duración tiene el periodo probatorio en la Ley 1/2023?
+= Treinta días hábiles
+- Entre diez y treinta días
+- Quince días hábiles
+- Veinte días naturales
+E Puede reducirse hasta un mínimo de diez días o prorrogarse una sola vez hasta diez días más (art. 41).
+R Ley 1/2023 art. 38.2
+
+Q Cuando el instructor abre de oficio el periodo de prueba, da a los interesados para proponer pruebas un plazo de:
+= Cinco días
+- Diez días
+- Quince días
+- Tres días
+E Art. 38.1.b.
+R Ley 1/2023 art. 38.1.b
+
+Q ¿En qué caso el instructor pone fin al procedimiento con archivo, sin propuesta de resolución?
+= Cuando la infracción haya prescrito
+- Cuando el infractor no presente alegaciones
+- Cuando haya pruebas suficientes
+- Cuando el denunciante desista
+E También si los hechos no existen o no se acreditan, no son infracción o no hay responsable identificado.
+R Ley 1/2023 art. 39.3
+
+Q Notificada la propuesta de instrucción, los interesados disponen para formular alegaciones en audiencia de:
+= Quince días
+- Diez días
+- Cinco días
+- Veinte días
+E Si la propuesta de resolución introduce modificaciones, se da un nuevo plazo de diez días.
+R Ley 1/2023 art. 40
+
+Q Los actos del instructor que deniegan la apertura del periodo de prueba son recurribles:
+= En tres días ante el órgano competente para resolver, que decide en tres días; el silencio es desestimatorio
+- En un mes en alzada
+- No son recurribles
+- En diez días ante el instructor
+E Art. 42.
+R Ley 1/2023 art. 42
+
+Q Las actuaciones complementarias se llevan a cabo en el plazo de:
+= Quince días, y los interesados pueden alegar en siete días
+- Diez días, con alegaciones en cinco
+- Un mes
+- Siete días, con alegaciones en quince
+E Su inicio interrumpe el cómputo del plazo de caducidad.
+R Ley 1/2023 art. 43
+
+Q Si el órgano competente para resolver considera que procede una sanción más grave que la propuesta, debe conceder a los interesados para alegar:
+= Quince días
+- Diez días
+- Cinco días
+- Un mes
+E Y expresar y motivar con precisión la variación.
+R Ley 1/2023 art. 44.3
+
+Q La resolución sancionadora debe notificarse en el plazo de:
+= Diez días
+- Quince días
+- Un mes
+- Tres días
+E Indicando los recursos que procedan, el órgano y el plazo.
+R Ley 1/2023 art. 44.4
+
+Q ¿Cuándo es ejecutiva la resolución sancionadora?
+= Cuando adquiere firmeza en vía administrativa
+- Desde que se dicta
+- Desde que es firme en vía judicial
+- Al mes de su notificación
+E Puede suspenderse cautelarmente si el interesado anuncia que interpondrá recurso contencioso-administrativo.
+R Ley 1/2023 art. 44.5 y 7
+
+Q Cuando la sanción es solo pecuniaria, el reconocimiento de responsabilidad y el pago voluntario dan lugar a reducciones de:
+= Al menos el 20 % cada una, acumulables entre sí
+- El 50 % en total
+- El 10 % cada una, no acumulables
+- El 30 % solo por pronto pago
+E Condicionadas al desistimiento o renuncia de cualquier acción o recurso en vía administrativa.
+R Ley 1/2023 art. 47.3
+
+Q ¿En qué plazo caduca el procedimiento sancionador si no se notifica la resolución?
+= Seis meses desde el acuerdo de iniciación
+- Tres meses
+- Un año
+- Nueve meses
+E El plazo se interrumpe mientras el procedimiento esté paralizado por causas imputables a los interesados.
+R Ley 1/2023 art. 49.1
+
+Q ¿Interrumpen la prescripción los procedimientos caducados?
+= No
+- Sí, siempre
+- Solo en infracciones muy graves
+- Solo si se notificó el acuerdo de iniciación
+E La caducidad no produce por sí sola la prescripción; puede abrirse un nuevo procedimiento si no ha prescrito.
+R Ley 1/2023 art. 49.4
+
+Q La tramitación simplificada del procedimiento sancionador procede cuando:
+= Hay elementos suficientes para calificar la infracción como leve
+- La infracción es grave
+- El infractor lo solicita
+- Hay más de un responsable
+E La oposición del interesado no obliga a seguir la tramitación ordinaria.
+R Ley 1/2023 art. 50.1 y 2
+
+Q Los procedimientos tramitados de forma simplificada deben resolverse en:
+= Treinta días desde la notificación del acuerdo de tramitación simplificada
+- Diez días
+- Tres meses
+- Seis meses
+E Con alegaciones al inicio en cinco días y audiencia solo si la resolución va a ser desfavorable.
+R Ley 1/2023 art. 50.3
