@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tests de oposiciones</title>
+<meta name="theme-color" content="#1F4D3A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tests">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F7F4; --card:#FFFFFF; --ink:#1D2724; --soft:#5B6762; --line:#D5DBD7;
+  --green:#1F4D3A; --brass:#A9822F; --ok:#2E7A53; --ok-bg:#E3F1E8; --bad:#B23B2C; --bad-bg:#F8E4E0;
+  --serif:"Literata", Georgia, "Times New Roman", serif;
+  --sans:"Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#141917; --card:#1C2320; --ink:#E7ECE9; --soft:#9AA6A0; --line:#33403A;
+    --green:#8CC4A8; --brass:#D2AE5E; --ok:#7CCB9E; --ok-bg:#1C3328; --bad:#F08C7C; --bad-bg:#3A2320;
+  }
+}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2;margin:0}
+h1{font-size:1.75rem;color:var(--green)}
+.lead{color:var(--soft);margin:6px 0 24px}
+button{font:inherit;cursor:pointer;color:inherit}
+button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+.volver{background:none;border:0;padding:4px 0;margin-bottom:10px;color:var(--green);font-weight:700}
+.ficha{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px 20px 28px;position:relative;margin-bottom:16px}
+.ficha::after{content:"";position:absolute;left:50%;bottom:9px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--paper);border:1px solid var(--line)}
+.ficha .sig{position:absolute;top:14px;right:16px;font-size:.8rem;color:var(--brass);font-weight:700}
+.ficha h2{font-size:1.25rem;padding-right:64px}
+.ficha p{margin:6px 0 0;color:var(--soft);font-size:.95rem}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.btn{border:0;border-radius:6px;padding:12px 18px;font-weight:700;background:var(--green);color:var(--card)}
+.btn.sec{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn[disabled]{opacity:.4;cursor:default}
+.barra{display:flex;justify-content:space-between;align-items:baseline;font-size:.9rem;color:var(--soft);margin-bottom:8px}
+.barra button{background:none;border:0;padding:4px 0;color:var(--green);font-weight:700}
+.progreso{height:4px;background:var(--line);border-radius:2px;overflow:hidden;margin-bottom:20px}
+.progreso i{display:block;height:100%;background:var(--brass);transition:width .25s}
+.pregunta{font-family:var(--serif);font-size:1.2rem;line-height:1.55;margin:0 0 18px}
+.opciones{display:grid;gap:10px}
+.op{display:flex;gap:12px;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:6px;padding:13px 14px;line-height:1.4}
+.op b{color:var(--soft);flex:none}
+.op.ok{border-color:var(--ok);background:var(--ok-bg)}
+.op.ok b{color:var(--ok)}
+.op.bad{border-color:var(--bad);background:var(--bad-bg)}
+.op.bad b{color:var(--bad)}
+.op[disabled]{cursor:default}
+.explica{margin-top:16px;border-left:3px solid var(--brass);padding:4px 0 4px 14px}
+.explica strong{display:block;margin-bottom:2px}
+.explica .ref,.fallos .ref{color:var(--brass);font-weight:700;font-size:.9rem}
+.siguiente{margin-top:20px;width:100%}
+.nota{font-family:var(--serif);font-size:3.2rem;color:var(--green);line-height:1;margin:8px 0 4px}
+.fallos{margin:24px 0 0;padding:0;list-style:none}
+.fallos li{border-top:1px solid var(--line);padding:14px 0}
+.fallos .q{font-family:var(--serif)}
+.fallos .r{color:var(--ok);font-weight:700;margin-top:4px}
+@media (prefers-reduced-motion:reduce){.progreso i{transition:none}}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>const OPOSICIONES = [];</script>
+<!-- Una línea por oposición. Para añadir una nueva: crear data/nombre.js y añadir aquí su línea. -->
+<script src="data/biblioteca-dfb.js"></script>
+<script>
+const KEY="tests-oposiciones-v1";
+function cargar(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+function guardar(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
+let datos=cargar();
+function estado(oid,tid){const k=oid+"/"+tid;datos[k]=datos[k]||{mejor:null,falladas:[]};return datos[k]}
+
+const app=document.getElementById("app");
+let opo=null, ses=null;
+const barajar=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function portada(){
+  opo=null; ses=null;
+  if(OPOSICIONES.length===1){temas(OPOSICIONES[0].id,true);return}
+  let h='<h1>Tests de oposiciones</h1><p class="lead">Elige la oposición.</p>';
+  OPOSICIONES.forEach(o=>{
+    const n=o.temas.reduce((s,t)=>s+t.preguntas.length,0);
+    h+=`<section class="ficha"><h2>${esc(o.nombre)}</h2><p>${esc(o.sub)}</p><p>${o.temas.length} temas · ${n} preguntas.</p>
+    <div class="acciones"><button class="btn" data-o="${o.id}">Entrar</button></div></section>`;
+  });
+  app.innerHTML=h;
+  app.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>temas(b.dataset.o));
+  window.scrollTo(0,0);
+}
+
+function temas(oid,unica){
+  opo=OPOSICIONES.find(o=>o.id===oid); ses=null;
+  let h=unica?'':'<button class="volver" id="vol">← Oposiciones</button>';
+  h+=`<h1>${esc(opo.nombre)}</h1><p class="lead">${esc(opo.sub)} Elige un tema.</p>`;
+  opo.temas.forEach(t=>{
+    const s=estado(opo.id,t.id), n=t.preguntas.length, f=s.falladas.length;
+    const mejor=s.mejor===null?"Aún no lo has hecho":`Mejor resultado: ${s.mejor} de ${n}`;
+    h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>${esc(t.sub||"")}</p><p>${n} preguntas. ${mejor}.</p>
+    <div class="acciones"><button class="btn" data-a="todo" data-t="${t.id}">Empezar el test</button>
+    <button class="btn sec" data-a="falladas" data-t="${t.id}" ${f?"":"disabled"}>Repasar falladas (${f})</button></div></section>`;
+  });
+  app.innerHTML=h;
+  if(!unica)document.getElementById("vol").onclick=portada;
+  app.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>empezar(b.dataset.t,b.dataset.a));
+  window.scrollTo(0,0);
+}
+
+function empezar(tid,modo){
+  const t=opo.temas.find(x=>x.id===tid), s=estado(opo.id,tid);
+  const ps=modo==="falladas"?t.preguntas.filter(p=>s.falladas.includes(p.id)):t.preguntas;
+  ses={t,modo,ps:barajar(ps),i:0,aciertos:0,fallos:[]};
+  pregunta();
+}
+
+function pregunta(){
+  const p=ses.ps[ses.i], n=ses.ps.length;
+  const ops=barajar(p.o.map((txt,k)=>({txt,ok:k===0})));
+  let h=`<div class="barra"><button id="salir">Salir</button><span>Pregunta ${ses.i+1} de ${n}</span></div>
+  <div class="progreso"><i style="width:${(ses.i/n)*100}%"></i></div>
+  <p class="pregunta">${esc(p.q)}</p><div class="opciones">`;
+  ops.forEach((o,k)=>{h+=`<button class="op" data-k="${k}"><b>${"abcd"[k]})</b><span>${esc(o.txt)}</span></button>`});
+  h+='</div><div id="tras"></div>';
+  app.innerHTML=h;
+  document.getElementById("salir").onclick=()=>temas(opo.id,OPOSICIONES.length===1);
+  const botones=[...app.querySelectorAll(".op")];
+  botones.forEach(b=>b.onclick=()=>{
+    const elegida=ops[+b.dataset.k], s=estado(opo.id,ses.t.id);
+    botones.forEach((x,k)=>{x.disabled=true;if(ops[k].ok)x.classList.add("ok")});
+    if(elegida.ok){ses.aciertos++;s.falladas=s.falladas.filter(id=>id!==p.id)}
+    else{b.classList.add("bad");ses.fallos.push(p);if(!s.falladas.includes(p.id))s.falladas.push(p.id)}
+    guardar(datos);
+    const ult=ses.i===n-1;
+    document.getElementById("tras").innerHTML=`<div class="explica"><strong>${elegida.ok?"Correcto.":"No es esa."}</strong>${esc(p.e||"")}<div class="ref">${esc(p.r||"")}</div></div>
+    <button class="btn siguiente" id="sig">${ult?"Ver el resultado":"Siguiente pregunta"}</button>`;
+    const sig=document.getElementById("sig");sig.focus({preventScroll:true});
+    sig.scrollIntoView({block:"nearest",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+    sig.onclick=()=>{if(ult)resultado();else{ses.i++;pregunta();window.scrollTo(0,0)}};
+  });
+}
+
+function resultado(){
+  const n=ses.ps.length, a=ses.aciertos, s=estado(opo.id,ses.t.id);
+  if(ses.modo==="todo"&&(s.mejor===null||a>s.mejor))s.mejor=a;
+  guardar(datos);
+  const pct=a/n;
+  const msg=pct===1?"Todas bien. Este tema está listo.":pct>=.8?"Muy bien. Repasa las que has fallado y vuelve en unos días.":pct>=.5?"Vas por buen camino. Relee los artículos de las falladas antes de repetir.":"Conviene releer el tema antes de repetir el test.";
+  let h=`<h1>Resultado</h1><p class="nota">${a} de ${n}</p><p class="lead">${msg}</p>
+  <div class="acciones"><button class="btn" id="rep">Repetir el test</button>
+  <button class="btn sec" id="fal" ${s.falladas.length?"":"disabled"}>Repasar falladas (${s.falladas.length})</button>
+  <button class="btn sec" id="vol">Volver a los temas</button></div>`;
+  if(ses.fallos.length){
+    h+='<ul class="fallos">';
+    ses.fallos.forEach(p=>{h+=`<li><div class="q">${esc(p.q)}</div><div class="r">${esc(p.o[0])}</div><div class="ref">${esc(p.r||"")}</div></li>`});
+    h+='</ul>';
+  }
+  app.innerHTML=h;
+  const tid=ses.t.id;
+  document.getElementById("rep").onclick=()=>empezar(tid,"todo");
+  document.getElementById("fal").onclick=()=>empezar(tid,"falladas");
+  document.getElementById("vol").onclick=()=>temas(opo.id,OPOSICIONES.length===1);
+  window.scrollTo(0,0);
+}
+portada();
+if("serviceWorker" in navigator){window.addEventListener("load",()=>{navigator.serviceWorker.register("sw.js").catch(()=>{})})}
+</script>
+</body>
+</html>
