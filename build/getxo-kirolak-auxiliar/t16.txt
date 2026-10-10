@@ -1,0 +1,135 @@
+Q El archivo de oficina o de gestión es aquel que conserva:
+= La documentación en tramitación o de consulta frecuente por la propia unidad
+- La documentación con valor histórico permanente
+- La documentación de todas las Administraciones
+- Solo los documentos en papel
+E Según el ciclo vital, los documentos pasan del archivo de oficina al central, al intermedio y al histórico.
+R Ciclo vital de los documentos
+
+Q ¿Cuál es el orden habitual de los archivos según el ciclo vital de los documentos?
+= Archivo de oficina, archivo central, archivo intermedio y archivo histórico
+- Archivo histórico, central, intermedio y de oficina
+- Archivo central, de oficina, histórico e intermedio
+- Archivo intermedio, de oficina, central e histórico
+E Cada fase corresponde a una edad del documento: activa, semiactiva e inactiva.
+R Ciclo vital de los documentos
+
+Q El envío organizado de documentación de un archivo a otro siguiendo el ciclo vital se llama:
+= Transferencia
+- Expurgo
+- Préstamo
+- Digitalización
+E Se acompaña de una relación de entrega o relación de transferencia.
+R Gestión de archivos
+
+Q La operación de seleccionar y eliminar los documentos que no tienen valor para su conservación se llama:
+= Expurgo (eliminación) tras la valoración documental
+- Transferencia
+- Clasificación
+- Ordenación
+E La eliminación de documentos públicos solo puede hacerse siguiendo el procedimiento y los calendarios aprobados.
+R Gestión de archivos
+
+Q Agrupar los documentos según las funciones y actividades de la organización, mediante un cuadro, se llama:
+= Clasificación
+- Ordenación
+- Instalación
+- Descripción
+E La ordenación dispone los documentos dentro de cada serie (por fecha, alfabética, numérica).
+R Tratamiento archivístico
+
+Q ¿Cuál de estos es un sistema de ordenación de documentos?
+= Cronológico
+- Por calendario de conservación
+- Por transferencia
+- Por valoración
+E Otros: alfabético (onomástico, geográfico, por materias), numérico y alfanumérico.
+R Ordenación
+
+Q En la ordenación alfabética de apellidos, las partículas como «de», «del» o «la»:
+= Normalmente no se tienen en cuenta y se colocan al final
+- Se colocan siempre al principio
+- Determinan el orden
+- Se eliminan del nombre
+E Por ejemplo, «Torre, Ana de la».
+R Ordenación alfabética
+
+Q El conjunto de documentos producidos por un mismo órgano en el desarrollo de una misma actividad o función se llama:
+= Serie documental
+- Fondo
+- Sección
+- Unidad documental simple
+E El fondo es el conjunto de documentos de un mismo productor.
+R Conceptos archivísticos
+
+Q ¿Qué norma establece que cada Administración mantendrá un archivo electrónico único de los procedimientos finalizados?
+= La Ley 39/2015 (art. 17)
+- La Ley 40/2015 (art. 3)
+- La Ley 19/2013
+- El Código Civil
+E Los documentos deben conservarse en un formato que garantice su autenticidad, integridad y conservación.
+R Ley 39/2015 art. 17
+
+Q Según el art. 17.3 de la Ley 39/2015, los medios o soportes de los documentos electrónicos deben contar con medidas de seguridad conforme a:
+= El Esquema Nacional de Seguridad
+- El Esquema Nacional de Interoperabilidad únicamente
+- La Ley de Propiedad Intelectual
+- La normativa de Correos
+E Deben garantizar la integridad, autenticidad, confidencialidad, calidad, protección y conservación, y el cumplimiento de la protección de datos.
+R Ley 39/2015 art. 17.3
+
+Q Los metadatos de un documento electrónico son:
+= Datos asociados al documento que describen su contexto, contenido y estructura
+- El contenido del documento
+- La firma del documento
+- Copias de seguridad
+E Por ejemplo: órgano, fecha de captura, origen, estado de elaboración y tipo documental.
+R Documento electrónico
+
+Q El formato de archivo recomendado para conservar documentos electrónicos a largo plazo es:
+= PDF/A
+- DOCX
+- JPG con compresión
+- TXT sin metadatos
+E Es una norma ISO pensada para la conservación a largo plazo.
+R Documento electrónico
+
+Q El documento que enumera las series documentales y fija sus plazos de conservación, transferencia o eliminación se llama:
+= Calendario de conservación
+- Cuadro de clasificación
+- Registro de entrada
+- Inventario de bienes
+E Lo aprueba el órgano competente en materia de valoración documental.
+R Gestión de archivos
+
+Q El acceso de la ciudadanía a los archivos y registros administrativos está reconocido en:
+= El art. 105.b de la Constitución
+- El art. 103 de la Constitución
+- El art. 149 de la Constitución
+- El art. 9.3 de la Constitución
+E Salvo en lo que afecte a la seguridad y defensa del Estado, la averiguación de los delitos y la intimidad de las personas.
+R CE art. 105.b
+
+Q En la Administración vasca, el sistema que organiza la gestión de los documentos y archivos de la Administración General de la Comunidad Autónoma se denomina:
+= Sistema de Archivo de la Administración Pública de la Comunidad Autónoma de Euskadi
+- Archivo Histórico Nacional
+- Registro Electrónico General
+- Euskadi.eus
+E Es el sistema citado en el temario del IVAP para este tema.
+R Archivo de la Administración vasca
+
+Q La unidad documental compuesta, formada por varios documentos relacionados con un mismo asunto, es:
+= El expediente
+- El documento simple
+- La serie
+- El fondo
+E El documento simple es una unidad documental aislada.
+R Conceptos archivísticos
+
+Q Prestar un documento de archivo a una unidad administrativa exige normalmente:
+= Registrar el préstamo y controlar su devolución
+- Entregarlo sin control
+- Hacer siempre una copia auténtica
+- La autorización del Pleno
+E Así se garantiza que el documento vuelve a su sitio.
+R Gestión de archivos

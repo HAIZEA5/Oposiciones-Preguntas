@@ -1,0 +1,127 @@
+Q ¿Qué entidad presta en España el servicio postal universal?
+= La Sociedad Estatal Correos y Telégrafos
+- Cualquier empresa de mensajería
+- El Ministerio de Transportes directamente
+- Las Diputaciones Forales
+E Lo establece la Ley 43/2010, del servicio postal universal.
+R Ley 43/2010
+
+Q Un envío certificado se caracteriza por:
+= Dejar constancia de su admisión y de su entrega, con un número de seguimiento, y garantía frente a pérdida o deterioro
+- No dejar ningún registro
+- Entregarse siempre en mano al día siguiente
+- Ser gratuito para las Administraciones
+E Se entrega con firma del destinatario o de quien lo recoja.
+R Correspondencia
+
+Q El aviso o acuse de recibo es:
+= El documento que firma el destinatario al recibir el envío y que se devuelve al remitente como prueba de la entrega
+- El resguardo que se da al remitente al admitir el envío
+- La etiqueta con el código de seguimiento
+- La factura del envío
+E Es un servicio adicional del certificado, muy usado en las notificaciones administrativas en papel.
+R Correspondencia
+
+Q El reembolso, en los servicios postales, consiste en:
+= Que el destinatario pague una cantidad al recibir el envío, que se entrega después al remitente
+- Que el remitente recupere el dinero si el envío se pierde
+- Que el envío se devuelva al remitente sin abrir
+- Una tarifa reducida para Administraciones
+E Es habitual en ventas a distancia.
+R Paquetería
+
+Q El giro postal sirve para:
+= Enviar dinero a través de Correos
+- Enviar paquetes urgentes
+- Certificar el contenido de un escrito
+- Devolver un envío al remitente
+E Puede ser nacional o internacional.
+R Servicios postales
+
+Q El telegrama es un servicio de:
+= Transmisión rápida de un texto, que puede hacerse con acuse de recibo y certificación de contenido
+- Envío de paquetes
+- Envío de dinero
+- Mensajería instantánea por internet
+E Hoy se usa poco, salvo para comunicaciones con valor de prueba.
+R Servicios postales
+
+Q El burofax con certificación de contenido y acuse de recibo es útil porque:
+= Acredita el contenido de lo enviado, la fecha y la entrega
+- Es el envío más barato
+- No necesita firma del destinatario
+- Se entrega siempre en el mismo día
+E Por eso se usa para comunicaciones con valor probatorio.
+R Servicios postales
+
+Q Según la Ley 39/2015, ¿en qué oficinas pueden presentarse documentos dirigidos a una Administración, además del registro electrónico?
+= En las oficinas de Correos, en la forma que se establezca reglamentariamente
+- En cualquier comercio autorizado
+- En las oficinas bancarias
+- Solo en el ayuntamiento del domicilio
+E También en representaciones diplomáticas y oficinas consulares de España en el extranjero y en las oficinas de asistencia en materia de registros.
+R Ley 39/2015 art. 16.4
+
+Q La presentación de un escrito en Correos mediante el «correo administrativo» exige:
+= Presentarlo en sobre abierto para que se feche y selle la primera hoja antes de certificarlo
+- Presentarlo en sobre cerrado
+- Enviarlo por correo ordinario
+- Presentarlo solo en días hábiles por la tarde
+E Así consta la fecha de presentación a efectos del plazo.
+R Correo administrativo
+
+Q En la gestión de la correspondencia de entrada de una oficina, el primer paso es:
+= Recibir, comprobar y registrar los documentos
+- Archivar directamente los documentos
+- Responder a todos los escritos
+- Destruir los sobres sin mirar el remite
+E Después se distribuyen a la unidad competente.
+R Correspondencia de entrada
+
+Q En la correspondencia de salida, antes del envío hay que:
+= Registrar la salida, comprobar la dirección y los anexos y elegir la modalidad de envío adecuada
+- Enviar sin registrar
+- Usar siempre envío ordinario
+- Esperar a acumular varios envíos durante un mes
+E Si el envío debe acreditar la entrega, se usa certificado con acuse de recibo.
+R Correspondencia de salida
+
+Q Las notificaciones administrativas en papel se practican por:
+= Cualquier medio que permita dejar constancia de su recepción, la fecha, la identidad y el contenido
+- Correo ordinario sin acuse de recibo
+- Llamada telefónica
+- Publicación en redes sociales
+E Art. 41.1 de la Ley 39/2015. Por eso se usa el certificado con acuse de recibo.
+R Ley 39/2015 art. 41.1
+
+Q Si al intentar una notificación en papel en el domicilio no hay nadie, según el art. 42.2 de la Ley 39/2015:
+= Se hace constar en el expediente y se repite una sola vez en hora distinta dentro de los tres días siguientes
+- Se da por notificada
+- Se publica directamente en el BOE
+- Se archiva el expediente
+E Si en la primera hora fue antes de las 15:00, el segundo intento será después de las 15:00, y viceversa, con al menos tres horas de diferencia.
+R Ley 39/2015 art. 42.2
+
+Q El servicio de paquetería que garantiza la entrega en un plazo muy corto, normalmente al día siguiente, se llama:
+= Servicio urgente o exprés
+- Servicio ordinario
+- Correo administrativo
+- Apartado postal
+E Las empresas de mensajería ofrecen servicios similares.
+R Paquetería
+
+Q El apartado de correos es:
+= Un casillero en una oficina de Correos donde se recibe la correspondencia
+- Un tipo de envío urgente
+- El registro de envíos de una oficina
+- Un servicio de envío de dinero
+E Es útil cuando no se quiere recibir la correspondencia en el domicilio.
+R Servicios postales
+
+Q Para clasificar la correspondencia por destino, en España se usa:
+= El código postal, de cinco cifras
+- El NIF del destinatario
+- El número de teléfono
+- El código de la provincia de dos letras
+E Las dos primeras cifras indican la provincia (48 corresponde a Bizkaia).
+R Correspondencia

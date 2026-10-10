@@ -1,0 +1,135 @@
+Q La escucha activa consiste en:
+= Prestar atención plena al interlocutor y demostrarle que se le comprende, con gestos, preguntas y resúmenes
+- Esperar en silencio a que termine para responder
+- Interrumpir para ahorrar tiempo
+- Escuchar mientras se hacen otras tareas
+E Incluye mirar a la persona, no interrumpir, parafrasear y hacer preguntas aclaratorias.
+R Comunicación oral
+
+Q Repetir con otras palabras lo que ha dicho la persona para comprobar que se ha entendido se llama:
+= Parafrasear
+- Empatizar
+- Asertividad
+- Feedback negativo
+E Es una técnica de la escucha activa.
+R Comunicación oral
+
+Q La empatía en la atención al público es:
+= La capacidad de ponerse en el lugar de la otra persona y comprender su situación
+- La capacidad de imponer el propio criterio
+- La simpatía personal hacia la persona usuaria
+- Dar siempre la razón a la persona usuaria
+E No significa estar de acuerdo, sino comprender.
+R Habilidades sociales
+
+Q La asertividad es la capacidad de:
+= Expresar las propias opiniones y defender los propios derechos con respeto hacia los demás
+- Ceder siempre ante las peticiones
+- Imponer las propias ideas
+- Evitar cualquier conflicto callando
+E Está entre la conducta pasiva y la agresiva.
+R Habilidades sociales
+
+Q Al atender una llamada telefónica en un servicio público, lo correcto es:
+= Saludar, identificar el servicio y, en su caso, el nombre de quien atiende, y ofrecer ayuda
+- Contestar con un simple «¿sí?»
+- Esperar a que la persona se identifique primero
+- Pasar la llamada sin preguntar
+E En Euskadi, el saludo suele hacerse en las dos lenguas oficiales.
+R Atención telefónica
+
+Q En la comunicación telefónica, al no existir comunicación visual, cobra especial importancia:
+= El tono, el ritmo y la claridad de la voz
+- La postura corporal
+- El aspecto físico
+- La distancia con el interlocutor
+E La sonrisa también se percibe en la voz.
+R Atención telefónica
+
+Q Si hay que dejar a una persona en espera al teléfono, lo correcto es:
+= Pedirle permiso, explicar el motivo y no dejarla esperando mucho tiempo sin volver a atenderla
+- Dejar el teléfono sin avisar
+- Colgar y llamarla más tarde sin decirle nada
+- Mantenerla en espera el tiempo que haga falta
+E Si la espera se alarga, se ofrece devolver la llamada.
+R Atención telefónica
+
+Q Al transferir una llamada a otro compañero, se debe:
+= Informar a la persona de la transferencia y pasar al compañero los datos de la consulta para no repetirla
+- Transferir sin avisar
+- Pedir a la persona que llame a otro número
+- Colgar si el compañero no contesta
+E Así se evita que la persona tenga que explicar todo otra vez.
+R Atención telefónica
+
+Q Tomar un recado telefónico correctamente implica anotar:
+= Quién llama, para quién es, fecha y hora, el motivo y cómo contactar con quien llama
+- Solo el nombre de quien llama
+- Solo el número de teléfono
+- Lo que se recuerde después de colgar
+E El recado debe ser claro y llegar cuanto antes a su destinatario.
+R Atención telefónica
+
+Q ¿Qué parte de la comunicación transmite información mediante gestos, posturas y expresiones faciales?
+= La comunicación no verbal (kinesia)
+- La comunicación verbal escrita
+- El paralenguaje
+- La proxémica
+E El paralenguaje son los aspectos de la voz (tono, volumen, ritmo); la proxémica, el uso del espacio y la distancia.
+R Comunicación no verbal
+
+Q El uso del espacio y la distancia entre las personas al comunicarse se llama:
+= Proxémica
+- Kinesia
+- Paralenguaje
+- Cronémica
+E En la atención al público conviene respetar la distancia social.
+R Comunicación no verbal
+
+Q El volumen, el tono, la velocidad y las pausas de la voz forman parte de:
+= El paralenguaje
+- La kinesia
+- La proxémica
+- El código escrito
+E Influyen en cómo se interpreta el mensaje.
+R Comunicación no verbal
+
+Q En la atención presencial, ¿cuál de estas actitudes transmite disponibilidad?
+= Mirar a la persona, sonreír y tener una postura abierta
+- Cruzar los brazos
+- Seguir mirando la pantalla mientras habla
+- Atender de espaldas
+E La comunicación no verbal debe ser coherente con lo que se dice.
+R Atención presencial
+
+Q Ante una persona usuaria enfadada, lo más adecuado es:
+= Mantener la calma, escucharla sin interrumpir, mostrar comprensión y buscar una solución
+- Responder en el mismo tono
+- Ignorarla hasta que se calme
+- Darle la razón aunque no la tenga
+E Hay que evitar tomarse la queja como algo personal.
+R Atención a personas usuarias difíciles
+
+Q Si una consulta no es competencia de quien atiende, lo correcto es:
+= Orientar a la persona hacia el órgano o servicio competente
+- Decirle que no se puede ayudar
+- Inventar una respuesta
+- Pedirle que vuelva otro día
+E Es el derecho a ser orientado; la Ley 39/2015 prevé la asistencia a las personas interesadas.
+R Atención al público
+
+Q Las Administraciones deben atender a las personas con discapacidad garantizando:
+= La accesibilidad de la información y de los servicios, con los ajustes necesarios
+- Que acudan siempre acompañadas
+- Que usen solo medios electrónicos
+- Un horario especial obligatorio
+E Por ejemplo, información en lectura fácil, intérprete de lengua de signos o accesibilidad física.
+R Atención al público
+
+Q En la atención presencial, la primera impresión depende sobre todo de:
+= La acogida inicial: saludo, actitud y comunicación no verbal
+- La rapidez con que termina la conversación
+- El número de documentos que se entregan
+- El mobiliario de la oficina
+E Por eso se cuida el saludo y la disponibilidad desde el primer momento.
+R Atención presencial

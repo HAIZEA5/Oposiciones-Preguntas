@@ -1,0 +1,151 @@
+Q Según el art. 70 de la Ley 39/2015, el expediente administrativo es:
+= El conjunto ordenado de documentos y actuaciones que sirven de antecedente y fundamento a la resolución administrativa, así como las diligencias encaminadas a ejecutarla
+- El documento que contiene la resolución final
+- El registro de entrada de una solicitud
+- El conjunto de documentos que presenta el interesado
+E Es la definición del art. 70.1.
+R Ley 39/2015 art. 70.1
+
+Q Los expedientes administrativos tendrán formato:
+= Electrónico
+- Papel, con copia electrónica opcional
+- Mixto obligatoriamente
+- El que elija el interesado
+E Se forman agregando ordenadamente documentos, pruebas, dictámenes, informes, acuerdos, notificaciones y demás diligencias.
+R Ley 39/2015 art. 70.2
+
+Q ¿Cuál de estos NO forma parte del expediente administrativo?
+= Las notas, borradores y opiniones de carácter auxiliar o de apoyo
+- Los informes preceptivos
+- Las notificaciones
+- Las pruebas practicadas
+E Salvo que se trate de informes preceptivos o facultativos solicitados antes de la resolución.
+R Ley 39/2015 art. 70.4
+
+Q Cuando se remite un expediente electrónico, se hace de acuerdo con:
+= El Esquema Nacional de Interoperabilidad y sus normas técnicas
+- La Ley de Propiedad Intelectual
+- El Reglamento de Correos
+- Las instrucciones de cada funcionario
+E Se envía completo, foliado, autentificado y con un índice numerado de todos sus documentos.
+R Ley 39/2015 art. 70.3
+
+Q Según el art. 26 de la Ley 39/2015, los documentos administrativos se emiten:
+= Por escrito, a través de medios electrónicos, salvo que su naturaleza exija otra forma más adecuada
+- En papel, salvo que el interesado pida otro formato
+- Verbalmente, salvo que se pida por escrito
+- En el formato que elija cada órgano
+E Art. 26.1.
+R Ley 39/2015 art. 26.1
+
+Q ¿Cuál de estos NO es un requisito de validez de los documentos administrativos electrónicos del art. 26.2?
+= Llevar sello de Correos
+- Contener información de cualquier naturaleza archivada en un soporte electrónico
+- Disponer de los datos de identificación que permitan su individualización
+- Incorporar las firmas electrónicas que correspondan
+E También deben tener una referencia temporal y los metadatos mínimos exigidos.
+R Ley 39/2015 art. 26.2
+
+Q No requieren firma electrónica los documentos electrónicos:
+= Emitidos por las Administraciones que se publiquen con carácter meramente informativo, y los que no formen parte de un expediente
+- Que sean resoluciones
+- Que sean notificaciones
+- Que sean certificados
+E Siempre debe quedar acreditado su origen.
+R Ley 39/2015 art. 26.3
+
+Q ¿Quién puede expedir copias auténticas de documentos públicos administrativos o privados?
+= Cada Administración, determinando los órganos que tienen atribuidas esas competencias
+- Solo los notarios
+- Cualquier empleado público
+- Solo el Secretario del Ayuntamiento
+E Las copias auténticas tienen la misma validez y eficacia que los originales.
+R Ley 39/2015 art. 27.1
+
+Q Las copias auténticas, según el art. 27 de la Ley 39/2015:
+= Tienen la misma validez y eficacia que los documentos originales
+- Tienen menos valor que el original
+- Solo sirven dentro del mismo expediente
+- Caducan a los seis meses
+E Pueden expedirse a partir de originales o de otras copias auténticas.
+R Ley 39/2015 art. 27.2
+
+Q Una copia electrónica de un documento en papel, para ser auténtica, requiere:
+= Una imagen electrónica del original, con la firma y los metadatos correspondientes
+- Una fotocopia compulsada
+- La firma manuscrita del interesado
+- Una diligencia del notario
+E Se considera digitalización el proceso tecnológico que convierte el papel en un fichero electrónico.
+R Ley 39/2015 art. 27.3
+
+Q ¿En qué plazo deben expedirse las copias auténticas que pidan los interesados?
+= En el plazo máximo de quince días desde la solicitud en el registro electrónico de la Administración competente
+- En diez días
+- En un mes
+- En tres días
+E Art. 27.4.
+R Ley 39/2015 art. 27.4
+
+Q Según el art. 28 de la Ley 39/2015, los interesados NO están obligados a aportar:
+= Documentos originales, salvo que la normativa reguladora establezca lo contrario
+- Ningún dato personal
+- Ninguna solicitud por escrito
+- Ningún documento firmado
+E Tampoco documentos ya aportados a cualquier Administración ni los elaborados por cualquier Administración.
+R Ley 39/2015 art. 28.3
+
+Q Si la Administración necesita documentos elaborados por otras Administraciones, se presume que el interesado:
+= Autoriza su consulta, salvo que conste su oposición expresa o la ley especial exija consentimiento expreso
+- Debe aportarlos siempre
+- Debe firmar una autorización en papel
+- No puede oponerse
+E Art. 28.2.
+R Ley 39/2015 art. 28.2
+
+Q Excepcionalmente, la Administración puede pedir al interesado el cotejo de una copia aportada:
+= Cuando la relevancia del documento lo exija o existan dudas derivadas de la calidad de la copia
+- En todo caso
+- Nunca
+- Solo en procedimientos sancionadores
+E Puede solicitar de forma motivada la exhibición del documento original.
+R Ley 39/2015 art. 28.5
+
+Q El documento por el que el órgano competente da fe de un acto, hecho o dato que consta en un expediente o registro es:
+= La certificación
+- El informe
+- La diligencia
+- La notificación
+E En las Entidades locales, la fe pública corresponde al Secretario.
+R Documentos administrativos
+
+Q El documento en el que se hace constar en el expediente un hecho, un trámite o un acuerdo (por ejemplo, la entrega de un documento) es:
+= La diligencia
+- El acta
+- El oficio
+- El informe
+E Suele ser un texto breve, fechado y firmado por el funcionario que la extiende.
+R Documentos administrativos
+
+Q Las certificaciones de los acuerdos de los órganos colegiados las expide:
+= El Secretario, con el visto bueno del Presidente
+- El Presidente en solitario
+- Cualquier miembro del órgano
+- El interesado
+E Pueden expedirse antes de aprobar el acta, haciendo constar esa circunstancia.
+R Ley 40/2015 arts. 16 y 19
+
+Q El documento en el que un órgano emite su opinión técnica o jurídica sobre un asunto, para que el órgano competente resuelva, es:
+= El informe
+- La resolución
+- La certificación
+- El oficio
+E Salvo disposición en contrario, los informes son facultativos y no vinculantes.
+R Ley 39/2015 art. 80
+
+Q Cada Administración debe mantener un archivo electrónico único de los documentos de:
+= Los procedimientos finalizados
+- Todos los procedimientos en curso
+- Solo los procedimientos sancionadores
+- Solo los expedientes de personal
+E Art. 17.1 de la Ley 39/2015.
+R Ley 39/2015 art. 17.1

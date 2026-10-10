@@ -1,0 +1,143 @@
+Q La competencia digital 1.1 del marco europeo DigComp se refiere a:
+= Navegar, buscar y filtrar datos, información y contenidos digitales
+- Evaluar datos, información y contenidos digitales
+- Gestionar datos e información
+- Comunicarse mediante tecnologías digitales
+E Pertenece al área 1, alfabetización en información y datos. La 1.2 es evaluar y la 1.3, gestionar.
+R DigComp 1.1
+
+Q ¿Cuántas áreas de competencia tiene el marco DigComp?
+= Cinco
+- Tres
+- Siete
+- Diez
+E Información y datos; comunicación y colaboración; creación de contenidos; seguridad; y resolución de problemas.
+R DigComp
+
+Q Un navegador web es:
+= Un programa que permite acceder y visualizar páginas web
+- Un motor de búsqueda
+- Un proveedor de acceso a internet
+- Un antivirus
+E Ejemplos: Chrome, Firefox, Edge o Safari. Google o Bing son motores de búsqueda.
+R Navegación
+
+Q La dirección única de una página web que se escribe en la barra de direcciones se llama:
+= URL
+- IP
+- DNS
+- HTML
+E Por ejemplo, https://www.getxo.eus.
+R Navegación
+
+Q Que una dirección web empiece por «https» indica que:
+= La comunicación entre el navegador y el sitio está cifrada
+- La página es oficial de una Administración
+- La página no tiene publicidad
+- La página está libre de virus
+E El candado de la barra de direcciones indica la conexión segura, pero no garantiza que el sitio sea fiable.
+R Navegación segura
+
+Q Guardar una página web para volver a ella fácilmente se hace con:
+= Los marcadores o favoritos
+- El historial
+- Las cookies
+- La caché
+E El historial registra automáticamente las páginas visitadas.
+R Navegación
+
+Q La navegación privada o de incógnito:
+= No guarda el historial, las cookies ni los datos de formularios en el equipo al cerrar la ventana
+- Hace que nadie pueda saber qué páginas se visitan
+- Oculta la dirección IP a todos los sitios
+- Protege frente a cualquier virus
+E La empresa, el proveedor de internet o los sitios visitados pueden seguir viendo la actividad.
+R Navegación privada
+
+Q Las cookies son:
+= Pequeños archivos que los sitios web guardan en el navegador para recordar información del usuario
+- Virus que se instalan al navegar
+- Copias de seguridad de las páginas
+- Programas para bloquear anuncios
+E Los sitios deben pedir consentimiento para las cookies no necesarias.
+R Navegación
+
+Q Para buscar una frase exacta en la mayoría de buscadores se usan:
+= Las comillas
+- Los paréntesis
+- El signo de interrogación
+- Los corchetes
+E Por ejemplo, "Reglamento de uso de instalaciones".
+R Búsqueda
+
+Q En un buscador, el signo menos (-) delante de una palabra sirve para:
+= Excluir los resultados que contienen esa palabra
+- Buscar solo esa palabra
+- Buscar sinónimos
+- Ordenar por fecha
+E Por ejemplo: piscina -Bilbao.
+R Búsqueda
+
+Q El operador «site:» en un buscador permite:
+= Limitar la búsqueda a un sitio web o dominio concreto
+- Buscar solo imágenes
+- Buscar documentos PDF
+- Traducir la página
+E Por ejemplo: igualdad site:euskadi.eus.
+R Búsqueda
+
+Q Para buscar solo documentos de un tipo concreto, como PDF, se usa el operador:
+= filetype:
+- site:
+- intitle:
+- related:
+E Por ejemplo: presupuestos filetype:pdf.
+R Búsqueda
+
+Q Filtrar la información en un buscador consiste en:
+= Usar opciones como fecha, idioma, tipo de resultado o región para acotar los resultados
+- Borrar el historial
+- Instalar un antivirus
+- Descargar todos los resultados
+E Las herramientas de búsqueda avanzada permiten aplicar varios filtros a la vez.
+R Filtrado
+
+Q Un criterio para valorar la fiabilidad de una página web es:
+= Comprobar quién es el autor o la entidad responsable y la fecha de actualización
+- Que tenga muchas imágenes
+- Que aparezca la primera en el buscador
+- Que tenga muchos anuncios
+E También contrastar la información con otras fuentes y comprobar si cita sus fuentes.
+R Evaluación de la información
+
+Q Un enlace que al pulsarlo lleva a otra página o documento se llama:
+= Hipervínculo
+- Marcador
+- Cookie
+- Pestaña
+E Las pestañas permiten tener varias páginas abiertas en la misma ventana del navegador.
+R Navegación
+
+Q Las alertas o suscripciones a fuentes de noticias (por ejemplo, RSS) sirven para:
+= Recibir automáticamente las novedades de las fuentes que interesan
+- Bloquear la publicidad
+- Navegar sin conexión
+- Borrar las cookies
+E Es una forma de mantenerse informado sin buscar cada vez.
+R Gestión de búsquedas
+
+Q El atajo de teclado habitual para buscar una palabra dentro de una página web es:
+= Ctrl + F
+- Ctrl + P
+- Ctrl + S
+- Ctrl + Z
+E Ctrl + P imprime; Ctrl + S guarda; Ctrl + Z deshace.
+R Navegación
+
+Q La caché del navegador sirve para:
+= Guardar temporalmente partes de las páginas visitadas para cargarlas más rápido
+- Guardar las contraseñas
+- Bloquear las ventanas emergentes
+- Registrar las descargas
+E Borrar la caché puede ayudar cuando una página no se muestra actualizada.
+R Navegación

@@ -1,0 +1,135 @@
+Q En el proceso de comunicación, el conjunto de signos y reglas que comparten emisor y receptor se llama:
+= Código
+- Canal
+- Contexto
+- Mensaje
+E Elementos: emisor, receptor, mensaje, código, canal, contexto y retroalimentación.
+R Elementos de la comunicación
+
+Q El medio físico por el que se transmite el mensaje (papel, teléfono, correo electrónico) es el:
+= Canal
+- Código
+- Contexto
+- Referente
+E Los obstáculos que dificultan la comunicación se llaman ruido o barreras.
+R Elementos de la comunicación
+
+Q La respuesta del receptor que permite al emisor saber si el mensaje se ha entendido se llama:
+= Retroalimentación (feedback)
+- Ruido
+- Codificación
+- Canal
+E Sin retroalimentación, la comunicación es unidireccional.
+R Elementos de la comunicación
+
+Q La comunicación que va de los órganos superiores a los inferiores de una organización (órdenes, instrucciones, circulares) es la comunicación:
+= Descendente
+- Ascendente
+- Horizontal
+- Externa
+E La ascendente va de abajo arriba (informes, sugerencias); la horizontal, entre unidades del mismo nivel.
+R Comunicación en la organización
+
+Q Las instrucciones y órdenes de servicio con las que los órganos administrativos dirigen la actividad de sus órganos jerárquicamente dependientes están reguladas en:
+= El art. 6 de la Ley 40/2015
+- El art. 21 de la Ley 39/2015
+- El art. 103 de la Constitución
+- El art. 14 de la Ley 39/2015
+E Cuando una disposición específica así lo establezca, se publican en el boletín oficial correspondiente.
+R Ley 40/2015 art. 6
+
+Q ¿Cuál de estas es una característica deseable del lenguaje administrativo actual?
+= Claridad y sencillez, para que la ciudadanía entienda el mensaje
+- Uso abundante de arcaísmos y fórmulas fijas
+- Frases muy largas y subordinadas
+- Abuso de la voz pasiva y de los tecnicismos
+E Es la idea del lenguaje claro: frases cortas, orden lógico, vocabulario común y voz activa.
+R Lenguaje administrativo
+
+Q ¿Cuál de estos rasgos se considera un defecto tradicional del lenguaje administrativo?
+= El uso excesivo de gerundios y de construcciones impersonales
+- El orden lógico sujeto-verbo-complemento
+- El uso de párrafos breves
+- Dirigirse directamente al destinatario
+E Otros defectos: perífrasis innecesarias, arcaísmos («otrosí», «a tenor de»), latinismos y abreviaturas no explicadas.
+R Lenguaje administrativo
+
+Q En un escrito administrativo, la forma de tratamiento recomendada hoy hacia la ciudadanía es:
+= Un trato respetuoso y cercano, evitando fórmulas arcaicas
+- «Ilustrísimo Señor» para cualquier persona
+- El tuteo en todos los casos
+- No dirigirse nunca al destinatario
+E Los tratamientos protocolarios solo se usan cuando corresponde al cargo.
+R Lenguaje administrativo
+
+Q El documento por el que un órgano comunica una información a otro órgano de la misma Administración, de forma sencilla e interna, es:
+= La nota interior
+- El oficio
+- La certificación
+- La diligencia
+E El oficio se usa para comunicaciones formales entre órganos de distintas Administraciones o con particulares.
+R Documentos administrativos
+
+Q El documento que deja constancia de lo tratado y acordado en una sesión de un órgano colegiado es:
+= El acta
+- La certificación
+- El informe
+- La diligencia
+E La extiende el secretario del órgano (art. 18 Ley 40/2015).
+R Documentos administrativos
+
+Q El uso de un lenguaje no sexista en la Administración vasca es una obligación recogida en:
+= El texto refundido de la Ley para la Igualdad de Mujeres y Hombres (Decreto Legislativo 1/2023)
+- La Ley 39/2015
+- El Estatuto de Autonomía
+- La Ley 10/1982 del euskera
+E Los poderes públicos deben hacer un uso no sexista de todo tipo de lenguaje en los documentos y soportes que produzcan.
+R DL 1/2023
+
+Q ¿Cuál de estas expresiones es un ejemplo de lenguaje no sexista?
+= «La ciudadanía» en lugar de «los ciudadanos»
+- «Los funcionarios» para referirse a toda la plantilla
+- «El hombre» para referirse a la humanidad
+- «Señorita» para las mujeres solteras
+E Se recomiendan los genéricos reales y colectivos: el personal, el alumnado, la ciudadanía, las personas usuarias.
+R Lenguaje no sexista
+
+Q En lenguaje no sexista, ¿qué alternativa se recomienda a «los interesados»?
+= «Las personas interesadas»
+- «Los/as interesados/as» en todo el texto
+- «L@s interesad@s»
+- «Los interesados» con una nota a pie de página
+E Las barras y la arroba dificultan la lectura; se recomiendan sustantivos genéricos o la palabra «persona».
+R Lenguaje no sexista
+
+Q En un formulario administrativo, para evitar el masculino genérico, se recomienda:
+= Usar fórmulas abiertas como «Nombre y apellidos» o «Firma de la persona solicitante»
+- Escribir siempre «el solicitante»
+- Usar la arroba
+- Dejar el texto solo en masculino
+E Es una de las pautas habituales de las guías de lenguaje no sexista.
+R Lenguaje no sexista
+
+Q En la comunicación escrita con la ciudadanía en Euskadi, las comunicaciones de las Administraciones deben:
+= Respetar los derechos lingüísticos y poder hacerse en euskera o en castellano
+- Hacerse solo en castellano
+- Hacerse solo en euskera
+- Hacerse en la lengua del funcionario
+E La ciudadanía tiene derecho a relacionarse en la lengua oficial que elija (Ley 10/1982, art. 5).
+R Ley 10/1982 art. 5
+
+Q La comunicación externa de la Administración es la que se dirige a:
+= La ciudadanía y a otras Administraciones u organizaciones
+- Los órganos de la misma unidad
+- Los superiores jerárquicos
+- El personal de la propia Administración
+E La interna se produce dentro de la organización (descendente, ascendente y horizontal).
+R Comunicación en la organización
+
+Q ¿Cuál de estas es una barrera de la comunicación?
+= Usar tecnicismos que el receptor no entiende
+- Comprobar que el mensaje se ha entendido
+- Adaptar el mensaje al receptor
+- Escuchar activamente
+E Otras barreras: ruido, prejuicios, falta de atención o un canal inadecuado.
+R Barreras de la comunicación

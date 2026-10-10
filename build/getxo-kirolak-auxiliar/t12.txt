@@ -1,0 +1,175 @@
+Q ¿Cuál es el objeto de la Ley 19/2013, de 9 de diciembre?
+= Ampliar y reforzar la transparencia de la actividad pública, regular y garantizar el derecho de acceso a la información y establecer las obligaciones de buen gobierno
+- Regular el procedimiento administrativo común
+- Proteger los datos personales
+- Regular el régimen jurídico del sector público
+E Se llama Ley de transparencia, acceso a la información pública y buen gobierno.
+R Ley 19/2013 art. 1
+
+Q ¿A cuál de estas entidades NO se aplica el Título I de la Ley 19/2013 como sujeto del art. 2.1?
+= Una empresa privada sin subvenciones públicas
+- Las entidades que integran la Administración Local
+- Los organismos autónomos
+- Las sociedades mercantiles con participación pública mayoritaria
+E Las privadas solo quedan obligadas a la publicidad activa si reciben ayudas o subvenciones en las cuantías del art. 3.
+R Ley 19/2013 art. 2
+
+Q Las entidades privadas deben cumplir la publicidad activa si en un año perciben ayudas o subvenciones públicas superiores a:
+= 100.000 euros, o cuando al menos el 40 % de sus ingresos anuales sean ayuda pública, siempre que alcancen como mínimo 5.000 euros
+- 50.000 euros en todo caso
+- 10.000 euros
+- 100.000 euros, sin otra alternativa
+E También los partidos políticos, sindicatos y organizaciones empresariales.
+R Ley 19/2013 art. 3
+
+Q Las personas que presten servicios públicos o ejerzan potestades administrativas están obligadas a:
+= Suministrar a la Administración a la que estén vinculadas, previo requerimiento, toda la información necesaria para que cumpla sus obligaciones
+- Publicar toda su información en su web
+- Crear su propio portal de transparencia
+- Nada; la ley no les afecta
+E Lo mismo los adjudicatarios de contratos del sector público.
+R Ley 19/2013 art. 4
+
+Q La información sujeta a publicidad activa se publicará:
+= En las sedes electrónicas o páginas web, de forma clara, estructurada y entendible, preferiblemente en formatos reutilizables
+- Solo en el boletín oficial
+- En el tablón de anuncios físico
+- Solo cuando la pida un ciudadano
+E Art. 5.4.
+R Ley 19/2013 art. 5.4
+
+Q ¿Qué límites se aplican a la publicidad activa?
+= Los límites al derecho de acceso del art. 14 y la protección de datos del art. 15
+- Ninguno
+- Solo el secreto oficial
+- Los que fije cada Administración libremente
+E Si la información contiene datos especialmente protegidos, solo se publica previa disociación.
+R Ley 19/2013 art. 5.3
+
+Q La información institucional, organizativa y de planificación incluye:
+= Las funciones, la normativa aplicable y la estructura organizativa, con un organigrama actualizado
+- Los contratos y convenios
+- Los presupuestos
+- Las subvenciones concedidas
+E Art. 6. Los contratos, convenios, subvenciones y presupuestos son información económica, presupuestaria y estadística (art. 8).
+R Ley 19/2013 art. 6
+
+Q ¿Qué información de relevancia jurídica deben publicar las Administraciones según el art. 7?
+= Las directrices, instrucciones y circulares que supongan una interpretación del Derecho, y los anteproyectos y proyectos normativos
+- Las sentencias de todos los tribunales
+- Los informes internos de cualquier tipo
+- Los borradores no aprobados de cualquier documento
+E También las memorias e informes de los expedientes normativos y los documentos sometidos a información pública.
+R Ley 19/2013 art. 7
+
+Q La información de los contratos menores puede publicarse:
+= Al menos trimestralmente
+- Cada año
+- Cada mes
+- No se publican
+E Art. 8.1.a.
+R Ley 19/2013 art. 8.1.a
+
+Q ¿Qué retribuciones deben publicarse según el art. 8?
+= Las retribuciones anuales de los altos cargos y máximos responsables de las entidades
+- Las de todos los empleados públicos con nombre y apellidos
+- Solo las de los funcionarios de carrera
+- Ninguna
+E También las indemnizaciones por el abandono del cargo.
+R Ley 19/2013 art. 8.1.f
+
+Q El Portal de la Transparencia de la Administración General del Estado depende de:
+= El Ministerio de la Presidencia
+- El Consejo de Transparencia y Buen Gobierno
+- El Ministerio de Hacienda
+- Las Cortes Generales
+E Art. 10.
+R Ley 19/2013 art. 10
+
+Q ¿Qué se entiende por información pública según el art. 13?
+= Los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de los sujetos del Título I y que hayan sido elaborados o adquiridos en el ejercicio de sus funciones
+- Solo los documentos publicados en el BOE
+- Solo la información de expedientes terminados
+- Cualquier información de interés general, esté o no en poder de la Administración
+E Es el objeto del derecho de acceso.
+R Ley 19/2013 art. 13
+
+Q ¿Cuál de estos NO es un límite al derecho de acceso del art. 14?
+= El interés del solicitante en publicar la información en prensa
+- La seguridad nacional
+- La protección del medio ambiente
+- El secreto profesional y la propiedad intelectual e industrial
+E Son doce límites; su aplicación debe ser justificada, proporcionada y atender al interés público o privado superior.
+R Ley 19/2013 art. 14
+
+Q Si la información solicitada contiene datos especialmente protegidos de ideología, afiliación sindical, religión o creencias, el acceso:
+= Solo se autoriza con el consentimiento expreso y por escrito del afectado, salvo que este los hubiera hecho públicos
+- Se concede siempre
+- Nunca se concede
+- Se concede si lo autoriza el Consejo de Transparencia
+E Art. 15.1.
+R Ley 19/2013 art. 15.1
+
+Q Cuando la aplicación de un límite no afecta a toda la información, se concede:
+= Acceso parcial, omitiendo la información afectada por el límite
+- Acceso total
+- La denegación completa
+- Acceso solo presencial
+E Salvo que de ello resulte una información distorsionada o que carezca de sentido.
+R Ley 19/2013 art. 16
+
+Q La solicitud de acceso a la información:
+= No necesita motivación, aunque el solicitante puede exponer sus motivos
+- Debe estar siempre motivada
+- Requiere acreditar interés legítimo
+- Solo puede presentarse en papel
+E La ausencia de motivación no es por sí sola causa de rechazo.
+R Ley 19/2013 art. 17.3
+
+Q ¿Cuál de estas es una causa de inadmisión de las solicitudes de acceso?
+= Que sean manifiestamente repetitivas o tengan un carácter abusivo no justificado con la finalidad de transparencia
+- Que el solicitante no sea español
+- Que no se indique el motivo
+- Que la información sea antigua
+E También la información en curso de elaboración, la de carácter auxiliar o la que exija una acción previa de reelaboración.
+R Ley 19/2013 art. 18
+
+Q Si la información puede afectar a derechos o intereses de terceros identificados, se les concede un plazo para alegar de:
+= Quince días
+- Diez días
+- Un mes
+- Cinco días
+E El plazo para resolver se suspende hasta recibir las alegaciones o vencer el plazo.
+R Ley 19/2013 art. 19.3
+
+Q ¿En qué plazo debe resolverse y notificarse una solicitud de acceso a la información según la Ley 19/2013?
+= Un mes, ampliable otro mes por el volumen o la complejidad de la información
+- Quince días
+- Tres meses
+- Diez días
+E Desde la recepción de la solicitud por el órgano competente.
+R Ley 19/2013 art. 20.1
+
+Q Si no se resuelve en plazo una solicitud de acceso, se entiende:
+= Desestimada
+- Estimada
+- Caducada
+- Remitida al Consejo de Transparencia
+E Art. 20.4.
+R Ley 19/2013 art. 20.4
+
+Q El acceso a la información es, como regla general:
+= Gratuito, aunque la expedición de copias o la transposición a otros formatos puede dar lugar a tasas o precios
+- De pago en todo caso
+- Gratuito solo para personas físicas
+- Gratuito solo en papel
+E Art. 22.4. Se realizará preferentemente por vía electrónica.
+R Ley 19/2013 art. 22
+
+Q Contra las resoluciones en materia de acceso, con carácter potestativo y previo al contencioso, cabe:
+= Reclamación ante el Consejo de Transparencia y Buen Gobierno, en el plazo de un mes
+- Recurso de alzada en tres meses
+- Recurso extraordinario de revisión
+- Reclamación económico-administrativa
+E El Consejo debe resolver en tres meses; si no lo hace, la reclamación se entiende desestimada.
+R Ley 19/2013 art. 24
