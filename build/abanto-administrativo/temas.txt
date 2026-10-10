@@ -1,1 +1,40 @@
-t01 | Tema 1 | Tema 1 | En preparación |
+t01 | Tema 1 | Tema 1. La Constitución Española de 1978 (I): Título Preliminar (arts. 1–9) | Parte Primera | biblioteca-dfb/t01:1-10+31-32
+t02 | Tema 2 | Tema 2. La Constitución Española de 1978 (II): derechos y deberes fundamentales (arts. 10–30) | Parte Primera | biblioteca-dfb/t01:11-24+33-34, getxo-kirolak-auxiliar/t01:1-26
+t03 | Tema 3 | Tema 3. La Constitución Española de 1978 (III): las Cortes Generales (Título III, Caps. I–III) | Parte Primera | 
+t04 | Tema 4 | Tema 4. La Constitución Española de 1978 (IV): relaciones entre el Gobierno y las Cortes Generales (Título V) | Parte Primera | 
+t05 | Tema 5 | Tema 5. La Constitución Española de 1978 (V): el Poder Judicial (Título VI) | Parte Primera | 
+t06 | Tema 6 | Tema 6. La Constitución Española de 1978 (VI): organización territorial del Estado (Título VIII) | Parte Primera | getxo-administrativo/t02, getxo-kirolak-auxiliar/t02
+t07 | Tema 7 | Tema 7. La Constitución Española de 1978 (VII): el Tribunal Constitucional (Título IX) y la reforma constitucional (Título X) | Parte Primera | 
+t08 | Tema 8 | Tema 8. El Estatuto de Autonomía del País Vasco (I): Título Preliminar y Título I (competencias) | Parte Primera | biblioteca-dfb/t02:1-15, getxo-administrativo/t03, getxo-kirolak-auxiliar/t03
+t09 | Tema 9 | Tema 9. El Estatuto de Autonomía del País Vasco (II): poderes, Hacienda y Patrimonio, reforma y Disposición Adicional | Parte Primera | biblioteca-dfb/t02:16-32
+t10 | Tema 10 | Tema 10. Fuentes del Derecho Administrativo. La Ley: concepto y clases. El Reglamento: titularidad de la potestad reglamentaria y sus límites. Jerarquía normat | Parte Segunda | getxo-administrativo/t04
+t11 | Tema 11 | Tema 11. La Administración Pública en el Ordenamiento. Clases de Administraciones Públicas. Principios de actuación. El principio de legalidad. Potestades admi | Parte Segunda | 
+t12 | Tema 12 | Tema 12. Ley 39/2015 (I): los interesados en el procedimiento (Título I) | Parte Segunda | getxo-administrativo/t09
+t13 | Tema 13 | Tema 13. Ley 39/2015 (II): la actividad de las Administraciones Públicas (Título II). Normas generales de actuación y términos y plazos | Parte Segunda | biblioteca-dfb/t06, getxo-administrativo/t10, getxo-administrativo/t11
+t14 | Tema 14 | Tema 14. Ley 39/2015 (III): los actos administrativos (Título III) | Parte Segunda | getxo-administrativo/t12
+t15 | Tema 15 | Tema 15. Ley 39/2015 (IV): el procedimiento administrativo común (Título IV) | Parte Segunda | biblioteca-dfb/ay09, getxo-administrativo/t13, getxo-administrativo/t14, getxo-administrativo/t15
+t16 | Tema 16 | Tema 16. Ley 39/2015 (V): la revisión de los actos en vía administrativa (Título V) | Parte Segunda | getxo-administrativo/t16
+t17 | Tema 17 | Tema 17. Ley 40/2015 (I): disposiciones generales, órganos de las Administraciones y responsabilidad patrimonial (Título Preliminar, Caps. I, II y IV) | Parte Segunda | getxo-administrativo/t17, getxo-administrativo/t18:13-30
+t18 | Tema 18 | Tema 18. Ley 40/2015 (II): funcionamiento electrónico del sector público (Cap. V) y convenios (Cap. VI) | Parte Segunda | getxo-administrativo/t19
+t19 | Tema 19 | Tema 19. Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (Títulos I, II y III) | Parte Segunda | getxo-administrativo/t07
+t20 | Tema 20 | Tema 20. Ley 38/2003, de 17 de noviembre, General de Subvenciones | Parte Segunda | getxo-administrativo/t36, getxo-administrativo/t37
+t21 | Tema 21 | Tema 21. Decreto Legislativo 1/2023: texto refundido de la Ley para la Igualdad de Mujeres y Hombres y Vidas Libres de Violencia Machista contra las Mujeres (T | Parte Segunda | biblioteca-dfb/t09:1-12, getxo-kirolak-auxiliar/t05:35-48
+t22 | Tema 22 | Tema 22. Ley 9/2017, de Contratos del Sector Público (I): objeto, ámbito y tipos de contratos | Parte Segunda | getxo-administrativo/t32
+t23 | Tema 23 | Tema 23. Ley 9/2017, de Contratos del Sector Público (II): objeto, presupuesto base de licitación, valor estimado y precio (Libro I, Título III, Cap. I) | Parte Segunda | getxo-administrativo/t33
+t24 | Tema 24 | Tema 24. Ley 9/2017, de Contratos del Sector Público (III): el expediente de contratación y los pliegos (arts. 116–124) | Parte Segunda | getxo-administrativo/t34
+t25 | Tema 25 | Tema 25. Ley 11/2022, de Empleo Público Vasco (I): disposiciones generales, clases de personal, estructura y adquisición y pérdida de la condición | Parte Segunda | biblioteca-dfb/t07
+t26 | Tema 26 | Tema 26. Ley 11/2022, de Empleo Público Vasco (II): selección (Título VI, Cap. I), carrera profesional (Título VII) y situaciones administrativas (Título X) | Parte Segunda | getxo-administrativo/t23
+t27 | Tema 27 | Tema 27. Ley 11/2022, de Empleo Público Vasco (III): derechos, deberes, código de conducta, incompatibilidades y responsabilidades (Título XI) | Parte Segunda | getxo-administrativo/t24
+t28 | Tema 28 | Tema 28. Ley 10/1982, de 24 de noviembre, básica de normalización del uso del Euskera: Título Preliminar y Título I | Parte Segunda | biblioteca-dfb/t08:1-15, getxo-kirolak-auxiliar/t04
+t29 | Tema 29 | Tema 29. Ley 7/1985, de Bases del Régimen Local (I): Título I y municipio, territorio y población (arts. 1–18). Reglamento de Población (RD 1690/1986): el padr | Parte Tercera | biblioteca-dfb/ay07:1-13, getxo-administrativo/t25, getxo-administrativo/t27
+t30 | Tema 30 | Tema 30. Ley 2/2016, de Instituciones Locales de Euskadi (I): objeto y principios, el municipio, otras entidades locales y competencias municipales (Títulos I, | Parte Tercera | biblioteca-dfb/ay07:14-24
+t31 | Tema 31 | Tema 31. Ley 2/2016, de Instituciones Locales de Euskadi (II): derechos y deberes de las personas vecinas, cartas de servicios y gobierno abierto (Título V y T | Parte Tercera | getxo-administrativo/t30, getxo-administrativo/t31
+t32 | Tema 32 | Tema 32. Ordenanzas, Reglamentos y Bandos de las Entidades Locales. Clases. Procedimiento de elaboración y aprobación. El Reglamento Orgánico | Parte Tercera | 
+t33 | Tema 33 | Tema 33. ROF (RD 2568/1986) (I): Título Preliminar y organización necesaria del Municipio (Título II, Cap. I) | Parte Tercera | 
+t34 | Tema 34 | Tema 34. ROF (II): órganos complementarios. Composición, atribuciones y funcionamiento (Título IV) | Parte Tercera | 
+t35 | Tema 35 | Tema 35. Reglamento de Bienes (RD 1372/1986) (I): concepto y clasificación de los bienes; el patrimonio de las entidades locales | Parte Tercera | 
+t36 | Tema 36 | Tema 36. Reglamento de Bienes (II): conservación y tutela; disfrute y aprovechamiento; enajenación | Parte Tercera | 
+t37 | Tema 37 | Tema 37. Norma Foral 9/2005, de Haciendas Locales de Bizkaia: ámbito de aplicación y recursos de las haciendas locales | Parte Tercera | getxo-administrativo/t39
+t38 | Tema 38 | Tema 38. IBI e IIVTNU: naturaleza, hecho imponible y sujeto pasivo | Parte Tercera | 
+t39 | Tema 39 | Tema 39. IAE, IVTM e ICIO: naturaleza, hecho imponible y sujeto pasivo | Parte Tercera | 
+t40 | Tema 40 | Tema 40. Norma Foral presupuestaria de las Entidades Locales de Bizkaia: los presupuestos generales (Título I, Caps. I–IV) | Parte Tercera | getxo-administrativo/t38

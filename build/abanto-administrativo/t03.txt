@@ -1,0 +1,223 @@
+Q Según el art. 66 de la Constitución, las Cortes Generales están formadas por:
+= El Congreso de los Diputados y el Senado
+- El Congreso, el Senado y el Gobierno
+- El Congreso y los Parlamentos autonómicos
+- El Senado y el Consejo de Estado
+E Representan al pueblo español, ejercen la potestad legislativa, aprueban los Presupuestos y controlan la acción del Gobierno.
+R CE art. 66
+
+Q Las Cortes Generales, según el art. 66.3, son:
+= Inviolables
+- Irresponsables
+- Inamovibles
+- Independientes
+E Es la cita literal del art. 66.3.
+R CE art. 66.3
+
+Q ¿Puede una persona ser a la vez diputada en el Congreso y miembro de un Parlamento autonómico?
+= No, no se puede acumular el acta de una Asamblea autonómica con la de diputado al Congreso
+- Sí, sin limitación
+- Sí, si renuncia al sueldo autonómico
+- Solo si es de una Comunidad uniprovincial
+E Tampoco se puede ser miembro de las dos Cámaras simultáneamente.
+R CE art. 67.1
+
+Q Los miembros de las Cortes Generales:
+= No están ligados por mandato imperativo
+- Deben votar siempre lo que diga su partido
+- Responden ante sus electores mediante revocación
+- Representan solo a su provincia
+E Art. 67.2.
+R CE art. 67.2
+
+Q ¿Cuántos diputados tiene como mínimo y como máximo el Congreso según la Constitución?
+= Mínimo 300 y máximo 400
+- Mínimo 350 y máximo 400
+- Mínimo 250 y máximo 350
+- Exactamente 350
+E La Constitución da el margen; la ley electoral fija 350.
+R CE art. 68.1
+
+Q En las elecciones al Congreso, la circunscripción electoral es:
+= La provincia
+- La Comunidad Autónoma
+- El municipio
+- Todo el territorio nacional
+E Ceuta y Melilla están representadas cada una por un diputado.
+R CE art. 68.2
+
+Q El sistema electoral del Congreso, según la Constitución, atiende a criterios de:
+= Representación proporcional
+- Representación mayoritaria
+- Representación paritaria por provincias
+- Representación territorial de las Comunidades
+E Art. 68.3.
+R CE art. 68.3
+
+Q Las elecciones generales tienen lugar entre:
+= Los 30 y 60 días desde la terminación del mandato
+- Los 15 y 30 días
+- Los 45 y 90 días
+- Los 60 y 90 días
+E El Congreso electo debe ser convocado dentro de los 25 días siguientes a la celebración de las elecciones.
+R CE art. 68.6
+
+Q ¿Cuántos senadores elige cada provincia peninsular?
+= Cuatro
+- Tres
+- Dos
+- Uno por cada millón de habitantes
+E Las islas mayores eligen tres; Ceuta y Melilla, dos cada una.
+R CE art. 69.2
+
+Q Las Comunidades Autónomas designan senadores:
+= Uno, y otro más por cada millón de habitantes de su territorio
+- Dos por Comunidad en todo caso
+- Uno por cada provincia
+- Ninguno; todos se eligen por sufragio directo
+E La designación corresponde a la Asamblea legislativa o al órgano colegiado superior de la Comunidad.
+R CE art. 69.5
+
+Q El Senado es, según la Constitución:
+= La Cámara de representación territorial
+- La Cámara de representación popular
+- La Cámara de control del Gobierno
+- La Cámara de segunda lectura sin poder legislativo
+E Art. 69.1.
+R CE art. 69.1
+
+Q La inmunidad parlamentaria significa que diputados y senadores:
+= Solo pueden ser detenidos en caso de flagrante delito y no pueden ser inculpados ni procesados sin autorización previa de su Cámara
+- No responden por las opiniones manifestadas en el ejercicio de sus funciones
+- Solo pueden ser juzgados por el Tribunal Constitucional
+- No pueden ser detenidos en ningún caso
+E La inviolabilidad es la irresponsabilidad por sus opiniones. En las causas contra ellos es competente la Sala de lo Penal del Tribunal Supremo.
+R CE art. 71
+
+Q Los Reglamentos de las Cámaras se aprueban por:
+= Mayoría absoluta, en una votación final sobre su totalidad
+- Mayoría simple
+- Mayoría de tres quintos
+- Mayoría de dos tercios
+E Las Cámaras también aprueban sus presupuestos y, de común acuerdo, el Estatuto del Personal de las Cortes.
+R CE art. 72.1
+
+Q Las sesiones conjuntas de ambas Cámaras las preside:
+= El Presidente del Congreso
+- El Presidente del Senado
+- El Rey
+- El de mayor edad de los dos Presidentes
+E Se rigen por un Reglamento de las Cortes Generales aprobado por mayoría absoluta de cada Cámara.
+R CE art. 72.2
+
+Q ¿Cuáles son los períodos ordinarios de sesiones de las Cámaras?
+= De septiembre a diciembre y de febrero a junio
+- De enero a junio y de septiembre a diciembre
+- De octubre a junio
+- Todo el año salvo agosto
+E Art. 73.1.
+R CE art. 73.1
+
+Q ¿Quién puede pedir que las Cámaras se reúnan en sesión extraordinaria?
+= El Gobierno, la Diputación Permanente o la mayoría absoluta de los miembros de cualquiera de las Cámaras
+- Solo el Rey
+- El Presidente del Gobierno y el Defensor del Pueblo
+- Un tercio de los diputados
+E Se convocan con un orden del día determinado y se clausuran una vez agotado.
+R CE art. 73.2
+
+Q ¿Cuál de estas materias NO puede delegarse en las Comisiones Legislativas Permanentes?
+= Los Presupuestos Generales del Estado
+- Una ley ordinaria sobre carreteras
+- Una ley ordinaria sobre medio ambiente
+- Una ley de modificación del Código Civil
+E Tampoco la reforma constitucional, las cuestiones internacionales y las leyes orgánicas y de bases.
+R CE art. 75.3
+
+Q Las conclusiones de las comisiones de investigación:
+= No son vinculantes para los Tribunales ni afectan a las resoluciones judiciales
+- Vinculan a los Tribunales
+- Tienen fuerza de sentencia
+- Solo pueden comunicarse al Gobierno
+E El resultado puede comunicarse al Ministerio Fiscal. Comparecer a requerimiento de las Cámaras es obligatorio.
+R CE art. 76
+
+Q ¿Cuántos miembros tiene como mínimo cada Diputación Permanente?
+= Veintiuno
+- Quince
+- Treinta
+- Diez
+E La preside el Presidente de la Cámara respectiva.
+R CE art. 78.1
+
+Q Para que las Cámaras adopten acuerdos válidos, deben estar reunidas:
+= Reglamentariamente y con asistencia de la mayoría de sus miembros
+- Con la asistencia de un tercio de sus miembros
+- Con la totalidad de sus miembros
+- Con la asistencia del Gobierno
+E Los acuerdos se adoptan por mayoría de los presentes, salvo mayorías especiales. El voto es personal e indelegable.
+R CE art. 79
+
+Q ¿Cuántas firmas acreditadas exige la iniciativa legislativa popular?
+= No menos de 500.000
+- 100.000
+- 250.000
+- 1.000.000
+E No cabe en materias de ley orgánica, tributarias, de carácter internacional ni en la prerrogativa de gracia.
+R CE art. 87.3
+
+Q Los proyectos de ley se aprueban en:
+= El Consejo de Ministros, que los somete al Congreso
+- El Congreso, que los remite al Gobierno
+- La Comisión General de Codificación
+- El Senado
+E Van acompañados de exposición de motivos y de los antecedentes necesarios.
+R CE art. 88
+
+Q ¿De qué plazo dispone el Senado para oponer su veto o introducir enmiendas a un proyecto de ley ordinario?
+= Dos meses desde la recepción del texto
+- Un mes
+- Veinte días naturales
+- Tres meses
+E En los proyectos declarados urgentes, el plazo es de veinte días naturales.
+R CE art. 90
+
+Q El veto del Senado debe aprobarse por:
+= Mayoría absoluta
+- Mayoría simple
+- Mayoría de tres quintos
+- Mayoría de dos tercios
+E El Congreso puede levantarlo por mayoría absoluta o, pasados dos meses, por mayoría simple.
+R CE art. 90.2
+
+Q ¿En qué plazo sanciona el Rey las leyes aprobadas por las Cortes?
+= Quince días
+- Treinta días
+- Diez días
+- Un mes
+E Las sanciona, las promulga y ordena su inmediata publicación.
+R CE art. 91
+
+Q El referéndum consultivo sobre decisiones políticas de especial trascendencia lo convoca:
+= El Rey, a propuesta del Presidente del Gobierno, previamente autorizada por el Congreso
+- El Presidente del Gobierno directamente
+- El Congreso por mayoría absoluta
+- El Rey, a propuesta del Senado
+E Una ley orgánica regula sus modalidades.
+R CE art. 92
+
+Q La celebración de tratados que atribuyan a una organización internacional el ejercicio de competencias derivadas de la Constitución se autoriza mediante:
+= Ley orgánica
+- Ley ordinaria
+- Mayoría simple de las Cortes
+- Real Decreto
+E Es la vía por la que España entró en las Comunidades Europeas.
+R CE art. 93
+
+Q Un tratado internacional con estipulaciones contrarias a la Constitución exige:
+= La previa revisión constitucional
+- Su aprobación por mayoría de tres quintos
+- Un referéndum
+- Un dictamen del Consejo de Estado
+E El Gobierno o cualquiera de las Cámaras puede pedir al Tribunal Constitucional que declare si existe esa contradicción.
+R CE art. 95

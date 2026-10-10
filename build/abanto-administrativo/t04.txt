@@ -1,0 +1,175 @@
+Q Según el art. 108 de la Constitución, el Gobierno responde solidariamente en su gestión política ante:
+= El Congreso de los Diputados
+- Las Cortes Generales
+- El Senado
+- El Rey
+E No responde ante el Senado.
+R CE art. 108
+
+Q Las Cámaras pueden recabar información y ayuda del Gobierno y de cualesquiera autoridades del Estado y de las Comunidades Autónomas a través de:
+= Sus Presidentes
+- El Defensor del Pueblo
+- El Tribunal de Cuentas
+- La Diputación Permanente
+E Art. 109.
+R CE art. 109
+
+Q Los miembros del Gobierno, respecto de las sesiones de las Cámaras:
+= Tienen acceso a ellas y la facultad de hacerse oír
+- No pueden asistir salvo que sean parlamentarios
+- Pueden votar aunque no sean parlamentarios
+- Solo pueden asistir a las sesiones de Comisión
+E Pueden pedir que informen ante ellas funcionarios de sus Departamentos.
+R CE art. 110.2
+
+Q Toda interpelación puede dar lugar a:
+= Una moción en la que la Cámara manifieste su posición
+- Una moción de censura automática
+- Una cuestión de confianza
+- La disolución de las Cámaras
+E El Gobierno y cada uno de sus miembros están sometidos a interpelaciones y preguntas; los Reglamentos fijan un tiempo mínimo semanal.
+R CE art. 111
+
+Q ¿Quién puede plantear la cuestión de confianza?
+= El Presidente del Gobierno, previa deliberación del Consejo de Ministros
+- Una décima parte de los diputados
+- El Rey
+- Cualquier ministro
+E Puede plantearla sobre su programa o sobre una declaración de política general.
+R CE art. 112
+
+Q La confianza se entiende otorgada cuando vota a favor:
+= La mayoría simple de los diputados
+- La mayoría absoluta del Congreso
+- Tres quintos del Congreso
+- La mayoría absoluta de cada Cámara
+E Si el Congreso niega la confianza, el Gobierno presenta su dimisión al Rey.
+R CE arts. 112 y 114.1
+
+Q La moción de censura debe ser propuesta al menos por:
+= La décima parte de los diputados
+- La quinta parte de los diputados
+- Cincuenta diputados
+- Un grupo parlamentario
+E Y debe incluir un candidato a la Presidencia del Gobierno.
+R CE art. 113.2
+
+Q La moción de censura se aprueba por:
+= Mayoría absoluta del Congreso
+- Mayoría simple del Congreso
+- Mayoría absoluta de las Cortes Generales
+- Mayoría de tres quintos
+E Art. 113.1.
+R CE art. 113.1
+
+Q La moción de censura no puede votarse hasta que transcurran:
+= Cinco días desde su presentación
+- Dos días desde su presentación
+- Diez días desde su presentación
+- Un mes desde su presentación
+E En los dos primeros días pueden presentarse mociones alternativas.
+R CE art. 113.3
+
+Q Si la moción de censura no es aprobada, sus signatarios:
+= No pueden presentar otra durante el mismo período de sesiones
+- No pueden presentar otra en la misma legislatura
+- Deben abandonar su escaño
+- No tienen ninguna limitación
+E Art. 113.4.
+R CE art. 113.4
+
+Q Si el Congreso aprueba una moción de censura:
+= El Gobierno presenta su dimisión y el candidato incluido en la moción se entiende investido de la confianza
+- Se convocan elecciones automáticamente
+- El Rey propone un nuevo candidato
+- El Senado debe ratificarla
+E El Rey lo nombra Presidente del Gobierno.
+R CE art. 114.2
+
+Q ¿Quién decreta la disolución del Congreso, del Senado o de las Cortes Generales?
+= El Rey, a propuesta del Presidente del Gobierno, previa deliberación del Consejo de Ministros
+- El Presidente del Gobierno directamente
+- El Presidente del Congreso
+- El Consejo de Ministros
+E El decreto de disolución fija la fecha de las elecciones.
+R CE art. 115.1
+
+Q La propuesta de disolución NO puede presentarse:
+= Mientras esté en trámite una moción de censura
+- Durante el primer año de legislatura en ningún caso
+- Fuera del período de sesiones
+- Durante el estado de alarma, si hay acuerdo del Senado
+E Tampoco cabe nueva disolución antes de que transcurra un año desde la anterior, salvo la del art. 99.5.
+R CE art. 115.2 y 3
+
+Q El estado de alarma lo declara:
+= El Gobierno, mediante decreto acordado en Consejo de Ministros, por un plazo máximo de quince días
+- El Congreso por mayoría absoluta
+- El Gobierno, previa autorización del Congreso, por treinta días
+- El Rey
+E Se da cuenta al Congreso, sin cuya autorización no puede prorrogarse.
+R CE art. 116.2
+
+Q El estado de excepción lo declara:
+= El Gobierno, previa autorización del Congreso, por un plazo máximo de treinta días prorrogable por otros treinta
+- El Congreso por mayoría absoluta, a propuesta del Gobierno
+- El Gobierno sin autorización, por quince días
+- El Senado por mayoría absoluta
+E Art. 116.3.
+R CE art. 116.3
+
+Q El estado de sitio lo declara:
+= El Congreso por mayoría absoluta, a propuesta exclusiva del Gobierno
+- El Gobierno, dando cuenta al Congreso
+- El Rey, a propuesta del Jefe del Estado Mayor
+- El Senado por mayoría absoluta
+E El Congreso determina su ámbito territorial, duración y condiciones.
+R CE art. 116.4
+
+Q Mientras esté declarado alguno de los estados del art. 116:
+= No puede procederse a la disolución del Congreso
+- Se suspende el funcionamiento de las Cámaras
+- El Gobierno puede legislar sin control
+- Se suspenden todas las elecciones municipales
+E Las Cámaras quedan convocadas automáticamente si no están en período de sesiones.
+R CE art. 116.5
+
+Q Si el Congreso está disuelto o ha expirado su mandato cuando se declara un estado de alarma, excepción o sitio, sus competencias las asume:
+= Su Diputación Permanente
+- El Senado
+- El Gobierno
+- El Tribunal Constitucional
+E Art. 116.5.
+R CE art. 116.5
+
+Q ¿Qué ley orgánica regula los estados de alarma, excepción y sitio?
+= La LO 4/1981
+- La LO 6/1985
+- La LO 2/1979
+- La LO 3/1979
+E La LO 6/1985 es la del Poder Judicial; la 2/1979, la del Tribunal Constitucional.
+R LO 4/1981
+
+Q ¿Qué artículos forman el Título V de la Constitución?
+= Los arts. 108 a 116
+- Los arts. 97 a 107
+- Los arts. 117 a 127
+- Los arts. 66 a 96
+E El Título IV (arts. 97-107) regula el Gobierno y la Administración.
+R CE, estructura
+
+Q La declaración de los estados de alarma, excepción o sitio:
+= No modifica el principio de responsabilidad del Gobierno y de sus agentes
+- Suspende la responsabilidad del Gobierno
+- Suspende todos los derechos fundamentales
+- Atribuye al Rey el mando de las Fuerzas Armadas y del Gobierno
+E Art. 116.6.
+R CE art. 116.6
+
+Q Cuando la disolución se produce automáticamente por no haberse investido Presidente en dos meses, se aplica:
+= El art. 99.5
+- El art. 115.3
+- El art. 113.4
+- El art. 116.5
+E Es la excepción a la regla de que no cabe nueva disolución antes de un año.
+R CE art. 99.5

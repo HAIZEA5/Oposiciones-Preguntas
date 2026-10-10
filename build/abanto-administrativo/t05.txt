@@ -1,0 +1,175 @@
+Q Según el art. 117.1 de la Constitución, la justicia emana:
+= Del pueblo y se administra en nombre del Rey
+- Del Rey y se administra en nombre del pueblo
+- Del Estado y se administra en nombre de la ley
+- De las Cortes y se administra en nombre del Rey
+E Por Jueces y Magistrados independientes, inamovibles, responsables y sometidos únicamente al imperio de la ley.
+R CE art. 117.1
+
+Q ¿Cuál de estas características NO atribuye el art. 117.1 a los Jueces y Magistrados?
+= Elegibles
+- Independientes
+- Inamovibles
+- Responsables
+E Además, están sometidos únicamente al imperio de la ley.
+R CE art. 117.1
+
+Q El ejercicio de la potestad jurisdiccional, juzgando y haciendo ejecutar lo juzgado, corresponde:
+= Exclusivamente a los Juzgados y Tribunales determinados por las leyes
+- A los Juzgados, Tribunales y al Ministerio Fiscal
+- Al Consejo General del Poder Judicial
+- A los Tribunales y al Gobierno en ciertos casos
+E Es el principio de exclusividad (art. 117.3).
+R CE art. 117.3
+
+Q El principio de unidad jurisdiccional es:
+= La base de la organización y funcionamiento de los Tribunales
+- La prohibición de la jurisdicción militar
+- La existencia de un único juez por provincia
+- La sumisión de todos los jueces al Tribunal Constitucional
+E La ley regula la jurisdicción militar en el ámbito castrense y en los supuestos de estado de sitio.
+R CE art. 117.5
+
+Q Según el art. 117.6 de la Constitución:
+= Se prohíben los Tribunales de excepción
+- Se permiten los Tribunales de excepción en estado de sitio
+- Se crean los Tribunales de Honor
+- Se suprime la jurisdicción militar
+E Art. 117.6.
+R CE art. 117.6
+
+Q La justicia es gratuita:
+= Cuando así lo disponga la ley y, en todo caso, para quienes acrediten insuficiencia de recursos para litigar
+- Siempre, para cualquier persona
+- Nunca
+- Solo en el orden penal
+E Art. 119.
+R CE art. 119
+
+Q Según el art. 120, las sentencias:
+= Serán siempre motivadas y se pronunciarán en audiencia pública
+- Pueden no ser motivadas en el orden civil
+- Se pronuncian siempre a puerta cerrada
+- Solo son públicas en el orden penal
+E El procedimiento será predominantemente oral, sobre todo en materia criminal.
+R CE art. 120
+
+Q Los daños causados por error judicial y los que sean consecuencia del funcionamiento anormal de la Administración de Justicia dan derecho a una indemnización a cargo de:
+= El Estado
+- El juez responsable
+- La Comunidad Autónoma
+- El Consejo General del Poder Judicial
+E Conforme a la ley.
+R CE art. 121
+
+Q El órgano de gobierno del Poder Judicial es:
+= El Consejo General del Poder Judicial
+- El Tribunal Supremo
+- El Ministerio de Justicia
+- El Tribunal Constitucional
+E Art. 122.2.
+R CE art. 122.2
+
+Q ¿Cuántos miembros forman el Consejo General del Poder Judicial, además de su Presidente?
+= Veinte, nombrados por el Rey por un período de cinco años
+- Doce, nombrados por cuatro años
+- Veinte, nombrados por nueve años
+- Quince, nombrados por cinco años
+E El Presidente es el del Tribunal Supremo.
+R CE art. 122.3
+
+Q De los veinte vocales del CGPJ, ¿cuántos se eligen entre Jueces y Magistrados de todas las categorías judiciales?
+= Doce
+- Ocho
+- Diez
+- Veinte
+E Los otros ocho los proponen el Congreso (cuatro) y el Senado (cuatro), por mayoría de tres quintos.
+R CE art. 122.3
+
+Q Los vocales del CGPJ propuestos por las Cámaras deben ser abogados y otros juristas de reconocida competencia con más de:
+= Quince años de ejercicio en su profesión
+- Diez años
+- Veinte años
+- Cinco años
+E Los proponen el Congreso y el Senado, cuatro cada uno, por mayoría de tres quintos.
+R CE art. 122.3
+
+Q El Tribunal Supremo es el órgano jurisdiccional superior en todos los órdenes, salvo en materia de:
+= Garantías constitucionales
+- Derecho penal
+- Derecho militar
+- Derecho foral
+E Las garantías constitucionales corresponden al Tribunal Constitucional.
+R CE art. 123.1
+
+Q El Presidente del Tribunal Supremo es nombrado por el Rey a propuesta de:
+= El Consejo General del Poder Judicial
+- El Gobierno
+- El Congreso de los Diputados
+- El propio Tribunal Supremo
+E En la forma que determine la ley.
+R CE art. 123.2
+
+Q ¿Cuál de estos principios rige la actuación del Ministerio Fiscal?
+= Unidad de actuación y dependencia jerárquica, con sujeción a los de legalidad e imparcialidad
+- Independencia y libre designación
+- Inamovilidad y autonomía
+- Oportunidad y discrecionalidad
+E Ejerce sus funciones por medio de órganos propios.
+R CE art. 124.2
+
+Q El Fiscal General del Estado es nombrado por el Rey:
+= A propuesta del Gobierno, oído el Consejo General del Poder Judicial
+- A propuesta del Consejo General del Poder Judicial
+- A propuesta del Congreso por mayoría de tres quintos
+- A propuesta del Tribunal Supremo
+E Art. 124.4.
+R CE art. 124.4
+
+Q ¿Cuál es la misión del Ministerio Fiscal según el art. 124?
+= Promover la acción de la justicia en defensa de la legalidad, de los derechos de los ciudadanos y del interés público tutelado por la ley
+- Juzgar los delitos más graves
+- Gobernar el Poder Judicial
+- Defender al Estado en todos los juicios
+E También velar por la independencia de los Tribunales y procurar ante ellos la satisfacción del interés social.
+R CE art. 124.1
+
+Q ¿Cuál de estas formas de participación ciudadana en la Administración de Justicia recoge el art. 125?
+= La acción popular y la institución del Jurado
+- La elección de los jueces por sufragio
+- La designación de los fiscales por los Ayuntamientos
+- La revisión de sentencias por referéndum
+E También los Tribunales consuetudinarios y tradicionales.
+R CE art. 125
+
+Q La policía judicial depende de:
+= Los Jueces, los Tribunales y el Ministerio Fiscal, en sus funciones de averiguación del delito
+- El Ministerio del Interior exclusivamente
+- El Consejo General del Poder Judicial
+- Los Ayuntamientos
+E Art. 126.
+R CE art. 126
+
+Q Los Jueces, Magistrados y Fiscales en activo:
+= No pueden desempeñar otros cargos públicos ni pertenecer a partidos políticos o sindicatos
+- Pueden pertenecer a partidos políticos, pero no a sindicatos
+- Pueden afiliarse libremente a partidos y sindicatos
+- No pueden formar asociaciones profesionales
+E Sí pueden asociarse profesionalmente.
+R CE art. 127.1
+
+Q ¿Qué ley orgánica desarrolla el Título VI de la Constitución?
+= La LO 6/1985, del Poder Judicial
+- La LO 2/1979, del Tribunal Constitucional
+- La LO 4/1981
+- La LO 50/1981
+E Determina la constitución, funcionamiento y gobierno de los Juzgados y Tribunales y el estatuto de los Jueces.
+R CE art. 122.1
+
+Q ¿Qué artículos forman el Título VI de la Constitución?
+= Los arts. 117 a 127
+- Los arts. 108 a 116
+- Los arts. 128 a 136
+- Los arts. 159 a 165
+E El Título VI se titula «Del Poder Judicial».
+R CE, estructura
