@@ -1,0 +1,55 @@
+Q Según el art. 54, los procedimientos pueden iniciarse:
+= De oficio o a solicitud del interesado
+- Solo de oficio
+- Solo a solicitud del interesado
+- De oficio, a solicitud del interesado o por orden judicial
+E Las formas de iniciación de oficio se detallan en el art. 58.
+R Ley 39/2015 art. 54
+
+Q Con anterioridad al inicio del procedimiento, el órgano competente puede abrir:
+= Un periodo de información o actuaciones previas para conocer las circunstancias del caso y la conveniencia de iniciar el procedimiento
+- Un trámite de audiencia
+- Un periodo de prueba
+- Una información pública obligatoria
+E Art. 55. En los sancionadores, estas actuaciones se orientan a determinar los hechos, los responsables y las circunstancias relevantes.
+R Ley 39/2015 art. 55
+
+Q La petición razonada de iniciación de un procedimiento la formula:
+= Cualquier órgano administrativo que no tiene competencia para iniciarlo y que ha tenido conocimiento de las circunstancias, conductas o hechos objeto del procedimiento
+- El interesado
+- Un órgano jerárquicamente superior
+- Cualquier ciudadano
+E Art. 61. La orden superior la emite un órgano superior jerárquico (art. 60).
+R Ley 39/2015 art. 61
+
+Q ¿Qué es la denuncia según el art. 62?
+= El acto por el que cualquier persona, en cumplimiento o no de una obligación legal, pone en conocimiento de un órgano administrativo un hecho que pudiera justificar la iniciación de oficio
+- Una solicitud de iniciación por el interesado
+- Una petición razonada de otro órgano
+- Una reclamación de responsabilidad patrimonial
+E Debe expresar la identidad de quien la presenta y el relato de los hechos.
+R Ley 39/2015 art. 62.1
+
+Q ¿Cuál de estos datos NO es obligatorio en una solicitud de iniciación según el art. 66?
+= El número de cuenta bancaria del interesado
+- Nombre y apellidos del interesado y, en su caso, de su representante
+- Hechos, razones y petición en que se concrete la solicitud
+- Órgano, centro o unidad administrativa a la que se dirige y su código de identificación
+E También el medio electrónico o lugar para notificaciones, el lugar y fecha y la firma o acreditación de la autenticidad de la voluntad.
+R Ley 39/2015 art. 66.1
+
+Q Según el art. 71, en el despacho de los expedientes se guardará el orden riguroso de incoación en asuntos de homogénea naturaleza:
+= Salvo que el titular de la unidad dé orden motivada en contrario, de la que quede constancia
+- Sin excepción
+- Salvo petición del interesado
+- Salvo en los procedimientos electrónicos
+E El incumplimiento da lugar a la exigencia de responsabilidad disciplinaria.
+R Ley 39/2015 art. 71.2
+
+Q Según el principio de celeridad del art. 72, se acordarán en un solo acto:
+= Todos los trámites que, por su naturaleza, admitan un impulso simultáneo y no sea obligado su cumplimiento sucesivo
+- Todos los actos del procedimiento
+- La iniciación y la resolución
+- La audiencia y la prueba
+E Al solicitar los trámites, se consignará el plazo legal para cumplimentarlos.
+R Ley 39/2015 art. 72

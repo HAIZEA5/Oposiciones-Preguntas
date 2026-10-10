@@ -1,0 +1,191 @@
+Q Según el art. 34, los actos administrativos que dicten las Administraciones se producirán:
+= Por el órgano competente ajustándose a los requisitos y al procedimiento establecido
+- Por cualquier órgano de la Administración
+- Solo por órganos colegiados
+- Por el funcionario que tramite el expediente
+E Su contenido se ajustará a lo dispuesto por el ordenamiento y será determinado y adecuado a los fines de aquellos.
+R Ley 39/2015 art. 34
+
+Q ¿Cuál de estos actos NO requiere motivación según el art. 35?
+= Un acto que se ajusta a un dictamen previo sin separarse de él
+- Los actos que limiten derechos subjetivos o intereses legítimos
+- Los que resuelvan recursos administrativos
+- Los que se separen del criterio seguido en actuaciones precedentes
+E Al revés: deben motivarse los actos que se separen del criterio de actuaciones precedentes o del dictamen de órganos consultivos.
+R Ley 39/2015 art. 35
+
+Q La motivación de los actos que pongan fin a los procedimientos selectivos y de concurrencia competitiva se realizará:
+= Conforme a lo que dispongan las normas que regulen sus convocatorias, acreditando los fundamentos de la resolución
+- Siempre de forma individualizada para cada aspirante
+- No se motivan
+- Solo si lo pide un aspirante
+E Art. 35.2.
+R Ley 39/2015 art. 35.2
+
+Q Según el art. 36, los actos administrativos se producirán:
+= Por escrito a través de medios electrónicos, salvo que su naturaleza exija otra forma más adecuada
+- Siempre en papel
+- Verbalmente, salvo que el interesado pida lo contrario
+- Por escrito en papel, con copia electrónica
+E Si los actos se dictan de forma verbal, su constancia por escrito la efectuará el titular del órgano inferior o funcionario que los reciba.
+R Ley 39/2015 art. 36
+
+Q Según el art. 39, los actos de las Administraciones sujetos al Derecho Administrativo:
+= Se presumen válidos y producen efectos desde la fecha en que se dicten, salvo que en ellos se disponga otra cosa
+- Producen efectos desde su notificación en todo caso
+- Solo son válidos tras su publicación en el boletín oficial
+- Necesitan ser confirmados por un órgano superior
+E La eficacia queda demorada cuando lo exija su contenido o esté supeditada a notificación, publicación o aprobación superior.
+R Ley 39/2015 art. 39.1
+
+Q ¿Cuándo puede otorgarse eficacia retroactiva a un acto administrativo?
+= Cuando se dicte en sustitución de actos anulados y cuando produzca efectos favorables al interesado, si los supuestos de hecho ya existían y no lesiona derechos de terceros
+- Siempre que lo decida el órgano
+- Nunca
+- Solo en los actos sancionadores
+E Art. 39.3.
+R Ley 39/2015 art. 39.3
+
+Q ¿En qué plazo debe cursarse la notificación desde que se dicta el acto?
+= Diez días
+- Quince días
+- Un mes
+- Tres días
+E Art. 40.2. Debe contener el texto íntegro de la resolución, si pone fin o no a la vía administrativa y los recursos procedentes.
+R Ley 39/2015 art. 40.2
+
+Q Una notificación defectuosa que no contenga el texto íntegro del acto surte efecto:
+= Desde que el interesado realice actuaciones que supongan conocimiento del contenido o interponga el recurso procedente
+- Desde que se dicta el acto
+- Nunca
+- A los diez días de su envío
+E Art. 40.3.
+R Ley 39/2015 art. 40.3
+
+Q A efectos de cumplir el plazo máximo de duración del procedimiento, basta con:
+= La notificación que contenga el texto íntegro de la resolución, así como el intento de notificación debidamente acreditado
+- La firma de la resolución
+- La publicación en el tablón de anuncios
+- El envío por correo ordinario
+E Art. 40.4.
+R Ley 39/2015 art. 40.4
+
+Q Las notificaciones se practicarán preferentemente:
+= Por medios electrónicos y, en todo caso, cuando el interesado resulte obligado a recibirlas por esta vía
+- En papel, por correo certificado
+- Por teléfono
+- Mediante publicación en el BOE
+E Art. 41.1.
+R Ley 39/2015 art. 41.1
+
+Q ¿Cuál de estas notificaciones puede practicarse en papel aunque el interesado se relacione electrónicamente?
+= La practicada con ocasión de la comparecencia espontánea del interesado en las oficinas de asistencia en materia de registros
+- La de una resolución sancionadora
+- Cualquier notificación a una persona jurídica
+- La de los actos de trámite
+E También cuando sea necesario practicarla por entrega directa de un empleado público.
+R Ley 39/2015 art. 41.1
+
+Q En las notificaciones en papel, si nadie se hace cargo en el domicilio, ¿cómo se procede?
+= Se repite el intento una sola vez y en una hora distinta dentro de los tres días siguientes
+- Se publica directamente en el BOE
+- Se entiende practicada
+- Se archiva el expediente
+E Si el primer intento fue antes de las 15:00, el segundo será después de las 15:00, y viceversa, con al menos tres horas de diferencia.
+R Ley 39/2015 art. 42.2
+
+Q Las notificaciones por medios electrónicos se entienden practicadas:
+= En el momento en que se produzca el acceso a su contenido
+- En el momento de su envío
+- A los tres días de su envío
+- Cuando el interesado contesta
+E Art. 43.2.
+R Ley 39/2015 art. 43.2
+
+Q Una notificación electrónica se entiende rechazada cuando:
+= Han transcurrido diez días naturales desde su puesta a disposición sin que se acceda a su contenido
+- Han transcurrido diez días hábiles
+- Han transcurrido quince días naturales
+- El interesado no responde en un mes
+E Art. 43.2.
+R Ley 39/2015 art. 43.2
+
+Q Cuando los interesados sean desconocidos o se ignore el lugar de la notificación, esta se hará:
+= Por medio de un anuncio publicado en el Boletín Oficial del Estado
+- En el tablón del Ayuntamiento únicamente
+- En un periódico de difusión nacional
+- Mediante edicto en la sede judicial
+E Art. 44. Previamente, y con carácter facultativo, puede publicarse en el boletín de la Comunidad Autónoma o la provincia.
+R Ley 39/2015 art. 44
+
+Q ¿En qué casos se publican los actos administrativos en lugar de notificarse, según el art. 45?
+= Cuando tengan por destinatario una pluralidad indeterminada de personas o en los procedimientos selectivos o de concurrencia competitiva
+- Siempre que lo decida el órgano
+- Cuando el acto sea favorable
+- Cuando el interesado viva en el extranjero
+E La publicación surte los efectos de la notificación.
+R Ley 39/2015 art. 45
+
+Q ¿Cuál de estas es una causa de nulidad de pleno derecho según el art. 47.1?
+= Los actos dictados prescindiendo total y absolutamente del procedimiento legalmente establecido
+- Los actos dictados fuera de plazo
+- Los actos con un defecto de forma que no produce indefensión
+- Cualquier infracción del ordenamiento jurídico
+E Las otras opciones son, en su caso, anulabilidad o irregularidad no invalidante.
+R Ley 39/2015 art. 47.1.e
+
+Q ¿Cuál de estas NO es causa de nulidad de pleno derecho?
+= Los actos que incurran en cualquier infracción del ordenamiento jurídico, incluso la desviación de poder
+- Los que lesionen derechos y libertades susceptibles de amparo constitucional
+- Los dictados por órgano manifiestamente incompetente por razón de la materia o del territorio
+- Los que tengan un contenido imposible
+E Eso es anulabilidad (art. 48.1).
+R Ley 39/2015 arts. 47 y 48
+
+Q Las actuaciones administrativas realizadas fuera del tiempo establecido:
+= Solo implican la anulabilidad cuando así lo imponga la naturaleza del término o plazo
+- Son siempre nulas de pleno derecho
+- Son siempre anulables
+- No tienen ninguna consecuencia
+E Art. 48.3.
+R Ley 39/2015 art. 48.3
+
+Q El defecto de forma solo determina la anulabilidad cuando:
+= El acto carezca de los requisitos formales indispensables para alcanzar su fin o dé lugar a la indefensión de los interesados
+- Lo alegue el interesado
+- Afecte a la firma del acto
+- Se haya producido en un acto de trámite
+E Art. 48.2.
+R Ley 39/2015 art. 48.2
+
+Q La nulidad o anulabilidad de un acto:
+= No implica la de los sucesivos en el procedimiento que sean independientes del primero
+- Supone siempre la nulidad de todo el procedimiento
+- Solo afecta a los actos posteriores
+- Afecta a todos los actos de la misma Administración
+E Art. 49.1. Y la de una parte del acto no implica la de las partes independientes.
+R Ley 39/2015 art. 49
+
+Q Los actos nulos o anulables que contengan los elementos constitutivos de otro distinto producirán los efectos de este. Es la:
+= Conversión de actos viciados
+- Convalidación
+- Conservación de actos y trámites
+- Revocación
+E Art. 50.
+R Ley 39/2015 art. 50
+
+Q ¿Qué tipo de actos puede convalidar la Administración subsanando sus vicios?
+= Los actos anulables
+- Los actos nulos de pleno derecho
+- Cualquier acto
+- Solo los actos de trámite
+E Art. 52.1. Si el vicio es la incompetencia no determinante de nulidad, convalida el órgano competente superior jerárquico del que dictó el acto.
+R Ley 39/2015 art. 52
+
+Q El órgano que declare la nulidad o anule las actuaciones dispondrá siempre:
+= La conservación de los actos y trámites cuyo contenido se hubiera mantenido igual de no haberse cometido la infracción
+- La repetición de todo el procedimiento
+- El archivo del expediente
+- La indemnización al interesado
+E Art. 51.
+R Ley 39/2015 art. 51

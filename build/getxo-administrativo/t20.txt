@@ -1,0 +1,135 @@
+Q ¿Qué norma aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos?
+= El Real Decreto 203/2021, de 30 de marzo
+- El Real Decreto 311/2022
+- El Real Decreto 1671/2009
+- El Real Decreto 4/2010
+E Desarrolla las Leyes 39/2015 y 40/2015 en materia de administración electrónica.
+R RD 203/2021
+
+Q Según el art. 2 del Reglamento, el principio que garantiza la independencia en la elección de alternativas tecnológicas y el uso de estándares abiertos es el de:
+= Neutralidad tecnológica y adaptabilidad al progreso de las tecnologías
+- Accesibilidad
+- Proporcionalidad
+- Personalización y proactividad
+E Art. 2.a.
+R RD 203/2021 art. 2.a
+
+Q Si una persona física no obligada decide relacionarse electrónicamente (o dejar de hacerlo) en una fase posterior del procedimiento, la comunicación produce efectos:
+= A partir del quinto día hábil siguiente a aquel en que el órgano competente haya tenido constancia de ella
+- Inmediatamente
+- Al mes siguiente
+- Al finalizar el procedimiento
+E Art. 3.2.
+R RD 203/2021 art. 3.2
+
+Q ¿Cuál de estos canales de asistencia para el acceso a los servicios electrónicos aparece en el art. 4?
+= Las redes sociales
+- El fax
+- El correo postal ordinario
+- La mensajería instantánea privada del funcionario
+E Canales: presencial, portales de internet y sedes electrónicas, redes sociales, telefónico, correo electrónico y cualquier otro conforme al art. 12 de la Ley 39/2015.
+R RD 203/2021 art. 4
+
+Q Si un obligado a relacionarse electrónicamente no utiliza esos medios, se le requiere para que subsane advirtiéndole de que, si no lo hace en el plazo de:
+= Diez días, se le tendrá por desistido o se le podrá declarar decaído en su derecho al trámite
+- Quince días, se archivará la solicitud
+- Cinco días, se le impondrá una multa
+- Un mes, se tramitará en papel
+E Si es una solicitud de iniciación, la fecha de presentación es la de la subsanación.
+R RD 203/2021 art. 14.1
+
+Q ¿Cuál de estos sistemas puede usar la Administración para su identificación electrónica según el art. 15.2?
+= El sello electrónico basado en un certificado electrónico cualificado
+- La firma manuscrita escaneada del responsable
+- Una contraseña común para todo el personal
+- La dirección IP del servidor
+E También la identificación de sedes, la firma para la actuación automatizada, la firma del personal y el intercambio de datos en entornos cerrados.
+R RD 203/2021 art. 15.2
+
+Q Los certificados de empleado público con número de identificación profesional se usan cuando:
+= Las actuaciones afecten a información clasificada, a la seguridad pública, a la defensa nacional u otras en que esté justificado el anonimato
+- El empleado lo pida para mayor comodidad
+- La actuación sea automatizada
+- El empleado sea personal laboral
+E Art. 23.
+R RD 203/2021 art. 23
+
+Q Según el art. 26, los interesados pueden identificarse electrónicamente a través de:
+= Cualquier sistema que cuente con un registro previo como usuario que permita garantizar su identidad
+- Solo el DNI electrónico
+- Solo certificados de la FNMT
+- Solo Cl@ve permanente
+E En particular, certificados cualificados de firma o sello y sistemas de clave concertada.
+R RD 203/2021 art. 26
+
+Q Cada Administración dispondrá de un Registro Electrónico General en el que:
+= Hará el asiento de todo documento presentado o recibido en cualquier órgano, organismo público o entidad vinculada o dependiente
+- Solo registrará los documentos de salida
+- Solo registrará los documentos en papel
+- Registrará solo las solicitudes de los obligados electrónicos
+E Los organismos vinculados pueden tener su propio registro, interoperable con el general.
+R RD 203/2021 art. 37.2
+
+Q Según el art. 42, las notificaciones electrónicas se practican mediante:
+= Comparecencia en la sede electrónica, a través de la Dirección Electrónica Habilitada única o mediante ambos sistemas
+- Correo electrónico ordinario
+- Mensaje SMS con el contenido íntegro
+- Publicación en el tablón edictal
+E Si se ponen a disposición por ambos sistemas, cuenta el primer acceso o rechazo.
+R RD 203/2021 art. 42.1
+
+Q La falta de práctica del aviso de puesta a disposición de la notificación:
+= No impide que la notificación sea considerada plenamente válida
+- Hace nula la notificación
+- Obliga a repetir la notificación en papel
+- Amplía el plazo de acceso a veinte días
+E El aviso es meramente informativo y se envía al dispositivo o correo que haya comunicado el interesado.
+R RD 203/2021 art. 43.1
+
+Q ¿Dónde se aloja la Dirección Electrónica Habilitada única (DEHú)?
+= En la sede electrónica del Punto de Acceso General electrónico (PAGe) de la Administración General del Estado
+- En la sede de cada Ayuntamiento
+- En la Agencia Tributaria
+- En el Registro Civil
+E Art. 44.2.
+R RD 203/2021 art. 44
+
+Q Antes de acceder a una notificación en sede electrónica, se informa al interesado de que se presume rechazada si:
+= Transcurren diez días naturales desde la puesta a disposición sin acceder a su contenido
+- Transcurren cinco días hábiles
+- No la imprime
+- Transcurre un mes
+E Art. 45.1.
+R RD 203/2021 art. 45.1
+
+Q ¿Cómo se lleva a cabo el foliado de los expedientes administrativos electrónicos?
+= Mediante un índice electrónico autenticado que garantiza la integridad del expediente
+- Numerando a mano cada documento impreso
+- Mediante un código de barras en cada página
+- No se folian
+E El índice lo firma el titular del órgano o se sella electrónicamente si el expediente se forma automáticamente.
+R RD 203/2021 art. 51
+
+Q ¿Puede un mismo documento electrónico formar parte de distintos expedientes?
+= Sí
+- No, nunca
+- Solo si es un documento del interesado
+- Solo con autorización judicial
+E Art. 51.2.
+R RD 203/2021 art. 51.2
+
+Q Los documentos en papel que no puedan devolverse al interesado en el momento de presentarlos se conservan a su disposición, una vez digitalizados, durante:
+= Seis meses, salvo que reglamentariamente se fije un plazo mayor
+- Un mes
+- Un año
+- Diez días
+E Después pueden destruirse conforme a la normativa de archivos (art. 53.3).
+R RD 203/2021 art. 53.1
+
+Q El archivo electrónico único de cada Administración es:
+= El conjunto de sistemas y servicios que sustenta la gestión, custodia y recuperación de los documentos y expedientes electrónicos una vez finalizados los procedimientos
+- El registro electrónico general
+- La sede electrónica
+- La carpeta ciudadana
+E Garantiza autenticidad, conservación, integridad, confidencialidad, disponibilidad y cadena de custodia.
+R RD 203/2021 art. 55

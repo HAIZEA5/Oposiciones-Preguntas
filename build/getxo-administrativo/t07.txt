@@ -1,0 +1,191 @@
+Q ¿Qué Reglamento europeo adapta y completa la Ley Orgánica 3/2018?
+= El Reglamento (UE) 2016/679, de 27 de abril de 2016
+- El Reglamento (UE) 910/2014
+- La Directiva 95/46/CE
+- El Reglamento (UE) 2018/1725
+E Además garantiza los derechos digitales de la ciudadanía (art. 1.b).
+R LOPDGDD art. 1
+
+Q ¿En qué artículo de la Constitución se ampara el derecho fundamental a la protección de datos personales?
+= En el art. 18.4
+- En el art. 20.1
+- En el art. 105.b
+- En el art. 24.1
+E Art. 1 de la LOPDGDD.
+R LOPDGDD art. 1
+
+Q ¿A cuál de estos tratamientos NO se aplica la LOPDGDD según su art. 2.2?
+= A los datos de personas fallecidas, sin perjuicio del art. 3
+- A los tratamientos no automatizados contenidos en un fichero
+- A los tratamientos de las Administraciones Públicas
+- A los tratamientos parcialmente automatizados
+E Tampoco a los excluidos por el art. 2.2 del RGPD ni a los de materias clasificadas.
+R LOPDGDD art. 2.2
+
+Q ¿Quiénes pueden solicitar el acceso a los datos de una persona fallecida?
+= Las personas vinculadas por razones familiares o de hecho y sus herederos, salvo que el fallecido lo hubiese prohibido expresamente o lo establezca una ley
+- Solo los herederos testamentarios
+- Cualquier persona que acredite un interés legítimo
+- Nadie; los datos se suprimen al fallecer
+E La prohibición no afecta al derecho de los herederos a acceder a los datos de carácter patrimonial.
+R LOPDGDD art. 3.1
+
+Q Según el art. 4, la inexactitud de los datos NO es imputable al responsable, si ha adoptado medidas razonables para suprimirlos o rectificarlos, cuando los datos:
+= Hubiesen sido obtenidos directamente del afectado
+- Hubiesen sido inventados por el responsable
+- Procedan de una fuente desconocida
+- Se hayan conservado más tiempo del necesario
+E También si proceden de un mediador, de la portabilidad o de un registro público.
+R LOPDGDD art. 4.2
+
+Q El deber de confidencialidad de quienes intervienen en el tratamiento:
+= Se mantiene aun cuando haya finalizado su relación con el responsable o encargado
+- Termina al finalizar la relación laboral
+- Solo afecta al responsable del tratamiento
+- Sustituye al secreto profesional
+E Es complementario de los deberes de secreto profesional (art. 5.2).
+R LOPDGDD art. 5.3
+
+Q Según el art. 6, el consentimiento del afectado es toda manifestación de voluntad:
+= Libre, específica, informada e inequívoca
+- Expresa, escrita y firmada
+- Libre y presunta
+- Tácita, salvo prueba en contrario
+E Mediante una declaración o una clara acción afirmativa.
+R LOPDGDD art. 6.1
+
+Q Si el tratamiento se basa en el consentimiento para varias finalidades:
+= Debe constar de manera específica e inequívoca que se otorga para todas ellas
+- Basta con consentir una de ellas
+- Se presume otorgado para todas
+- Debe renovarse cada año
+E Art. 6.2.
+R LOPDGDD art. 6.2
+
+Q ¿A partir de qué edad puede un menor consentir por sí mismo el tratamiento de sus datos?
+= Mayor de catorce años
+- Mayor de dieciséis años
+- Mayor de doce años
+- Mayor de dieciocho años
+E Por debajo de catorce años, solo es lícito con el consentimiento del titular de la patria potestad o tutela.
+R LOPDGDD art. 7
+
+Q Un tratamiento basado en el cumplimiento de una obligación legal exige que lo prevea:
+= Una norma de Derecho de la Unión Europea o una norma con rango de ley
+- Un reglamento de la Administración
+- Una instrucción interna del responsable
+- Un convenio colectivo
+E Art. 8.1. El basado en interés público o poderes públicos debe derivar de una competencia atribuida por norma con rango de ley (art. 8.2).
+R LOPDGDD art. 8
+
+Q Para levantar la prohibición de tratar datos cuya finalidad principal sea identificar la ideología, la religión o la orientación sexual:
+= No basta el solo consentimiento del afectado
+- Basta el consentimiento del afectado
+- Basta una orden del responsable
+- Es suficiente que los datos sean públicos
+E Art. 9.1, para evitar situaciones discriminatorias.
+R LOPDGDD art. 9.1
+
+Q Fuera de los supuestos legales, los datos sobre condenas e infracciones penales solo pueden tratarlos:
+= Abogados y procuradores, para recoger la información de sus clientes en el ejercicio de sus funciones
+- Las empresas de selección de personal
+- Cualquier responsable con consentimiento del afectado
+- Los medios de comunicación
+E Art. 10.3.
+R LOPDGDD art. 10.3
+
+Q ¿Qué contenido mínimo tiene la «información básica» del art. 11?
+= La identidad del responsable, la finalidad del tratamiento y la posibilidad de ejercer los derechos de los arts. 15 a 22 del RGPD
+- El nombre del delegado de protección de datos y el plazo de conservación
+- La base jurídica y las transferencias internacionales
+- Solo la finalidad del tratamiento
+E Se completa con una dirección electrónica u otro medio para acceder al resto de la información (información por capas).
+R LOPDGDD art. 11.2
+
+Q Si los datos no se obtuvieron del afectado, la información básica incluirá también:
+= Las categorías de datos y las fuentes de las que proceden
+- El precio de los datos
+- La identidad de quien los cedió y su domicilio
+- El número de registro del fichero
+E Art. 11.3.
+R LOPDGDD art. 11.3
+
+Q Los derechos de los arts. 15 a 22 del RGPD pueden ejercerse:
+= Directamente o por medio de representante legal o voluntario
+- Solo personalmente
+- Solo a través de abogado
+- Solo ante la Agencia Española de Protección de Datos
+E Art. 12.1.
+R LOPDGDD art. 12.1
+
+Q ¿Sobre quién recae la prueba de haber respondido a la solicitud de ejercicio de derechos?
+= Sobre el responsable del tratamiento
+- Sobre el afectado
+- Sobre el encargado del tratamiento
+- Sobre la Agencia Española de Protección de Datos
+E Art. 12.4.
+R LOPDGDD art. 12.4
+
+Q En nombre de los menores de catorce años, los derechos de protección de datos pueden ejercerlos:
+= Los titulares de la patria potestad
+- Solo el Ministerio Fiscal
+- Los propios menores, sin intervención de nadie
+- Los centros educativos
+E Art. 12.6.
+R LOPDGDD art. 12.6
+
+Q Las actuaciones del responsable para atender las solicitudes de ejercicio de derechos son, por regla general:
+= Gratuitas
+- De pago, según una tarifa oficial
+- Gratuitas solo para menores
+- Gratuitas una vez al año
+E Art. 12.7, salvo solicitudes manifiestamente infundadas o excesivas.
+R LOPDGDD art. 12.7
+
+Q El ejercicio del derecho de acceso puede considerarse repetitivo si se ejerce más de una vez durante:
+= Seis meses, salvo causa legítima
+- Un año
+- Tres meses
+- Un mes
+E Art. 13.3.
+R LOPDGDD art. 13.3
+
+Q El derecho de acceso se entiende otorgado si el responsable facilita:
+= Un sistema de acceso remoto, directo y seguro que garantice de modo permanente el acceso a la totalidad de los datos
+- Una copia en papel por correo certificado
+- Una cita presencial en sus oficinas
+- Un resumen de los datos
+E Art. 13.2.
+R LOPDGDD art. 13.2
+
+Q Al ejercer el derecho de rectificación, el afectado debe indicar:
+= A qué datos se refiere y la corrección que haya de realizarse
+- Solo su identidad
+- El motivo por el que quiere rectificar
+- La fecha en que se obtuvieron los datos
+E Acompañando, cuando sea preciso, documentación justificativa.
+R LOPDGDD art. 14
+
+Q Si la supresión deriva de la oposición a la mercadotecnia directa, el responsable:
+= Puede conservar los datos identificativos necesarios para impedir tratamientos futuros con ese fin
+- Debe borrar absolutamente todos los datos
+- Puede seguir enviando publicidad
+- Debe comunicarlo a la Agencia de Protección de Datos
+E Art. 15.2.
+R LOPDGDD art. 15.2
+
+Q Que el tratamiento de unos datos esté limitado:
+= Debe constar claramente en los sistemas de información del responsable
+- Supone su borrado inmediato
+- Solo se comunica al afectado
+- No tiene ninguna consecuencia práctica
+E Art. 16.2.
+R LOPDGDD art. 16.2
+
+Q El derecho de oposición y los derechos sobre decisiones automatizadas se ejercen conforme a los artículos del RGPD:
+= 21 y 22
+- 15 y 16
+- 17 y 18
+- 19 y 20
+E Art. 18 de la LOPDGDD. La portabilidad es el art. 20 del RGPD (art. 17 LOPDGDD).
+R LOPDGDD art. 18

@@ -1,0 +1,143 @@
+Q Según el art. 3 de la Ley 39/2015, tienen capacidad de obrar ante las Administraciones Públicas:
+= Las personas físicas o jurídicas con capacidad de obrar según el Derecho civil, y también los menores en los derechos que el ordenamiento les permita ejercer sin asistencia
+- Solo las personas mayores de edad
+- Solo las personas físicas
+- Solo quienes estén inscritos en el padrón
+E También los grupos de afectados, uniones sin personalidad y patrimonios independientes cuando la ley lo declare expresamente.
+R Ley 39/2015 art. 3
+
+Q ¿Quién se considera interesado según el art. 4.1?
+= Quienes promuevan el procedimiento como titulares de derechos o intereses legítimos, quienes tengan derechos que puedan resultar afectados y aquellos cuyos intereses legítimos puedan resultar afectados si se personan antes de la resolución definitiva
+- Cualquier ciudadano que presente un escrito
+- Solo quien inicia el procedimiento
+- Solo quien recibe la notificación
+E Las asociaciones representativas de intereses económicos y sociales son titulares de intereses legítimos colectivos (art. 4.2).
+R Ley 39/2015 art. 4
+
+Q Si la condición de interesado deriva de una relación jurídica transmisible y esta se transmite durante el procedimiento:
+= El derechohabiente sucede en tal condición, cualquiera que sea el estado del procedimiento
+- El procedimiento se archiva
+- Hay que iniciar un nuevo procedimiento
+- El derechohabiente no puede intervenir
+E Art. 4.3.
+R Ley 39/2015 art. 4.3
+
+Q Para formular solicitudes, presentar declaraciones responsables, interponer recursos, desistir o renunciar en nombre de otra persona:
+= Debe acreditarse la representación
+- Basta con afirmar que se actúa en su nombre
+- Solo hace falta acreditarla si lo pide el interesado
+- No se admite la representación
+E Para los actos y gestiones de mero trámite se presume la representación (art. 5.3).
+R Ley 39/2015 art. 5.3
+
+Q ¿Cómo puede acreditarse la representación según el art. 5.4?
+= Por cualquier medio válido en Derecho que deje constancia fidedigna, como el apoderamiento apud acta o la inscripción en el registro electrónico de apoderamientos
+- Solo mediante escritura notarial
+- Solo con una declaración jurada
+- Solo de forma presencial ante el funcionario
+E El apoderamiento apud acta puede hacerse por comparecencia electrónica o personal en las oficinas de asistencia en materia de registros.
+R Ley 39/2015 art. 5.4
+
+Q Si no se acredita la representación o es insuficiente:
+= No impide que se tenga por realizado el acto, siempre que se subsane en diez días o en el plazo mayor que se fije
+- El acto es nulo de pleno derecho
+- Se archiva el procedimiento sin más
+- Se impone una sanción al representante
+E Art. 5.6.
+R Ley 39/2015 art. 5.6
+
+Q ¿Qué Administraciones deben disponer de un registro electrónico general de apoderamientos?
+= La Administración General del Estado, las Comunidades Autónomas y las Entidades Locales
+- Solo la Administración General del Estado
+- Solo las Comunidades Autónomas
+- Solo los Ayuntamientos de más de 50.000 habitantes
+E Art. 6.1. Los registros deben ser plenamente interoperables.
+R Ley 39/2015 art. 6.1
+
+Q ¿Cuál es el tiempo máximo de validez de un poder inscrito en el registro electrónico de apoderamientos?
+= Cinco años desde la inscripción
+- Un año
+- Diez años
+- Indefinido
+E El poderdante puede revocarlo o prorrogarlo en cualquier momento antes de que termine.
+R Ley 39/2015 art. 6.6
+
+Q Si en una solicitud figuran varios interesados y no se ha designado representante, las actuaciones se efectúan con:
+= El representante o el interesado que expresamente hayan señalado o, en su defecto, el que figure en primer término
+- Todos los interesados por separado
+- El de mayor edad
+- El que tenga su domicilio más cerca del órgano
+E Art. 7.
+R Ley 39/2015 art. 7
+
+Q Si durante la instrucción se advierte la existencia de personas titulares de derechos que puedan resultar afectados y que no han comparecido:
+= Se les comunicará la tramitación del procedimiento
+- Se archiva el procedimiento
+- Se continúa sin ellas
+- Se les impone una sanción por no comparecer
+E Art. 8.
+R Ley 39/2015 art. 8
+
+Q Según el art. 9, ¿qué sistemas de identificación electrónica admiten las Administraciones?
+= Certificados electrónicos reconocidos o cualificados de firma o sello, sistemas de clave concertada y cualquier otro que se considere válido
+- Solo el DNI electrónico
+- Solo los certificados de la FNMT
+- Solo el sistema Cl@ve
+E Cuando se usen otros sistemas, se requiere autorización previa de la Secretaría General de Administración Digital.
+R Ley 39/2015 art. 9.2
+
+Q Con carácter general, para realizar cualquier actuación prevista en el procedimiento administrativo:
+= Será suficiente con que los interesados acrediten previamente su identidad por cualquiera de los medios del art. 9
+- Siempre se exige firma electrónica
+- Se exige comparecencia personal
+- Se exige firma manuscrita
+E La firma solo se exige para formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir y renunciar (art. 11.2).
+R Ley 39/2015 art. 11
+
+Q ¿Para cuál de estas actuaciones las Administraciones solo requieren firma a los interesados según el art. 11.2?
+= Interponer recursos
+- Consultar el estado de tramitación
+- Pedir información general
+- Obtener una copia del expediente
+E También formular solicitudes, presentar declaraciones responsables o comunicaciones, desistir y renunciar a derechos.
+R Ley 39/2015 art. 11.2
+
+Q Si un interesado no obligado no dispone de medios electrónicos, la identificación o firma electrónica puede hacerla:
+= Un funcionario público habilitado, mediante su sistema de firma, con el consentimiento expreso del interesado
+- Cualquier familiar del interesado
+- El propio interesado con firma manuscrita escaneada
+- No puede hacerse
+E Debe quedar constancia para los casos de discrepancia o litigio. Las Administraciones mantienen un registro de funcionarios habilitados.
+R Ley 39/2015 art. 12.2
+
+Q ¿Qué Administraciones deben mantener actualizado un registro de funcionarios habilitados para la identificación o firma?
+= La Administración General del Estado, las Comunidades Autónomas y las Entidades Locales
+- Solo la Administración General del Estado
+- Solo los ayuntamientos
+- Ninguna; es voluntario
+E Art. 12.3. Puede ser interoperable con el de apoderamientos.
+R Ley 39/2015 art. 12.3
+
+Q ¿Qué artículos forman el Título I de la Ley 39/2015, «De los interesados en el procedimiento»?
+= Los arts. 3 a 12
+- Los arts. 1 a 2
+- Los arts. 13 a 33
+- Los arts. 34 a 52
+E Capítulo I, capacidad de obrar y concepto de interesado (arts. 3 a 8); Capítulo II, identificación y firma (arts. 9 a 12).
+R Ley 39/2015, estructura
+
+Q Las asociaciones y organizaciones representativas de intereses económicos y sociales son titulares de:
+= Intereses legítimos colectivos, en los términos que la ley reconozca
+- Derechos subjetivos individuales
+- Ningún interés en el procedimiento
+- Intereses difusos sin efectos jurídicos
+E Art. 4.2.
+R Ley 39/2015 art. 4.2
+
+Q Las personas físicas con capacidad de obrar y las personas jurídicas pueden actuar por medio de:
+= Representante, que puede ser cualquier persona física con capacidad de obrar o persona jurídica si lo prevén sus estatutos
+- Solo un abogado colegiado
+- Solo un familiar directo
+- Solo un gestor administrativo
+E Art. 5.1 y 5.2.
+R Ley 39/2015 art. 5

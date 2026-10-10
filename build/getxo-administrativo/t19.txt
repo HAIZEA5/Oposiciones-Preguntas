@@ -1,0 +1,103 @@
+Q Según el art. 38, la sede electrónica es:
+= La dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública, o a uno o varios organismos públicos o entidades de Derecho Público
+- El portal de internet de cualquier entidad
+- El registro electrónico general
+- La dirección de correo electrónico oficial del órgano
+E El establecimiento de una sede conlleva la responsabilidad del titular respecto de la integridad, veracidad y actualización de la información y servicios.
+R Ley 40/2015 art. 38.1
+
+Q ¿Qué principios rigen la publicación en las sedes electrónicas según el art. 38.3?
+= Transparencia, publicidad, responsabilidad, calidad, seguridad, disponibilidad, accesibilidad, neutralidad e interoperabilidad
+- Jerarquía, competencia y legalidad
+- Eficacia, eficiencia y economía
+- Celeridad, simplicidad y gratuidad
+E Art. 38.3.
+R Ley 40/2015 art. 38.3
+
+Q Las sedes electrónicas utilizarán, para identificarse y garantizar una comunicación segura:
+= Certificados reconocidos o cualificados de autenticación de sitio web o medio equivalente
+- La firma manuscrita escaneada del titular
+- Contraseñas de un solo uso
+- El DNI electrónico del responsable
+E Art. 38.6.
+R Ley 40/2015 art. 38.6
+
+Q ¿Qué es el portal de internet según el art. 39?
+= El punto de acceso electrónico cuya titularidad corresponda a una Administración, organismo público o entidad de Derecho Público que permite el acceso a través de internet a la información publicada y, en su caso, a la sede electrónica
+- La sede electrónica de un ministerio
+- El registro de funcionarios habilitados
+- La plataforma de contratación del sector público
+E Art. 39.
+R Ley 40/2015 art. 39
+
+Q Según el art. 41, se entiende por actuación administrativa automatizada:
+= Cualquier acto o actuación realizada íntegramente a través de medios electrónicos por una Administración en el marco de un procedimiento, en el que no haya intervenido de forma directa un empleado público
+- Una actuación firmada electrónicamente por un funcionario
+- Una actuación tramitada por correo electrónico
+- Una actuación realizada fuera del horario de oficina
+E Debe establecerse previamente el órgano responsable a efectos de impugnación (art. 41.2).
+R Ley 40/2015 art. 41.1
+
+Q En la actuación administrativa automatizada, cada Administración puede determinar como sistema de firma:
+= Un sello electrónico de Administración Pública u órgano, o un código seguro de verificación vinculado a la Administración
+- La firma manuscrita del titular
+- El DNI electrónico del funcionario de guardia
+- No necesita firma
+E Art. 42.
+R Ley 40/2015 art. 42
+
+Q La actuación de una Administración, cuando utilice medios electrónicos, se realizará mediante:
+= Firma electrónica del titular del órgano o empleado público
+- Firma manuscrita escaneada
+- Sello de caucho digitalizado
+- La firma del interesado
+E Art. 43.1. Cada Administración determina los sistemas de firma de su personal.
+R Ley 40/2015 art. 43
+
+Q Según el art. 44, los documentos electrónicos transmitidos en entornos cerrados de comunicaciones establecidos entre Administraciones:
+= Se consideran válidos a efectos de autenticación e identificación de los emisores y receptores en las condiciones del artículo
+- No tienen validez
+- Necesitan siempre firma cualificada
+- Solo son válidos si se imprimen
+E Art. 44.1.
+R Ley 40/2015 art. 44
+
+Q Fuera del enunciado: ¿qué es la transmisión de datos entre Administraciones del art. 155 de la Ley 40/2015?
+= Un medio por el que cada Administración facilita el acceso de las restantes a los datos de los interesados que obren en su poder
+- Un registro público de interesados
+- Un sistema de pago de tasas
+- Una red social de empleados públicos
+E Art. 155 (relaciones electrónicas). Se respeta la normativa de protección de datos.
+R Ley 40/2015 art. 155
+
+Q Según el art. 46, los documentos utilizados en las actuaciones administrativas se almacenarán:
+= Por medios electrónicos, salvo cuando no sea posible
+- En papel, con copia electrónica opcional
+- En los archivos históricos provinciales
+- En el domicilio de los interesados
+E Los documentos electrónicos que contengan actos administrativos que afecten a derechos o intereses de los particulares deben conservarse en soportes de esta naturaleza.
+R Ley 40/2015 art. 46
+
+Q El aseguramiento e interoperabilidad de la firma electrónica de una Administración está en el art.:
+= 45
+- 38
+- 41
+- 46
+E Las Administraciones pueden determinar los trámites e informes que incluyan firma electrónica reconocida o cualificada y avanzada basada en certificados electrónicos.
+R Ley 40/2015 art. 45
+
+Q ¿Qué capítulo del Título Preliminar de la Ley 40/2015 regula el funcionamiento electrónico del sector público?
+= El Capítulo V (arts. 38 a 46)
+- El Capítulo IV
+- El Capítulo VI
+- El Capítulo II
+E El Capítulo VI regula los convenios (arts. 47 a 53).
+R Ley 40/2015, estructura
+
+Q ¿Qué es el código seguro de verificación (CSV)?
+= Un sistema de firma vinculado a la Administración, órgano o entidad y, en su caso, a la persona firmante, que permite comprobar la integridad del documento mediante el acceso a la sede electrónica
+- Un número de registro de entrada
+- La contraseña del funcionario
+- El número del expediente
+E Art. 42.b.
+R Ley 40/2015 art. 42.b

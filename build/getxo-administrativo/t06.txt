@@ -1,0 +1,183 @@
+Q Según el art. 4 de la Ley 31/1995, ¿qué se entiende por «prevención»?
+= El conjunto de actividades o medidas adoptadas o previstas en todas las fases de actividad de la empresa con el fin de evitar o disminuir los riesgos derivados del trabajo
+- La posibilidad de que un trabajador sufra un daño derivado del trabajo
+- Las enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo
+- El conjunto de equipos de protección individual que facilita el empresario
+E La segunda opción es la definición de «riesgo laboral» y la tercera, la de «daños derivados del trabajo».
+R Ley 31/1995 art. 4.1.º
+
+Q Para calificar un riesgo laboral desde el punto de vista de su gravedad, se valoran conjuntamente:
+= La probabilidad de que se produzca el daño y la severidad del mismo
+- La duración de la exposición y el número de trabajadores afectados
+- El coste de las medidas preventivas y el tamaño de la empresa
+- La frecuencia de los accidentes y la edad de los trabajadores
+E Art. 4.2.º.
+R Ley 31/1995 art. 4.2.º
+
+Q El riesgo que resulte probable racionalmente que se materialice en un futuro inmediato y pueda suponer un daño grave para la salud se denomina:
+= Riesgo laboral grave e inminente
+- Riesgo potencialmente peligroso
+- Daño derivado del trabajo
+- Riesgo profesional específico
+E Art. 4.4.º.
+R Ley 31/1995 art. 4.4.º
+
+Q La Ley de Prevención de Riesgos Laborales se aplica al personal funcionario al servicio de las Administraciones Públicas:
+= Sí, con las peculiaridades que se contemplan en la ley o en sus normas de desarrollo
+- No; solo se aplica a las relaciones laborales del Estatuto de los Trabajadores
+- Solo al personal laboral de las Administraciones
+- Solo si lo acuerda cada Administración
+E Art. 3.1. Algunas actividades de policía, seguridad, resguardo aduanero o protección civil quedan excluidas (art. 3.2).
+R Ley 31/1995 art. 3
+
+Q ¿Qué órgano es el científico técnico especializado de la Administración General del Estado en seguridad y salud en el trabajo?
+= El Instituto Nacional de Seguridad e Higiene en el Trabajo (hoy INSST)
+- La Inspección de Trabajo y Seguridad Social
+- La Comisión Nacional de Seguridad y Salud en el Trabajo
+- El Comité de Seguridad y Salud
+E Art. 8.
+R Ley 31/1995 art. 8
+
+Q La Comisión Nacional de Seguridad y Salud en el Trabajo es:
+= Un órgano colegiado asesor de las Administraciones públicas y de participación institucional
+- El órgano de vigilancia y control de la normativa preventiva
+- Un servicio de prevención mancomunado
+- El órgano que sanciona las infracciones en materia preventiva
+E Art. 13. La integran representantes de la Administración y, paritariamente, de las organizaciones empresariales y sindicales más representativas.
+R Ley 31/1995 art. 13
+
+Q En cumplimiento del deber de prevención, el empresario puede:
+= Designar uno o varios trabajadores, constituir un servicio de prevención o concertarlo con una entidad especializada ajena
+- Únicamente concertar un servicio de prevención ajeno
+- Únicamente designar a un trabajador
+- Delegar toda la responsabilidad en los trabajadores
+E Art. 30.1.
+R Ley 31/1995 art. 30.1
+
+Q Los trabajadores designados para las actividades de prevención:
+= No podrán sufrir ningún perjuicio derivado de esas actividades y gozan de las garantías de los representantes de los trabajadores
+- Pierden su antigüedad mientras ejercen esas funciones
+- Deben ser siempre técnicos titulados
+- Solo pueden existir en empresas de más de 50 trabajadores
+E Art. 30.4.
+R Ley 31/1995 art. 30.4
+
+Q Según el art. 31, el servicio de prevención es:
+= El conjunto de medios humanos y materiales necesarios para realizar las actividades preventivas
+- El órgano paritario de consulta en materia preventiva
+- El representante de los trabajadores con funciones específicas en prevención
+- La unidad de la Inspección de Trabajo que vigila las empresas
+E Asesora y asiste al empresario, a los trabajadores, a sus representantes y a los órganos de representación especializados.
+R Ley 31/1995 art. 31.2
+
+Q ¿A partir de cuántos trabajadores la participación de estos en prevención se canaliza a través de sus representantes?
+= Seis o más trabajadores
+- Diez o más trabajadores
+- Cincuenta o más trabajadores
+- Treinta o más trabajadores
+E Art. 34.1.
+R Ley 31/1995 art. 34.1
+
+Q Los Delegados de Prevención son:
+= Los representantes de los trabajadores con funciones específicas en materia de prevención de riesgos en el trabajo
+- Los técnicos del servicio de prevención
+- Los inspectores de trabajo destinados en la empresa
+- Los representantes del empresario en el Comité de Seguridad y Salud
+E Art. 35.1. Se designan por y entre los representantes del personal.
+R Ley 31/1995 art. 35
+
+Q En una empresa de 101 a 500 trabajadores, ¿cuántos Delegados de Prevención corresponden?
+= 3
+- 2
+- 4
+- 5
+E Escala del art. 35.2: de 50 a 100, 2; de 101 a 500, 3; de 501 a 1.000, 4; … de 4.001 en adelante, 8.
+R Ley 31/1995 art. 35.2
+
+Q En las empresas de hasta treinta trabajadores, el Delegado de Prevención es:
+= El Delegado de Personal
+- Elegido por la plantilla en asamblea
+- Designado por el empresario
+- No existe Delegado de Prevención
+E De 31 a 49 trabajadores habrá un Delegado de Prevención elegido por y entre los Delegados de Personal.
+R Ley 31/1995 art. 35.2
+
+Q ¿Qué tiempo de los Delegados de Prevención se considera siempre tiempo de trabajo efectivo sin imputarse al crédito horario?
+= El de las reuniones del Comité de Seguridad y Salud y las convocadas por el empresario en materia de prevención
+- Todo el tiempo dedicado a funciones preventivas
+- Solo el dedicado a formación sindical
+- Ninguno; todo se imputa al crédito horario
+E Art. 37.1, así como el de determinadas visitas de acompañamiento.
+R Ley 31/1995 art. 37.1
+
+Q ¿En qué empresas o centros de trabajo debe constituirse un Comité de Seguridad y Salud?
+= En los que cuenten con 50 o más trabajadores
+- En los que cuenten con 6 o más trabajadores
+- En los que cuenten con 30 o más trabajadores
+- En los que cuenten con más de 100 trabajadores
+E Art. 38.2.
+R Ley 31/1995 art. 38.2
+
+Q El Comité de Seguridad y Salud se define como:
+= El órgano paritario y colegiado de participación destinado a la consulta regular y periódica de las actuaciones de la empresa en prevención
+- Un órgano unipersonal de vigilancia
+- El servicio de prevención propio de la empresa
+- Un órgano consultivo de la autoridad laboral
+E Art. 38.1. Lo forman los Delegados de Prevención y, en igual número, el empresario o sus representantes.
+R Ley 31/1995 art. 38.1
+
+Q ¿Con qué periodicidad se reúne el Comité de Seguridad y Salud?
+= Trimestralmente y siempre que lo solicite alguna de las representaciones
+- Mensualmente
+- Semestralmente
+- Una vez al año
+E Art. 38.3.
+R Ley 31/1995 art. 38.3
+
+Q En las reuniones del Comité de Seguridad y Salud, los Delegados Sindicales participan:
+= Con voz pero sin voto
+- Con voz y voto
+- Sin voz ni voto
+- Solo si lo autoriza el empresario
+E También los responsables técnicos de la prevención no incluidos en la composición.
+R Ley 31/1995 art. 38.2
+
+Q El incumplimiento por los empresarios de sus obligaciones preventivas puede dar lugar a responsabilidades:
+= Administrativas y, en su caso, penales y civiles por los daños y perjuicios
+- Solo administrativas
+- Solo penales
+- Solo civiles
+E Art. 42.1. Las administrativas son compatibles con las indemnizaciones y el recargo de prestaciones.
+R Ley 31/1995 art. 42
+
+Q Si el Inspector de Trabajo aprecia un riesgo grave e inminente, puede:
+= Ordenar la paralización inmediata de los trabajos o tareas
+- Imponer directamente el cierre definitivo de la empresa
+- Detener al empresario
+- Solo levantar acta y esperar a la autoridad laboral
+E Art. 44. La empresa puede impugnarlo ante la autoridad laboral en tres días hábiles, y se resuelve en 24 horas.
+R Ley 31/1995 art. 44
+
+Q En el ámbito del personal civil de las Administraciones Públicas, las infracciones en materia preventiva se corrigen mediante:
+= La imposición de la realización de medidas correctoras de los incumplimientos
+- Multas económicas a la Administración
+- La suspensión de funciones del responsable
+- Sanciones penales automáticas
+E Art. 45.1, con un procedimiento que inicia la Inspección de Trabajo.
+R Ley 31/1995 art. 45.1
+
+Q Según el art. 33, el empresario debe consultar a los trabajadores, con la debida antelación, sobre:
+= La designación de los trabajadores encargados de las medidas de emergencia
+- La fijación de los salarios
+- La contratación de nuevo personal
+- El reparto de beneficios
+E También sobre la planificación y organización del trabajo, la organización preventiva, la formación y cualquier acción con efectos sustanciales en la seguridad y la salud.
+R Ley 31/1995 art. 33.1
+
+Q ¿Cuál de estas es una competencia de los Delegados de Prevención según el art. 36?
+= Ejercer una labor de vigilancia y control sobre el cumplimiento de la normativa preventiva
+- Imponer sanciones al empresario
+- Dirigir el servicio de prevención
+- Aprobar el plan de prevención
+E También colaborar con la dirección, promover la cooperación de los trabajadores y ser consultados previamente sobre las decisiones del art. 33.
+R Ley 31/1995 art. 36.1

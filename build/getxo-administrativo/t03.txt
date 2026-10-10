@@ -1,0 +1,159 @@
+Q ¿Cuántas materias de competencia exclusiva enumera el art. 10 del Estatuto de Autonomía?
+= 39
+- 25
+- 41
+- 12
+E El art. 11 recoge las de desarrollo legislativo y ejecución y el art. 12, las de ejecución.
+R EAPV art. 10
+
+Q El régimen local y el estatuto de los funcionarios del País Vasco y de su Administración local son competencia:
+= Exclusiva, sin perjuicio del art. 149.1.18.ª de la Constitución
+- De desarrollo legislativo de la legislación básica
+- De ejecución de la legislación del Estado
+- Exclusiva de los Territorios Históricos
+E Art. 10.4. Es la base de la Ley 11/2022 de Empleo Público Vasco.
+R EAPV art. 10.4
+
+Q La conservación, modificación y desarrollo del Derecho Civil Foral es, según el Estatuto, competencia:
+= Exclusiva de la Comunidad Autónoma
+- Exclusiva del Estado
+- De ejecución
+- De desarrollo legislativo
+E Art. 10.5, incluida la fijación del ámbito territorial de su vigencia.
+R EAPV art. 10.5
+
+Q La asistencia social es, para la Comunidad Autónoma del País Vasco, competencia:
+= Exclusiva (art. 10.12)
+- De ejecución de la legislación del Estado
+- De desarrollo legislativo
+- Compartida con el Estado
+E Trampa: en la Ley de Territorios Históricos, la asistencia social es para los Territorios una competencia de ejecución.
+R EAPV art. 10.12
+
+Q La investigación científica y técnica es competencia exclusiva del País Vasco:
+= En coordinación con el Estado
+- Sin ninguna limitación
+- Solo en el ámbito universitario
+- Previa autorización del Gobierno central
+E Art. 10.16.
+R EAPV art. 10.16
+
+Q La ordenación del territorio y del litoral, el urbanismo y la vivienda son competencia:
+= Exclusiva (art. 10.31)
+- De desarrollo legislativo (art. 11)
+- De ejecución (art. 12)
+- Del Estado
+E Es una de las competencias exclusivas más relevantes para los ayuntamientos.
+R EAPV art. 10.31
+
+Q En materia de carreteras y caminos, el Estatuto dispone que las Diputaciones Forales:
+= Conservarán íntegramente el régimen jurídico y competencias que ostentan o hayan de recobrar
+- Pierden sus competencias en favor del Gobierno Vasco
+- Solo gestionan los caminos vecinales
+- Comparten la competencia con el Estado
+E Art. 10.34.
+R EAPV art. 10.34
+
+Q ¿Qué juegos excluye el art. 10.35 de la competencia exclusiva sobre casinos, juegos y apuestas?
+= Las Apuestas Mutuas Deportivas Benéficas
+- La lotería nacional
+- Los bingos
+- Las máquinas recreativas
+E Art. 10.35.
+R EAPV art. 10.35
+
+Q El turismo y el deporte, el ocio y el esparcimiento son competencia:
+= Exclusiva (art. 10.36)
+- De ejecución
+- De desarrollo legislativo
+- Del Estado con delegación
+E El desarrollo comunitario, la condición femenina y la política infantil, juvenil y de la tercera edad están en el art. 10.39.
+R EAPV art. 10.36
+
+Q La condición femenina y la política infantil, juvenil y de la tercera edad aparecen en el art.:
+= 10.39
+- 11.1
+- 12.2
+- 10.12
+E Es la última materia del art. 10.
+R EAPV art. 10.39
+
+Q El medio ambiente y la ecología son, para el País Vasco, competencia de:
+= Desarrollo legislativo y ejecución de la legislación básica del Estado
+- Competencia exclusiva
+- Ejecución de la legislación del Estado
+- Competencia exclusiva de los Territorios Históricos
+E Art. 11.1.a.
+R EAPV art. 11.1.a
+
+Q La expropiación forzosa, los contratos y concesiones administrativas son competencia de desarrollo legislativo y ejecución:
+= En el ámbito de sus competencias, junto con el sistema de responsabilidad de la Administración del País Vasco
+- Sin ningún límite
+- Solo para la Administración local
+- Solo en materia de obras públicas
+E Art. 11.1.b.
+R EAPV art. 11.1.b
+
+Q La ordenación del crédito, banca y seguros figura en el Estatuto como competencia de:
+= Desarrollo legislativo y ejecución de las bases, en los términos que estas señalen (art. 11.2)
+- Competencia exclusiva (art. 10)
+- Ejecución (art. 12)
+- Competencia exclusiva del Estado sin intervención autonómica
+E Las instituciones de crédito corporativo, público y territorial y las Cajas de Ahorro sí están en el art. 10.26.
+R EAPV art. 11.2.a
+
+Q El régimen minero y energético y los recursos geotérmicos son competencia de:
+= Desarrollo legislativo y ejecución
+- Competencia exclusiva
+- Ejecución
+- Competencia exclusiva del Estado
+E Art. 11.2.c.
+R EAPV art. 11.2.c
+
+Q La legislación laboral es, para el País Vasco, competencia de:
+= Ejecución de la legislación del Estado, con la alta inspección del Estado
+- Desarrollo legislativo
+- Competencia exclusiva
+- Ninguna competencia
+E Art. 12.2.
+R EAPV art. 12.2
+
+Q La legislación penitenciaria es, para el País Vasco, competencia de:
+= Ejecución (art. 12.1)
+- Competencia exclusiva (art. 10.14)
+- Desarrollo legislativo (art. 11)
+- Ninguna competencia
+E El art. 10.14 sí atribuye en exclusiva la organización de los establecimientos penitenciarios, conforme a la legislación general.
+R EAPV art. 12.1
+
+Q Los puertos y aeropuertos con calificación de interés general son, para el País Vasco, competencia de ejecución:
+= Cuando el Estado no se reserve su gestión directa
+- En todo caso
+- Solo si son de titularidad foral
+- Nunca; son competencia exclusiva del Estado
+E Art. 12.8. Los puertos y aeropuertos sin interés general son competencia exclusiva (art. 10.32).
+R EAPV art. 12.8
+
+Q Las pesas y medidas y el contraste de metales son, para el País Vasco, competencia de:
+= Ejecución
+- Competencia exclusiva
+- Desarrollo legislativo
+- Ninguna
+E Art. 12.5.
+R EAPV art. 12.5
+
+Q El salvamento marítimo en las aguas del litoral vasco es competencia de:
+= Ejecución (art. 12.10)
+- Competencia exclusiva (art. 10.32)
+- Desarrollo legislativo (art. 11)
+- Ninguna
+E Junto con los vertidos industriales y contaminantes en las aguas territoriales.
+R EAPV art. 12.10
+
+Q La estadística del País Vasco para sus propios fines y competencias es competencia:
+= Exclusiva
+- De ejecución de la legislación estatal
+- De desarrollo legislativo
+- Del Instituto Nacional de Estadística
+E Art. 10.37.
+R EAPV art. 10.37

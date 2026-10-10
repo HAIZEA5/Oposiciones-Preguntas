@@ -1,0 +1,191 @@
+Q Según el art. 1.1 del Código Civil, las fuentes del ordenamiento jurídico español son:
+= La ley, la costumbre y los principios generales del derecho
+- La ley, la jurisprudencia y la costumbre
+- La Constitución, la ley y el reglamento
+- La ley, la costumbre, la jurisprudencia y la doctrina
+E La jurisprudencia no es fuente: complementa el ordenamiento (art. 1.6).
+R Código Civil art. 1.1
+
+Q La costumbre solo rige:
+= En defecto de ley aplicable, siempre que no sea contraria a la moral o al orden público y que resulte probada
+- Cuando lo decida el juez
+- Con preferencia a la ley si es más antigua
+- Solo en materia mercantil
+E Los usos jurídicos no meramente interpretativos se consideran costumbre.
+R Código Civil art. 1.3
+
+Q Los principios generales del derecho se aplican:
+= En defecto de ley o costumbre, sin perjuicio de su carácter informador del ordenamiento
+- Con preferencia sobre la costumbre
+- Solo en el Derecho penal
+- Únicamente si los recoge una ley
+E Art. 1.4 del Código Civil.
+R Código Civil art. 1.4
+
+Q Las normas de los tratados internacionales son de aplicación directa en España:
+= Cuando han pasado a formar parte del ordenamiento interno mediante su publicación íntegra en el BOE
+- Desde que España los firma
+- Desde que los ratifica el Rey
+- Solo si los convalida el Tribunal Constitucional
+E Art. 1.5 del Código Civil y art. 96 de la Constitución.
+R Código Civil art. 1.5; CE art. 96
+
+Q La jurisprudencia, según el Código Civil:
+= Complementa el ordenamiento con la doctrina que, de modo reiterado, establezca el Tribunal Supremo
+- Es una fuente directa del Derecho
+- La forma la doctrina de cualquier tribunal
+- Solo la elabora el Tribunal Constitucional
+E Art. 1.6 del Código Civil.
+R Código Civil art. 1.6
+
+Q ¿Cuál de estas materias exige ley orgánica según el art. 81 de la Constitución?
+= La aprobación de los Estatutos de Autonomía
+- Los presupuestos generales del Estado
+- La regulación del procedimiento administrativo común
+- La legislación tributaria
+E También el desarrollo de los derechos fundamentales y libertades públicas, el régimen electoral general y las demás previstas en la Constitución.
+R CE art. 81.1
+
+Q La aprobación de una ley orgánica exige:
+= Mayoría absoluta del Congreso en una votación final sobre el conjunto del proyecto
+- Mayoría de tres quintos de ambas Cámaras
+- Mayoría simple del Congreso y del Senado
+- Mayoría de dos tercios del Congreso
+E Lo mismo para su modificación o derogación.
+R CE art. 81.2
+
+Q Para formar textos articulados, la delegación legislativa en el Gobierno se otorga mediante:
+= Una ley de bases
+- Una ley ordinaria
+- Una ley orgánica
+- Un decreto-ley
+E Para refundir varios textos legales en uno solo se usa una ley ordinaria.
+R CE art. 82.2
+
+Q ¿Cuál de estas características NO corresponde a la delegación legislativa del art. 82?
+= Puede entenderse concedida de modo implícito
+- Debe otorgarse de forma expresa
+- Debe ser para materia concreta
+- Debe fijar un plazo para su ejercicio
+E No puede concederse de modo implícito ni por tiempo indeterminado, y se agota con su uso.
+R CE art. 82.3
+
+Q Las leyes de bases no pueden en ningún caso:
+= Autorizar la modificación de la propia ley de bases ni facultar para dictar normas retroactivas
+- Fijar plazo al Gobierno
+- Delimitar el objeto de la delegación
+- Establecer fórmulas adicionales de control
+E Art. 83.
+R CE art. 83
+
+Q Las disposiciones del Gobierno que contienen legislación delegada se llaman:
+= Decretos Legislativos
+- Decretos-leyes
+- Reales Decretos
+- Leyes de bases
+E Art. 85.
+R CE art. 85
+
+Q Los Decretos-leyes se dictan en caso de:
+= Extraordinaria y urgente necesidad
+- Delegación de las Cortes
+- Estado de alarma exclusivamente
+- Vacaciones parlamentarias
+E Son disposiciones legislativas provisionales.
+R CE art. 86.1
+
+Q ¿Cuál de estas materias NO puede regular un Decreto-ley?
+= Los derechos, deberes y libertades del Título I
+- Las tasas y precios públicos
+- La organización de servicios administrativos
+- Las medidas económicas urgentes
+E Tampoco las instituciones básicas del Estado, el régimen de las Comunidades Autónomas ni el Derecho electoral general.
+R CE art. 86.1
+
+Q ¿En qué plazo debe el Congreso pronunciarse sobre la convalidación o derogación de un Decreto-ley?
+= En los treinta días siguientes a su promulgación
+- En los quince días siguientes a su publicación
+- En el plazo de dos meses
+- En la siguiente sesión plenaria
+E Durante ese plazo pueden tramitarse como proyectos de ley por el procedimiento de urgencia.
+R CE art. 86.2
+
+Q Según el art. 97 de la Constitución, la potestad reglamentaria la ejerce:
+= El Gobierno, de acuerdo con la Constitución y las leyes
+- Las Cortes Generales
+- El Rey
+- El Consejo de Estado
+E Junto con la función ejecutiva.
+R CE art. 97
+
+Q ¿Quién controla la potestad reglamentaria y la legalidad de la actuación administrativa?
+= Los Tribunales
+- El Defensor del Pueblo
+- El Consejo de Estado
+- Las Cortes Generales
+E Art. 106.1, incluido el sometimiento de la actuación administrativa a los fines que la justifican.
+R CE art. 106.1
+
+Q Según el principio de inderogabilidad singular de los reglamentos:
+= Una resolución particular no puede vulnerar una disposición general, aunque proceda de un órgano de igual o superior jerarquía
+- Un reglamento no puede derogarse nunca
+- Solo el Gobierno puede derogar reglamentos
+- Las resoluciones particulares prevalecen sobre las disposiciones generales
+E Las resoluciones que lo vulneren son nulas.
+R Ley 39/2015 art. 37
+
+Q Según el art. 128 de la Ley 39/2015, la potestad reglamentaria corresponde a:
+= El Gobierno de la Nación, los órganos de gobierno de las Comunidades Autónomas y los órganos de gobierno locales
+- Solo al Gobierno de la Nación
+- Las Cortes Generales y los Parlamentos autonómicos
+- Los Ministros exclusivamente
+E Los locales, de acuerdo con la Constitución, los Estatutos y la LBRL.
+R Ley 39/2015 art. 128.1
+
+Q ¿Qué órgano municipal aprueba el reglamento orgánico y las ordenanzas?
+= El Pleno
+- El Alcalde
+- La Junta de Gobierno Local
+- La Comisión Especial de Cuentas
+E Art. 22.2.d de la LBRL.
+R LBRL art. 22.2.d
+
+Q Son nulas de pleno derecho las disposiciones administrativas que:
+= Vulneren la Constitución o las leyes, regulen materias reservadas a la ley o establezcan la retroactividad de disposiciones sancionadoras no favorables
+- Se publiquen con retraso
+- No tengan exposición de motivos
+- Se aprueben por órgano colegiado
+E Art. 47.2 de la Ley 39/2015.
+R Ley 39/2015 art. 47.2
+
+Q Según el art. 103.1 de la Constitución, la Administración actúa con sometimiento pleno a:
+= La ley y al Derecho
+- La Constitución únicamente
+- Las instrucciones del Gobierno
+- Los reglamentos
+E Y de acuerdo con los principios de eficacia, jerarquía, descentralización, desconcentración y coordinación.
+R CE art. 103.1
+
+Q ¿Cuál de estos principios NO aparece en el art. 103.1 de la Constitución?
+= Subsidiariedad
+- Eficacia
+- Desconcentración
+- Coordinación
+E Son cinco: eficacia, jerarquía, descentralización, desconcentración y coordinación.
+R CE art. 103.1
+
+Q ¿Qué órgano ejerce la potestad legislativa en el País Vasco?
+= El Parlamento Vasco
+- El Gobierno Vasco
+- Las Juntas Generales
+- Las Diputaciones Forales
+E Art. 25.1 del Estatuto. Además aprueba sus presupuestos e impulsa y controla al Gobierno.
+R EAPV art. 25.1
+
+Q Si una proposición de ley es contraria a una delegación legislativa en vigor, el Gobierno:
+= Está facultado para oponerse a su tramitación
+- Debe retirar la delegación
+- Debe pedir dictamen al Consejo de Estado
+- No puede hacer nada
+E Puede presentarse entonces una proposición de ley para derogar la ley de delegación.
+R CE art. 84

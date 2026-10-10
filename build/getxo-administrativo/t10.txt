@@ -1,0 +1,71 @@
+Q Según el art. 18, las personas colaborarán con la Administración y facilitarán los informes, inspecciones y otros actos de investigación:
+= Solo en los casos previstos por la ley
+- Siempre que se lo pidan
+- Solo si reciben una compensación
+- Nunca; no tienen ese deber
+E Los interesados deben, además, facilitar a la Administración los datos que permitan identificar a otros interesados no comparecidos.
+R Ley 39/2015 art. 18
+
+Q ¿Quién es responsable directo de la tramitación del asunto y de la observancia de los plazos?
+= Los titulares de las unidades administrativas y el personal que tenga a su cargo la resolución o despacho de los asuntos
+- El interesado
+- El registro general
+- El Secretario de la corporación únicamente
+E Art. 20.1. Deben adoptar las medidas para remover los obstáculos que impidan, dificulten o retrasen el ejercicio de los derechos.
+R Ley 39/2015 art. 20
+
+Q Según el art. 26, se entiende por documentos públicos administrativos:
+= Los válidamente emitidos por los órganos de las Administraciones Públicas
+- Los que presentan los interesados
+- Los que firma un notario
+- Los que se publican en el boletín oficial
+E Las Administraciones los emiten por escrito, a través de medios electrónicos, salvo que su naturaleza exija otra forma.
+R Ley 39/2015 art. 26.1
+
+Q ¿Cuál de estos NO es un requisito del documento administrativo electrónico válido según el art. 26.2?
+= Ir firmado de forma manuscrita
+- Contener información de cualquier naturaleza archivada en soporte electrónico
+- Disponer de los datos de identificación que permitan su individualización
+- Incorporar una referencia temporal del momento en que han sido emitidos
+E También deben incorporar los metadatos mínimos exigidos y las firmas electrónicas que correspondan.
+R Ley 39/2015 art. 26.2
+
+Q ¿Qué documentos no requieren firma electrónica según el art. 26.3?
+= Los de carácter meramente informativo y los que no formen parte de un expediente administrativo
+- Las resoluciones
+- Las notificaciones
+- Los certificados
+E En todo caso, debe quedar acreditado su origen.
+R Ley 39/2015 art. 26.3
+
+Q Las copias auténticas realizadas por una Administración Pública tienen:
+= La misma validez y eficacia que los documentos originales
+- Menor validez que el original
+- Validez solo dentro de esa Administración
+- Validez durante un año
+E Art. 27.2.
+R Ley 39/2015 art. 27.2
+
+Q Los interesados NO están obligados a aportar documentos que:
+= Hayan sido elaborados por cualquier Administración o ya hayan sido aportados anteriormente a cualquier Administración
+- Exija la normativa aplicable
+- Sean necesarios para resolver
+- Se refieran a sus datos personales
+E Art. 28.2 y 28.3. Se presume que la consulta u obtención es autorizada, salvo oposición expresa del interesado o que la ley exija consentimiento expreso.
+R Ley 39/2015 art. 28
+
+Q Con carácter general, ¿qué deben aportar los interesados al procedimiento?
+= Copias de los documentos, cuya fidelidad con el original garantizan bajo su responsabilidad
+- Siempre los documentos originales
+- Copias compulsadas por notario
+- Copias legalizadas por el Ministerio de Asuntos Exteriores
+E Excepcionalmente, la Administración puede pedir el cotejo con el original (art. 28.5).
+R Ley 39/2015 art. 28.5
+
+Q ¿Cuál de estos sujetos debe expedir copias auténticas según el art. 27?
+= Los órganos de cada Administración que tengan atribuida esa competencia, mediante funcionario habilitado o actuación administrativa automatizada
+- Cualquier funcionario de la Administración
+- Los registros de la propiedad
+- Los colegios profesionales
+E Cada Administración determina los órganos competentes y mantiene un registro de funcionarios habilitados.
+R Ley 39/2015 art. 27.1

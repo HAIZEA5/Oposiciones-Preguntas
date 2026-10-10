@@ -77,8 +77,27 @@ button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
 <main id="app"></main>
 <script>const OPOSICIONES = [];</script>
 <!-- Una línea por oposición. Para añadir una nueva: crear data/nombre.js y añadir aquí su línea. -->
+<script src="data/getxo-administrativo.js"></script>
+<script src="data/abanto-administrativo.js"></script>
+<script src="data/getxo-kirolak-auxiliar.js"></script>
 <script src="data/biblioteca-dfb.js"></script>
 <script>
+/* Un tema puede reutilizar preguntas de otro (de cualquier oposición): incluye:["opo/tema"], ["opo/tema:3-10"] o ["opo/tema:2-4+9"]. */
+(function(){
+  const buscar=(o,t)=>{const op=OPOSICIONES.find(x=>x.id===o);return op&&op.temas.find(x=>x.id===t)};
+  OPOSICIONES.forEach(op=>op.temas.forEach(t=>{
+    if(!t.incluye)return;
+    const extra=[];
+    t.incluye.forEach(ref=>{
+      const m=ref.match(/^([^/]+)\/([^:]+)(?::(.+))?$/); if(!m)return;
+      const src=buscar(m[1],m[2]); if(!src)return;
+      let ps=src.preguntas.filter(p=>!p._inc);
+      if(m[3]){const all=ps;ps=[];m[3].split("+").forEach(r=>{const [a,b]=r.split("-").map(Number);ps=ps.concat(all.slice(a-1,b||a))})}
+      ps.forEach(p=>extra.push(Object.assign({},p,{q:p.q.replace(/^Solo Ayudante\.\s*/,""),_inc:1})));
+    });
+    t.preguntas=extra.concat(t.preguntas);
+  }));
+})();
 const KEY="tests-oposiciones-v1";
 function cargar(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
 function guardar(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}}
@@ -92,9 +111,10 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 
 function portada(){
   opo=null; ses=null;
-  if(OPOSICIONES.length===1){temas(OPOSICIONES[0].id,true);return}
+  const visibles=OPOSICIONES.filter(o=>o.temas.some(t=>t.preguntas.length));
+  if(visibles.length===1){temas(visibles[0].id,true);return}
   let h='<h1>Tests de oposiciones</h1><p class="lead">Elige la oposición.</p>';
-  OPOSICIONES.forEach(o=>{
+  visibles.forEach(o=>{
     const n=o.temas.reduce((s,t)=>s+t.preguntas.length,0);
     h+=`<section class="ficha"><h2>${esc(o.nombre)}</h2><p>${esc(o.sub)}</p><p>${o.temas.length} temas · ${n} preguntas.</p>
     <div class="acciones"><button class="btn" data-o="${o.id}">Entrar</button></div></section>`;
@@ -109,6 +129,7 @@ function temas(oid,unica){
   let h=unica?'':'<button class="volver" id="vol">← Oposiciones</button>';
   h+=`<h1>${esc(opo.nombre)}</h1><p class="lead">${esc(opo.sub)} Elige un tema.</p>`;
   opo.temas.forEach(t=>{
+    if(!t.preguntas.length){h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>Preguntas en preparación.</p></section>`;return}
     const s=estado(opo.id,t.id), n=t.preguntas.length, f=s.falladas.length;
     const mejor=s.mejor===null?"Aún no lo has hecho":`Mejor resultado: ${s.mejor} de ${n}`;
     h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>${esc(t.sub||"")}</p><p>${n} preguntas. ${mejor}.</p>
@@ -130,7 +151,7 @@ function empezar(tid,modo){
 
 function pregunta(){
   const p=ses.ps[ses.i], n=ses.ps.length;
-  const ops=barajar(p.o.map((txt,k)=>({txt,ok:k===0})));
+  const ops=p.c!==undefined?p.o.map((txt,k)=>({txt,ok:k===p.c})):barajar(p.o.map((txt,k)=>({txt,ok:k===0})));
   let h=`<div class="barra"><button id="salir">Salir</button><span>Pregunta ${ses.i+1} de ${n}</span></div>
   <div class="progreso"><i style="width:${(ses.i/n)*100}%"></i></div>
   <p class="pregunta">${esc(p.q)}</p><div class="opciones">`;
@@ -166,7 +187,7 @@ function resultado(){
   <button class="btn sec" id="vol">Volver a los temas</button></div>`;
   if(ses.fallos.length){
     h+='<ul class="fallos">';
-    ses.fallos.forEach(p=>{h+=`<li><div class="q">${esc(p.q)}</div><div class="r">${esc(p.o[0])}</div><div class="ref">${esc(p.r||"")}</div></li>`});
+    ses.fallos.forEach(p=>{h+=`<li><div class="q">${esc(p.q)}</div><div class="r">${esc(p.o[p.c||0])}</div><div class="ref">${esc(p.r||"")}</div></li>`});
     h+='</ul>';
   }
   app.innerHTML=h;

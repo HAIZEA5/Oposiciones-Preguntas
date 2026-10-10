@@ -1,0 +1,199 @@
+Q La revisión de oficio de actos nulos de pleno derecho exige:
+= Dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma
+- Informe no vinculante del órgano consultivo
+- Autorización judicial
+- Acuerdo del Pleno en todo caso
+E Art. 106.1. Puede hacerse en cualquier momento, por iniciativa propia o a solicitud del interesado, sobre actos que hayan puesto fin a la vía administrativa o no recurridos en plazo.
+R Ley 39/2015 art. 106.1
+
+Q ¿En qué plazo debe resolverse un procedimiento de revisión de oficio iniciado de oficio para no producir su caducidad?
+= Seis meses desde su inicio
+- Tres meses
+- Un año
+- Un mes
+E Si se inició a solicitud del interesado, el transcurso del plazo permite entenderla desestimada por silencio (art. 106.5).
+R Ley 39/2015 art. 106.5
+
+Q El órgano competente puede inadmitir a trámite las solicitudes de revisión de oficio de actos nulos, sin dictamen previo, cuando:
+= No se basen en alguna de las causas de nulidad del art. 47.1 o carezcan manifiestamente de fundamento
+- Lo considere oportuno
+- Las presente una persona jurídica
+- Se refieran a actos favorables
+E También cuando se hayan desestimado en cuanto al fondo otras solicitudes sustancialmente iguales (art. 106.3).
+R Ley 39/2015 art. 106.3
+
+Q ¿Cómo deben impugnarse los actos favorables para los interesados que sean anulables?
+= La Administración debe declararlos lesivos para el interés público y después impugnarlos ante la jurisdicción contencioso-administrativa
+- La Administración los anula directamente
+- Mediante recurso de alzada de la propia Administración
+- Mediante revisión de oficio con dictamen del Consejo de Estado
+E La declaración de lesividad no puede adoptarse una vez transcurridos cuatro años desde que se dictó el acto (art. 107.2).
+R Ley 39/2015 art. 107
+
+Q Transcurridos seis meses desde la iniciación del procedimiento de declaración de lesividad sin que se haya declarado:
+= Se produce la caducidad del procedimiento
+- Se entiende declarado lesivo
+- El acto queda anulado
+- Se remite automáticamente al Consejo de Estado
+E Art. 107.3.
+R Ley 39/2015 art. 107.3
+
+Q Las Administraciones pueden revocar sus actos de gravamen o desfavorables:
+= Mientras no haya transcurrido el plazo de prescripción, siempre que no constituya dispensa o exención no permitida por las leyes ni sea contraria a la igualdad, al interés público o al ordenamiento
+- Nunca
+- Solo dentro del plazo de recurso
+- Solo con autorización del interesado
+E Art. 109.1.
+R Ley 39/2015 art. 109.1
+
+Q Los errores materiales, de hecho o aritméticos existentes en los actos pueden rectificarse:
+= En cualquier momento, de oficio o a instancia de los interesados
+- Solo dentro del plazo de un mes
+- Solo mediante recurso de reposición
+- Solo mediante revisión de oficio
+E Art. 109.2.
+R Ley 39/2015 art. 109.2
+
+Q ¿Cuáles son los límites de la revisión según el art. 110?
+= No puede ejercerse cuando, por prescripción de acciones, tiempo transcurrido u otras circunstancias, su ejercicio resulte contrario a la equidad, la buena fe, el derecho de los particulares o las leyes
+- No tiene límites
+- Solo puede ejercerse en el plazo de un año
+- Solo puede ejercerse sobre actos favorables
+E Art. 110.
+R Ley 39/2015 art. 110
+
+Q ¿Contra qué actos de trámite caben recursos de alzada y potestativo de reposición?
+= Contra los que deciden directa o indirectamente el fondo del asunto, determinan la imposibilidad de continuar el procedimiento, producen indefensión o perjuicio irreparable a derechos e intereses legítimos
+- Contra todos los actos de trámite
+- Contra ningún acto de trámite
+- Solo contra los dictados por órganos colegiados
+E Art. 112.1. La oposición a los demás actos de trámite puede alegarse para su consideración en la resolución que ponga fin al procedimiento.
+R Ley 39/2015 art. 112.1
+
+Q ¿Cabe recurso en vía administrativa contra las disposiciones administrativas de carácter general?
+= No
+- Sí, recurso de alzada
+- Sí, recurso potestativo de reposición
+- Sí, recurso extraordinario de revisión
+E Art. 112.3.
+R Ley 39/2015 art. 112.3
+
+Q La interposición de cualquier recurso:
+= No suspende, como regla general, la ejecución del acto impugnado
+- Suspende siempre la ejecución
+- Suspende la ejecución si el acto es una sanción
+- Suspende la ejecución durante un mes
+E Excepto en los casos en que una disposición establezca lo contrario (art. 117.1).
+R Ley 39/2015 art. 117.1
+
+Q Si el órgano no resuelve la solicitud de suspensión en el plazo de un mes desde su entrada en el registro:
+= La ejecución del acto impugnado se entiende suspendida
+- Se entiende denegada la suspensión
+- Se archiva el recurso
+- Se suspende durante seis meses
+E Art. 117.3.
+R Ley 39/2015 art. 117.3
+
+Q ¿Qué actos ponen fin a la vía administrativa según el art. 114?
+= Las resoluciones de los recursos de alzada
+- Los actos de trámite
+- Las resoluciones de órganos que tengan superior jerárquico
+- Las propuestas de resolución
+E También las resoluciones de procedimientos de impugnación sustitutivos, las de órganos sin superior jerárquico salvo ley en contrario, los acuerdos de terminación convencional y la resolución de responsabilidad patrimonial, entre otros.
+R Ley 39/2015 art. 114.1
+
+Q El error o la ausencia de la calificación del recurso por parte del recurrente:
+= No será obstáculo para su tramitación, siempre que se deduzca su verdadero carácter
+- Determina su inadmisión
+- Obliga a presentar un nuevo recurso
+- Supone la renuncia al recurso
+E Art. 115.2.
+R Ley 39/2015 art. 115.2
+
+Q ¿Cuál de estas es una causa de inadmisión de los recursos según el art. 116?
+= Haber transcurrido el plazo para la interposición del recurso
+- No haber pagado una tasa
+- No acompañar copia del DNI
+- Haber presentado el recurso en un registro electrónico
+E También la incompetencia del órgano, la falta de legitimación, que el acto no sea susceptible de recurso y la carencia manifiesta de fundamento.
+R Ley 39/2015 art. 116
+
+Q ¿Contra qué actos procede el recurso de alzada?
+= Contra las resoluciones y actos de trámite cualificados que no pongan fin a la vía administrativa
+- Contra los actos que ponen fin a la vía administrativa
+- Contra las disposiciones generales
+- Contra las sentencias judiciales
+E Se interpone ante el órgano superior jerárquico del que los dictó, o ante este mismo (art. 121).
+R Ley 39/2015 art. 121
+
+Q ¿Cuál es el plazo para interponer el recurso de alzada contra un acto expreso?
+= Un mes
+- Dos meses
+- Tres meses
+- Quince días
+E Si el acto no es expreso, puede interponerse en cualquier momento a partir del día siguiente a aquel en que se produzcan los efectos del silencio (art. 122.1).
+R Ley 39/2015 art. 122.1
+
+Q ¿Cuál es el plazo máximo para dictar y notificar la resolución del recurso de alzada?
+= Tres meses
+- Un mes
+- Seis meses
+- Dos meses
+E Transcurrido sin resolución, puede entenderse desestimado el recurso, salvo en el supuesto del art. 24.1, tercer párrafo (art. 122.2).
+R Ley 39/2015 art. 122.2
+
+Q Contra la resolución de un recurso de alzada:
+= No cabe ningún otro recurso administrativo, salvo el extraordinario de revisión
+- Cabe recurso de reposición
+- Cabe un segundo recurso de alzada
+- Cabe recurso de súplica
+E Art. 122.3.
+R Ley 39/2015 art. 122.3
+
+Q El recurso potestativo de reposición procede contra:
+= Los actos administrativos que pongan fin a la vía administrativa, ante el mismo órgano que los dictó
+- Los actos que no ponen fin a la vía administrativa
+- Las disposiciones de carácter general
+- Los actos de trámite no cualificados
+E Alternativamente, pueden impugnarse directamente ante la jurisdicción contencioso-administrativa (art. 123.1).
+R Ley 39/2015 art. 123
+
+Q ¿Cuál es el plazo máximo para dictar y notificar la resolución del recurso de reposición?
+= Un mes
+- Tres meses
+- Dos meses
+- Quince días
+E El plazo para interponerlo es de un mes si el acto es expreso (art. 124).
+R Ley 39/2015 art. 124.2
+
+Q Si se ha interpuesto recurso de reposición, ¿puede interponerse recurso contencioso-administrativo antes de que se resuelva?
+= No, hasta que se resuelva expresamente o se produzca la desestimación presunta
+- Sí, en cualquier momento
+- Sí, si han pasado quince días
+- Solo si lo autoriza el órgano
+E Art. 123.2.
+R Ley 39/2015 art. 123.2
+
+Q ¿Cuál de estas es una causa del recurso extraordinario de revisión?
+= Que al dictar el acto se haya incurrido en error de hecho que resulte de los propios documentos incorporados al expediente
+- Que el acto se haya dictado fuera de plazo
+- Que el interesado no esté conforme con la resolución
+- Que se haya producido un error en la calificación del recurso
+E Otras causas: aparición de documentos de valor esencial, documentos o testimonios declarados falsos por sentencia firme, y resolución dictada como consecuencia de prevaricación, cohecho o violencia declarados por sentencia judicial firme.
+R Ley 39/2015 art. 125.1
+
+Q ¿Cuál es el plazo para interponer el recurso extraordinario de revisión por error de hecho en los documentos del expediente?
+= Cuatro años desde la notificación de la resolución impugnada
+- Tres meses
+- Un año
+- Dos meses
+E En los demás casos, tres meses desde el conocimiento de los documentos o desde que la sentencia judicial quedó firme (art. 125.2).
+R Ley 39/2015 art. 125.2
+
+Q Transcurridos tres meses desde la interposición del recurso extraordinario de revisión sin resolución:
+= Se entiende desestimado, quedando expedita la vía jurisdiccional contencioso-administrativa
+- Se entiende estimado
+- Caduca el procedimiento
+- Se amplía el plazo otros tres meses
+E Art. 126.3.
+R Ley 39/2015 art. 126.3

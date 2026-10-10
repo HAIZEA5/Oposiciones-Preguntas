@@ -1,0 +1,207 @@
+Q Según el art. 137 de la Constitución, el Estado se organiza territorialmente en:
+= Municipios, provincias y las Comunidades Autónomas que se constituyan
+- Municipios, comarcas, provincias y Comunidades Autónomas
+- Provincias y Comunidades Autónomas
+- Municipios, provincias, islas y Comunidades Autónomas
+E Todas estas entidades gozan de autonomía para la gestión de sus respectivos intereses.
+R CE art. 137
+
+Q Las diferencias entre los Estatutos de las Comunidades Autónomas:
+= No podrán implicar, en ningún caso, privilegios económicos o sociales
+- Deben ser aprobadas por el Senado
+- Solo pueden afectar a las competencias exclusivas
+- Están prohibidas por la Constitución
+E Art. 138.2. El art. 138.1 encarga al Estado garantizar la solidaridad, atendiendo en particular al hecho insular.
+R CE art. 138.2
+
+Q La Constitución garantiza la autonomía de los municipios, que gozan de:
+= Personalidad jurídica plena
+- Personalidad jurídica limitada a sus competencias propias
+- Autonomía legislativa
+- Soberanía en su término municipal
+E Su gobierno y administración corresponden a sus Ayuntamientos, integrados por los Alcaldes y los Concejales.
+R CE art. 140
+
+Q Según el art. 140, los Concejales son elegidos:
+= Por los vecinos, mediante sufragio universal, igual, libre, directo y secreto
+- Por el Pleno de la Diputación provincial
+- Por los Alcaldes de la comarca
+- Por sufragio indirecto entre los vecinos mayores de edad
+E Los Alcaldes son elegidos por los Concejales o por los vecinos. La ley regula el régimen de concejo abierto.
+R CE art. 140
+
+Q ¿Cómo define el art. 141 a la provincia?
+= Entidad local con personalidad jurídica propia, determinada por la agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado
+- Circunscripción electoral para el Congreso únicamente
+- Órgano periférico de la Comunidad Autónoma
+- Agrupación voluntaria de municipios
+E Cualquier alteración de los límites provinciales debe aprobarla las Cortes Generales mediante ley orgánica.
+R CE art. 141.1
+
+Q La alteración de los límites provinciales requiere:
+= Aprobación de las Cortes Generales mediante ley orgánica
+- Ley del Parlamento autonómico
+- Acuerdo de las Diputaciones afectadas
+- Real Decreto del Gobierno
+E Art. 141.1.
+R CE art. 141.1
+
+Q Según el art. 142, las Haciendas locales se nutren fundamentalmente de:
+= Tributos propios y participación en los del Estado y de las Comunidades Autónomas
+- Transferencias de la Unión Europea
+- Las aportaciones de los vecinos
+- La deuda pública
+E Deben disponer de los medios suficientes para el desempeño de sus funciones.
+R CE art. 142
+
+Q ¿Quién puede iniciar el proceso autonómico ordinario del art. 143?
+= Todas las Diputaciones interesadas o el órgano interinsular y dos tercios de los municipios que representen la mayoría del censo electoral de cada provincia o isla
+- El Gobierno de la Nación
+- Las Cortes Generales por mayoría absoluta
+- Cualquier Ayuntamiento capital de provincia
+E Estos requisitos deben cumplirse en el plazo de seis meses desde el primer acuerdo de una corporación local.
+R CE art. 143.2
+
+Q Si la iniciativa autonómica del art. 143 no prospera, solo puede reiterarse:
+= Pasados cinco años
+- Pasado un año
+- Pasados tres años
+- En la siguiente legislatura
+E Art. 143.3.
+R CE art. 143.3
+
+Q En ningún caso se admitirá:
+= La federación de Comunidades Autónomas
+- Que las Comunidades firmen convenios entre sí
+- Que una Comunidad tenga más de una provincia
+- Que las Comunidades tengan bandera propia
+E Art. 145.1. Los convenios entre Comunidades son posibles, con comunicación a las Cortes Generales.
+R CE art. 145
+
+Q Los Estatutos de Autonomía son:
+= La norma institucional básica de cada Comunidad Autónoma
+- Leyes ordinarias de las Cortes
+- Reglamentos del Gobierno autonómico
+- Normas de rango superior a la Constitución
+E El Estado los reconoce y ampara como parte integrante de su ordenamiento jurídico.
+R CE art. 147.1
+
+Q ¿Cuál de estos contenidos NO es obligatorio en un Estatuto según el art. 147.2?
+= El número de diputados del Congreso que corresponde a la Comunidad
+- La denominación de la Comunidad
+- La delimitación de su territorio
+- Las competencias asumidas
+E También deben contener la denominación, organización y sede de las instituciones autónomas propias.
+R CE art. 147.2
+
+Q La reforma de los Estatutos de Autonomía requiere, en todo caso:
+= La aprobación por las Cortes Generales mediante ley orgánica
+- La aprobación por referéndum nacional
+- Un Real Decreto del Gobierno
+- El acuerdo unánime del Parlamento autonómico
+E Se ajusta al procedimiento establecido en los propios Estatutos.
+R CE art. 147.3
+
+Q ¿Qué artículo de la Constitución enumera las materias en las que las Comunidades Autónomas pueden asumir competencias?
+= El art. 148
+- El art. 149
+- El art. 150
+- El art. 143
+E El art. 149 enumera las competencias exclusivas del Estado.
+R CE art. 148
+
+Q Transcurridos cinco años, las Comunidades del art. 148 podían ampliar sus competencias:
+= Mediante la reforma de sus Estatutos, dentro del marco del art. 149
+- Mediante un convenio con el Estado
+- Por decreto del Gobierno autonómico
+- No pueden ampliarlas
+E Art. 148.2.
+R CE art. 148.2
+
+Q Las materias no atribuidas expresamente al Estado por la Constitución:
+= Podrán corresponder a las Comunidades Autónomas en virtud de sus Estatutos
+- Corresponden siempre al Estado
+- Corresponden a los municipios
+- Se reparten por igual entre el Estado y las Comunidades
+E Es la cláusula de cierre del art. 149.3. Las no asumidas por los Estatutos corresponden al Estado.
+R CE art. 149.3
+
+Q En caso de conflicto, las normas del Estado prevalecen sobre las de las Comunidades Autónomas:
+= En todo lo que no esté atribuido a la exclusiva competencia de estas
+- Siempre, sin excepción
+- Solo en materia tributaria
+- Nunca
+E El derecho estatal es, en todo caso, supletorio del derecho de las Comunidades Autónomas.
+R CE art. 149.3
+
+Q Las bases del régimen jurídico de las Administraciones públicas y el procedimiento administrativo común son competencia exclusiva del Estado según el:
+= Art. 149.1.18.ª
+- Art. 149.1.1.ª
+- Art. 148.1.2.ª
+- Art. 149.1.8.ª
+E La 149.1.18.ª incluye también la legislación sobre expropiación forzosa, contratos y concesiones administrativas y responsabilidad de todas las Administraciones.
+R CE art. 149.1.18.ª
+
+Q Las leyes marco del art. 150.1 permiten a las Cortes Generales:
+= Atribuir a las Comunidades la facultad de dictar normas legislativas en materias de competencia estatal, en el marco de principios fijados por ley estatal
+- Transferir a las Comunidades facultades por ley orgánica
+- Armonizar las disposiciones normativas de las Comunidades
+- Suspender la autonomía de una Comunidad
+E La transferencia o delegación es del art. 150.2 (ley orgánica) y la armonización, del 150.3.
+R CE art. 150.1
+
+Q Las leyes de armonización del art. 150.3 requieren que las Cortes aprecien su necesidad por:
+= Mayoría absoluta de cada Cámara
+- Mayoría simple del Congreso
+- Mayoría de tres quintos del Senado
+- Mayoría de dos tercios de cada Cámara
+E Pueden dictarse aun en materias atribuidas a la competencia de las Comunidades, cuando lo exija el interés general.
+R CE art. 150.3
+
+Q ¿Qué órgano ejerce el control económico y presupuestario de los órganos de las Comunidades Autónomas?
+= El Tribunal de Cuentas
+- El Tribunal Constitucional
+- El Gobierno, previo dictamen del Consejo de Estado
+- La jurisdicción contencioso-administrativa
+E Art. 153.d. El TC controla la constitucionalidad de sus normas con fuerza de ley; el Gobierno, previo dictamen del Consejo de Estado, el ejercicio de funciones delegadas.
+R CE art. 153
+
+Q ¿Quién dirige la Administración del Estado en el territorio de la Comunidad Autónoma?
+= Un Delegado nombrado por el Gobierno
+- El Presidente de la Comunidad Autónoma
+- El Subdelegado del Gobierno en cada provincia
+- El Ministro de Política Territorial
+E La coordinará, cuando proceda, con la administración propia de la Comunidad.
+R CE art. 154
+
+Q Para adoptar las medidas del art. 155 contra una Comunidad Autónoma, el Gobierno necesita:
+= La aprobación por mayoría absoluta del Senado, previo requerimiento al Presidente de la Comunidad
+- La aprobación por mayoría absoluta del Congreso
+- Autorización del Tribunal Constitucional
+- Acuerdo del Consejo de Política Fiscal y Financiera
+E Procede si una Comunidad no cumple las obligaciones de la Constitución o las leyes, o atenta gravemente contra el interés general de España.
+R CE art. 155
+
+Q ¿Con qué finalidad se constituye el Fondo de Compensación del art. 158.2?
+= Corregir desequilibrios económicos interterritoriales y hacer efectivo el principio de solidaridad, destinándolo a gastos de inversión
+- Pagar el cupo del País Vasco
+- Financiar los gastos corrientes de los municipios
+- Compensar a las Comunidades por las competencias transferidas
+E Sus recursos los distribuyen las Cortes Generales entre las Comunidades Autónomas y provincias, en su caso.
+R CE art. 158.2
+
+Q ¿Cuál de estos principios NO aparece en el art. 156.1 para la autonomía financiera de las Comunidades?
+= Subsidiariedad
+- Coordinación con la Hacienda estatal
+- Solidaridad entre todos los españoles
+- Autonomía financiera para el desarrollo y ejecución de sus competencias
+E Art. 156.1: autonomía financiera con arreglo a los principios de coordinación con la Hacienda estatal y de solidaridad.
+R CE art. 156.1
+
+Q ¿Cuál de estos NO es un recurso de las Comunidades Autónomas según el art. 157.1?
+= Los tributos locales
+- Los impuestos cedidos total o parcialmente por el Estado
+- Sus propios impuestos, tasas y contribuciones especiales
+- El producto de las operaciones de crédito
+E También transferencias del Fondo de Compensación, otras asignaciones de los Presupuestos del Estado y rendimientos de su patrimonio e ingresos de derecho privado.
+R CE art. 157.1

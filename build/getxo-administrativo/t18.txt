@@ -1,0 +1,239 @@
+Q Según el art. 25, la potestad sancionadora se ejercerá cuando haya sido expresamente reconocida por:
+= Una norma con rango de ley
+- Un reglamento
+- Una ordenanza municipal en todo caso
+- Una instrucción del órgano competente
+E Con aplicación del procedimiento previsto para su ejercicio. En las Entidades Locales, conforme al Título XI de la LBRL.
+R Ley 40/2015 art. 25.1
+
+Q ¿Puede ejercerse la potestad sancionadora por órganos que la tengan atribuida por delegación?
+= No; corresponde a los órganos que la tengan expresamente atribuida por disposición de rango legal o reglamentario
+- Sí, en todo caso
+- Sí, si lo autoriza el superior
+- Solo en las Entidades Locales
+E Art. 25.2.
+R Ley 40/2015 art. 25.2
+
+Q Las disposiciones sancionadoras producen efecto retroactivo:
+= En cuanto favorezcan al presunto infractor o al infractor, tanto en la tipificación como en la sanción y sus plazos de prescripción
+- Siempre
+- Nunca
+- Solo si lo dice la propia norma
+E Art. 26.2. Por regla general se aplican las vigentes cuando se producen los hechos.
+R Ley 40/2015 art. 26
+
+Q Según el principio de tipicidad, solo constituyen infracciones administrativas:
+= Las vulneraciones del ordenamiento previstas como tales infracciones por una ley
+- Las conductas que decida el órgano sancionador
+- Las previstas en cualquier norma
+- Las que causen un daño económico
+E Las normas reglamentarias pueden introducir especificaciones o graduaciones, sin crear nuevas infracciones ni sanciones (art. 27.3).
+R Ley 40/2015 art. 27
+
+Q ¿Pueden aplicarse por analogía las normas definidoras de infracciones y sanciones?
+= No
+- Sí, si favorecen a la Administración
+- Sí, si lo autoriza un reglamento
+- Sí, en el ámbito local
+E Art. 27.4.
+R Ley 40/2015 art. 27.4
+
+Q Según el art. 28, solo pueden ser sancionadas por hechos constitutivos de infracción administrativa:
+= Las personas físicas y jurídicas, y los grupos de afectados, uniones sin personalidad y patrimonios independientes cuando una ley les reconozca capacidad de obrar, que resulten responsables a título de dolo o culpa
+- Solo las personas físicas
+- Cualquier persona, aunque no haya culpa
+- Solo las personas jurídicas
+E Art. 28.1.
+R Ley 40/2015 art. 28.1
+
+Q Las sanciones administrativas, sean o no de naturaleza pecuniaria:
+= En ningún caso pueden implicar, directa o subsidiariamente, privación de libertad
+- Pueden implicar privación de libertad hasta 72 horas
+- Pueden implicar arresto domiciliario
+- Pueden implicar privación de libertad si así lo prevé una ley orgánica
+E Art. 29.1, en coherencia con el art. 25.3 de la Constitución.
+R Ley 40/2015 art. 29.1
+
+Q El establecimiento de sanciones pecuniarias debe prever que:
+= La comisión de las infracciones tipificadas no resulte más beneficiosa para el infractor que el cumplimiento de las normas infringidas
+- Sean siempre la cuantía mínima
+- Se puedan pagar a plazos sin intereses
+- Se dupliquen en caso de reincidencia
+E Art. 29.2. La graduación atiende a culpabilidad o intencionalidad, continuidad, naturaleza de los perjuicios y reincidencia (art. 29.3).
+R Ley 40/2015 art. 29
+
+Q Si no lo fijan las leyes, las infracciones muy graves prescriben a los:
+= Tres años
+- Dos años
+- Seis meses
+- Cinco años
+E Graves, a los dos años; leves, a los seis meses.
+R Ley 40/2015 art. 30.1
+
+Q Si no lo fijan las leyes, las sanciones impuestas por faltas leves prescriben al:
+= Año
+- Mes
+- Trimestre
+- Semestre
+E Muy graves, a los tres años; graves, a los dos años; leves, al año.
+R Ley 40/2015 art. 30.1
+
+Q El plazo de prescripción de las infracciones empieza a contarse:
+= Desde el día en que la infracción se hubiera cometido
+- Desde que la Administración tiene conocimiento
+- Desde la apertura del procedimiento
+- Desde la denuncia
+E En las infracciones continuadas o permanentes, desde que finalizó la conducta infractora (art. 30.2).
+R Ley 40/2015 art. 30.2
+
+Q Según el principio non bis in idem, no pueden sancionarse los hechos que lo hayan sido penal o administrativamente cuando se aprecie identidad de:
+= Sujeto, hecho y fundamento
+- Sujeto y sanción
+- Hecho y órgano
+- Fundamento y procedimiento
+E Art. 31.1.
+R Ley 40/2015 art. 31.1
+
+Q Según el art. 32, los particulares tienen derecho a ser indemnizados por las Administraciones de toda lesión que sufran en sus bienes y derechos:
+= Siempre que sea consecuencia del funcionamiento normal o anormal de los servicios públicos, salvo en los casos de fuerza mayor o de daños que tengan el deber jurídico de soportar
+- Solo si el funcionamiento del servicio fue anormal
+- Solo si hay culpa del funcionario
+- En todo caso, incluida la fuerza mayor
+E Art. 32.1.
+R Ley 40/2015 art. 32.1
+
+Q ¿Qué requisitos debe reunir el daño alegado según el art. 32.2?
+= Ser efectivo, evaluable económicamente e individualizado con relación a una persona o grupo de personas
+- Ser grave y permanente
+- Superar los 6.000 euros
+- Haber sido reconocido por un juez
+E Art. 32.2.
+R Ley 40/2015 art. 32.2
+
+Q La anulación en vía administrativa o contencioso-administrativa de los actos o disposiciones administrativas:
+= No presupone, por sí misma, derecho a la indemnización
+- Da siempre derecho a indemnización
+- Impide reclamar indemnización
+- Solo da derecho a indemnización si es por nulidad
+E Art. 32.1, párrafo segundo.
+R Ley 40/2015 art. 32.1
+
+Q No son indemnizables los daños que se deriven de hechos o circunstancias que:
+= No se hubiesen podido prever o evitar según el estado de los conocimientos de la ciencia o de la técnica existentes en el momento de su producción
+- Se produzcan en un servicio público
+- Afecten a menores
+- Se produzcan en un día inhábil
+E Art. 34.1 (riesgos del desarrollo).
+R Ley 40/2015 art. 34.1
+
+Q ¿Cómo se calcula la cuantía de la indemnización?
+= Con referencia al día en que la lesión efectivamente se produjo, sin perjuicio de su actualización a la fecha en que se ponga fin al procedimiento
+- Con referencia a la fecha de la reclamación
+- Con referencia a la fecha de la sentencia
+- Según la valoración del interesado
+E Art. 34.3, actualizándola con el IPC y los intereses de demora.
+R Ley 40/2015 art. 34.3
+
+Q Cuando de la gestión dimanante de fórmulas conjuntas de actuación entre varias Administraciones se derive responsabilidad:
+= Las Administraciones intervinientes responden frente al particular de forma solidaria
+- Responde solo la Administración que inició la actuación
+- Cada una responde por partes iguales
+- No hay responsabilidad
+E Art. 33.1. El instrumento jurídico regulador podrá determinar la distribución de la responsabilidad.
+R Ley 40/2015 art. 33.1
+
+Q Para hacer efectiva la responsabilidad patrimonial, los particulares exigen directamente a la Administración las indemnizaciones por los daños causados:
+= Por las autoridades y personal a su servicio
+- Al funcionario que causó el daño
+- A la compañía aseguradora
+- Al superior jerárquico del funcionario
+E Art. 36.1.
+R Ley 40/2015 art. 36.1
+
+Q Una vez indemnizados los lesionados, la Administración exigirá de oficio a sus autoridades y personal la responsabilidad en que hubieran incurrido:
+= Por dolo, o culpa o negligencia graves
+- Por cualquier culpa, incluso leve
+- Solo por dolo
+- En ningún caso
+E Es la acción de regreso del art. 36.2, previa instrucción del procedimiento.
+R Ley 40/2015 art. 36.2
+
+Q ¿Qué criterios se ponderan para exigir la acción de regreso?
+= El resultado dañoso producido, el grado de culpabilidad, la responsabilidad profesional del personal y su relación con la producción del resultado
+- La antigüedad del funcionario
+- El cuerpo al que pertenece
+- La cuantía de su sueldo
+E Art. 36.2.
+R Ley 40/2015 art. 36.2
+
+Q La responsabilidad penal del personal al servicio de las Administraciones:
+= Se exige de acuerdo con lo previsto en la legislación correspondiente y no suspende los procedimientos de reconocimiento de responsabilidad patrimonial
+- Sustituye a la responsabilidad patrimonial de la Administración
+- Paraliza siempre el procedimiento administrativo
+- No existe para los funcionarios
+E Salvo que la determinación de los hechos en el orden jurisdiccional penal sea necesaria para fijar la responsabilidad patrimonial (art. 37).
+R Ley 40/2015 art. 37
+
+Q ¿Qué ley regula el procedimiento para la reclamación de responsabilidad patrimonial?
+= La Ley 39/2015
+- La Ley 40/2015
+- La Ley 29/1998
+- El Código Civil
+E La Ley 40/2015 fija los principios (arts. 32 a 37) y la Ley 39/2015 el procedimiento (por ejemplo, el plazo de un año del art. 67).
+R Ley 40/2015 y Ley 39/2015
+
+Q ¿En qué plazo prescribe el derecho a reclamar responsabilidad patrimonial?
+= Al año de producido el hecho o el acto que motive la indemnización o de manifestarse su efecto lesivo
+- A los cuatro años
+- A los seis meses
+- A los cinco años
+E Art. 67.1 de la Ley 39/2015.
+R Ley 39/2015 art. 67.1
+
+Q Los daños causados por leyes declaradas inconstitucionales son indemnizables cuando:
+= El particular haya obtenido, en cualquier instancia, sentencia firme desestimatoria de un recurso contra la actuación que ocasionó el daño, siempre que hubiera alegado la inconstitucionalidad
+- Siempre, sin requisitos
+- Nunca
+- Solo si lo acuerda el Consejo de Ministros
+E Art. 32.4.
+R Ley 40/2015 art. 32.4
+
+Q La responsabilidad del Estado legislador puede surgir también de actos legislativos de naturaleza no expropiatoria cuando:
+= Se establezca en los propios actos legislativos y en los términos que en ellos se especifiquen
+- Lo decida un juez
+- El particular lo solicite
+- Se trate de leyes autonómicas
+E Art. 32.3.
+R Ley 40/2015 art. 32.3
+
+Q Cuando las Administraciones actúen en relaciones de derecho privado, la responsabilidad se exige:
+= Conforme a lo previsto en los arts. 32 y siguientes de la Ley 40/2015, aunque concurra con sujetos de derecho privado
+- Ante la jurisdicción civil conforme al Código Civil
+- Mediante arbitraje
+- No pueden ser responsables
+E Art. 35. La responsabilidad se exige directamente a la entidad de que se trate.
+R Ley 40/2015 art. 35
+
+Q La indemnización puede sustituirse por una compensación en especie o ser abonada mediante pagos periódicos:
+= Cuando resulte más adecuado para lograr la reparación debida y convenga al interés público, siempre que exista acuerdo con el interesado
+- Siempre que lo decida la Administración
+- Nunca
+- Solo en los daños personales
+E Art. 34.4.
+R Ley 40/2015 art. 34.4
+
+Q En los casos de muerte o lesiones corporales, la indemnización puede tomar como referencia:
+= La valoración incluida en los baremos de la normativa vigente en materia de seguros obligatorios y de la Seguridad Social
+- Lo que reclame el interesado
+- El salario mínimo interprofesional
+- La tabla que fije cada Ayuntamiento
+E Art. 34.2.
+R Ley 40/2015 art. 34.2
+
+Q ¿Qué capítulo del Título Preliminar de la Ley 40/2015 regula la responsabilidad patrimonial?
+= El Capítulo IV (arts. 32 a 37)
+- El Capítulo III (arts. 25 a 31)
+- El Capítulo II (arts. 5 a 24)
+- El Capítulo V (arts. 38 a 46)
+E El Capítulo III regula los principios de la potestad sancionadora.
+R Ley 40/2015, estructura
