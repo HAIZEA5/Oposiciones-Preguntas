@@ -1,0 +1,159 @@
+Q ¿Qué norma aprueba el Reglamento de Bienes de las Entidades Locales?
+= El Real Decreto 1372/1986, de 13 de junio
+- El Real Decreto 2568/1986
+- El Real Decreto 1690/1986
+- La Ley 33/2003
+E La Ley 33/2003 (LPAP) tiene preceptos básicos que también se aplican a los entes locales.
+R RB
+
+Q Según el art. 1 del RB, el patrimonio de las entidades locales está constituido por:
+= El conjunto de bienes, derechos y acciones que les pertenezcan
+- Solo los bienes inmuebles
+- Los bienes de dominio público
+- Los bienes inscritos en el Registro de la Propiedad
+E Art. 1.
+R RB art. 1
+
+Q ¿En qué dos grandes clases se clasifican los bienes de las entidades locales?
+= Bienes de dominio público y bienes patrimoniales
+- Bienes muebles e inmuebles
+- Bienes comunales y de propios
+- Bienes rústicos y urbanos
+E Art. 2. Los comunales son una modalidad de dominio público.
+R RB art. 2
+
+Q Las plazas, calles, parques y fuentes de un municipio son bienes:
+= De dominio público de uso público
+- De dominio público de servicio público
+- Patrimoniales
+- Comunales
+E Art. 3: los que todos pueden usar.
+R RB art. 3
+
+Q La casa consistorial, los mercados, los museos y los cementerios son bienes:
+= De dominio público de servicio público
+- De dominio público de uso público
+- Patrimoniales
+- Comunales
+E Art. 4: destinados directamente al cumplimiento de fines públicos.
+R RB art. 4
+
+Q Los bienes comunales:
+= Son de dominio público y su aprovechamiento corresponde al común de los vecinos
+- Son patrimoniales
+- Pueden pertenecer a la Diputación Foral
+- Pueden venderse libremente
+E Solo pueden pertenecer a los municipios y a las entidades locales menores.
+R RB art. 2.3
+
+Q ¿Cuál de estos es un bien patrimonial o de propios?
+= Una vivienda propiedad del ayuntamiento que está alquilada
+- Un parque público
+- La biblioteca municipal
+- Un monte comunal
+E Art. 6: no destinados a uso ni servicio público y pueden ser fuente de ingresos.
+R RB art. 6
+
+Q Los bienes patrimoniales se rigen por su legislación específica y, en su defecto, por:
+= Las normas de Derecho privado
+- La Ley 39/2015
+- El Código Penal
+- El ROF
+E Art. 6.2.
+R RB art. 6
+
+Q Los bienes de dominio público y comunales son:
+= Inalienables, inembargables e imprescriptibles, y no están sujetos a tributo alguno
+- Alienables e inembargables
+- Embargables pero imprescriptibles
+- Prescriptibles a los 30 años
+E Art. 5 RB, art. 80 LBRL y art. 132 CE.
+R RB art. 5
+
+Q Las porciones de terreno de la entidad local que, por su reducida extensión, forma irregular o emplazamiento, no son susceptibles de uso adecuado se llaman:
+= Parcelas sobrantes
+- Efectos no utilizables
+- Bienes comunales
+- Bienes revertibles
+E Son patrimoniales y se venden directamente al colindante (art. 115).
+R RB art. 7
+
+Q Los bienes muebles que, por su deterioro o depreciación, resultan inaplicables a los servicios se denominan:
+= Efectos no utilizables
+- Parcelas sobrantes
+- Bienes semovientes
+- Bienes revertibles
+E Art. 7.
+R RB art. 7
+
+Q La alteración de la calificación jurídica de un bien exige un expediente con información pública durante:
+= Un mes
+- Quince días
+- Veinte días
+- Dos meses
+E Y acuerdo del Pleno por mayoría absoluta.
+R RB art. 8
+
+Q ¿Qué mayoría exige el acuerdo de alteración de la calificación jurídica de los bienes demaniales?
+= Mayoría absoluta del número legal de miembros
+- Mayoría simple
+- Dos tercios
+- Unanimidad
+E Art. 47.2.n de la LBRL.
+R LBRL art. 47.2.n
+
+Q Un bien desafectado se incorpora al patrimonio de la entidad:
+= Cuando se produce la recepción formal por el órgano competente
+- En el momento del acuerdo del Pleno
+- Al publicarse en el BOB
+- Al inscribirse en el inventario
+E Mientras tanto sigue siendo de dominio público (art. 8.3).
+R RB art. 8.3
+
+Q ¿Cuál de estos supuestos produce la alteración automática de la calificación jurídica, sin expediente?
+= La adscripción de bienes patrimoniales durante más de 25 años a un uso o servicio público
+- La adscripción durante más de 5 años
+- La decisión del Alcalde
+- La inscripción en el Registro de la Propiedad
+E También la aprobación definitiva de planes urbanísticos y proyectos de obras, y la usucapión.
+R RB art. 8.4
+
+Q Si la entidad local no ejerce las acciones para defender sus bienes, cualquier vecino:
+= Puede requerirle que lo haga y, si no lo hace, ejercerlas en nombre de la entidad
+- No puede hacer nada
+- Debe acudir al Ararteko
+- Puede apropiarse del bien
+E Acción vecinal del art. 68 de la LBRL.
+R RB art. 9 y LBRL art. 68
+
+Q Las herencias que recibe una entidad local se aceptan:
+= Siempre a beneficio de inventario
+- Pura y simplemente
+- Solo si lo autoriza la Diputación
+- Solo si no tienen cargas
+E Art. 12.
+R RB art. 12
+
+Q Si un bien se adquiere con la condición de destinarlo a un fin, la condición se entiende cumplida si ha servido a ese fin durante:
+= Treinta años
+- Diez años
+- Veinticinco años
+- Cincuenta años
+E Aunque después deje de hacerlo por razones de interés público.
+R RB art. 13
+
+Q ¿Pueden los particulares adquirir por prescripción bienes de las entidades locales?
+= Solo los patrimoniales, nunca los de dominio público
+- Sí, cualquier bien
+- No, ninguno
+- Solo los comunales
+E Art. 14.
+R RB art. 14
+
+Q ¿Cuál de estos NO es un modo de adquirir bienes según el art. 10 del RB?
+= La confiscación
+- La herencia, legado o donación
+- La prescripción
+- La ocupación
+E También por atribución de la ley y a título oneroso.
+R RB art. 10

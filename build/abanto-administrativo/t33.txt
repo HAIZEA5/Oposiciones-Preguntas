@@ -1,0 +1,183 @@
+Q ¿Qué norma aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales (ROF)?
+= El Real Decreto 2568/1986, de 28 de noviembre
+- El Real Decreto 1690/1986
+- El Real Decreto 1372/1986
+- La Ley 7/1985
+E El RD 1690/1986 es el Reglamento de Población; el RD 1372/1986, el de Bienes.
+R ROF
+
+Q ¿Cómo se llama hoy la antigua «Comisión de Gobierno» del ROF?
+= Junta de Gobierno Local
+- Comisión Informativa
+- Junta de Portavoces
+- Comisión Especial de Cuentas
+E Cambió de nombre con la Ley 57/2003.
+R ROF arts. 52-53
+
+Q ¿Cuál de estos es un órgano necesario del Ayuntamiento según el art. 35 del ROF?
+= Los Tenientes de Alcalde
+- Las Comisiones informativas especiales
+- Los Consejos sectoriales
+- Las Juntas Municipales de Distrito
+E Órganos necesarios: Alcalde, Tenientes de Alcalde, Pleno y Junta de Gobierno (en municipios de más de 5.000 habitantes o si lo decide el municipio).
+R ROF art. 35
+
+Q La Junta de Gobierno Local es obligatoria en los municipios de:
+= Más de 5.000 habitantes, y en los de menos si lo dispone su reglamento orgánico o lo acuerda el Pleno
+- Más de 20.000 habitantes
+- Todos los municipios
+- Más de 50.000 habitantes
+E Art. 20.1.b de la LBRL.
+R LBRL art. 20.1.b
+
+Q ¿Qué día se constituyen las corporaciones municipales en sesión pública?
+= El vigésimo día posterior a la celebración de las elecciones, salvo recurso contencioso-electoral
+- El décimo día posterior
+- El trigésimo día posterior
+- El día siguiente a la proclamación de electos
+E Si hay recurso contencioso-electoral, el cuadragésimo día.
+R ROF art. 37.1
+
+Q En la sesión constitutiva, la Mesa de Edad está integrada por:
+= Los concejales electos de mayor y menor edad presentes, actuando de secretario el de la corporación
+- El Alcalde saliente y el Secretario
+- Los cabezas de lista de los dos partidos más votados
+- El concejal de mayor edad solamente
+E Art. 37.2.
+R ROF art. 37.2
+
+Q Si en la sesión constitutiva no concurre la mayoría absoluta de los concejales electos:
+= Se celebra sesión dos días después y queda constituida la corporación cualquiera que sea el número de concejales presentes
+- Se repiten las elecciones
+- La Diputación nombra una comisión gestora
+- Se aplaza un mes
+E Art. 37.4.
+R ROF art. 37.4
+
+Q Dentro de los treinta días siguientes a la sesión constitutiva, el Alcalde convoca un Pleno extraordinario para, entre otras cosas:
+= Fijar la periodicidad de las sesiones plenarias y crear y componer las comisiones informativas
+- Aprobar los presupuestos
+- Elegir al Alcalde
+- Aprobar el reglamento orgánico
+E Y para conocer los nombramientos de Tenientes de Alcalde y las delegaciones del Alcalde.
+R ROF art. 38
+
+Q Al terminar su mandato de cuatro años, los concejales cesantes:
+= Continúan en funciones solo para la administración ordinaria hasta la toma de posesión de sus sucesores
+- Cesan inmediatamente sin ninguna función
+- Pueden adoptar cualquier acuerdo
+- Siguen en el cargo con plenas facultades
+E No pueden adoptar acuerdos que requieran mayoría cualificada.
+R ROF art. 39
+
+Q Si el Alcalde electo no está presente en la sesión constitutiva, se le requiere para que tome posesión ante el Pleno en el plazo de:
+= Cuarenta y ocho horas
+- Diez días
+- Tres días
+- Una semana
+E Art. 40.
+R ROF art. 40
+
+Q ¿En qué momento da cuenta el Alcalde al Pleno de las resoluciones que ha adoptado?
+= En cada sesión plenaria ordinaria, de forma sucinta, desde la última sesión
+- Una vez al año
+- Solo si lo pide la oposición
+- Al final del mandato
+E Para que los concejales conozcan su desarrollo y ejerzan el control (art. 42).
+R ROF art. 42
+
+Q Las delegaciones genéricas del Alcalde pueden conferirse a favor de:
+= La Junta de Gobierno o de los Tenientes de Alcalde o concejales miembros de la Junta
+- Cualquier vecino del municipio
+- El Secretario de la corporación
+- Cualquier concejal, aunque no sea de la Junta, para áreas completas
+E Las especiales, para un asunto, servicio o barrio concreto, pueden hacerse en cualquier concejal.
+R ROF art. 43
+
+Q La delegación de atribuciones del Alcalde surte efecto:
+= Desde el día siguiente al de la fecha del decreto, salvo que este disponga otra cosa, sin perjuicio de su publicación en el BOB
+- Desde su publicación en el BOB
+- Desde que el Pleno la ratifica
+- Desde el mismo día de su firma, sin necesidad de publicación
+E Se da cuenta al Pleno en la primera sesión que celebre.
+R ROF art. 44.2
+
+Q ¿Cuál de estas atribuciones del Alcalde es indelegable?
+= Convocar y presidir las sesiones del Pleno y de la Junta de Gobierno y decidir los empates con voto de calidad
+- La dirección de un área de servicios
+- La concesión de licencias de obras menores
+- La gestión de un barrio
+E Art. 21.3 de la LBRL.
+R LBRL art. 21.3
+
+Q Los Tenientes de Alcalde son nombrados y cesados libremente por:
+= El Alcalde, entre los miembros de la Junta de Gobierno
+- El Pleno, por mayoría absoluta
+- La Junta de Gobierno
+- Los grupos políticos
+E Donde no exista Junta de Gobierno, entre los concejales.
+R ROF art. 46
+
+Q Donde no existe Junta de Gobierno, el número de Tenientes de Alcalde no puede exceder de:
+= Un tercio del número legal de miembros de la corporación
+- La mitad de los concejales
+- Tres
+- Cinco
+E Donde existe, no puede exceder del número de miembros de la Junta.
+R ROF art. 46
+
+Q Los Tenientes de Alcalde sustituyen al Alcalde:
+= Por el orden de su nombramiento, en los casos de vacante, ausencia o enfermedad
+- Por orden de edad
+- Por sorteo
+- Según decida el Pleno en cada caso
+E Si el Alcalde se ausenta más de 24 horas sin delegar, le sustituye el Teniente de Alcalde que corresponda.
+R ROF art. 47
+
+Q Quien sustituye al Alcalde en sus funciones:
+= No puede revocar las delegaciones que el Alcalde haya otorgado
+- Puede revocar libremente las delegaciones
+- Asume la condición de Alcalde
+- Debe ser ratificado por el Pleno
+E Art. 48.
+R ROF art. 48
+
+Q El Pleno puede delegar atribuciones en el Alcalde o en la Junta de Gobierno mediante acuerdo adoptado por:
+= Mayoría simple, salvo las materias indelegables del art. 22.4 de la LBRL
+- Mayoría absoluta en todo caso
+- Unanimidad
+- Dos tercios
+E No puede delegar, entre otras, la aprobación del reglamento orgánico, las ordenanzas o los presupuestos.
+R ROF art. 51 y LBRL art. 22.4
+
+Q La Junta de Gobierno Local está formada por el Alcalde y un número de concejales no superior a:
+= Un tercio del número legal de miembros de la corporación
+- La mitad
+- Cinco
+- Dos tercios
+E Los nombra y separa libremente el Alcalde, dando cuenta al Pleno.
+R ROF art. 52
+
+Q ¿Cuál es la función principal de la Junta de Gobierno Local según el art. 53 del ROF?
+= La asistencia permanente al Alcalde en el ejercicio de sus atribuciones
+- Aprobar las ordenanzas
+- Controlar al Alcalde
+- Aprobar los presupuestos
+E Además, ejerce las atribuciones que le deleguen el Alcalde o el Pleno y las que le asignen las leyes.
+R ROF art. 53
+
+Q Las sesiones de la Junta de Gobierno Local:
+= No son públicas
+- Son siempre públicas
+- Se retransmiten obligatoriamente
+- Son públicas si lo pide un vecino
+E Art. 70.1 de la LBRL.
+R LBRL art. 70.1
+
+Q En el régimen de concejo abierto, el gobierno municipal corresponde a:
+= El Alcalde y la Asamblea vecinal formada por todos los electores
+- El Pleno y el Alcalde
+- La Diputación Foral
+- La Junta de Gobierno
+E Art. 54 del ROF y art. 29 de la LBRL.
+R ROF art. 54

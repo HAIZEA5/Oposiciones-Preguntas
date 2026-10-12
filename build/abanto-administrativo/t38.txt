@@ -1,0 +1,151 @@
+Q ¿Qué Norma Foral regula el IBI en Bizkaia?
+= La Norma Foral 4/2016, de 18 de mayo
+- La Norma Foral 8/1989
+- La Norma Foral 9/2005
+- La Norma Foral 6/1989
+E Efectos desde el 1-1-2017. Los conceptos catastrales están en la NF 3/2016.
+R NF 4/2016
+
+Q El IBI es un tributo:
+= Directo, de carácter real y obligatorio
+- Indirecto y potestativo
+- Directo, personal y potestativo
+- Indirecto y obligatorio
+E Grava el valor de los bienes inmuebles.
+R NF 4/2016 art. 1
+
+Q ¿Cuál es el orden de prelación del hecho imponible del IBI?
+= Concesión administrativa, derecho de superficie, derecho de usufructo y derecho de propiedad
+- Propiedad, usufructo, superficie y concesión
+- Usufructo, propiedad, concesión y superficie
+- Propiedad, concesión, superficie y usufructo
+E Se aplica el primero que concurra (art. 2.2).
+R NF 4/2016 art. 2
+
+Q Si un inmueble tiene nudo propietario y usufructuario, ¿quién paga el IBI?
+= El usufructuario
+- El nudo propietario
+- Los dos a partes iguales
+- El ayuntamiento
+E El usufructo va antes que la propiedad en el orden de prelación.
+R NF 4/2016 art. 2.2
+
+Q ¿Cuál de estos es un bien inmueble de características especiales (BICE)?
+= Una autopista de peaje
+- Un piso en suelo urbano
+- Una granja en suelo rústico
+- Un local comercial
+E También centrales energéticas, presas, aeropuertos y puertos comerciales.
+R NF 3/2016 art. 9
+
+Q ¿Cuál de estos inmuebles NO está sujeto al IBI?
+= Un parque municipal de uso público, propiedad del propio municipio
+- Una vivienda municipal alquilada a un particular
+- Un local comercial privado
+- Un piso propiedad de una empresa
+E Los bienes municipales cedidos a terceros con contraprestación sí están sujetos.
+R NF 4/2016 art. 2.5
+
+Q Las carreteras y caminos de aprovechamiento público y gratuito:
+= No están sujetos al IBI
+- Están exentos del IBI
+- Pagan IBI rústico
+- Pagan IBI como BICE
+E Art. 2.5.a. No confundir no sujeción con exención.
+R NF 4/2016 art. 2.5
+
+Q ¿Qué particularidad foral recoge el sujeto pasivo del IBI en Bizkaia?
+= Incluye las herencias pendientes del ejercicio de un poder testatorio
+- Excluye a las personas jurídicas
+- Solo incluye a los residentes en Bizkaia
+- Excluye a las comunidades de bienes
+E Art. 4.
+R NF 4/2016 art. 4
+
+Q Si cambia el titular de un inmueble con deudas de IBI:
+= El inmueble queda afecto al pago de la totalidad de la cuota
+- La deuda se extingue
+- Solo responde el antiguo titular
+- La deuda la asume el ayuntamiento
+E Afección real; responsabilidad subsidiaria del adquirente (art. 5.1).
+R NF 4/2016 art. 5.1
+
+Q Los ayuntamientos repercuten la cuota del IBI en:
+= Quienes usen mediante contraprestación sus bienes demaniales o patrimoniales
+- Todos los vecinos
+- La Diputación Foral
+- Nadie
+E Están obligados a soportar la repercusión (art. 4.2).
+R NF 4/2016 art. 4.2
+
+Q ¿Qué grava el IIVTNU (plusvalía municipal)?
+= El incremento de valor de los terrenos de naturaleza urbana que se pone de manifiesto al transmitirse
+- El valor de las construcciones
+- La titularidad de los inmuebles
+- El incremento de valor de los terrenos rústicos
+E Al transmitir la propiedad o constituir o transmitir un derecho real de goce limitativo del dominio.
+R NF 8/1989 art. 1
+
+Q El IIVTNU es un impuesto:
+= Directo y potestativo
+- Indirecto y obligatorio
+- Directo y obligatorio
+- Indirecto y potestativo
+E Solo se exige si el ayuntamiento acuerda su imposición y aprueba la ordenanza.
+R NF 9/2005 art. 20
+
+Q ¿Qué Norma Foral regula el IIVTNU en Bizkaia?
+= La Norma Foral 8/1989, de 30 de junio
+- La Norma Foral 4/2016
+- La Norma Foral 10/1989
+- La Norma Foral 7/1989
+E Muy modificada, entre otras, por el DFN 7/2021 tras la STC 182/2021.
+R NF 8/1989
+
+Q El período impositivo del IIVTNU es de hasta:
+= Veinte años
+- Diez años
+- Cinco años
+- Treinta años
+E Tema 38.
+R NF 8/1989
+
+Q ¿Cuál de estos supuestos NO está sujeto al IIVTNU?
+= La transmisión de un terreno en la que se acredita que no ha habido incremento de valor
+- La venta de un piso con ganancia
+- La herencia de un solar urbano
+- La donación de un terreno urbano
+E Desde 2021, tras la STC 182/2021. El interesado debe declararlo y acreditarlo.
+R NF 8/1989 art. 1.4
+
+Q En el IIVTNU, el trato que reciben los cónyuges en las aportaciones a la sociedad conyugal se extiende en Bizkaia a:
+= Las parejas de hecho de la Ley vasca 2/2003
+- Los hermanos
+- Los socios de una empresa
+- Nadie más
+E Particularidad foral.
+R NF 8/1989 art. 1.3
+
+Q En una herencia o donación, el contribuyente del IIVTNU es:
+= Quien adquiere el terreno
+- Quien transmite el terreno
+- El notario
+- El ayuntamiento
+E En las transmisiones a título lucrativo.
+R NF 8/1989 art. 3
+
+Q En una compraventa, el contribuyente del IIVTNU es:
+= El vendedor (transmitente)
+- El comprador (adquirente)
+- Los dos a partes iguales
+- La inmobiliaria
+E Si el transmitente es una persona física no residente en España, el adquirente es sustituto del contribuyente.
+R NF 8/1989 art. 3
+
+Q Los terrenos rústicos a efectos del IBI:
+= No están sujetos al IIVTNU
+- Pagan IIVTNU reducido
+- Pagan IIVTNU como urbanos
+- Solo pagan si se heredan
+E Art. 1.2.
+R NF 8/1989 art. 1.2

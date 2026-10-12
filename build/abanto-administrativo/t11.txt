@@ -1,0 +1,175 @@
+Q ¿Qué artículo de la Constitución establece que la Administración Pública sirve con objetividad los intereses generales?
+= El art. 103.1
+- El art. 97
+- El art. 106.1
+- El art. 9.1
+E Con sometimiento pleno a la ley y al Derecho.
+R CE art. 103.1
+
+Q Según el art. 3.4 de la Ley 40/2015, cada una de las Administraciones Públicas actúa para el cumplimiento de sus fines con:
+= Personalidad jurídica única
+- Varias personalidades jurídicas, una por órgano
+- Personalidad jurídica limitada
+- Sin personalidad jurídica propia
+E Es uno de los rasgos de la Administración.
+R Ley 40/2015 art. 3.4
+
+Q Según la Ley 40/2015, ¿cuál de estas entidades tiene la consideración de Administración Pública?
+= Un organismo autónomo dependiente de una Comunidad Autónoma
+- Una sociedad mercantil municipal
+- Una fundación del sector público
+- Un colegio profesional en todo caso
+E Son Administraciones las territoriales y los organismos públicos y entidades de derecho público vinculados o dependientes.
+R Ley 40/2015 art. 2.3
+
+Q Los colegios profesionales y las cámaras de comercio son ejemplos de Administraciones:
+= Corporativas
+- Territoriales
+- Institucionales
+- Independientes
+E Tienen base asociativa y ejercen funciones públicas atribuidas por la ley.
+R Clases de Administraciones
+
+Q Osakidetza, Lanbide o el IVAP son ejemplos de Administración:
+= Institucional
+- Territorial
+- Corporativa
+- Local
+E Persiguen fines específicos y dependen de una Administración territorial.
+R Clases de Administraciones
+
+Q El traspaso de competencias a otra persona jurídica (por ejemplo, del Estado a las Comunidades Autónomas) se llama:
+= Descentralización
+- Desconcentración
+- Delegación de firma
+- Avocación
+E La desconcentración es el traspaso a órganos inferiores de la misma Administración.
+R CE art. 103.1
+
+Q La desconcentración consiste en:
+= Atribuir competencias a órganos jerárquicamente dependientes de la misma Administración
+- Transferir competencias a otra Administración
+- Recuperar una competencia delegada
+- Crear un organismo autónomo
+E Se regula en el art. 8.2 de la Ley 40/2015.
+R Ley 40/2015 art. 8.2
+
+Q ¿Cuál de estos NO es un principio general de actuación del art. 3.1 de la Ley 40/2015?
+= Rentabilidad económica de los servicios
+- Buena fe, confianza legítima y lealtad institucional
+- Simplicidad, claridad y proximidad a los ciudadanos
+- Eficiencia en la asignación y utilización de los recursos públicos
+E También: servicio efectivo, participación, objetividad y transparencia, racionalización, responsabilidad y cooperación.
+R Ley 40/2015 art. 3.1
+
+Q Según el art. 3.2 de la Ley 40/2015, las Administraciones se relacionan entre sí por:
+= Medios electrónicos que aseguren la interoperabilidad y seguridad de los sistemas
+- Correo postal certificado
+- Cualquier medio, a su elección
+- Medios presenciales en todo caso
+E Art. 3.2.
+R Ley 40/2015 art. 3.2
+
+Q El principio de vinculación positiva de la Administración a la ley significa que:
+= La Administración solo puede hacer lo que el ordenamiento le permite
+- La Administración puede hacer todo lo que la ley no le prohíbe
+- La Administración puede inaplicar las leyes que considere injustas
+- Los particulares solo pueden hacer lo que la ley les permite
+E Los particulares, en cambio, pueden hacer todo lo que la ley no prohíbe.
+R Principio de legalidad
+
+Q ¿Cuál de estos artículos de la Constitución NO es una manifestación del principio de legalidad de la Administración?
+= El art. 2
+- El art. 9.1
+- El art. 103.1
+- El art. 106.1
+E El art. 2 trata de la unidad de la Nación y el derecho a la autonomía.
+R CE arts. 9, 103 y 106
+
+Q ¿Cuál de estas características corresponde a una potestad administrativa?
+= Es irrenunciable e imprescriptible
+- Nace de un contrato
+- Se agota con su ejercicio
+- Es renunciable por la Administración
+E Además, procede directamente de la ley y es genérica.
+R Potestades administrativas
+
+Q ¿Cuál de estas es una diferencia entre potestad y derecho subjetivo?
+= El derecho subjetivo es renunciable y puede prescribir; la potestad no
+- La potestad nace de una relación jurídica concreta
+- El derecho subjetivo procede siempre de la ley
+- La potestad se agota al ejercerla
+E El derecho subjetivo nace de relaciones concretas y tiene un objeto determinado.
+R Potestades administrativas
+
+Q ¿Qué artículo de la LBRL enumera las potestades de los municipios, provincias e islas?
+= El art. 4
+- El art. 25
+- El art. 22
+- El art. 1
+E Reglamentaria y de autoorganización, tributaria y financiera, de programación, expropiatoria, de investigación, deslinde y recuperación de oficio de bienes, entre otras.
+R LBRL art. 4
+
+Q La medida de la potestad que corresponde a cada órgano se llama:
+= Competencia
+- Jerarquía
+- Delegación
+- Discrecionalidad
+E Es irrenunciable y se ejerce por el órgano que la tiene atribuida, salvo delegación o avocación.
+R Ley 40/2015 art. 8
+
+Q En la potestad reglada:
+= La ley fija todas las condiciones y la consecuencia, y la Administración solo comprueba el supuesto y aplica la norma
+- La Administración elige entre varias soluciones igualmente válidas
+- La Administración actúa según criterios de oportunidad
+- No hay control judicial
+E Ejemplo: conceder una licencia si el proyecto cumple el planeamiento.
+R Potestad reglada
+
+Q En la potestad discrecional:
+= La ley deja a la Administración un margen para elegir entre varias soluciones igualmente válidas
+- La Administración puede actuar sin sujeción a la ley
+- No es necesario motivar
+- No existe ningún control judicial
+E Discrecionalidad no es arbitrariedad (art. 9.3 CE).
+R Potestad discrecional
+
+Q Los actos dictados en el ejercicio de potestades discrecionales:
+= Deben ser motivados
+- No necesitan motivación
+- Solo se motivan si lo pide el interesado
+- Solo se motivan si son desfavorables
+E Art. 35.1.i de la Ley 39/2015.
+R Ley 39/2015 art. 35.1.i
+
+Q Usar una potestad para fines distintos de los fijados por el ordenamiento jurídico es:
+= Desviación de poder
+- Inderogabilidad singular
+- Silencio administrativo
+- Avocación
+E Es causa de anulabilidad (art. 48.1 de la Ley 39/2015).
+R Ley 39/2015 art. 48.1
+
+Q ¿Cuál de estos elementos de una potestad discrecional es siempre reglado y controlable por los tribunales?
+= La competencia del órgano y el fin
+- La oportunidad de la decisión
+- La elección entre varias soluciones válidas
+- El criterio político
+E También la existencia de la potestad, su extensión y el procedimiento.
+R Control de la discrecionalidad
+
+Q Los conceptos jurídicos indeterminados (como «urgencia» o «justo precio»):
+= No son discrecionalidad: admiten una sola solución justa en el caso concreto
+- Son una forma de potestad discrecional
+- No pueden ser controlados por los tribunales
+- Permiten a la Administración elegir libremente
+E Aunque existe un «halo» o margen de apreciación.
+R Conceptos jurídicos indeterminados
+
+Q ¿Qué artículo de la Constitución atribuye a los Tribunales el control de la legalidad de la actuación administrativa?
+= El art. 106.1
+- El art. 103.1
+- El art. 97
+- El art. 24
+E El art. 106.2 reconoce la responsabilidad patrimonial de la Administración.
+R CE art. 106

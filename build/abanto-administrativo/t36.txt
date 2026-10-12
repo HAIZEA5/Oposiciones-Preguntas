@@ -1,0 +1,215 @@
+Q Las corporaciones locales están obligadas a formar inventario:
+= De todos sus bienes y derechos, cualquiera que sea su naturaleza o forma de adquisición
+- Solo de los bienes inmuebles
+- Solo de los bienes patrimoniales
+- Solo de los bienes de valor superior a 3.000 euros
+E Art. 17.
+R RB art. 17
+
+Q ¿Cuántos epígrafes tiene el inventario de bienes según el art. 18 del RB?
+= Ocho
+- Cinco
+- Seis
+- Diez
+E Inmuebles; derechos reales; muebles históricos o valiosos; valores mobiliarios y créditos; vehículos; semovientes; otros muebles; bienes revertibles.
+R RB art. 18
+
+Q En el inventario, los animales se recogen en el epígrafe de:
+= Semovientes
+- Muebles no comprendidos en otros epígrafes
+- Bienes revertibles
+- Derechos reales
+E Art. 18.
+R RB art. 18
+
+Q ¿Qué órgano aprueba el inventario, su rectificación y su comprobación?
+= El Pleno
+- El Alcalde
+- El Secretario
+- La Junta de Gobierno Local
+E Art. 34.
+R RB art. 34
+
+Q La rectificación del inventario se hace:
+= Anualmente, y se comprueba siempre que se renueve la corporación
+- Cada cuatro años
+- Cada dos años
+- Solo cuando hay altas o bajas
+E Art. 33.
+R RB art. 33
+
+Q Para inscribir sus bienes en el Registro de la Propiedad, a las entidades locales les basta:
+= Una certificación del Secretario con el visto bueno del Presidente
+- Una escritura notarial
+- Una sentencia judicial
+- Una resolución de la Diputación
+E Los honorarios de los registradores se reducen a la mitad (art. 36).
+R RB art. 36
+
+Q ¿Cuál de estas potestades tienen las entidades locales para defender su patrimonio?
+= Investigación, deslinde, recuperación de oficio y desahucio administrativo
+- Expropiación de bienes de otras Administraciones
+- Embargo de bienes de dominio público estatal
+- Usucapión de bienes de particulares por decreto
+E Art. 44.
+R RB art. 44
+
+Q En la potestad de investigación, el particular que denuncia un bien tiene como premio:
+= El 10 % del valor líquido obtenido en la venta o de la tasación
+- El 5 %
+- El 25 %
+- Nada
+E Arts. 45-55.
+R RB arts. 45-55
+
+Q El deslinde de un bien se anuncia con una antelación de:
+= Sesenta días
+- Treinta días
+- Quince días
+- Diez días
+E El apeo fija los linderos con un técnico y acta del Secretario.
+R RB arts. 56-69
+
+Q Las entidades locales pueden recuperar por sí la posesión de los bienes de dominio público usurpados:
+= En cualquier tiempo
+- En el plazo de un año
+- En el plazo de cinco años
+- Solo con sentencia judicial
+E Los patrimoniales, en el plazo de un año desde la usurpación (art. 70).
+R RB art. 70
+
+Q La recuperación de oficio de bienes patrimoniales debe hacerse en el plazo de:
+= Un año desde el día siguiente a la usurpación
+- En cualquier tiempo
+- Seis meses
+- Cinco años
+E Pasado ese plazo, hay que acudir a los tribunales civiles.
+R RB art. 70
+
+Q Las corporaciones locales, ante demandas judiciales sobre el dominio de sus bienes:
+= No pueden allanarse
+- Pueden allanarse si lo acuerda el Alcalde
+- Deben allanarse siempre
+- Pueden allanarse por mayoría simple del Pleno
+E Art. 73.
+R RB art. 73
+
+Q Pasear por la calle es un ejemplo de uso:
+= Común general
+- Común especial
+- Privativo
+- Anormal
+E Se ejerce libremente, sin título (art. 76).
+R RB arts. 75 y 76
+
+Q El uso común especial del dominio público (por ejemplo, un vado o una terraza) requiere:
+= Licencia
+- Concesión administrativa
+- Ningún título
+- Contrato de arrendamiento
+E Art. 77.
+R RB art. 77
+
+Q El uso privativo del dominio público (por ejemplo, un quiosco fijo) requiere:
+= Concesión administrativa
+- Licencia
+- Ningún título
+- Autorización verbal del Alcalde
+E Art. 78. El uso anormal también necesita concesión.
+R RB art. 78
+
+Q ¿Cuál es hoy el plazo máximo de una concesión demanial, según la Ley 33/2003?
+= 75 años
+- 99 años
+- 50 años
+- Tiempo indefinido
+E El RB decía 99 años; el art. 93.3 de la LPAP, básico, lo rebaja a 75. Nunca por tiempo indefinido.
+R RB art. 79 y LPAP art. 93.3
+
+Q El canon de una concesión de dominio público tiene naturaleza de:
+= Tasa
+- Precio privado
+- Impuesto
+- Contribución especial
+E Art. 80.
+R RB art. 80
+
+Q En los arrendamientos de bienes patrimoniales, el canon mínimo es:
+= El 6 % del valor en venta del bien
+- El 3 %
+- El 10 %
+- El 1 %
+E Subasta obligatoria si la duración supera 5 años o el precio el 5 % de los recursos ordinarios.
+R RB art. 92
+
+Q ¿Cuál es la forma preferente de aprovechamiento de los bienes comunales?
+= La explotación común o cultivo colectivo
+- La adjudicación por precio
+- El arrendamiento a empresas
+- La venta
+E Después, el aprovechamiento según costumbre o por lotes, y en último lugar la adjudicación por precio.
+R RB art. 94
+
+Q Los bienes comunales pueden desafectarse si no han sido objeto de disfrute comunal durante más de:
+= Diez años
+- Cinco años
+- Veinticinco años
+- Treinta años
+E Con información pública, mayoría absoluta y aprobación autonómica.
+R RB art. 100
+
+Q ¿Qué bienes de las entidades locales pueden enajenarse?
+= Solo los patrimoniales
+- Todos
+- Solo los comunales
+- Los de dominio público, con autorización autonómica
+E El dominio público es inalienable: primero hay que desafectarlo.
+R RB arts. 109-119
+
+Q Los inmuebles patrimoniales necesitan autorización autonómica para enajenarse cuando su valor excede del:
+= 25 % de los recursos ordinarios del presupuesto
+- 10 %
+- 5 %
+- 50 %
+E En los demás casos, se da cuenta a la Comunidad Autónoma.
+R RB art. 109.1
+
+Q La cesión gratuita de bienes patrimoniales exige acuerdo por:
+= Mayoría absoluta
+- Mayoría simple
+- Unanimidad
+- Decreto de Alcaldía
+E Solo a entidades públicas o instituciones privadas de interés público sin ánimo de lucro.
+R RB arts. 109.2-111
+
+Q Salvo pacto, el bien cedido gratuitamente debe destinarse al fin previsto en un plazo de:
+= Cinco años, y mantenerse en ese destino durante los treinta años siguientes
+- Un año, y mantenerse diez años
+- Diez años, y mantenerse cincuenta años
+- Dos años, y mantenerse veinte años
+E Si no, revierte con sus mejoras (art. 111).
+R RB art. 111
+
+Q La permuta de bienes sin licitación es posible si la diferencia de valor entre los bienes no supera el:
+= 40 % del que lo tenga mayor
+- 10 %
+- 25 %
+- 50 %
+E Y si se acredita su necesidad.
+R RB art. 112
+
+Q Las parcelas sobrantes se enajenan:
+= Por venta directa a los propietarios colindantes o se permutan
+- Por subasta pública obligatoria
+- Por cesión gratuita a cualquier vecino
+- No pueden enajenarse
+E Art. 115.
+R RB art. 115
+
+Q Hoy, según la LBRL, la enajenación de bienes requiere mayoría absoluta cuando su cuantía excede del:
+= 20 % de los recursos ordinarios del presupuesto
+- 10 %
+- 5 %
+- 25 %
+E El RB decía 10 %; el art. 47.2.m de la LBRL fija el 20 %.
+R LBRL art. 47.2.m

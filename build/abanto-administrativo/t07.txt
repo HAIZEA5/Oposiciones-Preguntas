@@ -1,0 +1,175 @@
+Q ¿Cuántos miembros tiene el Tribunal Constitucional?
+= Doce, nombrados por el Rey
+- Nueve, nombrados por el Rey
+- Quince, nombrados por las Cortes
+- Doce, nombrados por el Consejo General del Poder Judicial
+E Art. 159.1.
+R CE art. 159.1
+
+Q ¿Cómo se reparten las propuestas de los doce magistrados del Tribunal Constitucional?
+= Cuatro el Congreso, cuatro el Senado, dos el Gobierno y dos el Consejo General del Poder Judicial
+- Seis el Congreso y seis el Senado
+- Cuatro el Congreso, cuatro el Senado y cuatro el Gobierno
+- Tres cada uno: Congreso, Senado, Gobierno y CGPJ
+E Los del Congreso y el Senado, por mayoría de tres quintos de sus miembros.
+R CE art. 159.1
+
+Q Los magistrados del Tribunal Constitucional se designan por un período de:
+= Nueve años, renovándose por terceras partes cada tres
+- Doce años, renovándose por mitades cada seis
+- Cinco años, renovándose en bloque
+- Seis años, renovándose por terceras partes cada dos
+E Art. 159.3.
+R CE art. 159.3
+
+Q Los miembros del Tribunal Constitucional deben ser juristas de reconocida competencia con más de:
+= Quince años de ejercicio profesional
+- Diez años de ejercicio profesional
+- Veinte años de ejercicio profesional
+- Cinco años de ejercicio profesional
+E Magistrados, fiscales, profesores de universidad, funcionarios públicos y abogados.
+R CE art. 159.2
+
+Q El Presidente del Tribunal Constitucional es nombrado por el Rey:
+= Entre sus miembros, a propuesta del mismo Tribunal en pleno, por un período de tres años
+- A propuesta del Gobierno, por nueve años
+- A propuesta del Congreso, por cuatro años
+- A propuesta del CGPJ, por cinco años
+E Art. 160.
+R CE art. 160
+
+Q ¿Cuál de estos cargos es compatible con la condición de miembro del Tribunal Constitucional?
+= Ninguno de los citados: todos son incompatibles
+- Diputado o senador
+- Miembro de la dirección de un partido político
+- Juez en activo
+E También es incompatible con cualquier actividad profesional o mercantil.
+R CE art. 159.4
+
+Q ¿Cuál de estas NO es una competencia del Tribunal Constitucional según el art. 161?
+= Resolver los recursos de casación en el orden civil
+- El recurso de inconstitucionalidad contra leyes y disposiciones normativas con fuerza de ley
+- El recurso de amparo por violación de los derechos del art. 53.2
+- Los conflictos de competencia entre el Estado y las Comunidades Autónomas
+E La casación corresponde al Tribunal Supremo.
+R CE art. 161.1
+
+Q Cuando el Gobierno impugna ante el Tribunal Constitucional una disposición de una Comunidad Autónoma:
+= La disposición queda suspendida, y el Tribunal debe ratificar o levantar la suspensión en un plazo no superior a cinco meses
+- No se produce ninguna suspensión
+- La disposición queda anulada definitivamente
+- La suspensión dura un año como mínimo
+E Art. 161.2.
+R CE art. 161.2
+
+Q ¿Quién está legitimado para interponer el recurso de inconstitucionalidad?
+= El Presidente del Gobierno, el Defensor del Pueblo, 50 diputados, 50 senadores y los órganos colegiados ejecutivos y asambleas de las Comunidades Autónomas
+- Cualquier persona con interés legítimo
+- El Ministerio Fiscal y el Defensor del Pueblo
+- Los jueces y tribunales
+E En su caso, los órganos de las Comunidades Autónomas.
+R CE art. 162.1.a
+
+Q ¿Quién puede interponer el recurso de amparo?
+= Toda persona natural o jurídica que invoque un interés legítimo, el Defensor del Pueblo y el Ministerio Fiscal
+- Solo el Defensor del Pueblo
+- 50 diputados o 50 senadores
+- El Presidente del Gobierno
+E El Defensor del Pueblo puede interponer los dos recursos; el Ministerio Fiscal, solo el amparo.
+R CE art. 162.1.b
+
+Q La cuestión de inconstitucionalidad la plantea:
+= Un órgano judicial que considere que una norma con rango de ley aplicable al caso, de cuya validez dependa el fallo, puede ser contraria a la Constitución
+- El Gobierno contra una ley autonómica
+- Cualquier ciudadano ante el Tribunal Constitucional
+- El Defensor del Pueblo
+E En ningún caso tiene efectos suspensivos.
+R CE art. 163
+
+Q Las sentencias del Tribunal Constitucional:
+= Tienen valor de cosa juzgada a partir del día siguiente de su publicación y no cabe recurso alguno contra ellas
+- Pueden recurrirse ante el Tribunal Supremo
+- Solo vinculan a las partes del proceso
+- No se publican
+E Se publican en el BOE con los votos particulares, si los hay.
+R CE art. 164.1
+
+Q Las sentencias que declaran la inconstitucionalidad de una ley:
+= Tienen plenos efectos frente a todos
+- Solo afectan a las partes
+- No afectan a la jurisprudencia
+- Necesitan ser ratificadas por las Cortes
+E Salvo que el fallo disponga otra cosa, subsiste la vigencia de la ley en la parte no afectada.
+R CE art. 164.1
+
+Q ¿Qué ley orgánica regula el Tribunal Constitucional?
+= La LO 2/1979
+- La LO 6/1985
+- La LO 3/1979
+- La LO 4/1981
+E Art. 165.
+R CE art. 165
+
+Q ¿Quién tiene iniciativa para la reforma constitucional?
+= El Gobierno, el Congreso, el Senado y las Asambleas de las Comunidades Autónomas
+- Además, 500.000 ciudadanos mediante iniciativa popular
+- Solo el Gobierno y las Cortes
+- El Rey y el Gobierno
+E Art. 166, que remite a los apartados 1 y 2 del art. 87. No cabe la iniciativa popular.
+R CE art. 166
+
+Q En el procedimiento ordinario de reforma constitucional, el proyecto debe aprobarse por:
+= Una mayoría de tres quintos de cada una de las Cámaras
+- Mayoría absoluta de cada Cámara
+- Dos tercios de cada Cámara
+- Mayoría simple del Congreso
+E Si no hay acuerdo, se crea una Comisión paritaria de diputados y senadores.
+R CE art. 167.1
+
+Q Si en el procedimiento ordinario de reforma el Senado aprueba el texto por mayoría absoluta pero no por tres quintos, el Congreso puede aprobar la reforma por:
+= Mayoría de dos tercios
+- Mayoría absoluta
+- Mayoría simple
+- Unanimidad
+E Art. 167.2.
+R CE art. 167.2
+
+Q En el procedimiento ordinario, la reforma aprobada se somete a referéndum:
+= Cuando así lo solicite, dentro de los quince días siguientes, una décima parte de los miembros de cualquiera de las Cámaras
+- Siempre
+- Nunca
+- Si lo pide el Gobierno
+E Art. 167.3.
+R CE art. 167.3
+
+Q ¿Qué partes de la Constitución exigen el procedimiento agravado del art. 168 para su reforma?
+= La revisión total o la parcial que afecte al Título Preliminar, a la Sección 1.ª del Capítulo II del Título I o al Título II
+- Cualquier artículo del Título I
+- El Título VIII
+- Los Títulos III, IV y V
+E El Título II regula la Corona.
+R CE art. 168.1
+
+Q En el procedimiento agravado, ¿qué sucede tras aprobar el principio de la reforma por dos tercios de cada Cámara?
+= Se disuelven inmediatamente las Cortes; las nuevas Cámaras ratifican la decisión y aprueban el texto por dos tercios, y después hay referéndum obligatorio
+- Se celebra inmediatamente el referéndum
+- El Rey sanciona la reforma
+- El Tribunal Constitucional revisa el texto
+E Art. 168.2 y 3.
+R CE art. 168
+
+Q No puede iniciarse la reforma constitucional:
+= En tiempo de guerra o de vigencia de los estados de alarma, excepción o sitio
+- Durante el primer año de legislatura
+- Fuera del período de sesiones
+- Si hay elecciones autonómicas convocadas
+E Art. 169.
+R CE art. 169
+
+Q ¿Por qué procedimiento se han hecho las tres reformas de la Constitución (1992, 2011 y 2024)?
+= Por el procedimiento ordinario del art. 167, sin referéndum
+- Por el procedimiento agravado del art. 168
+- Por decreto-ley
+- Por referéndum consultivo
+E 1992: art. 13.2; 2011: art. 135; 2024: art. 49.
+R CE art. 167

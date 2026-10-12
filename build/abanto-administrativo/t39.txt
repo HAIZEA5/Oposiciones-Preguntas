@@ -1,0 +1,143 @@
+Q ¿Cuáles son los impuestos municipales obligatorios en Bizkaia?
+= IBI, IAE e IVTM
+- IBI, ICIO e IIVTNU
+- IAE, ICIO e IVTM
+- IBI, IAE e IIVTNU
+E El ICIO y el IIVTNU son potestativos (art. 20 NF 9/2005).
+R NF 9/2005 art. 20
+
+Q ¿Cuál es el único impuesto municipal indirecto?
+= El ICIO
+- El IBI
+- El IAE
+- El IVTM
+E Grava el gasto en la obra.
+R NF 10/1989
+
+Q El hecho imponible del IAE es:
+= El mero ejercicio de actividades empresariales, profesionales o artísticas, en local determinado o no
+- El beneficio obtenido por la empresa
+- La titularidad de un local comercial
+- La contratación de trabajadores
+E No importa que haya beneficio ni local.
+R NF 6/1989 art. 1
+
+Q ¿Cuál de estas actividades NO tiene la consideración de actividad empresarial a efectos del IAE?
+= La agricultura
+- El comercio
+- La minería
+- La ganadería independiente
+E Tampoco la ganadería dependiente, la actividad forestal ni la pesca.
+R NF 6/1989 art. 1.2
+
+Q ¿Cuál de estas actividades NO constituye hecho imponible del IAE?
+= La exposición de artículos con fin exclusivo de decoración del establecimiento
+- La venta al por menor habitual
+- La prestación de servicios profesionales
+- La fabricación de productos
+E También la venta de activo fijo inmovilizado más de 2 años, la de productos recibidos en pago y un solo acto aislado de venta al por menor.
+R NF 6/1989 art. 4
+
+Q En Bizkaia, están exentos del IAE los sujetos pasivos con un volumen de operaciones inferior a:
+= 2.000.000 de euros
+- 1.000.000 de euros
+- 500.000 euros
+- 3.000.000 de euros
+E En el régimen común, la exención es para cifra de negocios inferior a 1.000.000 € y las personas físicas están siempre exentas.
+R NF 6/1989 art. 5.1.h
+
+Q ¿Qué Norma Foral regula el IVTM en Bizkaia?
+= La Norma Foral 7/1989, de 30 de junio
+- La Norma Foral 6/1989
+- La Norma Foral 10/1989
+- La Norma Foral 4/2016
+E El IAE es la NF 6/1989; el ICIO, la NF 10/1989.
+R NF 7/1989
+
+Q El IVTM grava:
+= La titularidad de los vehículos de tracción mecánica aptos para circular por las vías públicas
+- El uso efectivo del vehículo
+- La compra del vehículo
+- Los kilómetros recorridos
+E Se paga aunque el coche no circule.
+R NF 7/1989
+
+Q A efectos del IVTM, un vehículo es apto para circular:
+= Si está matriculado y no ha causado baja en los registros
+- Solo si ha pasado la ITV
+- Solo si tiene seguro
+- Solo si circula habitualmente
+E También los que tienen permisos temporales y matrícula turística.
+R NF 7/1989
+
+Q ¿Cuál de estos vehículos NO está sujeto al IVTM?
+= Un remolque con carga útil no superior a 750 kg
+- Una motocicleta matriculada
+- Un camión
+- Un turismo de empresa
+E Tampoco los históricos dados de baja que circulan excepcionalmente en exhibiciones.
+R NF 7/1989
+
+Q ¿Quién es el sujeto pasivo del IVTM?
+= La persona a cuyo nombre conste el vehículo en el permiso de circulación
+- El conductor habitual
+- La aseguradora
+- El último comprador, aunque no haya cambiado la titularidad
+E Se exige por el ayuntamiento del domicilio que consta en el permiso.
+R NF 7/1989
+
+Q El hecho imponible del ICIO es la realización de una construcción, instalación u obra que exija licencia, declaración responsable o comunicación previa:
+= Se haya obtenido o no dicha licencia
+- Solo si se ha obtenido la licencia
+- Solo si la obra supera 6.000 euros
+- Solo si la obra es de nueva planta
+E Siempre que su expedición corresponda al ayuntamiento.
+R NF 10/1989
+
+Q ¿Quién es el contribuyente del ICIO?
+= El dueño de la obra, sea o no propietario del inmueble
+- Siempre el propietario del inmueble
+- El constructor
+- El arquitecto
+E Dueño de la obra: quien soporta su coste.
+R NF 10/1989
+
+Q Si la obra no la realiza el contribuyente, son sustitutos en el ICIO:
+= Quienes soliciten las licencias o presenten las declaraciones responsables o comunicaciones previas, o quienes realicen las obras
+- Los vecinos colindantes
+- El ayuntamiento
+- El notario
+E El sustituto puede exigir al contribuyente lo pagado.
+R NF 10/1989
+
+Q El ICIO se devenga:
+= Al iniciarse la construcción, instalación u obra, aunque no se haya obtenido la licencia
+- Al concederse la licencia
+- Al terminar la obra
+- El 1 de enero
+E Tema 39.
+R NF 10/1989
+
+Q El nombre antiguo del IVTM era:
+= Impuesto sobre Circulación de Vehículos
+- Impuesto de Matriculación
+- Impuesto de Rodaje
+- Tasa de Vehículos
+E El nombre vigente, también en Bizkaia, es IVTM.
+R NF 7/1989
+
+Q El IAE es un tributo:
+= Directo, de carácter real y obligatorio
+- Indirecto y potestativo
+- Directo, personal y potestativo
+- Indirecto y obligatorio
+E Art. 1.
+R NF 6/1989 art. 1
+
+Q Según el IAE, una actividad se ejerce con carácter empresarial, profesional o artístico cuando supone:
+= La ordenación por cuenta propia de medios de producción y de recursos humanos, o de uno de ambos, para intervenir en la producción o distribución de bienes o servicios
+- Trabajar por cuenta ajena
+- Tener un local abierto al público
+- Obtener beneficios
+E Art. 2.
+R NF 6/1989 art. 2
