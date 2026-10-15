@@ -1,0 +1,47 @@
+Q ¿Qué autoridad de control vigila los tratamientos de datos personales de la Administración General de la CAE?
+= La Autoridad Vasca de Protección de Datos
+- La Agencia Española de Protección de Datos
+- El Ararteko
+- Gardena
+E Sustituye a la antigua Agencia Vasca de Protección de Datos.
+R Ley 16/2023
+
+Q ¿Qué ley regula la Autoridad Vasca de Protección de Datos?
+= La Ley 16/2023, de 21 de diciembre
+- La Ley 2/2004, de 25 de febrero
+- La Ley Orgánica 3/2018
+- La Ley 3/2026
+E La Ley 2/2004 creó la antigua Agencia Vasca de Protección de Datos y ha sido sustituida.
+R Ley 16/2023
+
+Q La Autoridad Vasca de Protección de Datos es:
+= Una autoridad administrativa independiente, con personalidad jurídica propia
+- Un departamento del Gobierno Vasco
+- Un órgano del Parlamento Vasco sin personalidad
+- Una sociedad pública
+E Lo establece el art. 3.1 de la Ley 16/2023.
+R Ley 16/2023 art. 3.1
+
+Q ¿Cuál de estas entidades queda bajo el control de la Autoridad Vasca de Protección de Datos?
+= Un ayuntamiento del País Vasco
+- Una empresa privada de Bilbao
+- Un ministerio del Estado con sede en Madrid
+- Una comunidad de vecinos
+E Su ámbito son las administraciones vascas (general, forales y locales), el Parlamento Vasco, la UPV/EHU y otras entidades públicas vascas.
+R Ley 16/2023
+
+Q Un ciudadano considera que el Gobierno Vasco ha tratado mal sus datos. ¿Ante quién puede reclamar?
+= Ante la Autoridad Vasca de Protección de Datos
+- Ante el Consejo de Transparencia y Buen Gobierno
+- Ante la Comisión Jurídica Asesora de Euskadi
+- Solo ante los tribunales penales
+E También tiene derecho a la tutela judicial y a la indemnización por daños.
+R RGPD art. 77; Ley 16/2023
+
+Q ¿Qué norma europea regula la protección de datos personales y es directamente aplicable en España?
+= El Reglamento (UE) 2016/679 (RGPD)
+- La Directiva 95/46/CE
+- El Reglamento (UE) 910/2014
+- El Reglamento (UE) 2016/1191
+E Se complementa con la Ley Orgánica 3/2018 (LOPDGDD).
+R RGPD

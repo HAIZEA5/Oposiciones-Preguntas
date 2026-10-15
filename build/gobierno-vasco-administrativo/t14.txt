@@ -1,0 +1,95 @@
+Q ¿Cuál es la ley de transparencia propia de Euskadi?
+= La Ley 3/2026, de 14 de mayo, de Transparencia de Euskadi
+- La Ley 19/2013
+- La Ley 3/2022
+- La Ley 2/2016
+E La bibliografía del IVAP cita la Ley 19/2013; la vasca es de 2026.
+R Ley 3/2026
+
+Q Según la Ley 3/2026, ¿ante quién se reclama contra una resolución de acceso a la información de la Administración vasca?
+= La Autoridad Vasca de Transparencia–Gardena
+- El Consejo de Transparencia y Buen Gobierno
+- El Ararteko
+- La Comisión Jurídica Asesora de Euskadi
+E La reclamación es potestativa y previa a la vía contencioso-administrativa.
+R Ley 3/2026 art. 40
+
+Q Según la Ley 3/2026, la reclamación ante Gardena se presenta en el plazo de:
+= Un mes desde la notificación
+- Diez días
+- Tres meses
+- Dos meses
+E Gardena resuelve en tres meses; si no, se entiende desestimada.
+R Ley 3/2026 art. 40.2
+
+Q Según la Ley 19/2013, el plazo para resolver una solicitud de acceso a la información es de:
+= Un mes, ampliable otro mes por volumen o complejidad
+- Un mes, ampliable quince días
+- Tres meses
+- Diez días
+E Trampa: en la ley vasca la ampliación es de quince días.
+R Ley 19/2013 art. 20.1
+
+Q ¿Hay que motivar una solicitud de acceso a la información pública?
+= No; la falta de motivación no es causa de rechazo
+- Sí, siempre
+- Solo si la presenta una empresa
+- Solo si la información es económica
+E El derecho corresponde a todas las personas.
+R Ley 19/2013 art. 17.3
+
+Q ¿Cuál de estas es una causa de inadmisión de una solicitud de acceso?
+= Que la información sea de carácter auxiliar o de apoyo, como notas o borradores
+- Que el solicitante no sea español
+- Que no esté motivada
+- Que se pida en euskera
+E También la información en curso de elaboración, la que requiere reelaboración y las solicitudes abusivas.
+R Ley 19/2013 art. 18
+
+Q Si la información solicitada afecta a terceros, se les concede para alegar un plazo de:
+= Quince días
+- Diez días
+- Un mes
+- Cinco días
+E Mientras tanto, se suspende el plazo para resolver.
+R Ley 19/2013 art. 19.3
+
+Q Las entidades privadas están obligadas a la transparencia cuando reciben ayudas públicas de más de:
+= 100.000 euros al año, o cuando suponen al menos el 40 % de sus ingresos (con un mínimo de 5.000 euros)
+- 10.000 euros al año
+- 1.000.000 de euros al año
+- Cualquier importe
+E Partidos, sindicatos y organizaciones empresariales también están obligados.
+R Ley 19/2013 art. 3
+
+Q En el buen gobierno, la sanción por infracción muy grave de un alto cargo puede incluir:
+= La destitución y la inhabilitación para ser alto cargo de 5 a 10 años
+- Una amonestación
+- Solo la publicación en el boletín
+- Una multa de 100 euros
+E Las leves se sancionan con amonestación.
+R Ley 19/2013 art. 30
+
+Q Los tres principios básicos del gobierno abierto son:
+= Transparencia, participación y colaboración
+- Jerarquía, eficacia y coordinación
+- Legalidad, publicidad y gratuidad
+- Unidad, universalidad y anualidad
+E A ellos se suman la rendición de cuentas, la integridad y los datos abiertos.
+R Gobierno abierto
+
+Q El Gobierno Vasco se adhirió a la Alianza para el Gobierno Abierto (OGP Local) en:
+= 2018
+- 2011
+- 2009
+- 2026
+E España se adhirió a OGP en 2011.
+R OGP
+
+Q ¿Cómo se llama el portal de datos abiertos del Gobierno Vasco?
+= Open Data Euskadi
+- Irekia Data
+- Gardena
+- Zuzenean
+E Publica la información en formatos abiertos y reutilizables.
+R Open Data Euskadi

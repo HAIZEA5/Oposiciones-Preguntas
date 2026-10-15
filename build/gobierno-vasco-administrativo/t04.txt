@@ -1,0 +1,143 @@
+Q ¿Qué norma regula el Gobierno Vasco, su composición y el estatuto de sus miembros?
+= La Ley 7/1981, de 30 de junio, de Gobierno
+- La Ley 3/2022, del Sector Público Vasco
+- La Ley 27/1983, de Territorios Históricos
+- La Ley 1/1980
+E La Ley 3/2022 regula el sector público vasco (Administración general e institucional).
+R Ley 7/1981
+
+Q El Gobierno Vasco está compuesto por:
+= El Lehendakari, el Vicepresidente o Vicepresidentes, si los hay, y los Consejeros
+- El Lehendakari y los diputados generales
+- Los Consejeros y los Viceconsejeros
+- El Parlamento y el Lehendakari
+E Los Consejeros están al frente de los Departamentos.
+R Ley 7/1981
+
+Q ¿Cuántos parlamentarios tiene el Parlamento Vasco?
+= 75, 25 por cada Territorio Histórico
+- 75, en proporción a la población de cada territorio
+- 60, 20 por territorio
+- 100
+E El art. 26 del Estatuto exige un número igual de representantes por territorio.
+R EAPV art. 26; Ley 5/1990
+
+Q El Reglamento del Parlamento Vasco se aprueba por:
+= Mayoría absoluta
+- Mayoría simple
+- Mayoría de tres quintos
+- Unanimidad
+E El Parlamento elige un Presidente, una Mesa y una Diputación Permanente.
+R EAPV art. 27.1
+
+Q ¿Quién promulga las leyes del Parlamento Vasco?
+= El Lehendakari
+- El Presidente del Parlamento
+- El Rey directamente
+- El Consejero de Gobernanza
+E Ordena su publicación en el BOPV en quince días y también en el BOE; para su entrada en vigor rige la del BOPV.
+R EAPV art. 27.5
+
+Q Las leyes del Parlamento Vasco solo están sometidas al control de:
+= El Tribunal Constitucional
+- El Tribunal Superior de Justicia del País Vasco
+- El Gobierno del Estado
+- La Comisión Jurídica Asesora de Euskadi
+E Lo dice el art. 38 del Estatuto.
+R EAPV art. 38
+
+Q ¿Cómo se elige al Lehendakari?
+= Lo designa el Parlamento de entre sus miembros y lo nombra el Rey
+- Por sufragio universal directo
+- Lo nombra el Gobierno del Estado
+- Lo eligen las Juntas Generales
+E En la primera votación se exige mayoría absoluta; si nadie la obtiene, basta la mayoría simple en la siguiente.
+R EAPV art. 33; Ley 7/1981
+
+Q La moción de censura en el Parlamento Vasco:
+= Es constructiva: debe incluir un candidato alternativo a Lehendakari y aprobarse por mayoría absoluta
+- Solo exige mayoría simple y no requiere candidato
+- La plantea el Lehendakari
+- Solo puede presentarse una vez por legislatura
+E La cuestión de confianza la plantea el Lehendakari y se entiende otorgada por mayoría simple.
+R Ley 7/1981
+
+Q ¿Quién designa y separa a los Consejeros del Gobierno Vasco?
+= El Lehendakari
+- El Parlamento Vasco
+- El Gobierno en pleno
+- El Rey
+E También ostenta la más alta representación del País Vasco y la ordinaria del Estado en Euskadi.
+R Ley 7/1981
+
+Q El Gobierno Vasco responde políticamente ante el Parlamento:
+= De forma solidaria, sin perjuicio de la responsabilidad directa de cada miembro por su gestión
+- Solo a través del Lehendakari
+- No responde ante el Parlamento
+- Solo ante el Tribunal Superior de Justicia
+E Lo establece el art. 32 del Estatuto.
+R EAPV art. 32
+
+Q ¿Dónde está la sede de las instituciones comunes del País Vasco y qué norma la fija?
+= Vitoria-Gasteiz, fijada por ley del Parlamento Vasco
+- Bilbao, fijada por el Estatuto
+- Gernika, fijada por la Constitución
+- Donostia-San Sebastián, fijada por decreto
+E La fijó la Ley 1/1980. El Lehendakari jura el cargo en Gernika.
+R EAPV art. 4; Ley 1/1980
+
+Q Según el art. 21 del Estatuto, en las materias de competencia exclusiva del País Vasco:
+= Su Derecho se aplica con preferencia y el del Estado solo de forma supletoria
+- Se aplica siempre el Derecho del Estado
+- Se aplican los dos por igual
+- Se aplica el Derecho de la Unión Europea en exclusiva
+E Es el principio de prevalencia del Derecho vasco en sus competencias exclusivas.
+R EAPV art. 21
+
+Q ¿Qué artículo del Estatuto regula las competencias exclusivas de la Comunidad Autónoma?
+= El art. 10
+- El art. 11
+- El art. 12
+- El art. 20
+E El 11 regula el desarrollo legislativo y ejecución de la legislación básica, y el 12 la ejecución de la legislación del Estado.
+R EAPV arts. 10 a 12
+
+Q El mando supremo de la Ertzaintza corresponde a:
+= El Gobierno Vasco
+- El Ministerio del Interior
+- Las Diputaciones Forales
+- El Parlamento Vasco
+E La Policía Autónoma está regulada en el art. 17 del Estatuto.
+R EAPV art. 17
+
+Q Las disposiciones que dicta el Lehendakari, como el nombramiento de los Consejeros, adoptan la forma de:
+= Decreto
+- Orden
+- Ley
+- Resolución del Parlamento
+E Los Consejeros dictan Órdenes en las materias de su Departamento.
+R Ley 7/1981
+
+Q El IVAP y Emakunde son, dentro del sector público vasco:
+= Organismos autónomos
+- Sociedades mercantiles públicas
+- Fundaciones
+- Departamentos del Gobierno
+E Osakidetza es un ente público de derecho privado.
+R Ley 3/2022
+
+Q Los Viceconsejeros y los Directores del Gobierno Vasco son nombrados por:
+= Decreto del Gobierno
+- Orden del Consejero
+- Resolución del Parlamento
+- El IVAP mediante concurso
+E Son altos cargos.
+R Ley 7/1981
+
+Q La condición política de vasco la tienen:
+= Quienes tengan vecindad administrativa en cualquier municipio de la Comunidad
+- Los nacidos en Euskadi, vivan donde vivan
+- Quienes hablen euskera
+- Quienes tengan padre o madre vascos
+E Lo establece el art. 7 del Estatuto.
+R EAPV art. 7

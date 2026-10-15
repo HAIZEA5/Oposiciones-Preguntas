@@ -1,0 +1,79 @@
+Q ¿Qué decreto regula el Sistema de Archivo de la Administración Pública de la Comunidad Autónoma de Euskadi?
+= El Decreto 174/2003, de 22 de julio
+- El Decreto 72/2008
+- El Decreto 91/2023
+- El Decreto 19/2024
+E Organiza los archivos de oficina, el Archivo General y el Archivo Histórico.
+R Decreto 174/2003
+
+Q ¿Qué archivo recibe por transferencia la documentación de los archivos de oficina y la valora?
+= El Archivo General
+- El Archivo Histórico
+- El archivo de la persona interesada
+- El Registro Electrónico General
+E Aplica los calendarios de conservación (expurgo o conservación).
+R Decreto 174/2003
+
+Q ¿Qué órgano valora las series documentales y decide su conservación o eliminación y su régimen de acceso?
+= La COVASAD (Comisión de Valoración, Selección y Acceso a la Documentación)
+- El Archivo de oficina
+- La Comisión Jurídica Asesora de Euskadi
+- Gardena
+E Es un órgano colegiado.
+R Decreto 174/2003
+
+Q Los calendarios de conservación y acceso de las series documentales se aprueban por:
+= Orden, y se publican en el BOPV
+- Ley del Parlamento Vasco
+- Decisión del jefe de cada unidad
+- Resolución del Archivo Histórico sin publicar
+E Fijan los plazos de permanencia, si procede expurgo o conservación y el régimen de acceso.
+R Decreto 174/2003
+
+Q El conjunto de documentos producidos de forma continuada por un órgano como resultado de una misma función es:
+= Una serie documental
+- Un expediente
+- Un fondo
+- Una unidad documental simple
+E Es la unidad básica para la clasificación, la valoración y los calendarios.
+R Gestión documental
+
+Q En el ciclo vital de los documentos, la fase en la que el asunto está resuelto y se consulta poco es:
+= La semiactiva (archivo general o intermedio)
+- La activa (archivo de oficina)
+- La inactiva (archivo histórico)
+- La de tramitación
+E En la fase semiactiva se valora la documentación.
+R Gestión documental
+
+Q ¿Puede un administrativo eliminar documentación de su archivo de oficina por propia iniciativa?
+= No; solo se elimina según el calendario de conservación aprobado
+- Sí, si ocupa mucho espacio
+- Sí, pasados cinco años
+- Sí, con permiso verbal del jefe
+E La eliminación puede ser total, parcial o por muestreo, siempre según el calendario.
+R Decreto 174/2003
+
+Q El traslado de los expedientes cerrados del archivo de oficina al Archivo General se llama:
+= Transferencia
+- Expurgo
+- Préstamo
+- Valoración
+E Va acompañado de una relación de entrega o hoja de remisión.
+R Gestión documental
+
+Q ¿Cuál es el archivo histórico de la Comunidad Autónoma?
+= El Archivo Histórico de Euskadi
+- El Archivo de la Diputación de Bizkaia
+- La Biblioteca de Euskadi
+- El Archivo General del Gobierno Vasco
+E Custodia de forma permanente la documentación con valor histórico.
+R Decreto 174/2003
+
+Q Según la Ley 39/2015, ¿en qué soporte deben conservar las administraciones los documentos de sus actuaciones?
+= En soporte electrónico
+- Siempre en papel
+- En microfilm
+- En el soporte que elija cada funcionario
+E Los documentos en papel pueden sustituirse por copias auténticas electrónicas.
+R Ley 39/2015 art. 17
