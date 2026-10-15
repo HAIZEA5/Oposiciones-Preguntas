@@ -114,6 +114,7 @@ button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
 <script src="data/abanto-administrativo.js"></script>
 <script src="data/getxo-kirolak-auxiliar.js"></script>
 <script src="data/biblioteca-dfb.js"></script>
+<script src="data/gobierno-vasco-administrativo.js"></script>
 <script>
 /* Un tema puede reutilizar preguntas de otro (de cualquier oposición): incluye:["opo/tema"], ["opo/tema:3-10"] o ["opo/tema:2-4+9"].
    Cada pregunta tiene una clave global k = "oposición de origen/id", para reconocerla aunque aparezca en varios temas u oposiciones. */
@@ -133,7 +134,7 @@ button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
     t.preguntas=extra.concat(t.preguntas);
   }));
 })();
-const CORTO={"getxo-administrativo":"Getxo","abanto-administrativo":"Abanto","getxo-kirolak-auxiliar":"Getxo Kirolak","biblioteca-dfb":"Biblioteca DFB"};
+const CORTO={"getxo-administrativo":"Getxo","abanto-administrativo":"Abanto","getxo-kirolak-auxiliar":"Getxo Kirolak","biblioteca-dfb":"Biblioteca DFB","gobierno-vasco-administrativo":"Gobierno Vasco"};
 const corto=o=>CORTO[o.id]||o.nombre;
 /* Dónde aparece cada pregunta: k → [{o,t,p}] */
 const DONDE=new Map();

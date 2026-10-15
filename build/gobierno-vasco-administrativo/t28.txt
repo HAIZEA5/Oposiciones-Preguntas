@@ -1,0 +1,159 @@
+Q En Euskadi, el procedimiento de elaboración de las disposiciones de carácter general se regula en:
+= La Ley 6/2022, de 30 de junio
+- La Ley 7/1981, de Gobierno, exclusivamente
+- La Ley 3/2022, del Sector Público Vasco
+- El Decreto 91/2023
+E Varios preceptos de los arts. 127 a 133 de la Ley 39/2015 no se aplican a las comunidades autónomas (STC 55/2018); en Euskadi rige la Ley 6/2022.
+R Ley 6/2022 (Euskadi)
+
+Q Según la Ley 7/1981, de Gobierno, las disposiciones de carácter general que aprueba el Gobierno Vasco adoptan la forma de:
+= Decreto
+- Orden
+- Resolución
+- Norma Foral
+E Los decretos los firman el Lehendakari y el consejero o consejera proponente, y ocupan el primer lugar en la jerarquía reglamentaria vasca.
+R Ley 7/1981 arts. 59 y 60
+
+Q Las disposiciones que dictan las consejeras y los consejeros del Gobierno Vasco adoptan la forma de:
+= Orden
+- Decreto
+- Instrucción
+- Decreto Foral
+E La Orden la firma el titular del departamento y está por debajo de los decretos del Gobierno.
+R Ley 7/1981 art. 61
+
+Q En los territorios históricos, las normas que aprueban las Juntas Generales se denominan:
+= Normas Forales
+- Decretos Forales
+- Órdenes Forales
+- Ordenanzas
+E Las Diputaciones Forales dictan Decretos Forales. Las normas forales tributarias tienen un régimen especial de control ante el Tribunal Constitucional.
+R Ley 27/1983 (Territorios Históricos)
+
+Q ¿Puede el Gobierno Vasco dictar decretos-leyes?
+= No, el Estatuto de Autonomía no lo prevé; sí puede dictar decretos legislativos por delegación del Parlamento Vasco
+- Sí, en casos de extraordinaria y urgente necesidad
+- Sí, con convalidación del Parlamento Vasco en 30 días
+- Solo en materia tributaria
+E Ejemplo de decreto legislativo vasco: el Decreto Legislativo 1/2023, texto refundido de la Ley de igualdad de mujeres y hombres.
+R Estatuto de Autonomía del País Vasco
+
+Q La delegación legislativa para elaborar un texto refundido se otorga mediante:
+= Una ley ordinaria
+- Una ley de bases
+- Una ley orgánica
+- Un decreto-ley
+E Los textos articulados se delegan mediante ley de bases. La delegación no cabe en materias de ley orgánica.
+R CE art. 82.2
+
+Q Según el Código Civil, la jurisprudencia:
+= Complementa el ordenamiento jurídico con la doctrina reiterada del Tribunal Supremo
+- Es fuente del ordenamiento al mismo nivel que la ley
+- Solo rige en defecto de ley y costumbre
+- Es la doctrina de cualquier juzgado o tribunal
+E Las fuentes del ordenamiento son la ley, la costumbre y los principios generales del derecho.
+R Código Civil art. 1.6
+
+Q Los reglamentos independientes (que regulan materias no reguladas por ley) solo se admiten:
+= En el ámbito organizativo interno de la Administración
+- Cuando afectan a derechos y deberes de la ciudadanía
+- En materia sancionadora
+- En materia tributaria
+E Los reglamentos ejecutivos desarrollan o completan una ley y son los únicos admitidos cuando afectan a derechos y deberes.
+R Doctrina; CE art. 97
+
+Q ¿Qué diferencia al reglamento del acto administrativo general (por ejemplo, una convocatoria)?
+= El reglamento innova el ordenamiento y no se agota con su aplicación
+- El reglamento siempre tiene un destinatario concreto
+- El acto general tiene rango de ley
+- No hay ninguna diferencia
+E El acto administrativo aplica el ordenamiento a un caso y se agota con su cumplimiento, aunque sus destinatarios sean muchos.
+R Doctrina
+
+Q Según el art. 128.2 de la Ley 39/2015, los reglamentos NO pueden:
+= Tipificar infracciones administrativas ni establecer sanciones o tributos
+- Desarrollar una ley
+- Regular la organización interna de la Administración
+- Publicarse en el diario oficial
+E Sin perjuicio de su función de desarrollo o colaboración con la ley.
+R Ley 39/2015 art. 128.2
+
+Q Según el principio de inderogabilidad singular de los reglamentos:
+= Una resolución particular no puede vulnerar un reglamento, aunque la dicte un órgano de igual o superior jerarquía
+- Un reglamento no puede derogarse nunca
+- Solo el Parlamento puede derogar un reglamento
+- Un órgano superior puede dispensar del reglamento en un caso concreto
+E Las resoluciones que vulneren este principio son nulas.
+R Ley 39/2015 art. 37
+
+Q ¿Cuál de estos NO es uno de los principios de buena regulación del art. 129 de la Ley 39/2015?
+= Oportunidad política
+- Proporcionalidad
+- Seguridad jurídica
+- Eficiencia
+E Los principios son: necesidad, eficacia, proporcionalidad, seguridad jurídica, transparencia y eficiencia.
+R Ley 39/2015 art. 129
+
+Q El Plan Anual Normativo recoge:
+= Las iniciativas legales o reglamentarias que se van a aprobar el año siguiente
+- Los reglamentos aprobados el año anterior
+- Las sentencias que anulan reglamentos
+- El presupuesto de cada departamento
+E Cada Administración lo hace público.
+R Ley 39/2015 art. 132
+
+Q Contra las disposiciones administrativas de carácter general:
+= No cabe recurso en vía administrativa
+- Cabe recurso de alzada
+- Cabe recurso potestativo de reposición
+- Cabe recurso extraordinario de revisión
+E Se impugnan directamente ante la jurisdicción contencioso-administrativa o al recurrir los actos que las aplican.
+R Ley 39/2015 art. 112.3
+
+Q Los jueces y tribunales, ante un reglamento contrario a la Constitución o a la ley:
+= No lo aplican
+- Deben plantear siempre una cuestión de inconstitucionalidad
+- Deben aplicarlo hasta que lo derogue la Administración
+- Solo pueden aplicarlo parcialmente
+E Lo establece el art. 6 de la Ley Orgánica del Poder Judicial.
+R LOPJ art. 6
+
+Q La vinculación positiva de la Administración a la ley significa que:
+= La Administración solo puede hacer lo que el ordenamiento le permite
+- La Administración puede hacer todo lo que la ley no prohíbe
+- La ley no vincula a la Administración
+- La Administración solo está vinculada por la Constitución
+E La vinculación negativa es la propia de los particulares, que pueden hacer todo lo que la ley no prohíbe.
+R CE arts. 9.1, 9.3 y 103.1
+
+Q Ejercer una potestad administrativa para un fin distinto del previsto por el ordenamiento es:
+= Desviación de poder
+- Inderogabilidad singular
+- Avocación
+- Conversión del acto
+E La desviación de poder es causa de anulabilidad y uno de los elementos que controlan los tribunales en la discrecionalidad.
+R Ley 39/2015 art. 48.1
+
+Q Los conceptos jurídicos indeterminados (como «urgencia» o «interés público»):
+= Solo admiten una solución justa en cada caso, por lo que no son discrecionalidad
+- Permiten elegir libremente entre varias soluciones
+- No pueden ser controlados por los tribunales
+- Solo existen en los reglamentos
+E En la discrecionalidad la ley permite elegir entre varias soluciones igualmente válidas; la decisión debe motivarse.
+R Doctrina
+
+Q La relación entre una ley orgánica y una ley ordinaria se explica por el principio de:
+= Competencia
+- Jerarquía
+- Lex posterior
+- Inderogabilidad singular
+E Tienen el mismo rango; lo que las diferencia es la materia que regulan.
+R CE art. 81
+
+Q Según el art. 149.3 de la Constitución, el derecho estatal respecto del autonómico:
+= Prevalece en caso de conflicto en lo no atribuido a la competencia exclusiva de las comunidades y es supletorio
+- Prevalece siempre en todo caso
+- Nunca se aplica en las comunidades autónomas
+- Solo se aplica si lo decide el Parlamento autonómico
+E Las normas del Estado prevalecen en caso de conflicto en lo que no esté atribuido a la exclusiva competencia de las comunidades autónomas.
+R CE art. 149.3

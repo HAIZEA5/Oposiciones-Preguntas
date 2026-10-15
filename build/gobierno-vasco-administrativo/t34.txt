@@ -1,0 +1,159 @@
+Q En la Administración vasca, el dictamen de la Comisión Jurídica Asesora de Euskadi en las reclamaciones de responsabilidad patrimonial es preceptivo cuando la cuantía reclamada:
+= Supera los 18.000 euros
+- Es igual o superior a 50.000 euros
+- Supera los 6.000 euros
+- Es de cualquier importe
+E La Ley 39/2015 fija 50.000 euros «o la que establezca la legislación autonómica»; en Euskadi el límite es de 18.000 euros (Ley 9/2004 y Decreto 73/2011).
+R Ley 9/2004 art. 3.1.k; Decreto 73/2011
+
+Q ¿Qué competencia tiene el Estado sobre la responsabilidad de las Administraciones Públicas?
+= Exclusiva sobre el sistema de responsabilidad de todas las Administraciones
+- Ninguna: cada comunidad autónoma tiene su sistema
+- Solo sobre la responsabilidad de la Administración del Estado
+- Compartida a partes iguales con las comunidades
+E Por eso el régimen es común a todas las Administraciones, incluida la vasca.
+R CE art. 149.1.18.ª
+
+Q La responsabilidad patrimonial de las Administraciones es objetiva porque:
+= No exige culpa o negligencia: se responde por el funcionamiento normal o anormal de los servicios
+- Solo se responde si hay dolo del funcionario
+- La decide un órgano objetivo e independiente
+- Se calcula con un baremo objetivo
+E También es directa: el perjudicado reclama a la Administración, no al empleado.
+R Ley 40/2015 art. 32.1
+
+Q La avería imprevisible de una máquina del propio servicio público que causa un daño es un caso de:
+= Caso fortuito, que no excluye la responsabilidad
+- Fuerza mayor, que excluye la responsabilidad
+- Culpa exclusiva de la víctima
+- Riesgo del desarrollo
+E La fuerza mayor es un hecho externo al servicio, imprevisible e inevitable.
+R Ley 40/2015 art. 32.1; doctrina
+
+Q No son indemnizables los daños derivados de hechos que no se hubiesen podido prever o evitar según el estado de los conocimientos de la ciencia o la técnica en ese momento. Son los llamados:
+= Riesgos del desarrollo
+- Casos fortuitos
+- Daños antijurídicos
+- Daños morales
+E Tampoco son indemnizables los daños que el particular tiene el deber jurídico de soportar.
+R Ley 40/2015 art. 34.1
+
+Q La cuantía de la indemnización se calcula con referencia:
+= Al día en que la lesión efectivamente se produjo, y se actualiza a la fecha de fin del procedimiento
+- Al día en que se presenta la reclamación
+- Al día en que se dicta la resolución, sin actualización
+- A la fecha que elija el interesado
+E La actualización se hace con el índice de garantía de la competitividad, más los intereses de demora que procedan.
+R Ley 40/2015 art. 34.3
+
+Q Fuera de las fórmulas conjuntas de actuación, si concurren varias Administraciones en la producción del daño, la responsabilidad se fija atendiendo a:
+= La competencia, el interés público tutelado y la intensidad de la intervención; si no es posible, es solidaria
+- El orden alfabético de las Administraciones
+- Partes iguales en todo caso
+- La Administración con más presupuesto
+E En las fórmulas conjuntas de actuación la responsabilidad es siempre solidaria.
+R Ley 40/2015 art. 33
+
+Q En caso de daños físicos o psíquicos, el plazo de un año para reclamar empieza a contar:
+= Desde la curación o la determinación del alcance de las secuelas
+- Desde el día del accidente en todo caso
+- Desde que el interesado decide reclamar
+- Desde la primera visita médica
+E Con carácter general, el plazo es de un año desde el hecho o desde que se manifiesta su efecto lesivo.
+R Ley 39/2015 art. 67.1
+
+Q Si el daño deriva de un acto anulado, el derecho a reclamar prescribe:
+= Al año de haberse notificado la resolución administrativa o la sentencia definitiva que lo anule
+- A los cuatro años del acto
+- Al mes de la anulación
+- No prescribe
+E La anulación de un acto no presupone, por sí misma, el derecho a indemnización.
+R Ley 39/2015 art. 67.1; Ley 40/2015 art. 32.1
+
+Q El dictamen del órgano consultivo en un procedimiento de responsabilidad patrimonial se emite en el plazo de:
+= Dos meses
+- Diez días
+- Un mes
+- Seis meses
+E Se pronuncia sobre la relación de causalidad y, en su caso, sobre la valoración del daño y la cuantía y modo de la indemnización.
+R Ley 39/2015 art. 81.2
+
+Q Si en un procedimiento de responsabilidad patrimonial pasan seis meses desde su inicio sin resolución ni acuerdo:
+= Se entiende que la resolución es contraria a la indemnización
+- Se entiende concedida la indemnización reclamada
+- Caduca el procedimiento
+- Se remite al Consejo de Estado
+E Es un supuesto de silencio negativo.
+R Ley 39/2015 art. 91.3
+
+Q La tramitación simplificada en responsabilidad patrimonial puede acordarse cuando:
+= Sean inequívocos la relación de causalidad, la realidad de la lesión, su valoración y el cálculo de la indemnización
+- La cuantía sea inferior a 1.000 euros
+- Lo pida cualquier persona
+- El daño sea moral
+E Se resuelve en treinta días.
+R Ley 39/2015 art. 96.4
+
+Q La resolución de un procedimiento de responsabilidad patrimonial:
+= Pone fin a la vía administrativa
+- Es recurrible en alzada
+- No es recurrible
+- Debe confirmarla el Parlamento
+E Cabe recurso potestativo de reposición o recurso contencioso-administrativo.
+R Ley 39/2015 art. 114.1.e
+
+Q La Administración, tras indemnizar a los lesionados, exige a su personal la responsabilidad en que haya incurrido por:
+= Dolo, o culpa o negligencia graves
+- Cualquier culpa, aunque sea leve
+- Responsabilidad objetiva
+- Ningún motivo: no puede exigirla
+E Es la acción de regreso, que la Administración ejerce de oficio en vía administrativa.
+R Ley 40/2015 art. 36.2
+
+Q ¿Cuál de estos criterios se pondera para exigir la acción de regreso?
+= El grado de culpabilidad
+- La antigüedad del empleado
+- El nivel de euskera del empleado
+- El presupuesto del departamento
+E También el resultado dañoso, la responsabilidad profesional del personal y su relación con el resultado.
+R Ley 40/2015 art. 36.2
+
+Q En el procedimiento de la acción de regreso, el plazo para aportar documentos, justificaciones y pruebas tras el acuerdo de iniciación es de:
+= Quince días
+- Diez días
+- Cinco días
+- Un mes
+E Después: prueba en quince días, audiencia de diez días, propuesta en cinco días y resolución en cinco días.
+R Ley 40/2015 art. 36.4
+
+Q La exigencia de responsabilidad penal al personal de la Administración:
+= No suspende el procedimiento de responsabilidad patrimonial, salvo que la determinación de los hechos en el orden penal sea necesaria
+- Suspende siempre el procedimiento de responsabilidad patrimonial
+- Impide reclamar a la Administración
+- Extingue la responsabilidad de la Administración
+E La responsabilidad civil derivada del delito se exige según el Código Penal, y la Administración responde de forma subsidiaria.
+R Ley 40/2015 art. 37
+
+Q En Euskadi, la responsabilidad contable de quienes manejan fondos públicos de la Comunidad Autónoma puede exigirse en el ámbito de la fiscalización de:
+= El Tribunal Vasco de Cuentas Públicas
+- El Ararteko
+- La Comisión Jurídica Asesora de Euskadi
+- El Consejo de Gobierno
+E La responsabilidad contable la exigen el Tribunal de Cuentas y, en su ámbito, el Tribunal Vasco de Cuentas Públicas.
+R Doctrina
+
+Q Los daños causados por error judicial o por el funcionamiento anormal de la Administración de Justicia:
+= Dan derecho a una indemnización a cargo del Estado
+- No son indemnizables
+- Los paga el juez responsable
+- Los paga la comunidad autónoma
+E Lo establece el art. 121 de la Constitución.
+R CE art. 121
+
+Q En los contratos públicos, el contratista responde de los daños causados a terceros por la ejecución del contrato, salvo que:
+= Sean consecuencia inmediata y directa de una orden de la Administración
+- El contrato sea de obras
+- El daño sea inferior a 18.000 euros
+- El contratista sea una persona física
+E En ese caso responde la Administración.
+R Legislación de contratos del sector público

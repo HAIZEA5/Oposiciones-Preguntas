@@ -1,0 +1,159 @@
+Q ¿Qué diferencia la desconcentración de la delegación de competencias?
+= En la desconcentración el órgano inferior pasa a ser titular de la competencia, de forma permanente y mediante norma
+- En la desconcentración la competencia pasa a otra persona jurídica
+- La desconcentración es revocable en cualquier momento por el órgano superior
+- No hay diferencia: son sinónimos
+E En la delegación solo se traslada el ejercicio de la competencia; el delegante conserva la titularidad y puede revocarla.
+R CE art. 103.1; doctrina
+
+Q El traspaso de competencias del Estado a las comunidades autónomas es un ejemplo de:
+= Descentralización
+- Desconcentración
+- Delegación de firma
+- Encomienda de gestión
+E La descentralización traspasa competencias a otra persona jurídica.
+R CE art. 103.1; doctrina
+
+Q Según el art. 5.3 de la Ley 40/2015, para crear un órgano administrativo es necesario, entre otras cosas:
+= Dotarlo de los créditos necesarios para su puesta en marcha y funcionamiento
+- Que lo apruebe el Parlamento por ley
+- Que tenga al menos tres miembros
+- Que tenga personalidad jurídica propia
+E También hay que determinar su forma de integración y su dependencia jerárquica, y delimitar sus funciones y competencias.
+R Ley 40/2015 art. 5.3
+
+Q Los órganos consultivos, según la Ley 40/2015:
+= Deben actuar con autonomía respecto de los órganos de la Administración activa
+- Dependen jerárquicamente del órgano al que asesoran
+- Solo pueden emitir informes vinculantes
+- Solo existen en la Administración del Estado
+E En Euskadi, un ejemplo es la Comisión Jurídica Asesora de Euskadi.
+R Ley 40/2015 art. 7
+
+Q La Oficina de Control Económico del Gobierno Vasco es, por su función, un órgano:
+= De control
+- Consultivo
+- Activo de gestión
+- Colegiado de participación social
+E Los órganos de control fiscalizan la actuación de otros; los consultivos asesoran y los activos deciden y ejecutan.
+R Doctrina
+
+Q En el Gobierno Vasco, las viceconsejeras y viceconsejeros y las directoras y directores son:
+= Órganos directivos
+- Órganos superiores
+- Órganos consultivos
+- Órganos colegiados
+E Son órganos superiores el Lehendakari, el Gobierno y las consejeras y consejeros.
+R Ley 7/1981 de Gobierno (Euskadi)
+
+Q Según la Ley 3/2022, del Sector Público Vasco, respecto a los órganos colegiados:
+= Cada año se redacta una memoria de gestión y se rinde cuenta de ella públicamente
+- No pueden celebrar sesiones a distancia
+- Sus actas no pueden firmarse electrónicamente
+- Deben tener siempre más de diez miembros
+E Los arts. 15 a 18 de la Ley 40/2015 (básicos) se aplican también a los órganos colegiados de la Administración vasca.
+R Ley 3/2022 art. 18.5
+
+Q Si una norma atribuye una competencia a una Administración sin especificar el órgano que debe ejercerla:
+= Corresponde a los órganos inferiores competentes por razón de la materia y del territorio
+- Corresponde al órgano superior de la Administración
+- Corresponde al Gobierno
+- La norma es nula
+E Es la facultad de instruir y resolver los expedientes.
+R Ley 40/2015 art. 8.3
+
+Q Los conflictos de atribuciones entre órganos de una misma Administración no relacionados jerárquicamente los resuelve:
+= El superior jerárquico común
+- El órgano que primero conoció del asunto
+- Los tribunales contencioso-administrativos
+- El órgano consultivo
+E El órgano que se estime incompetente remite las actuaciones al competente si pertenece a la misma Administración.
+R Ley 40/2015 art. 14
+
+Q ¿Cómo se acuerda la avocación?
+= Mediante acuerdo motivado que se notifica a los interesados antes de la resolución final
+- Mediante publicación en el boletín oficial
+- Verbalmente
+- Mediante ley
+E Contra el acuerdo de avocación no cabe recurso, aunque puede impugnarse en el recurso contra la resolución del procedimiento.
+R Ley 40/2015 art. 10.2
+
+Q ¿Necesita publicación la delegación de firma para su validez?
+= No
+- Sí, en el boletín oficial correspondiente
+- Sí, en la sede electrónica
+- Solo si la acuerda un órgano colegiado
+E Tampoco altera la competencia del órgano delegante. En los actos firmados por delegación se hace constar esta circunstancia.
+R Ley 40/2015 art. 12
+
+Q Si no se ha designado suplente para el titular de un órgano en caso de vacante, ausencia o enfermedad, la competencia la ejerce:
+= Quien designe el órgano administrativo inmediato superior
+- El funcionario de mayor antigüedad
+- El órgano colegiado del departamento
+- Nadie hasta que se cubra la vacante
+E La suplencia no implica alteración de la competencia y no necesita publicación.
+R Ley 40/2015 art. 13
+
+Q La encomienda de gestión entre órganos y entidades de distintas Administraciones se formaliza mediante:
+= Convenio
+- Contrato administrativo
+- Delegación de competencias
+- Orden de servicio
+E La encomienda no puede tener por objeto prestaciones propias de los contratos del sector público y no cede la titularidad de la competencia.
+R Ley 40/2015 art. 11
+
+Q El incumplimiento de las instrucciones u órdenes de servicio:
+= No afecta por sí solo a la validez de los actos, sin perjuicio de la responsabilidad disciplinaria
+- Determina siempre la nulidad de los actos
+- Determina siempre la anulabilidad de los actos
+- No tiene ninguna consecuencia
+E Las instrucciones y órdenes de servicio sirven para dirigir la actividad de los órganos jerárquicamente dependientes.
+R Ley 40/2015 art. 6.2
+
+Q ¿En qué plazo puede un miembro de un órgano colegiado formular su voto particular por escrito?
+= Cuarenta y ocho horas
+- Veinticuatro horas
+- Tres días
+- Diez días
+E El voto particular se incorpora al texto aprobado.
+R Ley 40/2015 art. 17.5
+
+Q Un órgano colegiado queda válidamente constituido sin convocatoria previa cuando:
+= Están reunidos el Secretario y todos los miembros y lo acuerdan por unanimidad
+- Asiste la mitad de los miembros
+- Lo decide el Presidente
+- Asiste la mayoría absoluta de los miembros
+E Así se puede celebrar la sesión aunque no se haya convocado.
+R Ley 40/2015 art. 17.2
+
+Q ¿Quiénes quedan exentos de la responsabilidad que pueda derivarse de los acuerdos de un órgano colegiado?
+= Los miembros que hayan votado en contra o se hayan abstenido
+- Solo el Presidente
+- Solo el Secretario
+- Todos los miembros, en cualquier caso
+E Por eso es importante hacer constar en el acta el voto contrario o la abstención.
+R Ley 40/2015 art. 17.6
+
+Q El Secretario de un órgano colegiado:
+= Puede ser un miembro del órgano o una persona al servicio de la Administración
+- Debe ser siempre el miembro de mayor edad
+- Debe ser siempre un miembro con voto
+- Lo elige la ciudadanía
+E Vela por la legalidad formal y material de las actuaciones y redacta las actas.
+R Ley 40/2015 art. 16
+
+Q ¿Se pueden emitir certificaciones de acuerdos antes de aprobar el acta?
+= Sí, haciendo constar expresamente esa circunstancia
+- No, nunca
+- Solo con autorización judicial
+- Solo si los acuerdos se adoptaron por unanimidad
+E Quienes acrediten un interés legítimo pueden pedir al Secretario certificación de los acuerdos.
+R Ley 40/2015 arts. 17 a 19
+
+Q Si una sesión de un órgano colegiado se graba:
+= El fichero, con la certificación del Secretario sobre su autenticidad e integridad, puede acompañar al acta sin recoger en ella los puntos principales de las deliberaciones
+- No hace falta levantar acta
+- La grabación sustituye a la convocatoria
+- La grabación debe publicarse en el boletín oficial
+E El acta se aprueba en la misma sesión o en la siguiente.
+R Ley 40/2015 art. 18.1

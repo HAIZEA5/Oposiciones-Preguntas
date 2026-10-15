@@ -1,0 +1,175 @@
+Q ¿Qué elemento del acto administrativo es el fin de interés público que justifica la potestad?
+= El elemento causal o teleológico
+- El elemento subjetivo
+- El elemento formal
+- El elemento objetivo
+E Usar la potestad para otro fin es desviación de poder.
+R Doctrina
+
+Q Los actos de trámite solo pueden recurrirse por separado cuando, entre otros casos:
+= Producen indefensión o perjuicio irreparable a derechos o intereses legítimos
+- Los dicta un órgano colegiado
+- Se notifican por medios electrónicos
+- El interesado lo solicita
+E También si deciden directa o indirectamente el fondo del asunto o impiden continuar el procedimiento.
+R Ley 39/2015 art. 112.1
+
+Q ¿Cuál de estos actos debe motivarse según el art. 35 de la Ley 39/2015?
+= El que rechaza pruebas propuestas por los interesados
+- La notificación de un acto de trámite simple
+- El acuse de recibo del registro
+- La remisión de un expediente al archivo
+E También los que limitan derechos, se separan del criterio previo o del dictamen consultivo, y los dictados en ejercicio de potestades discrecionales, entre otros.
+R Ley 39/2015 art. 35.1
+
+Q En los procedimientos selectivos y de concurrencia competitiva, la motivación se realiza:
+= Conforme a lo que dispongan las bases de la convocatoria
+- Con un informe jurídico individual para cada aspirante
+- Solo si lo pide el interesado
+- No es necesaria
+E Deben quedar acreditados en el procedimiento los fundamentos de la resolución.
+R Ley 39/2015 art. 35.2
+
+Q Según el art. 36 de la Ley 39/2015, los actos administrativos se producen:
+= Por escrito a través de medios electrónicos, salvo que su naturaleza exija o permita otra forma más adecuada
+- Siempre en papel
+- Siempre de forma verbal
+- En la forma que elija el interesado
+E Cuando se dictan de forma masiva actos de la misma naturaleza, pueden refundirse en un único acto.
+R Ley 39/2015 art. 36
+
+Q La eficacia retroactiva de los actos administrativos es posible cuando:
+= Se dictan en sustitución de actos anulados o producen efectos favorables al interesado sin lesionar derechos de terceros
+- Lo decide libremente el órgano que los dicta
+- Son actos sancionadores
+- Así lo pide cualquier persona
+E Para los favorables, los supuestos de hecho deben existir ya en la fecha a la que se retrotrae la eficacia.
+R Ley 39/2015 art. 39.3
+
+Q Si publicar el texto íntegro de un acto puede lesionar derechos o intereses legítimos:
+= Se publica solo una somera indicación del contenido y del lugar donde puede conocerse
+- No se publica en ningún caso
+- Se publica igualmente completo
+- Se sustituye por una notificación verbal
+E Es la publicación parcial del art. 46.
+R Ley 39/2015 art. 46
+
+Q ¿Cuál de estos actos NO es inmediatamente ejecutivo según el art. 98?
+= Una resolución sancionadora contra la que quepa algún recurso en vía administrativa
+- Una resolución que pone fin a la vía administrativa sin suspensión
+- Una licencia concedida
+- Un acto de gravamen no recurrido
+E Tampoco cuando se suspende la ejecución, una disposición dice lo contrario o se necesita aprobación superior.
+R Ley 39/2015 art. 98.1
+
+Q La ejecución subsidiaria procede cuando se trate de actos:
+= Que por no ser personalísimos puedan ser realizados por persona distinta del obligado
+- Personalísimos de no hacer
+- Que exijan el pago de una cantidad líquida
+- De naturaleza sancionadora
+E La Administración los realiza por sí o por terceros, a costa del obligado.
+R Ley 39/2015 art. 102
+
+Q La compulsión sobre las personas puede usarse para obligaciones:
+= Personalísimas de no hacer o soportar, cuando la ley lo autorice expresamente
+- De pago de cantidades
+- No personalísimas
+- De cualquier tipo, sin necesidad de ley
+E Siempre con respeto a la dignidad y los derechos de las personas.
+R Ley 39/2015 art. 104
+
+Q Si para ejecutar un acto hay que entrar en el domicilio del afectado, la Administración necesita:
+= Su consentimiento o una autorización judicial
+- Solo el apercibimiento previo
+- Una orden del superior jerárquico
+- Un acuerdo del Consejo de Gobierno
+E Lo exige el derecho a la inviolabilidad del domicilio.
+R Ley 39/2015 art. 100.3
+
+Q Si la norma reguladora de un procedimiento no fija plazo máximo para resolver, este es de:
+= Tres meses
+- Seis meses
+- Un mes
+- Un año
+E El plazo que fije la norma no puede exceder de seis meses, salvo ley o derecho de la UE.
+R Ley 39/2015 art. 21.3
+
+Q La suspensión del plazo para resolver mientras se piden informes preceptivos no puede exceder de:
+= Tres meses
+- Un mes
+- Seis meses
+- Quince días
+E Si el informe no llega en plazo, prosigue el procedimiento.
+R Ley 39/2015 art. 22.1.d
+
+Q En los procedimientos iniciados a solicitud del interesado, el silencio es negativo (desestimatorio) en los de:
+= Responsabilidad patrimonial de las Administraciones
+- Concesión de una licencia sin norma especial
+- Inscripción en un registro sin norma especial
+- Autorización de una actividad sin efectos sobre el medio ambiente
+E También en el derecho de petición, dominio y servicio público, medio ambiente, y en recursos y revisión de oficio.
+R Ley 39/2015 art. 24.1
+
+Q Si se interpone recurso de alzada contra la desestimación por silencio de una solicitud y tampoco se resuelve el recurso en plazo:
+= Se entiende estimado, salvo en las materias del art. 24.1
+- Se entiende desestimado en todo caso
+- Se produce la caducidad
+- Hay que interponer reposición
+E Es una excepción a la regla de que el silencio en los recursos es desestimatorio.
+R Ley 39/2015 art. 24.1
+
+Q Cuando una solicitud se ha estimado por silencio, la resolución expresa posterior:
+= Solo puede dictarse si es confirmatoria
+- Puede denegar la solicitud libremente
+- No puede dictarse nunca
+- Debe someterse a dictamen
+E En la desestimación por silencio, la resolución posterior se adopta sin vinculación al sentido del silencio.
+R Ley 39/2015 art. 24.3
+
+Q El certificado acreditativo del silencio lo expide de oficio el órgano competente en el plazo de:
+= Quince días desde que vence el plazo para resolver
+- Diez días desde la solicitud
+- Un mes desde que vence el plazo para resolver
+- Tres meses
+E Los actos producidos por silencio también pueden acreditarse por cualquier otro medio de prueba.
+R Ley 39/2015 art. 24.4
+
+Q En un procedimiento sancionador iniciado de oficio, si vence el plazo sin resolución expresa:
+= Se produce la caducidad
+- Se entiende impuesta la sanción
+- Se entiende estimada la alegación del interesado
+- Se prorroga el plazo automáticamente
+E La resolución que la declara ordena el archivo de las actuaciones.
+R Ley 39/2015 art. 25.1.b
+
+Q ¿Cuál de estos actos es nulo de pleno derecho?
+= El que tiene un contenido imposible
+- El que incurre en desviación de poder
+- El dictado fuera de plazo sin que el plazo sea esencial
+- El que tiene un defecto de forma sin indefensión
+E La desviación de poder es causa de anulabilidad.
+R Ley 39/2015 art. 47.1.c
+
+Q Los defectos de forma determinan la anulabilidad del acto:
+= Solo cuando falten requisitos formales indispensables para alcanzar su fin o haya indefensión
+- Siempre
+- Nunca
+- Solo si lo declara un tribunal
+E Las actuaciones fuera de plazo solo implican anulabilidad cuando lo imponga la naturaleza del plazo.
+R Ley 39/2015 art. 48.2
+
+Q Si el vicio de un acto anulable es de incompetencia no determinante de nulidad, la convalidación puede hacerla:
+= El órgano competente cuando sea superior jerárquico del que dictó el acto
+- Cualquier órgano de la Administración
+- Solo un tribunal
+- El propio interesado
+E Los actos nulos no se pueden convalidar.
+R Ley 39/2015 art. 52.3
+
+Q Los actos nulos o anulables que contengan los elementos constitutivos de otro acto distinto producen los efectos de este. Es la:
+= Conversión
+- Convalidación
+- Conservación
+- Revocación
+E La conservación (art. 51) mantiene los actos y trámites cuyo contenido no habría cambiado sin la infracción.
+R Ley 39/2015 art. 50

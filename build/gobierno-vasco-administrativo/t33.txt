@@ -1,0 +1,159 @@
+Q ¿Qué actos pueden ser objeto de revisión de oficio por nulidad de pleno derecho?
+= Los que hayan puesto fin a la vía administrativa o no hayan sido recurridos en plazo
+- Solo los actos recurridos en alzada
+- Solo los actos favorables anulables
+- Cualquier acto de trámite no cualificado
+E Deben incurrir en alguna causa de nulidad del art. 47.1. Se puede hacer en cualquier momento.
+R Ley 39/2015 art. 106.1
+
+Q En Euskadi, la revisión de oficio de un acto nulo exige el dictamen favorable de:
+= La Comisión Jurídica Asesora de Euskadi
+- El Ararteko
+- El Tribunal Vasco de Cuentas Públicas
+- La Oficina de Control Económico
+E Es el órgano consultivo equivalente al Consejo de Estado. Si el dictamen no es favorable, no se puede declarar la nulidad.
+R Ley 39/2015 art. 106.1; Ley 9/2004
+
+Q Un procedimiento de revisión de oficio de un acto nulo iniciado a solicitud del interesado que no se resuelve en seis meses:
+= Se entiende desestimado por silencio
+- Caduca
+- Se entiende estimado
+- Se prorroga otros seis meses
+E Si se inició de oficio, el transcurso del plazo produce la caducidad.
+R Ley 39/2015 art. 106.5
+
+Q La declaración de lesividad de un acto favorable anulable:
+= No puede adoptarse pasados cuatro años desde que se dictó el acto
+- Puede adoptarse en cualquier momento
+- Puede adoptarse hasta un año después de dictarse el acto
+- No exige audiencia de los interesados
+E Después, la Administración debe impugnar el acto ante la jurisdicción contencioso-administrativa.
+R Ley 39/2015 art. 107.2
+
+Q ¿Cabe recurso contra la declaración de lesividad?
+= No, aunque se notifica a los interesados a efectos informativos
+- Sí, recurso de alzada
+- Sí, recurso potestativo de reposición
+- Sí, recurso extraordinario de revisión
+E Si pasan seis meses desde la iniciación sin declararla, se produce la caducidad.
+R Ley 39/2015 art. 107.3
+
+Q Iniciado un procedimiento de revisión de oficio, el órgano competente puede suspender la ejecución del acto cuando:
+= Pudiera causar perjuicios de imposible o difícil reparación
+- Lo pida cualquier persona
+- El acto sea favorable
+- Haya transcurrido un mes
+E Lo prevé el art. 108.
+R Ley 39/2015 art. 108
+
+Q La revocación del art. 109.1 de la Ley 39/2015 se aplica a:
+= Actos de gravamen o desfavorables, mientras no haya transcurrido el plazo de prescripción
+- Actos favorables anulables
+- Actos nulos de pleno derecho
+- Disposiciones de carácter general
+E No puede constituir dispensa o exención no permitida por las leyes, ni ser contraria a la igualdad, al interés público o al ordenamiento.
+R Ley 39/2015 art. 109.1
+
+Q ¿Qué errores pueden rectificarse en cualquier momento según el art. 109.2?
+= Los materiales, de hecho o aritméticos
+- Los de interpretación de una norma
+- Los de calificación jurídica
+- Cualquier error de derecho
+E Si el error afecta a la interpretación o aplicación del derecho hay que acudir a la revisión de oficio o a los recursos.
+R Ley 39/2015 art. 109.2
+
+Q Las facultades de revisión no pueden ejercerse cuando, por el tiempo transcurrido u otras circunstancias, su ejercicio resulte contrario a:
+= La equidad, la buena fe, el derecho de los particulares o las leyes
+- La voluntad del órgano que dictó el acto
+- La opinión del superior jerárquico
+- El presupuesto del departamento
+E Son los límites de la revisión.
+R Ley 39/2015 art. 110
+
+Q Los recursos contra un acto administrativo que se fundan únicamente en la nulidad de una disposición general pueden interponerse:
+= Directamente ante el órgano que dictó la disposición
+- Ante el Tribunal Constitucional
+- Ante el Ararteko
+- No pueden interponerse
+E Contra las disposiciones generales no cabe recurso en vía administrativa.
+R Ley 39/2015 art. 112.3
+
+Q Los vicios y defectos que hagan anulable un acto:
+= No pueden ser alegados por quienes los hubieran causado
+- Solo pueden alegarlos quienes los causaron
+- No pueden alegarse nunca en un recurso
+- Solo pueden alegarse ante los tribunales
+E El error en la calificación del recurso no impide su tramitación si se deduce su verdadero carácter.
+R Ley 39/2015 art. 115.2 y 115.3
+
+Q Si se pide la suspensión de la ejecución al recurrir y no se resuelve en un mes desde la solicitud:
+= La ejecución se entiende suspendida
+- La solicitud se entiende desestimada
+- El recurso se entiende estimado
+- El acto se entiende anulado
+E La interposición del recurso, por sí sola, no suspende la ejecución del acto.
+R Ley 39/2015 art. 117.3
+
+Q Si un recurso de alzada se presenta ante el órgano que dictó el acto, este debe remitirlo al competente en:
+= Diez días, con su informe y una copia del expediente
+- Un mes
+- Tres días
+- Quince días
+E El recurso puede presentarse ante el órgano que dictó el acto o ante el competente para resolverlo.
+R Ley 39/2015 art. 121.2
+
+Q A efectos del recurso de alzada, los tribunales y órganos de selección del personal se consideran dependientes:
+= Del órgano al que estén adscritos o, en su defecto, del que haya nombrado al presidente
+- Del Parlamento Vasco
+- Del Ararteko
+- De ningún órgano, por lo que sus actos no se recurren en alzada
+E Igual ocurre con los órganos que actúan con autonomía funcional.
+R Ley 39/2015 art. 121.1
+
+Q ¿Cuál es el plazo para resolver y notificar el recurso de alzada?
+= Tres meses
+- Un mes
+- Seis meses
+- Dos meses
+E Si no se resuelve, se entiende desestimado, salvo cuando se recurre la desestimación por silencio de una solicitud.
+R Ley 39/2015 art. 122.2
+
+Q ¿Cuál es el plazo para resolver y notificar el recurso potestativo de reposición?
+= Un mes
+- Tres meses
+- Quince días
+- Dos meses
+E Contra la resolución de un recurso de reposición no puede interponerse de nuevo ese recurso.
+R Ley 39/2015 art. 124.2 y 124.3
+
+Q El recurso extraordinario de revisión por error de hecho que resulte de los documentos del expediente se interpone en el plazo de:
+= Cuatro años desde la notificación de la resolución impugnada
+- Tres meses
+- Un mes
+- Dos meses
+E En las demás causas, tres meses desde el conocimiento de los documentos o desde que la sentencia judicial quedó firme.
+R Ley 39/2015 art. 125.2
+
+Q Si pasan tres meses desde la interposición del recurso extraordinario de revisión sin resolución:
+= Se entiende desestimado y queda abierta la vía contencioso-administrativa
+- Se entiende estimado
+- Caduca el procedimiento
+- Se prorroga otros tres meses
+E Se interpone ante el órgano que dictó el acto, que es también el competente para resolverlo.
+R Ley 39/2015 art. 126.3
+
+Q En la Administración de la Comunidad Autónoma del País Vasco, los recursos contra las resoluciones de los órganos de un departamento los resuelve, salvo excepciones legales:
+= La consejera o el consejero del departamento
+- El Lehendakari
+- El Parlamento Vasco
+- La Comisión Jurídica Asesora de Euskadi
+E El Gobierno resuelve los recursos que se interponen ante él (art. 18.k de la Ley 7/1981).
+R Ley 7/1981 art. 26.5
+
+Q El plazo para interponer recurso contencioso-administrativo contra un acto expreso es de:
+= Dos meses desde el día siguiente a su notificación o publicación
+- Un mes
+- Tres meses
+- Seis meses
+E En Euskadi conocen los juzgados de lo contencioso-administrativo y la Sala del Tribunal Superior de Justicia del País Vasco.
+R Ley 29/1998 art. 46.1

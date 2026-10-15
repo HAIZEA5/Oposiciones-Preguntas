@@ -1,0 +1,159 @@
+Q Antes de iniciar un procedimiento, el órgano competente puede abrir:
+= Un período de información o actuaciones previas
+- Un período de prueba
+- Un trámite de audiencia
+- Una información pública obligatoria
+E Sirve para conocer las circunstancias del caso y la conveniencia de iniciar o no el procedimiento.
+R Ley 39/2015 art. 55
+
+Q Las medidas provisionales se adoptan de acuerdo con los principios de:
+= Proporcionalidad, efectividad y menor onerosidad
+- Jerarquía y coordinación
+- Publicidad y concurrencia
+- Celeridad y oralidad
+E No pueden causar perjuicios de difícil o imposible reparación ni violar derechos amparados por las leyes.
+R Ley 39/2015 art. 56.1 y 56.4
+
+Q La petición razonada de otro órgano para que se inicie un procedimiento:
+= No vincula al órgano competente, que debe comunicar los motivos si no inicia el procedimiento
+- Obliga a iniciar el procedimiento
+- Otorga al órgano que la formula la condición de interesado
+- Solo puede formularla un órgano superior
+E Si la emite un órgano superior jerárquico, se trata de una orden superior (art. 60).
+R Ley 39/2015 art. 61
+
+Q En un procedimiento de responsabilidad patrimonial iniciado de oficio, los particulares presuntamente lesionados disponen para alegar y proponer pruebas de:
+= Diez días
+- Quince días
+- Un mes
+- Tres meses
+E El procedimiento sigue aunque no comparezcan.
+R Ley 39/2015 art. 65.2
+
+Q El plazo de diez días para subsanar una solicitud puede ampliarse hasta cinco días más, salvo en:
+= Los procedimientos selectivos o de concurrencia competitiva
+- Los procedimientos de responsabilidad patrimonial
+- Los procedimientos sancionadores
+- Ningún caso
+E Si no se subsana, se tiene al interesado por desistido, previa resolución.
+R Ley 39/2015 art. 68.2
+
+Q ¿Cuál de estos documentos NO forma parte del expediente administrativo?
+= Un borrador o una nota interna de apoyo
+- Un informe preceptivo
+- Una notificación
+- Un dictamen
+E Tampoco forman parte las opiniones, resúmenes, comunicaciones e informes internos o entre órganos.
+R Ley 39/2015 art. 70.4
+
+Q Si un interesado cumple un trámite fuera del plazo de diez días, su actuación se admite y produce efectos:
+= Si se produce antes o dentro del día en que se notifique la resolución que tiene por transcurrido el plazo
+- Nunca
+- Si lo autoriza el superior jerárquico
+- Solo si paga una tasa
+E A quienes no cumplen los trámites se les puede declarar decaídos en su derecho al trámite.
+R Ley 39/2015 art. 73.3
+
+Q El período extraordinario de prueba tiene un plazo no superior a:
+= Diez días
+- Treinta días
+- Quince días
+- Veinte días
+E El período ordinario es de diez a treinta días.
+R Ley 39/2015 art. 77.2
+
+Q Los hechos constatados por funcionarios con condición de autoridad en documentos formalizados con los requisitos legales (por ejemplo, un acta de inspección):
+= Hacen prueba de ellos salvo que se acredite lo contrario
+- No tienen ningún valor probatorio
+- No admiten prueba en contrario
+- Solo valen si los ratifica un juez
+E En los sancionadores, los hechos declarados probados por resoluciones judiciales penales firmes vinculan a la Administración.
+R Ley 39/2015 art. 77.4 y 77.5
+
+Q Salvo otra previsión, los informes se emiten en el plazo de:
+= Diez días
+- Quince días
+- Un mes
+- Tres días
+E Si no se emite en plazo, se pueden proseguir las actuaciones, salvo que sea preceptivo (en ese caso se puede suspender el plazo para resolver).
+R Ley 39/2015 art. 80.2 y 80.3
+
+Q Se puede prescindir del trámite de audiencia cuando:
+= No figuren ni se tengan en cuenta en la resolución otros hechos, alegaciones o pruebas que las aducidas por el interesado
+- El órgano tenga prisa en resolver
+- El procedimiento sea sancionador
+- El interesado no tenga representante
+E El plazo de audiencia es de diez a quince días.
+R Ley 39/2015 art. 82.4
+
+Q Quien presenta alegaciones en un trámite de información pública:
+= No adquiere por ello la condición de interesado, pero tiene derecho a una respuesta razonada
+- Adquiere automáticamente la condición de interesado
+- No tiene derecho a ninguna respuesta
+- Debe pagar una tasa
+E El plazo para alegar no puede ser inferior a veinte días.
+R Ley 39/2015 art. 83.3
+
+Q Las actuaciones complementarias que se acuerden antes de resolver se practican en un plazo no superior a:
+= Quince días, con siete días de alegaciones para los interesados
+- Diez días, con cinco días de alegaciones
+- Un mes, sin alegaciones
+- Treinta días, con diez días de alegaciones
+E Mientras tanto, el plazo para resolver queda suspendido.
+R Ley 39/2015 art. 87
+
+Q La aceptación de informes o dictámenes sirve de motivación a la resolución:
+= Cuando se incorporen al texto de la misma
+- Siempre, aunque no se mencionen
+- Nunca
+- Solo en los procedimientos sancionadores
+E Es la motivación por remisión.
+R Ley 39/2015 art. 88.6
+
+Q En un procedimiento sancionador, el reconocimiento de responsabilidad y el pago voluntario dan lugar a reducciones:
+= De al menos el 20 % cada una, acumulables entre sí
+- Del 50 % no acumulables
+- Del 10 % solo por pronto pago
+- No existen reducciones
+E Su efectividad exige desistir o renunciar a cualquier acción o recurso en vía administrativa contra la sanción.
+R Ley 39/2015 art. 85.3
+
+Q ¿Qué diferencia hay entre desistimiento y renuncia?
+= El desistimiento abandona el procedimiento; la renuncia abandona el derecho en que se funda la solicitud
+- Son lo mismo
+- El desistimiento solo cabe en procedimientos de oficio
+- La renuncia solo la puede hacer la Administración
+E La renuncia solo cabe cuando no está prohibida por el ordenamiento.
+R Ley 39/2015 art. 94
+
+Q Los procedimientos caducados:
+= No interrumpen el plazo de prescripción
+- Interrumpen siempre la prescripción
+- Producen por sí solos la prescripción de las acciones
+- No pueden volver a iniciarse
+E La caducidad no produce por sí sola la prescripción; si no ha prescrito, puede iniciarse otro procedimiento.
+R Ley 39/2015 art. 95.3
+
+Q Si en la tramitación simplificada cualquiera de los interesados manifiesta su oposición expresa:
+= La Administración sigue la tramitación ordinaria
+- La Administración continúa con la simplificada
+- El procedimiento se archiva
+- Se suspende hasta que resuelva un tribunal
+E La tramitación simplificada se acuerda por razones de interés público o falta de complejidad.
+R Ley 39/2015 art. 96.2
+
+Q En la tramitación simplificada, el trámite de audiencia:
+= Solo se hace cuando la resolución vaya a ser desfavorable para el interesado
+- No existe nunca
+- Es siempre obligatorio
+- Dura treinta días
+E Las alegaciones se presentan en cinco días.
+R Ley 39/2015 art. 96.6
+
+Q En el procedimiento sancionador cabe la tramitación simplificada cuando:
+= El órgano competente considere que la infracción es leve
+- La sanción sea superior a 3.000 euros
+- El infractor sea una persona jurídica
+- Lo pida el denunciante
+E En este caso no cabe la oposición expresa del interesado que permite pasar a la tramitación ordinaria.
+R Ley 39/2015 art. 96.5

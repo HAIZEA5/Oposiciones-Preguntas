@@ -1,0 +1,167 @@
+Q ¿Qué artículo de la Constitución dice que la ley regulará el procedimiento de producción de los actos administrativos, garantizando cuando proceda la audiencia del interesado?
+= El art. 105.c
+- El art. 103.1
+- El art. 9.3
+- El art. 149.1.18.ª
+E El art. 149.1.18.ª atribuye al Estado la competencia exclusiva sobre el procedimiento administrativo común.
+R CE art. 105.c
+
+Q Según el art. 1.2 de la Ley 39/2015, los trámites adicionales o distintos a los del procedimiento común solo pueden incluirse:
+= Mediante ley, cuando resulte eficaz, proporcionado y necesario
+- Mediante orden de la consejera o el consejero
+- Mediante instrucción del superior jerárquico
+- Mediante acuerdo del órgano que tramita
+E Los reglamentos pueden concretar especialidades de los órganos competentes, plazos, formas de iniciación y terminación, publicación e informes.
+R Ley 39/2015 art. 1.2
+
+Q En el despacho de los expedientes de naturaleza homogénea se guarda:
+= El orden riguroso de incoación, salvo orden motivada en contrario del titular de la unidad
+- El orden que decida libremente el funcionario
+- El orden alfabético de los interesados
+- El orden de importancia económica
+E Su incumplimiento da lugar a responsabilidad disciplinaria.
+R Ley 39/2015 art. 71.2
+
+Q En un procedimiento iniciado a solicitud del interesado, la resolución:
+= Debe ser congruente con sus peticiones, sin agravar su situación inicial
+- Puede agravar su situación si lo considera conveniente la Administración
+- Solo puede estimar o desestimar, sin resolver otras cuestiones
+- Puede resolver sobre cuestiones no planteadas sin oír al interesado
+E Es la prohibición de la reformatio in peius.
+R Ley 39/2015 art. 88.2
+
+Q Los plazos señalados por horas:
+= No pueden tener una duración superior a veinticuatro horas; si la tienen, se expresan en días
+- Pueden durar hasta setenta y dos horas
+- Solo cuentan las horas de oficina
+- Se cuentan solo en días hábiles por la mañana
+E Son hábiles todas las horas del día que formen parte de un día hábil, y se cuentan de hora en hora y de minuto en minuto.
+R Ley 39/2015 art. 30.1
+
+Q Un plazo de un mes se notifica el 31 de enero. Como en febrero no hay día 31, el plazo vence:
+= El último día de febrero
+- El 1 de marzo
+- El 3 de marzo
+- El 28 de enero
+E Si en el mes de vencimiento no hay día equivalente, el plazo expira el último día del mes (y si es inhábil, se prorroga al primer día hábil siguiente).
+R Ley 39/2015 art. 30.4
+
+Q Si un día es hábil en el municipio de residencia del interesado e inhábil en la sede del órgano administrativo:
+= Se considera inhábil en todo caso
+- Se considera hábil en todo caso
+- Lo decide el interesado
+- Se aplica el calendario del Estado
+E También al revés: si es inhábil en el municipio del interesado y hábil en la sede del órgano.
+R Ley 39/2015 art. 30.6
+
+Q El calendario de días inhábiles de cada Administración se publica:
+= Antes del comienzo de cada año
+- El primer día hábil de cada mes
+- Cuando lo pida un interesado
+- Cada cinco años
+E Se fija con sujeción al calendario laboral oficial.
+R Ley 39/2015 art. 30.7
+
+Q La ampliación de plazos del art. 32 de la Ley 39/2015:
+= No puede exceder de la mitad del plazo y debe acordarse antes de que venza
+- Puede duplicar el plazo
+- Puede acordarse después del vencimiento
+- Es recurrible en alzada
+E Contra el acuerdo de ampliación no cabe recurso.
+R Ley 39/2015 art. 32
+
+Q En la tramitación de urgencia, se reducen a la mitad los plazos del procedimiento ordinario, salvo:
+= Los de presentación de solicitudes y recursos
+- Los de audiencia
+- Los de prueba
+- Ninguno
+E Contra el acuerdo de tramitación de urgencia no cabe recurso.
+R Ley 39/2015 art. 33
+
+Q Los grupos de afectados y las entidades sin personalidad jurídica tienen capacidad de obrar ante las Administraciones:
+= Cuando la ley así lo declare expresamente
+- Siempre
+- Nunca
+- Solo en procedimientos sancionadores
+E También tienen capacidad de obrar los menores para los derechos que pueden ejercer sin asistencia de quien ejerza la patria potestad, tutela o curatela.
+R Ley 39/2015 art. 3
+
+Q Quienes tienen intereses legítimos que puedan resultar afectados por la resolución son interesados si:
+= Se personan en el procedimiento mientras no haya recaído resolución definitiva
+- Presentan una denuncia
+- Viven en el mismo municipio
+- Lo decide el instructor
+E Los titulares de derechos afectados son interesados aunque no hayan iniciado el procedimiento.
+R Ley 39/2015 art. 4.1.c
+
+Q Para los actos y gestiones de mero trámite, la representación:
+= Se presume
+- Debe acreditarse siempre ante notario
+- Debe inscribirse en el registro de apoderamientos
+- No está permitida
+E Sí debe acreditarse para formular solicitudes, presentar declaraciones responsables, interponer recursos, desistir y renunciar.
+R Ley 39/2015 art. 5.3
+
+Q Los poderes inscritos en el registro electrónico de apoderamientos tienen una validez máxima de:
+= Cinco años desde la inscripción
+- Un año
+- Diez años
+- Indefinida
+E Pueden revocarse o prorrogarse antes de que termine ese plazo.
+R Ley 39/2015 art. 6.6
+
+Q Si falta la acreditación de la representación, el órgano debe conceder para subsanarla un plazo de:
+= Diez días, o superior si las circunstancias lo requieren
+- Tres días
+- Quince días
+- Un mes
+E Mientras tanto, se tiene por realizado el acto si se subsana el defecto.
+R Ley 39/2015 art. 5.6
+
+Q Cuando en una solicitud figuran varios interesados y no han señalado a ninguno, las actuaciones se efectúan con:
+= El que figure en primer término
+- Todos a la vez
+- El de mayor edad
+- El que elija la Administración
+E Si han señalado expresamente un representante o interesado, se actúa con él.
+R Ley 39/2015 art. 7
+
+Q Es motivo de abstención el parentesco con un interesado:
+= De consanguinidad dentro del cuarto grado o de afinidad dentro del segundo
+- De consanguinidad dentro del segundo grado únicamente
+- De afinidad dentro del cuarto grado únicamente
+- De cualquier grado
+E También el vínculo matrimonial o situación de hecho asimilable.
+R Ley 40/2015 art. 23.2.b
+
+Q Es motivo de abstención haber prestado servicios profesionales a una persona directamente interesada en el asunto:
+= En los dos últimos años
+- En el último mes
+- En los cinco últimos años
+- En cualquier momento de la vida profesional
+E También tener relación de servicio con ella.
+R Ley 40/2015 art. 23.2.e
+
+Q En la recusación, el recusado debe manifestar a su superior inmediato si se da o no en él la causa alegada:
+= Al día siguiente
+- En tres días
+- En diez días
+- En un mes
+E Si niega la causa, el superior resuelve en tres días.
+R Ley 40/2015 art. 24.3
+
+Q La actuación de una autoridad en la que concurren motivos de abstención:
+= No implica necesariamente la invalidez de los actos, pero da lugar a responsabilidad
+- Determina siempre la nulidad de pleno derecho
+- No tiene ninguna consecuencia
+- Determina la caducidad del procedimiento
+E Por eso la abstención es un deber de la autoridad o del personal afectado.
+R Ley 40/2015 art. 23.4 y 23.5
+
+Q En los procedimientos de la Administración General de la Comunidad Autónoma del País Vasco, la persona interesada:
+= Puede elegir relacionarse en euskera o en castellano
+- Debe usar siempre el castellano
+- Debe usar siempre el euskera
+- Solo puede usar el euskera si lo autoriza el órgano
+E La Ley 39/2015 remite a la legislación autonómica en las comunidades con lengua cooficial (Ley 10/1982, Tema 8).
+R Ley 39/2015 art. 15; Ley 10/1982
