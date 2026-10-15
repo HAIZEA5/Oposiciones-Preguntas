@@ -33,3 +33,7 @@ t31 | Tema 31 | Tema 31. Procedimiento administrativo: principios generales. Per
 t32 | Tema 32 | Tema 32. Fases del procedimiento administrativo | Fases del procedimiento administrativo. | getxo-administrativo/t13, getxo-administrativo/t14, getxo-administrativo/t15, biblioteca-dfb/ay09
 t33 | Tema 33 | Tema 33. Revisión de los actos: recursos administrativos, revisión de oficio y revocación. Rectificación de errores materiales | Revisión de los actos: recursos administrativos, revisión de oficio y revocación. Rectificación de errores materiales. | getxo-administrativo/t16
 t34 | Tema 34 | Tema 34. La responsabilidad de las Administraciones Públicas, de sus autoridades y su personal | La responsabilidad de las Administraciones Públicas, de sus autoridades y su personal. | getxo-administrativo/t18:13-30
+x17 | Examen 2017 | Examen real del IVAP 2017 · Cuerpo Administrativo (adaptado) | Preguntas del examen de la bolsa de trabajo del Cuerpo Administrativo de 2017, reescritas y con la respuesta de la plantilla oficial. Se han quitado las anuladas y las de leyes ya derogadas. | 
+sp | Supuestos | Supuestos prácticos: plazos, recursos y casos | Casos cortos para aplicar la ley: cálculo de plazos, qué recurso cabe, abstención, silencio, atención en Zuzenean. |
+tr | Trampas | Trampas típicas del test | Conceptos, plazos e instituciones que se confunden con facilidad. |
+mx | Mezcla | Preguntas que mezclan temas | Preguntas que relacionan varios temas del temario (el número de los temas está en la explicación). |

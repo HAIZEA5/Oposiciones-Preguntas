@@ -1,0 +1,175 @@
+Q A Ane le notifican una resolución el sábado 31 de enero de 2026 y tiene un mes para recurrir. Febrero de 2026 no tiene día 31 y el 28 es sábado. ¿Cuál es el último día del plazo?
+= El lunes 2 de marzo de 2026
+- El sábado 28 de febrero de 2026
+- El martes 3 de marzo de 2026
+- El viernes 27 de febrero de 2026
+E Sin día equivalente, el plazo vence el último día del mes (28 de febrero); como es inhábil, se prorroga al primer día hábil siguiente.
+R Ley 39/2015 art. 30.4 y 30.5
+
+Q Te notifican el jueves 8 de octubre de 2026 un requerimiento para subsanar en diez días. El lunes 12 de octubre es festivo nacional y no hay otros festivos. ¿Cuál es el último día?
+= El viernes 23 de octubre
+- El domingo 18 de octubre
+- El jueves 22 de octubre
+- El lunes 26 de octubre
+E Los días son hábiles: se excluyen sábados, domingos y festivos. Se empieza a contar el día siguiente a la notificación (9 de octubre).
+R Ley 39/2015 art. 30.2
+
+Q Te notifican el 15 de marzo una resolución con un plazo de un mes para recurrir. Si el 15 de abril es hábil, ¿cuándo vence el plazo?
+= El 15 de abril
+- El 14 de abril
+- El 16 de abril
+- El 30 de abril
+E Los plazos por meses vencen el mismo día en que se produjo la notificación, en el mes de vencimiento.
+R Ley 39/2015 art. 30.4
+
+Q Iker presenta una solicitud por el registro electrónico el sábado a las 23:00. ¿Qué fecha de presentación se tiene en cuenta para el cómputo de plazos?
+= La primera hora del lunes, si es hábil
+- El sábado a las 23:00
+- El viernes anterior
+- La fecha en que el funcionario la lea
+E La presentación en día inhábil se entiende hecha en la primera hora del primer día hábil siguiente.
+R Ley 39/2015 art. 31.2.b
+
+Q Una empresa presenta en papel, el 10 de marzo, una solicitud ante el Gobierno Vasco. Se le requiere y la presenta por vía electrónica el 20 de marzo. ¿Cuál es la fecha de presentación?
+= El 20 de marzo
+- El 10 de marzo
+- La fecha en que se le notificó el requerimiento
+- No se tiene por presentada
+E Las personas jurídicas están obligadas a relacionarse electrónicamente; vale la fecha de la subsanación.
+R Ley 39/2015 arts. 14.2 y 68.4
+
+Q Una directora de un departamento del Gobierno Vasco deniega una solicitud. La resolución no pone fin a la vía administrativa. ¿Qué recurso cabe y en qué plazo?
+= Recurso de alzada ante el órgano superior jerárquico, en un mes
+- Recurso potestativo de reposición ante la directora, en un mes
+- Recurso contencioso-administrativo directamente, en dos meses
+- Recurso extraordinario de revisión, en cuatro años
+E Si se presenta ante la propia directora, esta lo remite al competente en diez días.
+R Ley 39/2015 arts. 121 y 122
+
+Q Se desestima una reclamación de responsabilidad patrimonial contra el Gobierno Vasco. ¿Qué puede hacer la persona interesada?
+= Recurso potestativo de reposición en un mes o recurso contencioso-administrativo en dos meses
+- Solo recurso de alzada en un mes
+- Solo recurso extraordinario de revisión
+- Nada: no es recurrible
+E La resolución de responsabilidad patrimonial pone fin a la vía administrativa.
+R Ley 39/2015 arts. 114.1.e y 123; Ley 29/1998 art. 46
+
+Q Mikel reclama al Gobierno Vasco 25.000 euros por un daño. ¿Es preceptivo el dictamen de la Comisión Jurídica Asesora de Euskadi?
+= Sí, porque supera los 18.000 euros
+- No, porque no llega a 50.000 euros
+- No, nunca es preceptivo en responsabilidad patrimonial
+- Solo si lo pide Mikel
+E En Euskadi el límite es de 18.000 euros (Decreto 73/2011), no los 50.000 de la regla general.
+R Ley 39/2015 art. 81.2; Ley 9/2004; Decreto 73/2011
+
+Q Una vecina sufre una caída el 1 de marzo de 2025 por una baldosa suelta de un edificio público. Recibe el alta con secuelas determinadas el 1 de octubre de 2025. ¿Hasta cuándo puede reclamar?
+= Hasta el 1 de octubre de 2026
+- Hasta el 1 de marzo de 2026
+- Hasta el 1 de marzo de 2029
+- No hay plazo
+E En los daños físicos, el año se cuenta desde la curación o la determinación del alcance de las secuelas.
+R Ley 39/2015 art. 67.1
+
+Q Interpones recurso de alzada el 1 de abril y el 1 de julio todavía no te han contestado. Se trata de un recurso contra una denegación expresa. ¿Qué efecto tiene?
+= Se entiende desestimado y puedes acudir a la vía contencioso-administrativa
+- Se entiende estimado
+- Debes interponer un recurso de reposición
+- Debes esperar hasta que contesten
+E La alzada se resuelve en tres meses; el silencio es desestimatorio, salvo que se recurra la desestimación por silencio de una solicitud.
+R Ley 39/2015 art. 122.2
+
+Q Solicitas una autorización (sin norma especial que diga otra cosa) y pasan tres meses sin respuesta, porque la norma no fija plazo. ¿Qué ocurre?
+= Puedes entender estimada tu solicitud por silencio positivo
+- Se entiende desestimada
+- Caduca el procedimiento
+- Debes volver a presentarla
+E Sin plazo fijado, el plazo es de tres meses, y en los procedimientos a solicitud del interesado la regla es el silencio positivo.
+R Ley 39/2015 arts. 21.3 y 24.1
+
+Q Un funcionario tramita un expediente en el que es interesado su primo hermano. ¿Qué debe hacer?
+= Abstenerse, porque es parentesco de consanguinidad de cuarto grado
+- Nada, porque solo cuenta hasta el segundo grado
+- Seguir y avisar al final
+- Pedir permiso al interesado
+E El deber de abstención alcanza la consanguinidad dentro del cuarto grado y la afinidad dentro del segundo.
+R Ley 40/2015 art. 23.2.b
+
+Q Una funcionaria tramita un expediente cuyo interesado es el sobrino de su marido (afinidad de tercer grado). ¿Tiene que abstenerse por parentesco?
+= No, porque la afinidad solo cuenta hasta el segundo grado
+- Sí, siempre
+- Sí, porque cuenta hasta el cuarto grado
+- Solo si el sobrino lo pide
+E Podría haber otro motivo, como la amistad íntima, pero no el de parentesco.
+R Ley 39/2015; Ley 40/2015 art. 23.2.b
+
+Q En una liquidación, la Administración suma mal dos importes. ¿Cómo puede corregirlo?
+= Rectificando el error aritmético en cualquier momento, de oficio o a instancia del interesado
+- Solo mediante revisión de oficio con dictamen
+- Solo mediante declaración de lesividad
+- No puede corregirlo
+E El error material, de hecho o aritmético se rectifica sin alterar el contenido sustancial del acto.
+R Ley 39/2015 art. 109.2
+
+Q La Administración descubre que una subvención concedida hace cinco años mediante un acto anulable fue ilegal. ¿Puede declarar su lesividad?
+= No, porque han pasado más de cuatro años desde que se dictó
+- Sí, en cualquier momento
+- Sí, con dictamen favorable de la Comisión Jurídica Asesora
+- Sí, mediante recurso de alzada
+E Si el acto fuera nulo de pleno derecho, cabría la revisión de oficio en cualquier momento.
+R Ley 39/2015 arts. 106 y 107
+
+Q En una convocatoria de subvenciones de concurrencia competitiva, te piden subsanar la solicitud. ¿Cuánto plazo tienes?
+= Diez días, sin ampliación
+- Diez días, ampliables cinco más
+- Quince días
+- Un mes
+E La ampliación de cinco días no cabe en los procedimientos selectivos o de concurrencia competitiva.
+R Ley 39/2015 art. 68.2
+
+Q En la oficina de Zuzenean, una persona pide información sobre el estado del expediente de su vecino. ¿Qué debes hacer?
+= No darla, porque la información particular solo se da al interesado o a su representante
+- Darla, porque la información administrativa es pública
+- Darla si la persona se identifica
+- Darla por teléfono
+E La información general sí puede darse a cualquier persona.
+R Ley 39/2015 art. 53.1.a; Decreto 91/2023
+
+Q Una persona presenta una queja por el trato recibido y, a la vez, quiere recurrir la denegación de su solicitud. ¿Qué le explicas?
+= Que la queja no es un recurso ni interrumpe el plazo para recurrir
+- Que con la queja ya ha recurrido
+- Que la queja suspende el plazo del recurso
+- Que no puede presentar ambas cosas
+E La queja se resuelve en tres meses en el Gobierno Vasco; el recurso tiene sus propios plazos.
+R Decreto 91/2023
+
+Q Te requieren que aportes un documento en un procedimiento (acto de trámite simple). ¿Puedes recurrir ese requerimiento por separado?
+= No; puedes oponerte y alegarlo para que se tenga en cuenta en la resolución final
+- Sí, en alzada
+- Sí, en reposición
+- Sí, en revisión extraordinaria
+E Solo los actos de trámite cualificados son recurribles por separado.
+R Ley 39/2015 art. 112.1
+
+Q Se acuerda la tramitación de urgencia de un procedimiento cuyo trámite de alegaciones era de diez días. ¿Qué plazo queda?
+= Cinco días
+- Diez días
+- Tres días
+- Quince días
+E Se reducen a la mitad los plazos, salvo los de presentación de solicitudes y recursos.
+R Ley 39/2015 art. 33
+
+Q Tienes un plazo de diez días y pides una ampliación antes de que venza. ¿Cuántos días más pueden concederte como máximo?
+= Cinco días
+- Diez días
+- Quince días
+- Veinte días
+E La ampliación no puede exceder de la mitad del plazo inicial.
+R Ley 39/2015 art. 32.1
+
+Q Interpones un recurso de reposición y pasa un mes sin respuesta. ¿Qué puedes hacer?
+= Acudir a la vía contencioso-administrativa, porque se entiende desestimado
+- Interponer otro recurso de reposición
+- Interponer recurso de alzada
+- Nada: hay que esperar tres meses
+E Contra la resolución de un recurso de reposición no puede interponerse de nuevo ese recurso.
+R Ley 39/2015 art. 124

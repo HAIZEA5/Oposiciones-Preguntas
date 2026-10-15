@@ -1,0 +1,119 @@
+Q En un procedimiento de la Administración General de la CAE, el interesado presenta su solicitud en euskera. ¿En qué lengua se tramita?
+= En euskera, porque el interesado elige la lengua oficial y la Administración la respeta
+- Siempre en castellano
+- En la lengua que elija el funcionario
+- En las dos lenguas obligatoriamente
+E Si hay varios interesados que no se ponen de acuerdo, se aplican las reglas de la ley autonómica. Temas 8 y 31.
+R Ley 39/2015 art. 15; Ley 10/1982
+
+Q Una persona interesada en un procedimiento en curso quiere ver su expediente. ¿Por qué vía lo pide?
+= Por el derecho de acceso de la Ley 39/2015, como interesada
+- Por la Ley de Transparencia, como cualquier persona
+- No puede verlo hasta que termine
+- Por el derecho de petición
+E Los interesados en procedimientos en curso se rigen por su normativa específica. Temas 14, 21 y 23.
+R Ley 39/2015 art. 53.1.a; Ley 19/2013 DA 1.ª
+
+Q Al dar acceso a un expediente que contiene datos de salud de una tercera persona, ¿qué hay que hacer?
+= Proteger esos datos, porque son categorías especiales
+- Darlos sin más, porque el expediente es público
+- Destruir el expediente
+- Pedir permiso al director
+E El acceso tiene como límite la protección de datos de terceros. Temas 10, 14 y 21.
+R RGPD art. 9; Ley 19/2013 art. 15
+
+Q Una persona sin certificado electrónico quiere presentar una solicitud firmada en Zuzenean. ¿Quién puede firmar por ella?
+= Un funcionario habilitado inscrito en el registro correspondiente, con su consentimiento expreso
+- Cualquier persona que esté en la cola
+- Nadie: debe comprar un certificado
+- El director de la oficina sin su consentimiento
+E Temas 20, 22 y 23.
+R Ley 39/2015 art. 12
+
+Q ¿Qué tiene que figurar en la RPT respecto al euskera de cada puesto?
+= El perfil lingüístico y, en su caso, la fecha de preceptividad
+- Solo si el titular sabe euskera
+- Nada: el euskera no figura en la RPT
+- El nivel de euskera del jefe de la unidad
+E Temas 8 y 17.
+R Ley 11/2022; Decreto 19/2024
+
+Q En la concesión de una subvención por el Gobierno Vasco, ¿a qué fase del gasto corresponde la resolución de concesión?
+= Disposición o compromiso (D)
+- Autorización (A)
+- Reconocimiento de la obligación (O)
+- Ordenación del pago (P)
+E El reconocimiento de la obligación llega cuando se justifica la subvención. Temas 15 y 30.
+R Fases del gasto
+
+Q Una solicitud se presenta en la oficina de Correos de otra comunidad autónoma. ¿Es válida?
+= Sí, en cualquier oficina de Correos, en la forma que se establezca reglamentariamente
+- No, debe presentarse en Euskadi
+- Solo si es una persona jurídica
+- Solo con traducción al euskera
+E Si se presenta en el registro de otra Administración, llega al Gobierno Vasco por el Sistema de Interconexión de Registros. Temas 20 y 31.
+R Ley 39/2015 art. 16.4
+
+Q Un ciudadano sufre un daño por el funcionamiento de un servicio del Gobierno Vasco y reclama 30.000 euros. Ordena los pasos:
+= Informe del servicio, dictamen de la Comisión Jurídica Asesora y resolución en seis meses, que agota la vía administrativa
+- Recurso de alzada, dictamen del Consejo de Estado y resolución en tres meses
+- Solo resolución del consejero en un mes
+- Queja ante Zuzenean y resolución en tres meses
+E Temas 29, 32 y 34.
+R Ley 39/2015 arts. 81, 91 y 114
+
+Q Una copia auténtica de un documento en papel para incorporarla al expediente electrónico la expide:
+= Un funcionario habilitado o una actuación administrativa automatizada
+- Cualquier empleado
+- El propio interesado
+- Un notario en todo caso
+E Temas 19, 21 y 22.
+R Ley 39/2015 art. 27
+
+Q Antes de aprobar un proyecto de decreto, ¿qué informe de igualdad es preceptivo en la Administración vasca?
+= El informe de Emakunde y la evaluación previa del impacto en función del género
+- Ninguno
+- Solo el del Ararteko
+- Solo el de la Comisión Jurídica Asesora
+E Temas 6 y 28.
+R DL 1/2023; Ley 6/2022
+
+Q Un acto que vulnera el derecho fundamental a la igualdad (susceptible de amparo) es:
+= Nulo de pleno derecho y puede revisarse de oficio en cualquier momento
+- Anulable en el plazo de cuatro años
+- Válido hasta que lo anule un tribunal
+- Una irregularidad no invalidante
+E Temas 1, 30 y 33.
+R Ley 39/2015 arts. 47.1.a y 106
+
+Q Si te piden un certificado de estar al corriente con Hacienda que el Gobierno Vasco puede consultar electrónicamente, ¿tienes que aportarlo?
+= No, la Administración lo consulta por sus redes de intermediación, salvo que te opongas
+- Sí, siempre en papel
+- Sí, compulsado
+- Sí, traducido
+E Temas 7, 20 y 23.
+R Ley 39/2015 art. 28.2
+
+Q ¿Qué órgano interviene tanto en la revisión de oficio de actos nulos como en las reclamaciones de responsabilidad patrimonial de más de 18.000 euros en Euskadi?
+= La Comisión Jurídica Asesora de Euskadi
+- El Ararteko
+- El Tribunal Vasco de Cuentas Públicas
+- Gardena
+E Temas 29, 33 y 34.
+R Ley 9/2004
+
+Q Un funcionario de la Escala Administrativa que actúa con negligencia grave causa un daño por el que la Administración paga una indemnización. ¿Qué puede ocurrirle?
+= La Administración puede exigirle el importe por la acción de regreso y, además, abrirle expediente disciplinario
+- Nada, porque la responsabilidad es de la Administración
+- Solo el particular puede demandarle
+- Pierde automáticamente la condición de funcionario
+E Temas 9 y 34.
+R Ley 40/2015 art. 36; TREBEP
+
+Q Una persona con discapacidad auditiva viene a Zuzenean a presentar un recurso. ¿Qué haces?
+= Mirarle a la cara, hablar despacio y usar apoyo escrito o videointerpretación, y registrar el recurso
+- Hablar con su acompañante e ignorarla
+- Decirle que vuelva con un intérprete
+- Gritar para que te oiga
+E Temas 24, 26 y 33.
+R RDL 1/2013; Decreto 91/2023

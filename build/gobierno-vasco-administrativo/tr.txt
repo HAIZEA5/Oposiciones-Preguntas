@@ -1,0 +1,175 @@
+Q ¿Qué institución de la Unión está formada por los ministros de los Estados miembros?
+= El Consejo de la Unión Europea
+- El Consejo Europeo
+- El Consejo de Europa
+- La Comisión Europea
+E Trampa: el Consejo Europeo reúne a los Jefes de Estado o de Gobierno, y el Consejo de Europa ni siquiera es de la UE.
+R TUE arts. 15 y 16
+
+Q La Administración puede dejar sin efecto, por oportunidad, un acto DESFAVORABLE mientras no haya prescrito. Eso es:
+= Revocación
+- Revisión de oficio
+- Rectificación de errores
+- Declaración de lesividad
+E Trampa: la revisión es para actos nulos; la lesividad, para favorables anulables; la rectificación, para errores materiales.
+R Ley 39/2015 arts. 106, 107 y 109
+
+Q ¿Cuál de estos plazos corresponde al trámite de información pública?
+= No inferior a veinte días
+- De diez a quince días
+- De diez a treinta días
+- Diez días
+E Trampa: audiencia, de 10 a 15 días; prueba, de 10 a 30 días; informes, 10 días.
+R Ley 39/2015 art. 83.2
+
+Q El interesado abandona el procedimiento, pero conserva el derecho a volver a solicitar. Es:
+= Desistimiento
+- Renuncia
+- Caducidad
+- Prescripción
+E Trampa: en la renuncia abandona el derecho en que se funda la solicitud.
+R Ley 39/2015 art. 94
+
+Q ¿Desde qué cuantía es preceptivo el dictamen del órgano consultivo en responsabilidad patrimonial ante la Administración General del Estado?
+= Igual o superior a 50.000 euros
+- Más de 18.000 euros
+- Más de 6.000 euros
+- Cualquier cuantía
+E Trampa: en Euskadi, ante la Comisión Jurídica Asesora, más de 18.000 euros.
+R Ley 39/2015 art. 81.2
+
+Q ¿Cuál es el plazo para RESOLVER el recurso potestativo de reposición?
+= Un mes
+- Tres meses
+- Dos meses
+- Seis meses
+E Trampa: la alzada se resuelve en tres meses; el extraordinario de revisión, en tres meses también.
+R Ley 39/2015 art. 124.2
+
+Q Los cuatro años del recurso extraordinario de revisión por error de hecho se cuentan desde:
+= La notificación de la resolución impugnada
+- Que se dictó el acto
+- Que se descubre el error
+- Que la sentencia es firme
+E Trampa: la lesividad no puede declararse pasados cuatro años desde que se dictó el acto.
+R Ley 39/2015 arts. 107.2 y 125.2
+
+Q En los procedimientos iniciados a solicitud del interesado, ¿cuál es la regla general del silencio?
+= Positivo (estimatorio)
+- Negativo (desestimatorio)
+- Caducidad
+- Depende de lo que decida el órgano
+E Trampa: en los procedimientos de oficio de gravamen hay caducidad, y en los recursos el silencio es negativo (salvo alzada contra silencio).
+R Ley 39/2015 arts. 24 y 25
+
+Q Un acto dictado por un órgano incompetente por razón de la jerarquía (no de la materia ni del territorio) es:
+= Anulable y puede convalidarse por el superior
+- Nulo de pleno derecho
+- Inexistente
+- Válido en todo caso
+E Trampa: solo la incompetencia manifiesta por materia o territorio causa nulidad.
+R Ley 39/2015 arts. 47.1.b y 52.3
+
+Q ¿Qué técnica de alteración de la competencia necesita publicarse en el boletín oficial?
+= La delegación de competencias
+- La delegación de firma
+- La suplencia
+- La avocación
+E Trampa: la delegación de firma y la suplencia no necesitan publicación; la avocación se notifica a los interesados.
+R Ley 40/2015 arts. 9, 10, 12 y 13
+
+Q El ingreso por un servicio de solicitud voluntaria que también presta el sector privado es:
+= Un precio público
+- Una tasa
+- Un impuesto
+- Una contribución especial
+E Trampa: si el servicio no es de solicitud voluntaria o no lo presta el sector privado, es una tasa.
+R Tipos de ingresos
+
+Q El testimonio notarial de que una firma es de quien dice ser es una:
+= Legitimación
+- Legalización
+- Apostilla
+- Copia auténtica
+E Trampa: la legalización acredita la firma de una autoridad en un documento público para usarlo en el extranjero.
+R Doctrina
+
+Q ¿Qué acredita que unos datos existían en un momento concreto?
+= El sello de tiempo
+- El sello electrónico
+- La firma avanzada
+- El CSV
+E Trampa: el sello electrónico es la «firma» de las personas jurídicas.
+R Reglamento (UE) 910/2014
+
+Q Según la Ley 3/2026 de Transparencia de Euskadi, ¿en qué plazo debe resolverse una solicitud de acceso a la información pública?
+= Un mes, ampliable quince días
+- Tres meses
+- Diez días
+- Seis meses
+E Trampa: las quejas y sugerencias del Gobierno Vasco, tres meses; Gardena resuelve las reclamaciones en tres meses.
+R Ley 3/2026 art. 37
+
+Q Una notificación electrónica se entiende rechazada cuando pasan sin acceder a ella:
+= Diez días naturales desde su puesta a disposición
+- Diez días hábiles
+- Un mes
+- Quince días naturales
+E Trampa: aquí son días naturales, no hábiles.
+R Ley 39/2015 art. 43.2
+
+Q ¿Qué real decreto regula el trabajo con pantallas de visualización?
+= El RD 488/1997
+- El RD 486/1997
+- El RD 39/1997
+- El RD 203/2021
+E Trampa: el 486/1997 es el de lugares de trabajo (temperatura, botiquín, local de primeros auxilios).
+R RD 488/1997
+
+Q ¿Cuál es el teléfono de información y atención ciudadana del Gobierno Vasco?
+= 012
+- 112
+- 016
+- 091
+E Trampa: el 112 es el de emergencias.
+R Decreto 91/2023
+
+Q En el presupuesto, ¿qué capítulo de GASTOS recoge las inversiones reales?
+= El 6
+- El 2
+- El 7
+- El 1
+E Trampa: en el presupuesto de INGRESOS, el capítulo 6 es la enajenación de inversiones reales.
+R Clasificación económica
+
+Q ¿Cuál de estos efectos tiene la fuerza mayor en la responsabilidad patrimonial?
+= Excluye la responsabilidad
+- No la excluye
+- La reduce a la mitad
+- La convierte en subsidiaria
+E Trampa: el caso fortuito (interno al servicio) no la excluye.
+R Ley 40/2015 art. 32.1
+
+Q El plazo de un mes para la alzada contra un acto EXPRESO. ¿Y contra un acto presunto?
+= En cualquier momento a partir del día siguiente a aquel en que se produzcan los efectos del silencio
+- Tres meses
+- Seis meses
+- Un mes también
+E Trampa frecuente en los exámenes del IVAP.
+R Ley 39/2015 art. 122.1
+
+Q La ley orgánica se aprueba por:
+= Mayoría absoluta del Congreso en una votación final sobre el conjunto del proyecto
+- Mayoría simple del Congreso
+- Mayoría de tres quintos de ambas cámaras
+- Mayoría absoluta del Senado
+E Trampa: la diferencia entre ley orgánica y ordinaria no es de jerarquía, sino de materia.
+R CE art. 81.2
+
+Q La Comisión Europea puede ser censurada por el Parlamento Europeo por:
+= Dos tercios de los votos emitidos que representen la mayoría de los miembros
+- Mayoría simple
+- Unanimidad
+- Mayoría de tres quintos
+E Trampa: no confundir con la elección del Presidente de la Comisión, que exige la mayoría de los miembros.
+R TFUE art. 234
