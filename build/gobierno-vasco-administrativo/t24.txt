@@ -1,0 +1,175 @@
+Q ¿Qué decreto regula la atención integral y multicanal a la ciudadanía en el Gobierno Vasco?
+= El Decreto 91/2023, de 20 de junio
+- El Decreto 72/2008
+- El Decreto 19/2024
+- El Decreto 21/2012
+E Integra la atención presencial, telefónica y electrónica.
+R Decreto 91/2023
+
+Q ¿Cuál es el teléfono de información y atención del Gobierno Vasco?
+= 012
+- 112
+- 016
+- 010
+E Forma parte del sistema Zuzenean junto con las oficinas presenciales y euskadi.eus.
+R Decreto 91/2023
+
+Q La atención «integral» significa:
+= Resolver la necesidad de la persona en un solo punto o contacto
+- Atender solo de forma presencial
+- Atender solo en horario de mañana
+- Atender solo a personas con certificado electrónico
+E La multicanal ofrece la misma calidad por canales presencial, telefónico y electrónico.
+R Decreto 91/2023
+
+Q La información sobre el estado de tramitación de un expediente concreto:
+= Solo se da a los interesados o a sus representantes, previa identificación
+- Se da a cualquier persona que la pida
+- No se da nunca
+- Solo se da por escrito al cabo de un mes
+E La información general se da a cualquier persona, sin necesidad de identificarse.
+R Ley 39/2015 art. 53.1.a
+
+Q Al dar información al público, el personal NO debe:
+= Adelantar el sentido de una resolución que aún no se ha dictado
+- Orientar sobre qué trámite corresponde
+- Explicar los requisitos de un procedimiento
+- Indicar dónde dirigirse
+E Tampoco dar datos de terceros ni opiniones personales.
+R Decreto 91/2023; Ley 39/2015
+
+Q Los documentos públicos en los que una unidad informa de sus servicios, compromisos de calidad e indicadores son:
+= Las cartas de servicios
+- Las RPT
+- Los planes normativos
+- Las memorias anuales del Ararteko
+E Por ejemplo, la Carta de Servicio de Zuzenean.
+R Cartas de servicios
+
+Q ¿Qué entidad promueve en Euskadi los modelos de gestión de la calidad y excelencia como EFQM?
+= Euskalit
+- Emakunde
+- Izenpe
+- El IVAP
+E Fundación Vasca para la Excelencia.
+R Euskalit
+
+Q ¿Qué diferencia hay entre una queja y un recurso administrativo?
+= La queja no es un recurso: no afecta a los plazos ni a los actos y no impide ejercer otras acciones
+- La queja suspende la ejecución del acto
+- La queja sustituye al recurso de alzada
+- No hay diferencia
+E Para impugnar un acto hay que usar los recursos.
+R Decreto 91/2023
+
+Q En el Gobierno Vasco, las quejas y sugerencias se resuelven en un plazo máximo de:
+= Tres meses
+- Diez días
+- Un mes
+- Seis meses
+E Se gestionan en el Sistema Corporativo de Quejas y Sugerencias.
+R Decreto 91/2023 art. 119
+
+Q Una propuesta para mejorar la calidad de un servicio o simplificar un trámite es:
+= Una sugerencia
+- Una queja
+- Un recurso
+- Una reclamación de responsabilidad patrimonial
+E La queja expresa insatisfacción por tardanzas, desatenciones u otras deficiencias.
+R Decreto 91/2023
+
+Q El Ararteko es:
+= El alto comisionado del Parlamento Vasco para la defensa de los derechos frente a las administraciones vascas
+- Un órgano del Gobierno Vasco que resuelve recursos
+- Un juzgado especializado
+- El servicio de atención telefónica del Gobierno Vasco
+E Lo regula la Ley 3/1985, de 27 de febrero.
+R Ley 3/1985
+
+Q El Ararteko es elegido por el Parlamento Vasco por mayoría de:
+= Tres quintos, para cinco años
+- Mayoría simple, para cuatro años
+- Dos tercios, para seis años
+- Mayoría absoluta, para tres años
+E Actúa con independencia y presenta un informe anual al Parlamento.
+R Ley 3/1985
+
+Q ¿Puede el Ararteko anular un acto administrativo?
+= No; formula recomendaciones, sugerencias y recordatorios de deberes legales
+- Sí, siempre
+- Sí, si el acto es nulo
+- Solo los actos de los ayuntamientos
+E Tampoco interviene en asuntos pendientes de resolución judicial.
+R Ley 3/1985
+
+Q A efectos legales, la discapacidad se reconoce con un grado igual o superior al:
+= 33 %
+- 25 %
+- 50 %
+- 65 %
+E La define el RDL 1/2013 como resultado de la interacción entre deficiencias y barreras.
+R RDL 1/2013 art. 4
+
+Q Las adaptaciones concretas para una persona con discapacidad que no suponen una carga desproporcionada son:
+= Ajustes razonables
+- Diseño universal
+- Accesibilidad cognitiva
+- Acciones positivas generales
+E El diseño universal busca entornos utilizables por todas las personas desde el principio.
+R RDL 1/2013 art. 2
+
+Q La accesibilidad de los sitios web y aplicaciones móviles del sector público se regula en:
+= El Real Decreto 1112/2018
+- El Real Decreto 488/1997
+- El Real Decreto 4/2010
+- La Ley 3/1985
+E Sigue las normas internacionales WCAG.
+R RD 1112/2018
+
+Q Al atender a una persona usuaria de silla de ruedas, es recomendable:
+= Ponerse a su altura para hablar y no mover la silla sin permiso
+- Hablar con su acompañante
+- Apoyarse en la silla
+- Empujar la silla sin preguntar para ayudar
+E En general, hay que dirigirse directamente a la persona y preguntar antes de ayudar.
+R Pautas de atención
+
+Q Al atender a una persona con discapacidad auditiva, es recomendable:
+= Mirarle a la cara y hablar despacio, vocalizando, sin gritar
+- Hablar más alto y de espaldas
+- Taparse la boca para no distraerle
+- Hablar solo con su acompañante
+E Puede usarse apoyo escrito o intérprete de lengua de signos.
+R Pautas de atención
+
+Q Al atender a una persona con discapacidad visual, es recomendable:
+= Presentarse al llegar, avisar al irse y describir lo que se hace
+- Acariciar al perro guía para tranquilizarlo
+- Empujarla suavemente para guiarla
+- No hablarle hasta que pregunte
+E Se le ofrece el brazo para guiarla, sin empujar.
+R Pautas de atención
+
+Q La ley estatal integral para la igualdad de trato y la no discriminación es:
+= La Ley 15/2022
+- La Ley 3/1985
+- La Ley 11/2022
+- La Ley 19/2013
+E Marco, junto con el art. 14 de la Constitución, de la atención intercultural.
+R Ley 15/2022
+
+Q Para comprobar que una persona de origen extranjero ha entendido la información, lo más adecuado es:
+= Pedirle que lo repita con sus palabras
+- Preguntarle solo «¿lo ha entendido?»
+- Hablarle más alto
+- Darle un documento largo con todo el procedimiento
+E Se recomienda lenguaje claro, frases cortas y apoyos como materiales multilingües o mediación.
+R Pautas de atención intercultural
+
+Q El modelo de convivencia basado en el reconocimiento mutuo, el diálogo y el intercambio entre culturas en igualdad de derechos es:
+= La interculturalidad
+- La asimilación
+- La segregación
+- La multiculturalidad como simple coexistencia
+E Va más allá de la simple coexistencia.
+R Atención intercultural

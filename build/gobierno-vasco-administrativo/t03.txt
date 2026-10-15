@@ -1,0 +1,183 @@
+Q ¿Cuántas instituciones tiene la Unión Europea según el art. 13 del TUE?
+= Siete
+- Cinco
+- Nueve
+- Cuatro
+E Parlamento Europeo, Consejo Europeo, Consejo, Comisión, Tribunal de Justicia, Banco Central Europeo y Tribunal de Cuentas.
+R TUE art. 13
+
+Q ¿Cuál de estos NO es una institución de la Unión Europea?
+= El Comité de las Regiones
+- El Tribunal de Cuentas
+- El Banco Central Europeo
+- El Consejo Europeo
+E El Comité de las Regiones y el Comité Económico y Social Europeo son órganos consultivos.
+R TUE art. 13
+
+Q El Consejo de Europa, con sede en Estrasburgo:
+= Es una organización internacional distinta, que no es institución de la Unión
+- Es otro nombre del Consejo Europeo
+- Es otro nombre del Consejo de la Unión Europea
+- Es el órgano que preside la Comisión
+E Es una trampa típica: no hay que confundirlo con el Consejo Europeo ni con el Consejo de la UE.
+R Portal oficial de la UE
+
+Q El Consejo Europeo está formado por:
+= Los Jefes de Estado o de Gobierno de los Estados miembros, su Presidente y el Presidente de la Comisión
+- Un ministro de cada Estado miembro
+- Los diputados elegidos por sufragio universal
+- Un comisario por Estado miembro
+E Da los impulsos políticos y define las orientaciones generales; no ejerce función legislativa.
+R TUE art. 15
+
+Q El Presidente del Consejo Europeo es elegido para un mandato de:
+= Dos años y medio, renovable una vez
+- Cinco años, no renovable
+- Seis meses, rotatorio
+- Cuatro años, renovable
+E Lo elige el propio Consejo Europeo por mayoría cualificada.
+R TUE art. 15.5
+
+Q ¿Qué institución ejerce la función legislativa junto con el Parlamento Europeo?
+= El Consejo de la Unión Europea
+- El Consejo Europeo
+- El Tribunal de Justicia
+- El Banco Central Europeo
+E El Consejo y el Parlamento son colegisladores y también ejercen juntos la función presupuestaria.
+R TUE art. 16
+
+Q La presidencia del Consejo de la Unión Europea:
+= Rota cada seis meses entre los Estados miembros
+- La ejerce siempre el Presidente de la Comisión
+- Dura cinco años
+- La elige el Parlamento Europeo
+E La formación de Asuntos Exteriores la preside el Alto Representante.
+R TUE art. 16.9
+
+Q La mayoría cualificada en el Consejo exige, como regla general:
+= Al menos el 55 % de los Estados que representen al menos el 65 % de la población de la Unión
+- La mitad más uno de los Estados
+- Dos tercios de los Estados y la mitad de la población
+- La unanimidad
+E La minoría de bloqueo exige al menos cuatro Estados.
+R TUE art. 16.4
+
+Q ¿Qué institución tiene casi en exclusiva la iniciativa legislativa y es la «guardiana de los Tratados»?
+= La Comisión Europea
+- El Parlamento Europeo
+- El Consejo Europeo
+- El Tribunal de Justicia
+E Puede iniciar el recurso por incumplimiento contra los Estados.
+R TUE art. 17
+
+Q La Comisión Europea:
+= Tiene un comisario por Estado miembro y un mandato de cinco años
+- Tiene dos comisarios por Estado y un mandato de seis años
+- Está formada por los ministros de los Estados
+- Se renueva cada seis meses
+E Sus miembros actúan con plena independencia, sin aceptar instrucciones de ningún Gobierno.
+R TUE art. 17
+
+Q La moción de censura del Parlamento Europeo contra la Comisión exige:
+= Dos tercios de los votos emitidos que representen la mayoría de los miembros del Parlamento
+- La mayoría simple de los votos emitidos
+- La unanimidad de los diputados
+- La mayoría absoluta del Consejo
+E Si prospera, los comisarios deben dimitir colectivamente.
+R TFUE art. 234
+
+Q El número máximo de diputados del Parlamento Europeo por Estado es:
+= Noventa y seis
+- Setenta y dos
+- Sesenta y uno
+- Ciento cincuenta
+E El mínimo es de seis. El total máximo es de 750 más el Presidente.
+R TUE art. 14.2
+
+Q La sede oficial del Parlamento Europeo está en:
+= Estrasburgo
+- Bruselas
+- Luxemburgo
+- Fráncfort
+E En Bruselas se reúnen las comisiones y algunos plenos; en Luxemburgo está la Secretaría General.
+R Protocolo sobre las sedes
+
+Q El Tribunal de Justicia de la Unión Europea tiene su sede en:
+= Luxemburgo
+- Estrasburgo
+- La Haya
+- Bruselas
+E Tiene un juez por Estado miembro, nombrado por seis años de común acuerdo por los Gobiernos.
+R TUE art. 19
+
+Q ¿Qué procedimiento permite a los jueces nacionales preguntar al Tribunal de Justicia sobre la interpretación del Derecho de la Unión?
+= La cuestión prejudicial
+- El recurso por incumplimiento
+- El recurso por omisión
+- El recurso de amparo
+E Es obligatoria para los órganos judiciales de última instancia.
+R TFUE art. 267
+
+Q Según el art. 288 TFUE, el reglamento:
+= Tiene alcance general, es obligatorio en todos sus elementos y directamente aplicable en cada Estado
+- Obliga solo en cuanto al resultado
+- Necesita transposición al Derecho interno
+- No es vinculante
+E Un ejemplo es el Reglamento General de Protección de Datos.
+R TFUE art. 288
+
+Q Según el art. 288 TFUE, la directiva:
+= Obliga al Estado destinatario en cuanto al resultado, dejando a las autoridades nacionales la forma y los medios
+- Es directamente aplicable sin transposición
+- Solo obliga a los particulares
+- No es vinculante
+E Debe transponerse al Derecho interno en el plazo que fije.
+R TFUE art. 288
+
+Q Si un Estado no transpone en plazo una directiva clara, precisa e incondicional, el particular puede invocarla:
+= Frente al Estado, pero no frente a otro particular
+- Frente a otros particulares, pero no frente al Estado
+- Frente a cualquiera
+- Frente a nadie
+E Es el efecto directo vertical. El Estado puede tener que indemnizar (doctrina Francovich).
+R Jurisprudencia del TJUE
+
+Q ¿Cuáles de estos actos de la Unión NO son vinculantes?
+= Las recomendaciones y los dictámenes
+- Los reglamentos
+- Las directivas
+- Las decisiones
+E La decisión es obligatoria en todos sus elementos para sus destinatarios.
+R TFUE art. 288
+
+Q El principio de primacía del Derecho de la Unión sobre el nacional se estableció en la sentencia:
+= Costa/ENEL (1964)
+- Van Gend en Loos (1963)
+- Francovich (1991)
+- Cassis de Dijon (1979)
+E Van Gend en Loos estableció el efecto directo; Francovich, la responsabilidad del Estado por incumplir el Derecho de la Unión.
+R Jurisprudencia del TJUE
+
+Q Según el principio de subsidiariedad, en las materias que no son de su competencia exclusiva la Unión interviene:
+= Solo si los objetivos no pueden alcanzarse suficientemente por los Estados y se logran mejor a escala de la Unión
+- Siempre que lo decida la Comisión
+- Nunca
+- Solo con unanimidad del Parlamento Europeo
+E Los Parlamentos nacionales velan por su respeto.
+R TUE art. 5.3
+
+Q El Tratado de Lisboa entró en vigor el:
+= 1 de diciembre de 2009
+- 1 de enero de 1986
+- 13 de diciembre de 2007
+- 1 de noviembre de 1993
+E Se firmó el 13 de diciembre de 2007. España se adhirió a las Comunidades el 1 de enero de 1986.
+R Tratado de Lisboa
+
+Q La iniciativa ciudadana europea exige el apoyo de al menos:
+= Un millón de ciudadanos de un número significativo de Estados (como mínimo siete)
+- Cien mil ciudadanos de un solo Estado
+- Quinientos mil ciudadanos de tres Estados
+- Diez millones de ciudadanos
+E Invita a la Comisión a presentar una propuesta legislativa.
+R TUE art. 11.4

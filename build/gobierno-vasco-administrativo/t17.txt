@@ -1,0 +1,143 @@
+Q ¿Qué ley regula los cuerpos y escalas de la Administración General de la Comunidad Autónoma de Euskadi?
+= La Ley 7/2021, de 11 de noviembre
+- La Ley 11/2022, de 1 de diciembre
+- La Ley 3/2022, de 12 de mayo
+- La Ley 7/1981, de Gobierno
+E La Ley 11/2022 es la de Empleo Público Vasco.
+R Ley 7/2021
+
+Q La Escala Administrativa de la Administración General de la CAE pertenece al:
+= Cuerpo Administrativo, subgrupo C1
+- Cuerpo de Gestión Administrativa, subgrupo A2
+- Cuerpo Auxiliar de Administración, subgrupo C2
+- Cuerpo Superior de Administración, subgrupo A1
+E Para ingresar se exige el título de Bachiller o el de Técnico.
+R Ley 7/2021 arts. 9, 13 y 15
+
+Q ¿Qué titulación se exige para ingresar en la Escala Administrativa?
+= Título de Bachiller o de Técnico
+- Título de grado universitario
+- Graduado en ESO
+- Ninguna
+E Un título superior al exigido, como el de Técnico Superior, también cumple el requisito.
+R Ley 7/2021 art. 15.1.c
+
+Q El Cuerpo Superior de Administración (A1) de la CAE comprende la:
+= Escala de Administración
+- Escala Superior Facultativa
+- Escala Administrativa
+- Escala de Gestión
+E Las escalas especiales de A1 forman el Cuerpo Superior Facultativo.
+R Ley 7/2021 art. 13
+
+Q ¿Qué cuerpo agrupa las escalas especiales del subgrupo A2 (enfermería, edificación, etc.)?
+= El Cuerpo Técnico
+- El Cuerpo Superior Facultativo
+- El Cuerpo de Ayudantes Técnicos
+- El Cuerpo Administrativo
+E El Cuerpo de Ayudantes Técnicos es del grupo B.
+R Ley 7/2021 art. 14
+
+Q El título de Técnico Superior (ciclo formativo de grado superior) da acceso al grupo:
+= B
+- A2
+- C2
+- A1
+E En la CAE, las escalas del grupo B forman el Cuerpo de Ayudantes Técnicos.
+R TREBEP art. 76
+
+Q ¿Qué título se exige para el subgrupo C2?
+= Graduado en Educación Secundaria Obligatoria
+- Bachiller
+- Técnico Superior
+- Ninguno
+E Las agrupaciones profesionales no exigen ninguna titulación del sistema educativo.
+R TREBEP art. 76
+
+Q En la Administración General de la CAE, el personal que no exige titulación del sistema educativo forma la:
+= Agrupación profesional de personal de apoyo
+- Escala Auxiliar Administrativa
+- Escala Administrativa
+- Escala de Gestión
+E No tiene escalas.
+R Ley 7/2021
+
+Q La diferencia entre cuerpo y escala es que:
+= El cuerpo agrupa por grupo y nivel de funciones; la escala, por especialización
+- La escala es superior al cuerpo
+- El cuerpo solo existe en el Estado
+- No hay diferencia
+E Se ingresa en un cuerpo y una escala concretos mediante el proceso selectivo.
+R Doctrina; Ley 7/2021
+
+Q ¿Cuál es la unidad básica de la organización del empleo público según la Ley 11/2022?
+= El puesto de trabajo
+- El cuerpo
+- El departamento
+- La plantilla presupuestaria
+E A partir de él se ordenan los instrumentos de ordenación y gestión.
+R Ley 11/2022
+
+Q En la Administración General de la CAE, las relaciones de puestos de trabajo las aprueba:
+= El Consejo de Gobierno, mediante decreto
+- Cada consejero mediante orden
+- El Parlamento Vasco mediante ley
+- El IVAP
+E Se publican en el BOPV.
+R Ley 11/2022
+
+Q ¿Cuál de estos datos NO forma parte del contenido de un puesto en la RPT?
+= El nombre de la persona que lo ocupa
+- La forma de provisión
+- El perfil lingüístico
+- El complemento de destino
+E También figuran la naturaleza, el cuerpo y escala, el grupo, la titulación y el complemento específico.
+R Ley 11/2022
+
+Q La relación de las plazas dotadas en el presupuesto, con su coste, es:
+= La plantilla presupuestaria
+- La RPT
+- La oferta de empleo público
+- El registro de personal
+E Garantiza que cada puesto tiene crédito suficiente.
+R Ley 11/2022
+
+Q La oferta de empleo público es:
+= La relación de plazas vacantes con dotación presupuestaria que deben cubrirse con nuevo ingreso
+- La lista de puestos que se cubren por libre designación
+- El catálogo de cursos de formación
+- La relación de todo el personal
+E Se aprueba cada año y obliga a convocar los procesos selectivos.
+R Ley 11/2022; TREBEP art. 70
+
+Q Ningún nombramiento ni retribución puede tramitarse sin la inscripción correspondiente en:
+= El registro de personal
+- El registro de apoderamientos
+- El registro de la propiedad
+- El registro de entrada
+E Recoge los datos de todo el personal y los actos que afectan a su vida administrativa.
+R Ley 11/2022
+
+Q ¿Qué organismo autónomo gestiona los procesos selectivos, la formación del personal y la acreditación de perfiles lingüísticos en la Administración vasca?
+= El IVAP
+- Emakunde
+- La Oficina de Control Económico
+- Lanbide
+E Instituto Vasco de Administración Pública.
+R Ley 11/2022
+
+Q Los conjuntos de puestos con funciones homogéneas que sirven para organizar la carrera, la movilidad y la formación son:
+= Las agrupaciones de puestos o áreas funcionales
+- Los cuerpos
+- Las plantillas presupuestarias
+- Las ofertas de empleo
+E Son uno de los instrumentos de ordenación de la Ley 11/2022.
+R Ley 11/2022
+
+Q Según la jurisprudencia actual del Tribunal Supremo, la RPT tiene naturaleza de:
+= Acto administrativo
+- Reglamento
+- Ley
+- Contrato
+E Aunque se publica y puede impugnarse directamente.
+R Jurisprudencia del Tribunal Supremo

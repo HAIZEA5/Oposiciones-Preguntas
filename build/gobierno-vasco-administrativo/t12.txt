@@ -1,0 +1,151 @@
+Q ¿Qué norma regula las disposiciones mínimas de seguridad y salud en el trabajo con pantallas de visualización?
+= El Real Decreto 488/1997, de 14 de abril
+- El Real Decreto 486/1997, de lugares de trabajo
+- El Real Decreto 39/1997, de los servicios de prevención
+- La Ley 31/1995 directamente, sin desarrollo
+E Desarrolla la Ley de Prevención de Riesgos Laborales y traspone la Directiva 90/270/CEE. El INSST ha publicado una Guía técnica para aplicarlo.
+R RD 488/1997
+
+Q ¿Cuál de estos equipos está EXCLUIDO del ámbito del RD 488/1997?
+= Las calculadoras y cajas registradoras
+- El ordenador de sobremesa de una oficina
+- El portátil usado de forma continuada en el puesto de trabajo
+- El terminal de atención al público usado por el empleado
+E También se excluyen los puestos de conducción, los sistemas embarcados, los destinados al uso del público y las máquinas de escribir de ventanilla.
+R RD 488/1997 art. 1.3
+
+Q Los portátiles quedan excluidos del RD 488/1997:
+= Siempre que no se utilicen de modo continuado en un puesto de trabajo
+- En todo caso
+- Nunca
+- Solo si pesan menos de dos kilos
+E Si se usan de forma continuada, deben adaptarse con pantalla, teclado y ratón externos o un soporte.
+R RD 488/1997 art. 1.3
+
+Q Según el RD 488/1997, es «trabajador» usuario de pantallas:
+= Quien habitualmente y durante una parte relevante de su trabajo normal utiliza un equipo con pantalla
+- Cualquier persona que use un ordenador alguna vez
+- Solo el personal informático
+- Quien usa la pantalla más de 8 horas al día
+E La Guía técnica concreta este criterio con horas de uso.
+R RD 488/1997 art. 2.c
+
+Q Según la Guía técnica del INSST, se considera en todo caso usuario de pantallas a quien trabaja con ellas más de:
+= 4 horas diarias o 20 horas semanales de trabajo efectivo
+- 2 horas diarias o 10 semanales
+- 1 hora diaria
+- 6 horas diarias o 30 semanales
+E Por debajo de 2 horas diarias o 10 semanales no se considera usuario; entre ambas cifras depende de otros criterios.
+R Guía técnica del INSST
+
+Q Al evaluar los riesgos del trabajo con pantallas, el empresario debe tener en cuenta en particular:
+= Los riesgos para la vista, los problemas físicos y la carga mental
+- Solo los riesgos eléctricos
+- Solo el ruido
+- Solo la temperatura
+E También su posible efecto añadido o combinado.
+R RD 488/1997 art. 3.2
+
+Q Según la Guía técnica, las pausas en el trabajo con pantallas deben ser preferiblemente:
+= Cortas y frecuentes, antes de que aparezca la fatiga
+- Largas y escasas
+- Una sola al final de la jornada
+- Solo cuando el trabajador esté cansado
+E Como orientación, de 10 a 15 minutos por cada 60 a 90 minutos de trabajo con pantalla.
+R RD 488/1997 art. 3.3; Guía técnica
+
+Q La vigilancia de la salud de los usuarios de pantallas se realiza:
+= Antes de empezar, periódicamente según el riesgo y cuando aparezcan trastornos
+- Solo al jubilarse
+- Una vez cada diez años
+- Solo si el trabajador lo pide por escrito
+E Si los resultados lo hacen necesario, se tiene derecho a un reconocimiento oftalmológico.
+R RD 488/1997 art. 4
+
+Q Los dispositivos correctores especiales para el trabajo con pantallas:
+= Los proporciona gratuitamente el empresario cuando la vigilancia de la salud lo haga necesario y no sirvan los normales
+- Los paga siempre el trabajador
+- Los paga la Seguridad Social
+- No están previstos
+E Por ejemplo, gafas específicas para la distancia de la pantalla.
+R RD 488/1997 art. 4.3
+
+Q Según el anexo del RD 488/1997, el teclado debe ser:
+= Inclinable e independiente de la pantalla, con superficie mate
+- Fijo y unido a la pantalla
+- Brillante para verse mejor
+- Sin espacio delante
+E Debe haber espacio delante del teclado para apoyar los brazos y las manos.
+R RD 488/1997 anexo
+
+Q Según el anexo del RD 488/1997, el asiento de trabajo debe tener:
+= Altura regulable y respaldo reclinable y ajustable en altura
+- Altura fija
+- Respaldo fijo
+- Ruedas obligatoriamente
+E Debe ponerse un reposapiés a disposición de quienes lo deseen.
+R RD 488/1997 anexo
+
+Q ¿Cómo se recomienda colocar la pantalla respecto a las ventanas?
+= Perpendicular a las ventanas
+- De frente a la ventana
+- De espaldas a la ventana
+- Pegada al cristal
+E Así se evitan deslumbramientos y reflejos. Las ventanas deben tener una cobertura regulable.
+R RD 488/1997 anexo; Guía técnica
+
+Q Según el anexo del RD 488/1997, ¿puede usarse un dispositivo de control cuantitativo o cualitativo del trabajo sin informar a los trabajadores?
+= No, deben ser informados y consultados sus representantes
+- Sí, siempre
+- Sí, si lo decide el jefe de la unidad
+- Sí, en la Administración pública
+E El programa debe estar adaptado a la tarea y ser fácil de usar.
+R RD 488/1997 anexo, apdo. 3
+
+Q Según la Guía técnica, la pantalla debe estar a una distancia de los ojos no inferior a:
+= 40 cm
+- 10 cm
+- 20 cm
+- 1 metro
+E El borde superior, a la altura de los ojos o ligeramente por debajo.
+R Guía técnica del INSST
+
+Q En trabajos sedentarios propios de oficinas, la temperatura debe estar entre:
+= 17 y 27 °C
+- 10 y 20 °C
+- 20 y 30 °C
+- 14 y 25 °C
+E La humedad relativa, entre el 30 y el 70 %.
+R RD 486/1997, anexo III
+
+Q ¿Qué radiaciones deben reducirse a niveles insignificantes en el puesto con pantalla?
+= Toda radiación, excepto la parte visible del espectro electromagnético
+- Solo la luz visible
+- Solo el ruido
+- Ninguna
+E Así lo exige el anexo del RD 488/1997.
+R RD 488/1997 anexo, apdo. 2
+
+Q El síndrome del túnel carpiano asociado al trabajo con pantallas es un ejemplo de:
+= Trastorno musculoesquelético
+- Fatiga visual
+- Fatiga mental
+- Riesgo eléctrico
+E Se debe a posturas forzadas o movimientos repetitivos de la muñeca.
+R Guía técnica del INSST
+
+Q El picor, el lagrimeo, los ojos secos y la visión borrosa son síntomas de:
+= Fatiga visual
+- Carga mental
+- Trastorno musculoesquelético
+- Golpe de calor
+E Se deben a reflejos, deslumbramientos, contrastes inadecuados o mala distancia de lectura.
+R Guía técnica del INSST
+
+Q La formación de cada trabajador sobre el uso de los equipos con pantalla debe darse:
+= Antes de comenzar y cada vez que se modifique la organización del puesto
+- Solo al jubilarse
+- Una vez cada cinco años
+- Solo si lo pide el trabajador
+E Los trabajadores y sus representantes también deben recibir información sobre los riesgos y medidas.
+R RD 488/1997 art. 5

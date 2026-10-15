@@ -1,0 +1,159 @@
+Q ¿Qué norma recoge el texto refundido del régimen presupuestario de Euskadi?
+= El Decreto Legislativo 1/2011, de 24 de mayo
+- El Decreto Legislativo 1/2023
+- La Ley 11/2022
+- El Decreto 1/2021
+E El IVAP cita también la Ley de Principios Ordenadores de la Hacienda General (DL 1/1997) y la Ley de Control Económico y Contabilidad (DL 2/2017).
+R DL 1/2011 (TRRPE)
+
+Q Si los Presupuestos Generales de la CAE no se aprueban antes del 1 de enero:
+= Se prorrogan automáticamente los del ejercicio anterior
+- No se puede pagar ningún gasto
+- Los aprueba el Gobierno por decreto
+- Se aplican los del Estado
+E El ejercicio presupuestario coincide con el año natural.
+R TRRPE
+
+Q La clasificación del presupuesto de gastos que indica «quién gasta» es la:
+= Orgánica
+- Funcional o por programas
+- Económica
+- Territorial
+E La funcional indica «para qué» se gasta y la económica «en qué».
+R TRRPE
+
+Q En la clasificación económica de gastos, el capítulo 1 corresponde a:
+= Gastos de personal
+- Gastos de funcionamiento
+- Inversiones reales
+- Gastos financieros
+E Capítulo 2, gastos de funcionamiento; 3, financieros; 4, transferencias corrientes; 5, crédito global; 6, inversiones reales; 7, transferencias de capital; 8, activos financieros; 9, pasivos financieros.
+R Clasificación económica
+
+Q La compra de material de oficina se imputa al capítulo:
+= 2, gastos de funcionamiento
+- 1, gastos de personal
+- 6, inversiones reales
+- 4, transferencias corrientes
+E Es compra de bienes corrientes y servicios.
+R Clasificación económica
+
+Q La amortización de deuda se imputa al capítulo de gastos:
+= 9, disminución de pasivos financieros
+- 3, gastos financieros
+- 8, aumento de activos financieros
+- 5, crédito global
+E Los intereses de la deuda van al capítulo 3.
+R Clasificación económica
+
+Q La aplicación presupuestaria es:
+= La combinación de las clasificaciones orgánica, funcional y económica que identifica cada crédito
+- El acto por el que se paga una factura
+- El documento de reconocimiento de un derecho
+- La ley que aprueba el presupuesto
+E Todo gasto se imputa a una aplicación concreta con crédito adecuado y suficiente.
+R TRRPE
+
+Q Los actos que adquieran compromisos de gasto por encima de los créditos de pago son:
+= Nulos de pleno derecho
+- Anulables
+- Válidos si los aprueba el consejero
+- Válidos si hay ingresos suficientes
+E Los créditos de pago tienen carácter limitativo y vinculante.
+R TRRPE
+
+Q Los créditos de compromiso sirven para:
+= Comprometer en el ejercicio gastos que se pagarán con cargo a ejercicios futuros
+- Pagar las deudas de años anteriores
+- Atender gastos imprevistos
+- Devolver ingresos indebidos
+E Se aprueban en la Ley de Presupuestos con su distribución por anualidades (gastos plurianuales).
+R TRRPE
+
+Q ¿Qué fase del gasto es un acto interno que no crea obligaciones frente a terceros?
+= La autorización (A)
+- La disposición (D)
+- El reconocimiento de la obligación (O)
+- La ordenación del pago (P)
+E Reserva todo o parte de un crédito para un gasto determinado.
+R Fases del gasto
+
+Q La adjudicación de un contrato corresponde, en la ejecución del gasto, a la fase de:
+= Disposición o compromiso (D)
+- Autorización (A)
+- Reconocimiento de la obligación (O)
+- Ordenación del pago (P)
+E La disposición fija el importe exacto y el tercero, y vincula a la Administración frente a él.
+R Fases del gasto
+
+Q La conformidad de una factura tras recibir la prestación da lugar a la fase:
+= O, contracción o reconocimiento de la obligación
+- A, autorización
+- D, disposición
+- P, pago material
+E Declara la existencia de un crédito exigible contra la Hacienda.
+R Fases del gasto
+
+Q ¿Qué significa un documento contable «ADO»?
+= Que la autorización, la disposición y el reconocimiento de la obligación se acumulan en un solo acto
+- Que el gasto se ha anulado
+- Que el pago se ha hecho por adelantado
+- Que el gasto es plurianual
+E También existe la acumulación AD, por ejemplo en gastos de personal.
+R Fases del gasto
+
+Q ¿Qué órgano ejerce el control económico y la contabilidad de la Administración de la CAE?
+= La Oficina de Control Económico
+- El Tribunal Vasco de Cuentas Públicas
+- La Comisión Jurídica Asesora de Euskadi
+- El IVAP
+E Depende del departamento de Hacienda y ejerce el control económico-fiscal previo.
+R DL 2/2017
+
+Q La referencia de intervención es:
+= El identificador contable que sigue a un expediente de gasto en todas sus fases
+- El informe jurídico previo a todo gasto
+- El número de la factura del proveedor
+- El código del funcionario que tramita
+E Se asigna al registrar la primera fase del gasto.
+R Contabilidad de la CAE
+
+Q Los pagos a justificar son:
+= Órdenes de pago cuyos justificantes no pueden aportarse al proponer el pago
+- Pagos que nunca se justifican
+- Pagos de nóminas
+- Devoluciones de ingresos
+E Quien recibe el dinero debe rendir cuenta justificativa y reintegrar lo no invertido.
+R TRRPE
+
+Q Los fondos anticipados de las habilitaciones sirven para:
+= Pagar directamente gastos periódicos o repetitivos de pequeña cuantía
+- Financiar inversiones de varios años
+- Pagar la deuda pública
+- Recaudar tasas
+E Son provisiones no presupuestarias y permanentes que se reponen tras justificar los pagos. Equivalen a los anticipos de caja fija del Estado.
+R TRRPE
+
+Q Los residuos de gastos son:
+= Las obligaciones reconocidas pendientes de pago a 31 de diciembre
+- Los créditos no utilizados al cierre
+- Los gastos sin crédito
+- Los ingresos pendientes de cobro
+E Los créditos de pago no utilizados se anulan al cierre, salvo incorporaciones; las obligaciones reconocidas se pagan después.
+R TRRPE
+
+Q Según el principio de especialidad cualitativa, los créditos:
+= Se destinan a la finalidad para la que se aprobaron
+- Pueden usarse para cualquier gasto
+- Se gastan solo en el mes de su aprobación
+- No tienen límite de cuantía
+E La especialidad cuantitativa impide gastar más del crédito; la temporal, gastar en otros ejercicios.
+R Principios presupuestarios
+
+Q Trasladar crédito de una aplicación presupuestaria a otra con distinta vinculación es:
+= Una transferencia de crédito
+- Una incorporación de crédito
+- Una ampliación de crédito
+- Un pago a justificar
+E La incorporación traslada al ejercicio siguiente créditos no utilizados.
+R TRRPE

@@ -1,0 +1,159 @@
+Q La legalización de un documento público acredita:
+= La autenticidad de la firma y la calidad en que actúa quien lo firma, para que surta efectos en otro país
+- La veracidad de su contenido
+- Que el documento está traducido
+- Que se ha pagado la tasa correspondiente
+E No acredita la veracidad del contenido.
+R Convenio de La Haya de 1961
+
+Q El testimonio de un notario de que una firma ha sido puesta en su presencia es:
+= Una legitimación de firma
+- Una legalización
+- Una apostilla
+- Una compulsa
+E La legalización acredita la firma de una autoridad en un documento público para su uso en el extranjero.
+R Doctrina
+
+Q ¿Qué convenio suprime la legalización diplomática o consular y la sustituye por la apostilla?
+= El Convenio de La Haya de 5 de octubre de 1961
+- El Convenio de Viena de 1969
+- El Tratado de Lisboa
+- El Convenio de Schengen
+E La apostilla la expide la autoridad competente del país de origen del documento.
+R Convenio de La Haya de 1961
+
+Q Para usar un documento español en un país que NO es parte del Convenio de La Haya, hay que seguir:
+= La legalización por vía diplomática, con una cadena de legalizaciones hasta el consulado del país de destino
+- La apostilla
+- Ningún trámite
+- Solo la traducción jurada
+E La cadena pasa por el órgano emisor o su superior, el ministerio correspondiente, el Ministerio de Asuntos Exteriores y el consulado.
+R Legalización diplomática
+
+Q Dentro de la Unión Europea, la apostilla queda suprimida para determinados documentos públicos (nacimiento, matrimonio, residencia...) por:
+= El Reglamento (UE) 2016/1191
+- El Reglamento (UE) 910/2014
+- La Directiva 90/270/CEE
+- El Reglamento (UE) 2016/679
+E Prevé además formularios multilingües.
+R Reglamento (UE) 2016/1191
+
+Q Según el art. 9 de la Ley 39/2015, ¿cuál de estos es un sistema de identificación admitido?
+= Un sistema de clave concertada con registro previo del usuario
+- Una fotocopia del DNI enviada por correo electrónico
+- Una llamada telefónica
+- Un mensaje en redes sociales
+E También los certificados cualificados de firma y de sello electrónico. Ejemplos de clave concertada: Cl@ve y B@kQ.
+R Ley 39/2015 art. 9.2
+
+Q B@kQ es:
+= Un sistema de clave concertada de Izenpe usado en las administraciones vascas
+- Un certificado de la FNMT
+- El registro del Gobierno Vasco
+- La sede electrónica del Estado
+E Cl@ve es el sistema equivalente de la Administración del Estado.
+R Izenpe
+
+Q Según el art. 11 de la Ley 39/2015, la firma del interesado es obligatoria para:
+= Formular solicitudes, interponer recursos, desistir de acciones y renunciar a derechos
+- Consultar el estado de un expediente
+- Pedir información general
+- Acceder a la sede electrónica
+E También para presentar declaraciones responsables o comunicaciones. Para el resto basta la identificación.
+R Ley 39/2015 art. 11.2
+
+Q Si un interesado no tiene medios electrónicos, su identificación o firma puede realizarla:
+= Un funcionario habilitado, con el consentimiento expreso del interesado
+- Cualquier familiar sin más requisitos
+- El propio órgano que resuelve
+- Nadie: debe comprar un certificado
+E Queda constancia para casos de discrepancia o litigio.
+R Ley 39/2015 art. 12.2
+
+Q La firma electrónica que está vinculada al firmante de manera única, permite identificarlo, está bajo su control exclusivo y detecta cualquier modificación posterior es:
+= La firma electrónica avanzada
+- La firma electrónica simple
+- El sello de tiempo
+- El código seguro de verificación
+E La cualificada es una firma avanzada creada con un dispositivo cualificado y basada en un certificado cualificado.
+R Reglamento (UE) 910/2014 (eIDAS) art. 26
+
+Q ¿Qué firma electrónica tiene un efecto jurídico equivalente al de la firma manuscrita?
+= La firma electrónica cualificada
+- La firma electrónica simple
+- Cualquier firma electrónica
+- Ninguna
+E Se reconoce en todos los Estados de la Unión Europea.
+R Reglamento (UE) 910/2014 art. 25.2
+
+Q En la firma electrónica basada en certificados, el firmante firma con:
+= Su clave privada, y quien recibe el documento verifica la firma con la clave pública
+- Su clave pública, y se verifica con la privada
+- Una contraseña que conoce la Administración
+- El código seguro de verificación
+E Se garantizan la autenticidad, la integridad y el no repudio.
+R Criptografía de clave pública
+
+Q El equivalente de la firma electrónica para las personas jurídicas, que garantiza el origen y la integridad de los datos, es:
+= El sello electrónico
+- El sello de tiempo
+- La apostilla
+- El CSV
+E El sello de tiempo acredita que unos datos existían en un momento concreto.
+R Reglamento (UE) 910/2014
+
+Q ¿Cuál es la vigencia máxima de los certificados cualificados según la Ley 6/2020?
+= Cinco años
+- Dos años
+- Diez años
+- Indefinida
+E Se extinguen también por revocación, pérdida o compromiso de la clave privada, entre otras causas.
+R Ley 6/2020 art. 4
+
+Q En Euskadi, la empresa de certificación y servicios de confianza de las administraciones vascas es:
+= Izenpe
+- La FNMT
+- EJIE
+- Zuzenean
+E Otros prestadores: la Dirección General de la Policía (DNIe) y la FNMT-RCM.
+R Izenpe
+
+Q Para la actuación administrativa automatizada, la Administración puede usar:
+= El sello electrónico de órgano basado en certificado cualificado
+- La firma manuscrita escaneada
+- La firma del interesado
+- Un correo electrónico sin firma
+E También el código seguro de verificación (CSV).
+R Ley 40/2015 art. 42
+
+Q La sede electrónica se identifica mediante:
+= Certificados cualificados de autenticación de sitio web
+- La firma del ministro
+- Un código postal
+- La apostilla
+E Es una dirección electrónica cuya titularidad corresponde a una Administración.
+R Ley 40/2015 art. 38
+
+Q Las listas de certificados revocados se conocen por las siglas:
+= CRL
+- CSV
+- TSL
+- PID
+E También puede consultarse el estado de un certificado por OCSP. La TSL es la lista de confianza de prestadores.
+R Infraestructura de clave pública
+
+Q El formato de firma electrónica habitual para documentos PDF es:
+= PAdES
+- XAdES
+- CAdES
+- SICRES
+E XAdES se usa para XML.
+R Formatos de firma
+
+Q El Reglamento (UE) 2024/1183 (eIDAS 2) introduce:
+= La cartera europea de identidad digital
+- La apostilla electrónica
+- El DNI en papel
+- El Registro Electrónico General
+E Permitirá identificarse y firmar en toda la UE desde el móvil.
+R Reglamento (UE) 2024/1183

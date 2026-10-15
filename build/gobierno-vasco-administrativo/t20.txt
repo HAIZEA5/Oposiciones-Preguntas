@@ -1,0 +1,151 @@
+Q Según el art. 16.1 de la Ley 39/2015, cada Administración dispone de:
+= Un Registro Electrónico General
+- Un registro en cada unidad administrativa, sin registro general
+- Un único registro en papel
+- Un registro compartido con el Estado
+E Los organismos públicos pueden tener su propio registro electrónico, interoperable e interconectado con el general.
+R Ley 39/2015 art. 16.1
+
+Q ¿Cuál de estos datos NO forma parte del asiento de registro?
+= El sentido de la resolución que se dictará
+- La fecha y hora de presentación
+- La identificación del interesado
+- La referencia al contenido del documento
+E También el número, el epígrafe de su naturaleza, el órgano remitente y el destinatario.
+R Ley 39/2015 art. 16.3
+
+Q ¿Cuál de estos NO es un lugar válido para presentar documentos dirigidos a la Administración según el art. 16.4?
+= La oficina de una entidad bancaria cualquiera
+- El registro electrónico de otra Administración
+- Una oficina de Correos
+- Un consulado de España en el extranjero
+E También las oficinas de asistencia en materia de registros.
+R Ley 39/2015 art. 16.4
+
+Q Una persona jurídica presenta una solicitud en papel. La Administración:
+= Le requiere para que la presente electrónicamente, y vale como fecha la de la subsanación
+- La admite con la fecha en que la presentó en papel
+- La archiva sin más
+- Le impone una sanción
+E Las personas jurídicas están obligadas a relacionarse electrónicamente.
+R Ley 39/2015 arts. 14.2 y 68.4
+
+Q ¿Cuál de estos sujetos NO está obligado, con carácter general, a relacionarse electrónicamente con la Administración?
+= Una persona física que actúa en su propio nombre
+- Una sociedad limitada
+- Un abogado colegiado en el ejercicio de su actividad
+- Una asociación
+E Las personas físicas pueden elegir en todo momento, salvo que estén obligadas.
+R Ley 39/2015 art. 14
+
+Q Un documento presentado en el registro electrónico un domingo se entiende presentado:
+= En la primera hora del primer día hábil siguiente
+- El mismo domingo a todos los efectos
+- El viernes anterior
+- A las 15:00 del lunes
+E Salvo que una norma permita expresamente la recepción en día inhábil.
+R Ley 39/2015 art. 31.2.b
+
+Q El cómputo de plazos en el registro electrónico se rige por:
+= La fecha y hora oficial de la sede electrónica
+- La hora del ordenador del interesado
+- La hora de Greenwich
+- La hora en que lo lee el funcionario
+E La sede debe publicar el calendario de días inhábiles.
+R Ley 39/2015 art. 31.2
+
+Q Los documentos que se presentan en papel en una oficina de asistencia en materia de registros:
+= Se digitalizan, se incorporan al expediente electrónico y se devuelven los originales, salvo excepciones
+- Se guardan siempre en papel en la oficina
+- Se envían por correo postal al órgano competente
+- No se admiten
+E Salvo que la norma exija custodiarlos o no puedan digitalizarse.
+R Ley 39/2015 art. 16.5
+
+Q En la Administración General de la CAE, el decreto que regula la creación, organización y funcionamiento de los registros es:
+= El Decreto 72/2008
+- El Decreto 91/2023
+- El Decreto 19/2024
+- El Decreto 1/2021
+E Fue adaptado a la administración electrónica por el Decreto 55/2020.
+R Decreto 72/2008
+
+Q En Euskadi, las oficinas de asistencia en materia de registros del Gobierno Vasco son principalmente:
+= Las oficinas de Zuzenean
+- Las oficinas de Lanbide
+- Las oficinas del Ararteko
+- Los juzgados de paz
+E Están en Bilbao, Donostia-San Sebastián y Vitoria-Gasteiz.
+R Decreto 91/2023 art. 18.3
+
+Q ¿Qué registro recoge a los funcionarios que pueden identificar o firmar en nombre de quien no tiene medios electrónicos y expedir copias auténticas?
+= El Registro de Personal Funcionario Habilitado
+- El Registro Electrónico de Apoderamientos
+- El registro de salida
+- El Registro de Personal
+E El Registro Electrónico de Apoderamientos sirve para inscribir las representaciones.
+R Ley 39/2015 art. 12; Decreto 91/2023
+
+Q El Sistema de Interconexión de Registros (SIR) permite:
+= El intercambio electrónico de asientos registrales entre las oficinas de registro de todas las administraciones
+- Pagar tasas por internet
+- Firmar electrónicamente documentos
+- Consultar el padrón
+E Así, un documento presentado en cualquier registro llega de inmediato a la administración destinataria, sin papel.
+R Ley 39/2015 art. 16.4
+
+Q ¿Qué norma técnica fija el formato común de los asientos para conectarse al SIR?
+= SICRES
+- PAdES
+- WCAG
+- ORVE
+E ORVE es una aplicación (Oficina de Registro Virtual) certificada en SICRES.
+R NTI de modelo de datos para el intercambio de asientos
+
+Q La capacidad de los sistemas de información de compartir datos e intercambiar información entre ellos es:
+= La interoperabilidad
+- La integridad
+- La autenticidad
+- La trazabilidad
+E El Esquema Nacional de Interoperabilidad la regula en sus dimensiones organizativa, semántica y técnica.
+R Ley 40/2015 art. 156; RD 4/2010
+
+Q El Esquema Nacional de Interoperabilidad se aprobó por:
+= El Real Decreto 4/2010
+- El Real Decreto 203/2021
+- El Real Decreto 488/1997
+- La Ley 6/2020
+E Lo desarrollan las Normas Técnicas de Interoperabilidad.
+R RD 4/2010
+
+Q La red de comunicaciones que interconecta las administraciones españolas y las instituciones europeas es:
+= La Red SARA
+- La red NISAE
+- Mi carpeta
+- El 012
+E Por ella circulan servicios comunes como el SIR o la intermediación de datos.
+R Ley 40/2015
+
+Q ¿Qué plataforma permite consultar por vía electrónica datos de la ciudadanía en poder de otras administraciones sin pedir certificados en papel?
+= La Plataforma de Intermediación de Datos
+- El Registro Electrónico General
+- La sede electrónica del interesado
+- El Punto General de Entrada de Facturas
+E Por ejemplo, identidad, residencia o estar al corriente de obligaciones tributarias.
+R Ley 39/2015 art. 28
+
+Q En Euskadi, el nodo que conecta los sistemas del Gobierno Vasco, las diputaciones y los ayuntamientos entre sí y con la Red SARA es:
+= NISAE (Nodo de Interoperabilidad y Seguridad de las Administraciones de Euskadi)
+- Izenpe
+- Zuzenean
+- B@kQ
+E Facilita la intermediación de datos entre las administraciones vascas.
+R euskadi.eus
+
+Q Según el art. 28 de la Ley 39/2015, la ciudadanía:
+= No está obligada a aportar documentos elaborados por cualquier Administración
+- Debe aportar siempre originales
+- Debe aportar todos los certificados en papel
+- Solo puede presentar fotocopias compulsadas
+E La Administración los consulta electrónicamente, salvo oposición expresa del interesado o ley que exija su consentimiento.
+R Ley 39/2015 art. 28.2

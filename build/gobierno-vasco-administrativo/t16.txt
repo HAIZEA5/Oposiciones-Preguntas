@@ -1,0 +1,143 @@
+Q A diferencia de los créditos de gastos, las previsiones del presupuesto de ingresos:
+= No son limitativas: puede recaudarse más o menos de lo previsto
+- Son un límite máximo que no puede superarse
+- Son vinculantes por capítulos
+- Solo pueden modificarse por ley
+E Lo obligatorio es liquidar y recaudar todos los derechos que correspondan.
+R Hacienda General del País Vasco
+
+Q Según el principio de no afectación, con carácter general los ingresos:
+= Financian el conjunto de los gastos, sin vincularse a un gasto concreto
+- Se destinan siempre a un gasto concreto
+- Solo pueden gastarse en inversiones
+- Se devuelven al final del ejercicio
+E Salvo los ingresos finalistas o afectados que establezca una ley.
+R Hacienda General del País Vasco
+
+Q El ingreso por la utilización privativa del dominio público o por un servicio que no es de solicitud voluntaria es:
+= Una tasa
+- Un precio público
+- Un impuesto
+- Una contribución especial
+E El precio público se paga por servicios de solicitud voluntaria que también presta el sector privado.
+R Tipos de ingresos
+
+Q El tributo que se exige por el beneficio derivado de obras o servicios públicos es:
+= La contribución especial
+- La tasa
+- El precio público
+- El impuesto
+E El impuesto se exige sin contraprestación directa, por la capacidad económica.
+R Tipos de ingresos
+
+Q En la clasificación económica de ingresos, el capítulo 3 recoge:
+= Tasas, precios públicos y otros ingresos
+- Impuestos directos
+- Transferencias corrientes
+- Ingresos patrimoniales
+E Capítulo 1, impuestos directos; 2, indirectos; 4, transferencias corrientes; 5, patrimoniales; 6, enajenación de inversiones; 7, transferencias de capital; 8 y 9, financieros.
+R Clasificación económica
+
+Q Los intereses de una cuenta bancaria de la Administración son ingresos:
+= Patrimoniales (capítulo 5)
+- Tributarios
+- De capital (capítulo 7)
+- Financieros por endeudamiento (capítulo 9)
+E También son patrimoniales las rentas de bienes y los dividendos.
+R Clasificación económica
+
+Q En la CAE, ¿quién exacciona y recauda los tributos concertados como el IRPF o el IVA?
+= Las Diputaciones Forales de los tres territorios históricos
+- El Gobierno Vasco
+- La Agencia Estatal de Administración Tributaria
+- Los ayuntamientos
+E Lo establece el Concierto Económico (Ley 12/2002).
+R Ley 12/2002
+
+Q La principal fuente de ingresos de la Administración General de la CAE es:
+= Las aportaciones de las Diputaciones Forales
+- Las tasas que cobra el Gobierno Vasco
+- El cupo que paga el Estado
+- Las multas
+E Se fijan según la Ley de Aportaciones y el reparto del Consejo Vasco de Finanzas Públicas. La CAE paga al Estado el cupo.
+R Ley de Aportaciones
+
+Q En una autoliquidación, el reconocimiento del derecho:
+= Se produce a la vez que el cobro (contraído simultáneo)
+- Se notifica antes del cobro (contraído previo)
+- No existe
+- Lo hace la Diputación Foral
+E En las liquidaciones notificadas (por ejemplo, una tasa o una sanción) hay contraído previo.
+R Ejecución del presupuesto de ingresos
+
+Q La baja de un derecho reconocido por insolvencia del deudor o por prescripción es:
+= Una cancelación del derecho
+- Un cobro
+- Una devolución de ingresos indebidos
+- Un aplazamiento
+E La anulación se produce, por ejemplo, cuando un recurso declara improcedente la liquidación.
+R Ejecución del presupuesto de ingresos
+
+Q Si no se paga una deuda en período voluntario:
+= Se inicia el período ejecutivo, con recargos, intereses de demora y, en su caso, vía de apremio
+- La deuda se extingue
+- Se concede automáticamente un aplazamiento
+- Se devuelve el importe
+E La vía de apremio puede acabar en el embargo de bienes y derechos.
+R Decreto 1/2021 (Reglamento de Recaudación)
+
+Q ¿Cuál de estos es un supuesto típico de devolución de ingresos indebidos?
+= Haber pagado dos veces la misma deuda
+- La devolución del IRPF por retenciones
+- El cobro de una subvención
+- El pago de una nómina
+E Las devoluciones derivadas de la normativa de cada tributo no proceden de un error y no son ingresos indebidos.
+R Hacienda General del País Vasco
+
+Q La cantidad ingresada indebidamente se devuelve:
+= Con intereses de demora desde la fecha del ingreso
+- Sin intereses
+- Con un recargo del 20 %
+- Solo si lo autoriza el Parlamento
+E Hasta la fecha de la propuesta de pago.
+R Hacienda General del País Vasco
+
+Q Presupuestariamente, las devoluciones de ingresos indebidos:
+= Minoran la recaudación del concepto de ingreso en que se produjo el ingreso
+- Se imputan al presupuesto de gastos
+- No se contabilizan
+- Se imputan al crédito global
+E No son un gasto del presupuesto de gastos.
+R Contabilidad de la CAE
+
+Q Los derechos reconocidos y no cobrados a 31 de diciembre:
+= Pasan a derechos pendientes de cobro de ejercicios cerrados y se siguen gestionando
+- Se anulan automáticamente
+- Se condonan
+- Se pagan con cargo al presupuesto de gastos
+E Sirven, con otros elementos, para calcular el remanente de tesorería.
+R Hacienda General del País Vasco
+
+Q El remanente de tesorería se calcula con:
+= Los derechos pendientes de cobro, las obligaciones pendientes de pago y los fondos líquidos
+- Solo los ingresos previstos
+- Solo los créditos de compromiso
+- Las retribuciones del personal
+E Los derechos de dudoso cobro se tienen en cuenta para no sobrevalorarlo.
+R Liquidación del presupuesto
+
+Q Un cobro que no se imputa al presupuesto, como una fianza, se refleja en:
+= Un documento de ingresos no presupuestarios
+- Un documento de reconocimiento de derecho presupuestario
+- Un documento ADO
+- Un documento de residuos de gastos
+E También las retenciones practicadas a terceros.
+R Contabilidad de la CAE
+
+Q ¿Qué norma aprueba el Reglamento de Recaudación de la Hacienda General del País Vasco?
+= El Decreto 1/2021, de 12 de enero
+- El Decreto Legislativo 1/2011
+- La Ley 12/2002
+- El Decreto 91/2023
+E Regula los plazos de pago en voluntaria, los recargos y el procedimiento de apremio.
+R Decreto 1/2021
