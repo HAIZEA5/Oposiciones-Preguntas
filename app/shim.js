@@ -12,8 +12,9 @@
         .api(action, JSON.stringify(payload || {}));
     });
   }
-  /* Cada página guarda sus colecciones en pestañas propias: panel_tasks, labores_patrones, tests_progreso… */
-  function tabla(col) { return (CDC.app || "panel") + "_" + col; }
+  /* Cada página guarda sus colecciones en pestañas propias: panel_tasks, labores_patrones, tests_progreso…
+     Para usar la de otra página se escribe «app:colección» (p. ej. "panel:tasks" desde Mis labores). */
+  function tabla(col) { return col.indexOf(":") > 0 ? col.replace(":", "_") : (CDC.app || "panel") + "_" + col; }
   var subs = {};
   function snapOf(rows) { return { docs: (rows || []).map(function (r) { return { id: r.id, exists: true, data: function () { return r.data; } }; }) }; }
   function refresh(col) {

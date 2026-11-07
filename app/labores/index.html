@@ -1,4 +1,13 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}img.punto.foto{width:44px;height:44px;border-radius:10px;object-fit:cover}
+.foto-btn{cursor:pointer}
+.manos-btn{border:1.5px solid var(--line);background:var(--bg);border-radius:10px;padding:8px 12px;font-weight:700;margin-bottom:8px;width:100%;color:inherit;font:inherit}
+.manos-btn[aria-pressed="true"]{border-color:var(--mostaza)}
+body.manos .contador button{width:72px;height:72px;font-size:2.2rem}
+body.manos .contador .mas{width:88px;height:88px}
+body.manos .contador .n{font-size:2.6rem}
+body.manos .dock .sig .btn{padding:20px;font-size:1.15rem}
+body.manos .dock .donde b{font-size:1.2rem}
+</style></head><body>
 <title>Mis labores</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,8 +245,16 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
     const nf=(pat.lanas||[]).filter(m=>!tengoLana(m)).length;
     return `<details class="info"${nf?" open":""}><summary>Lanas y materiales ${nf?`· te faltan ${nf}`:"· tienes todas las lanas"}</summary>
       <ul class="mats" style="margin-top:10px">${filas}${otros}</ul>
-      <div class="acciones" style="margin-top:10px"><button class="btn sec" id="copiar-compra">Copiar lista de la compra</button><span class="estado" id="compra-estado" role="status"></span></div>
+      <div class="acciones" style="margin-top:10px"><button class="btn sec" id="copiar-compra">Copiar lista de la compra</button>${nf||(pat.otros||[]).length?`<button class="btn sec" id="tarea-compra">Apuntarla en mis tareas</button>`:""}<span class="estado" id="compra-estado" role="status"></span></div>
       <p class="sub" style="font-size:.85rem">Se compara con «Mis lanas». Para que cuente, apunta ahí lo que tienes.</p></details>`;
+  }
+  /* Crea en el panel una tarea con lo que falta para esta labor */
+  async function tareaCompra(pat,est){
+    const falta=(pat.lanas||[]).filter(m=>!tengoLana(m)).map(m=>`lana ${m.color.toLowerCase()}${m.cant?` (${m.cant})`:""}`);
+    const cosas=falta.concat((pat.otros||[]).map(o=>o.charAt(0).toLowerCase()+o.slice(1)));
+    const url=window.__CDC&&window.__CDC.url?`${window.__CDC.url}?app=labores&h=${encodeURIComponent(pat.id)}`:"";
+    const ahora=Date.now(), tarea={title:`Comprar para ${pat.titulo}: ${cosas.join(", ")}`.slice(0,300),due:"",status:"pendiente",createdAt:ahora,updatedAt:ahora,link:url,linkText:url?"Mis labores":""};
+    try{await db.collection("panel:tasks").doc("compra-"+pat.id).set(tarea);est.textContent="Apuntada en tus tareas del panel."}catch(e){est.textContent="No se ha podido apuntar la tarea."}
   }
   function copiar(txt,est){
     const ok=()=>{if(est)est.textContent="Copiada. Pégala en tus notas o en WhatsApp."};
@@ -257,24 +274,30 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
       <div class="fila"><input type="text" id="l-color" placeholder="Color, p. ej. Mostaza" required maxlength="40" aria-label="Color"><input type="color" id="l-hex" value="#d9b44a" aria-label="Tono"></div>
       <div class="fila"><input type="text" id="l-tipo" placeholder="Tipo, p. ej. Algodón 4 mm" maxlength="60" aria-label="Tipo"><input type="number" id="l-ov" min="0" step="0.5" value="1" aria-label="Ovillos" style="flex:0 0 90px"><span class="sub">ovillos</span></div>
       <input type="text" id="l-nota" placeholder="Nota (marca, dónde la compraste…)" maxlength="120" aria-label="Nota">
+      ${assets?`<label class="sub">Foto del ovillo (opcional) <input type="file" id="l-foto" accept="image/*"></label>`:""}
       <div class="acciones"><button class="btn" type="submit">Guardar</button></div></form></section>`;
     if(!lanas.length)h+=`<div class="empty">Aún no has apuntado lanas. Ve añadiendo las que tienes en casa: cada labor te dirá cuáles te faltan.</div>`;
     lanas.slice().sort((a,b)=>norm(a.color).localeCompare(norm(b.color))).forEach(l=>{
-      h+=`<div class="card"><div class="lana"><span class="punto" style="background:${/^#[0-9a-f]{6}$/i.test(l.hex||"")?l.hex:"var(--crudo)"}"></span><div><span class="nm">${esc(l.color)}</span><small>${esc(l.tipo||"")}${l.nota?" · "+esc(l.nota):""}</small></div>
+      h+=`<div class="card"><div class="lana">${fotoUrl(l.foto)?`<img class="punto foto" src="${esc(fotoUrl(l.foto))}" alt="Foto de la lana ${esc(l.color)}" loading="lazy">`:`<span class="punto" style="background:${/^#[0-9a-f]{6}$/i.test(l.hex||"")?l.hex:"var(--crudo)"}"></span>`}<div><span class="nm">${esc(l.color)}</span><small>${esc(l.tipo||"")}${l.nota?" · "+esc(l.nota):""}</small></div>
         <div class="mini"><button data-lmenos="${esc(l.id)}" aria-label="Medio ovillo menos">−</button><span class="n">${l.ovillos||0}</span><button data-lmas="${esc(l.id)}" aria-label="Medio ovillo más">+</button></div></div>
-        <button class="borrar" data-lborrar="${esc(l.id)}">Borrar</button></div>`;
+        <div class="acciones" style="margin-top:8px">${assets?`<label class="borrar foto-btn">${l.foto?"Cambiar foto":"Añadir foto"}<input type="file" accept="image/*" data-lfoto="${esc(l.id)}" hidden></label>`:""}<button class="borrar" data-lborrar="${esc(l.id)}">Borrar</button></div></div>`;
     });
     return h;
   }
   function enlazarLanas(){
     const f=document.getElementById("f-lana"); if(f)f.onsubmit=async ev=>{ev.preventDefault();const c=document.getElementById("l-color").value.trim();if(!c)return;
       const d={color:c,hex:document.getElementById("l-hex").value,tipo:document.getElementById("l-tipo").value.trim(),ovillos:Math.max(0,parseFloat(document.getElementById("l-ov").value)||0),nota:document.getElementById("l-nota").value.trim(),t:Date.now()};
+      const inp=document.getElementById("l-foto"); if(inp&&inp.files&&inp.files[0])d.foto=await subirFoto(inp.files[0]);
       try{await db.collection("lanas").doc(nid(c)).set(d)}catch(e){alertar("No se ha podido guardar la lana.")}};
+    app.querySelectorAll("[data-lfoto]").forEach(inp=>inp.onchange=async()=>{const l=lanas.find(x=>x.id===inp.dataset.lfoto);if(!l||!inp.files[0])return;
+      const foto=await subirFoto(inp.files[0]); if(!foto)return; const viejo=l.foto&&l.foto.id; const {id:_,...r}=l;
+      try{await db.collection("lanas").doc(l.id).set({...r,foto,t:Date.now()}); if(viejo&&assets)assets.delete(viejo).catch(()=>{})}catch(e){alertar("No se ha podido guardar la foto.")}});
     const cambia=async(id,dv)=>{const l=lanas.find(x=>x.id===id);if(!l)return;const {id:_,...r}=l;try{await db.collection("lanas").doc(id).set({...r,ovillos:Math.max(0,(l.ovillos||0)+dv),t:Date.now()})}catch(e){}};
     app.querySelectorAll("[data-lmas]").forEach(b=>b.onclick=()=>cambia(b.dataset.lmas,.5));
     app.querySelectorAll("[data-lmenos]").forEach(b=>b.onclick=()=>cambia(b.dataset.lmenos,-.5));
     app.querySelectorAll("[data-lborrar]").forEach(b=>dosToques(b,async()=>{try{await db.collection("lanas").doc(b.dataset.lborrar).delete()}catch(e){}}));
   }
+  async function subirFoto(file){try{const r=await assets.upload(file);return {id:r.id,url:r.url}}catch(e){alertar("No se ha podido subir la foto.");return null}}
   function alertar(t){const e=document.createElement("div");e.className="empty";e.textContent=t;app.prepend(e);setTimeout(()=>e.remove(),5000)}
 
   function vistaIdeas(){
@@ -303,7 +326,7 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
       <input type="text" id="t-tit" placeholder="Qué labor es" required maxlength="80" value="${esc(pre&&pre.titulo||"")}" aria-label="Título">
       <input type="text" id="t-lanas" placeholder="Lanas usadas (colores, separados por comas)" maxlength="160" value="${esc(pre&&pre.lanas||"")}" aria-label="Lanas usadas">
       <textarea id="t-notas" placeholder="Notas: cambios, filas, para quién era…" aria-label="Notas">${esc(pre&&pre.notas||"")}</textarea>
-      ${assets?`<label class="sub">Foto <input type="file" id="t-foto" accept="image/*"></label>`:`<p class="sub" style="font-size:.85rem">Las fotos solo se pueden subir abriendo la página desde Claude.</p>`}
+      ${assets?`<label class="sub">Foto <input type="file" id="t-foto" accept="image/*"></label>`:`<p class="sub" style="font-size:.85rem">Ahora mismo no se pueden subir fotos.</p>`}
       <div class="acciones"><button class="btn" type="submit">Guardar en Terminadas</button><span class="estado" id="t-estado" role="status"></span></div></form>`;
   }
   function enlazarTerminada(patId){
@@ -396,6 +419,7 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
     pintarDock();
     document.getElementById("volver").onclick=lista;
     const cc=document.getElementById("copiar-compra"); if(cc)cc.onclick=()=>copiar(textoCompra(pat),document.getElementById("compra-estado"));
+    const tc=document.getElementById("tarea-compra"); if(tc)tc.onclick=()=>tareaCompra(pat,document.getElementById("compra-estado"));
     enlazarTerminada(pat.id);
     const tg=document.getElementById("toggle-ocultar"); if(tg)tg.onclick=()=>{ocultar=!ocultar;try{localStorage.setItem("labores-ocultar",ocultar?"si":"no")}catch(e){};const y=window.scrollY;pintar(false);window.scrollTo(0,y)};
     const ir=document.getElementById("ir"); if(ir)ir.onclick=()=>irActual(true);
@@ -436,22 +460,37 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
     dock.hidden=false;
     dock.innerHTML=`<div class="in"><div class="donde"><b>${esc(sec.titulo)}</b><span>${con?`${esc(con)} en este paso`:"Paso sin contador"}</span></div>
       ${con?`<div class="contador"><button id="menos" aria-label="Restar una">−</button><span class="n" id="cn" aria-live="polite">${n}</span><button class="mas" id="mas" aria-label="Sumar una">+</button></div>`:"<span></span>"}
-      <div class="sig"><button class="btn" id="hecha">${vSig?`Hecha la vuelta ${esc((R.pref||"")+vSig)}`:"Hecho, siguiente instrucción"}</button></div></div>`;
+      <div class="sig"><button type="button" class="manos-btn" id="manos" aria-pressed="${manos}">${manos?"Salir de manos ocupadas":"Manos ocupadas"}</button><button class="btn" id="hecha">${vSig?`Hecha la vuelta ${esc((R.pref||"")+vSig)}`:"Hecho, siguiente instrucción"}</button></div></div>`;
     if(con){
       const set=v=>{p.cont[sec.id]=Math.max(0,v);document.getElementById("cn").textContent=p.cont[sec.id];guardar(pat.id)};
       document.getElementById("mas").onclick=()=>set((p.cont[sec.id]||0)+1);
       document.getElementById("menos").onclick=()=>set((p.cont[sec.id]||0)-1);
     }
+    document.getElementById("manos").onclick=()=>modoManos(!manos);
     document.getElementById("hecha").onclick=()=>{
       if(vSig){p.done[vk(sig,vSig)]=true; if(R.lista.every(x=>p.done[vk(sig,x)])){p.done[sig.id]=true;R.lista.forEach(x=>delete p.done[vk(sig,x)])}
         guardar(pat.id); const y=window.scrollY; pintar(false); if(p.done[sig.id])irActual(true); else window.scrollTo(0,y); return}
       p.done[sig.id]=true;guardar(pat.id);pintar(false);irActual(true)};
   }
 
+  /* ---------- Manos ocupadas: botones grandes y pantalla siempre encendida mientras tejes ---------- */
+  let manos=false, cerrojo=null;
+  try{manos=localStorage.getItem("labores-manos")==="1"}catch(e){}
+  async function pantallaEncendida(si){
+    try{ if(si&&!cerrojo&&navigator.wakeLock)cerrojo=await navigator.wakeLock.request("screen"); if(!si&&cerrojo){await cerrojo.release();cerrojo=null} }catch(e){cerrojo=null}
+  }
+  function modoManos(si){
+    manos=si; document.body.classList.toggle("manos",si);
+    try{localStorage.setItem("labores-manos",si?"1":"0")}catch(e){}
+    pantallaEncendida(si); if(actual)pintarDock();
+  }
+  document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&manos){cerrojo=null;pantallaEncendida(true)}});
+  document.body.classList.toggle("manos",manos); if(manos)pantallaEncendida(true);
+
   /* ---------- Datos ---------- */
   async function iniciar(){
     try{db=window.claude&&window.claude.use?await window.claude.use("db"):null}catch(e){db=null}
-    if(!db){app.innerHTML=`<div class="empty">Abre esta página desde Claude, con tu sesión iniciada, para ver tus labores.</div>`;return}
+    if(!db){app.innerHTML=`<div class="empty">No se ha podido conectar con tus labores. Recarga la página.</div>`;return}
     try{
       const ps=await db.collection("progreso").get();
       ps.docs.filter(d=>d.exists).forEach(d=>{const v=d.data()||{};try{const r=JSON.parse(v.json);const l=prog[d.id];if(!l||(v.t||0)>(l.t||0))prog[d.id]=r}catch(e){}});

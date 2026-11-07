@@ -272,6 +272,58 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
 .pres .bar i.medio{background:var(--warn)} .pres .bar i.pasado{background:var(--late)}
 .din .ok{color:var(--pine);font-weight:600} .din .mal{color:var(--late);font-weight:600}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Secciones Coche, Práctico, Perro, Canal y vacaciones (modulos.js) */
+.mod{display:grid;gap:14px}
+.mod-cuerpo{display:grid;gap:12px}
+.mod .card,.mod-cuerpo .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;display:grid;gap:10px;align-content:start}
+.mod h3,.mod-cuerpo h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-family:var(--f-body);font-weight:600}
+.mod .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.mod select,.mod textarea,.mod input[type=number],.mod input[type=time],.mod-form select,.mod-form input[type=number]{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 10px;min-width:0;width:100%}
+.mod textarea{resize:vertical}
+.mod label{display:grid;gap:4px;font-size:.85rem;color:var(--muted);font-weight:600}
+.mod-form{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center}
+@media (max-width:520px){.mod-form{grid-template-columns:1fr 1fr}.mod-form input[type=text]{grid-column:1/-1}}
+.campos2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.recs,.checks,.filas,.clases,.canal,.info{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.rec{display:grid;grid-template-columns:1fr auto;gap:6px 10px;padding:10px;border:1px solid var(--line);border-left:4px solid var(--line);border-radius:10px}
+.rec.soon{border-left-color:var(--warn)} .rec.late{border-left-color:var(--late)}
+.rec-t{display:grid} .rec-t small{color:var(--muted);font-size:.8rem}
+.rec-f{display:grid;justify-items:end;font-size:.8rem}
+.rec.soon .rec-f span{color:var(--warn)} .rec.late .rec-f span{color:var(--late)}
+.rec-f input{padding:6px 8px;font-size:.85rem;width:auto}
+.rec-a{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap}
+.checks label{display:flex;gap:10px;align-items:flex-start;color:var(--ink);font-weight:400;font-size:.92rem}
+.checks input{width:20px;height:20px;flex:none;accent-color:var(--pine)}
+.filas li{display:grid;grid-template-columns:auto 1fr auto auto;gap:10px;align-items:center;font-size:.9rem}
+.filas li span:first-child{color:var(--muted);font-variant-numeric:tabular-nums}
+.cifras{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px}
+.cifras div{display:grid;background:var(--bg);border-radius:10px;padding:8px 10px}
+.cifras b{font-family:var(--f-display);font-size:1.3rem;font-variant-numeric:tabular-nums}
+.cifras span{color:var(--muted);font-size:.78rem}
+.clase-form{display:grid;gap:10px}
+.mod fieldset{border:0;padding:0;margin:0;display:grid;gap:6px}
+.mod legend{font-size:.85rem;color:var(--muted);font-weight:600;padding:0;margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip-c{display:inline-flex!important;font-weight:400!important}
+.chip-c input{position:absolute;opacity:0;pointer-events:none}
+.chip-c span{border:1px solid var(--line);border-radius:999px;padding:6px 11px;font-size:.85rem;color:var(--ink);background:var(--bg);cursor:pointer}
+.chip-c input:checked+span{background:var(--pine);border-color:var(--pine);color:var(--surface)}
+.chip-c input:focus-visible+span{outline:2px solid var(--pine);outline-offset:1px}
+.niveles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.nivel{display:grid;gap:2px;text-align:left;border:1px solid var(--line);border-radius:10px;padding:9px 10px;cursor:pointer;background:var(--bg)}
+.nivel small{font-size:.75rem;font-weight:600}
+.nivel.n0 small{color:var(--muted)} .nivel.n1 small{color:var(--late)} .nivel.n2 small{color:var(--warn)} .nivel.n3{border-color:var(--pine)} .nivel.n3 small{color:var(--pine)}
+.clases li{display:grid;gap:3px;padding:10px;border:1px solid var(--line);border-radius:10px}
+.clases small{color:var(--muted)} .clases p{margin:0;font-size:.9rem} .clases .mini{justify-self:start}
+.canal li{display:grid;gap:6px;padding:10px;border:1px solid var(--line);border-radius:10px}
+.canal small{color:var(--muted);font-size:.78rem} .canal .mini{justify-self:start}
+.info li{font-size:.9rem}
+details.card summary{cursor:pointer;list-style:none} details.card summary::-webkit-details-marker{display:none}
+.chip-v{border:1px solid var(--pine);background:var(--pine-soft);color:var(--pine);border-radius:999px;padding:4px 10px;font-size:.82rem;cursor:pointer}
+.chip-v.pasado{opacity:.55}
+#mod-vacaciones{display:grid;gap:10px}
+.hoy .avisos{grid-column:1/-1;border-color:var(--warn)}
 </style>
 
 <div class="wrap">
@@ -655,7 +707,7 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
     e.preventDefault();
     const raw = $("#quick-txt").value.trim(); if (!raw){ $("#quick-txt").focus(); return; }
     const ok = $("#quick-ok");
-    if (!col){ ok.textContent = "Abre el panel desde Claude para poder guardar."; return; }
+    if (!col){ ok.textContent = "Sin conexión: no se puede guardar. Recarga la página."; return; }
     const {title, due} = leerFecha(raw);
     const t0 = title.charAt(0).toUpperCase()+title.slice(1);
     const ref = col.doc();
@@ -673,7 +725,7 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
   async function start(){
     const db = window.claude && window.claude.use ? await window.claude.use("db") : null;
     if (!db){
-      $("#list").innerHTML = `<li class="empty">Las tareas se guardan en tu cuenta. Abre este panel desde Claude con tu sesión iniciada para verlas.</li>`;
+      $("#list").innerHTML = `<li class="empty">No se ha podido conectar con tus tareas. Recarga la página.</li>`;
       $("#summary").innerHTML = `<span class="chip done"><span class="dot"></span>Tareas no disponibles aquí</span>`;
       $("#add-btn").disabled = true; return;
     }
@@ -687,9 +739,10 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
   Promise.resolve().then(start);
 
   /* ---------- Pestañas ---------- */
-  const TABS = ["hoy","opos","tareas","dinero","cal","accesos"];
+  /* Una pestaña existe si hay una sección con su data-tab (modulos.js añade las suyas). */
+  const esPestana = id => !!id && /^[a-z]+$/.test(id) && !!document.querySelector(`section[data-tab="${id}"]`);
   function irA(id, push){
-    if (!TABS.includes(id)) id = "hoy";
+    if (!esPestana(id)) id = "hoy";
     document.querySelectorAll("[data-tab]").forEach(s => s.hidden = s.dataset.tab !== id);
     document.querySelectorAll(".tabs [data-go]").forEach(b => b.setAttribute("aria-selected", String(b.dataset.go===id)));
     try{ localStorage.setItem("panel-tab", id); }catch(e){}
@@ -703,7 +756,7 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
   });
   document.getElementById("summary").addEventListener("click", ()=>irA("tareas"));
   window.addEventListener("hashchange", ()=>irA(location.hash.slice(1), false));
-  { let t0 = location.hash.slice(1); if (!TABS.includes(t0)) { try{ t0 = localStorage.getItem("panel-tab")||"hoy"; }catch(e){ t0 = "hoy"; } } irA(t0, false); }
+  { let t0 = location.hash.slice(1); if (!esPestana(t0)) { try{ t0 = localStorage.getItem("panel-tab")||"hoy"; }catch(e){ t0 = "hoy"; } } irA(t0, false); }
   document.getElementById("acc-q").addEventListener("input", e=>{
     const q = e.target.value.trim().toLowerCase();
     document.querySelectorAll('[data-tab="accesos"] .group').forEach(g=>{
@@ -856,7 +909,7 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
     if (!title){ errBox.textContent="Ponle un título al evento."; errBox.hidden=false; return; }
     if (!date){ errBox.textContent="Elige la fecha."; errBox.hidden=false; return; }
     if (!allDay && (!st || !en || en <= st)){ errBox.textContent="La hora de fin tiene que ser después de la de inicio."; errBox.hidden=false; return; }
-    if (!mcp){ errBox.textContent="Google Calendar no está disponible aquí. Abre el panel desde Claude."; errBox.hidden=false; return; }
+    if (!mcp){ errBox.textContent="Google Calendar no responde ahora mismo. Recarga la página."; errBox.hidden=false; return; }
     const input = allDay
       ? {summary:title, allDay:true, startTime:date+"T00:00:00", endTime:addDays(date,1)+"T00:00:00"}
       : {summary:title, startTime:date+"T"+st+":00", endTime:date+"T"+en+":00"};
@@ -882,7 +935,7 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
   async function startCal(){
     renderCal();
     mcp = window.claude && window.claude.use ? await window.claude.use("mcp") : null;
-    if (!mcp){ setStatus("Abre el panel desde Claude con tu sesión iniciada para ver tu Google Calendar.", "err"); $("#open-ev").disabled = true; calError = "Abre el panel desde Claude para ver tu calendario."; renderHoy(); return; }
+    if (!mcp){ setStatus("No se ha podido conectar con tu Google Calendar. Recarga la página.", "err"); $("#open-ev").disabled = true; calError = "Sin conexión: no se puede ver tu calendario. Recarga la página."; renderHoy(); return; }
     loadEvents(false);
   }
   Promise.resolve().then(startCal);
@@ -927,7 +980,7 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
   async function loadFondo(){
     const box = $("#fondo-live");
     const m = mcp || (window.claude && window.claude.use ? await window.claude.use("mcp") : null);
-    if (!m){ box.textContent = "Abre el panel desde Claude para ver el saldo."; return; }
+    if (!m){ box.textContent = "Sin conexión: no se puede ver el saldo. Recarga la página."; return; }
     try{
       const res = await m.callTool("Google Drive", "read_file_content", {fileId: FONDO_ID}, {cache:{staleTime:600000, gcTime:3600000}});
       const p = res.payload;
@@ -969,7 +1022,7 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
   }
   async function loadDinero(){
     const m = mcp || (window.claude && window.claude.use ? await window.claude.use("mcp") : null);
-    if (!m){ dineroErr = "Abre el panel desde Claude para ver tus finanzas."; renderDinero(); return; }
+    if (!m){ dineroErr = "Sin conexión: no se puede ver tus finanzas. Recarga la página."; renderDinero(); return; }
     try{
       const [pat, pre, cua] = await Promise.all([leerRango(m,"PATRIMONIO!A1:P45"), leerRango(m,"PRESUPUESTO!A1:I31"), leerRango(m,"CUADRE!A1:F12")]);
       const head = pat.find(r => r && r[0]==="CUENTA") || [], iHoy = head.lastIndexOf("HOY"), iMes = iHoy-2;
@@ -1054,7 +1107,7 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
   }
   function renderExams(){
     const list = $("#exam-list"), rowsEl = $("#opo-rows");
-    if (!examCol){ list.innerHTML = `<div class="empty">Abre el panel desde Claude para ver tus oposiciones.</div>`; rowsEl.innerHTML=""; renderHoy(); return; }
+    if (!examCol){ list.innerHTML = `<div class="empty">Sin conexión: no se puede ver tus oposiciones. Recarga la página.</div>`; rowsEl.innerHTML=""; renderHoy(); return; }
     const upcoming = exams.filter(proximo).sort((a,b)=>a.examen.localeCompare(b.examen));
     const pending = exams.filter(e=>!e.examen && e.nota);
     const segunda = exams.filter(e=>!cerrada(e) && (e.ficha||{}).siguiente_parte && (e.ficha||{}).res_estado && e.ficha.res_estado!=="suspendido" && !proximo(e));
@@ -1237,12 +1290,12 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
       const rows = hoyT.map(t=>{const d=dayDiff(t.due);return `<li><span class="w ${d<0?"late":"soon"}">${d<0?"Vencida":d===0?"Hoy":"Mañana"}</span><span>${esc(t.title)}</span></li>`})
         .concat(curso.slice(0,4).map(t=>`<li><span class="w">En curso</span><span>${esc(t.title)}</span></li>`));
       tk.className = rows.length ? "" : "vacio";
-      tk.innerHTML = !col ? "Abre el panel desde Claude para ver tus tareas." : rows.length ? `<ul>${rows.join("")}</ul>` : `Nada que venza hoy ni mañana. Tienes ${act.length} tarea${act.length===1?"":"s"} sin fecha o para más adelante.`;
+      tk.innerHTML = !col ? "Sin conexión con tus tareas. Recarga la página." : rows.length ? `<ul>${rows.join("")}</ul>` : `Nada que venza hoy ni mañana. Tienes ${act.length} tarea${act.length===1?"":"s"} sin fecha o para más adelante.`;
     }
     // Próximo examen
     if (examsLoaded || !examCol){
       const up = exams.filter(proximo).sort((a,b)=>a.examen.localeCompare(b.examen));
-      if (!examCol){ ex.className="vacio"; ex.textContent="Abre el panel desde Claude para ver tus oposiciones."; }
+      if (!examCol){ ex.className="vacio"; ex.textContent="Sin conexión con tus oposiciones. Recarga la página."; }
       else if (!up.length){ ex.className="vacio"; ex.textContent="Ningún examen con fecha."; }
       else {
         const d0 = up[0].examen, mismos = up.filter(e=>e.examen===d0), d = dayDiff(d0);
@@ -1256,11 +1309,6 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
           ${sig?`<div style="color:var(--muted);font-size:.82rem">Después: ${esc(opoName(sig))}, ${fmtShort(sig.examen)} (${dayDiff(sig.examen)} días)</div>`:""}`;
         if (d<=7) ex.innerHTML += mismos.map(prepExamen).join("");
       }
-      if (examCol){
-        const plz = exams.filter(e=>e.ficha&&e.ficha.impugnar_hasta&&dayDiff(e.ficha.impugnar_hasta)>=0).sort((a,b)=>a.ficha.impugnar_hasta.localeCompare(b.ficha.impugnar_hasta));
-        ex.innerHTML += plz.map(e=>{const d=dayDiff(e.ficha.impugnar_hasta);return `<div class="plazo-hoy${d<=2?" urge":""}">${esc(e.ficha.impugnar_txt||"Impugnar preguntas")} · ${esc(opoName(e))}: hasta el ${fmtShort(e.ficha.impugnar_hasta)} (${d===0?"hoy":d===1?"mañana":"faltan "+d+" días"})</div>`}).join("");
-        if (plz.length) ex.className = "";
-      }
     }
   }
   renderHoy();
@@ -1268,3 +1316,4 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
   loadDinero();
 })();
 </script>
+<script src="modulos.js"></script>

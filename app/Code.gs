@@ -248,11 +248,12 @@ function carpetaPrincipal_() {
   var padres = DriveApp.getFileById(SpreadsheetApp.getActive().getId()).getParents();
   return padres.hasNext() ? padres.next() : DriveApp.getRootFolder();
 }
-function carpeta_() {
+function subcarpeta_(nombre) {
   var raiz = carpetaPrincipal_();
-  var it = raiz.getFoldersByName(SUBCARPETA_ARCHIVOS);
-  return it.hasNext() ? it.next() : raiz.createFolder(SUBCARPETA_ARCHIVOS);
+  var it = raiz.getFoldersByName(nombre);
+  return it.hasNext() ? it.next() : raiz.createFolder(nombre);
 }
+function carpeta_() { return subcarpeta_(SUBCARPETA_ARCHIVOS); }
 function subirFoto_(b64, mime, nombre) {
   var blob = Utilities.newBlob(Utilities.base64Decode(b64), mime || 'image/jpeg', nombre || 'foto.jpg');
   var f = carpeta_().createFile(blob);
@@ -261,11 +262,76 @@ function subirFoto_(b64, mime, nombre) {
 }
 function borrarFoto_(id) { try { DriveApp.getFileById(id).setTrashed(true); } catch (e) {} return true; }
 
+/* ---------- Tareas automáticas (las programa instalar) ---------- */
+var HORA_VISPERA = 20;          // el aviso de la víspera de un examen sale a las 20:00
+var COPIAS_QUE_GUARDAR = 8;     // copias semanales de la hoja (dos meses)
+var CERRADA = /^\s*(cerrad|no me presento)/i;
+
+/** Cada mañana: pone en tu calendario la víspera de cada examen, el último día de cada plazo y las fechas de coche, perro y práctico. */
+function avisosCalendario() {
+  var props = PropertiesService.getScriptProperties();
+  var cal = CalendarApp.getDefaultCalendar();
+  var hoy = ymd_(new Date());
+  avisosPendientes_().forEach(function (a) {
+    var clave = 'aviso|' + a.clave, previo = (props.getProperty(clave) || '').split('|');
+    if (previo[0] === a.fecha) return;
+    if (previo[1]) { try { cal.getEventById(previo[1]).deleteEvent(); } catch (e) {} }
+    if (a.fecha < hoy) { props.deleteProperty(clave); return; }
+    var ev = a.vispera ? eventoVispera_(cal, a) : cal.createAllDayEvent(a.titulo, fecha_(a.fecha), { description: a.detalle || '' });
+    if (!ev) return;
+    if (!a.vispera) ev.addPopupReminder(15 * 60);   // a las 9:00 del día anterior
+    props.setProperty(clave, a.fecha + '|' + ev.getId());
+  });
+}
+function eventoVispera_(cal, a) {
+  var ini = fecha_(a.fecha); ini.setDate(ini.getDate() - 1); ini.setHours(HORA_VISPERA, 0, 0, 0);
+  if (ini < new Date()) return null;
+  var ev = cal.createEvent(a.titulo, ini, new Date(ini.getTime() + 15 * 60000), { description: a.detalle || '' });
+  ev.addPopupReminder(0);
+  return ev;
+}
+function avisosPendientes_() {
+  var out = [];
+  listar_('panel_examenes').forEach(function (r) {
+    var e = r.data, f = e.ficha || {}, nombre = (e.organismo || '') + ' · ' + (e.puesto || '');
+    if (CERRADA.test(e.estado || '')) return;
+    if (e.examen) out.push({ clave: 'examen|' + r.id, fecha: e.examen, vispera: true, titulo: 'Mañana: examen ' + nombre,
+      detalle: [e.nota, f.llevar ? 'Llevar: ' + f.llevar : 'Llevar: DNI original y bolígrafo azul o negro.'].filter(Boolean).join('\n') });
+    if (f.impugnar_hasta) out.push({ clave: 'plazo|' + r.id, fecha: f.impugnar_hasta, titulo: 'Último día: ' + (f.impugnar_txt || 'reclamar') + ' · ' + nombre });
+  });
+  listar_('panel_recordatorios').forEach(function (r) {
+    var x = r.data;
+    if (x.proxima) out.push({ clave: 'rec|' + r.id, fecha: x.proxima, titulo: (x.grupo === 'perro' ? 'Perro: ' : 'Coche: ') + x.titulo, detalle: x.nota || '' });
+  });
+  var practico = obtener_('panel_ajustes', 'practico') || {};
+  if (practico.examen) out.push({ clave: 'practico', fecha: practico.examen, vispera: true, titulo: 'Mañana: examen práctico del carnet',
+    detalle: (practico.hora ? 'A las ' + practico.hora + '. ' : '') + 'Duerme bien y lleva el DNI.' });
+  return out;
+}
+
+/** Cada domingo: guarda una copia de la hoja en «copias» y deja solo las últimas. */
+function copiaSemanal() {
+  var carpeta = subcarpeta_('copias');
+  DriveApp.getFileById(SpreadsheetApp.getActive().getId()).makeCopy('Copia ' + ymd_(new Date()), carpeta);
+  var copias = [], it = carpeta.getFiles();
+  while (it.hasNext()) copias.push(it.next());
+  copias.sort(function (a, b) { return b.getDateCreated() - a.getDateCreated(); });
+  copias.slice(COPIAS_QUE_GUARDAR).forEach(function (f) { f.setTrashed(true); });
+}
+
+function programarTareas_() {
+  ScriptApp.getProjectTriggers().forEach(function (t) {
+    if (['avisosCalendario', 'copiaSemanal'].indexOf(t.getHandlerFunction()) >= 0) ScriptApp.deleteTrigger(t);
+  });
+  ScriptApp.newTrigger('avisosCalendario').timeBased().everyDays(1).atHour(7).create();
+  ScriptApp.newTrigger('copiaSemanal').timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(3).create();
+}
+
 /* ---------- Instalación (se ejecuta una vez desde el editor) ---------- */
 var PREFIJO_IMPORTAR = 'centro-de-control-importar';
 
 /**
- * Pide los permisos, pasa a la hoja los datos que vienen de las páginas antiguas de Claude
+ * Pide los permisos, programa los avisos y la copia semanal, pasa a la hoja los datos que vienen de las páginas antiguas de Claude
  * (archivos «centro-de-control-importar-*.json» de la carpeta «Centro de Control») y los manda a la papelera.
  * Cada archivo es { "col": "app_coleccion", "docs": [ { "id": …, "data": { … } } ] }.
  * Un campo «json» que venga como objeto se guarda como texto, que es como lo leen las páginas.
@@ -287,6 +353,8 @@ function instalar() {
       Logger.log('ERROR en ' + f.getName() + ': ' + e.message + ' (el archivo se queda en Drive)');
     }
   }
+  programarTareas_();
+  avisosCalendario();
   probar();
 }
 

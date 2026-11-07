@@ -1,4 +1,9 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.plan{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.plan li{display:grid;grid-template-columns:62px 1fr;gap:4px 10px;font-size:.92rem;color:var(--soft)}
+.plan li span:first-child{font-weight:700;color:var(--brass)}
+.plan li span:nth-child(3){grid-column:2;display:flex;flex-wrap:wrap;gap:6px}
+.plan li.hoy{color:var(--ink,inherit)}
+</style></head><body>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -267,6 +272,67 @@ function fichaHoy(){
   ${T.os.map(textoFlojos).join("")}
   <div class="acciones"><button class="btn" id="hoy" ${T.items.length?"":"disabled"}>Empezar la tanda de hoy</button>${hayFlojos?`<button class="btn sec" id="foco">Solo mis puntos flojos</button>`:""}</div></section>`;
 }
+
+/* ---------- Racha, nivel, logros y plan hasta el examen ---------- */
+/* datos._dias guarda cuántas preguntas respondiste cada día (los últimos 120) */
+function apuntarDia(){const h=hoyISO();datos._dias[h]=(datos._dias[h]||0)+1;const ks=Object.keys(datos._dias).sort();while(ks.length>120)delete datos._dias[ks.shift()]}
+const diaAntes=(iso,n)=>{const [y,m,d]=iso.split("-").map(Number),f=new Date(y,m-1,d-n);return f.getFullYear()+"-"+String(f.getMonth()+1).padStart(2,"0")+"-"+String(f.getDate()).padStart(2,"0")};
+/* Días seguidos practicando. Si hoy aún no has hecho nada, cuenta hasta ayer: la racha no se pierde hasta mañana. */
+function racha(){let n=0,dia=hoyISO();if(!datos._dias[dia])dia=diaAntes(dia,1);while(datos._dias[dia]){n++;dia=diaAntes(dia,1)}return n}
+function mejorRacha(){const ks=Object.keys(datos._dias).sort();let mejor=0,act=0,prev=null;ks.forEach(k=>{act=prev&&diaAntes(k,1)===prev?act+1:1;mejor=Math.max(mejor,act);prev=k});return mejor}
+/* Nivel: parte de las preguntas de la oposición que ya dominas (las que han llegado a la caja 3 del repaso) */
+function nivel(o){const ks=new Set();o.temas.forEach(t=>t.preguntas.forEach(p=>ks.add(p.k)));let dom=0,vistas=0;ks.forEach(k=>{if(datos._q[k]!==undefined)vistas++;if(datos._sr[k]&&datos._sr[k].b>=3)dom++});return {total:ks.size,dom,vistas,pct:ks.size?dom/ks.size:0}}
+const NIVELES_OPO=[[0,"Empezando"],[.15,"Cogiendo ritmo"],[.35,"Bien encaminada"],[.6,"Muy preparada"],[.85,"Lista para el examen"]];
+const nombreNivel=pct=>NIVELES_OPO.filter(([m])=>pct>=m).pop()[1];
+function logros(){
+  const respondidas=Object.keys(datos._q).length, dominadas=Object.values(datos._sr).filter(r=>r.b>=3).length, mr=mejorRacha(), sims=datos._sims||[];
+  const temaDominado=OPOSICIONES.flatMap(o=>o.temas.map(t=>({o,t,s:stats(t.preguntas)}))).find(x=>x.s.v>=15&&x.s.pct>=.9);
+  return [
+    {ok:respondidas>=100,t:"100 preguntas respondidas",p:`${Math.min(respondidas,100)}/100`},
+    {ok:respondidas>=500,t:"500 preguntas respondidas",p:`${Math.min(respondidas,500)}/500`},
+    {ok:dominadas>=100,t:"100 preguntas dominadas",p:`${Math.min(dominadas,100)}/100`},
+    {ok:mr>=7,t:"Una semana seguida",p:`${Math.min(mr,7)}/7 días`},
+    {ok:mr>=30,t:"Un mes seguido",p:`${Math.min(mr,30)}/30 días`},
+    {ok:sims.length>0,t:"Primer simulacro hecho",p:""},
+    {ok:sims.some(x=>x.nota>=5),t:"Simulacro aprobado",p:""},
+    {ok:!!temaDominado,t:temaDominado?`Tema dominado: ${nombreTema(temaDominado.t)}`:"Un tema dominado (90 % de 15 o más)",p:""}
+  ];
+}
+function fichaProgreso(){
+  const r=racha(), hoyN=datos._dias[hoyISO()]||0, L=logros(), hechos=L.filter(x=>x.ok), sig=L.find(x=>!x.ok);
+  const opos=OPOSICIONES.filter(o=>o.temas.some(t=>t.preguntas.length)&&EXAMENES.some(e=>e.id===o.id&&e.fecha>=hoyISO()));
+  return `<section class="ficha"><span class="sig">Tu progreso</span><h2>${r?`${pl(r,"día seguido","días seguidos")} practicando`:"Empieza hoy tu racha"}</h2>
+  <p>${hoyN?`Hoy llevas ${pl(hoyN,"pregunta","preguntas")}.`:r?"Hoy todavía no has practicado: responde al menos una pregunta para no perder la racha.":"Responde una pregunta y empieza a contar."} Tu mejor racha: ${pl(mejorRacha(),"día","días")}.</p>
+  ${opos.map(o=>{const n=nivel(o);return `<div class="evo-f"><span>${esc(corto(o))}</span><div class="progreso" style="margin:0"><i style="width:${Math.round(n.pct*100)}%"></i></div><b>${Math.round(n.pct*100)} %</b><small>${nombreNivel(n.pct)} · ${n.dom} de ${n.total} dominadas</small></div>`}).join("")}
+  <p style="margin-top:10px"><b>Logros:</b> ${hechos.length?hechos.map(x=>esc(x.t)).join(" · "):"todavía ninguno"}.${sig?` Siguiente: ${esc(sig.t)}${sig.p?` (${sig.p})`:""}.`:""}</p></section>`;
+}
+/* Plan día a día hasta el examen más cercano: primero los puntos flojos, luego el resto de temas de peor a mejor */
+function planExamen(){
+  const ex=proximoExamen(); if(!ex)return null;
+  const o=OPOSICIONES.find(x=>x.id===ex.id), d=diasHasta(ex.fecha); if(!o||d<1||d>45)return null;
+  const fl=flojosC(o).map(x=>x.t), resto=o.temas.filter(t=>t.preguntas.length&&!fl.includes(t)).map(t=>({t,s:stats(t.preguntas)})).sort((a,b)=>(a.s.v?a.s.pct:.5)-(b.s.v?b.s.pct:.5)).map(x=>x.t);
+  const orden=fl.concat(resto); if(!orden.length)return null;
+  const dias=[];
+  for(let i=0;i<Math.min(d,7);i++){
+    const falta=d-i, fecha=diaAntes(hoyISO(),-i);
+    if(falta===1)dias.push({fecha,txt:"Víspera: repaso suave de tus falladas, nada nuevo, y a dormir pronto",temas:[]});
+    else if(falta===2||(i>0&&i%6===0))dias.push({fecha,txt:"Simulacro completo con el sistema de puntuación real",temas:[],sim:true});
+    else {const ts=[orden[(2*i)%orden.length],orden[(2*i+1)%orden.length]].filter((t,j,a)=>a.indexOf(t)===j);dias.push({fecha,txt:ts.map(nombreTema).join(" y "),temas:ts})}
+  }
+  return {ex,o,d,dias};
+}
+function fichaPlan(){
+  const P=planExamen(); if(!P)return "";
+  const dia=f=>{const [y,m,dd]=f.split("-").map(Number);return new Date(y,m-1,dd).toLocaleDateString("es-ES",{weekday:"short",day:"numeric"})};
+  return `<section class="ficha"><span class="sig">Modo examen</span><h2>Plan hasta ${esc(corto(P.o))} (${pl(P.d,"día","días")})</h2>
+  <p>Además de la tanda de hoy, un tema o dos al día, empezando por los más flojos. Se recalcula solo según cómo te vaya.</p>
+  <ul class="plan">${P.dias.map((x,i)=>`<li class="${i===0?"hoy":""}"><span>${i===0?"Hoy":esc(dia(x.fecha))}</span><span>${esc(x.txt)}</span>${i===0&&x.temas.length?`<span>${x.temas.map(t=>`<button class="chip" data-plan="${esc(t.id)}">Practicar ${esc(t.sig||(t.titulo||"").split(".")[0]||"tema")}</button>`).join(" ")}</span>`:i===0&&x.sim?`<span><button class="chip" data-plan-sim>Hacer el simulacro</button></span>`:""}</li>`).join("")}</ul></section>`;
+}
+function enlazarPlan(){
+  const P=planExamen(); if(!P)return;
+  app.querySelectorAll("[data-plan]").forEach(b=>b.onclick=()=>{opo=P.o;empezarTema(b.dataset.plan,"todo")});
+  const s=app.querySelector("[data-plan-sim]"); if(s)s.onclick=()=>{opo=P.o;configSimulacro()};
+}
 function enlazarHoy(volver){
   const b=document.getElementById("hoy"); if(!b)return;
   app.querySelectorAll("[data-meta]").forEach(c=>c.onclick=()=>{datos._cfg.hoy={n:+c.dataset.meta};guardar(datos);volver()});
@@ -345,7 +411,8 @@ let datos=cargar();
 datos._q=datos._q||{};      /* k → 1 acertada la última vez, 0 fallada */
 datos._cfg=datos._cfg||{};  /* ajustes recordados de popurrí y simulacro */
 datos._sr=datos._sr||{};    /* repaso espaciado: k → {b: caja 0-5, d: día en que toca (AAAA-MM-DD)} */
-datos._dia=datos._dia||{};  /* preguntas respondidas por día: AAAA-MM-DD → n */
+datos._dia=datos._dia||{};  /* preguntas respondidas hoy: AAAA-MM-DD → n */
+datos._dias=datos._dias||Object.assign({},datos._dia);/* historial por día para la racha */
 datos._sims=datos._sims||[];/* historial de simulacros */
 datos._hist=datos._hist||{};
 datos._conf=datos._conf||{};/* seguridad del último acierto: k → 2 lo sabía, 1 dudé, 0 adiviné */
@@ -374,7 +441,7 @@ function registrar(p,ok){
   const prev=datos._sr[p.k], visto=datos._q[p.k]!==undefined;
   let b=ok?(prev?Math.min(5,prev.b+1):(visto?2:2)):0;
   datos._sr[p.k]={b,d:masDias(ok?INTERVALO[b]:1)};
-  const h=hoyISO();datos._dia={[h]:(datos._dia[h]||0)+1};
+  const h=hoyISO();datos._dia={[h]:(datos._dia[h]||0)+1};apuntarDia();
   datos._q[p.k]=ok?1:0;
   apuntarHist(p,ok);
   (DONDE.get(p.k)||[]).forEach(d=>{
@@ -439,6 +506,8 @@ function portada(){
   const comun=poolComun();
   let h='<h1>Tests de oposiciones</h1><p class="lead">Elige la oposición o haz un popurrí de la materia común.</p>'+(syncDoc?'<p class="sync">Tu progreso se guarda en tu cuenta y se ve igual en todos tus dispositivos.</p>':'');
   h+=fichaHoy();
+  h+=fichaPlan();
+  h+=fichaProgreso();
   h+=`<section class="ficha destaca"><span class="sig">Mezcla</span><h2>Popurrí común</h2>
   <p>Preguntas de la materia que comparten tus oposiciones: Constitución, Estatuto, procedimiento, empleo público, régimen local… Sirve para todas a la vez.</p>
   <p>${resumenPool(comun)}.</p>
@@ -452,6 +521,7 @@ function portada(){
   app.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>temas(b.dataset.o));
   document.getElementById("pcom").onclick=()=>configPopurri(null);
   enlazarHoy(portada);
+  enlazarPlan();
   arriba();
 }
 const volverTemas=()=>opo?temas(opo.id,OPOSICIONES.length===1):portada();
@@ -770,7 +840,7 @@ function formAviso(it,box,btn){
     let ok=false;
     if(avisosCol){try{await avisosCol.doc(p.k.replace(/[^A-Za-z0-9_\-.]/g,"_")+"-"+t).set(doc);ok=true}catch(e){}}
     if(!ok){datos._avisos=datos._avisos||[];datos._avisos.push(doc);guardar(datos)}
-    box.innerHTML=`<p class="ok-txt">${ok?"Aviso enviado. Lo revisaré y corregiré la pregunta si hace falta.":"Aviso guardado en este dispositivo. Ábrelo desde Claude para que me llegue."}</p>`;
+    box.innerHTML=`<p class="ok-txt">${ok?"Aviso enviado. Lo revisaré y corregiré la pregunta si hace falta.":"Aviso guardado en este dispositivo. Se enviará cuando vuelva la conexión."}</p>`;
   };
 }
 
@@ -951,7 +1021,7 @@ function simResultado(){
     if(remoto&&remoto.json&&(remoto.t||0)>(datos._t||0)){
       try{
         const r=JSON.parse(remoto.json);
-        datos=r;datos._conf=datos._conf||{};datos._leido=datos._leido||{};datos._secs=datos._secs||{};datos._sup=datos._sup||{};datos._q=datos._q||{};datos._cfg=datos._cfg||{};datos._sr=datos._sr||{};datos._dia=datos._dia||{};datos._sims=datos._sims||[];datos._hist=datos._hist||{};
+        datos=r;datos._conf=datos._conf||{};datos._leido=datos._leido||{};datos._secs=datos._secs||{};datos._sup=datos._sup||{};datos._q=datos._q||{};datos._cfg=datos._cfg||{};datos._sr=datos._sr||{};datos._dia=datos._dia||{};datos._sims=datos._sims||[];datos._hist=datos._hist||{};datos._dias=datos._dias||Object.assign({},datos._dia);
         try{localStorage.setItem(KEY,JSON.stringify(datos))}catch(e){}
       }catch(e){}
     }else if(Object.keys(datos).some(k=>!k.startsWith("_"))||Object.keys(datos._q||{}).length){
