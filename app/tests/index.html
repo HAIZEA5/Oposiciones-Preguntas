@@ -1,0 +1,973 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tests de oposiciones</title>
+<meta name="theme-color" content="#1F4D3A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tests">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F7F4; --card:#FFFFFF; --ink:#1D2724; --soft:#5B6762; --line:#D5DBD7;
+  --green:#1F4D3A; --brass:#A9822F; --ok:#2E7A53; --ok-bg:#E3F1E8; --bad:#B23B2C; --bad-bg:#F8E4E0;
+  --serif:"Literata", Georgia, "Times New Roman", serif;
+  --sans:"Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#141917; --card:#1C2320; --ink:#E7ECE9; --soft:#9AA6A0; --line:#33403A;
+    --green:#8CC4A8; --brass:#D2AE5E; --ok:#7CCB9E; --ok-bg:#1C3328; --bad:#F08C7C; --bad-bg:#3A2320;
+  }
+}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2;margin:0}
+h1{font-size:1.75rem;color:var(--green)}
+.lead{color:var(--soft);margin:6px 0 24px}
+button{font:inherit;cursor:pointer;color:inherit}
+button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+.volver{background:none;border:0;padding:4px 0;margin-bottom:10px;color:var(--green);font-weight:700}
+.ficha{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px 20px 28px;position:relative;margin-bottom:16px}
+.ficha::after{content:"";position:absolute;left:50%;bottom:9px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--paper);border:1px solid var(--line)}
+.ficha .sig{position:absolute;top:14px;right:16px;font-size:.8rem;color:var(--brass);font-weight:700}
+.ficha h2{font-size:1.25rem;padding-right:64px}
+.ficha p{margin:6px 0 0;color:var(--soft);font-size:.95rem}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.btn{border:0;border-radius:6px;padding:12px 18px;font-weight:700;background:var(--green);color:var(--card)}
+.btn.sec{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn[disabled]{opacity:.4;cursor:default}
+.barra{display:flex;justify-content:space-between;align-items:baseline;font-size:.9rem;color:var(--soft);margin-bottom:8px}
+.barra button{background:none;border:0;padding:4px 0;color:var(--green);font-weight:700}
+.progreso{height:4px;background:var(--line);border-radius:2px;overflow:hidden;margin-bottom:20px}
+.progreso i{display:block;height:100%;background:var(--brass);transition:width .25s}
+.pregunta{font-family:var(--serif);font-size:1.2rem;line-height:1.55;margin:0 0 18px}
+.opciones{display:grid;gap:10px}
+.op{display:flex;gap:12px;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:6px;padding:13px 14px;line-height:1.4}
+.op b{color:var(--soft);flex:none}
+.op.ok{border-color:var(--ok);background:var(--ok-bg)}
+.op.ok b{color:var(--ok)}
+.op.bad{border-color:var(--bad);background:var(--bad-bg)}
+.op.bad b{color:var(--bad)}
+.op[disabled]{cursor:default}
+.explica{margin-top:16px;border-left:3px solid var(--brass);padding:4px 0 4px 14px}
+.explica strong{display:block;margin-bottom:2px}
+.explica .ref,.fallos .ref{color:var(--brass);font-weight:700;font-size:.9rem}
+.siguiente{margin-top:20px;width:100%}
+.nota{font-family:var(--serif);font-size:3.2rem;color:var(--green);line-height:1;margin:8px 0 4px}
+.fallos{margin:24px 0 0;padding:0;list-style:none}
+.fallos li{border-top:1px solid var(--line);padding:14px 0}
+.fallos .q{font-family:var(--serif)}
+.fallos .r{color:var(--ok);font-weight:700;margin-top:4px}
+.destaca{border-color:var(--brass);border-width:1.5px}
+.apartado{font-size:1.15rem;margin:28px 0 12px;color:var(--green)}
+.tag{font-size:.85rem;color:var(--brass);font-weight:700;margin:0 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.chip{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-weight:700}
+.chip[aria-pressed="true"]{border-color:var(--green);background:var(--green);color:var(--card)}
+.lista-temas{display:grid;gap:6px;margin-bottom:8px}
+.tema-check{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 12px;line-height:1.35;font-size:.95rem;cursor:pointer}
+.tema-check input{width:20px;height:20px;flex:none;margin:1px 0 0;accent-color:var(--green)}
+.tema-check b{color:var(--brass)}
+.resumen{color:var(--soft);font-size:.95rem;margin:16px 0 0}
+.aviso{border-left:3px solid var(--brass);padding:4px 0 4px 14px;margin:0 0 16px}
+.campos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.campos label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:var(--soft)}
+.campos .ancho{grid-column:1/-1}
+.campos input,.campos select{font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:6px;padding:10px 12px;width:100%}
+.reloj{font-weight:700;color:var(--green);font-variant-numeric:tabular-nums}
+.reloj.poco{color:var(--bad)}
+.op.sel{border-color:var(--green);background:var(--card);box-shadow:inset 0 0 0 1.5px var(--green)}
+.op.sel b{color:var(--green)}
+.pista{color:var(--soft);font-size:.85rem;margin:10px 0 0}
+.nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.mapa{margin-top:18px}
+.mapa summary{cursor:pointer;color:var(--green);font-weight:700;padding:6px 0}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:6px;margin-top:8px}
+.rejilla button{border:1.5px solid var(--line);background:var(--card);border-radius:6px;padding:8px 0;font-size:.9rem}
+.rejilla .hecha{background:var(--ok-bg);border-color:var(--ok)}
+.rejilla .actual{outline:2px solid var(--brass);outline-offset:1px}
+.por-tema{list-style:none;margin:0;padding:0}
+.por-tema li{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:10px 0;font-size:.95rem}
+.por-tema b{flex:none}
+.por-tema .mal{color:var(--bad)} .por-tema .medio{color:var(--brass)} .por-tema .bien{color:var(--ok)}
+.fallos .tuya{color:var(--bad);margin-top:4px}
+.velo{position:fixed;inset:0;background:rgba(10,20,16,.45);display:grid;place-items:center;padding:16px;z-index:50}
+.dialogo{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:20px;max-width:420px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.dialogo p{margin:0 0 16px;font-size:1.05rem}
+.dialogo .acciones{margin-top:0;justify-content:flex-end}
+.sync{font-size:.85rem;color:var(--soft);margin:-12px 0 20px}
+.enlace{background:none;border:0;padding:6px 0;margin-top:10px;color:var(--soft);font-size:.9rem;text-decoration:underline;text-underline-offset:3px}
+.aviso-form{margin-top:10px;display:grid;gap:8px}
+.aviso-form textarea{font:inherit;font-size:.95rem;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:6px;padding:10px 12px;min-height:80px;width:100%;resize:vertical}
+.ok-txt{color:var(--ok);font-weight:700;font-size:.9rem;margin-top:8px}
+.real{background:var(--card);border:1.5px solid var(--brass);border-radius:6px;padding:14px 16px;margin:0 0 20px}
+.real .pts{font-family:var(--serif);font-size:1.9rem;color:var(--green);line-height:1.1}
+.real .veredicto{font-weight:700;margin-top:4px}
+.real .veredicto.si{color:var(--ok)} .real .veredicto.no{color:var(--bad)}
+.real p{margin:6px 0 0;color:var(--soft);font-size:.9rem}
+.pct{font-weight:700} .pct.mal{color:var(--bad)} .pct.medio{color:var(--brass)} .pct.bien{color:var(--ok)}
+.piensa{background:var(--card);border:1.5px dashed var(--line);border-radius:6px;padding:16px;text-align:center;display:grid;gap:10px}
+.piensa p{margin:0;color:var(--soft);font-size:.95rem}
+.piensa .acciones{justify-content:center;margin-top:4px}
+.conf{margin-top:18px;display:grid;gap:8px}
+.conf p{margin:0;font-weight:700}
+.conf .tres{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.conf button{border:1.5px solid var(--line);background:var(--card);border-radius:6px;padding:12px 6px;font-weight:700;line-height:1.2}
+.conf button small{display:block;font-weight:400;color:var(--soft);font-size:.78rem;margin-top:3px}
+.conf .c2{border-color:var(--ok);color:var(--ok)} .conf .c1{border-color:var(--brass);color:var(--brass)} .conf .c0{border-color:var(--bad);color:var(--bad)}
+.toggle{background:none;border:1.5px solid var(--line);border-radius:999px;padding:3px 10px;font-size:.8rem;color:var(--soft)}
+.toggle[aria-pressed="true"]{border-color:var(--green);color:var(--green);font-weight:700}
+.lectura h2{font-size:1.15rem;color:var(--green);margin:26px 0 8px}
+.lectura h3{font-family:var(--sans);font-size:1rem;margin:18px 0 6px}
+.lectura p{margin:0 0 10px}
+.lectura ul,.lectura ol{margin:0 0 12px;padding-left:20px}
+.lectura li ul,.lectura li ol{margin:4px 0 6px}
+.lectura li{margin:4px 0}
+.claves{list-style:none;padding:0!important;margin:0}
+.claves li{border-top:1px solid var(--line);padding:12px 0;margin:0!important}
+.claves .q{font-family:var(--serif);font-size:.98rem}
+.claves .r{color:var(--ok);font-weight:700;margin-top:4px}
+.claves .e{color:var(--soft);font-size:.92rem;margin-top:4px}
+.claves .ref{color:var(--brass);font-weight:700;font-size:.85rem}
+.claves.ocultas .r,.claves.ocultas .e{display:none}
+.claves.ocultas li.ver .r,.claves.ocultas li.ver .e{display:block}
+.claves.ocultas li{cursor:pointer}
+.leido{color:var(--ok);font-weight:700}
+.avance{display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:.85rem;color:var(--soft)}
+.avance .progreso{flex:1}
+.evo-f{display:grid;grid-template-columns:5.5em 1fr 3.2em auto;gap:10px;align-items:center;font-size:.9rem;margin:6px 0}
+.evo-f .progreso{margin:0}.evo-f small{color:var(--soft);font-size:.8rem}
+.parte{background:var(--card);border:1px solid var(--line);border-radius:6px;margin:0 0 10px;padding:0 14px}
+.parte summary{display:flex;gap:10px;align-items:center;cursor:pointer;padding:12px 0;list-style:none}
+.parte summary::-webkit-details-marker{display:none}
+.parte .num{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:.85rem;font-weight:700;background:var(--paper);color:var(--green);border:1.5px solid var(--green)}
+.parte.hecha .num{background:var(--ok);border-color:var(--ok);color:var(--card)}
+.parte .tit{flex:1;font-weight:700;line-height:1.3}
+.parte.hecha .tit{color:var(--soft)}
+.parte .min{flex:none;font-size:.8rem;color:var(--soft)}
+.parte[open]{padding-bottom:14px}
+.parte .lectura h2{display:none}
+@media (prefers-reduced-motion:reduce){.progreso i{transition:none}}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>const OPOSICIONES = [];</script>
+<!-- Una línea por oposición. Para añadir una nueva: crear data/nombre.js y añadir aquí su línea. -->
+<script src="data/getxo-administrativo.js"></script>
+<script src="data/abanto-administrativo.js"></script>
+<script src="data/getxo-kirolak-auxiliar.js"></script>
+<script src="data/biblioteca-dfb.js"></script>
+<script src="data/ehu-administrativa.js"></script>
+<script src="data/getxo-conserje.js"></script>
+<script>const RESUMENES = {};</script>
+<script src="data/resumenes-biblioteca.js"></script>
+<script>var SUPUESTOS = {};</script>
+<script src="data/supuestos-conserje.js"></script>
+<script>
+/* Un tema puede reutilizar preguntas de otro (de cualquier oposición): incluye:["opo/tema"], ["opo/tema:3-10"] o ["opo/tema:2-4+9"].
+   Cada pregunta tiene una clave global k = "oposición de origen/id", para reconocerla aunque aparezca en varios temas u oposiciones. */
+(function(){
+  OPOSICIONES.forEach(op=>op.temas.forEach(t=>t.preguntas.forEach(p=>{p.k=op.id+"/"+p.id})));
+  const buscar=(o,t)=>{const op=OPOSICIONES.find(x=>x.id===o);return op&&op.temas.find(x=>x.id===t)};
+  OPOSICIONES.forEach(op=>op.temas.forEach(t=>{
+    if(!t.incluye)return;
+    const extra=[];
+    t.incluye.forEach(ref=>{
+      const m=ref.match(/^([^/]+)\/([^:]+)(?::(.+))?$/); if(!m)return;
+      const src=buscar(m[1],m[2]); if(!src)return;
+      let ps=src.preguntas.filter(p=>!p._inc);
+      if(m[3]){const all=ps;ps=[];m[3].split("+").forEach(r=>{const [a,b]=r.split("-").map(Number);ps=ps.concat(all.slice(a-1,b||a))})}
+      ps.forEach(p=>extra.push(Object.assign({},p,{q:p.q.replace(/^Solo Ayudante\.\s*/,""),_inc:1})));
+    });
+    t.preguntas=extra.concat(t.preguntas);
+  }));
+})();
+const CORTO={"getxo-administrativo":"Getxo","abanto-administrativo":"Abanto","getxo-kirolak-auxiliar":"Getxo Kirolak","biblioteca-dfb":"Biblioteca DFB","ehu-administrativa":"UPV/EHU","getxo-conserje":"Getxo Conserje"};
+const corto=o=>CORTO[o.id]||o.nombre;
+/* Cómo puntúa el examen real según las bases (para traducir el simulacro a puntos de verdad) */
+const REAL={
+  "getxo-conserje":{preguntas:100,acierto:.35,fallo:.12,max:35,aprobado:17.5,bases:"Examen real: 100 preguntas, +0,35 por acierto, −0,12 por fallo; la tabla de resultados puntúa sobre 35 (el aprobado sería la mitad, 17,5)."},
+  "biblioteca-dfb":{preguntas:40,acierto:1,fallo:.33,bases:"Bases (parte teórica): 40 preguntas en 1 h 30 min, +1 por acierto, −0,33 por fallo. No indican nota mínima."},
+  "ehu-administrativa":{preguntas:60,acierto:1,fallo:0,bases:"Bases: 60 preguntas en 80 minutos y los fallos no restan."}
+};
+const SIM_DEF={"biblioteca-dfb":{n:40,min:90,pena:"0.3333333333"}};
+/* Puntos flojos detectados en exámenes reales: esos temas salen primero en la tanda del día */
+const FOCO={
+  "biblioteca-dfb":{temas:["t01","t02","t08","t09","t10"],nombre:"Constitución, Estatuto, euskera, igualdad y protección de datos",txt:"En los dos exámenes de Getxo (27/10) acertaste solo 5 de 24 preguntas de Constitución y Estatuto: ahora esos temas salen primero en tu tanda diaria, con las preguntas reales de los dos exámenes."},
+  "getxo-conserje":{temas:["t01","t02","t05","t07c","t07e"],nombre:"Constitución, Estatuto, protección de datos y el tema 7 de Getxo",txt:"Es donde más fallaste o dejaste en blanco el 27/10 en los dos exámenes."}
+};
+/* Puntos flojos: los temas de FOCO (fallos en exámenes reales) hasta que los domines (15+ respondidas con 75 % o más),
+   más cualquier tema con 8+ respondidas y menos del 60 % de aciertos. Se recalcula con cada respuesta. */
+function flojos(o){
+  const r=[];
+  o.temas.forEach(t=>{const s=stats(t.preguntas),ex=!!(FOCO[o.id]&&FOCO[o.id].temas.includes(t.id));
+    if(ex){if(!(s.v>=15&&s.pct>=.75))r.push({t,s,ex})}
+    else if(s.v>=8&&s.pct<.6)r.push({t,s,ex});});
+  return r.sort((a,b)=>(a.s.v?a.s.pct:.5)-(b.s.v?b.s.pct:.5)).slice(0,6);
+}
+let _fc={k:null,v:[]};
+const flojosC=o=>{const k=o.id+":"+(datos._t||0);if(_fc.k!==k)_fc={k,v:flojos(o)};return _fc.v};
+const enFoco=(o,t)=>flojosC(o).some(x=>x.t===t);
+const nombreTema=t=>(t.titulo||t.id).replace(/^Tema\s+[\w.]+\s*[.:·-]\s*/i,"");
+function textoFlojos(o){
+  const f=flojosC(o); if(!f.length)return "";
+  const l=f.map(x=>`${nombreTema(x.t)} (${x.s.v?Math.round(x.s.pct*100)+" %":"sin practicar"})`).join(", ");
+  return `<p><b>Tus puntos flojos ahora:</b> ${esc(l)}. Salen primero en la tanda de hoy y se actualizan solos con cada respuesta: un tema sale de aquí cuando aciertas el 75 % o más de al menos 15 preguntas.</p>`;
+}
+/* Fechas de examen de las oposiciones que tienen tests */
+const EXAMENES=[{id:"getxo-conserje",fecha:"2026-10-27",txt:"martes 27/10, BEC"},{id:"ehu-administrativa",fecha:"2026-11-21",txt:"sábado 21/11 a las 10:00, BEC"},{id:"biblioteca-dfb",fecha:"2026-11-30",txt:"lunes 30/11 (Auxiliar y Ayudante técnico/a)"}];
+function proximoExamen(){const h=hoyISO();return EXAMENES.filter(e=>e.fecha>=h&&OPOSICIONES.some(o=>o.id===e.id)).sort((a,b)=>a.fecha.localeCompare(b.fecha))[0]||null}
+const diasHasta=f=>{const [y,m,d]=f.split("-").map(Number);const a=new Date(y,m-1,d),n=new Date();n.setHours(0,0,0,0);return Math.round((a-n)/86400000)};
+/* Selección del día: primero lo que toca repasar, luego lo no visto de los temas más flojos, luego el resto no visto */
+function seleccionHoy(o,n){
+  const pool=reunir(o.temas.map(t=>({o,t})));
+  const rep=barajar(pool.filter(it=>datos._q[it.p.k]!==undefined&&tocaHoy(it.p.k)));
+  const st=new Map(o.temas.map(t=>[t.id,stats(t.preguntas)]));
+  const peso=it=>{const s=st.get(it.t.id),b=s&&s.v?s.pct:0.6;return enFoco(o,it.t)?Math.min(b,0.3)-0.5:b};
+  const nuevas=barajar(pool.filter(it=>datos._q[it.p.k]===undefined)).sort((a,b)=>peso(a)-peso(b));
+  const out=rep.slice(0,n);
+  return {items:barajar(out.concat(nuevas.slice(0,n-out.length))),rep:rep.length,nuevas:nuevas.length};
+}
+/* Exámenes que entran en la tanda de hoy: el más cercano y, si hay otro a 35 días o menos, también ese */
+function examenesHoy(){const h=hoyISO();return EXAMENES.filter(e=>e.fecha>=h&&OPOSICIONES.some(o=>o.id===e.id)).sort((a,b)=>a.fecha.localeCompare(b.fecha)).filter((e,i)=>i===0||diasHasta(e.fecha)<=35).slice(0,2)}
+function tandaHoy(meta){
+  const exs=examenesHoy(); if(!exs.length)return null;
+  const os=exs.map(e=>OPOSICIONES.find(x=>x.id===e.id));
+  const c1=os.length===2?Math.round(meta*.6):meta, cuotas=os.length===2?[c1,meta-c1]:[meta];
+  let items=[],rep=0; const vistos=new Set(), partes=[];
+  os.forEach((o,i)=>{const s=seleccionHoy(o,cuotas[i]);const it=s.items.filter(x=>!vistos.has(x.p.k));it.forEach(x=>vistos.add(x.p.k));items=items.concat(it);rep+=Math.min(s.rep,cuotas[i]);partes.push({o,n:it.length})});
+  return {exs,os,items:barajar(items),rep,partes};
+}
+function fichaHoy(){
+  const meta=(datos._cfg.hoy&&datos._cfg.hoy.n)||40, T=tandaHoy(meta); if(!T)return "";
+  const ex=T.exs[0], o=T.os[0], d=diasHasta(ex.fecha), hechas=datos._dia[hoyISO()]||0;
+  const cuando=d===0?"es hoy":d===1?"es mañana":`faltan ${d} días`;
+  const otro=T.exs[1]?`<p>Después: <b>${esc(corto(T.os[1]))}</b>, el ${esc(T.exs[1].txt)} (faltan ${diasHasta(T.exs[1].fecha)} días). Hasta el primer examen, la tanda mezcla las dos: ${T.partes.map(x=>`${x.n} de ${esc(corto(x.o))}`).join(" y ")}.</p>`:"";
+  const nuevas=T.items.length-Math.min(T.rep,meta);
+  const hayFlojos=T.os.some(x=>flojosC(x).length);
+  return `<section class="ficha destaca"><span class="sig">Hoy toca</span><h2>${esc(corto(o))}: ${cuando}</h2>
+  <p>Examen el ${esc(ex.txt)}. ${hechas>=meta?`<b>Tanda de hoy hecha (${hechas} preguntas).</b> Si te apetece, puedes hacer otra.`:`Hoy llevas ${pl(hechas,"pregunta","preguntas")} de ${meta}.`} Las que falles volverán mañana.</p>
+  ${otro}
+  <p>Tanda de hoy: ${T.rep?`${pl(Math.min(T.rep,meta),"pregunta para repasar","preguntas para repasar")}`:"nada pendiente de repaso"}${nuevas>0?` y ${nuevas} nuevas de tus temas más flojos`:""}.</p>
+  <div class="chips" style="margin-top:12px">${[20,40,60].map(n=>`<button class="chip" data-meta="${n}" aria-pressed="${n===meta}">${n} al día</button>`).join("")}</div>
+  ${T.os.map(textoFlojos).join("")}
+  <div class="acciones"><button class="btn" id="hoy" ${T.items.length?"":"disabled"}>Empezar la tanda de hoy</button>${hayFlojos?`<button class="btn sec" id="foco">Solo mis puntos flojos</button>`:""}</div></section>`;
+}
+function enlazarHoy(volver){
+  const b=document.getElementById("hoy"); if(!b)return;
+  app.querySelectorAll("[data-meta]").forEach(c=>c.onclick=()=>{datos._cfg.hoy={n:+c.dataset.meta};guardar(datos);volver()});
+  b.onclick=()=>{
+    const meta=(datos._cfg.hoy&&datos._cfg.hoy.n)||40;
+    const empezar=()=>{const T=tandaHoy(meta);opo=T.os[0];ses={tipo:"popurri",comun:false,items:T.items,i:0,aciertos:0,fallos:[],repetir:empezar,ajustes:volver};pregunta()};
+    empezar();
+  };
+  const f=document.getElementById("foco");
+  if(f)f.onclick=()=>{
+    const meta=(datos._cfg.hoy&&datos._cfg.hoy.n)||40;
+    const empezar=()=>{const os=tandaHoy(meta).os;
+      const pool=reunir(os.flatMap(o=>o.temas.filter(t=>enFoco(o,t)).map(t=>({o,t}))));
+      const pend=pool.filter(it=>datos._q[it.p.k]===undefined||tocaHoy(it.p.k));
+      opo=os[0];ses={tipo:"popurri",comun:false,items:barajar(pend.length?pend:pool).slice(0,meta),i:0,aciertos:0,fallos:[],repetir:empezar,ajustes:volver};pregunta()};
+    empezar();
+  };
+}
+/* Evolución: aciertos por semana y oposición (se apunta desde el 06/11/2026) */
+const lunes=iso=>{const [y,m,d]=iso.split("-").map(Number),f=new Date(y,m-1,d);f.setDate(f.getDate()-((f.getDay()+6)%7));return f.getFullYear()+"-"+String(f.getMonth()+1).padStart(2,"0")+"-"+String(f.getDate()).padStart(2,"0")};
+function apuntarHist(p,ok){
+  const w=lunes(hoyISO()); datos._hist=datos._hist||{}; const H=datos._hist[w]=datos._hist[w]||{};
+  new Set((DONDE.get(p.k)||[]).map(d=>d.o.id)).forEach(oid=>{const x=H[oid]=H[oid]||{b:0,n:0};x.n++;if(ok)x.b++});
+  const ks=Object.keys(datos._hist).sort(); while(ks.length>20)delete datos._hist[ks.shift()];
+}
+function evolucion(oid){
+  const H=datos._hist||{}, ws=Object.keys(H).sort().filter(w=>H[w][oid]).slice(-8);
+  const sims=(datos._sims||[]).filter(x=>x.o===oid).slice(-6);
+  if(!ws.length&&!sims.length)return `<section class="ficha"><span class="sig">Tu evolución</span><p>Aquí verás tu % de aciertos semana a semana en cuanto respondas preguntas (se cuenta desde el 6/11).</p></section>`;
+  const fila=(lab,p,extra)=>`<div class="evo-f"><span>${lab}</span><div class="progreso" style="margin:0"><i style="width:${p}%"></i></div><b>${p} %</b><small>${extra}</small></div>`;
+  return `<section class="ficha"><span class="sig">Tu evolución</span>
+  ${ws.length?`<h2>Aciertos por semana</h2>`+ws.map(w=>{const x=H[w][oid];return fila("Sem. "+(+w.slice(8))+"/"+(+w.slice(5,7)),Math.round(x.b/x.n*100),pl(x.n,"pregunta","preguntas"))}).join(""):""}
+  ${sims.length?`<h2 style="margin-top:14px">Simulacros</h2>`+sims.map(x=>fila((+x.f.slice(8))+"/"+(+x.f.slice(5,7)),Math.round((x.A||0)/(x.n||1)*100),"nota "+fmt(x.nota)+(x.pts!=null?" · "+fmt(x.pts)+" pts":""))).join(""):""}
+  </section>`;
+}
+const fmt=x=>(Math.round(x*100)/100).toLocaleString("es-ES",{maximumFractionDigits:2});
+const esDudosa=p=>/respuesta probable/i.test(p.e||"");
+/* Estadística de un conjunto de preguntas según la última respuesta guardada */
+function stats(ps){let v=0,b=0,su=0;ps.forEach(p=>{const r=datos._q[p.k];if(r!==undefined){v++;if(r===1){if(datos._conf[p.k]===0)su++;else b++}}});return {v,b,su,pct:v?b/v:null}}
+const clasePct=x=>x<.5?"mal":x<.8?"medio":"bien";
+/* Dónde aparece cada pregunta: k → [{o,t,p}] */
+const DONDE=new Map();
+OPOSICIONES.forEach(o=>o.temas.forEach(t=>t.preguntas.forEach(p=>{if(!DONDE.has(p.k))DONDE.set(p.k,[]);DONDE.get(p.k).push({o,t,p})})));
+/* Clave con la que se guarda una pregunta en las falladas de un tema */
+const fk=p=>p._inc?p.k:p.id;
+
+const KEY="tests-oposiciones-v1";
+function cargar(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+let syncDoc=null, syncTimer=null, syncEstado="local";
+function guardar(d){
+  d._t=Date.now();
+  try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}
+  if(syncDoc){clearTimeout(syncTimer);syncTimer=setTimeout(subir,2500)}
+}
+async function subir(){
+  if(!syncDoc)return;
+  try{await syncDoc.set({json:JSON.stringify(datos),t:datos._t||Date.now()});syncEstado="ok"}
+  catch(e){syncEstado="error"}
+}
+/* Confirmación dentro de la página (el visor de Claude bloquea confirm y alert) */
+function pedir(msg,si,no){
+  return new Promise(res=>{
+    const v=document.createElement("div");v.className="velo";
+    v.innerHTML=`<div class="dialogo" role="dialog" aria-modal="true"><p></p><div class="acciones"><button class="btn sec" data-r="0"></button><button class="btn" data-r="1"></button></div></div>`;
+    v.querySelector("p").textContent=msg;
+    v.querySelector('[data-r="1"]').textContent=si||"Sí";
+    v.querySelector('[data-r="0"]').textContent=no||"Cancelar";
+    const fin=r=>{v.remove();document.removeEventListener("keydown",esc_);res(r)};
+    const esc_=e=>{if(e.key==="Escape")fin(false)};
+    v.addEventListener("click",e=>{const b=e.target.closest("[data-r]");if(b)fin(b.dataset.r==="1");else if(e.target===v)fin(false)});
+    document.addEventListener("keydown",esc_);
+    document.body.appendChild(v);v.querySelector('[data-r="1"]').focus();
+  });
+}
+let datos=cargar();
+datos._q=datos._q||{};      /* k → 1 acertada la última vez, 0 fallada */
+datos._cfg=datos._cfg||{};  /* ajustes recordados de popurrí y simulacro */
+datos._sr=datos._sr||{};    /* repaso espaciado: k → {b: caja 0-5, d: día en que toca (AAAA-MM-DD)} */
+datos._dia=datos._dia||{};  /* preguntas respondidas por día: AAAA-MM-DD → n */
+datos._sims=datos._sims||[];/* historial de simulacros */
+datos._hist=datos._hist||{};
+datos._conf=datos._conf||{};/* seguridad del último acierto: k → 2 lo sabía, 1 dudé, 0 adiviné */
+datos._leido=datos._leido||{};/* temas leídos: oposición/tema → AAAA-MM-DD */
+datos._secs=datos._secs||{};/* apartados del resumen leídos: oposición/tema → [índices] */
+datos._sup=datos._sup||{};/* supuestos prácticos: id → {txt, marcas:[índices], t} */
+const hoyISO=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const masDias=n=>{const d=new Date();d.setDate(d.getDate()+n);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const INTERVALO=[1,1,3,7,14,30]; /* días hasta volver a ver una pregunta según su caja */
+/* ¿Toca repasarla hoy? Las falladas sin caja (historial antiguo) también tocan. */
+const tocaHoy=k=>{const r=datos._sr[k];if(r)return r.d<=hoyISO();return datos._q[k]===0};
+function estado(oid,tid){const k=oid+"/"+tid;datos[k]=datos[k]||{mejor:null,falladas:[]};return datos[k]}
+/* Pasa las falladas antiguas de preguntas reutilizadas (guardadas con su id corto) a la clave global */
+OPOSICIONES.forEach(o=>o.temas.forEach(t=>{
+  const s=datos[o.id+"/"+t.id]; if(!s||!s.falladas.length)return;
+  const propias=new Set(t.preguntas.filter(p=>!p._inc).map(p=>p.id)), nuevas=new Set();
+  s.falladas.forEach(id=>{
+    if(propias.has(id)||id.includes("/")){nuevas.add(id);return}
+    t.preguntas.filter(p=>p._inc&&p.id===id).forEach(p=>nuevas.add(p.k));
+  });
+  s.falladas=[...nuevas];
+}));
+const estaFallada=k=>(DONDE.get(k)||[]).some(d=>{const s=datos[d.o.id+"/"+d.t.id];return s&&s.falladas.includes(fk(d.p))});
+/* Apunta un acierto o un fallo en todos los temas donde está la pregunta */
+function registrar(p,ok){
+  const prev=datos._sr[p.k], visto=datos._q[p.k]!==undefined;
+  let b=ok?(prev?Math.min(5,prev.b+1):(visto?2:2)):0;
+  datos._sr[p.k]={b,d:masDias(ok?INTERVALO[b]:1)};
+  const h=hoyISO();datos._dia={[h]:(datos._dia[h]||0)+1};
+  datos._q[p.k]=ok?1:0;
+  apuntarHist(p,ok);
+  (DONDE.get(p.k)||[]).forEach(d=>{
+    const s=estado(d.o.id,d.t.id), id=fk(d.p);
+    if(ok)s.falladas=s.falladas.filter(x=>x!==id);
+    else if(!s.falladas.includes(id))s.falladas.push(id);
+  });
+  guardar(datos);
+}
+/* Después de acertar: cómo de segura estabas. Adivinar cuenta como fallo para el repaso. */
+function confianza(p,c){
+  datos._conf[p.k]=c;
+  const r=datos._sr[p.k]||{b:0};
+  if(c===0){
+    datos._sr[p.k]={b:0,d:masDias(1)};
+    (DONDE.get(p.k)||[]).forEach(d=>{const s=estado(d.o.id,d.t.id),id=fk(d.p);if(!s.falladas.includes(id))s.falladas.push(id)});
+  }else if(c===1){const b=Math.min(r.b,2);datos._sr[p.k]={b,d:masDias(INTERVALO[b])}}
+  guardar(datos);
+}
+
+const app=document.getElementById("app");
+let opo=null, ses=null, reloj=null;
+const barajar=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pl=(n,a,b)=>n+" "+(n===1?a:b);
+const arriba=()=>window.scrollTo(0,0);
+const pararReloj=()=>{if(reloj){clearInterval(reloj);reloj=null}};
+const opciones=p=>p.c!==undefined?p.o.map((txt,k)=>({txt,ok:k===p.c})):barajar(p.o.map((txt,k)=>({txt,ok:k===0})));
+const correcta=p=>p.o[p.c||0];
+
+/* Reúne preguntas sin repetir. temas: [{o,t}] */
+function reunir(lista){
+  const vistos=new Set(), out=[];
+  lista.forEach(({o,t})=>t.preguntas.forEach(p=>{if(vistos.has(p.k))return;vistos.add(p.k);out.push({p,o,t})}));
+  return out;
+}
+/* Materia común: preguntas que están en dos o más oposiciones */
+function poolComun(){
+  const out=[];
+  DONDE.forEach((ds,k)=>{
+    const opos=new Set(ds.map(d=>d.o.id)); if(opos.size<2)return;
+    const d=ds.find(x=>!x.p._inc)||ds[0];
+    out.push({p:d.p,o:d.o,t:d.t,opos:[...opos]});
+  });
+  return out;
+}
+const prioridad=it=>datos._q[it.p.k]===undefined?1:tocaHoy(it.p.k)?0:2;
+function elegir(pool,n){
+  const ord=barajar(pool).map(it=>({it,pr:prioridad(it)})).sort((a,b)=>a.pr-b.pr).map(x=>x.it);
+  return barajar(ord.slice(0,n));
+}
+function resumenPool(pool){
+  let f=0,nv=0;pool.forEach(it=>{const pr=prioridad(it);if(pr===0)f++;else if(pr===1)nv++});
+  return `${pl(pool.length,"pregunta distinta","preguntas distintas")} · ${f} para repasar hoy · ${nv} sin ver`;
+}
+
+/* ---------- Portada ---------- */
+function portada(){
+  pararReloj(); opo=null; ses=null;
+  const visibles=OPOSICIONES.filter(o=>o.temas.some(t=>t.preguntas.length));
+  if(visibles.length===1){temas(visibles[0].id,true);return}
+  const comun=poolComun();
+  let h='<h1>Tests de oposiciones</h1><p class="lead">Elige la oposición o haz un popurrí de la materia común.</p>'+(syncDoc?'<p class="sync">Tu progreso se guarda en tu cuenta y se ve igual en todos tus dispositivos.</p>':'');
+  h+=fichaHoy();
+  h+=`<section class="ficha destaca"><span class="sig">Mezcla</span><h2>Popurrí común</h2>
+  <p>Preguntas de la materia que comparten tus oposiciones: Constitución, Estatuto, procedimiento, empleo público, régimen local… Sirve para todas a la vez.</p>
+  <p>${resumenPool(comun)}.</p>
+  <div class="acciones"><button class="btn" id="pcom">Hacer un popurrí</button></div></section>`;
+  visibles.forEach(o=>{
+    const n=o.temas.reduce((s,t)=>s+t.preguntas.length,0);
+    h+=`<section class="ficha"><h2>${esc(o.nombre)}</h2><p>${esc(o.sub)}</p><p>${o.temas.length} temas · ${n} preguntas.</p>
+    <div class="acciones"><button class="btn" data-o="${o.id}">Entrar</button></div></section>`;
+  });
+  app.innerHTML=h;
+  app.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>temas(b.dataset.o));
+  document.getElementById("pcom").onclick=()=>configPopurri(null);
+  enlazarHoy(portada);
+  arriba();
+}
+const volverTemas=()=>opo?temas(opo.id,OPOSICIONES.length===1):portada();
+
+/* ---------- Temas de una oposición ---------- */
+function temas(oid,unica){
+  pararReloj();
+  opo=OPOSICIONES.find(o=>o.id===oid); ses=null;
+  let h=unica?'':'<button class="volver" id="vol">← Oposiciones</button>';
+  h+=`<h1>${esc(opo.nombre)}</h1><p class="lead">${esc(opo.sub)}</p>`;
+  h+=evolucion(opo.id);
+  h+=`<section class="ficha destaca"><span class="sig">Mezcla</span><h2>Popurrí y simulacro</h2>
+  <p>El popurrí mezcla temas y saca primero lo que fallas o no has visto. El simulacro es como el examen: con reloj, sin ver las respuestas hasta el final y restando fallos.</p>
+  ${(()=>{const n=reunir(opo.temas.map(t=>({o:opo,t}))).filter(it=>datos._q[it.p.k]!==undefined&&tocaHoy(it.p.k)).length;return n?`<p><b>${pl(n,"pregunta toca","preguntas tocan")} repasar hoy.</b> El popurrí las saca primero.</p>`:""})()}
+  <div class="acciones"><button class="btn" id="ppop">Popurrí</button><button class="btn sec" id="psim">Simulacro de examen</button></div></section>`;
+  const dud=reunir(opo.temas.map(t=>({o:opo,t}))).filter(it=>esDudosa(it.p));
+  if(dud.length)h+=`<section class="ficha"><span class="sig">Revisar</span><h2>Preguntas dudosas</h2><p>${pl(dud.length,"pregunta no tiene","preguntas no tienen")} respuesta oficial y la respuesta puesta es «probable». Practícalas con el temario delante y, si alguna no te cuadra, avísame desde la propia pregunta.</p>
+  <div class="acciones"><button class="btn sec" id="pdud">Practicar las dudosas (${dud.length})</button></div></section>`;
+  const conP=opo.temas.filter(t=>t.preguntas.length);
+  const filas=conP.map(t=>({t,...stats(t.preguntas)}));
+  const flojos=filas.filter(f=>f.v>=5&&f.pct<.8).sort((a,b)=>a.pct-b.pct).slice(0,5);
+  const sinEmpezar=filas.filter(f=>f.v===0).length;
+  if(filas.some(f=>f.v)){
+    h+=`<section class="ficha destaca"><span class="sig">Tu nivel</span><h2>Tus temas flojos</h2>`;
+    if(flojos.length){
+      h+='<ul class="por-tema">'+flojos.map(f=>`<li><span>${esc(f.t.sig||"")} — ${esc(f.t.titulo.replace(/^Tema [^.]*\.\s*/,""))}</span><b class="${clasePct(f.pct)}">${Math.round(f.pct*100)} %</b></li>`).join("")+'</ul>';
+      h+=`<p>Lo que sabes de verdad en las preguntas que ya has hecho (última respuesta de cada una; los aciertos de suerte no cuentan). Antes de practicarlos, léelos.${sinEmpezar?` Te quedan ${pl(sinEmpezar,"tema","temas")} sin empezar.`:""}</p><div class="acciones"><button class="btn" id="pflo">Practicar estos temas</button></div>`;
+    }else h+=`<p>Ningún tema por debajo del 80 % entre los que has practicado (con al menos 5 preguntas hechas).${sinEmpezar?` Te quedan ${pl(sinEmpezar,"tema","temas")} sin empezar.`:""}</p>`;
+    h+='</section>';
+  }
+  if((SUPUESTOS[opo.id]||[]).length){
+    const L=SUPUESTOS[opo.id], hechos=L.filter(x=>datos._sup[x.id]&&datos._sup[x.id].marcas).length;
+    h+=`<section class="ficha destaca"><span class="sig">2.º ejercicio</span><h2>Supuestos prácticos</h2><p>Casos reales de conserjería (temas 7 a 10): lees la situación, escribes qué harías y la comparas con la respuesta modelo. Llevas ${hechos} de ${L.length}.</p>
+    <div class="acciones"><button class="btn" data-sup="escuela">Conserje de escuela</button><button class="btn sec" data-sup="conserje">Conserje</button></div></section>`;
+  }
+  h+='<h2 class="apartado">Por temas</h2>';
+  opo.temas.forEach(t=>{
+    if(!t.preguntas.length){h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>Preguntas en preparación.</p></section>`;return}
+    const s=estado(opo.id,t.id), n=t.preguntas.length, f=t.preguntas.filter(p=>s.falladas.includes(fk(p))).length;
+    const mejor=s.mejor===null?"Aún no lo has hecho entero":`Mejor resultado: ${s.mejor} de ${n}`;
+    const st=stats(t.preguntas);
+    const niv=st.v?` Has hecho ${st.v} y sabes de verdad el <span class="pct ${clasePct(st.pct)}">${Math.round(st.pct*100)} %</span>${st.su?` (más ${st.su} de suerte)`:""}.`:"";
+    const lei=datos._leido[opo.id+"/"+t.id];
+    h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>${esc(t.sub||"")}</p><p>${n} preguntas. ${mejor}.${niv}${lei?` <span class="leido">Resumen leído el ${+lei.slice(8)}/${+lei.slice(5,7)}.</span>`:(datos._secs&&(datos._secs[opo.id+"/"+t.id]||[]).length&&RESUMENES[opo.id+"/"+t.id])?` Resumen: ${datos._secs[opo.id+"/"+t.id].length} de ${partes(RESUMENES[opo.id+"/"+t.id]).ps.length} apartados.`:""}</p>
+    <div class="acciones"><button class="btn sec" data-leer="${t.id}">Leer el tema</button><button class="btn" data-a="todo" data-t="${t.id}">Empezar el test</button>
+    <button class="btn sec" data-a="falladas" data-t="${t.id}" ${f?"":"disabled"}>Repasar falladas (${f})</button></div></section>`;
+  });
+  app.innerHTML=h;
+  if(!unica)document.getElementById("vol").onclick=portada;
+  document.getElementById("ppop").onclick=()=>configPopurri(opo.id);
+  document.getElementById("psim").onclick=()=>configSimulacro();
+  const bd=document.getElementById("pdud");
+  if(bd)bd.onclick=()=>{const oid=opo.id;const empezar=()=>{const it=barajar(reunir(opo.temas.map(t=>({o:opo,t}))).filter(x=>esDudosa(x.p)));ses={tipo:"popurri",comun:false,items:it,i:0,aciertos:0,fallos:[],repetir:empezar,ajustes:()=>temas(oid,OPOSICIONES.length===1)};pregunta()};empezar()};
+  const bf=document.getElementById("pflo");
+  if(bf)bf.onclick=()=>{const prev=datos._cfg["pop:"+opo.id]||{};datos._cfg["pop:"+opo.id]={n:prev.n||20,temas:flojos.map(f=>f.t.id)};guardar(datos);configPopurri(opo.id)};
+  app.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>empezarTema(b.dataset.t,b.dataset.a));
+  app.querySelectorAll("[data-leer]").forEach(b=>b.onclick=()=>leerTema(b.dataset.leer));
+  app.querySelectorAll("[data-sup]").forEach(b=>b.onclick=()=>listaSupuestos(b.dataset.sup));
+  arriba();
+}
+
+/* ---------- Supuestos prácticos ---------- */
+function listaSupuestos(plaza){
+  const L=(SUPUESTOS[opo.id]||[]).filter(x=>x.plaza===plaza||x.plaza==="ambas");
+  let h=`<button class="volver" id="vol">← ${esc(corto(opo))}</button><h1>Supuestos prácticos</h1>
+  <p class="lead">${plaza==="escuela"?"Conserje de escuela":"Conserje"}. El 2.º ejercicio se puntúa de 0 a 60 y se aprueba con 30. El formato exacto lo dirá el tribunal; estos casos te entrenan a explicar qué harías, paso a paso.</p>
+  <div class="chips"><button class="chip" data-pl="escuela" aria-pressed="${plaza==="escuela"}">Conserje de escuela</button><button class="chip" data-pl="conserje" aria-pressed="${plaza==="conserje"}">Conserje</button></div>`;
+  L.forEach(x=>{const r=datos._sup[x.id];const est=r&&r.marcas?`<span class="leido">Hecho: ${r.marcas.length} de ${x.claves.length} puntos</span>`:r&&r.txt?"Empezado":"Sin hacer";
+    h+=`<section class="ficha"><span class="sig">${esc(x.tema)}</span><h2>${esc(x.titulo)}</h2><p>${est}${x.plaza==="ambas"?" · Para las dos plazas":""}</p><div class="acciones"><button class="btn${r&&r.marcas?" sec":""}" data-caso="${x.id}">${r&&r.marcas?"Repetir":"Hacer el caso"}</button></div></section>`});
+  app.innerHTML=h;
+  document.getElementById("vol").onclick=()=>temas(opo.id,OPOSICIONES.length===1);
+  app.querySelectorAll("[data-pl]").forEach(b=>b.onclick=()=>listaSupuestos(b.dataset.pl));
+  app.querySelectorAll("[data-caso]").forEach(b=>b.onclick=()=>supuesto(b.dataset.caso,plaza));
+  arriba();
+}
+function supuesto(id,plaza){
+  const L=SUPUESTOS[opo.id], x=L.find(c=>c.id===id), r=datos._sup[id]||{};
+  let h=`<button class="volver" id="vol">← Supuestos prácticos</button><p class="tag">${esc(x.tema)}</p><h1>${esc(x.titulo)}</h1>
+  <div class="real" style="margin-top:14px"><div style="font-family:var(--serif);font-size:1.1rem;line-height:1.55">${esc(x.caso)}</div><p style="font-weight:700;color:var(--ink);margin-top:10px">${esc(x.pide)}</p></div>
+  <label for="suptxt" style="font-weight:700;font-size:.9rem;color:var(--soft)">Tu respuesta (escribe los pasos, en el orden en que los harías)</label>
+  <div class="aviso-form"><textarea id="suptxt" style="min-height:160px">${esc(r.txt||"")}</textarea></div>
+  <button class="btn siguiente" id="ver">Ver la respuesta modelo</button><div id="sol"></div>`;
+  app.innerHTML=h;
+  const ta=document.getElementById("suptxt");
+  ta.oninput=()=>{datos._sup[id]=Object.assign({},datos._sup[id],{txt:ta.value,t:Date.now()});guardar(datos)};
+  document.getElementById("vol").onclick=()=>listaSupuestos(plaza);
+  const ver=()=>{
+    document.getElementById("ver").remove();
+    const m=new Set((datos._sup[id]||{}).marcas||[]);
+    document.getElementById("sol").innerHTML=`<h2 class="apartado">¿Qué puntos has incluido?</h2><p class="resumen" style="margin-top:0">Marca los que aparecen en tu respuesta, aunque los hayas dicho con otras palabras.</p>
+    <div class="lista-temas">${x.claves.map((c,i)=>`<label class="tema-check"><input type="checkbox" value="${i}" ${m.has(i)?"checked":""}><span>${esc(c)}</span></label>`).join("")}</div>
+    <p class="pct" id="suppts" style="margin:10px 0"></p>
+    <h2 class="apartado">Respuesta modelo</h2><div class="explica" style="margin-top:0">${esc(x.modelo)}</div>
+    <div class="nav"><button class="btn sec" id="otro">Otros casos</button><button class="btn" id="sig">Siguiente caso</button></div>`;
+    const cajas=[...document.querySelectorAll("#sol input")], pts=document.getElementById("suppts");
+    const pintar=()=>{const n=cajas.filter(c=>c.checked).length, pct=n/x.claves.length;pts.className="pct "+clasePct(pct);pts.textContent=`${n} de ${x.claves.length} puntos clave${pct>=.8?": muy bien.":pct>=.5?": bien, repasa los que faltan.":": vuelve a leer la respuesta modelo y repite el caso otro día."}`};
+    const save=()=>{datos._sup[id]=Object.assign({},datos._sup[id],{txt:ta.value,marcas:cajas.filter(c=>c.checked).map(c=>+c.value),t:Date.now()});guardar(datos);pintar()};
+    cajas.forEach(c=>c.onchange=save); save();
+    const lista=L.filter(c=>c.plaza===plaza||c.plaza==="ambas"), k=lista.findIndex(c=>c.id===id), nx=lista[k+1];
+    const sig=document.getElementById("sig"); if(!nx){sig.textContent="Volver a la lista";sig.onclick=()=>listaSupuestos(plaza)} else sig.onclick=()=>supuesto(nx.id,plaza);
+    document.getElementById("otro").onclick=()=>listaSupuestos(plaza);
+    document.getElementById("sol").scrollIntoView({behavior:"smooth",block:"start"});
+  };
+  document.getElementById("ver").onclick=ver;
+  if(r.marcas) ver();
+  arriba();
+}
+
+/* ---------- Leer el tema ---------- */
+/* Formato de los resúmenes: "## Título", "### Subtítulo", "- punto", párrafos; **negrita** */
+function md(txt){
+  const inl=x=>esc(x).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/(^|[^*])\*([^*]+)\*(?!\*)/g,"$1<i>$2</i>");
+  let h="",pila=[];
+  const cerrar=n=>{while(pila.length>n)h+=pila.pop()==="ol"?"</li></ol>":"</li></ul>"};
+  txt.trim().split("\n").forEach(l=>{
+    const m=l.match(/^(\s*)(- |\d+\. )(.*)$/);
+    if(m){
+      const nivel=m[1].length>=2?2:1, tipo=m[2]==="- "?"ul":"ol";
+      if(pila.length<nivel){h+=`<${tipo}>`;pila.push(tipo)}
+      else{cerrar(nivel);if(pila[nivel-1]!==tipo){h+=pila.pop()==="ol"?"</li></ol>":"</li></ul>";h+=`<${tipo}>`;pila.push(tipo)}else h+="</li>"}
+      h+=`<li>${inl(m[3])}`;return;
+    }
+    cerrar(0);
+    l=l.trim(); if(!l)return;
+    if(l.startsWith("### "))h+=`<h3>${inl(l.slice(4))}</h3>`;
+    else if(l.startsWith("## "))h+=`<h2>${inl(l.slice(3))}</h2>`;
+    else h+=`<p>${inl(l)}</p>`;
+  });
+  cerrar(0);
+  return h;
+}
+/* El resumen se lee por apartados (cada «## »), para no tener que leerlo todo de golpe */
+function partes(txt){
+  const ps=[];let intro=[],cur=null;
+  txt.trim().split("\n").forEach(l=>{
+    if(l.startsWith("## ")){cur={t:l.slice(3).trim(),c:[]};ps.push(cur)}
+    else (cur?cur.c:intro).push(l);
+  });
+  return {intro:intro.join("\n"),ps:ps.map(p=>({t:p.t,c:p.c.join("\n")}))};
+}
+const minutos=txt=>Math.max(1,Math.round(txt.split(/\s+/).length/170));
+function leerTema(tid,vista){
+  const t=opo.temas.find(x=>x.id===tid), key=opo.id+"/"+tid, res=RESUMENES[key];
+  vista=vista||(res?"resumen":"claves");
+  const pest=[res&&["resumen","Resumen"],["claves","Preguntas clave"]].filter(Boolean);
+  datos._secs=datos._secs||{};
+  const hechas=new Set(datos._secs[key]||[]);
+  let h=`<button class="volver" id="vol">← ${esc(corto(opo))}</button><p class="tag">${esc(t.sig||"")}</p><h1>${esc(t.titulo)}</h1>
+  <div class="chips" style="margin-top:14px">${pest.map(([v,n])=>`<button class="chip" data-vista="${v}" aria-pressed="${v===vista}">${n}</button>`).join("")}</div>`;
+  if(vista==="resumen"){
+    const {intro,ps}=partes(res);
+    const sig=ps.findIndex((_,i)=>!hechas.has(i));
+    h+=`<p class="lead" style="margin-top:4px">${ps.length} apartados cortos. Lee uno o dos cuando puedas y márcalos como leídos: la próxima vez se abrirá el siguiente.</p>
+    <div class="avance"><div class="progreso" style="margin:0"><i style="width:${hechas.size/ps.length*100}%"></i></div><span>${hechas.size} de ${ps.length} leídos</span></div>
+    <div class="lectura">${intro.trim()?md(intro):""}</div>`;
+    ps.forEach((p,i)=>{
+      const ok=hechas.has(i);
+      h+=`<details class="parte${ok?" hecha":""}" ${i===sig?"open":""}><summary><span class="num">${ok?"✓":i+1}</span><span class="tit">${esc(p.t)}</span><span class="min">${minutos(p.c)} min</span></summary>
+      <div class="lectura">${md(p.c)}</div><div class="acciones" style="margin-top:4px"><button class="btn ${ok?"sec":""}" data-sec="${i}">${ok?"Marcar como no leído":i===ps.length-1?"Leído":"Leído, siguiente apartado"}</button></div></details>`;
+    });
+    h+=hechas.size===ps.length?`<p class="ok-txt">Has leído todo el resumen. Ahora haz el test para fijarlo.</p>`:"";
+  }else{
+    h+=`<p class="lead" style="margin-top:4px">Cada pregunta del banco con su respuesta correcta. Para estudiar activamente, oculta las respuestas e intenta decirlas antes de tocar.</p>
+    <div class="chips"><button class="chip" id="ocultar" aria-pressed="false">Ocultar respuestas</button></div>
+    <div class="lectura"><ul class="claves" id="claves">${t.preguntas.map(p=>`<li><div class="q">${esc(p.q.replace(/^Solo Ayudante\.\s*/,""))}</div><div class="r">${esc(correcta(p))}</div>${p.e?`<div class="e">${esc(p.e)} <span class="ref">${esc(p.r||"")}</span></div>`:""}</li>`).join("")}</ul></div>`;
+  }
+  h+=`<button class="btn siguiente" id="hecho">Hacer el test de este tema</button>`;
+  app.innerHTML=h;
+  document.getElementById("vol").onclick=()=>temas(opo.id,OPOSICIONES.length===1);
+  app.querySelectorAll("[data-vista]").forEach(c=>c.onclick=()=>leerTema(tid,c.dataset.vista));
+  app.querySelectorAll("[data-sec]").forEach(b=>b.onclick=()=>{
+    const i=+b.dataset.sec, s=new Set(datos._secs[key]||[]);
+    if(s.has(i))s.delete(i);else s.add(i);
+    datos._secs[key]=[...s];
+    const total=partes(res).ps.length;
+    if(s.size===total)datos._leido[key]=hoyISO();
+    guardar(datos);
+    leerTema(tid,"resumen");
+    const nx=app.querySelector("details.parte[open]"); if(nx&&s.has(i))nx.scrollIntoView({block:"start"});
+  });
+  const ul=document.getElementById("claves"), oc=document.getElementById("ocultar");
+  if(ul){
+    oc.onclick=()=>{const on=!ul.classList.contains("ocultas");ul.classList.toggle("ocultas",on);oc.setAttribute("aria-pressed",on);oc.textContent=on?"Mostrar respuestas":"Ocultar respuestas";ul.querySelectorAll("li").forEach(li=>li.classList.remove("ver"))};
+    ul.onclick=e=>{const li=e.target.closest("li");if(li&&ul.classList.contains("ocultas"))li.classList.toggle("ver")};
+  }
+  document.getElementById("hecho").onclick=()=>empezarTema(tid,"todo");
+  arriba();
+}
+
+/* ---------- Test por tema ---------- */
+function empezarTema(tid,modo){
+  const t=opo.temas.find(x=>x.id===tid), s=estado(opo.id,tid);
+  const ps=modo==="falladas"?t.preguntas.filter(p=>s.falladas.includes(fk(p))):t.preguntas;
+  ses={tipo:"tema",t,modo,items:barajar(ps).map(p=>({p,o:opo,t})),i:0,aciertos:0,fallos:[],
+    repetir:()=>empezarTema(tid,"todo")};
+  pregunta();
+}
+
+/* ---------- Popurrí ---------- */
+function configPopurri(oid){
+  pararReloj();
+  const o=oid?OPOSICIONES.find(x=>x.id===oid):null;
+  const cfgKey="pop:"+(oid||"comun");
+  const cfg=Object.assign({n:20,temas:null},datos._cfg[cfgKey]);
+  const conPreg=o?o.temas.filter(t=>t.preguntas.length):[];
+  let marcados=new Set(cfg.temas&&o?cfg.temas.filter(id=>conPreg.some(t=>t.id===id)):conPreg.map(t=>t.id));
+  const pool=()=>o?reunir(conPreg.filter(t=>marcados.has(t.id)).map(t=>({o,t}))):poolComun();
+  let h=`<button class="volver" id="vol">← ${o?esc(corto(o)):"Oposiciones"}</button>
+  <h1>Popurrí${o?"":" común"}</h1><p class="lead">${o?esc(o.nombre):"Materia que comparten tus oposiciones."} Primero salen las que toca repasar hoy (las falladas vuelven al día siguiente; las acertadas, a los 3, 7, 14 y 30 días), luego las que no has visto y por último el resto.</p>
+  <h2 class="apartado">Cuántas preguntas</h2><div class="chips" id="chips">`;
+  [20,50,100,0].forEach(n=>{h+=`<button class="chip" data-n="${n}" aria-pressed="${cfg.n===n}">${n||"Todas"}</button>`});
+  h+='</div>';
+  if(o){
+    h+=`<h2 class="apartado">De qué temas</h2><div class="chips"><button class="chip" id="todos">Todos</button><button class="chip" id="ninguno">Ninguno</button></div><div class="lista-temas">`;
+    conPreg.forEach(t=>{h+=`<label class="tema-check"><input type="checkbox" value="${t.id}" ${marcados.has(t.id)?"checked":""}><span><b>${esc(t.sig||"")}</b> ${esc(t.titulo.replace(/^Tema \d+\.\s*/,""))}</span></label>`});
+    h+='</div>';
+  }
+  h+=`<p class="resumen" id="res"></p><button class="btn siguiente" id="go">Empezar el popurrí</button>`;
+  app.innerHTML=h;
+  const res=document.getElementById("res"), go=document.getElementById("go");
+  const pintar=()=>{const pl=pool();res.textContent=pl.length?resumenPool(pl)+".":"Marca al menos un tema.";go.disabled=!pl.length};
+  pintar();
+  document.getElementById("vol").onclick=()=>o?temas(o.id,OPOSICIONES.length===1):portada();
+  app.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{cfg.n=+b.dataset.n;app.querySelectorAll("[data-n]").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+  if(o){
+    const cajas=[...app.querySelectorAll(".tema-check input")];
+    const leer=()=>{marcados=new Set(cajas.filter(c=>c.checked).map(c=>c.value));pintar()};
+    cajas.forEach(c=>c.onchange=leer);
+    document.getElementById("todos").onclick=()=>{cajas.forEach(c=>c.checked=true);leer()};
+    document.getElementById("ninguno").onclick=()=>{cajas.forEach(c=>c.checked=false);leer()};
+  }
+  go.onclick=()=>{
+    datos._cfg[cfgKey]={n:cfg.n,temas:o?[...marcados]:null};guardar(datos);
+    const pl=pool();
+    const empezar=()=>{
+      ses={tipo:"popurri",comun:!o,items:elegir(pool(),cfg.n||pl.length),i:0,aciertos:0,fallos:[],
+        repetir:empezar,ajustes:()=>configPopurri(oid)};
+      pregunta();
+    };
+    empezar();
+  };
+  arriba();
+}
+
+/* ---------- Pregunta (tema y popurrí) ---------- */
+function etiqueta(it){
+  if(ses.tipo==="tema")return "";
+  const lugar=ses.comun?`${esc(corto(it.o))} · ${esc(it.t.sig||"")}`:esc(it.t.sig||"");
+  return `<p class="tag">${lugar} — ${esc(it.t.titulo.replace(/^Tema \d+\.\s*/,""))}</p>`;
+}
+function pregunta(){
+  const it=ses.items[ses.i], p=it.p, n=ses.items.length;
+  const ops=opciones(p);
+  const piensa=datos._cfg.piensa!==false;
+  let h=`<div class="barra"><button id="salir">Salir</button><span>Pregunta ${ses.i+1} de ${n}</span><button class="toggle" id="tgp" aria-pressed="${piensa}" title="Ver la pregunta sin opciones para pensar antes la respuesta">Piensa primero: ${piensa?"sí":"no"}</button></div>
+  <div class="progreso"><i style="width:${(ses.i/n)*100}%"></i></div>${etiqueta(it)}
+  <p class="pregunta">${esc(p.q)}</p>`;
+  if(piensa)h+=`<div class="piensa" id="piensa"><p>Antes de ver las opciones, di la respuesta en voz alta o en tu cabeza.</p><div class="acciones"><button class="btn" id="verop">Ya la tengo: ver opciones</button><button class="btn sec" id="nose">No lo sé</button></div></div>`;
+  h+=`<div class="opciones" id="ops"${piensa?" hidden":""}>`;
+  ops.forEach((o,k)=>{h+=`<button class="op" data-k="${k}"><b>${"abcd"[k]})</b><span>${esc(o.txt)}</span></button>`});
+  h+='</div><div id="tras"></div>';
+  app.innerHTML=h;
+  let noSe=false;
+  document.getElementById("tgp").onclick=()=>{datos._cfg.piensa=!piensa;guardar(datos);pregunta()};
+  if(piensa){
+    const ver=()=>{document.getElementById("piensa").remove();const o=document.getElementById("ops");o.hidden=false;o.querySelector(".op").focus({preventScroll:true})};
+    document.getElementById("verop").onclick=ver;
+    document.getElementById("nose").onclick=()=>{noSe=true;ver()};
+  }
+  document.getElementById("salir").onclick=async()=>{const ir=ses.ajustes||volverTemas;if(ses.i===0||await pedir("¿Salir del test? Lo que llevas respondido ya está guardado.","Salir","Seguir"))ir()};
+  const botones=[...app.querySelectorAll(".op")];
+  botones.forEach(b=>b.onclick=()=>{
+    const elegida=ops[+b.dataset.k];
+    botones.forEach((x,k)=>{x.disabled=true;if(ops[k].ok)x.classList.add("ok")});
+    if(elegida.ok)ses.aciertos++;
+    else{b.classList.add("bad");ses.fallos.push(it)}
+    it.ok=elegida.ok;
+    registrar(p,elegida.ok);
+    const ult=ses.i===n-1;
+    const avanzar=()=>{if(ult)resultado();else{ses.i++;pregunta();arriba()}};
+    const preguntaConf=elegida.ok&&!noSe;
+    if(elegida.ok&&noSe){confianza(p,0);it.conf=0;ses.suerte=(ses.suerte||0)+1}
+    let pie;
+    if(preguntaConf)pie=`<div class="conf"><p>¿Cómo de segura estabas?</p><div class="tres">
+      <button class="c2" data-c="2">Lo sabía<small>vuelve en días</small></button>
+      <button class="c1" data-c="1">Dudé<small>vuelve antes</small></button>
+      <button class="c0" data-c="0">Adiviné<small>vuelve mañana</small></button></div></div>`;
+    else pie=`<button class="btn siguiente" id="sig">${ult?"Ver el resultado":"Siguiente pregunta"}</button>`;
+    const nota=elegida.ok&&noSe?`<p class="pista">Como no lo sabías, cuenta como acierto de suerte y volverá mañana.</p>`:"";
+    document.getElementById("tras").innerHTML=`<div class="explica"><strong>${elegida.ok?"Correcto.":"No es esa."}</strong>${esc(p.e||"")}<div class="ref">${esc(p.r||"")}</div></div>${nota}
+    <button class="enlace" id="avisar">¿Ves algo mal en esta pregunta? Avísame</button><div id="avisobox"></div>${pie}`;
+    document.getElementById("avisar").onclick=()=>formAviso(it,document.getElementById("avisobox"),document.getElementById("avisar"));
+    const foco=document.getElementById("sig")||app.querySelector(".conf button");
+    foco.focus({preventScroll:true});
+    foco.scrollIntoView({block:"nearest",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+    if(preguntaConf)app.querySelectorAll("[data-c]").forEach(cb=>cb.onclick=()=>{
+      const c=+cb.dataset.c;confianza(p,c);it.conf=c;
+      if(c===0)ses.suerte=(ses.suerte||0)+1;else if(c===1)ses.dudas=(ses.dudas||0)+1;
+      avanzar();
+    });
+    else document.getElementById("sig").onclick=avanzar;
+  });
+}
+
+/* ---------- Avisos de preguntas que parecen mal ---------- */
+let avisosCol=null;
+function formAviso(it,box,btn){
+  btn.hidden=true;
+  box.innerHTML=`<div class="aviso-form"><label for="avtxt" style="font-weight:700;font-size:.9rem;color:var(--soft)">Qué te parece mal (por ejemplo: «la correcta es la b según el art. 30»)</label><textarea id="avtxt" maxlength="1000"></textarea><div class="acciones" style="margin-top:0"><button class="btn sec" id="avno">Cancelar</button><button class="btn" id="avsi">Enviar aviso</button></div></div>`;
+  const ta=document.getElementById("avtxt");ta.focus();
+  document.getElementById("avno").onclick=()=>{box.innerHTML="";btn.hidden=false};
+  document.getElementById("avsi").onclick=async()=>{
+    const nota=ta.value.trim();if(!nota){ta.focus();return}
+    const p=it.p, t=Date.now();
+    const doc={k:p.k,oposicion:it.o.nombre,tema:(it.t.sig||"")+" "+it.t.titulo,pregunta:p.q,opciones:p.o,respuestaPuesta:correcta(p),nota,t,estado:"pendiente"};
+    let ok=false;
+    if(avisosCol){try{await avisosCol.doc(p.k.replace(/[^A-Za-z0-9_\-.]/g,"_")+"-"+t).set(doc);ok=true}catch(e){}}
+    if(!ok){datos._avisos=datos._avisos||[];datos._avisos.push(doc);guardar(datos)}
+    box.innerHTML=`<p class="ok-txt">${ok?"Aviso enviado. Lo revisaré y corregiré la pregunta si hace falta.":"Aviso guardado en este dispositivo. Ábrelo desde Claude para que me llegue."}</p>`;
+  };
+}
+
+/* Tabla de resultado por temas: filas {nombre, bien, total} ordenadas de peor a mejor */
+function tablaTemas(items,comun){
+  const g=new Map();
+  items.forEach(it=>{
+    const key=it.o.id+"/"+it.t.id;
+    if(!g.has(key))g.set(key,{nombre:(comun?corto(it.o)+" · ":"")+(it.t.sig||"")+" — "+it.t.titulo.replace(/^Tema \d+\.\s*/,""),bien:0,total:0});
+    const r=g.get(key);r.total++;if(it.ok)r.bien++;
+  });
+  const filas=[...g.values()].sort((a,b)=>a.bien/a.total-b.bien/b.total||b.total-a.total);
+  let h='<h2 class="apartado">Por temas</h2><ul class="por-tema">';
+  filas.forEach(r=>{const pct=r.bien/r.total;h+=`<li><span>${esc(r.nombre)}</span><b class="${pct<.5?"mal":pct<.8?"medio":"bien"}">${r.bien} de ${r.total}</b></li>`});
+  return h+'</ul>';
+}
+function listaFallos(items,simul){
+  if(!items.length)return "";
+  let h=`<h2 class="apartado">${simul?"Fallos y en blanco":"Las que has fallado"}</h2><ul class="fallos">`;
+  items.forEach(it=>{
+    const tuya=simul&&it.resp!=null?`<div class="tuya">Tu respuesta: ${esc(it.ops[it.resp].txt)}</div>`:simul?'<div class="tuya">En blanco</div>':"";
+    h+=`<li><div class="q">${esc(it.p.q)}</div>${tuya}<div class="r">${esc(correcta(it.p))}</div><div class="ref">${esc(it.p.r||"")}${it.p.e?" · "+esc(it.p.e):""}</div></li>`;
+  });
+  return h+'</ul>';
+}
+
+function resultado(){
+  const n=ses.items.length, a=ses.aciertos;
+  let h;
+  if(ses.tipo==="tema"){
+    const s=estado(opo.id,ses.t.id);
+    if(ses.modo==="todo"&&(s.mejor===null||a>s.mejor))s.mejor=a;
+    guardar(datos);
+  }
+  const pct=a/n;
+  const msg=pct===1?"Todas bien.":pct>=.8?"Muy bien. Repasa las que has fallado y vuelve en unos días.":pct>=.5?"Vas por buen camino. Relee los artículos de las falladas antes de repetir.":"Conviene releer los temas que peor te han ido antes de repetir.";
+  const su=ses.suerte||0, du=ses.dudas||0, seg=a-su;
+  const desglose=su||du?`<div class="real"><div>De verdad sabías</div><div class="pts">${seg} <small style="font-size:1rem;color:var(--soft)">de ${n}</small></div><p>${pl(a,"acierto","aciertos")}: ${a-su-du} lo sabías, ${du} con dudas y ${su} de suerte. Las de suerte cuentan como falladas: volverán mañana.</p></div>`:"";
+  h=`<h1>Resultado</h1><p class="nota">${a} de ${n}</p><p class="lead">${msg}</p>${desglose}<div class="acciones">`;
+  if(ses.tipo==="tema"){
+    const s=estado(opo.id,ses.t.id), f=ses.t.preguntas.filter(p=>s.falladas.includes(fk(p))).length;
+    h+=`<button class="btn" id="rep">Repetir el test</button><button class="btn sec" id="fal" ${f?"":"disabled"}>Repasar falladas (${f})</button>`;
+  }else h+='<button class="btn" id="rep">Otro popurrí igual</button><button class="btn sec" id="aj">Cambiar ajustes</button>';
+  h+=`<button class="btn sec" id="vol">${opo?"Volver a los temas":"Volver al inicio"}</button></div>`;
+  if(ses.tipo!=="tema")h+=tablaTemas(ses.items,ses.comun);
+  h+=listaFallos(ses.fallos,false);
+  const suerte=ses.items.filter(it=>it.ok&&it.conf===0);
+  if(suerte.length)h+=listaFallos(suerte,false).replace("Las que has fallado","Las que acertaste de suerte");
+  app.innerHTML=h;
+  const tid=ses.t&&ses.t.id;
+  document.getElementById("rep").onclick=ses.repetir;
+  if(ses.tipo==="tema")document.getElementById("fal").onclick=()=>empezarTema(tid,"falladas");
+  else document.getElementById("aj").onclick=ses.ajustes;
+  document.getElementById("vol").onclick=volverTemas;
+  arriba();
+}
+
+/* ---------- Simulacro ---------- */
+const PENAS=[["0","No restan"],["0.25","Cada fallo resta 1/4"],["0.3333333333","Cada fallo resta 1/3"],["0.5","Cada fallo resta 1/2"],["1","Cada fallo resta 1"]];
+function configSimulacro(){
+  pararReloj();
+  const o=opo, cfgKey="sim:"+o.id;
+  const cfg=Object.assign({n:50,min:60,pena:"0.3333333333"},SIM_DEF[o.id]||{},o.sim||{},datos._cfg[cfgKey]);
+  const total=reunir(o.temas.map(t=>({o,t}))).length;
+  let h=`<button class="volver" id="vol">← ${esc(corto(o))}</button>
+  <h1>Simulacro de examen</h1><p class="lead">${esc(o.nombre)}. Preguntas al azar de todos los temas, con reloj. No verás si aciertas hasta entregar. Puedes dejar preguntas en blanco y cambiar respuestas.</p>
+  <p class="aviso">Pon el número de preguntas, el tiempo y la penalización que digan las bases de tu convocatoria.</p>
+  <div class="campos">
+    <label>Preguntas<input type="number" id="n" min="5" max="${total}" value="${Math.min(cfg.n,total)}" inputmode="numeric"></label>
+    <label>Minutos<input type="number" id="min" min="1" max="300" value="${cfg.min}" inputmode="numeric"></label>
+    <label class="ancho">Penalización<select id="pena">${PENAS.map(([v,t])=>`<option value="${v}" ${v===cfg.pena?"selected":""}>${t}</option>`).join("")}</select></label>
+  </div>
+  ${REAL[o.id]?`<p class="resumen">${esc(REAL[o.id].bases)} Al acabar verás también los puntos que sacarías en el examen real.</p>`:""}
+  <p class="resumen">Hay ${total} preguntas distintas en esta oposición. La nota se calcula sobre 10: (aciertos − fallos × penalización) ÷ preguntas × 10. Las que dejes en blanco no restan, pero pasarán a «Repasar falladas».</p>
+  <button class="btn siguiente" id="go">Empezar el simulacro</button>`+historial(o.id);
+  app.innerHTML=h;
+  document.getElementById("vol").onclick=()=>temas(o.id,OPOSICIONES.length===1);
+  document.getElementById("go").onclick=()=>{
+    const n=Math.max(1,Math.min(total,parseInt(document.getElementById("n").value)||50));
+    const min=Math.max(1,Math.min(300,parseInt(document.getElementById("min").value)||60));
+    const pena=document.getElementById("pena").value;
+    datos._cfg[cfgKey]={n,min,pena};guardar(datos);
+    const items=barajar(reunir(o.temas.map(t=>({o,t})))).slice(0,n).map(it=>Object.assign(it,{ops:opciones(it.p),resp:null}));
+    ses={tipo:"simulacro",oid:o.id,items,i:0,pena:+pena,fin:Date.now()+min*60000,min,inicio:Date.now()};
+    pararReloj();
+    reloj=setInterval(tic,1000);
+    simPregunta();
+  };
+  arriba();
+}
+function historial(oid){
+  const l=datos._sims.filter(x=>x.o===oid).slice(-10);
+  if(!l.length)return "";
+  const R_=REAL[oid], tope=R_?(R_.max||R_.preguntas*R_.acierto):10;
+  const val=x=>R_&&x.pts!=null?x.pts:x.nota;
+  const W=300,H=90,pad=6, xs=i=>l.length===1?W/2:pad+i*(W-2*pad)/(l.length-1), ys=v=>H-pad-(v/tope)*(H-2*pad);
+  const pts=l.map((x,i)=>xs(i).toFixed(1)+","+ys(val(x)).toFixed(1)).join(" ");
+  const ap=R_&&R_.aprobado!=null?`<line x1="0" x2="${W}" y1="${ys(R_.aprobado)}" y2="${ys(R_.aprobado)}" stroke="var(--brass)" stroke-dasharray="4 4"/>`:"";
+  let h=`<h2 class="apartado">Tus últimos simulacros</h2><svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Evolución de tus notas en los simulacros" style="display:block;background:var(--card);border:1px solid var(--line);border-radius:6px">${ap}<polyline points="${pts}" fill="none" stroke="var(--green)" stroke-width="2"/>${l.map((x,i)=>`<circle cx="${xs(i)}" cy="${ys(val(x))}" r="3.5" fill="var(--green)"/>`).join("")}</svg><ul class="por-tema">`;
+  l.slice().reverse().forEach(x=>{const [y,m,d]=x.f.split("-");h+=`<li><span>${+d}/${+m} · ${x.A} bien, ${x.F} mal, ${x.B} en blanco de ${x.n}</span><b>${R_&&x.pts!=null?fmt(x.pts)+" de "+fmt(tope):fmt(x.nota)+" /10"}</b></li>`});
+  return h+'</ul>'+(ap?'<p class="resumen">La línea discontinua es la nota mínima para aprobar.</p>':"");
+}
+const mmss=ms=>{const s=Math.max(0,Math.ceil(ms/1000));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+function tic(){
+  if(!ses||ses.tipo!=="simulacro"){pararReloj();return}
+  const quedan=ses.fin-Date.now(), el=document.getElementById("reloj");
+  if(el){el.textContent=mmss(quedan);el.classList.toggle("poco",quedan<5*60000)}
+  if(quedan<=0){pararReloj();ses.agotado=true;simResultado()}
+}
+function simPregunta(){
+  const it=ses.items[ses.i], n=ses.items.length, resp=ses.items.filter(x=>x.resp!=null).length;
+  let h=`<div class="barra"><button id="salir">Salir</button><span>Pregunta ${ses.i+1} de ${n}</span><span class="reloj" id="reloj">${mmss(ses.fin-Date.now())}</span></div>
+  <div class="progreso"><i style="width:${(resp/n)*100}%"></i></div>
+  <p class="pregunta">${esc(it.p.q)}</p><div class="opciones">`;
+  it.ops.forEach((o,k)=>{h+=`<button class="op${it.resp===k?" sel":""}" data-k="${k}" aria-pressed="${it.resp===k}"><b>${"abcd"[k]})</b><span>${esc(o.txt)}</span></button>`});
+  h+=`</div><p class="pista">${it.resp==null?"Sin responder.":"Toca otra vez tu respuesta para dejarla en blanco."}</p>
+  <div class="nav"><button class="btn sec" id="ant" ${ses.i?"":"disabled"}>← Anterior</button><button class="btn" id="sig">${ses.i===n-1?"Revisar":"Siguiente →"}</button></div>
+  <details class="mapa"><summary>Ir a una pregunta · ${resp} de ${n} respondidas</summary><div class="rejilla">`;
+  ses.items.forEach((x,k)=>{h+=`<button class="${x.resp!=null?"hecha":""}${k===ses.i?" actual":""}" data-ir="${k}">${k+1}</button>`});
+  h+=`</div></details><button class="btn sec siguiente" id="entregar">Entregar el examen</button>`;
+  app.innerHTML=h;
+  document.getElementById("salir").onclick=async()=>{if(await pedir("¿Salir del simulacro? No se guardará la nota.","Salir","Seguir")){pararReloj();configSimulacro()}};
+  app.querySelectorAll(".op").forEach(b=>b.onclick=()=>{const k=+b.dataset.k;it.resp=it.resp===k?null:k;simPregunta()});
+  document.getElementById("ant").onclick=()=>{ses.i--;simPregunta();arriba()};
+  document.getElementById("sig").onclick=()=>{if(ses.i<n-1){ses.i++;simPregunta();arriba()}else{app.querySelector(".mapa").open=true;document.getElementById("entregar").scrollIntoView({block:"nearest"})}};
+  app.querySelectorAll("[data-ir]").forEach(b=>b.onclick=()=>{ses.i=+b.dataset.ir;simPregunta();arriba()});
+  document.getElementById("entregar").onclick=()=>{
+    const blancas=n-ses.items.filter(x=>x.resp!=null).length;
+    pedir(blancas?`Tienes ${blancas} en blanco. ¿Entregar el examen?`:"¿Entregar el examen?","Entregar","Seguir").then(y=>{if(y&&ses&&ses.tipo==="simulacro"){pararReloj();simResultado()}});
+  };
+}
+function simResultado(){
+  pararReloj();
+  const its=ses.items, n=its.length;
+  let A=0,F=0,B=0;
+  its.forEach(it=>{
+    if(it.resp==null){B++;it.ok=false;registrar(it.p,false)}
+    else{it.ok=it.ops[it.resp].ok;if(it.ok)A++;else F++;registrar(it.p,it.ok)}
+  });
+  const nota=Math.max(0,(A-F*ses.pena)/n*10);
+  const usado=Math.min(ses.min*60000,Date.now()-ses.inicio);
+  const penaTxt=(PENAS.find(([v])=>+v===ses.pena)||[,""])[1].toLowerCase();
+  const agot=ses.agotado;
+  let h=`<h1>Resultado del simulacro</h1>${agot?'<p class="aviso">Se ha acabado el tiempo. Se ha entregado lo que tenías respondido.</p>':""}<p class="nota">${nota.toFixed(2).replace(".",",")}</p>
+  <p class="lead">Sobre 10. ${pl(A,"acierto","aciertos")}, ${pl(F,"fallo","fallos")} y ${B} en blanco de ${n}. Tiempo: ${mmss(usado)} de ${ses.min}:00. ${penaTxt?penaTxt.charAt(0).toUpperCase()+penaTxt.slice(1)+".":""}</p>
+  <div class="acciones"><button class="btn" id="rep">Otro simulacro</button><button class="btn sec" id="vol">Volver a los temas</button></div>`;
+  const R_=REAL[ses.oid];
+  if(R_){
+    const bruto=(A*R_.acierto-F*R_.fallo)*(R_.preguntas/n);
+    const tope=R_.max||R_.preguntas*R_.acierto;
+    const pts=Math.max(0,Math.min(tope,bruto));
+    let ver="";
+    if(R_.aprobado!=null)ver=pts>=R_.aprobado?`<div class="veredicto si">Aprobarías: ${fmt(pts-R_.aprobado)} puntos por encima del mínimo (${fmt(R_.aprobado)}).</div>`:`<div class="veredicto no">No llegarías: te faltan ${fmt(R_.aprobado-pts)} puntos para el ${fmt(R_.aprobado)}.</div>`;
+    ses.pts=pts;
+    h+=`<div class="real"><div>En el examen real sacarías</div><div class="pts">${fmt(pts)} <small style="font-size:1rem;color:var(--soft)">de ${fmt(tope)}</small></div>${ver}<p>${n===R_.preguntas?"":`Calculado a escala de ${R_.preguntas} preguntas, como el examen. `}${esc(R_.bases)}</p></div>`;
+  }
+  datos._sims.push({o:ses.oid,f:hoyISO(),nota:+nota.toFixed(2),pts:ses.pts!=null?+ses.pts.toFixed(2):null,n,A,F,B});
+  datos._sims=datos._sims.slice(-60);guardar(datos);
+  h+=historial(ses.oid);
+  h+=tablaTemas(its,false);
+  h+=listaFallos(its.filter(it=>!it.ok),true);
+  app.innerHTML=h;
+  ses={tipo:"hecho"};
+  document.getElementById("rep").onclick=configSimulacro;
+  document.getElementById("vol").onclick=volverTemas;
+  arriba();
+}
+{const h=decodeURIComponent((location.hash||"").slice(1));OPOSICIONES.some(o=>o.id===h)?temas(h,OPOSICIONES.length===1):portada();}
+(async()=>{
+  try{
+    const db=window.claude&&window.claude.use?await window.claude.use("db"):null;
+    if(!db)return;
+    avisosCol=db.collection("avisos");
+    const ref=db.collection("progreso").doc("datos");
+    const snap=await ref.get();
+    syncDoc=ref;
+    const remoto=snap.exists?snap.data():null;
+    if(remoto&&remoto.json&&(remoto.t||0)>(datos._t||0)){
+      try{
+        const r=JSON.parse(remoto.json);
+        datos=r;datos._conf=datos._conf||{};datos._leido=datos._leido||{};datos._secs=datos._secs||{};datos._sup=datos._sup||{};datos._q=datos._q||{};datos._cfg=datos._cfg||{};datos._sr=datos._sr||{};datos._dia=datos._dia||{};datos._sims=datos._sims||[];datos._hist=datos._hist||{};
+        try{localStorage.setItem(KEY,JSON.stringify(datos))}catch(e){}
+      }catch(e){}
+    }else if(Object.keys(datos).some(k=>!k.startsWith("_"))||Object.keys(datos._q||{}).length){
+      await subir();
+    }
+    if(datos._avisos&&datos._avisos.length){
+      const pend=datos._avisos.slice();datos._avisos=[];
+      for(const a of pend){try{await avisosCol.doc(a.k.replace(/[^A-Za-z0-9_\-.]/g,"_")+"-"+a.t).set(a)}catch(e){datos._avisos.push(a)}}
+      guardar(datos);
+    }
+    if(!ses)(opo?temas(opo.id,OPOSICIONES.length===1):portada());
+  }catch(e){}
+})();
+if("serviceWorker" in navigator){window.addEventListener("load",()=>{navigator.serviceWorker.register("sw.js").catch(()=>{})})}
+</script>
+</body>
+</html>
+
+</body></html>
