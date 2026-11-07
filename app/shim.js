@@ -12,10 +12,12 @@
         .api(action, JSON.stringify(payload || {}));
     });
   }
+  /* Cada página guarda sus colecciones en pestañas propias: panel_tasks, labores_patrones, tests_progreso… */
+  function tabla(col) { return (CDC.app || "panel") + "_" + col; }
   var subs = {};
   function snapOf(rows) { return { docs: (rows || []).map(function (r) { return { id: r.id, exists: true, data: function () { return r.data; } }; }) }; }
   function refresh(col) {
-    return run("list", { col: col }).then(function (rows) {
+    return run("list", { col: tabla(col) }).then(function (rows) {
       (subs[col] || []).forEach(function (f) { try { f(snapOf(rows)); } catch (e) { console.error(e); } });
       return rows;
     });
@@ -25,16 +27,16 @@
     id = id || nuevoId();
     return {
       id: id,
-      get: function () { return run("get", { col: col, id: id }).then(function (d) { return { id: id, exists: !!d, data: function () { return d; } }; }); },
-      set: function (data) { return run("set", { col: col, id: id, data: data }).then(function () { refresh(col).catch(function () {}); }); },
-      update: function (data) { return run("update", { col: col, id: id, data: data }).then(function () { refresh(col).catch(function () {}); }); },
-      delete: function () { return run("delete", { col: col, id: id }).then(function () { refresh(col).catch(function () {}); }); }
+      get: function () { return run("get", { col: tabla(col), id: id }).then(function (d) { return { id: id, exists: !!d, data: function () { return d; } }; }); },
+      set: function (data) { return run("set", { col: tabla(col), id: id, data: data }).then(function () { refresh(col).catch(function () {}); }); },
+      update: function (data) { return run("update", { col: tabla(col), id: id, data: data }).then(function () { refresh(col).catch(function () {}); }); },
+      delete: function () { return run("delete", { col: tabla(col), id: id }).then(function () { refresh(col).catch(function () {}); }); }
     };
   }
   function collection(col) {
     return {
       doc: function (id) { return doc(col, id); },
-      get: function () { return run("list", { col: col }).then(snapOf); },
+      get: function () { return run("list", { col: tabla(col) }).then(snapOf); },
       onSnapshot: function (f, err) {
         (subs[col] = subs[col] || []).push(f);
         refresh(col).catch(function (e) { if (err) err(e); });
