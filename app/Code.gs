@@ -2,10 +2,10 @@
  * Centro de Control de Haizea · Apps Script
  * Va pegado a la hoja «Centro de Control – datos» (Extensiones → Apps Script).
  * Sirve tres páginas: ?app=panel (por defecto), ?app=tests y ?app=labores.
- * El diseño de las páginas se carga del repositorio público HAIZEA5/oposiciones-preguntas (carpeta app/);
+ * El diseño de las páginas se carga del repositorio público HAIZEA5/Oposiciones-Preguntas (carpeta app/);
  * los datos viven SOLO en esta hoja y en tu Drive.
  */
-var REPO = 'HAIZEA5/oposiciones-preguntas';
+var REPO = 'HAIZEA5/Oposiciones-Preguntas';
 var APPS = {
   panel:   { dir: 'app/panel/',   titulo: 'Panel de Haizea' },
   tests:   { dir: 'app/tests/',   titulo: 'Tests de oposiciones' },
