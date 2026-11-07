@@ -267,7 +267,7 @@ var HORA_VISPERA = 20;          // el aviso de la víspera de un examen sale a l
 var COPIAS_QUE_GUARDAR = 8;     // copias semanales de la hoja (dos meses)
 var CERRADA = /^\s*(cerrad|no me presento)/i;
 
-/** Cada mañana: pone en tu calendario la víspera de cada examen, el último día de cada plazo y las fechas de coche, perro y práctico. */
+/** Cada mañana: pone en tu calendario la víspera de cada examen, el último día de cada plazo y las fechas del coche y del práctico. */
 function avisosCalendario() {
   var props = PropertiesService.getScriptProperties();
   var cal = CalendarApp.getDefaultCalendar();
@@ -301,7 +301,7 @@ function avisosPendientes_() {
   });
   listar_('panel_recordatorios').forEach(function (r) {
     var x = r.data;
-    if (x.proxima) out.push({ clave: 'rec|' + r.id, fecha: x.proxima, titulo: (x.grupo === 'perro' ? 'Perro: ' : 'Coche: ') + x.titulo, detalle: x.nota || '' });
+    if (x.grupo === 'coche' && x.proxima) out.push({ clave: 'rec|' + r.id, fecha: x.proxima, titulo: 'Coche: ' + x.titulo, detalle: x.nota || '' });
   });
   var practico = obtener_('panel_ajustes', 'practico') || {};
   if (practico.examen) out.push({ clave: 'practico', fecha: practico.examen, vispera: true, titulo: 'Mañana: examen práctico del carnet',

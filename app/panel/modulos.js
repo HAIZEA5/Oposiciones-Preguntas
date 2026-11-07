@@ -1,4 +1,4 @@
-/* Panel de Haizea · secciones Coche, Práctico, Perro y Canal, vacaciones (en Calendario),
+/* Panel de Haizea · secciones Coche, Práctico y Canal, vacaciones (en Calendario),
    gastos del coche (en Dinero) y la tarjeta «Avisos» de Hoy.
    Va aparte del script principal: solo necesita el HTML del panel y window.claude.use("db"). */
 (function () {
@@ -27,17 +27,12 @@
     { id: "coche-seguro", grupo: "coche", titulo: "Renovar el seguro", cadaMeses: 12, nota: "Mira la fecha de vencimiento en la póliza." },
     { id: "coche-impuesto", grupo: "coche", titulo: "Impuesto de circulación", cadaMeses: 12, nota: "Lo cobra el ayuntamiento una vez al año." },
     { id: "coche-revision", grupo: "coche", titulo: "Revisión y cambio de aceite", cadaMeses: 12, nota: "" },
-    { id: "coche-v16", grupo: "coche", titulo: "Baliza V16: fin de la conexión", cadaMeses: 0, nota: "La fecha viene en la caja o en las instrucciones." },
-    { id: "perro-rabia", grupo: "perro", titulo: "Vacuna de la rabia", cadaMeses: 12, nota: "" },
-    { id: "perro-interna", grupo: "perro", titulo: "Desparasitación interna (pastilla)", cadaMeses: 3, nota: "" },
-    { id: "perro-externa", grupo: "perro", titulo: "Desparasitación externa (pipeta o collar)", cadaMeses: 1, nota: "" },
-    { id: "perro-vet", grupo: "perro", titulo: "Revisión en el veterinario", cadaMeses: 12, nota: "" }
+    { id: "coche-v16", grupo: "coche", titulo: "Baliza V16: fin de la conexión", cadaMeses: 0, nota: "La fecha viene en la caja o en las instrucciones." }
   ];
   const VACACIONES_INICIALES = ["2026-11-13", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-30", "2026-12-01", "2026-12-02", "2026-12-03", "2026-12-04", "2026-12-08", "2026-12-24", "2026-12-25", "2026-12-31", "2027-01-01"];
   const EN_EL_COCHE = [
     ["Obligatorio", [["perm", "Permiso de circulación (en la cartera sándwich)"], ["itv", "Tarjeta de la ITV"], ["v16", "Baliza V16"], ["chaleco", "Chaleco reflectante (al alcance, no en el maletero)"], ["rueda", "Rueda de repuesto con gato y llave, o kit antipinchazos"], ["carnet", "Tu carnet, cuando lo tengas"]]],
-    ["Recomendado", [["seguro", "Justificante del seguro (no es obligatorio llevarlo)"], ["linterna", "Linterna"], ["cables", "Cables de batería o arrancador"]]],
-    ["Para el perro (maletero)", [["agua", "Agua y cuenco plegable"], ["correa", "Correa y arnés"], ["bolsas", "Bolsas"], ["manta", "Manta o cama"], ["red", "Red o rejilla separadora"], ["toalla", "Toalla para cuando se moja"]]]
+    ["Recomendado", [["seguro", "Justificante del seguro (no es obligatorio llevarlo)"], ["linterna", "Linterna"], ["cables", "Cables de batería o arrancador"]]]
   ];
   const MANIOBRAS = [
     ["previas", "Comprobaciones antes de arrancar"], ["incorporarse", "Incorporarse a la circulación"], ["carril", "Mantener el carril y cambiar de carril"],
@@ -52,7 +47,7 @@
   const ESTADOS_CANAL = [["idea", "Idea"], ["guion", "Guion"], ["hecho", "Hecho"], ["publicado", "Publicado"]];
   const SECCIONES = [
     { id: "coche", nombre: "Coche" }, { id: "practico", nombre: "Práctico" },
-    { id: "perro", nombre: "Perro" }, { id: "canal", nombre: "Canal" }
+    { id: "canal", nombre: "Canal" }
   ];
 
   /* ---------- Estado ---------- */
@@ -164,11 +159,6 @@
         <li>El teórico lo tienes aprobado; si quieres repasar señales y prioridades, tienes la tarea de volver a Almagro.</li></ul></details>`;
   }
 
-  /* ---------- Perro ---------- */
-  function pintarPerro() {
-    $("#mod-perro").innerHTML = `<div class="card"><h3>Recordatorios</h3>${listaRecordatorios("perro")}</div>${checklist([EN_EL_COCHE[2]])}`;
-  }
-
   /* ---------- Canal ---------- */
   function pintarCanal() {
     const lunes = lunesDe(HOY), domingo = iso(new Date(aFecha(lunes).getTime() + 6 * 86400000));
@@ -204,7 +194,7 @@
   function pintarAvisos() {
     const el = $("#hoy-avisos"), out = [];
     st.exams.forEach(e => { const f = e.ficha || {}, d = dias(f.impugnar_hasta); if (d !== null && d >= 0) out.push({ d, txt: `${f.impugnar_txt || "Reclamar"} · ${e.organismo}: hasta el ${fCorta(f.impugnar_hasta)} (${cuando(d)})` }); });
-    st.rec.forEach(r => { const d = dias(r.proxima); if (d !== null && d <= 30) out.push({ d, txt: `${r.titulo}: ${cuando(d)}`, ir: r.grupo }); });
+    st.rec.filter(r => r.grupo === "coche").forEach(r => { const d = dias(r.proxima); if (d !== null && d <= 30) out.push({ d, txt: `${r.titulo}: ${cuando(d)}`, ir: "coche" }); });
     examenesSinVacaciones().filter(e => dias(e.examen) <= 45).forEach(e => out.push({ d: dias(e.examen), txt: `${e.organismo} es el ${fCorta(e.examen)}, día de trabajo: pide el día`, ir: "cal" }));
     const p = ajuste("practico"), dEx = dias(p.examen);
     if (dEx !== null && dEx >= 0 && dEx <= 30) out.push({ d: dEx, txt: `Examen práctico del carnet ${cuando(dEx)}`, ir: "practico" });
@@ -216,7 +206,7 @@
   }
 
   function pintar() {
-    pintarCoche(); pintarPractico(); pintarPerro(); pintarCanal(); pintarVacaciones(); pintarDinero(); pintarAvisos();
+    pintarCoche(); pintarPractico(); pintarCanal(); pintarVacaciones(); pintarDinero(); pintarAvisos();
   }
 
   /* ---------- Acciones ---------- */
