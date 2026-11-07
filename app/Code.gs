@@ -11,7 +11,7 @@ var APPS = {
   tests:   { dir: 'app/tests/',   titulo: 'Tests de oposiciones' },
   labores: { dir: 'app/labores/', titulo: 'Mis labores' }
 };
-var CARPETA_ARCHIVOS = 'Centro de Control – archivos';
+var SUBCARPETA_ARCHIVOS = 'archivos';   // fotos y datos grandes, dentro de la carpeta de la hoja
 var MAX_CELDA = 45000;
 
 /* ---------- Páginas ---------- */
@@ -89,25 +89,31 @@ function hoja_(col, crear) {
   }
   return sh;
 }
+/**
+ * Cada celda guarda un valor. Los textos van tal cual, salvo los que podrían confundirse
+ * con otro tipo (empiezan por { [ " o parecen número/booleano): esos van entre comillas JSON.
+ * Lo que pasa de MAX_CELDA se guarda en un archivo de Drive y la celda apunta a él.
+ */
+var PARECE_OTRO_TIPO = /^([\[{"]|-?\d+(\.\d+)?(e[+-]?\d+)?$|true$|false$|null$)/i;
 function codificar_(v) {
   if (v === undefined) return '';
-  var t = typeof v === 'string' ? v : JSON.stringify(v);
-  if (t.length > MAX_CELDA) {
-    var f = carpeta_().createFile('dato.json', t, MimeType.PLAIN_TEXT);
-    return '@archivo:' + f.getId();
-  }
+  var t = typeof v !== 'string' ? JSON.stringify(v) : (PARECE_OTRO_TIPO.test(v) ? JSON.stringify(v) : v);
+  if (t.length > MAX_CELDA) return '@archivo:' + carpeta_().createFile('dato.json', t, MimeType.PLAIN_TEXT).getId();
   return t;
 }
 function decodificar_(c) {
   if (c === '' || c === null || c === undefined) return undefined;
   var t = String(c);
-  if (t.indexOf('@archivo:') === 0) {
+  if (esArchivo_(t)) {
     try { t = DriveApp.getFileById(t.slice(9)).getBlob().getDataAsString('UTF-8'); } catch (e) { return undefined; }
   }
-  if (/^[\[{]/.test(t) || /^-?\d+(\.\d+)?(e[+-]?\d+)?$/i.test(t) || t === 'true' || t === 'false' || t === 'null') {
-    try { return JSON.parse(t); } catch (e) {}
-  }
+  if (PARECE_OTRO_TIPO.test(t)) { try { return JSON.parse(t); } catch (e) {} }
   return t;
+}
+function esArchivo_(c) { return String(c).indexOf('@archivo:') === 0; }
+/** Al sobrescribir o borrar una fila, los archivos a los que apuntaba van a la papelera. */
+function soltarArchivos_(celdas) {
+  celdas.forEach(function (c) { if (esArchivo_(c)) { try { DriveApp.getFileById(String(c).slice(9)).setTrashed(true); } catch (e) {} } });
 }
 function filas_(sh) {
   var v = sh.getDataRange().getValues();
@@ -122,7 +128,7 @@ function filas_(sh) {
       var x = decodificar_(v[i][j]);
       if (x !== undefined) d[cab[j]] = x;
     }
-    out.push({ id: id, data: d, fila: i + 1 });
+    out.push({ id: id, data: d, fila: i + 1, celdas: v[i] });
   }
   return { cab: cab, filas: out };
 }
@@ -134,36 +140,61 @@ function listar_(col) {
 function obtener_(col, id) {
   var sh = hoja_(col, false);
   if (!sh) return null;
-  var r = filas_(sh).filas.filter(function (x) { return x.id === String(id); })[0];
+  var r = buscar_(filas_(sh), id);
   return r ? r.data : null;
 }
 function guardar_(col, id, data, mezclar) {
   if (!id) throw new Error('Falta el id');
-  var lock = LockService.getScriptLock(); lock.waitLock(20000);
-  try {
+  return conCerrojo_(function () {
     var sh = hoja_(col, true);
-    var t = filas_(sh), cab = t.cab;
-    var actual = t.filas.filter(function (x) { return x.id === String(id); })[0];
+    var t = filas_(sh);
+    var actual = buscar_(t, id);
     var d = mezclar && actual ? Object.assign({}, actual.data, data) : Object.assign({}, data);
     Object.keys(d).forEach(function (k) { if (d[k] && d[k].__delete__ === true) delete d[k]; });
-    Object.keys(d).forEach(function (k) {
-      if (cab.indexOf(k) < 0) { cab.push(k); sh.getRange(1, cab.length).setNumberFormat('@').setValue(k); }
-    });
-    var fila = cab.map(function (k, j) { return j === 0 ? String(id) : (k in d ? codificar_(d[k]) : ''); });
+    asegurarColumnas_(sh, t.cab, Object.keys(d));
     var n = actual ? actual.fila : sh.getLastRow() + 1;
-    sh.getRange(n, 1, 1, fila.length).setNumberFormat('@').setValues([fila]);
+    escribirFila_(sh, n, t.cab, id, d);
+    if (actual) soltarArchivos_(actual.celdas);
     return true;
-  } finally { lock.releaseLock(); }
+  });
+}
+/** Importa muchos documentos de una vez (una sola lectura y escritura de la pestaña). */
+function guardarVarios_(col, docs) {
+  return conCerrojo_(function () {
+    var sh = hoja_(col, true);
+    var t = filas_(sh);
+    docs.forEach(function (doc) { asegurarColumnas_(sh, t.cab, Object.keys(doc.data)); });
+    docs.forEach(function (doc) {
+      var actual = buscar_(t, doc.id);
+      var n = actual ? actual.fila : sh.getLastRow() + 1;
+      escribirFila_(sh, n, t.cab, doc.id, doc.data);
+      if (actual) soltarArchivos_(actual.celdas);
+    });
+    return docs.length;
+  });
 }
 function borrar_(col, id) {
-  var lock = LockService.getScriptLock(); lock.waitLock(20000);
-  try {
+  return conCerrojo_(function () {
     var sh = hoja_(col, false);
     if (!sh) return true;
-    var r = filas_(sh).filas.filter(function (x) { return x.id === String(id); })[0];
-    if (r) sh.deleteRow(r.fila);
+    var r = buscar_(filas_(sh), id);
+    if (r) { sh.deleteRow(r.fila); soltarArchivos_(r.celdas); }
     return true;
-  } finally { lock.releaseLock(); }
+  });
+}
+function conCerrojo_(fn) {
+  var lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try { return fn(); } finally { lock.releaseLock(); }
+}
+function buscar_(t, id) { return t.filas.filter(function (x) { return x.id === String(id); })[0]; }
+function asegurarColumnas_(sh, cab, campos) {
+  campos.forEach(function (k) {
+    if (cab.indexOf(k) < 0) { cab.push(k); sh.getRange(1, cab.length).setNumberFormat('@').setValue(k); }
+  });
+}
+function escribirFila_(sh, n, cab, id, d) {
+  var fila = cab.map(function (k, j) { return j === 0 ? String(id) : (k in d ? codificar_(d[k]) : ''); });
+  sh.getRange(n, 1, 1, fila.length).setNumberFormat('@').setValues([fila]);
 }
 
 /* ---------- Lo que antes hacían los conectores de Claude ---------- */
@@ -212,9 +243,15 @@ function hojaComoTexto_(id) {
 }
 
 /* ---------- Fotos de Terminadas (carpeta de tu Drive) ---------- */
+/** La carpeta de Drive donde está la hoja («Centro de Control»): todo lo del sistema vive ahí. */
+function carpetaPrincipal_() {
+  var padres = DriveApp.getFileById(SpreadsheetApp.getActive().getId()).getParents();
+  return padres.hasNext() ? padres.next() : DriveApp.getRootFolder();
+}
 function carpeta_() {
-  var it = DriveApp.getFoldersByName(CARPETA_ARCHIVOS);
-  return it.hasNext() ? it.next() : DriveApp.createFolder(CARPETA_ARCHIVOS);
+  var raiz = carpetaPrincipal_();
+  var it = raiz.getFoldersByName(SUBCARPETA_ARCHIVOS);
+  return it.hasNext() ? it.next() : raiz.createFolder(SUBCARPETA_ARCHIVOS);
 }
 function subirFoto_(b64, mime, nombre) {
   var blob = Utilities.newBlob(Utilities.base64Decode(b64), mime || 'image/jpeg', nombre || 'foto.jpg');
@@ -224,9 +261,39 @@ function subirFoto_(b64, mime, nombre) {
 }
 function borrarFoto_(id) { try { DriveApp.getFileById(id).setTrashed(true); } catch (e) {} return true; }
 
-/* Para probar desde el editor: ejecútala una vez y acepta los permisos. */
+/* ---------- Instalación (se ejecuta una vez desde el editor) ---------- */
+var PREFIJO_IMPORTAR = 'centro-de-control-importar';
+
+/**
+ * Pide los permisos, pasa a la hoja los datos que vienen de las páginas antiguas de Claude
+ * (archivos «centro-de-control-importar-*.json» de la carpeta «Centro de Control») y los manda a la papelera.
+ * Cada archivo es { "col": "app_coleccion", "docs": [ { "id": …, "data": { … } } ] }.
+ * Un campo «json» que venga como objeto se guarda como texto, que es como lo leen las páginas.
+ */
+function instalar() {
+  var it = carpetaPrincipal_().searchFiles('title contains "' + PREFIJO_IMPORTAR + '" and trashed = false');
+  while (it.hasNext()) {
+    var f = it.next();
+    try {
+      var lote = JSON.parse(f.getBlob().getDataAsString('UTF-8'));
+      var docs = lote.docs.map(function (doc) {
+        var data = Object.assign({}, doc.data);
+        if (data.json && typeof data.json === 'object') data.json = JSON.stringify(data.json);
+        return { id: doc.id, data: data };
+      });
+      Logger.log(f.getName() + ': ' + guardarVarios_(lote.col, docs) + ' en ' + lote.col);
+      f.setTrashed(true);
+    } catch (e) {
+      Logger.log('ERROR en ' + f.getName() + ': ' + e.message + ' (el archivo se queda en Drive)');
+    }
+  }
+  probar();
+}
+
+/** Comprueba que todo responde. */
 function probar() {
-  Logger.log(ultimoCommit_());
-  Logger.log(JSON.stringify(listar_('tasks')).slice(0, 300));
-  Logger.log(CalendarApp.getDefaultCalendar().getName());
+  Logger.log('Versión de las páginas: ' + ultimoCommit_());
+  Logger.log('Tareas: ' + listar_('panel_tasks').length + ' · Oposiciones: ' + listar_('panel_examenes').length +
+    ' · Patrones: ' + listar_('labores_patrones').length);
+  Logger.log('Calendario: ' + CalendarApp.getDefaultCalendar().getName());
 }
