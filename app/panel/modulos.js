@@ -1,4 +1,4 @@
-/* Panel de Haizea · secciones Coche, Práctico y Canal, vacaciones (en Calendario),
+/* Panel de Haizea · secciones Coche, Práctico, Casa y Canal, vacaciones (en Calendario),
    gastos del coche (en Dinero) y la tarjeta «Avisos» de Hoy.
    Va aparte del script principal: solo necesita el HTML del panel y window.claude.use("db"). */
 (function () {
@@ -19,16 +19,27 @@
   const esLaborable = s => { const w = aFecha(s).getDay(); return w >= 1 && w <= 5; };
   const lunesDe = s => { const d = aFecha(s); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return iso(d); };
   const mesDe = s => s.slice(0, 7);
+  const plazo = m => m === 1 ? "el mes que viene" : m === 12 ? "dentro de un año" : m % 12 === 0 ? `dentro de ${m / 12} años` : `dentro de ${m} meses`;
   const id = t => String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) + "-" + Date.now().toString(36).slice(-4);
 
   /* ---------- Contenido fijo ---------- */
-  const SEMILLAS_RECORDATORIOS = [
-    { id: "coche-itv", grupo: "coche", titulo: "ITV", cadaMeses: 12, nota: "Tu coche es de 2006: pasa la ITV cada año." },
-    { id: "coche-seguro", grupo: "coche", titulo: "Renovar el seguro", cadaMeses: 12, nota: "Mira la fecha de vencimiento en la póliza." },
-    { id: "coche-impuesto", grupo: "coche", titulo: "Impuesto de circulación", cadaMeses: 12, nota: "Lo cobra el ayuntamiento una vez al año." },
-    { id: "coche-revision", grupo: "coche", titulo: "Revisión y cambio de aceite", cadaMeses: 12, nota: "" },
-    { id: "coche-v16", grupo: "coche", titulo: "Baliza V16: fin de la conexión", cadaMeses: 0, nota: "La fecha viene en la caja o en las instrucciones." }
-  ];
+  const SEMILLAS_RECORDATORIOS = {
+    coche: [
+      { id: "coche-itv", titulo: "ITV", cadaMeses: 12, nota: "Tu coche es de 2006: pasa la ITV cada año." },
+      { id: "coche-seguro", titulo: "Renovar el seguro", cadaMeses: 12, nota: "Mira la fecha de vencimiento en la póliza." },
+      { id: "coche-impuesto", titulo: "Impuesto de circulación", cadaMeses: 12, nota: "Lo cobra el ayuntamiento una vez al año." },
+      { id: "coche-revision", titulo: "Revisión y cambio de aceite", cadaMeses: 12, nota: "" },
+      { id: "coche-v16", titulo: "Baliza V16: fin de la conexión", cadaMeses: 0, nota: "La fecha viene en la caja o en las instrucciones." }
+    ],
+    casa: [
+      { id: "casa-humedad", titulo: "Revisar humedades y ventilar armarios", cadaMeses: 3, nota: "En un bajo conviene mirarlo a menudo, sobre todo en invierno." },
+      { id: "casa-campana", titulo: "Limpiar el filtro de la campana", cadaMeses: 3, nota: "" },
+      { id: "casa-desagues", titulo: "Limpiar desagües", cadaMeses: 6, nota: "" },
+      { id: "casa-radiadores", titulo: "Purgar los radiadores", cadaMeses: 12, nota: "Antes de encender la calefacción." },
+      { id: "casa-caldera", titulo: "Revisión de la caldera", cadaMeses: 12, nota: "" },
+      { id: "casa-gas", titulo: "Inspección del gas", cadaMeses: 60, nota: "Si tienes gas natural, la inspección periódica es cada 5 años." }
+    ]
+  };
   const VACACIONES_INICIALES = ["2026-11-13", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-30", "2026-12-01", "2026-12-02", "2026-12-03", "2026-12-04", "2026-12-08", "2026-12-24", "2026-12-25", "2026-12-31", "2027-01-01"];
   const EN_EL_COCHE = [
     ["Obligatorio", [["perm", "Permiso de circulación (en la cartera sándwich)"], ["itv", "Tarjeta de la ITV"], ["v16", "Baliza V16"], ["chaleco", "Chaleco reflectante (al alcance, no en el maletero)"], ["rueda", "Rueda de repuesto con gato y llave, o kit antipinchazos"], ["carnet", "Tu carnet, cuando lo tengas"]]],
@@ -44,15 +55,17 @@
   const NIVELES = ["Sin practicar", "Me cuesta", "Regular", "Lo domino"];
   const TIPOS_GASTO = ["Gasolina", "Taller", "ITV", "Seguro", "Impuestos", "Aparcamiento", "Otros"];
   const TIPOS_CANAL = ["Cuento", "Música para dormir"];
+  const ZONAS_CASA = ["Salón", "Cocina", "Baño", "Dormitorio", "Entrada y pasillo", "Terraza o patio", "Toda la casa", "Otra"];
+  const ESTADOS_CASA = [["idea", "Idea"], ["presupuesto", "Mirando precios"], ["marcha", "En marcha"], ["hecho", "Hecho"]];
   const ESTADOS_CANAL = [["idea", "Idea"], ["guion", "Guion"], ["hecho", "Hecho"], ["publicado", "Publicado"]];
   const SECCIONES = [
     { id: "coche", nombre: "Coche" }, { id: "practico", nombre: "Práctico" },
-    { id: "canal", nombre: "Canal" }
+    { id: "casa", nombre: "Casa" }, { id: "canal", nombre: "Canal" }
   ];
 
   /* ---------- Estado ---------- */
-  const st = { rec: [], gastos: [], clases: [], canal: [], ajustes: {}, exams: [], cargado: new Set() };
-  let db = null;
+  const st = { rec: [], gastos: [], clases: [], canal: [], casa: [], ajustes: {}, exams: [], cargado: new Set() };
+  let db = null, assets = null;
   const ajuste = k => st.ajustes[k] || {};
   const guardarAjuste = (k, datos) => { st.ajustes[k] = Object.assign({}, ajuste(k), datos); pintar(); return db && db.collection("ajustes").doc(k).set(st.ajustes[k]).catch(fallo); };
   const fallo = () => aviso("No se ha podido guardar. Vuelve a intentarlo.");
@@ -94,7 +107,7 @@
       return `<li class="rec ${cls}" data-rec="${esc(r.id)}">
         <div class="rec-t"><strong>${esc(r.titulo)}</strong>${r.nota ? `<small>${esc(r.nota)}</small>` : ""}</div>
         <label class="rec-f"><span>${r.proxima ? cuando(d) : "Pon la fecha"}</span><input type="date" value="${esc(r.proxima || "")}" data-rec-fecha aria-label="Fecha de ${esc(r.titulo)}"></label>
-        <div class="rec-a">${r.cadaMeses ? `<button type="button" class="mini" data-rec-hecho ${r.proxima ? "" : "disabled"}>Hecho → ${r.cadaMeses === 1 ? "el mes que viene" : "dentro de " + r.cadaMeses + " meses"}</button>` : ""}<button type="button" class="mini" data-rec-borrar aria-label="Quitar ${esc(r.titulo)}">Quitar</button></div>
+        <div class="rec-a">${r.cadaMeses ? `<button type="button" class="mini" data-rec-hecho ${r.proxima ? "" : "disabled"}>Hecho → ${plazo(r.cadaMeses)}</button>` : ""}<button type="button" class="mini" data-rec-borrar aria-label="Quitar ${esc(r.titulo)}">Quitar</button></div>
       </li>`;
     }).join("")}</ul>
     <form class="mod-form" data-rec-nuevo="${grupo}"><input type="text" name="t" placeholder="Añadir otro recordatorio" maxlength="80" required><select name="m" aria-label="Cada cuánto"><option value="0">Una vez</option><option value="1">Cada mes</option><option value="3">Cada 3 meses</option><option value="6">Cada 6 meses</option><option value="12" selected>Cada año</option></select><button class="btn">Añadir</button></form>`;
@@ -159,6 +172,37 @@
         <li>El teórico lo tienes aprobado; si quieres repasar señales y prioridades, tienes la tarea de volver a Almagro.</li></ul></details>`;
   }
 
+  /* ---------- Casa ---------- */
+  const fotoDe = f => (f && f.url) || "";
+  function pintarCasa() {
+    const activos = st.casa.filter(x => x.estado !== "hecho");
+    const previsto = activos.reduce((s, x) => s + (+x.coste || 0), 0), gastado = st.casa.reduce((s, x) => s + (+x.gastado || 0), 0);
+    const zonaFiltro = ajuste("casa").zona || "";
+    const visibles = st.casa.filter(x => !zonaFiltro || x.zona === zonaFiltro);
+    const foto = (x, k, texto) => `${fotoDe(x[k]) ? `<img src="${esc(fotoDe(x[k]))}" alt="${texto}" loading="lazy">` : ""}${assets ? `<label class="mini">${fotoDe(x[k]) ? "Cambiar" : "Añadir"} foto ${texto.toLowerCase()}<input type="file" accept="image/*" data-casa-foto="${k}" hidden></label>` : ""}`;
+    $("#mod-casa").innerHTML = `
+      <div class="card"><h3>Resumen</h3><div class="cifras">${ESTADOS_CASA.map(([k, t]) => `<div><b>${st.casa.filter(x => (x.estado || "idea") === k).length}</b><span>${t}</span></div>`).join("")}</div>
+        <div class="cifras"><div><b>${eur(previsto)}</b><span>previsto en lo pendiente</span></div><div><b>${eur(gastado)}</b><span>gastado en total</span></div></div></div>
+      <div class="card"><h3>Nueva idea</h3><form class="mod-form casa-form" id="casa-nuevo"><input type="text" name="t" placeholder="Qué quieres hacer, p. ej. Estantería en el baño" maxlength="140" required><select name="z" aria-label="Zona">${ZONAS_CASA.map(z => `<option>${z}</option>`).join("")}</select><input type="number" name="c" min="0" step="1" placeholder="€ aprox." aria-label="Coste aproximado"><button class="btn">Añadir</button></form></div>
+      <div class="chips">${["", ...ZONAS_CASA].map(z => `<button type="button" class="chip-v${z === zonaFiltro ? "" : " pasado"}" data-casa-zona="${esc(z)}">${z || "Todas"}</button>`).join("")}</div>
+      <div class="cols">${ESTADOS_CASA.map(([k, nombre]) => { const xs = visibles.filter(x => (x.estado || "idea") === k).sort((a, b) => (b.t || 0) - (a.t || 0)); return `<div class="card"><h3>${nombre} · ${xs.length}</h3>${xs.length ? `<ul class="canal">${xs.map(x => `<li data-casa="${esc(x.id)}"><strong>${esc(x.titulo)}</strong><small>${esc(x.zona || "")}${x.coste ? " · unos " + eur(+x.coste) : ""}${x.gastado ? " · gastado " + eur(+x.gastado) : ""}</small>
+          <div class="campos2"><select data-casa-campo="estado" aria-label="Estado">${ESTADOS_CASA.map(([v, t]) => `<option value="${v}" ${v === (x.estado || "idea") ? "selected" : ""}>${t}</option>`).join("")}</select><input type="number" min="0" step="1" data-casa-campo="gastado" value="${esc(x.gastado || "")}" placeholder="€ gastado" aria-label="Gastado"></div>
+          <textarea rows="2" data-casa-campo="nota" placeholder="Medidas, dónde comprarlo, enlaces…" aria-label="Notas">${esc(x.nota || "")}</textarea>
+          <div class="fotos">${foto(x, "antes", "Antes")}${foto(x, "despues", "Después")}</div>
+          <button type="button" class="mini" data-casa-borrar>Quitar</button></li>`).join("")}</ul>` : `<p class="note">Nada.</p>`}</div>`; }).join("")}</div>
+      <div class="card"><h3>Mantenimiento</h3>${listaRecordatorios("casa")}</div>`;
+  }
+  async function fotoCasa(input) {
+    const x = st.casa.find(c => c.id === input.closest("[data-casa]").dataset.casa), k = input.dataset.casaFoto;
+    if (!x || !input.files[0] || !assets) return;
+    try {
+      const r = await assets.upload(input.files[0]), viejo = x[k] && x[k].id;
+      x[k] = { id: r.id, url: r.url }; pintar();
+      await col("casa_proyectos").doc(x.id).update({ [k]: x[k] });
+      if (viejo) assets.delete(viejo).catch(() => {});
+    } catch (e) { aviso("No se ha podido subir la foto."); }
+  }
+
   /* ---------- Canal ---------- */
   function pintarCanal() {
     const lunes = lunesDe(HOY), domingo = iso(new Date(aFecha(lunes).getTime() + 6 * 86400000));
@@ -194,7 +238,7 @@
   function pintarAvisos() {
     const el = $("#hoy-avisos"), out = [];
     st.exams.forEach(e => { const f = e.ficha || {}, d = dias(f.impugnar_hasta); if (d !== null && d >= 0) out.push({ d, txt: `${f.impugnar_txt || "Reclamar"} · ${e.organismo}: hasta el ${fCorta(f.impugnar_hasta)} (${cuando(d)})` }); });
-    st.rec.filter(r => r.grupo === "coche").forEach(r => { const d = dias(r.proxima); if (d !== null && d <= 30) out.push({ d, txt: `${r.titulo}: ${cuando(d)}`, ir: "coche" }); });
+    st.rec.filter(r => SEMILLAS_RECORDATORIOS[r.grupo]).forEach(r => { const d = dias(r.proxima); if (d !== null && d <= 30) out.push({ d, txt: `${r.titulo}: ${cuando(d)}`, ir: r.grupo }); });
     examenesSinVacaciones().filter(e => dias(e.examen) <= 45).forEach(e => out.push({ d: dias(e.examen), txt: `${e.organismo} es el ${fCorta(e.examen)}, día de trabajo: pide el día`, ir: "cal" }));
     const p = ajuste("practico"), dEx = dias(p.examen);
     if (dEx !== null && dEx >= 0 && dEx <= 30) out.push({ d: dEx, txt: `Examen práctico del carnet ${cuando(dEx)}`, ir: "practico" });
@@ -206,7 +250,7 @@
   }
 
   function pintar() {
-    pintarCoche(); pintarPractico(); pintarCanal(); pintarVacaciones(); pintarDinero(); pintarAvisos();
+    pintarCoche(); pintarPractico(); pintarCasa(); pintarCanal(); pintarVacaciones(); pintarDinero(); pintarAvisos();
   }
 
   /* ---------- Acciones ---------- */
@@ -217,6 +261,8 @@
       if (t.matches("[data-rec-fecha]")) { const r = st.rec.find(x => x.id === t.closest("[data-rec]").dataset.rec); if (r) { r.proxima = t.value; col("recordatorios").doc(r.id).update({ proxima: t.value }).catch(fallo); pintar(); } }
       else if (t.matches("[data-maletero]")) { const h = Object.assign({}, ajuste("maletero").hecho); h[t.dataset.maletero] = t.checked; guardarAjuste("maletero", { hecho: h }); }
       else if (t.matches("[data-pr]")) guardarAjuste("practico", { [t.dataset.pr]: t.value.trim() });
+      else if (t.matches("[data-casa-campo]")) { const x = st.casa.find(c => c.id === t.closest("[data-casa]").dataset.casa); if (!x) return; const k = t.dataset.casaCampo, v = k === "gastado" ? (+t.value || 0) : t.value; x[k] = v; col("casa_proyectos").doc(x.id).update({ [k]: v }).catch(fallo); if (k !== "nota") pintar(); }
+      else if (t.matches("[data-casa-foto]")) fotoCasa(t);
       else if (t.matches("[data-canal-fecha],[data-canal-estado]")) { const c = st.canal.find(x => x.id === t.closest("[data-canal]").dataset.canal); if (!c) return; const k = t.matches("[data-canal-fecha]") ? "fecha" : "estado"; c[k] = t.value; col("canal").doc(c.id).update({ [k]: t.value }).catch(fallo); pintar(); }
     });
     document.addEventListener("click", ev => {
@@ -226,6 +272,8 @@
       else if (t.matches("[data-rec-borrar]") && recEl) confirmarYBorrar(t, "recordatorios", recEl.dataset.rec, "rec");
       else if (t.dataset.gastoBorrar) confirmarYBorrar(t, "coche_gastos", t.dataset.gastoBorrar, "gastos");
       else if (t.dataset.claseBorrar) confirmarYBorrar(t, "practico_clases", t.dataset.claseBorrar, "clases");
+      else if (t.matches("[data-casa-borrar]")) confirmarYBorrar(t, "casa_proyectos", t.closest("[data-casa]").dataset.casa, "casa");
+      else if (t.dataset.casaZona !== undefined) guardarAjuste("casa", { zona: t.dataset.casaZona });
       else if (t.matches("[data-canal-borrar]")) confirmarYBorrar(t, "canal", t.closest("[data-canal]").dataset.canal, "canal");
       else if (t.dataset.man) { const n = Object.assign({}, ajuste("maniobras").nivel); n[t.dataset.man] = (n[t.dataset.man] || 0) % (NIVELES.length - 1) + 1; guardarAjuste("maniobras", { nivel: n }); }
       else if (t.dataset.vac) guardarAjuste("vacaciones", { dias: diasVacaciones().filter(d => d !== t.dataset.vac) });
@@ -235,6 +283,7 @@
       if (f.dataset.recNuevo) { ev.preventDefault(); añadir("recordatorios", "rec", { grupo: f.dataset.recNuevo, titulo: v("t"), cadaMeses: +v("m"), proxima: "", nota: "" }, v("t")); f.reset(); }
       else if (f.id === "gasto-nuevo") { ev.preventDefault(); añadir("coche_gastos", "gastos", { fecha: v("f"), tipo: v("t"), importe: +v("i") }, "gasto"); f.elements.i.value = ""; }
       else if (f.id === "clase-nueva") { ev.preventDefault(); añadir("practico_clases", "clases", { fecha: v("f"), minutos: +v("m"), maniobras: [...f.querySelectorAll("[name=man]:checked")].map(x => x.value), fallos: v("fallos"), ido: (f.querySelector("[name=ido]:checked") || {}).value || "" }, "clase"); }
+      else if (f.id === "casa-nuevo") { ev.preventDefault(); añadir("casa_proyectos", "casa", { titulo: v("t"), zona: v("z"), coste: +v("c") || 0, gastado: 0, estado: "idea", nota: "", t: Date.now() }, v("t")); f.reset(); }
       else if (f.id === "canal-nuevo") { ev.preventDefault(); añadir("canal", "canal", { titulo: v("t"), tipo: v("tipo"), estado: "idea", fecha: "" }, v("t")); f.reset(); }
       else if (f.id === "vac-nuevo") { ev.preventDefault(); const d = v("f"); if (d && !diasVacaciones().includes(d)) guardarAjuste("vacaciones", { dias: diasVacaciones().concat(d) }); }
     });
@@ -262,14 +311,17 @@
     }, () => {});
   }
   async function sembrar() {
-    const yaHecho = ajuste("semillas");
-    if (!yaHecho.recordatorios && st.cargado.has("rec")) {
-      await guardarAjuste("semillas", { recordatorios: true });
-      const faltan = SEMILLAS_RECORDATORIOS.filter(s => !st.rec.some(r => r.id === s.id));
-      faltan.forEach(({ id: rid, ...datos }) => { st.rec.push(Object.assign({ id: rid, proxima: "" }, datos)); col("recordatorios").doc(rid).set(Object.assign({ proxima: "" }, datos)).catch(() => {}); });
-      pintar();
+    const hechas = ajuste("semillas");
+    for (const grupo of Object.keys(SEMILLAS_RECORDATORIOS)) {
+      if (hechas["rec_" + grupo]) continue;
+      await guardarAjuste("semillas", { ["rec_" + grupo]: true });
+      SEMILLAS_RECORDATORIOS[grupo].filter(x => !st.rec.some(r => r.id === x.id)).forEach(({ id: rid, ...datos }) => {
+        const doc = Object.assign({ grupo, proxima: "" }, datos);
+        st.rec.push(Object.assign({ id: rid }, doc)); col("recordatorios").doc(rid).set(doc).catch(() => {});
+      });
     }
-    if (!ajuste("vacaciones").dias && !yaHecho.vacaciones) { await guardarAjuste("semillas", { vacaciones: true }); guardarAjuste("vacaciones", { dias: VACACIONES_INICIALES }); }
+    if (!ajuste("vacaciones").dias && !hechas.vacaciones) { await guardarAjuste("semillas", { vacaciones: true }); guardarAjuste("vacaciones", { dias: VACACIONES_INICIALES }); }
+    pintar();
   }
   async function iniciar() {
     montar(); enlazar(); pintar();
@@ -280,6 +332,8 @@
     escuchar("coche_gastos", "gastos");
     escuchar("practico_clases", "clases");
     escuchar("canal", "canal");
+    escuchar("casa_proyectos", "casa");
+    try { assets = window.claude.use ? await window.claude.use("assets") : null; } catch (e) { assets = null; }
     await ajustesListos;
     escuchar("recordatorios", "rec", sembrar);
   }
