@@ -241,6 +241,10 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
 .tabs .n{font-size:.75rem;background:var(--late);color:#fff;border-radius:999px;padding:0 6px;min-width:18px;text-align:center}
 @media (max-width:420px){.tabs{gap:4px}.tabs button{padding:6px 8px;font-size:.8rem}}
 [data-tab][hidden],.link[hidden],.group[hidden],.live[hidden]{display:none!important}
+.atajos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.atajos a{display:grid;justify-items:center;gap:6px;padding:14px 6px;border-radius:var(--r);background:var(--surface);border:1.5px solid var(--line);color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem;text-align:center}
+.atajos a:hover,.atajos a:focus-visible{border-color:var(--pine)}
+.atajos svg{width:28px;height:28px;color:var(--pine)}
 .fav{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:8px}
 .fav .link{background:var(--surface);border-color:var(--line)}
 .search{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%;font:inherit;color:inherit}
@@ -344,6 +348,11 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
       <button class="btn" type="submit">Apuntar</button>
     </form>
     <div class="quick-ok" id="quick-ok" role="status"></div>
+    <nav class="atajos" aria-label="Lo que más uso">
+      <a href="https://claude.ai/code/artifact/790360f7-59fe-49e3-837c-8eceaec48e51" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg><span>Tests</span></a>
+      <a href="https://claude.ai/artifact/W5j3MvqeFmroz35Y9Vw6sS" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="14" r="6"/><path d="M6 12c2 1 6 1 8 0M5 16c3 1 7 1 10 0M14 10l7-7"/></svg><span>Mis labores</span></a>
+      <a href="https://docs.google.com/spreadsheets/d/1PDJgHIyXc6fgZb7BoXJ-26AftYXayJ6QyFWMHlh0XUg/edit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg><span>Economía</span></a>
+    </nav>
   </header>
 
   <nav class="tabs" role="tablist" aria-label="Secciones del panel">
@@ -362,13 +371,6 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
       <div class="card"><h3>Tareas para hoy</h3><div id="hoy-tareas" class="vacio">Cargando tareas…</div></div>
       <div class="card"><h3>Próximo examen</h3><div id="hoy-examen" class="vacio">Cargando oposiciones…</div></div>
       <div class="card"><h3>Dinero</h3><div id="hoy-dinero" class="vacio">Leyendo tu hoja de finanzas…</div></div>
-    </div>
-    <h2 style="margin-top:8px">Lo que más uso</h2>
-    <div class="fav">
-      <a class="link" href="https://claude.ai/code/artifact/790360f7-59fe-49e3-837c-8eceaec48e51" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 19V5"/></svg></span><span class="txt"><strong>Tests de oposiciones</strong><small>UPV/EHU 21/11 · DFB 30/11</small></span><span class="go">↗</span></a>
-      <a class="link" href="https://claude.ai/artifact/W5j3MvqeFmroz35Y9Vw6sS#bolsa-colgante-mediana" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><path d="M5 4h14v16H5z"/><path d="M9 17h6"/></svg></span><span class="txt"><strong>Mis labores</strong><small>Bolsa colgante mediana</small></span><span class="go">↗</span></a>
-      <a class="link" href="https://claude.ai/artifact/2PksSy8Lma62fDQ29EjEu7" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13 6l-2 12"/></svg></span><span class="txt"><strong>Plan de programación</strong><small>Fases e ideas</small></span><span class="go">↗</span></a>
-      <a class="link" href="https://docs.google.com/spreadsheets/d/1PDJgHIyXc6fgZb7BoXJ-26AftYXayJ6QyFWMHlh0XUg/edit" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span><span class="txt"><strong>Economía</strong><small>HAIZEA FINANZAS</small></span><span class="go">↗</span></a>
     </div>
     <p class="note" style="margin:0">Todo lo demás está en <button type="button" class="mini" data-go="accesos">Accesos</button>.</p>
   </section>
@@ -404,6 +406,29 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
     <input type="search" class="search" id="acc-q" placeholder="Buscar un acceso… (tests, crochet, DGT…)" aria-label="Buscar en accesos" autocomplete="off">
     <div class="groups">
       <div class="group">
+        <h3>Oposiciones</h3>
+        <a class="link" href="https://claude.ai/code/artifact/790360f7-59fe-49e3-837c-8eceaec48e51" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></span>
+          <span class="txt"><strong>Tests de oposiciones</strong><small>Biblioteca DFB, batería UPV/EHU, Conserje Getxo y Getxo Kirolak, con temario, simulacros y «Hoy toca»</small></span>
+          <span class="go">↗</span>
+        </a>
+      </div>
+
+      <div class="group">
+        <h3>Crochet</h3>
+        <a class="link" href="https://claude.ai/artifact/W5j3MvqeFmroz35Y9Vw6sS" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="14" r="6"/><path d="M6 12c2 1 6 1 8 0M5 16c3 1 7 1 10 0M14 10l7-7"/></svg></span>
+          <span class="txt"><strong>Mis labores</strong><small>Tus patrones paso a paso, lanas e ideas</small></span>
+          <span class="go">↗</span>
+        </a>
+        <a class="link" href="https://claude.ai/code/artifact/51fc22d0-f5b5-4e05-b52a-4355cc51fa3d" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="14" r="6"/><path d="M6 12c2 1 6 1 8 0M5 16c3 1 7 1 10 0M14 10l7-7"/></svg></span>
+          <span class="txt"><strong>Patrones de YouTube</strong><small>302 patrones · tu lista de YouTube</small></span>
+          <span class="go">↗</span>
+        </a>
+      </div>
+
+      <div class="group">
         <h3>Dinero</h3>
         <a class="link" href="https://docs.google.com/spreadsheets/d/1PDJgHIyXc6fgZb7BoXJ-26AftYXayJ6QyFWMHlh0XUg/edit" target="_blank" rel="noopener">
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span>
@@ -416,15 +441,6 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
           <span class="go">↗</span>
         </a>
         <div class="live muted" id="fondo-live" aria-live="polite">Leyendo tu hoja del fondo…</div>
-      </div>
-
-      <div class="group">
-        <h3>Oposiciones</h3>
-        <a class="link" href="https://claude.ai/code/artifact/790360f7-59fe-49e3-837c-8eceaec48e51" target="_blank" rel="noopener">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></span>
-          <span class="txt"><strong>Tests de oposiciones</strong><small>Biblioteca DFB, batería UPV/EHU, Conserje Getxo y Getxo Kirolak, con temario, simulacros y «Hoy toca»</small></span>
-          <span class="go">↗</span>
-        </a>
       </div>
 
       <div class="group">
@@ -460,16 +476,6 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
         <a class="link" href="https://claude.ai/code/artifact/6823ecb4-57ad-4241-b075-981739294c8f" target="_blank" rel="noopener">
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c-4 0-7-3-7-7 4 0 7 3 7 7zM12 11c0-4 3-7 7-7 0 4-3 7-7 7z"/></svg></span>
           <span class="txt"><strong>Savia</strong><small>Mi juego del árbol</small></span>
-          <span class="go">↗</span>
-        </a>
-        <a class="link" href="https://claude.ai/code/artifact/51fc22d0-f5b5-4e05-b52a-4355cc51fa3d" target="_blank" rel="noopener">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="14" r="6"/><path d="M6 12c2 1 6 1 8 0M5 16c3 1 7 1 10 0M14 10l7-7"/></svg></span>
-          <span class="txt"><strong>Crochet</strong><small>302 patrones · tu lista de YouTube</small></span>
-          <span class="go">↗</span>
-        </a>
-        <a class="link" href="https://claude.ai/artifact/W5j3MvqeFmroz35Y9Vw6sS#bolsa-colgante-mediana" target="_blank" rel="noopener">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><path d="M5 4h14v16H5z"/><path d="M9 17h6"/></svg></span>
-          <span class="txt"><strong>Mis labores</strong><small>En curso: Bolsa colgante mediana</small></span>
           <span class="go">↗</span>
         </a>
         <div class="link off" aria-disabled="true">
