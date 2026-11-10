@@ -3,15 +3,34 @@
    pero guardando todo en la hoja de Google «Centro de Control – datos» a través de google.script.run. */
 (function () {
   var CDC = window.__CDC || {};
+  /* Si Google no contesta (pasa sobre todo con varias cuentas de Google abiertas en el mismo navegador),
+     la llamada se da por fallida a los 20 s y la página avisa, en vez de quedarse cargando para siempre. */
+  var fallos = 0;
   function run(action, payload) {
     return new Promise(function (res, rej) {
       if (!window.google || !google.script || !google.script.run) { rej(new Error("sin_apps_script")); return; }
+      var hecho = false;
+      var t = setTimeout(function () { if (hecho) return; hecho = true; fallos++; avisar(); rej(new Error("sin_respuesta")); }, 20000);
       google.script.run
-        .withSuccessHandler(function (r) { try { res(typeof r === "string" ? JSON.parse(r) : r); } catch (e) { res(r); } })
-        .withFailureHandler(function (e) { rej(e); })
+        .withSuccessHandler(function (r) { if (hecho) return; hecho = true; clearTimeout(t); fallos = 0; quitarAviso(); try { res(typeof r === "string" ? JSON.parse(r) : r); } catch (e) { res(r); } })
+        .withFailureHandler(function (e) { if (hecho) return; hecho = true; clearTimeout(t); fallos++; avisar(e); rej(e); })
         .api(action, JSON.stringify(payload || {}));
     });
   }
+  function avisar(e) {
+    if (document.getElementById("cdc-aviso") || !document.body) return;
+    var d = document.createElement("div"); d.id = "cdc-aviso";
+    d.setAttribute("role", "alert");
+    d.style.cssText = "position:fixed;left:12px;right:12px;top:12px;z-index:9999;background:#25291F;color:#fff;border-radius:12px;padding:14px 16px;font:15px/1.45 system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.25)";
+    d.innerHTML = "<b>Google no deja leer tus datos.</b><br>Casi siempre es porque en este navegador hay <b>más de una cuenta de Google</b> abierta. " +
+      "Abre el enlace en una <b>ventana privada</b> (o en un navegador donde solo tengas tu cuenta) e inicia sesión solo con la tuya." +
+      "<div style='margin-top:10px;display:flex;gap:8px;flex-wrap:wrap'><button id='cdc-re' style='border:0;border-radius:8px;padding:8px 14px;font-weight:700'>Volver a intentarlo</button>" +
+      "<button id='cdc-x' style='border:1px solid #fff;background:none;color:#fff;border-radius:8px;padding:8px 14px'>Cerrar</button></div>";
+    document.body.appendChild(d);
+    document.getElementById("cdc-re").onclick = function () { window.top.location.href = (CDC.url || location.href) + (CDC.app ? "?app=" + CDC.app : ""); };
+    document.getElementById("cdc-x").onclick = quitarAviso;
+  }
+  function quitarAviso() { var d = document.getElementById("cdc-aviso"); if (d) d.remove(); }
   /* Cada página guarda sus colecciones en pestañas propias: panel_tasks, labores_patrones, tests_progreso…
      Para usar la de otra página se escribe «app:colección» (p. ej. "panel:tasks" desde Mis labores). */
   function tabla(col) { return col.indexOf(":") > 0 ? col.replace(":", "_") : (CDC.app || "panel") + "_" + col; }

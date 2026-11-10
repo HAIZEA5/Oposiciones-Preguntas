@@ -488,18 +488,26 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
   document.body.classList.toggle("manos",manos); if(manos)pantallaEncendida(true);
 
   /* ---------- Datos ---------- */
+  const CACHE="labores-patrones-v1";
+  const leerPatrones=docs=>docs.filter(d=>d.exists).map(d=>{try{const v=d.data()||{};const j=typeof v.json==="string"?JSON.parse(v.json):v.json;j.id=d.id;j.orden=v.orden||0;if(!j.lanas&&v.lanas)j.lanas=v.lanas;if(!j.otros&&v.otros)j.otros=v.otros;if(v.dibujos)j.dibujos=Object.assign({},j.dibujos||{},v.dibujos);return j}catch(e){return null}}).filter(Boolean).sort((a,b)=>a.orden-b.orden);
+  let pintado=false;
+  function ponerPatrones(lst,guardarCache){
+    patrones=lst; pintado=true;
+    if(guardarCache){try{localStorage.setItem(CACHE,JSON.stringify(lst))}catch(e){}}
+    if(actual){actual=patrones.find(p=>p.id===actual.id)||null; actual?pintar(false):lista()}
+    else{const h=(location.hash||"").slice(1); patrones.some(p=>p.id===h)?abrir(h):lista()}
+  }
   async function iniciar(){
+    /* Lo último que se vio en este dispositivo, al momento; luego se pone al día con la hoja */
+    try{const c=JSON.parse(localStorage.getItem(CACHE)||"null");if(Array.isArray(c)&&c.length)ponerPatrones(c,false)}catch(e){}
     try{db=window.claude&&window.claude.use?await window.claude.use("db"):null}catch(e){db=null}
-    if(!db){app.innerHTML=`<div class="empty">No se ha podido conectar con tus labores. Recarga la página.</div>`;return}
-    try{
-      const ps=await db.collection("progreso").get();
-      ps.docs.filter(d=>d.exists).forEach(d=>{const v=d.data()||{};try{const r=JSON.parse(v.json);const l=prog[d.id];if(!l||(v.t||0)>(l.t||0))prog[d.id]=r}catch(e){}});
-    }catch(e){}
-    db.collection("patrones").onSnapshot(snap=>{
-      patrones=snap.docs.filter(d=>d.exists).map(d=>{try{const v=d.data()||{};const j=JSON.parse(v.json);j.id=d.id;j.orden=v.orden||0;if(!j.lanas&&v.lanas)j.lanas=v.lanas;if(!j.otros&&v.otros)j.otros=v.otros;if(v.dibujos)j.dibujos=Object.assign({},j.dibujos||{},v.dibujos);return j}catch(e){return null}}).filter(Boolean).sort((a,b)=>a.orden-b.orden);
-      if(actual){actual=patrones.find(p=>p.id===actual.id)||null; actual?pintar(false):lista()}
-      else{const h=(location.hash||"").slice(1); patrones.some(p=>p.id===h)?abrir(h):lista()}
-    },()=>{app.innerHTML=`<div class="empty">No se han podido cargar tus labores. Recarga la página.</div>`});
+    if(!db){if(!pintado)app.innerHTML=`<div class="empty">No se ha podido conectar con tus labores. Recarga la página.</div>`;return}
+    db.collection("progreso").get().then(ps=>{
+      ps.docs.filter(d=>d.exists).forEach(d=>{const v=d.data()||{};try{const r=typeof v.json==="string"?JSON.parse(v.json):v.json;const l=prog[d.id];if(r&&(!l||(v.t||0)>(l.t||0)))prog[d.id]=r}catch(e){}});
+      if(pintado){if(actual){const y=window.scrollY;pintar(false);window.scrollTo(0,y)}else lista()}
+    }).catch(()=>{});
+    db.collection("patrones").onSnapshot(snap=>ponerPatrones(leerPatrones(snap.docs),true),
+      ()=>{if(!pintado)app.innerHTML=`<div class="empty">No se han podido cargar tus labores.<br><br><button class="btn" onclick="location.reload()">Volver a intentarlo</button></div>`});
     try{assets=window.claude.use?await window.claude.use("assets"):null}catch(e){assets=null}
     const refrescar=(vs)=>{if(actual){const y=window.scrollY;pintar(false);window.scrollTo(0,y)}else if(vs.includes(vista))lista()};
     const sub=(col,set,vs)=>{try{db.collection(col).onSnapshot(snap=>{set(snap.docs.filter(d=>d.exists).map(d=>({id:d.id,...(d.data()||{})})));refrescar(vs)},()=>{})}catch(e){}};
