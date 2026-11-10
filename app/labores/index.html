@@ -215,9 +215,10 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
     "marcador":["Marcador","Una pinza o anilla que se pone en un punto para encontrarlo luego (el primero de la vuelta, una esquina…)."],
     "remata":["Rematar","Corta la hebra dejando un trozo, haz cad 1 y tira para sacar la hebra entera por el bucle: así no se deshace."]
   };
-  const GLOS_RE=new RegExp("(?<![\\wáéíóúñÁÉÍÓÚÑ])("+Object.keys(GLOS).sort((a,b)=>b.length-a.length).map(k=>k.replace(/ /g,"\\s")).join("|")+")(?![\\wáéíóúñÁÉÍÓÚÑ])","gi");
+  /* Sin «lookbehind» (?<!…): los iPhone con iOS anterior al 16.4 no lo entienden y la página entera dejaba de funcionar. */
+  const GLOS_RE=new RegExp("(^|[^\\wáéíóúñÁÉÍÓÚÑ])("+Object.keys(GLOS).sort((a,b)=>b.length-a.length).map(k=>k.replace(/ /g,"\\s")).join("|")+")(?![\\wáéíóúñÁÉÍÓÚÑ])","gi");
   const glosKey=t=>{const l=t.replace(/\s+/g," ");return Object.keys(GLOS).find(k=>k===l)||Object.keys(GLOS).find(k=>k.toLowerCase()===l.toLowerCase())};
-  function conGlosario(h){return h.split(/(<[^>]+>)/).map(x=>x.startsWith("<")?x:x.replace(GLOS_RE,(m)=>{const k=glosKey(m);return k?`<span class="term" data-term="${esc(k)}" role="button" tabindex="0">${m}</span>`:m})).join("")}
+  function conGlosario(h){return h.split(/(<[^>]+>)/).map(x=>x.startsWith("<")?x:x.replace(GLOS_RE,(m,pre,t)=>{const k=glosKey(t);return k?`${pre}<span class="term" data-term="${esc(k)}" role="button" tabindex="0">${t}</span>`:m})).join("")}
   let glosaEl=null;
   function mostrarGlosa(k){
     const g=GLOS[k]; if(!g)return; if(!glosaEl){glosaEl=document.createElement("div");glosaEl.className="glosa";glosaEl.setAttribute("role","dialog");document.body.appendChild(glosaEl)}
