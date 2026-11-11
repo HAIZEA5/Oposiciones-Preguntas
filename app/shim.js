@@ -129,6 +129,18 @@
     new MutationObserver(function (ms) { ms.forEach(function (m) { m.addedNodes.forEach(function (n) { if (n.nodeType === 1) { if (n.matches && n.matches("a[href]")) convertir(n); repasar(n); } }); }); })
       .observe(document.body, { childList: true, subtree: true });
   });
+  /* Botón para volver al panel desde Tests y Mis labores */
+  function botonVolver() {
+    if (!CDC.url || !CDC.app || CDC.app === "panel" || document.getElementById("cdc-volver")) return;
+    var a = document.createElement("a");
+    a.id = "cdc-volver"; a.href = CDC.url; a.target = "_top"; a.textContent = "← Panel";
+    a.setAttribute("aria-label", "Volver al panel");
+    a.style.cssText = "display:inline-block;margin:calc(10px + env(safe-area-inset-top,0px)) 0 0 max(16px,env(safe-area-inset-left,0px));" +
+      "padding:8px 14px;border-radius:999px;border:1.5px solid rgba(0,0,0,.15);background:rgba(255,255,255,.9);color:#25291F;" +
+      "font:700 15px/1.2 system-ui,-apple-system,sans-serif;text-decoration:none;position:relative;z-index:50";
+    document.body.insertBefore(a, document.body.firstChild);
+  }
+  if (document.readyState !== "loading") botonVolver(); else document.addEventListener("DOMContentLoaded", botonVolver);
   window.__abrirApp = function (app, hash) { window.top.location.href = CDC.url + "?app=" + app + (hash ? "&h=" + encodeURIComponent(hash) : ""); };
   if (CDC.hash) { try { location.hash = CDC.hash; } catch (e) {} }
 })();
