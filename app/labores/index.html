@@ -153,7 +153,12 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
   window.addEventListener("error",function(ev){
     var trozo="";
     try{var ls=document.documentElement.outerHTML.split("\n");var t=ls[(ev.lineno||1)-1]||"";var c=Math.max(0,(ev.colno||1)-90);trozo=" · Código: «"+t.slice(c,c+180)+"»"}catch(e){}
-    poner("Error: "+(ev.message||ev.error)+" (línea "+(ev.lineno||"?")+", col "+(ev.colno||"?")+")"+trozo)});
+    poner("Error: "+(ev.message||ev.error)+" (línea "+(ev.lineno||"?")+", col "+(ev.colno||"?")+")"+trozo);
+    /* Guarda en la hoja (pestaña labores_diag) el código tal como ha llegado, para poder ver qué se ha roto */
+    try{var tx=[].map.call(document.scripts,function(s){return s.src?("[src] "+s.src):s.text}).join("\n/*=====SCRIPT=====*/\n");
+      if(window.google&&google.script&&google.script.run)google.script.run.withSuccessHandler(function(){poner("Error enviado a Claude: "+(ev.message||ev.error))}).withFailureHandler(function(){}).api("set",JSON.stringify({col:"labores_diag",id:"ultimo",data:{msg:String(ev.message||ev.error),linea:ev.lineno||0,col:ev.colno||0,cuando:new Date().toISOString(),codigo:tx}}));
+    }catch(e){}
+  });
   window.addEventListener("unhandledrejection",function(ev){var r=ev.reason;poner("Error: "+(r&&r.message?r.message:String(r)))});
 })();
 </script>
