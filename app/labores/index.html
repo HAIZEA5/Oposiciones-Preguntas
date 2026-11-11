@@ -381,12 +381,19 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
       return;
     }
     if(!patrones.length)h+=`<div class="empty">Aún no hay labores. Pásale a Claude el enlace de un patrón y lo añadirá aquí con sus pasos.</div>`;
-    patrones.forEach(pat=>{
-      const a=avance(pat), s=siguiente(pat);
-      h+=`<button class="labor" data-id="${esc(pat.id)}"><h2>${esc(pat.titulo)}</h2><span class="sub" style="margin:0">${esc(pat.sub||"")}</span>
+    /* Primero las que tienes empezadas (la última que tocaste arriba), luego las que vas a empezar; las terminadas, recogidas abajo */
+    const tarjeta=pat=>{const a=avance(pat), s=siguiente(pat);
+      return `<button class="labor" data-id="${esc(pat.id)}"><h2>${esc(pat.titulo)}</h2><span class="sub" style="margin:0">${esc(pat.sub||"")}</span>
         <span class="barra" role="img" aria-label="${Math.round(a.pct*100)} % hecho"><i style="width:${a.pct*100}%"></i></span>
-        <span class="meta"><span>${a.h===0?"Sin empezar":s?esc(s.sec.titulo):"Terminada"}</span><span>${a.h} de ${a.n}</span></span></button>`;
-    });
+        <span class="meta"><span>${a.h===0?"Sin empezar":s?esc(s.sec.titulo):"Terminada"}</span><span>${a.h} de ${a.n}</span></span></button>`};
+    const est=pat=>{const a=avance(pat);return a.n&&a.h>=a.n?"hecha":a.h>0?"empezada":"nueva"};
+    const empezadas=patrones.filter(p=>est(p)==="empezada").sort((x,y)=>(P(y.id).t||0)-(P(x.id).t||0));
+    const nuevas=patrones.filter(p=>est(p)==="nueva");
+    const hechas=patrones.filter(p=>est(p)==="hecha");
+    if(empezadas.length)h+=`<h2 class="eyebrow" style="margin-top:4px">Empezadas</h2>`+empezadas.map(tarjeta).join("");
+    if(nuevas.length)h+=`<h2 class="eyebrow" style="margin-top:8px">Para empezar</h2>`+nuevas.map(tarjeta).join("");
+    if(patrones.length&&!empezadas.length&&!nuevas.length)h+=`<div class="empty">Tienes todas las labores terminadas. Pásale a Claude un patrón nuevo y lo añadirá aquí.</div>`;
+    if(hechas.length)h+=`<details class="info"><summary>Terminadas (${hechas.length})</summary><div style="display:grid;gap:10px;margin-top:10px">${hechas.map(tarjeta).join("")}</div></details>`;
     app.innerHTML=h;
     app.querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>abrir(b.dataset.id));
     enlazarPestañas();
