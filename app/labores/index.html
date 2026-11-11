@@ -327,7 +327,7 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
       <p class="sub" style="font-size:.85rem">Cuando quieras empezar una, pásale a Claude el enlace o la transcripción y la convierte en labor.</p></section>`;
     if(!ideas.length)h+=`<div class="empty">Aún no hay ideas guardadas.</div>`;
     ideas.slice().sort((a,b)=>(b.t||0)-(a.t||0)).forEach(i=>{
-      const u=/^https?:\/\//i.test(i.url||"")?i.url:"";
+      const u=/^https?:[/][/]/i.test(i.url||"")?i.url:"";
       h+=`<div class="card"><h2>${esc(i.titulo)}</h2>${i.nota?`<p class="sub">${esc(i.nota)}</p>`:""}${u?`<a class="btn sec" style="justify-self:start" href="${esc(u)}" target="_blank" rel="noopener">Abrir enlace ↗</a>`:""}<button class="borrar" data-iborrar="${esc(i.id)}">Borrar</button></div>`;
     });
     return h;
