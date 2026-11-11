@@ -292,13 +292,13 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
       <div class="fila"><input type="text" id="l-color" placeholder="Color, p. ej. Mostaza" required maxlength="40" aria-label="Color"><input type="color" id="l-hex" value="#d9b44a" aria-label="Tono"></div>
       <div class="fila"><input type="text" id="l-tipo" placeholder="Tipo, p. ej. Algodón 4 mm" maxlength="60" aria-label="Tipo"><input type="number" id="l-ov" min="0" step="0.5" value="1" aria-label="Ovillos" style="flex:0 0 90px"><span class="sub">ovillos</span></div>
       <input type="text" id="l-nota" placeholder="Nota (marca, dónde la compraste…)" maxlength="120" aria-label="Nota">
-      ${assets?`<label class="sub">Foto del ovillo (opcional) <input type="file" id="l-foto" accept="image/*"></label>`:""}
+      ${assets?`<label class="sub">Foto del ovillo (opcional) <input type="file" id="l-foto" accept="image/&#42;"></label>`:""}
       <div class="acciones"><button class="btn" type="submit">Guardar</button></div></form></section>`;
     if(!lanas.length)h+=`<div class="empty">Aún no has apuntado lanas. Ve añadiendo las que tienes en casa: cada labor te dirá cuáles te faltan.</div>`;
     lanas.slice().sort((a,b)=>norm(a.color).localeCompare(norm(b.color))).forEach(l=>{
       h+=`<div class="card"><div class="lana">${fotoUrl(l.foto)?`<img class="punto foto" src="${esc(fotoUrl(l.foto))}" alt="Foto de la lana ${esc(l.color)}" loading="lazy">`:`<span class="punto" style="background:${/^#[0-9a-f]{6}$/i.test(l.hex||"")?l.hex:"var(--crudo)"}"></span>`}<div><span class="nm">${esc(l.color)}</span><small>${esc(l.tipo||"")}${l.nota?" · "+esc(l.nota):""}</small></div>
         <div class="mini"><button data-lmenos="${esc(l.id)}" aria-label="Medio ovillo menos">−</button><span class="n">${l.ovillos||0}</span><button data-lmas="${esc(l.id)}" aria-label="Medio ovillo más">+</button></div></div>
-        <div class="acciones" style="margin-top:8px">${assets?`<label class="borrar foto-btn">${l.foto?"Cambiar foto":"Añadir foto"}<input type="file" accept="image/*" data-lfoto="${esc(l.id)}" hidden></label>`:""}<button class="borrar" data-lborrar="${esc(l.id)}">Borrar</button></div></div>`;
+        <div class="acciones" style="margin-top:8px">${assets?`<label class="borrar foto-btn">${l.foto?"Cambiar foto":"Añadir foto"}<input type="file" accept="image/&#42;" data-lfoto="${esc(l.id)}" hidden></label>`:""}<button class="borrar" data-lborrar="${esc(l.id)}">Borrar</button></div></div>`;
     });
     return h;
   }
@@ -344,7 +344,7 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
       <input type="text" id="t-tit" placeholder="Qué labor es" required maxlength="80" value="${esc(pre&&pre.titulo||"")}" aria-label="Título">
       <input type="text" id="t-lanas" placeholder="Lanas usadas (colores, separados por comas)" maxlength="160" value="${esc(pre&&pre.lanas||"")}" aria-label="Lanas usadas">
       <textarea id="t-notas" placeholder="Notas: cambios, filas, para quién era…" aria-label="Notas">${esc(pre&&pre.notas||"")}</textarea>
-      ${assets?`<label class="sub">Foto <input type="file" id="t-foto" accept="image/*"></label>`:`<p class="sub" style="font-size:.85rem">Ahora mismo no se pueden subir fotos.</p>`}
+      ${assets?`<label class="sub">Foto <input type="file" id="t-foto" accept="image/&#42;"></label>`:`<p class="sub" style="font-size:.85rem">Ahora mismo no se pueden subir fotos.</p>`}
       <div class="acciones"><button class="btn" type="submit">Guardar en Terminadas</button><span class="estado" id="t-estado" role="status"></span></div></form>`;
   }
   function enlazarTerminada(patId){
