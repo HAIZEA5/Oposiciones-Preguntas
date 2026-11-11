@@ -40,16 +40,42 @@ function absolutizarRutas_(html, base) {
     function (m, inicio, ruta) { return inicio + base + ruta + '"'; });
 }
 
+/**
+ * Último commit del repositorio, para cargar siempre la versión más nueva de las páginas.
+ * 1) La API de GitHub. 2) Si GitHub no contesta (a veces limita a Google), la de jsDelivr.
+ * 3) Si tampoco, el último que funcionó (guardado). Solo en último caso «main», que jsDelivr
+ * puede tener guardado viejo durante horas.
+ */
 function ultimoCommit_() {
   var cache = CacheService.getScriptCache();
   var sha = cache.get('sha');
   if (sha) return sha;
+  var props = PropertiesService.getScriptProperties();
+  sha = shaDeGithub_() || shaDeJsdelivr_();
+  if (sha) { cache.put('sha', sha, 300); props.setProperty('ultimo_sha', sha); return sha; }
+  sha = props.getProperty('ultimo_sha');
+  if (sha) { cache.put('sha', sha, 60); return sha; }
+  return 'main';
+}
+function shaDeGithub_() {
   try {
     var r = UrlFetchApp.fetch('https://api.github.com/repos/' + REPO + '/commits/main',
       { headers: { Accept: 'application/vnd.github.sha' }, muteHttpExceptions: true });
-    if (r.getResponseCode() === 200) { sha = r.getContentText().trim(); cache.put('sha', sha, 300); return sha; }
+    var s = r.getContentText().trim();
+    if (r.getResponseCode() === 200 && /^[0-9a-f]{40}$/.test(s)) return s;
   } catch (e) {}
-  return 'main';
+  return null;
+}
+function shaDeJsdelivr_() {
+  try {
+    var r = UrlFetchApp.fetch('https://data.jsdelivr.com/v1/packages/gh/' + REPO + '/resolved?specifier=main',
+      { muteHttpExceptions: true });
+    if (r.getResponseCode() === 200) {
+      var v = JSON.parse(r.getContentText()).version;
+      if (v && /^[0-9a-f]{7,40}$/.test(v)) return v;
+    }
+  } catch (e) {}
+  return null;
 }
 
 function descargar_(url) {
