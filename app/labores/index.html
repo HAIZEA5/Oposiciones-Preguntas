@@ -150,7 +150,10 @@ details.dibujo svg{width:100%;height:auto;max-width:420px;display:block;margin-t
 (function(){
   function poner(t){var e=document.getElementById("paso-carga");if(e){e.textContent=t;return}var m=document.getElementById("app");if(m&&!m.querySelector(".labor")){var d=document.createElement("div");d.className="empty";d.textContent=t;m.prepend(d)}}
   window.__pasoCarga=function(t){var e=document.getElementById("paso-carga");if(e)e.textContent=t};
-  window.addEventListener("error",function(ev){poner("Error: "+(ev.message||ev.error)+" (línea "+(ev.lineno||"?")+")")});
+  window.addEventListener("error",function(ev){
+    var trozo="";
+    try{var ls=document.documentElement.outerHTML.split("\n");var t=ls[(ev.lineno||1)-1]||"";var c=Math.max(0,(ev.colno||1)-90);trozo=" · Código: «"+t.slice(c,c+180)+"»"}catch(e){}
+    poner("Error: "+(ev.message||ev.error)+" (línea "+(ev.lineno||"?")+", col "+(ev.colno||"?")+")"+trozo)});
   window.addEventListener("unhandledrejection",function(ev){var r=ev.reason;poner("Error: "+(r&&r.message?r.message:String(r)))});
 })();
 </script>
