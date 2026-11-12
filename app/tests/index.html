@@ -199,6 +199,7 @@ button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
 <script src="data/getxo-kirolak-auxiliar.js"></script>
 <script src="data/biblioteca-dfb.js"></script>
 <script src="data/ehu-administrativa.js"></script>
+<script src="data/gobierno-vasco-administrativo.js"></script>
 <script src="data/getxo-conserje.js"></script>
 <script>const RESUMENES = {};</script>
 <script src="data/resumenes-biblioteca.js"></script>
@@ -223,7 +224,7 @@ button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
     t.preguntas=extra.concat(t.preguntas);
   }));
 })();
-const CORTO={"getxo-administrativo":"Getxo","abanto-administrativo":"Abanto","getxo-kirolak-auxiliar":"Getxo Kirolak","biblioteca-dfb":"Biblioteca DFB","ehu-administrativa":"UPV/EHU","getxo-conserje":"Getxo Conserje"};
+const CORTO={"getxo-administrativo":"Getxo","abanto-administrativo":"Abanto","getxo-kirolak-auxiliar":"Getxo Kirolak","biblioteca-dfb":"Biblioteca DFB","ehu-administrativa":"UPV/EHU","getxo-conserje":"Getxo Conserje","gobierno-vasco-administrativo":"Gobierno Vasco"};
 const corto=o=>CORTO[o.id]||o.nombre;
 /* Cómo puntúa el examen real según las bases (para traducir el simulacro a puntos de verdad) */
 const REAL={
@@ -256,7 +257,7 @@ function textoFlojos(o){
   return `<p><b>Tus puntos flojos ahora:</b> ${esc(l)}. Salen primero en la tanda de hoy y se actualizan solos con cada respuesta: un tema sale de aquí cuando aciertas el 75 % o más de al menos 15 preguntas.</p>`;
 }
 /* Fechas de examen de las oposiciones que tienen tests */
-const EXAMENES=[{id:"getxo-conserje",fecha:"2026-10-27",txt:"martes 27/10, BEC"},{id:"ehu-administrativa",fecha:"2026-11-21",txt:"sábado 21/11 a las 10:00, BEC"},{id:"biblioteca-dfb",fecha:"2026-11-30",txt:"lunes 30/11 (Auxiliar y Ayudante técnico/a)"}];
+const EXAMENES=[{id:"getxo-conserje",fecha:"2026-10-27",txt:"martes 27/10, BEC"},{id:"ehu-administrativa",fecha:"2026-11-21",txt:"sábado 21/11 a las 10:00, BEC"},{id:"biblioteca-dfb",fecha:"2026-11-30",txt:"lunes 30/11 (Auxiliar y Ayudante técnico/a)"},{id:"gobierno-vasco-administrativo",fecha:"2027-01-16",txt:"sábado 16/01/2027 (fecha prevista: 1.ª prueba por la mañana y 2.ª por la tarde)"}];
 function proximoExamen(){const h=hoyISO();return EXAMENES.filter(e=>e.fecha>=h&&OPOSICIONES.some(o=>o.id===e.id)).sort((a,b)=>a.fecha.localeCompare(b.fecha))[0]||null}
 const diasHasta=f=>{const [y,m,d]=f.split("-").map(Number);const a=new Date(y,m-1,d),n=new Date();n.setHours(0,0,0,0);return Math.round((a-n)/86400000)};
 /* Selección del día: primero lo que toca repasar, luego lo no visto de los temas más flojos, luego el resto no visto */
