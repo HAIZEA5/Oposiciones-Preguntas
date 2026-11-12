@@ -161,7 +161,7 @@ form.add-exam{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-top
 .opo-all{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
 .opo-all summary{cursor:pointer;font-weight:600}
 .opo-table-wrap{overflow-x:auto;margin-top:10px}
-.opo-table{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums;min-width:720px}
+.opo-table{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums}
 .opo-table th{text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
 .opo-table td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
 .opo-table tr:last-child td{border-bottom:0}
@@ -169,9 +169,9 @@ form.add-exam{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-top
 .prep summary{font-weight:600;cursor:pointer}
 .prep dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px}
 .prep dt{color:var(--muted);font-size:.8rem}.prep dd{margin:0}
-.opo-table tr.sep td{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;padding-top:14px;background:transparent}
+.opo-table tr.sep td{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;padding-top:14px;background:transparent;text-align:left!important;white-space:normal!important}
 .opo-table .org{font-weight:600}
-.opo-table .st{font-size:.8rem;color:var(--muted);min-width:180px}
+.opo-table td:last-child{white-space:nowrap;text-align:right}
 .opo-table input[type=date]{padding:5px 6px;font-size:.82rem;width:auto}
 @media (max-width:560px){form.add-exam{grid-template-columns:1fr}}
 /* Apuntar rápido */
@@ -217,9 +217,17 @@ a.mini{text-decoration:none;display:inline-flex;align-items:center}
 .pill.si{background:var(--pine-soft);color:var(--pine)} .pill.no{background:var(--late-soft);color:var(--late)} .pill.pend{background:var(--warn-soft);color:var(--warn)}
 .ficha textarea{width:100%;min-height:80px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:10px 12px;font:inherit;color:inherit;resize:vertical}
 .ficha a{color:var(--pine)}
+.opo-table .opo-nm{background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left;cursor:pointer;display:block}
+.opo-table .opo-nm:hover{color:var(--pine)}
+.opo-table td .st{display:block;font-size:.78rem;color:var(--muted);margin-top:2px}
+.ficha .fi-mas{border-top:1px solid var(--line);padding-top:10px}
+.ficha .fi-mas summary{cursor:pointer;font-size:.85rem;font-weight:600;color:var(--muted)}
+.ficha .fi-mas[open] summary{margin-bottom:10px}
+.ficha .fi-mas dl{margin-top:4px}
 .ficha .campos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
 .ficha .campos label{display:grid;gap:4px;font-size:.82rem;color:var(--muted);font-weight:600}
 .ficha .campos input,.ficha .campos select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%;min-width:0}
+.ficha .campos .chk input{width:auto;flex:none}
 .ficha .campos .chk{display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--ink);font-weight:500}
 .estrellas{display:inline-flex;gap:2px}
 .estrellas button{border:0;background:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--line);padding:2px}
@@ -384,7 +392,7 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
     <details class="opo-all" id="opo-all">
       <summary>Todas mis convocatorias</summary>
       <div class="opo-table-wrap"><table class="opo-table">
-        <thead><tr><th scope="col">Organismo</th><th scope="col">Puesto</th><th scope="col">BOB</th><th scope="col">BOE</th><th scope="col">Estado</th><th scope="col">Examen</th></tr></thead>
+        <thead><tr><th scope="col">Convocatoria</th><th scope="col">Examen</th></tr></thead>
         <tbody id="opo-rows"></tbody>
       </table></div>
       <div id="opo-closed"></div>
@@ -409,7 +417,7 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
         <h3>Oposiciones</h3>
         <a class="link" href="https://claude.ai/code/artifact/790360f7-59fe-49e3-837c-8eceaec48e51" target="_blank" rel="noopener">
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></span>
-          <span class="txt"><strong>Tests de oposiciones</strong><small>Biblioteca DFB, batería UPV/EHU, Conserje Getxo y Getxo Kirolak, con temario, simulacros y «Hoy toca»</small></span>
+          <span class="txt"><strong>Tests de oposiciones</strong><small>Todas tus oposiciones, con «Hoy toca», simulacros y «Aprender jugando»</small></span>
           <span class="go">↗</span>
         </a>
       </div>
@@ -1098,7 +1106,7 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
   const fmtShort = iso => { if(!iso) return "—"; const [y,m,d]=iso.split("-"); return `${+d}/${+m}/${y.slice(2)}`; };
   const opoName = e => e.organismo + " · " + e.puesto;
   const TESTS = "https://claude.ai/code/artifact/790360f7-59fe-49e3-837c-8eceaec48e51";
-  const TEST_DE = {"getxo-conserje":"getxo-conserje","getxo-conserje-escuela":"getxo-conserje","ehu-admin":"ehu-administrativa","dfb-aux-biblio":"biblioteca-dfb","dfb-ayud-tec-biblio":"biblioteca-dfb","getxo-kirolak-aux-admin":"getxo-kirolak-auxiliar","abanto-admin":"abanto-administrativo","getxo-admin":"getxo-administrativo"};
+  const TEST_DE = {"getxo-conserje":"getxo-conserje","getxo-conserje-escuela":"getxo-conserje","ehu-admin":"ehu-administrativa","dfb-aux-biblio":"biblioteca-dfb","dfb-ayud-tec-biblio":"biblioteca-dfb","getxo-kirolak-aux-admin":"getxo-kirolak-auxiliar","abanto-admin":"abanto-administrativo","getxo-admin":"getxo-administrativo","gv-admin":"gobierno-vasco-administrativo"};
   const testUrl = e => TEST_DE[e.id] ? TESTS + "#" + TEST_DE[e.id] : null;
   const cerrada = e => /^\s*(cerrad|no me presento)/i.test(e.estado||"");
   /* Examen marcado como hecho: deja de salir como próximo hasta que su fecha cambie (p. ej., a la 2.ª parte) */
@@ -1110,19 +1118,20 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
     irA("cal");
     document.getElementById("h-cal").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"start"});
   }
+  /* Solo la primera frase de un texto largo (lo completo está en la ficha) */
+  const corta = (t, max=70) => { t = String(t||"").trim(); if (!t) return ""; let c = t.split(/[.;]\s|\s\(/)[0].replace(/[.;]$/,""); if (c.length>max) c = c.slice(0,max).replace(/\s+\S*$/,"")+"…"; return c; };
   const resLinea = e => { const f=e.ficha||{}; const p=[f.res_nota&&("Nota: "+f.res_nota), f.res_posicion&&("puesto "+f.res_posicion)].filter(Boolean); return p.length?`<span class="res-line">${esc(p.join(" · "))}</span>`:""; };
   function botonesExamen(e){
     const u = testUrl(e);
     const yaHoy = e.examen && dayDiff(e.examen)<=0 && !hecho(e) && !cerrada(e);
-    return `<div class="acts"><button type="button" class="mini" data-ficha="${esc(e.id)}">Ficha</button>${u?`<a class="mini pri" href="${u}" target="_blank" rel="noopener">${hecho(e)?"Estudiar ↗":"Practicar ↗"}</a>`:""}${e.examen&&!hecho(e)?`<button type="button" class="mini" data-vercal="${e.examen}">Ver en el calendario</button>`:""}${yaHoy?`<button type="button" class="mini" data-hecho="${esc(e.id)}">Ya lo he hecho ✓</button>`:""}</div>`;
+    return `<div class="acts"><button type="button" class="mini" data-ficha="${esc(e.id)}">Ficha</button>${u?`<a class="mini pri" href="${u}" target="_blank" rel="noopener">${hecho(e)?"Estudiar ↗":"Practicar ↗"}</a>`:""}${yaHoy?`<button type="button" class="mini" data-hecho="${esc(e.id)}">Ya lo he hecho ✓</button>`:""}</div>`;
   }
   function renderExams(){
     const list = $("#exam-list"), rowsEl = $("#opo-rows");
     if (!examCol){ list.innerHTML = `<div class="empty">Sin conexión: no se puede ver tus oposiciones. Recarga la página.</div>`; rowsEl.innerHTML=""; renderHoy(); return; }
     const upcoming = exams.filter(proximo).sort((a,b)=>a.examen.localeCompare(b.examen));
-    const pending = exams.filter(e=>!e.examen && e.nota);
     const segunda = exams.filter(e=>!cerrada(e) && (e.ficha||{}).siguiente_parte && (e.ficha||{}).res_estado && e.ficha.res_estado!=="suspendido" && !proximo(e));
-    if (!upcoming.length && !pending.length && !segunda.length){
+    if (!upcoming.length && !segunda.length){
       list.innerHTML = `<div class="empty">Ninguna convocatoria tiene fecha de examen todavía. Pónsela en «Todas mis convocatorias».</div>`;
     } else {
       list.innerHTML = upcoming.map(e=>{
@@ -1130,21 +1139,21 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
         const cd = d===0 ? "Hoy" : `${d}<small>día${d===1?"":"s"}</small>`;
         const dt = new Date(e.examen+"T12:00").toLocaleDateString("es-ES",{weekday:"short",day:"numeric",month:"long"}) + (e.approx?" · aprox.":"");
         const fi = e.ficha||{}, prio = fi.prioridad?`<span class="prio" aria-label="Prioridad ${fi.prioridad} de 3">${"★".repeat(fi.prioridad)}</span>`:"";
-        return `<div class="exam${cls}"><span class="cd">${cd}</span><span class="nm">${esc(opoName(e))} ${prio}</span><span class="dt">${esc(dt)}${e.nota?" · "+esc(e.nota):""}</span>${botonesExamen(e)}</div>`;
-      }).join("") + segunda.map(e=>`<div class="exam"><span class="cd" style="font-size:1.1rem">Siguiente parte</span><span class="nm">${esc(opoName(e))}${resLinea(e)}</span><span class="dt">${esc(e.ficha.siguiente_parte)}</span>${botonesExamen(e)}</div>`).join("") + exams.filter(e=>e.ficha&&e.ficha.impugnar_hasta&&dayDiff(e.ficha.impugnar_hasta)>=0&&!proximo(e)).map(e=>`<div class="exam soon"><span class="cd">${dayDiff(e.ficha.impugnar_hasta)}<small>días</small></span><span class="nm">${esc(opoName(e))}${resLinea(e)}</span><span class="plazo">${esc(e.ficha.impugnar_txt||"Impugnar preguntas")} hasta el ${fmtShort(e.ficha.impugnar_hasta)}</span>${botonesExamen(e)}</div>`).join("") + pending.filter(e=>!cerrada(e)).map(e=>`<div class="exam"><span class="cd">—<small>sin día</small></span><span class="nm">${esc(opoName(e))}</span><span class="dt">${esc(e.nota)}</span>${botonesExamen(e)}</div>`).join("");
+        return `<div class="exam${cls}"><span class="cd">${cd}</span><span class="nm">${esc(opoName(e))} ${prio}</span><span class="dt">${esc(dt)}${e.nota?" · "+esc(corta(e.nota,60)):""}</span>${botonesExamen(e)}</div>`;
+      }).join("") + segunda.map(e=>`<div class="exam"><span class="cd" style="font-size:1.1rem">Siguiente parte</span><span class="nm">${esc(opoName(e))}${resLinea(e)}</span><span class="dt">${esc(corta(e.ficha.siguiente_parte))}</span>${botonesExamen(e)}</div>`).join("") + exams.filter(e=>e.ficha&&e.ficha.impugnar_hasta&&dayDiff(e.ficha.impugnar_hasta)>=0&&!proximo(e)).map(e=>`<div class="exam soon"><span class="cd">${dayDiff(e.ficha.impugnar_hasta)}<small>días</small></span><span class="nm">${esc(opoName(e))}${resLinea(e)}</span><span class="plazo">${esc(e.ficha.impugnar_txt||"Impugnar preguntas")} hasta el ${fmtShort(e.ficha.impugnar_hasta)}</span>${botonesExamen(e)}</div>`).join("");
     }
     const sorted = exams.slice().sort((a,b)=>a.organismo.localeCompare(b.organismo,"es") || a.puesto.localeCompare(b.puesto,"es"));
     const fila = e=>{
       const ex = editingExam===e.id
         ? `<input type="date" data-exdate="${e.id}" value="${e.examen||""}" aria-label="Fecha de examen de ${esc(opoName(e))}"> <button type="button" class="mini" data-exsave="${e.id}">Guardar</button> <button type="button" class="mini" data-exdel="${e.id}">Quitar</button>`
         : `<button type="button" class="mini" data-exedit="${e.id}">${e.examen ? fmtShort(e.examen)+(e.approx?" aprox.":"") : "Poner fecha"}</button>`;
-      return `<tr><td class="org">${esc(e.organismo)}</td><td><button type="button" class="mini" data-ficha="${esc(e.id)}" title="Ver la ficha">${esc(e.puesto)} ›</button></td><td>${fmtShort(e.bob)}</td><td>${fmtShort(e.boe)}</td><td class="st">${esc(e.estado||"—")}</td><td>${ex}</td></tr>`;
+      return `<tr><td><button type="button" class="opo-nm" data-ficha="${esc(e.id)}" title="Ver la ficha"><b>${esc(e.organismo)}</b> · ${esc(e.puesto)} ›</button>${e.estado?`<span class="st">${esc(corta(e.estado,60))}</span>`:""}</td><td>${ex}</td></tr>`;
     };
     const activas = sorted.filter(e=>!cerrada(e)), cerradas = sorted.filter(cerrada);
     const enMarcha = e => proximo(e) || segunda.includes(e) || !!(e.ficha&&e.ficha.impugnar_hasta&&dayDiff(e.ficha.impugnar_hasta)>=0);
     const marcha = activas.filter(enMarcha), espera = activas.filter(e=>!enMarcha(e));
-    rowsEl.innerHTML = (marcha.length?`<tr class="sep"><td colspan="6">En marcha: con examen o plazo a la vista (${marcha.length})</td></tr>`+marcha.map(fila).join(""):"")
-      + (espera.length?`<tr class="sep"><td colspan="6">En espera: sin fecha todavía (${espera.length})</td></tr>`+espera.map(fila).join(""):"");
+    rowsEl.innerHTML = (marcha.length?`<tr class="sep"><td colspan="2">En marcha (${marcha.length})</td></tr>`+marcha.map(fila).join(""):"")
+      + (espera.length?`<tr class="sep"><td colspan="2">En espera, sin fecha (${espera.length})</td></tr>`+espera.map(fila).join(""):"");
     $("#opo-count").textContent = exams.length ? `${marcha.length} en marcha · ${espera.length} en espera${cerradas.length?` · ${cerradas.length} cerrada${cerradas.length===1?"":"s"}`:""}` : "";
     const cl = $("#opo-closed"), abierta = cl.querySelector("details") && cl.querySelector("details").open;
     cl.innerHTML = cerradas.length ? `<details class="closed"${abierta?" open":""}><summary>Cerradas o descartadas (${cerradas.length})</summary><div class="opo-table-wrap"><table class="opo-table"><tbody id="opo-rows-closed">${cerradas.map(fila).join("")}</tbody></table></div></details>` : "";
@@ -1166,47 +1175,45 @@ details.card summary{cursor:pointer;list-style:none} details.card summary::-webk
   function abrirFicha(id){
     const e = exams.find(x=>x.id===id); if (!e) return;
     const f = e.ficha || {};
-    const v = (k)=> f[k]!=null && String(f[k]).trim()!=="" ? `<dd>${esc(f[k])}</dd>` : `<dd class="vacio">Sin datos todavía</dd>`;
-    const fila = (lab,k)=>`<dt>${lab}</dt>${v(k)}`;
-    const cumplo = f.cumplo==="si"?'<span class="pill si">Sí</span>':f.cumplo==="no"?'<span class="pill no">No</span>':'<span class="pill pend">Pendiente de comprobar</span>';
+    const lleno = k => f[k]!=null && String(f[k]).trim()!=="";
+    const fila = (lab,k)=> lleno(k) ? `<dt>${lab}</dt><dd>${esc(f[k])}</dd>` : "";
+    const cumplo = f.cumplo==="si"?'<span class="pill si">Sí</span>':f.cumplo==="no"?'<span class="pill no">No</span>':"";
     let dinero = "";
     if (f.bruto){
       const neto12 = f.neto_mes || null, dif = neto12 ? neto12 - SUELDO_ACTUAL.neto_mes : null;
-      dinero = `<div class="dinero"><div class="cifra"><b>${eurF(f.bruto)}</b><span>brutos al año al entrar</span></div>
-        ${neto12?`<div class="cifra"><b>~${eurF(neto12)}</b><span>netos al mes (12 pagas)</span></div>`:""}
-        ${dif!=null?`<div class="cifra ${dif>=0?"mas":"menos"}"><b>${dif>=0?"+":"−"}${eurF(Math.abs(dif))}</b><span>al mes frente a lo de ahora (${eurF(SUELDO_ACTUAL.neto_mes)})</span></div>`:""}</div>`;
-    } else dinero = `<p class="note">Sin sueldo todavía. Con la RPT o las bases se calcula.</p>`;
+      dinero = `<div class="dinero">${neto12?`<div class="cifra"><b>~${eurF(neto12)}</b><span>netos al mes</span></div>`:`<div class="cifra"><b>${eurF(f.bruto)}</b><span>brutos al año</span></div>`}
+        ${dif!=null?`<div class="cifra ${dif>=0?"mas":"menos"}"><b>${dif>=0?"+":"−"}${eurF(Math.abs(dif))}</b><span>al mes frente a ahora</span></div>`:""}</div>`;
+    }
+    const a = +f.admitidos||0, pl = +f.plazas_num||0;
+    const compe = a&&pl ? `<dt>Competencia</dt><dd>${a.toLocaleString("es-ES")} admitidos · ${Math.round(a/pl).toLocaleString("es-ES")} por plaza</dd>` : a ? `<dt>Competencia</dt><dd>${a.toLocaleString("es-ES")} admitidos</dd>` : "";
     const enl = Array.isArray(f.enlaces)&&f.enlaces.length ? f.enlaces.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.t)} ↗</a>`).join(" · ") : "";
     const tu = testUrl(e);
     const fecha = e.examen ? new Date(e.examen+"T12:00").toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long",year:"numeric"}) : null;
+    const plazoImp = f.impugnar_hasta ? (()=>{const d=dayDiff(f.impugnar_hasta);return d>=0?`<div class="aviso-plazo${d<=2?" urge":""}">Plazo para impugnar preguntas: hasta el ${fmtShort(f.impugnar_hasta)}${d===0?" (hoy)":d===1?" (mañana)":` (faltan ${d} días)`}</div>`:""})() : "";
+    const masInfo = [fila("Tipo","tipo"),fila("Funciones","funciones"),fila("Titulación","titulacion"),fila("Otros requisitos","otros_req"),fila("Fechas clave","fechas"),fila("Cómo es el examen","examen_formato"),fila("Temario","temario"),fila("Méritos que puntúan","meritos"),fila("Mis méritos","mis_meritos"),fila("Dónde se trabaja","lugar_trabajo"),fila("Cómo llegaría","transporte"),fila("Horario","horario"),fila("Bolsa de trabajo","bolsa"),fila("Plantilla de respuestas","plantilla"),fila("Si apruebo","si_apruebo"),fila("Méritos: cuándo","meritos_plazo"),fila("Sueldo: de dónde sale","sueldo_fuente")].join("");
     const velo = document.createElement("div"); velo.className="velo";
     velo.innerHTML = `<div class="ficha" role="dialog" aria-modal="true" aria-labelledby="fi-t">
       <header><div><span class="eyebrow">${esc(e.organismo)}</span><h2 id="fi-t">${esc(e.puesto)}</h2><p class="note" style="margin:4px 0 0">${esc(e.estado||"")}</p></div><button type="button" class="cerrar" aria-label="Cerrar">×</button></header>
-      <section><h3>La plaza</h3><dl>${fila("Plazas","plazas")}${fila("Grupo","grupo")}${fila("Tipo","tipo")}${fila("Funciones","funciones")}</dl></section>
-      <section><h3>Qué piden</h3><dl>${fila("Titulación","titulacion")}${fila("Euskera","euskera")}${fila("Otros requisitos","otros_req")}<dt>¿Lo cumplo?</dt><dd>${cumplo}</dd></dl></section>
-      <section><h3>Dinero</h3>${dinero}<dl>${f.sueldo_fuente?fila("De dónde sale","sueldo_fuente"):""}</dl></section>
-      <section><h3>El proceso</h3><dl><dt>Examen</dt><dd>${fecha?esc(fecha.charAt(0).toUpperCase()+fecha.slice(1))+(e.nota?" · "+esc(e.nota):""):'<span class="vacio" style="color:var(--muted);font-style:italic">Sin fecha</span>'}</dd>${fila("Fechas clave","fechas")}${fila("Cómo es el examen","examen_formato")}${fila("Temario","temario")}${fila("Méritos que puntúan","meritos")}${fila("Mis méritos","mis_meritos")}</dl></section>
-      <section><h3>Para decidir</h3><dl>${fila("Horario","horario")}${fila("Dónde se trabaja","lugar_trabajo")}${fila("Cómo llegaría","transporte")}${fila("Próximo paso","proximo_paso")}</dl>
-        ${enl||tu?`<p style="margin:4px 0 0">${enl}${enl&&tu?" · ":""}${tu?`<a href="${tu}" target="_blank" rel="noopener">Tests ↗</a>`:""}</p>`:""}</section>
-      <section><h3>Mi solicitud</h3><div class="campos">
+      ${plazoImp}
+      <section><dl>
+        <dt>Examen</dt><dd>${fecha?esc(fecha.charAt(0).toUpperCase()+fecha.slice(1))+(e.approx?" (aprox.)":"")+(e.nota?`<br><span class="note">${esc(e.nota)}</span>`:""):'<span style="color:var(--muted)">Sin fecha</span>'}</dd>
+        ${fila("Próximo paso","proximo_paso")}${f.res_nota?`<dt>Mi nota</dt><dd>${esc(f.res_nota)}${f.res_posicion?" · puesto "+esc(f.res_posicion):""}</dd>`:""}${fila("Siguiente parte","siguiente_parte")}
+        ${fila("Plazas","plazas")}${fila("Grupo","grupo")}${fila("Euskera","euskera")}${cumplo?`<dt>¿Lo cumplo?</dt><dd>${cumplo}</dd>`:""}${compe}
+      </dl>${dinero}
+        ${enl||tu?`<p style="margin:4px 0 0">${tu?`<a class="mini pri" href="${tu}" target="_blank" rel="noopener">Practicar ↗</a> `:""}${enl}</p>`:""}</section>
+      ${masInfo?`<details class="fi-mas"><summary>Más información</summary><dl>${masInfo}</dl></details>`:""}
+      <details class="fi-mas"><summary>Mi solicitud y resultado</summary><div class="campos">
         <label>Prioridad<span class="estrellas" id="fi-prio">${[1,2,3].map(n=>`<button type="button" data-p="${n}" class="${(f.prioridad||0)>=n?"on":""}" aria-label="${n} de 3">★</button>`).join("")}</span></label>
         <label for="fi-sol">N.º de solicitud<input id="fi-sol" data-k="solicitud" value="${esc(f.solicitud||"")}" placeholder="p. ej. 25454"></label>
         <label class="chk" style="align-self:end"><input type="checkbox" id="fi-tasa" data-k="tasa_pagada" ${f.tasa_pagada?"checked":""}> Tasa pagada</label>
         <label for="fi-just">Justificante / QR<input id="fi-just" data-k="justificante" value="${esc(f.justificante||"")}" placeholder="Dónde lo tienes guardado"></label>
-      </div></section>
-      <section><h3>Competencia</h3>${(()=>{const a=+f.admitidos||0,p=+f.plazas_num||0;return a&&p?`<div class="dinero"><div class="cifra"><b>${a.toLocaleString("es-ES")}</b><span>admitidos</span></div><div class="cifra"><b>${p}</b><span>plazas</span></div><div class="cifra"><b>${Math.round(a/p).toLocaleString("es-ES")}</b><span>personas por plaza</span></div></div>`:a?`<p style="margin:0"><b>${a.toLocaleString("es-ES")}</b> admitidos${p?"":" (falta el número de plazas para calcular cuántos por plaza)"}</p>`:`<p class="note" style="margin:0">Sin datos todavía. Se rellena cuando salgan las listas de admitidos.</p>`})()}
-        <dl>${fila("Bolsa de trabajo","bolsa")}</dl></section>
-      <section><h3>Mi resultado</h3>
-        ${f.impugnar_hasta?(()=>{const d=dayDiff(f.impugnar_hasta);return d>=0?`<div class="aviso-plazo${d<=2?" urge":""}">Plazo para impugnar preguntas: hasta el ${fmtShort(f.impugnar_hasta)}${d===0?" (hoy)":d===1?" (mañana)":` (faltan ${d} días)`}</div>`:""})():""}
-        <div class="campos">
-          <label for="fi-res">Resultado<select id="fi-res" data-k="res_estado">${[["","Sin examen todavía"],["hecho","Hecho, esperando nota"],["aprobado","Aprobado"],["suspendido","Suspendido"]].map(([v,t])=>`<option value="${v}" ${(f.res_estado||"")===v?"selected":""}>${t}</option>`).join("")}</select></label>
-          <label for="fi-nota">Mi nota<input id="fi-nota" data-k="res_nota" value="${esc(f.res_nota||"")}" placeholder="p. ej. 14,2 de 25"></label>
-          <label for="fi-pos">Posición<input id="fi-pos" data-k="res_posicion" value="${esc(f.res_posicion||"")}" placeholder="p. ej. 35 de 412"></label>
-          <label for="fi-imp">Impugnar preguntas hasta<input type="date" id="fi-imp" data-k="impugnar_hasta" value="${esc(f.impugnar_hasta||"")}"></label>
-        </div>
-        <dl>${fila("Plantilla de respuestas","plantilla")}${f.siguiente_parte?fila("Siguiente parte","siguiente_parte"):""}</dl></section>
-      <section><h3>Si apruebo</h3><dl>${fila("Documentos y plazo","si_apruebo")}${fila("Méritos: cuándo se presentan","meritos_plazo")}</dl></section>
-      <section><h3>Mis notas</h3><textarea id="fi-notas" placeholder="Lo que quieras apuntar de esta convocatoria…">${esc(f.notas_mias||"")}</textarea><span class="note" id="fi-ok" role="status"></span></section>
+        <label for="fi-res">Resultado<select id="fi-res" data-k="res_estado">${[["","Sin examen todavía"],["hecho","Hecho, esperando nota"],["aprobado","Aprobado"],["suspendido","Suspendido"]].map(([v,t])=>`<option value="${v}" ${(f.res_estado||"")===v?"selected":""}>${t}</option>`).join("")}</select></label>
+        <label for="fi-nota">Mi nota<input id="fi-nota" data-k="res_nota" value="${esc(f.res_nota||"")}" placeholder="p. ej. 14,2 de 25"></label>
+        <label for="fi-pos">Posición<input id="fi-pos" data-k="res_posicion" value="${esc(f.res_posicion||"")}" placeholder="p. ej. 35 de 412"></label>
+        <label for="fi-imp">Impugnar preguntas hasta<input type="date" id="fi-imp" data-k="impugnar_hasta" value="${esc(f.impugnar_hasta||"")}"></label>
+      </div></details>
+      <details class="fi-mas"${f.notas_mias?" open":""}><summary>Mis notas</summary><textarea id="fi-notas" placeholder="Lo que quieras apuntar de esta convocatoria…">${esc(f.notas_mias||"")}</textarea></details>
+      <span class="note" id="fi-ok" role="status"></span>
     </div>`;
     const cerrar = ()=>{ velo.remove(); document.removeEventListener("keydown", tecla); };
     const tecla = ev=>{ if (ev.key==="Escape") cerrar(); };
