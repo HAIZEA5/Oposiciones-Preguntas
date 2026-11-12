@@ -23,7 +23,8 @@ function doGet(e) {
   var base = cdn + APPS[app].dir;
   var html = descargar_(base + 'index.html');
   var shim = descargar_(cdn + 'app/shim.js');
-  html = absolutizarRutas_(html, base);
+  var baseDatos = app === 'tests' ? 'https://cdn.jsdelivr.net/gh/' + REPO + '@' + shaDatos_(sha) + '/' + APPS[app].dir : null;
+  html = absolutizarRutas_(html, base, baseDatos);
   var cfg = { app: app, hash: p.h || '', url: ScriptApp.getService().getUrl() };
   var cabeza = '<script>window.__CDC=' + JSON.stringify(cfg) + ';</script><script>' + shim + '</script>';
   if (/<head[^>]*>/i.test(html)) html = html.replace(/<head[^>]*>/i, function (m) { return m + cabeza; });
@@ -35,9 +36,9 @@ function doGet(e) {
 }
 
 /** Las rutas relativas de <script>, <link> e <img> (datos de los tests, iconos…) pasan a apuntar al repositorio. */
-function absolutizarRutas_(html, base) {
+function absolutizarRutas_(html, base, baseDatos) {
   return html.replace(/(<(?:script|link|img)\b[^>]*?\s(?:src|href)=")(?!https?:|data:|#|\$\{)([^"]+)"/gi,
-    function (m, inicio, ruta) { return inicio + base + ruta + '"'; });
+    function (m, inicio, ruta) { return inicio + (baseDatos && /^data\//.test(ruta) ? baseDatos : base) + ruta + '"'; });
 }
 
 /**
@@ -56,6 +57,21 @@ function ultimoCommit_() {
   sha = props.getProperty('ultimo_sha');
   if (sha) { cache.put('sha', sha, 60); return sha; }
   return 'main';
+}
+/** Commit en el que cambiaron por última vez los datos de los tests (las preguntas, que pesan mucho).
+ *  Sirve para que el navegador no vuelva a descargarlas cada vez que se cambia otra cosa. */
+function shaDatos_(shaGeneral) {
+  var cache = CacheService.getScriptCache(), s = cache.get('sha_datos:' + shaGeneral);
+  if (s) return s;
+  try {
+    var r = UrlFetchApp.fetch('https://api.github.com/repos/' + REPO + '/commits?path=app/tests/data&per_page=1',
+      { muteHttpExceptions: true });
+    if (r.getResponseCode() === 200) {
+      var j = JSON.parse(r.getContentText());
+      if (j && j[0] && /^[0-9a-f]{40}$/.test(j[0].sha)) { s = j[0].sha; cache.put('sha_datos:' + shaGeneral, s, 21600); return s; }
+    }
+  } catch (e) {}
+  return shaGeneral;
 }
 function shaDeGithub_() {
   try {
@@ -78,10 +94,32 @@ function shaDeJsdelivr_() {
   return null;
 }
 
+/** Descarga una página. Si la dirección lleva el commit (no cambia nunca), se guarda 6 horas en caché
+ *  para no volver a descargarla en cada visita: así el panel abre bastante más rápido. */
 function descargar_(url) {
+  var fija = /@[0-9a-f]{7,40}\//.test(url);
+  var cache = CacheService.getScriptCache(), clave = 'dl:' + Utilities.base64EncodeWebSafe(
+    Utilities.computeDigest(Utilities.DigestAlgorithm.MD5, url));
+  if (fija) {
+    var partes = cache.get(clave);
+    if (partes) {
+      var n = +partes, trozos = cache.getAll(Array.apply(null, Array(n)).map(function (_, i) { return clave + ':' + i; }));
+      var txt = '', ok = true;
+      for (var i = 0; i < n; i++) { var x = trozos[clave + ':' + i]; if (x == null) { ok = false; break; } txt += x; }
+      if (ok) return txt;
+    }
+  }
   var r = UrlFetchApp.fetch(url, { muteHttpExceptions: true });
   if (r.getResponseCode() !== 200) throw new Error('No se ha podido cargar ' + url + ' (' + r.getResponseCode() + ')');
-  return r.getContentText('UTF-8');
+  var texto = r.getContentText('UTF-8');
+  if (fija) {
+    try {
+      var T = 30000, obj = {}, k = 0;
+      for (var p = 0; p < texto.length; p += T) obj[clave + ':' + (k++)] = texto.slice(p, p + T);
+      cache.putAll(obj, 21600); cache.put(clave, String(k), 21600);
+    } catch (e) {}
+  }
+  return texto;
 }
 
 /* ---------- API que usan las páginas (google.script.run.api) ---------- */
