@@ -271,7 +271,7 @@ function textoFlojos(o){
   return `<p><b>Tus puntos flojos ahora:</b> ${esc(l)}. Salen primero en la tanda de hoy y se actualizan solos con cada respuesta: un tema sale de aquí cuando aciertas el 75 % o más de al menos 15 preguntas.</p>`;
 }
 /* Fechas de examen de las oposiciones que tienen tests */
-const EXAMENES=[{id:"getxo-conserje",fecha:"2026-10-27",txt:"martes 27/10, BEC"},{id:"ehu-administrativa",fecha:"2026-11-21",txt:"sábado 21/11 a las 10:00, BEC"},{id:"biblioteca-dfb",fecha:"2026-11-30",txt:"lunes 30/11 (Auxiliar y Ayudante técnico/a)"},{id:"gobierno-vasco-administrativo",fecha:"2027-01-16",txt:"sábado 16/01/2027 (fecha prevista: 1.ª prueba por la mañana y 2.ª por la tarde)"}];
+const EXAMENES=[{id:"getxo-conserje",fecha:"2026-10-27",txt:"martes 27/10, BEC"},{id:"getxo-administrativo",fecha:"2026-10-27",txt:"martes 27/10"},{id:"ehu-administrativa",fecha:"2026-11-21",txt:"sábado 21/11 a las 10:00, BEC"},{id:"biblioteca-dfb",fecha:"2026-11-30",txt:"lunes 30/11 (Auxiliar y Ayudante técnico/a)"},{id:"gobierno-vasco-administrativo",fecha:"2027-01-16",txt:"sábado 16/01/2027 (fecha prevista: 1.ª prueba por la mañana y 2.ª por la tarde)"}];
 function proximoExamen(){const h=hoyISO();return EXAMENES.filter(e=>e.fecha>=h&&OPOSICIONES.some(o=>o.id===e.id)).sort((a,b)=>a.fecha.localeCompare(b.fecha))[0]||null}
 const diasHasta=f=>{const [y,m,d]=f.split("-").map(Number);const a=new Date(y,m-1,d),n=new Date();n.setHours(0,0,0,0);return Math.round((a-n)/86400000)};
 /* Selección del día: primero lo que toca repasar, luego lo no visto de los temas más flojos, luego el resto no visto */
@@ -538,11 +538,13 @@ function portada(){
   h+=fichaHoy();
   h+=fichaProgreso();
   h+=fichaPlan();
+  const pasada=o=>EXAMENES.some(e=>e.id===o.id)&&!exDe(o);
   const fila=o=>{const n=nivel(o), ex=exDe(o), d=ex?diasHasta(ex.fecha):null;
-    return `<button class="fila-opo" data-o="${o.id}"><span class="nm">${esc(corto(o))}<small>${ex?(d===0?"Examen hoy":`Examen en ${d} días`):"Sin examen a la vista"}</small></span><span class="pc"><b>${Math.round(n.pct*100)} %</b><small>dominado</small></span><span aria-hidden="true">›</span></button>`};
-  const conEx=orden.filter(exDe), sinEx=orden.filter(o=>!exDe(o));
+    return `<button class="fila-opo" data-o="${o.id}"><span class="nm">${esc(corto(o))}<small>${ex?(d===0?"Examen hoy":`Examen en ${d} días`):pasada(o)?"Examen hecho":"Sin examen a la vista"}</small></span><span class="pc"><b>${Math.round(n.pct*100)} %</b><small>dominado</small></span><span aria-hidden="true">›</span></button>`};
+  const conEx=orden.filter(exDe), sinEx=orden.filter(o=>!exDe(o)&&!pasada(o)), hechas=orden.filter(pasada);
   h+='<h2 class="apartado">Mis oposiciones</h2><div class="lista-opos">'+conEx.map(fila).join("")+'</div>';
   if(sinEx.length)h+=`<details class="otras"><summary>Otras, sin examen a la vista (${sinEx.length})</summary><div class="lista-opos">${sinEx.map(fila).join("")}</div></details>`;
+  if(hechas.length)h+=`<details class="otras"><summary>Ya examinadas (${hechas.length})</summary><div class="lista-opos">${hechas.map(fila).join("")}</div></details>`;
   h+=`<p class="pie"><button class="enlace" id="pcom">Popurrí común</button>: mezcla la materia que comparten todas (Constitución, Estatuto, procedimiento…).</p>`;
   app.innerHTML=h;
   app.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>temas(b.dataset.o));
