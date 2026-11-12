@@ -79,6 +79,20 @@ button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
 .destaca{border-color:var(--brass);border-width:1.5px}
 .apartado{font-size:1.15rem;margin:28px 0 12px;color:var(--green)}
 .tag{font-size:.85rem;color:var(--brass);font-weight:700;margin:0 0 8px}
+.racha{margin:-4px 0 16px;color:var(--soft);font-size:.92rem}
+.mini-chips{margin:12px 0 0}.mini-chips .chip{padding:4px 12px;font-size:.82rem}
+details.plegable{padding:14px 20px}details.plegable::after{display:none}details.plegable summary{cursor:pointer;font-weight:700;color:var(--green)}
+.lista-opos,.lista-temas{display:grid;gap:8px;margin-bottom:16px}
+.fila-opo{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:12px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 16px;font:inherit;color:inherit;cursor:pointer}
+.fila-opo .nm{font-weight:700;display:grid;gap:2px}.fila-opo small{font-weight:400;color:var(--soft);font-size:.82rem}
+.fila-opo .pc{display:grid;text-align:right}.fila-opo .pc b{color:var(--green)}
+.pie{color:var(--soft);font-size:.9rem}.enlace{background:none;border:0;padding:0;font:inherit;font-weight:700;color:var(--green);text-decoration:underline;cursor:pointer}
+details.tema{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 16px}
+details.tema summary{display:grid;grid-template-columns:4.6em 1fr;gap:8px;cursor:pointer;list-style:none;align-items:baseline}
+details.tema summary::-webkit-details-marker{display:none}
+details.tema .ts{font-size:.8rem;color:var(--brass);font-weight:700}details.tema .tt{font-weight:600;display:grid;gap:2px}
+details.tema .tt small{font-weight:400;color:var(--soft);font-size:.82rem}details.tema .acciones{margin-top:12px;gap:8px}details.tema .btn{padding:8px 14px;font-size:.9rem}
+details.otras{margin:-4px 0 16px}details.otras summary{cursor:pointer;color:var(--soft);font-weight:600;margin-bottom:8px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
 .chip{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-weight:700}
 .chip[aria-pressed="true"]{border-color:var(--green);background:var(--green);color:var(--card)}
@@ -283,17 +297,13 @@ function tandaHoy(meta){
 function fichaHoy(){
   const meta=(datos._cfg.hoy&&datos._cfg.hoy.n)||40, T=tandaHoy(meta); if(!T)return "";
   const ex=T.exs[0], o=T.os[0], d=diasHasta(ex.fecha), hechas=datos._dia[hoyISO()]||0;
-  const cuando=d===0?"es hoy":d===1?"es mañana":`faltan ${d} días`;
-  const otro=T.exs[1]?`<p>Después: <b>${esc(corto(T.os[1]))}</b>, el ${esc(T.exs[1].txt)} (faltan ${diasHasta(T.exs[1].fecha)} días). Hasta el primer examen, la tanda mezcla las dos: ${T.partes.map(x=>`${x.n} de ${esc(corto(x.o))}`).join(" y ")}.</p>`:"";
-  const nuevas=T.items.length-Math.min(T.rep,meta);
+  const cuando=d===0?"es hoy":d===1?"es mañana":`en ${d} días`;
   const hayFlojos=T.os.some(x=>flojosC(x).length);
-  return `<section class="ficha destaca"><span class="sig">Hoy toca</span><h2>${esc(corto(o))}: ${cuando}</h2>
-  <p>Examen el ${esc(ex.txt)}. ${hechas>=meta?`<b>Tanda de hoy hecha (${hechas} preguntas).</b> Si te apetece, puedes hacer otra.`:`Hoy llevas ${pl(hechas,"pregunta","preguntas")} de ${meta}.`} Las que falles volverán mañana.</p>
-  ${otro}
-  <p>Tanda de hoy: ${T.rep?`${pl(Math.min(T.rep,meta),"pregunta para repasar","preguntas para repasar")}`:"nada pendiente de repaso"}${nuevas>0?` y ${nuevas} nuevas de tus temas más flojos`:""}.</p>
-  <div class="chips" style="margin-top:12px">${[20,40,60].map(n=>`<button class="chip" data-meta="${n}" aria-pressed="${n===meta}">${n} al día</button>`).join("")}</div>
-  ${T.os.map(textoFlojos).join("")}
-  <div class="acciones"><button class="btn" id="hoy" ${T.items.length?"":"disabled"}>Empezar la tanda de hoy</button>${hayFlojos?`<button class="btn sec" id="foco">Solo mis puntos flojos</button>`:""}</div></section>`;
+  const tt=temaAprender(o);
+  return `<section class="ficha destaca"><span class="sig">Hoy toca</span><h2>${esc(corto(o))}, ${cuando}</h2>
+  <p>${hechas>=meta?`<b>Tanda de hoy hecha</b> (${hechas} preguntas).`:`Llevas ${hechas} de ${meta} preguntas.`}${T.rep?` ${pl(Math.min(T.rep,meta),"toca repasar","tocan repasar")}.`:""}${T.exs[1]?` Mezcla con ${esc(corto(T.os[1]))}.`:""}</p>
+  <div class="acciones"><button class="btn" id="hoy" ${T.items.length?"":"disabled"}>Empezar la tanda</button>${tt?`<button class="btn sec" data-aprop="${o.id}">Aprender jugando</button>`:""}${hayFlojos?`<button class="btn sec" id="foco">Puntos flojos</button>`:""}</div>
+  <div class="chips mini-chips">${[20,40,60].map(n=>`<button class="chip" data-meta="${n}" aria-pressed="${n===meta}">${n} al día</button>`).join("")}</div></section>`;
 }
 
 /* ---------- Racha, nivel, logros y plan hasta el examen ---------- */
@@ -322,13 +332,10 @@ function logros(){
   ];
 }
 function fichaProgreso(){
-  const r=racha(), hoyN=datos._dias[hoyISO()]||0, L=logros(), hechos=L.filter(x=>x.ok), sig=L.find(x=>!x.ok);
-  const opos=OPOSICIONES.filter(o=>o.temas.some(t=>t.preguntas.length)&&EXAMENES.some(e=>e.id===o.id&&e.fecha>=hoyISO()));
-  return `<section class="ficha"><span class="sig">Tu progreso</span><h2>${r?`${pl(r,"día seguido","días seguidos")} practicando`:"Empieza hoy tu racha"}</h2>
-  <p>${hoyN?`Hoy llevas ${pl(hoyN,"pregunta","preguntas")}.`:r?"Hoy todavía no has practicado: responde al menos una pregunta para no perder la racha.":"Responde una pregunta y empieza a contar."} Tu mejor racha: ${pl(mejorRacha(),"día","días")}.</p>
-  ${opos.map(o=>{const n=nivel(o);return `<div class="evo-f"><span>${esc(corto(o))}</span><div class="progreso" style="margin:0"><i style="width:${Math.round(n.pct*100)}%"></i></div><b>${Math.round(n.pct*100)} %</b><small>${nombreNivel(n.pct)} · ${n.dom} de ${n.total} dominadas</small></div>`}).join("")}
-  <p style="margin-top:10px"><b>Logros:</b> ${hechos.length?hechos.map(x=>esc(x.t)).join(" · "):"todavía ninguno"}.${sig?` Siguiente: ${esc(sig.t)}${sig.p?` (${sig.p})`:""}.`:""}</p></section>`;
+  const r=racha(), sig=logros().find(x=>!x.ok);
+  return `<p class="racha">${r?`🔥 <b>${pl(r,"día seguido","días seguidos")}</b> practicando`:"Responde una pregunta para empezar tu racha"}${sig?` · Próximo logro: ${esc(sig.t)}${sig.p?` (${sig.p})`:""}`:""}</p>`;
 }
+
 /* Plan día a día hasta el examen más cercano: primero los puntos flojos, luego el resto de temas de peor a mejor */
 function planExamen(){
   const ex=proximoExamen(); if(!ex)return null;
@@ -347,9 +354,8 @@ function planExamen(){
 function fichaPlan(){
   const P=planExamen(); if(!P)return "";
   const dia=f=>{const [y,m,dd]=f.split("-").map(Number);return new Date(y,m-1,dd).toLocaleDateString("es-ES",{weekday:"short",day:"numeric"})};
-  return `<section class="ficha"><span class="sig">Modo examen</span><h2>Plan hasta ${esc(corto(P.o))} (${pl(P.d,"día","días")})</h2>
-  <p>Además de la tanda de hoy, un tema o dos al día, empezando por los más flojos. Se recalcula solo según cómo te vaya.</p>
-  <ul class="plan">${P.dias.map((x,i)=>`<li class="${i===0?"hoy":""}"><span>${i===0?"Hoy":esc(dia(x.fecha))}</span><span>${esc(x.txt)}</span>${i===0&&x.temas.length?`<span>${x.temas.map(t=>`<button class="chip" data-plan="${esc(t.id)}">Practicar ${esc(t.sig||(t.titulo||"").split(".")[0]||"tema")}</button>`).join(" ")}</span>`:i===0&&x.sim?`<span><button class="chip" data-plan-sim>Hacer el simulacro</button></span>`:""}</li>`).join("")}</ul></section>`;
+  return `<details class="ficha plegable"><summary>Plan hasta ${esc(corto(P.o))} (${pl(P.d,"día","días")})</summary>
+  <ul class="plan">${P.dias.map((x,i)=>`<li class="${i===0?"hoy":""}"><span>${i===0?"Hoy":esc(dia(x.fecha))}</span><span>${esc(x.txt)}</span>${i===0&&x.temas.length?`<span>${x.temas.map(t=>`<button class="chip" data-plan="${esc(t.id)}">Practicar ${esc(t.sig||(t.titulo||"").split(".")[0]||"tema")}</button>`).join(" ")}</span>`:i===0&&x.sim?`<span><button class="chip" data-plan-sim>Hacer el simulacro</button></span>`:""}</li>`).join("")}</ul></details>`;
 }
 function enlazarPlan(){
   const P=planExamen(); if(!P)return;
@@ -384,7 +390,7 @@ function apuntarHist(p,ok){
 function evolucion(oid){
   const H=datos._hist||{}, ws=Object.keys(H).sort().filter(w=>H[w][oid]).slice(-8);
   const sims=(datos._sims||[]).filter(x=>x.o===oid).slice(-6);
-  if(!ws.length&&!sims.length)return `<section class="ficha"><span class="sig">Tu evolución</span><p>Aquí verás tu % de aciertos semana a semana en cuanto respondas preguntas (se cuenta desde el 6/11).</p></section>`;
+  if(!ws.length&&!sims.length)return "";
   const fila=(lab,p,extra)=>`<div class="evo-f"><span>${lab}</span><div class="progreso" style="margin:0"><i style="width:${p}%"></i></div><b>${p} %</b><small>${extra}</small></div>`;
   return `<section class="ficha"><span class="sig">Tu evolución</span>
   ${ws.length?`<h2>Aciertos por semana</h2>`+ws.map(w=>{const x=H[w][oid];return fila("Sem. "+(+w.slice(8))+"/"+(+w.slice(5,7)),Math.round(x.b/x.n*100),pl(x.n,"pregunta","preguntas"))}).join(""):""}
@@ -526,25 +532,18 @@ function portada(){
   pararReloj(); opo=null; ses=null;
   const visibles=OPOSICIONES.filter(o=>o.temas.some(t=>t.preguntas.length));
   if(visibles.length===1){temas(visibles[0].id,true);return}
-  const comun=poolComun();
-  let h='<h1>Tests de oposiciones</h1><p class="lead">Elige la oposición o haz un popurrí de la materia común.</p>'+(syncDoc?'<p class="sync">Tu progreso se guarda en tu cuenta y se ve igual en todos tus dispositivos.</p>':'');
+  const h0=hoyISO(), exDe=o=>EXAMENES.find(e=>e.id===o.id&&e.fecha>=h0);
+  const orden=visibles.slice().sort((a,b)=>{const ea=exDe(a),eb=exDe(b);return ea&&eb?ea.fecha.localeCompare(eb.fecha):ea?-1:eb?1:0});
+  let h='<h1>Tests de oposiciones</h1>';
   h+=fichaHoy();
-  {const ex=(typeof proximoExamen==="function"&&proximoExamen())||null;
-   const o=(ex&&OPOSICIONES.find(x=>x.id===ex.id))||visibles[0];
-   const tt=o&&temaAprender(o);
-   if(tt)h+=`<section class="ficha destaca"><span class="sig">Nuevo</span><h2>Aprender jugando</h2><p>Para estudiar sin leer el BOE: lecciones de 5 datos en el orden de la ley. Primero aprendes cada dato y luego te pregunta justo eso. Ganas estrellas y lo que falles vuelve en el repaso.</p>
-   <div class="acciones"><button class="btn" data-aprop="${o.id}">${esc(corto(o))}: ${esc(tt.sig||nombreTema(tt))}</button></div></section>`;}
-  h+=fichaPlan();
   h+=fichaProgreso();
-  h+=`<section class="ficha destaca"><span class="sig">Mezcla</span><h2>Popurrí común</h2>
-  <p>Preguntas de la materia que comparten tus oposiciones: Constitución, Estatuto, procedimiento, empleo público, régimen local… Sirve para todas a la vez.</p>
-  <p>${resumenPool(comun)}.</p>
-  <div class="acciones"><button class="btn" id="pcom">Hacer un popurrí</button></div></section>`;
-  visibles.forEach(o=>{
-    const n=o.temas.reduce((s,t)=>s+t.preguntas.length,0);
-    h+=`<section class="ficha"><h2>${esc(o.nombre)}</h2><p>${esc(o.sub)}</p><p>${o.temas.length} temas · ${n} preguntas.</p>
-    <div class="acciones"><button class="btn" data-o="${o.id}">Entrar</button><button class="btn sec" data-aprop="${o.id}">Aprender jugando</button></div></section>`;
-  });
+  h+=fichaPlan();
+  const fila=o=>{const n=nivel(o), ex=exDe(o), d=ex?diasHasta(ex.fecha):null;
+    return `<button class="fila-opo" data-o="${o.id}"><span class="nm">${esc(corto(o))}<small>${ex?(d===0?"Examen hoy":`Examen en ${d} días`):"Sin examen a la vista"}</small></span><span class="pc"><b>${Math.round(n.pct*100)} %</b><small>dominado</small></span><span aria-hidden="true">›</span></button>`};
+  const conEx=orden.filter(exDe), sinEx=orden.filter(o=>!exDe(o));
+  h+='<h2 class="apartado">Mis oposiciones</h2><div class="lista-opos">'+conEx.map(fila).join("")+'</div>';
+  if(sinEx.length)h+=`<details class="otras"><summary>Otras, sin examen a la vista (${sinEx.length})</summary><div class="lista-opos">${sinEx.map(fila).join("")}</div></details>`;
+  h+=`<p class="pie"><button class="enlace" id="pcom">Popurrí común</button>: mezcla la materia que comparten todas (Constitución, Estatuto, procedimiento…).</p>`;
   app.innerHTML=h;
   app.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>temas(b.dataset.o));
   app.querySelectorAll("[data-aprop]").forEach(b=>b.onclick=()=>abrirAprender(b.dataset.aprop));
@@ -561,13 +560,15 @@ function temas(oid,unica){
   opo=OPOSICIONES.find(o=>o.id===oid); ses=null;
   let h=unica?'':'<button class="volver" id="vol">← Oposiciones</button>';
   h+=`<h1>${esc(opo.nombre)}</h1><p class="lead">${esc(opo.sub)}</p>`;
-  h+=evolucion(opo.id);
-  h+=`<section class="ficha destaca"><span class="sig">Mezcla</span><h2>Popurrí y simulacro</h2>
-  <p>El popurrí mezcla temas y saca primero lo que fallas o no has visto. El simulacro es como el examen: con reloj, sin ver las respuestas hasta el final y restando fallos.</p>
-  ${(()=>{const n=reunir(opo.temas.map(t=>({o:opo,t}))).filter(it=>datos._q[it.p.k]!==undefined&&tocaHoy(it.p.k)).length;return n?`<p><b>${pl(n,"pregunta toca","preguntas tocan")} repasar hoy.</b> El popurrí las saca primero.</p>`:""})()}
-  <div class="acciones"><button class="btn" id="ppop">Popurrí</button><button class="btn sec" id="psim">Simulacro de examen</button></div></section>`;
+  {const conT=opo.temas.filter(t=>t.preguntas.length);
+   const ap=datos._apr||{}, ult=datos._aprUlt&&datos._aprUlt.startsWith(opo.id+"/")?datos._aprUlt.split("/")[1]:null;
+   const pend=t=>{const s=ap[opo.id+"/"+t.id]||{};return lecciones(t).some((_,i)=>!s[i])};
+   const tSig=(ult&&conT.find(t=>t.id===ult&&pend(t)))||conT.find(pend)||conT[0];
+   const n=reunir(opo.temas.map(t=>({o:opo,t}))).filter(it=>datos._q[it.p.k]!==undefined&&tocaHoy(it.p.k)).length;
+   h+=`<section class="ficha destaca"><h2>Practicar</h2>${n?`<p>${pl(n,"pregunta toca","preguntas tocan")} repasar hoy: el popurrí las saca primero.</p>`:""}
+   <div class="acciones">${tSig?`<button class="btn" id="papr" data-apr="${tSig.id}">Aprender jugando · ${esc(tSig.sig||nombreTema(tSig))}</button>`:""}<button class="btn sec" id="ppop">Popurrí</button><button class="btn sec" id="psim">Simulacro</button></div></section>`;}
   const dud=reunir(opo.temas.map(t=>({o:opo,t}))).filter(it=>esDudosa(it.p));
-  if(dud.length)h+=`<section class="ficha"><span class="sig">Revisar</span><h2>Preguntas dudosas</h2><p>${pl(dud.length,"pregunta no tiene","preguntas no tienen")} respuesta oficial y la respuesta puesta es «probable». Practícalas con el temario delante y, si alguna no te cuadra, avísame desde la propia pregunta.</p>
+  if(dud.length)h+=`<section class="ficha"><span class="sig">Revisar</span><h2>Preguntas dudosas</h2><p>${pl(dud.length,"pregunta no tiene","preguntas no tienen")} respuesta oficial. Hazlas con el temario delante.</p>
   <div class="acciones"><button class="btn sec" id="pdud">Practicar las dudosas (${dud.length})</button></div></section>`;
   const conP=opo.temas.filter(t=>t.preguntas.length);
   const filas=conP.map(t=>({t,...stats(t.preguntas)}));
@@ -577,8 +578,8 @@ function temas(oid,unica){
     h+=`<section class="ficha destaca"><span class="sig">Tu nivel</span><h2>Tus temas flojos</h2>`;
     if(flojos.length){
       h+='<ul class="por-tema">'+flojos.map(f=>`<li><span>${esc(f.t.sig||"")} — ${esc(f.t.titulo.replace(/^Tema [^.]*\.\s*/,""))}</span><b class="${clasePct(f.pct)}">${Math.round(f.pct*100)} %</b></li>`).join("")+'</ul>';
-      h+=`<p>Lo que sabes de verdad en las preguntas que ya has hecho (última respuesta de cada una; los aciertos de suerte no cuentan). Antes de practicarlos, léelos.${sinEmpezar?` Te quedan ${pl(sinEmpezar,"tema","temas")} sin empezar.`:""}</p><div class="acciones"><button class="btn" id="pflo">Practicar estos temas</button></div>`;
-    }else h+=`<p>Ningún tema por debajo del 80 % entre los que has practicado (con al menos 5 preguntas hechas).${sinEmpezar?` Te quedan ${pl(sinEmpezar,"tema","temas")} sin empezar.`:""}</p>`;
+      h+=`<div class="acciones"><button class="btn" id="pflo">Practicar estos temas</button></div>`;
+    }else h+=`<p>Ningún tema por debajo del 80 %.${sinEmpezar?` Te quedan ${pl(sinEmpezar,"tema","temas")} sin empezar.`:""}</p>`;
     h+='</section>';
   }
   if((SUPUESTOS[opo.id]||[]).length){
@@ -586,25 +587,18 @@ function temas(oid,unica){
     h+=`<section class="ficha destaca"><span class="sig">2.º ejercicio</span><h2>Supuestos prácticos</h2><p>Casos reales de conserjería (temas 7 a 10): lees la situación, escribes qué harías y la comparas con la respuesta modelo. Llevas ${hechos} de ${L.length}.</p>
     <div class="acciones"><button class="btn" data-sup="escuela">Conserje de escuela</button><button class="btn sec" data-sup="conserje">Conserje</button></div></section>`;
   }
-  {const conT=opo.temas.filter(t=>t.preguntas.length);
-   const ap=datos._apr||{}, ult=datos._aprUlt&&datos._aprUlt.startsWith(opo.id+"/")?datos._aprUlt.split("/")[1]:null;
-   const pend=t=>{const s=ap[opo.id+"/"+t.id]||{};return lecciones(t).some((_,i)=>!s[i])};
-   const tSig=(ult&&conT.find(t=>t.id===ult&&pend(t)))||conT.find(pend)||conT[0];
-   const est=conT.reduce((s,t)=>s+Object.values(ap[opo.id+"/"+t.id]||{}).reduce((a,b)=>a+b,0),0);
-   if(tSig)h+=`<section class="ficha destaca"><span class="sig">Nuevo</span><h2>Aprender jugando</h2><p>En vez de leer el BOE: lecciones de 5 datos en el orden de la ley. Primero los aprendes (pensando la respuesta antes de verla) y luego te pregunta justo eso. Ganas estrellas y lo que falles vuelve en el repaso.${est?` Llevas ${est} estrellas.`:""}</p>
-   <div class="acciones"><button class="btn" id="papr" data-apr="${tSig.id}">${ult?"Seguir":"Empezar"}: ${esc(tSig.sig||nombreTema(tSig))}</button></div></section>`;}
   h+='<h2 class="apartado">Por temas</h2>';
+  h+='<div class="lista-temas">';
   opo.temas.forEach(t=>{
-    if(!t.preguntas.length){h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>Preguntas en preparación.</p></section>`;return}
+    if(!t.preguntas.length)return;
     const s=estado(opo.id,t.id), n=t.preguntas.length, f=t.preguntas.filter(p=>s.falladas.includes(fk(p))).length;
-    const mejor=s.mejor===null?"Aún no lo has hecho entero":`Mejor resultado: ${s.mejor} de ${n}`;
-    const st=stats(t.preguntas);
-    const niv=st.v?` Has hecho ${st.v} y sabes de verdad el <span class="pct ${clasePct(st.pct)}">${Math.round(st.pct*100)} %</span>${st.su?` (más ${st.su} de suerte)`:""}.`:"";
-    const lei=datos._leido[opo.id+"/"+t.id];
-    h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>${esc(t.sub||"")}</p><p>${n} preguntas. ${mejor}.${niv}${lei?` <span class="leido">Resumen leído el ${+lei.slice(8)}/${+lei.slice(5,7)}.</span>`:(datos._secs&&(datos._secs[opo.id+"/"+t.id]||[]).length&&RESUMENES[opo.id+"/"+t.id])?` Resumen: ${datos._secs[opo.id+"/"+t.id].length} de ${partes(RESUMENES[opo.id+"/"+t.id]).ps.length} apartados.`:""}</p>
-    <div class="acciones"><button class="btn" data-apr="${t.id}">Aprender jugando${(()=>{const s=(datos._apr||{})[opo.id+"/"+t.id]||{};const n=Object.keys(s).length;return n?" ("+n+"/"+Math.ceil(t.preguntas.length/POR_LECCION)+")":""})()}</button><button class="btn sec" data-leer="${t.id}">Leer el tema</button><button class="btn sec" data-a="todo" data-t="${t.id}">Empezar el test</button>
-    <button class="btn sec" data-a="falladas" data-t="${t.id}" ${f?"":"disabled"}>Repasar falladas (${f})</button></div></section>`;
+    const st=stats(t.preguntas), ap=Object.keys((datos._apr||{})[opo.id+"/"+t.id]||{}).length, nl=Math.ceil(n/POR_LECCION);
+    const info=[pl(n,"pregunta","preguntas"), st.v?`<span class="pct ${clasePct(st.pct)}">${Math.round(st.pct*100)} %</span>`:"sin empezar", ap?`${ap}/${nl} lecciones`:""].filter(Boolean).join(" · ");
+    h+=`<details class="tema"><summary><span class="ts">${esc(t.sig||"")}</span><span class="tt">${esc(nombreTema(t))}<small>${info}</small></span></summary>
+    <div class="acciones"><button class="btn" data-apr="${t.id}">Aprender jugando</button><button class="btn sec" data-a="todo" data-t="${t.id}">Test</button><button class="btn sec" data-leer="${t.id}">Leer</button>${f?`<button class="btn sec" data-a="falladas" data-t="${t.id}">Falladas (${f})</button>`:""}</div></details>`;
   });
+  h+='</div>';
+  h+=evolucion(opo.id);
   app.innerHTML=h;
   if(!unica)document.getElementById("vol").onclick=portada;
   document.getElementById("ppop").onclick=()=>configPopurri(opo.id);
