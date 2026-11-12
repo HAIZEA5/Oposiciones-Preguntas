@@ -166,6 +166,28 @@ button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
 .parte[open]{padding-bottom:14px}
 .parte .lectura h2{display:none}
 @media (prefers-reduced-motion:reduce){.progreso i{transition:none}}
+
+.apr-mapa{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.apr-mapa button{width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;font:inherit;color:inherit}
+.apr-mapa button.sig{border-color:var(--brass);box-shadow:0 0 0 3px color-mix(in srgb,var(--brass) 25%,transparent)}
+.apr-mapa .n{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--paper);border:1.5px solid var(--line)}
+.apr-mapa .hecha .n{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.apr-mapa small{display:block;color:var(--soft)}
+.estr{letter-spacing:2px;color:var(--brass);font-size:1.05rem;white-space:nowrap}
+.estr .off{color:var(--line)}
+.tarjeta{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:22px 20px;margin:6px 0 16px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.tarjeta .ley{display:inline-block;font-size:.8rem;font-weight:800;color:var(--brass);letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
+.tarjeta .pregunta{margin-bottom:10px}
+.tarjeta .dato{font-family:var(--serif);font-size:1.15rem;line-height:1.6;margin:0}
+.tarjeta .dato b{background:color-mix(in srgb,var(--brass) 22%,transparent);padding:0 3px;border-radius:3px}
+.tapa{width:100%;border:2px dashed var(--brass);background:color-mix(in srgb,var(--brass) 8%,var(--card));border-radius:10px;padding:18px;font:inherit;font-weight:700;color:var(--ink)}
+.puntos-apr{display:flex;gap:6px;justify-content:center;margin:4px 0 14px}
+.puntos-apr i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.puntos-apr i.ya{background:var(--brass)}
+.combo{display:inline-block;font-weight:800;color:var(--brass)}
+.premio{text-align:center;padding:10px 0}
+.premio .grande{font-size:2.4rem;letter-spacing:6px;color:var(--brass)}
+.premio .xp{font-family:var(--serif);font-size:1.4rem;font-weight:600;margin-top:6px}
 </style>
 </head>
 <body>
@@ -557,6 +579,13 @@ function temas(oid,unica){
     h+=`<section class="ficha destaca"><span class="sig">2.º ejercicio</span><h2>Supuestos prácticos</h2><p>Casos reales de conserjería (temas 7 a 10): lees la situación, escribes qué harías y la comparas con la respuesta modelo. Llevas ${hechos} de ${L.length}.</p>
     <div class="acciones"><button class="btn" data-sup="escuela">Conserje de escuela</button><button class="btn sec" data-sup="conserje">Conserje</button></div></section>`;
   }
+  {const conT=opo.temas.filter(t=>t.preguntas.length);
+   const ap=datos._apr||{}, ult=datos._aprUlt&&datos._aprUlt.startsWith(opo.id+"/")?datos._aprUlt.split("/")[1]:null;
+   const pend=t=>{const s=ap[opo.id+"/"+t.id]||{};return lecciones(t).some((_,i)=>!s[i])};
+   const tSig=(ult&&conT.find(t=>t.id===ult&&pend(t)))||conT.find(pend)||conT[0];
+   const est=conT.reduce((s,t)=>s+Object.values(ap[opo.id+"/"+t.id]||{}).reduce((a,b)=>a+b,0),0);
+   if(tSig)h+=`<section class="ficha destaca"><span class="sig">Nuevo</span><h2>Aprender jugando</h2><p>En vez de leer el BOE: lecciones de 5 datos en el orden de la ley. Primero los aprendes (pensando la respuesta antes de verla) y luego te pregunta justo eso. Ganas estrellas y lo que falles vuelve en el repaso.${est?` Llevas ${est} estrellas.`:""}</p>
+   <div class="acciones"><button class="btn" id="papr" data-apr="${tSig.id}">${ult?"Seguir":"Empezar"}: ${esc(tSig.sig||nombreTema(tSig))}</button></div></section>`;}
   h+='<h2 class="apartado">Por temas</h2>';
   opo.temas.forEach(t=>{
     if(!t.preguntas.length){h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>Preguntas en preparación.</p></section>`;return}
@@ -566,7 +595,7 @@ function temas(oid,unica){
     const niv=st.v?` Has hecho ${st.v} y sabes de verdad el <span class="pct ${clasePct(st.pct)}">${Math.round(st.pct*100)} %</span>${st.su?` (más ${st.su} de suerte)`:""}.`:"";
     const lei=datos._leido[opo.id+"/"+t.id];
     h+=`<section class="ficha"><span class="sig">${esc(t.sig||"")}</span><h2>${esc(t.titulo)}</h2><p>${esc(t.sub||"")}</p><p>${n} preguntas. ${mejor}.${niv}${lei?` <span class="leido">Resumen leído el ${+lei.slice(8)}/${+lei.slice(5,7)}.</span>`:(datos._secs&&(datos._secs[opo.id+"/"+t.id]||[]).length&&RESUMENES[opo.id+"/"+t.id])?` Resumen: ${datos._secs[opo.id+"/"+t.id].length} de ${partes(RESUMENES[opo.id+"/"+t.id]).ps.length} apartados.`:""}</p>
-    <div class="acciones"><button class="btn sec" data-leer="${t.id}">Leer el tema</button><button class="btn" data-a="todo" data-t="${t.id}">Empezar el test</button>
+    <div class="acciones"><button class="btn" data-apr="${t.id}">Aprender jugando${(()=>{const s=(datos._apr||{})[opo.id+"/"+t.id]||{};const n=Object.keys(s).length;return n?" ("+n+"/"+Math.ceil(t.preguntas.length/POR_LECCION)+")":""})()}</button><button class="btn sec" data-leer="${t.id}">Leer el tema</button><button class="btn sec" data-a="todo" data-t="${t.id}">Empezar el test</button>
     <button class="btn sec" data-a="falladas" data-t="${t.id}" ${f?"":"disabled"}>Repasar falladas (${f})</button></div></section>`;
   });
   app.innerHTML=h;
@@ -579,6 +608,7 @@ function temas(oid,unica){
   if(bf)bf.onclick=()=>{const prev=datos._cfg["pop:"+opo.id]||{};datos._cfg["pop:"+opo.id]={n:prev.n||20,temas:flojos.map(f=>f.t.id)};guardar(datos);configPopurri(opo.id)};
   app.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>empezarTema(b.dataset.t,b.dataset.a));
   app.querySelectorAll("[data-leer]").forEach(b=>b.onclick=()=>leerTema(b.dataset.leer));
+  app.querySelectorAll("[data-apr]").forEach(b=>b.onclick=()=>mapaAprender(b.dataset.apr));
   app.querySelectorAll("[data-sup]").forEach(b=>b.onclick=()=>listaSupuestos(b.dataset.sup));
   arriba();
 }
@@ -708,6 +738,132 @@ function leerTema(tid,vista){
     ul.onclick=e=>{const li=e.target.closest("li");if(li&&ul.classList.contains("ocultas"))li.classList.toggle("ver")};
   }
   document.getElementById("hecho").onclick=()=>empezarTema(tid,"todo");
+  arriba();
+}
+
+
+/* ---------- Aprender jugando ----------
+   Cada tema se parte en lecciones cortas de 5 datos, en el orden de la ley (por artículo).
+   Primero ves cada dato (con la pregunta como pista, para pensar antes), y después te pregunta
+   esas mismas 5: lo que fallas vuelve al final hasta que lo aciertas. Las respuestas cuentan
+   para el repaso espaciado y para tu nivel, igual que en los tests. */
+const POR_LECCION=5;
+const qLimpia=p=>String(p.q).replace(/^Solo Ayudante\.\s+/,"").replace(/^Solo Ayudante\./,"");
+function refOrden(p){
+  const r=String(p.r||"").split("·")[0].trim();
+  const m=r.match(/^(.*?)\s*arts?\.?\s*(\d+)/i);
+  return m?{ley:m[1].trim()||r,art:+m[2]}:{ley:r,art:9999};
+}
+function lecciones(t){
+  const ps=t.preguntas.map((p,i)=>({p,i,...refOrden(p)}));
+  const leyes=[];ps.forEach(x=>{if(!leyes.includes(x.ley))leyes.push(x.ley)});
+  const titulo=g=>{const arts=g.filter(x=>x.art<9999).map(x=>x.art), ley=g[0].ley;
+    if(!arts.length)return ley.length>60?ley.slice(0,57)+"…":(ley||"Varios");
+    const a=Math.min(...arts),z=Math.max(...arts);return (ley?ley+" · ":"")+(a===z?"art. "+a:"arts. "+a+"–"+z)};
+  const L=[], sueltas=[];
+  leyes.forEach(ley=>{
+    const g=ps.filter(x=>x.ley===ley).sort((a,b)=>a.art-b.art||a.i-b.i);
+    if(g.length<3){sueltas.push(...g);return}
+    const trozos=[];for(let i=0;i<g.length;i+=POR_LECCION)trozos.push(g.slice(i,i+POR_LECCION));
+    if(trozos.length>1&&trozos[trozos.length-1].length<3)trozos[trozos.length-2].push(...trozos.pop());
+    trozos.forEach(tr=>L.push({tit:titulo(tr),ps:tr.map(x=>x.p)}));
+  });
+  for(let i=0;i<sueltas.length;i+=POR_LECCION){
+    let tr=sueltas.slice(i,i+POR_LECCION);
+    if(tr.length<3&&L.length&&i===0&&sueltas.length<3){L[L.length-1].ps.push(...tr.map(x=>x.p));break}
+    const nombres=[...new Set(tr.map(x=>x.ley).filter(Boolean))];
+    const tt=nombres.join(" · ");
+    L.push({tit:nombres.length===1&&tt.length<=60?tt:"Otras normas del tema",ps:tr.map(x=>x.p)});
+  }
+  return L;
+}
+const aprKey=tid=>opo.id+"/"+tid;
+const estrellas=(n,max)=>'<span class="estr" aria-label="'+n+' de 3 estrellas">'+"★".repeat(n)+'<span class="off">'+"★".repeat((max||3)-n)+"</span></span>";
+function datoConRespuesta(p){
+  const e=String(p.e||correcta(p)), c=String(correcta(p)).replace(/[.\s]+$/,"");
+  const k=c.length>3?e.toLowerCase().indexOf(c.toLowerCase()):-1;
+  return k<0?esc(e):esc(e.slice(0,k))+"<b>"+esc(e.slice(k,k+c.length))+"</b>"+esc(e.slice(k+c.length));
+}
+function mapaAprender(tid){
+  const t=opo.temas.find(x=>x.id===tid), L=lecciones(t);
+  datos._aprUlt=opo.id+"/"+tid;
+  datos._apr=datos._apr||{};const st=datos._apr[aprKey(tid)]||{};
+  const total=L.reduce((s,_,i)=>s+(st[i]||0),0), sig=L.findIndex((_,i)=>!st[i]);
+  let h=`<button class="volver" id="vol">← ${esc(corto(opo))}</button><p class="tag">${esc(t.sig||"")}</p><h1>Aprender jugando</h1>
+  <p class="lead">${esc(nombreTema(t))}. ${L.length} lecciones de ${POR_LECCION} datos, en el orden de la ley. En cada una primero aprendes y luego te pregunta justo eso. Llevas ${estrellas(Math.min(3,Math.round(total/Math.max(1,L.length))))} · ${total} de ${L.length*3} estrellas.</p>
+  ${sig>=0?`<div class="acciones" style="margin:0 0 16px"><button class="btn" data-l="${sig}">${sig?"Seguir: lección "+(sig+1):"Empezar la lección 1"}</button></div>`:`<p class="ok-txt">Has hecho todas las lecciones. Repite las que tengan menos estrellas o haz el test del tema.</p>`}
+  <ol class="apr-mapa">`;
+  L.forEach((l,i)=>{const s=st[i]||0;
+    h+=`<li><button data-l="${i}" class="${s?"hecha":""}${i===sig?" sig":""}"><span class="n">${s?"✓":i+1}</span><span><b>${esc(l.tit)}</b><small>${l.ps.length} datos</small></span>${estrellas(s)}</button></li>`});
+  h+=`</ol><button class="btn siguiente" id="test">Hacer el test de este tema</button>`;
+  app.innerHTML=h;
+  document.getElementById("vol").onclick=()=>temas(opo.id,OPOSICIONES.length===1);
+  document.getElementById("test").onclick=()=>empezarTema(tid,"todo");
+  app.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>leccion(tid,+b.dataset.l));
+  arriba();
+}
+function leccion(tid,li){
+  const t=opo.temas.find(x=>x.id===tid), L=lecciones(t), l=L[li];
+  const a={tid,li,tit:l.tit,ps:l.ps,i:0,cola:[],fallos:0,primera:new Set(),combo:0,mejorCombo:0,hechas:0};
+  aprTarjeta(a);
+}
+function aprPuntos(n,ya){let h='<div class="puntos-apr" aria-hidden="true">';for(let i=0;i<n;i++)h+=`<i class="${i<ya?"ya":""}"></i>`;return h+"</div>"}
+function aprTarjeta(a){
+  const p=a.ps[a.i], ref=String(p.r||"").split("·")[0].trim();
+  let h=`<div class="barra"><button id="salir">Salir</button><span>Aprende · ${a.i+1} de ${a.ps.length}</span><span></span></div>
+  <div class="progreso"><i style="width:${(a.i/a.ps.length)*50}%"></i></div>${aprPuntos(a.ps.length,a.i)}
+  <div class="tarjeta"><span class="ley">${esc(ref||a.tit)}</span><p class="pregunta">${esc(qLimpia(p))}</p>
+  <div id="cara"><button class="tapa" id="tapa">Piensa la respuesta y toca para verla</button></div></div><div id="pie"></div>`;
+  app.innerHTML=h;
+  document.getElementById("salir").onclick=()=>mapaAprender(a.tid);
+  document.getElementById("tapa").onclick=()=>{
+    document.getElementById("cara").innerHTML=`<p class="dato">${datoConRespuesta(p)}</p>`;
+    const ult=a.i===a.ps.length-1;
+    document.getElementById("pie").innerHTML=`<button class="btn siguiente" id="sig">${ult?"¡A ver si te acuerdas!":"Siguiente dato"}</button>`;
+    const b=document.getElementById("sig");b.focus({preventScroll:true});
+    b.onclick=()=>{if(ult){a.cola=barajar(a.ps.slice());a.total=a.ps.length;aprPregunta(a)}else{a.i++;aprTarjeta(a)}};
+  };
+  arriba();
+}
+function aprPregunta(a){
+  const p=a.cola[0], ops=opciones(p);
+  let h=`<div class="barra"><button id="salir">Salir</button><span>¿Te acuerdas? · quedan ${a.cola.length}</span>${a.combo>1?`<span class="combo">🔥 ${a.combo} seguidas</span>`:"<span></span>"}</div>
+  <div class="progreso"><i style="width:${50+(a.hechas/a.total)*50}%"></i></div>
+  <p class="pregunta">${esc(qLimpia(p))}</p><div class="opciones">`;
+  ops.forEach((o,k)=>{h+=`<button class="op" data-k="${k}"><b>${"abcd"[k]})</b><span>${esc(o.txt)}</span></button>`});
+  h+='</div><div id="tras"></div>';
+  app.innerHTML=h;
+  document.getElementById("salir").onclick=()=>mapaAprender(a.tid);
+  const bs=[...app.querySelectorAll(".op")];
+  bs.forEach(b=>b.onclick=()=>{
+    const ok=ops[+b.dataset.k].ok;
+    bs.forEach((x,k)=>{x.disabled=true;if(ops[k].ok)x.classList.add("ok")});
+    if(!a.primera.has(p.k)){a.primera.add(p.k);registrar(p,ok)}
+    a.cola.shift();
+    if(ok){a.hechas++;a.combo++;a.mejorCombo=Math.max(a.mejorCombo,a.combo)}
+    else{b.classList.add("bad");a.fallos++;a.combo=0;a.cola.push(p)}
+    const fin=!a.cola.length;
+    document.getElementById("tras").innerHTML=`<div class="explica"><strong>${ok?(a.combo>2?"¡Imparable!":"¡Eso es!"):"Casi. Te la vuelvo a preguntar al final."}</strong>${esc(p.e||"")}<div class="ref">${esc(p.r||"")}</div></div>
+    <button class="btn siguiente" id="sig">${fin?"Ver cómo te ha ido":"Siguiente"}</button>`;
+    const s=document.getElementById("sig");s.focus({preventScroll:true});s.scrollIntoView({block:"nearest"});
+    s.onclick=()=>fin?aprFin(a):aprPregunta(a);
+  });
+  arriba();
+}
+function aprFin(a){
+  const st=a.fallos===0?3:a.fallos<=2?2:1;
+  datos._apr=datos._apr||{};const k=aprKey(a.tid);datos._apr[k]=datos._apr[k]||{};
+  const antes=datos._apr[k][a.li]||0;datos._apr[k][a.li]=Math.max(antes,st);guardar(datos);
+  const t=opo.temas.find(x=>x.id===a.tid), L=lecciones(t), hay=a.li+1<L.length;
+  const xp=a.total*10-a.fallos*3+(a.mejorCombo>=a.total?10:0);
+  const msg=st===3?"¡Perfecta! Todo a la primera.":st===2?"¡Muy bien! Casi todo a la primera.":"Hecho. Las que te han costado volverán en el repaso de mañana.";
+  app.innerHTML=`<div class="premio"><p class="tag">${esc(a.tit)}</p><div class="grande">${"★".repeat(st)}<span style="color:var(--line)">${"★".repeat(3-st)}</span></div>
+  <h1 style="margin-top:6px">${msg}</h1><p class="xp">+${Math.max(5,xp)} puntos${a.mejorCombo>2?` · 🔥 racha de ${a.mejorCombo}`:""}</p>
+  <p class="lead">Racha de días estudiando: ${racha()}.${st>antes&&antes?" ¡Has mejorado tus estrellas!":""}</p></div>
+  <div class="acciones" style="justify-content:center">${hay?`<button class="btn" id="otra">Siguiente lección</button>`:""}<button class="btn sec" id="rep">Repetir esta</button><button class="btn sec" id="mapa">Ver todas las lecciones</button></div>`;
+  if(hay)document.getElementById("otra").onclick=()=>leccion(a.tid,a.li+1);
+  document.getElementById("rep").onclick=()=>leccion(a.tid,a.li);
+  document.getElementById("mapa").onclick=()=>mapaAprender(a.tid);
   arriba();
 }
 
