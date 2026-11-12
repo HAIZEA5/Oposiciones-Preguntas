@@ -528,6 +528,11 @@ function portada(){
   const comun=poolComun();
   let h='<h1>Tests de oposiciones</h1><p class="lead">Elige la oposición o haz un popurrí de la materia común.</p>'+(syncDoc?'<p class="sync">Tu progreso se guarda en tu cuenta y se ve igual en todos tus dispositivos.</p>':'');
   h+=fichaHoy();
+  {const ex=(typeof proximoExamen==="function"&&proximoExamen())||null;
+   const o=(ex&&OPOSICIONES.find(x=>x.id===ex.id))||visibles[0];
+   const tt=o&&temaAprender(o);
+   if(tt)h+=`<section class="ficha destaca"><span class="sig">Nuevo</span><h2>Aprender jugando</h2><p>Para estudiar sin leer el BOE: lecciones de 5 datos en el orden de la ley. Primero aprendes cada dato y luego te pregunta justo eso. Ganas estrellas y lo que falles vuelve en el repaso.</p>
+   <div class="acciones"><button class="btn" data-aprop="${o.id}">${esc(corto(o))}: ${esc(tt.sig||nombreTema(tt))}</button></div></section>`;}
   h+=fichaPlan();
   h+=fichaProgreso();
   h+=`<section class="ficha destaca"><span class="sig">Mezcla</span><h2>Popurrí común</h2>
@@ -537,10 +542,11 @@ function portada(){
   visibles.forEach(o=>{
     const n=o.temas.reduce((s,t)=>s+t.preguntas.length,0);
     h+=`<section class="ficha"><h2>${esc(o.nombre)}</h2><p>${esc(o.sub)}</p><p>${o.temas.length} temas · ${n} preguntas.</p>
-    <div class="acciones"><button class="btn" data-o="${o.id}">Entrar</button></div></section>`;
+    <div class="acciones"><button class="btn" data-o="${o.id}">Entrar</button><button class="btn sec" data-aprop="${o.id}">Aprender jugando</button></div></section>`;
   });
   app.innerHTML=h;
   app.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>temas(b.dataset.o));
+  app.querySelectorAll("[data-aprop]").forEach(b=>b.onclick=()=>abrirAprender(b.dataset.aprop));
   document.getElementById("pcom").onclick=()=>configPopurri(null);
   enlazarHoy(portada);
   enlazarPlan();
@@ -778,6 +784,13 @@ function lecciones(t){
   return L;
 }
 const aprKey=tid=>opo.id+"/"+tid;
+function temaAprender(o){
+  const conT=o.temas.filter(t=>t.preguntas.length), ap=datos._apr||{};
+  const ult=datos._aprUlt&&datos._aprUlt.startsWith(o.id+"/")?datos._aprUlt.split("/")[1]:null;
+  const pend=t=>{const s=ap[o.id+"/"+t.id]||{};return lecciones(t).some((_,i)=>!s[i])};
+  return (ult&&conT.find(t=>t.id===ult&&pend(t)))||conT.find(pend)||conT[0]||null;
+}
+function abrirAprender(oid){const o=OPOSICIONES.find(x=>x.id===oid);if(!o)return;opo=o;const t=temaAprender(o);if(t)mapaAprender(t.id)}
 const estrellas=(n,max)=>'<span class="estr" aria-label="'+n+' de 3 estrellas">'+"★".repeat(n)+'<span class="off">'+"★".repeat((max||3)-n)+"</span></span>";
 function datoConRespuesta(p){
   const e=String(p.e||correcta(p)), c=String(correcta(p)).replace(/[.\s]+$/,"");
