@@ -1278,8 +1278,9 @@ function simResultado(){
     const remoto=snap.exists?snap.data():null;
     if(remoto&&remoto.json){
       try{
-        const r=fusionar(datos,JSON.parse(remoto.json));
-        const subirDespues=JSON.stringify(r)!==remoto.json;
+        const rj=typeof remoto.json==="string"?JSON.parse(remoto.json):remoto.json;   // en la hoja puede venir ya como objeto
+        const r=fusionar(datos,rj);
+        const subirDespues=JSON.stringify(r)!==(typeof remoto.json==="string"?remoto.json:JSON.stringify(rj));
         datos=r;datos._conf=datos._conf||{};datos._leido=datos._leido||{};datos._secs=datos._secs||{};datos._sup=datos._sup||{};datos._q=datos._q||{};datos._cfg=datos._cfg||{};datos._sr=datos._sr||{};datos._dia=datos._dia||{};datos._sims=datos._sims||[];datos._hist=datos._hist||{};datos._dias=datos._dias||Object.assign({},datos._dia);
         try{localStorage.setItem(KEY,JSON.stringify(datos))}catch(e){}
         if(subirDespues)await subir();
