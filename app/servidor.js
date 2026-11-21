@@ -16,10 +16,53 @@ var APPS = {
 var SUBCARPETA_ARCHIVOS = 'archivos';   // fotos y datos grandes, dentro de la carpeta de la hoja
 var MAX_CELDA = 45000;
 
+/* ---------- Web nueva (GitHub Pages) ----------
+   Las páginas se sirven desde GitHub Pages y solo los DATOS pasan por aquí, con una clave privada.
+   La clave vive en las propiedades del script (nunca en el repositorio). La crea conectarWeb(). */
+var WEB = 'https://haizea5.github.io/Oposiciones-Preguntas/app/';
+function claveWeb_() { return PropertiesService.getScriptProperties().getProperty('clave_web'); }
+/** Se ejecuta UNA vez desde el editor: crea la clave y te manda por correo el enlace que conecta la web. */
+function conectarWeb() {
+  var props = PropertiesService.getScriptProperties();
+  var k = props.getProperty('clave_web');
+  if (!k) { k = (Utilities.getUuid() + Utilities.getUuid()).replace(/-/g, ''); props.setProperty('clave_web', k); }
+  var cfg = Utilities.base64EncodeWebSafe(JSON.stringify({ u: ScriptApp.getService().getUrl(), k: k }));
+  var enlace = WEB + 'panel/#cfg=' + cfg;
+  var yo = Session.getEffectiveUser().getEmail();
+  MailApp.sendEmail(yo, 'Conectar tu panel (abre este enlace en el móvil)',
+    'Abre este enlace en el móvil (y en el ordenador si quieres). Solo hace falta una vez por navegador.\n\n' + enlace +
+    '\n\nNo lo reenvíes: lleva la clave que protege tus datos. Si alguna vez se filtra, ejecuta «nuevaClave» en Apps Script y vuelve a ejecutar «conectarWeb».');
+  Logger.log('Enlace enviado a ' + yo);
+  return 'Enviado a ' + yo;
+}
+/** Cambia la clave (si se filtra). Después hay que volver a ejecutar conectarWeb. */
+function nuevaClave() { PropertiesService.getScriptProperties().deleteProperty('clave_web'); return conectarWeb(); }
+/** Datos para la web: POST con {k, a, j}. Responde {ok, r} o {ok:false, e}. */
+function doPost(e) {
+  var out;
+  try {
+    var b = JSON.parse((e && e.postData && e.postData.contents) || '{}');
+    var k = claveWeb_();
+    if (!k || !b.k || String(b.k) !== k) throw new Error('clave');
+    out = { ok: true, r: api(b.a, b.j, true) };
+  } catch (err) { out = { ok: false, e: String(err && err.message || err) }; }
+  return ContentService.createTextOutput(JSON.stringify(out)).setMimeType(ContentService.MimeType.JSON);
+}
+
 /* ---------- Páginas ---------- */
 function doGet(e) {
   var p = (e && e.parameter) || {};
   var app = APPS[p.app] ? p.app : 'panel';
+  /* Con la web nueva conectada, el enlace antiguo (/exec) solo lleva a la web nueva: así el acceso
+     directo que tienes en el móvil sigue sirviendo y aquí no se enseña ningún dato. */
+  if (claveWeb_()) {
+    var destino = WEB + app + '/' + (p.h ? '#' + encodeURIComponent(p.h) : '');
+    return HtmlService.createHtmlOutput('<meta name="viewport" content="width=device-width,initial-scale=1">' +
+      '<p style="font:16px system-ui;padding:20px">Tu panel se ha mudado. <a href="' + destino + '" target="_top">Abrir el panel</a></p>' +
+      '<script>window.top.location.href=' + JSON.stringify(destino) + ';</script>')
+      .setTitle(APPS[app].titulo).addMetaTag('viewport', 'width=device-width, initial-scale=1')
+      .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.DEFAULT);
+  }
   var sha = ultimoCommit_();
   var cdn = 'https://cdn.jsdelivr.net/gh/' + REPO + '@' + sha + '/';
   var base = cdn + APPS[app].dir;
@@ -125,7 +168,9 @@ function descargar_(url) {
 }
 
 /* ---------- API que usan las páginas (google.script.run.api) ---------- */
-function api(accion, json) {
+function api(accion, json, desdeWeb) {
+  /* Si la web nueva está conectada, el panel antiguo de Google ya no lee datos (solo la web con su clave). */
+  if (!desdeWeb && claveWeb_()) throw new Error('Usa el panel nuevo');
   var a = JSON.parse(json || '{}');
   var out;
   switch (accion) {

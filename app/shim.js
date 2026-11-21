@@ -2,7 +2,39 @@
    Imita lo que las páginas usaban dentro de Claude (window.claude.use("db" | "mcp" | "assets"))
    pero guardando todo en la hoja de Google «Centro de Control – datos» a través de google.script.run. */
 (function () {
+  if (window.__cdcShim) return; window.__cdcShim = true;   // por si la página lo carga dos veces
   var CDC = window.__CDC || {};
+  /* Dos formas de funcionar:
+     · Google: la página la sirve Apps Script y los datos van por google.script.run.
+     · Web: la página la sirve GitHub Pages y los datos van por fetch a tu Apps Script con tu clave privada,
+       que se guarda solo en este navegador (llega una vez con el enlace del correo: …#cfg=…). */
+  var WEB = !(window.google && google.script && google.script.run) && !CDC.url;
+  var BASE = (location.href.match(/^(.*\/app\/)/) || [])[1] || "";
+  var cfg = null;
+  if (WEB) {
+    var mApp = location.pathname.match(/\/app\/(panel|tests|labores)\//);
+    CDC.app = CDC.app || (mApp ? mApp[1] : "panel");
+    try {
+      var mh = location.hash.match(/(?:^#|&)cfg=([^&]+)/);
+      if (mh) {
+        var b64 = mh[1].replace(/-/g, "+").replace(/_/g, "/");
+        var c = JSON.parse(decodeURIComponent(escape(atob(b64))));
+        if (c && c.u && c.k) localStorage.setItem("cdc:cfg", JSON.stringify({ u: c.u, k: c.k }));
+        history.replaceState(null, "", location.pathname + location.search);   // la clave no se queda en la barra
+      }
+      cfg = JSON.parse(localStorage.getItem("cdc:cfg") || "null");
+    } catch (e) { cfg = null; }
+    if (!cfg) {
+      var pedirCfg = function () {
+        if (document.getElementById("cdc-cfg")) return;
+        var d = document.createElement("div"); d.id = "cdc-cfg";
+        d.style.cssText = "position:fixed;left:12px;right:12px;top:12px;z-index:9999;background:#25291F;color:#fff;border-radius:12px;padding:14px 16px;font:15px/1.45 system-ui,sans-serif";
+        d.innerHTML = "<b>Falta conectar esta web con tus datos.</b><br>Abre en este navegador el enlace del correo «Conectar tu panel». Solo hace falta una vez.";
+        document.body.appendChild(d);
+      };
+      if (document.body) pedirCfg(); else document.addEventListener("DOMContentLoaded", pedirCfg);
+    }
+  }
   /* Si algún script de la página falla, se enseña el error abajo (en vez de quedarse todo en «Cargando…»).
      Así se puede saber qué pasa en el móvil sin herramientas de desarrollo. */
   window.addEventListener("error", function (ev) {
@@ -22,6 +54,20 @@
   var ESPERA = 30000, REINTENTOS = [1500, 4000];
   var NO_REPETIR = { asset_upload: 1 };   // subir una foto dos veces la duplicaría
   function run1(action, payload) {
+    if (WEB) {
+      if (!cfg) return Promise.reject(new Error("sin_conectar"));
+      var ctl = window.AbortController ? new AbortController() : null;
+      var t = setTimeout(function () { if (ctl) ctl.abort(); }, ESPERA);
+      /* text/plain: así el navegador no hace la consulta previa (CORS) que Apps Script no contesta */
+      return fetch(cfg.u, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, redirect: "follow",
+        body: JSON.stringify({ k: cfg.k, a: action, j: JSON.stringify(payload || {}) }), signal: ctl ? ctl.signal : undefined })
+        .then(function (r) { return r.json(); })
+        .then(function (o) {
+          clearTimeout(t);
+          if (!o || !o.ok) throw new Error(o && o.e === "clave" ? "clave_no_valida" : (o && o.e) || "sin_respuesta");
+          return typeof o.r === "string" ? JSON.parse(o.r) : o.r;
+        }, function (e) { clearTimeout(t); throw new Error("sin_respuesta"); });
+    }
     return new Promise(function (res, rej) {
       if (!window.google || !google.script || !google.script.run) { rej(new Error("sin_apps_script")); return; }
       var hecho = false;
@@ -37,7 +83,7 @@
     function uno() {
       return run1(action, payload).then(function (r) { quitarAviso(); return r; }, function (e) {
         var msg = String(e && e.message || e);
-        var definitivo = msg === "sin_apps_script" || /Acción desconocida|no válida|Falta el id/.test(msg) || NO_REPETIR[action] || (action === "mcp" && payload && payload.tool === "create_event");   // un evento repetido saldría dos veces en el calendario
+        var definitivo = msg === "sin_apps_script" || msg === "sin_conectar" || msg === "clave_no_valida" || /Acción desconocida|no válida|Falta el id/.test(msg) || NO_REPETIR[action] || (action === "mcp" && payload && payload.tool === "create_event");   // un evento repetido saldría dos veces en el calendario
         if (!definitivo && intento < REINTENTOS.length) {
           var d = REINTENTOS[intento++];
           return new Promise(function (ok) { setTimeout(ok, d); }).then(uno);
@@ -114,7 +160,7 @@
       "<div style='margin-top:10px;display:flex;gap:8px;flex-wrap:wrap'><button id='cdc-re' style='border:0;border-radius:8px;padding:8px 14px;font-weight:700'>Volver a intentarlo</button>" +
       "<button id='cdc-x' style='border:1px solid #fff;background:none;color:#fff;border-radius:8px;padding:8px 14px'>Cerrar</button></div>";
     document.body.appendChild(d);
-    document.getElementById("cdc-re").onclick = function () { window.top.location.href = (CDC.url || location.href) + (CDC.app ? "?app=" + CDC.app : ""); };
+    document.getElementById("cdc-re").onclick = function () { if (WEB) location.reload(); else window.top.location.href = (CDC.url || location.href) + (CDC.app ? "?app=" + CDC.app : ""); };
     document.getElementById("cdc-x").onclick = quitarAviso;
   }
   function quitarAviso() { var d = document.getElementById("cdc-aviso"); if (d) d.remove(); }
@@ -221,12 +267,16 @@
     [/claude\.ai\/(code\/)?artifact\/(W5j3MvqeFmroz35Y9Vw6sS|eb81e79b-ff2e-440b-ae05-09167d174411)/, "labores"],
     [/claude\.ai\/(code\/)?artifact\/(MMUSxcTFKKApM74mBt1g1x|a4d29052-c8de-4125-9ca6-52dc009fd7a3)/, "panel"]
   ];
+  function urlApp(app, hash) {
+    if (WEB) return BASE + app + "/" + (hash ? "#" + hash : "");
+    return CDC.url + "?app=" + app + (hash ? "&h=" + encodeURIComponent(hash) : "");
+  }
   function convertir(a) {
-    var h = a.getAttribute("href"); if (!h || !CDC.url) return;
+    var h = a.getAttribute("href"); if (!h || (!CDC.url && !WEB)) return;
     for (var i = 0; i < MAPA.length; i++) {
       if (MAPA[i][0].test(h)) {
         var hash = h.indexOf("#") >= 0 ? h.slice(h.indexOf("#") + 1) : "";
-        a.setAttribute("href", CDC.url + "?app=" + MAPA[i][1] + (hash ? "&h=" + encodeURIComponent(hash) : ""));
+        a.setAttribute("href", urlApp(MAPA[i][1], hash));
         a.setAttribute("target", "_top");
         return;
       }
@@ -242,9 +292,9 @@
   });
   /* Botón para volver al panel desde Tests y Mis labores */
   function botonVolver() {
-    if (!CDC.url || !CDC.app || CDC.app === "panel" || document.getElementById("cdc-volver")) return;
+    if ((!CDC.url && !WEB) || !CDC.app || CDC.app === "panel" || document.getElementById("cdc-volver")) return;
     var a = document.createElement("a");
-    a.id = "cdc-volver"; a.href = CDC.url; a.target = "_top"; a.textContent = "← Panel";
+    a.id = "cdc-volver"; a.href = WEB ? urlApp("panel") : CDC.url; a.target = "_top"; a.textContent = "← Panel";
     a.setAttribute("aria-label", "Volver al panel");
     a.style.cssText = "display:inline-block;margin:calc(10px + env(safe-area-inset-top,0px)) 0 0 max(16px,env(safe-area-inset-left,0px));" +
       "padding:8px 14px;border-radius:999px;border:1.5px solid rgba(0,0,0,.15);background:rgba(255,255,255,.9);color:#25291F;" +
@@ -252,6 +302,6 @@
     document.body.insertBefore(a, document.body.firstChild);
   }
   if (document.readyState !== "loading") botonVolver(); else document.addEventListener("DOMContentLoaded", botonVolver);
-  window.__abrirApp = function (app, hash) { window.top.location.href = CDC.url + "?app=" + app + (hash ? "&h=" + encodeURIComponent(hash) : ""); };
+  window.__abrirApp = function (app, hash) { window.top.location.href = urlApp(app, hash); };
   if (CDC.hash) { try { location.hash = CDC.hash; } catch (e) {} }
 })();

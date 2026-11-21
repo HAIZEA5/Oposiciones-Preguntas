@@ -11,6 +11,9 @@ var REPO_CARGADOR = 'HAIZEA5/Oposiciones-Preguntas';
 var RUTA_SERVIDOR = 'app/servidor.js';
 
 function doGet(e)                { return servidor_().doGet(e); }
+function doPost(e)               { return servidor_().doPost(e); }
+function conectarWeb()           { return servidor_().conectarWeb(); }
+function nuevaClave()            { return servidor_().nuevaClave(); }
 function api(accion, json)       { return servidor_().api(accion, json); }
 function avisosCalendario()      { return servidor_().avisosCalendario(); }
 function copiaSemanal()          { return servidor_().copiaSemanal(); }
@@ -56,7 +59,9 @@ function servidor_() {
 
 function arrancar_(codigo) {
   return new Function(codigo + '\n;return { doGet: doGet, api: api, avisosCalendario: avisosCalendario,' +
-    ' copiaSemanal: copiaSemanal, instalar: instalar, probar: probar };')();
+    ' copiaSemanal: copiaSemanal, instalar: instalar, probar: probar,' +
+    ' doPost: typeof doPost === "function" ? doPost : null, conectarWeb: typeof conectarWeb === "function" ? conectarWeb : null,' +
+    ' nuevaClave: typeof nuevaClave === "function" ? nuevaClave : null };')();
 }
 
 function shaCargador_() {
@@ -108,5 +113,5 @@ function leerCopia_(props, anterior) {
 function permisos_() {
   SpreadsheetApp.getActive(); DriveApp.getRootFolder(); CalendarApp.getDefaultCalendar();
   ScriptApp.getProjectTriggers(); UrlFetchApp.fetch('https://example.com'); LockService.getScriptLock();
-  HtmlService.createHtmlOutput('');
+  HtmlService.createHtmlOutput(''); ContentService.createTextOutput(''); MailApp.getRemainingDailyQuota();
 }
