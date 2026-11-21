@@ -195,3 +195,43 @@ F
 - De forma general, siempre que ello no suponga una reducción del nivel de protección de la seguridad y salud de los/as trabajadores/as y en los términos que se determinen exclusivamente mediante ley orgánica.
 E Es el texto literal del artículo.
 R Ley 31/1995 art. 16 · batería oficial, pregunta 205
+
+Q Según el capítulo III de la ley 31/1995, cuando los trabajadores estén expuestos a un riesgo grave e inminente, tendrán derecho a:
+- Solicitar autorización a la Inspección de Trabajo para abandonar el puesto.
+= Interrumpir su actividad y abandonar el lugar de trabajo, en caso necesario, cuando considere que dicha actividad entraña un riesgo grave e inminente para su vida o su salud.
+- Negarse únicamente a realizar determinadas tareas.
+- Continuar trabajando usando equipos de protección individual.
+E Art. 21.2 LPRL: el trabajador tiene derecho a interrumpir su actividad y abandonar el lugar de trabajo, en caso necesario, ante un riesgo grave e inminente para su vida o salud.
+R LPRL art. 21.2 · examen Barakaldo 19/11/2026 (Ayudante de oficios, modelo B), pregunta 17
+
+Q Según el capítulo III de la ley 31/1995, cuando los trabajadores estén o puedan estar expuestos a un riesgo grave e inminente, el empresario estará obligado a:
+= Informar lo antes posible a todos los trabajadores afectados acerca de la existencia de dicho riesgo y de las medidas adoptadas o que, en su caso, deban adoptarse en materia de protección.
+- Informar únicamente a los Delegados de Prevención.
+- Comunicar la situación exclusivamente a la Inspección de Trabajo.
+- Esperar a que el Comité de Seguridad y Salud adopte una decisión.
+E Art. 21.1.a LPRL: el empresario debe informar lo antes posible a todos los trabajadores afectados del riesgo y de las medidas adoptadas o que deban adoptarse.
+R LPRL art. 21.1.a · examen Barakaldo 19/11/2026 (Ayudante de oficios, modelo B), pregunta 18
+
+Q Según el capítulo III de la ley 31/1995, la formación en materia preventiva:
+- Será sufragada por el trabajador.
+- Será gratuita únicamente para personal fijo.
+= Su coste no recaerá en ningún caso sobre los trabajadores.
+- Será financiada por la Seguridad Social.
+E Art. 19.2 LPRL: la formación se imparte dentro de la jornada (o se descuenta de ella) y su coste no recaerá en ningún caso sobre los trabajadores.
+R LPRL art. 19.2 · examen Barakaldo 19/11/2026 (Ayudante de oficios, modelo B), pregunta 19
+
+Q Según el capítulo III de la ley 31/1995, basándose en los principios de la acción preventiva, el empresario deberá:
+- Anteponer la protección individual a la colectiva.
+= Adoptar medidas que antepongan la protección colectiva a la individual.
+- Utilizar siempre equipos de protección individual.
+- Aplicar únicamente medidas correctoras.
+E Art. 15.1.h LPRL: adoptar medidas que antepongan la protección colectiva a la individual.
+R LPRL art. 15.1.h · examen Barakaldo 19/11/2026 (Ayudante de oficios, modelo B), pregunta 20
+
+Q Según el capítulo III de la ley 31/1995, en cumplimiento del deber de protección, el empresario deberá garantizar que cada trabajador reciba una formación teórica y práctica, suficiente y adecuada, en materia preventiva:
+- Sólo a petición del trabajador.
+= Tanto en el momento de su contratación, como cuando se produzcan cambios en las funciones que desempeñe o se introduzcan nuevas tecnologías o cambios en los equipos de trabajo.
+- Únicamente cuando exista accidente laboral.
+- Cada cinco años obligatoriamente.
+E Art. 19.1 LPRL: formación teórica y práctica al contratar y cuando cambien las funciones, se introduzcan nuevas tecnologías o cambien los equipos de trabajo.
+R LPRL art. 19.1 · examen Barakaldo 19/11/2026 (Ayudante de oficios, modelo B), pregunta 76

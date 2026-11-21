@@ -3,27 +3,86 @@
    pero guardando todo en la hoja de Google «Centro de Control – datos» a través de google.script.run. */
 (function () {
   var CDC = window.__CDC || {};
-  /* Si Google no contesta (pasa sobre todo con varias cuentas de Google abiertas en el mismo navegador),
-     la llamada se da por fallida a los 20 s y la página avisa, en vez de quedarse cargando para siempre. */
-  var fallos = 0;
-  function run(action, payload) {
+  /* Llamadas a Google con reintentos.
+     Si Google tarda o falla (pasa a veces, sobre todo con varias cuentas abiertas o justo al abrir),
+     se reintenta sola dos veces antes de avisar, en vez de dejar la sección en «Cargando…». */
+  var ESPERA = 30000, REINTENTOS = [1500, 4000];
+  var NO_REPETIR = { asset_upload: 1 };   // subir una foto dos veces la duplicaría
+  function run1(action, payload) {
     return new Promise(function (res, rej) {
       if (!window.google || !google.script || !google.script.run) { rej(new Error("sin_apps_script")); return; }
       var hecho = false;
-      var t = setTimeout(function () { if (hecho) return; hecho = true; fallos++; avisar(); rej(new Error("sin_respuesta")); }, 20000);
+      var t = setTimeout(function () { if (hecho) return; hecho = true; rej(new Error("sin_respuesta")); }, ESPERA);
       google.script.run
-        .withSuccessHandler(function (r) { if (hecho) return; hecho = true; clearTimeout(t); fallos = 0; quitarAviso(); try { res(typeof r === "string" ? JSON.parse(r) : r); } catch (e) { res(r); } })
-        .withFailureHandler(function (e) { if (hecho) return; hecho = true; clearTimeout(t); fallos++; avisar(e); rej(e); })
+        .withSuccessHandler(function (r) { if (hecho) return; hecho = true; clearTimeout(t); try { res(typeof r === "string" ? JSON.parse(r) : r); } catch (e) { res(r); } })
+        .withFailureHandler(function (e) { if (hecho) return; hecho = true; clearTimeout(t); rej(e); })
         .api(action, JSON.stringify(payload || {}));
     });
+  }
+  function run(action, payload) {
+    var intento = 0;
+    function uno() {
+      return run1(action, payload).then(function (r) { quitarAviso(); return r; }, function (e) {
+        var msg = String(e && e.message || e);
+        var definitivo = msg === "sin_apps_script" || /Acción desconocida|no válida|Falta el id/.test(msg) || NO_REPETIR[action] || (action === "mcp" && payload && payload.tool === "create_event");   // un evento repetido saldría dos veces en el calendario
+        if (!definitivo && intento < REINTENTOS.length) {
+          var d = REINTENTOS[intento++];
+          return new Promise(function (ok) { setTimeout(ok, d); }).then(uno);
+        }
+        if (!/Acción desconocida/.test(msg)) avisar(e);
+        throw e;
+      });
+    }
+    return uno();
+  }
+
+  /* Lecturas agrupadas: lo que se pide a la vez (en 40 ms) va a Google en UNA sola llamada («lote»).
+     Si la misma pestaña ya se está pidiendo, se reutiliza esa petición. */
+  var cola = {}, enCurso = {}, sinLote = false, temporizador = null;
+  function listar(tab, nueva) {
+    if (cola[tab]) return cola[tab].p;              // aún no ha salido: vale también para «nueva»
+    if (enCurso[tab] && !nueva) return enCurso[tab];
+    var h = {}, p = new Promise(function (res, rej) { h.res = res; h.rej = rej; });
+    h.p = p; cola[tab] = h;
+    enCurso[tab] = p;
+    var fin = function () { if (enCurso[tab] === p) delete enCurso[tab]; };
+    p.then(fin, fin);
+    if (!temporizador) temporizador = setTimeout(vaciar, 40);
+    return p;
+  }
+  function vaciar() {
+    temporizador = null;
+    var pend = cola; cola = {};
+    var tabs = Object.keys(pend);
+    if (!tabs.length) return;
+    var uno = function (t) { run("list", { col: t }).then(function (r) { guardarLocal(t, r); pend[t].res(r); }, pend[t].rej); };
+    if (tabs.length === 1 || sinLote) { tabs.forEach(uno); return; }
+    run("lote", { cols: tabs }).then(function (out) {
+      tabs.forEach(function (t) {
+        var r = out && out[t];
+        if (r && r.__error) pend[t].rej(new Error(r.__error));
+        else { guardarLocal(t, r || []); pend[t].res(r || []); }
+      });
+    }, function (e) {
+      if (/Acción desconocida/.test(String(e && e.message || e))) { sinLote = true; tabs.forEach(uno); }   // servidor antiguo
+      else tabs.forEach(function (t) { pend[t].rej(e); });
+    });
+  }
+
+  /* Copia en el móvil de lo último que llegó de cada pestaña: al abrir se enseña al momento
+     y luego se actualiza con lo de Google. Así nunca se queda en blanco aunque Google tarde. */
+  var PREFIJO = "cdc:v1:";
+  function leerLocal(tab) { try { var x = localStorage.getItem(PREFIJO + tab); return x ? JSON.parse(x) : null; } catch (e) { return null; } }
+  function guardarLocal(tab, rows) {
+    try { var t = JSON.stringify(rows || []); if (t.length < 400000) localStorage.setItem(PREFIJO + tab, t); else localStorage.removeItem(PREFIJO + tab); } catch (e) {}
   }
   function avisar(e) {
     if (document.getElementById("cdc-aviso") || !document.body) return;
     var d = document.createElement("div"); d.id = "cdc-aviso";
     d.setAttribute("role", "alert");
     d.style.cssText = "position:fixed;left:12px;right:12px;top:12px;z-index:9999;background:#25291F;color:#fff;border-radius:12px;padding:14px 16px;font:15px/1.45 system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.25)";
-    d.innerHTML = "<b>Google no deja leer tus datos.</b><br>Casi siempre es porque en este navegador hay <b>más de una cuenta de Google</b> abierta. " +
-      "Abre el enlace en una <b>ventana privada</b> (o en un navegador donde solo tengas tu cuenta) e inicia sesión solo con la tuya." +
+    d.innerHTML = "<b>Google no contesta ahora mismo.</b><br>Lo he intentado varias veces. Donde había datos guardados, ves los de la última vez. " +
+      "Si pasa a menudo, mira que en este navegador solo esté abierta <b>tu cuenta de Google</b>." +
       "<div style='margin-top:10px;display:flex;gap:8px;flex-wrap:wrap'><button id='cdc-re' style='border:0;border-radius:8px;padding:8px 14px;font-weight:700'>Volver a intentarlo</button>" +
       "<button id='cdc-x' style='border:1px solid #fff;background:none;color:#fff;border-radius:8px;padding:8px 14px'>Cerrar</button></div>";
     document.body.appendChild(d);
@@ -36,8 +95,10 @@
   function tabla(col) { return col.indexOf(":") > 0 ? col.replace(":", "_") : (CDC.app || "panel") + "_" + col; }
   var subs = {};
   function snapOf(rows) { return { docs: (rows || []).map(function (r) { return { id: r.id, exists: true, data: function () { return r.data; } }; }) }; }
-  function refresh(col) {
-    return run("list", { col: tabla(col) }).then(function (rows) {
+  var ultimaVez = 0;
+  function refresh(col, nueva) {
+    ultimaVez = Date.now();
+    return listar(tabla(col), nueva).then(function (rows) {
       (subs[col] || []).forEach(function (f) { try { f(snapOf(rows)); } catch (e) { console.error(e); } });
       return rows;
     });
@@ -48,31 +109,53 @@
     return {
       id: id,
       get: function () { return run("get", { col: tabla(col), id: id }).then(function (d) { return { id: id, exists: !!d, data: function () { return d; } }; }); },
-      set: function (data) { return run("set", { col: tabla(col), id: id, data: data }).then(function () { refresh(col).catch(function () {}); }); },
-      update: function (data) { return run("update", { col: tabla(col), id: id, data: data }).then(function () { refresh(col).catch(function () {}); }); },
-      delete: function () { return run("delete", { col: tabla(col), id: id }).then(function () { refresh(col).catch(function () {}); }); }
+      set: function (data) { return run("set", { col: tabla(col), id: id, data: data }).then(function () { refresh(col, true).catch(function () {}); }); },
+      update: function (data) { return run("update", { col: tabla(col), id: id, data: data }).then(function () { refresh(col, true).catch(function () {}); }); },
+      delete: function () { return run("delete", { col: tabla(col), id: id }).then(function () { refresh(col, true).catch(function () {}); }); }
     };
   }
   function collection(col) {
     return {
       doc: function (id) { return doc(col, id); },
-      get: function () { return run("list", { col: tabla(col) }).then(snapOf); },
+      get: function () { return listar(tabla(col)).then(snapOf); },
       onSnapshot: function (f, err) {
         (subs[col] = subs[col] || []).push(f);
-        refresh(col).catch(function (e) { if (err) err(e); });
+        var local = leerLocal(tabla(col));
+        if (local) setTimeout(function () { try { f(snapOf(local)); } catch (e) { console.error(e); } }, 0);
+        refresh(col).catch(function (e) { if (err && !local) err(e); });
         return function () { subs[col] = (subs[col] || []).filter(function (x) { return x !== f; }); };
       }
     };
   }
-  setInterval(function () {
-    if (document.visibilityState === "visible") Object.keys(subs).forEach(function (c) { if (subs[c].length) refresh(c).catch(function () {}); });
-  }, 60000);
+  /* Actualizar: al volver a la página (si hace más de 30 s) y cada 5 minutos mientras está abierta.
+     Antes se pedía todo cada minuto, y eso saturaba a Google. */
+  function refrescarTodo() { Object.keys(subs).forEach(function (c) { if (subs[c].length) refresh(c).catch(function () {}); }); }
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible" && Date.now() - ultimaVez > 30000) refrescarTodo();
+  });
+  setInterval(function () { if (document.visibilityState === "visible") refrescarTodo(); }, 300000);
   var db = Object.freeze({
     collection: collection,
     doc: function (path) { var p = String(path).split("/"); return doc(p[0], p[1]); }
   });
   var mcp = Object.freeze({
-    callTool: function (server, tool, args) { return run("mcp", { server: server, tool: tool, args: args || {} }).then(function (r) { return { payload: r }; }); },
+    callTool: function (server, tool, args) {
+      var lectura = /^(list_events|get_values|read_file_content)$/.test(tool);
+      var p = run("mcp", { server: server, tool: tool, args: args || {} });
+      if (!lectura) return p.then(function (r) { return { payload: r }; });
+      /* Lecturas (calendario, hojas): si Google tarda más de 6 s y hay una copia de la última vez, se usa esa
+         y la nueva se guarda para la próxima. La copia solo vale si se pidió lo mismo (mismas fechas). */
+      var clave = "mcp:" + server + ":" + tool + ":" + JSON.stringify(args || {});
+      p.then(function (r) { guardarLocal(clave, r); }, function () {});
+      var local = leerLocal(clave);
+      if (!local) return p.then(function (r) { return { payload: r }; });
+      return new Promise(function (res, rej) {
+        var hecho = false;
+        var t = setTimeout(function () { if (!hecho) { hecho = true; res({ payload: local }); } }, 6000);
+        p.then(function (r) { if (!hecho) { hecho = true; clearTimeout(t); res({ payload: r }); } },
+               function (e) { if (!hecho) { hecho = true; clearTimeout(t); res({ payload: local }); } });
+      });
+    },
     invalidate: function () { return Promise.resolve(); }
   });
   function aBase64(blob) {

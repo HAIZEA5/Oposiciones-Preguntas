@@ -165,3 +165,11 @@ Q La delegación de competencias del Estado o de las Comunidades Autónomas en l
 - No tiene requisitos
 E Art. 27.
 R LBRL art. 27
+
+Q Según el artículo 20 de la Ley 7/1985, la Junta de Gobierno Local existe:
+- En todos los ayuntamientos.
+- En todos los municipios con población superior a 2.000 habitantes.
+= En los municipios con población inferior a 5.000 habitantes cuando así lo apruebe su reglamento orgánico o lo acuerde el Pleno.
+- En los municipios con población inferior a 5.000 habitantes cuando así lo apruebe su reglamento orgánico o lo acuerde el Alcalde.
+E Art. 20.1.b LBRL: la Junta de Gobierno Local existe en municipios de más de 5.000 habitantes y en los de menos cuando lo disponga su reglamento orgánico o lo acuerde el Pleno.
+R LBRL art. 20.1.b · examen Barakaldo 19/11/2026 (Ayudante de oficios, modelo B), pregunta 8

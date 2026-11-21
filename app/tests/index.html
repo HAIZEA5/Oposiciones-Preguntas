@@ -67,6 +67,13 @@ button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
 .op.bad{border-color:var(--bad);background:var(--bad-bg)}
 .op.bad b{color:var(--bad)}
 .op[disabled]{cursor:default}
+.fc{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:26px 22px;min-height:220px;display:flex;flex-direction:column;justify-content:center}
+.fc .lado{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--brass);font-weight:700;margin-bottom:10px}
+.fc .resp{font-family:var(--serif);font-size:1.25rem;line-height:1.5;color:var(--ok);background:var(--ok-bg);border-radius:6px;padding:14px 16px}
+.fc ul{margin:12px 0 0;padding-left:20px;color:var(--soft);font-size:.95rem}
+.fc li.ok{color:var(--ok);font-weight:700}
+.fc-q{font-family:var(--serif);font-size:1.05rem;color:var(--soft);margin:0 0 12px}
+@media (prefers-reduced-motion: no-preference){.fc.gira{animation:gira .28s ease}@keyframes gira{from{transform:rotateY(80deg);opacity:.3}to{transform:none;opacity:1}}}
 .explica{margin-top:16px;border-left:3px solid var(--brass);padding:4px 0 4px 14px}
 .explica strong{display:block;margin-bottom:2px}
 .explica .ref,.fallos .ref{color:var(--brass);font-weight:700;font-size:.9rem}
@@ -305,7 +312,7 @@ function fichaHoy(){
   const tt=temaAprender(o);
   return `<section class="ficha destaca"><span class="sig">Hoy toca</span><h2>${esc(corto(o))}, ${cuando}</h2>
   <p>${hechas>=meta?`<b>Tanda de hoy hecha</b> (${hechas} preguntas).`:`Llevas ${hechas} de ${meta} preguntas.`}${T.rep?` ${pl(Math.min(T.rep,meta),"toca repasar","tocan repasar")}.`:""}${T.exs[1]?` Mezcla con ${esc(corto(T.os[1]))}.`:""}</p>
-  <div class="acciones"><button class="btn" id="hoy" ${T.items.length?"":"disabled"}>Empezar la tanda</button>${tt?`<button class="btn sec" data-aprop="${o.id}">Aprender jugando</button>`:""}${hayFlojos?`<button class="btn sec" id="foco">Puntos flojos</button>`:""}</div>
+  <div class="acciones"><button class="btn" id="hoyfc" ${T.items.length?"":"disabled"}>Tanda en flashcards</button><button class="btn sec" id="hoy" ${T.items.length?"":"disabled"}>Tanda en test</button>${tt?`<button class="btn sec" data-aprop="${o.id}">Aprender jugando</button>`:""}${hayFlojos?`<button class="btn sec" id="foco">Puntos flojos</button>`:""}</div>
   <div class="chips mini-chips">${[20,40,60].map(n=>`<button class="chip" data-meta="${n}" aria-pressed="${n===meta}">${n} al día</button>`).join("")}</div></section>`;
 }
 
@@ -371,6 +378,12 @@ function enlazarHoy(volver){
   b.onclick=()=>{
     const meta=(datos._cfg.hoy&&datos._cfg.hoy.n)||40;
     const empezar=()=>{const T=tandaHoy(meta);opo=T.os[0];ses={tipo:"popurri",comun:false,items:T.items,i:0,aciertos:0,fallos:[],repetir:empezar,ajustes:volver};pregunta()};
+    empezar();
+  };
+  const bfc=document.getElementById("hoyfc");
+  if(bfc)bfc.onclick=()=>{
+    const meta=(datos._cfg.hoy&&datos._cfg.hoy.n)||40;
+    const empezar=()=>{const T=tandaHoy(meta);opo=T.os[0];flashcards(T.items,"Tanda de hoy",empezar,volver)};
     empezar();
   };
   const f=document.getElementById("foco");
@@ -548,11 +561,9 @@ function portada(){
   h+='<h2 class="apartado">Mis oposiciones</h2><div class="lista-opos">'+conEx.map(fila).join("")+'</div>';
   if(sinEx.length)h+=`<details class="otras"><summary>Otras, sin examen a la vista (${sinEx.length})</summary><div class="lista-opos">${sinEx.map(fila).join("")}</div></details>`;
   if(hechas.length)h+=`<details class="otras"><summary>Ya examinadas (${hechas.length})</summary><div class="lista-opos">${hechas.map(fila).join("")}</div></details>`;
-  h+=`<p class="pie"><button class="enlace" id="pcom">Popurrí común</button>: mezcla la materia que comparten todas (Constitución, Estatuto, procedimiento…).</p>`;
   app.innerHTML=h;
   app.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>temas(b.dataset.o));
   app.querySelectorAll("[data-aprop]").forEach(b=>b.onclick=()=>abrirAprender(b.dataset.aprop));
-  document.getElementById("pcom").onclick=()=>configPopurri(null);
   enlazarHoy(portada);
   enlazarPlan();
   arriba();
@@ -570,10 +581,10 @@ function temas(oid,unica){
    const pend=t=>{const s=ap[opo.id+"/"+t.id]||{};return lecciones(t).some((_,i)=>!s[i])};
    const tSig=(ult&&conT.find(t=>t.id===ult&&pend(t)))||conT.find(pend)||conT[0];
    const n=reunir(opo.temas.map(t=>({o:opo,t}))).filter(it=>datos._q[it.p.k]!==undefined&&tocaHoy(it.p.k)).length;
-   h+=`<section class="ficha destaca"><h2>Practicar</h2>${n?`<p>${pl(n,"pregunta toca","preguntas tocan")} repasar hoy: el popurrí las saca primero.</p>`:""}
-   <div class="acciones">${tSig?`<button class="btn" id="papr" data-apr="${tSig.id}">Aprender jugando · ${esc(tSig.sig||nombreTema(tSig))}</button>`:""}<button class="btn sec" id="ppop">Popurrí</button><button class="btn sec" id="psim">Simulacro</button></div></section>`;}
+   h+=`<section class="ficha destaca"><h2>Practicar</h2>${n?`<p>${pl(n,"pregunta toca","preguntas tocan")} repasar hoy: las flashcards las sacan primero.</p>`:""}
+   <div class="acciones">${tSig?`<button class="btn" id="papr" data-apr="${tSig.id}">Aprender jugando · ${esc(tSig.sig||nombreTema(tSig))}</button>`:""}<button class="btn sec" id="pfc">Flashcards</button><button class="btn sec" id="psim">Simulacro</button></div></section>`;}
   const dud=reunir(opo.temas.map(t=>({o:opo,t}))).filter(it=>esDudosa(it.p));
-  if(dud.length)h+=`<section class="ficha"><span class="sig">Revisar</span><h2>Preguntas dudosas</h2><p>${pl(dud.length,"pregunta no tiene","preguntas no tienen")} respuesta oficial. Hazlas con el temario delante.</p>
+  if(dud.length&&hoyISO()<="2026-11-21")h+=`<section class="ficha"><span class="sig">Revisar</span><h2>Preguntas dudosas</h2><p>${pl(dud.length,"pregunta no tiene","preguntas no tienen")} respuesta oficial. Hazlas con el temario delante.</p>
   <div class="acciones"><button class="btn sec" id="pdud">Practicar las dudosas (${dud.length})</button></div></section>`;
   const conP=opo.temas.filter(t=>t.preguntas.length);
   const filas=conP.map(t=>({t,...stats(t.preguntas)}));
@@ -583,7 +594,7 @@ function temas(oid,unica){
     h+=`<section class="ficha destaca"><span class="sig">Tu nivel</span><h2>Tus temas flojos</h2>`;
     if(flojos.length){
       h+='<ul class="por-tema">'+flojos.map(f=>`<li><span>${esc(f.t.sig||"")} — ${esc(f.t.titulo.replace(/^Tema [^.]*\.\s*/,""))}</span><b class="${clasePct(f.pct)}">${Math.round(f.pct*100)} %</b></li>`).join("")+'</ul>';
-      h+=`<div class="acciones"><button class="btn" id="pflo">Practicar estos temas</button></div>`;
+      h+=`<div class="acciones"><button class="btn" id="pflo">Flashcards de estos temas</button></div>`;
     }else h+=`<p>Ningún tema por debajo del 80 %.${sinEmpezar?` Te quedan ${pl(sinEmpezar,"tema","temas")} sin empezar.`:""}</p>`;
     h+='</section>';
   }
@@ -600,23 +611,76 @@ function temas(oid,unica){
     const st=stats(t.preguntas), ap=Object.keys((datos._apr||{})[opo.id+"/"+t.id]||{}).length, nl=Math.ceil(n/POR_LECCION);
     const info=[pl(n,"pregunta","preguntas"), st.v?`<span class="pct ${clasePct(st.pct)}">${Math.round(st.pct*100)} %</span>`:"sin empezar", ap?`${ap}/${nl} lecciones`:""].filter(Boolean).join(" · ");
     h+=`<details class="tema"><summary><span class="ts">${esc(t.sig||"")}</span><span class="tt">${esc(nombreTema(t))}<small>${info}</small></span></summary>
-    <div class="acciones"><button class="btn" data-apr="${t.id}">Aprender jugando</button><button class="btn sec" data-a="todo" data-t="${t.id}">Test</button><button class="btn sec" data-leer="${t.id}">Leer</button>${f?`<button class="btn sec" data-a="falladas" data-t="${t.id}">Falladas (${f})</button>`:""}</div></details>`;
+    <div class="acciones"><button class="btn" data-apr="${t.id}">Aprender jugando</button><button class="btn sec" data-fc="${t.id}">Flashcards</button><button class="btn sec" data-a="todo" data-t="${t.id}">Test</button><button class="btn sec" data-leer="${t.id}">Leer</button>${f?`<button class="btn sec" data-fcf="${t.id}">Flashcards de falladas (${f})</button>`:""}</div></details>`;
   });
   h+='</div>';
   h+=evolucion(opo.id);
   app.innerHTML=h;
   if(!unica)document.getElementById("vol").onclick=portada;
-  document.getElementById("ppop").onclick=()=>configPopurri(opo.id);
+  document.getElementById("pfc").onclick=()=>{const empezar=()=>flashcards(elegir(reunir(opo.temas.map(t=>({o:opo,t}))),20),"Flashcards: 20 de todos los temas",empezar);empezar()};
+  app.querySelectorAll("[data-fc]").forEach(b=>b.onclick=()=>{const t=opo.temas.find(x=>x.id===b.dataset.fc);const empezar=()=>flashcards(barajar(t.preguntas).map(p=>({p,o:opo,t})),(t.sig||"")+" · flashcards",empezar);empezar()});
+  app.querySelectorAll("[data-fcf]").forEach(b=>b.onclick=()=>{const t=opo.temas.find(x=>x.id===b.dataset.fcf);const empezar=()=>{const s=estado(opo.id,t.id);const ps=t.preguntas.filter(p=>s.falladas.includes(fk(p)));if(!ps.length){temas(opo.id,OPOSICIONES.length===1);return}flashcards(barajar(ps).map(p=>({p,o:opo,t})),(t.sig||"")+" · falladas",empezar)};empezar()});
   document.getElementById("psim").onclick=()=>configSimulacro();
   const bd=document.getElementById("pdud");
   if(bd)bd.onclick=()=>{const oid=opo.id;const empezar=()=>{const it=barajar(reunir(opo.temas.map(t=>({o:opo,t}))).filter(x=>esDudosa(x.p)));ses={tipo:"popurri",comun:false,items:it,i:0,aciertos:0,fallos:[],repetir:empezar,ajustes:()=>temas(oid,OPOSICIONES.length===1)};pregunta()};empezar()};
   const bf=document.getElementById("pflo");
-  if(bf)bf.onclick=()=>{const prev=datos._cfg["pop:"+opo.id]||{};datos._cfg["pop:"+opo.id]={n:prev.n||20,temas:flojos.map(f=>f.t.id)};guardar(datos);configPopurri(opo.id)};
+  if(bf)bf.onclick=()=>{const empezar=()=>flashcards(elegir(reunir(flojos.map(f=>({o:opo,t:f.t}))),20),"Flashcards: tus temas flojos",empezar);empezar()};
   app.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>empezarTema(b.dataset.t,b.dataset.a));
   app.querySelectorAll("[data-leer]").forEach(b=>b.onclick=()=>leerTema(b.dataset.leer));
   app.querySelectorAll("[data-apr]").forEach(b=>b.onclick=()=>mapaAprender(b.dataset.apr));
   app.querySelectorAll("[data-sup]").forEach(b=>b.onclick=()=>listaSupuestos(b.dataset.sup));
   arriba();
+}
+
+/* ---------- Flashcards ---------- */
+/* Delante la pregunta, detrás la respuesta correcta y la explicación. Tú dices si la sabías: cuenta para el repaso igual que el test. */
+const REFIERE=/todas|ninguna|anteriores|son correctas|son ciertas|^(las|los) (dos|tres)|^[a-d]\) y [a-d]\)/i;
+function flashcards(items,titulo,repetir,salirA){
+  pararReloj();
+  const volver=salirA||(()=>temas(opo.id,OPOSICIONES.length===1));
+  if(!items.length){volver();return}
+  const fs={items:items.slice(),i:0,sabia:0,duda:0,no:[],vueltas:new Set()};
+  const total=items.length;
+  const tarjeta=()=>{
+    const it=fs.items[fs.i], p=it.p;
+    const hechas=Math.min(fs.i,total);
+    app.innerHTML=`<div class="barra"><button id="salir">Salir</button><span>${esc(titulo)} · ${fs.i<total?`tarjeta ${fs.i+1} de ${total}`:"repaso de las que no sabías"}</span><span></span></div>
+    <div class="progreso"><i style="width:${(hechas/total)*100}%"></i></div><p class="tag">${esc(it.t.sig||"")} — ${esc(it.t.titulo.replace(/^(Tema|Bloque|Ayudante) [^.]*\.\s*/,""))}</p>
+    <div class="fc" id="fc"><div class="lado">Pregunta</div><p class="pregunta" style="margin:0">${esc(p.q)}</p></div>
+    <p class="pista">Di la respuesta en voz alta o en tu cabeza antes de darle la vuelta.</p>
+    <button class="btn siguiente" id="vuelta">Dar la vuelta</button>`;
+    document.getElementById("salir").onclick=volver;
+    const b=document.getElementById("vuelta"); b.focus({preventScroll:true});
+    b.onclick=()=>{
+      const ck=p.c||0, resp=p.o[ck], lista=REFIERE.test(resp)?`<ul>${p.o.map((o,k)=>`<li class="${k===ck?"ok":""}">${"abcd"[k]}) ${esc(o)}</li>`).join("")}</ul>`:"";
+      app.querySelector(".pista").remove(); b.remove();
+      const fc=document.getElementById("fc"); fc.classList.add("gira");
+      fc.innerHTML=`<p class="fc-q">${esc(p.q)}</p><div class="lado">Respuesta</div><div class="resp">${esc(resp)}</div>${lista}
+      <div class="explica" style="margin-top:14px">${esc(p.e||"")}<div class="ref">${esc(p.r||"")}</div></div>`;
+      fc.insertAdjacentHTML("afterend",`<div class="conf"><p>¿La sabías?</p><div class="tres">
+        <button class="c2" data-c="2">La sabía<small>vuelve en días</small></button>
+        <button class="c1" data-c="1">Más o menos<small>vuelve antes</small></button>
+        <button class="c0" data-c="0">No la sabía<small>sale otra vez al final</small></button></div></div>`);
+      const c2=app.querySelector("[data-c='2']"); c2.focus({preventScroll:true});
+      app.querySelectorAll("[data-c]").forEach(cb=>cb.onclick=()=>{
+        const c=+cb.dataset.c, primera=!fs.vueltas.has(p.k);
+        if(c===0){registrar(p,false);if(primera){fs.no.push(it);fs.items.push(it)}}
+        else{registrar(p,true);confianza(p,c);if(primera){if(c===2)fs.sabia++;else fs.duda++}}
+        fs.vueltas.add(p.k);
+        fs.i++; if(fs.i<fs.items.length){tarjeta();arriba()}else final();
+      });
+    };
+  };
+  const final=()=>{
+    app.innerHTML=`<h1>Flashcards hechas</h1><p class="nota">${fs.sabia} de ${total}</p>
+    <p class="lead">${fs.sabia} las sabías, ${fs.duda} más o menos y ${fs.no.length} no. Cuentan para el repaso igual que los tests: las que no sabías vuelven mañana.</p>
+    <div class="acciones"><button class="btn" id="otra">Otra tanda</button>${fs.no.length?`<button class="btn sec" id="nos">Otra vez las que no sabía (${fs.no.length})</button>`:""}<button class="btn sec" id="vol">Volver</button></div>`;
+    document.getElementById("otra").onclick=repetir;
+    const bn=document.getElementById("nos"); if(bn){const nos=fs.no.slice();bn.onclick=()=>flashcards(barajar(nos),titulo,repetir,salirA)}
+    document.getElementById("vol").onclick=volver;
+    arriba();
+  };
+  ses=null; tarjeta(); arriba();
 }
 
 /* ---------- Supuestos prácticos ---------- */
@@ -944,8 +1008,8 @@ function etiqueta(it){
 function pregunta(){
   const it=ses.items[ses.i], p=it.p, n=ses.items.length;
   const ops=opciones(p);
-  const piensa=datos._cfg.piensa!==false;
-  let h=`<div class="barra"><button id="salir">Salir</button><span>Pregunta ${ses.i+1} de ${n}</span><button class="toggle" id="tgp" aria-pressed="${piensa}" title="Ver la pregunta sin opciones para pensar antes la respuesta">Piensa primero: ${piensa?"sí":"no"}</button></div>
+  const piensa=false;
+  let h=`<div class="barra"><button id="salir">Salir</button><span>Pregunta ${ses.i+1} de ${n}</span><span></span></div>
   <div class="progreso"><i style="width:${(ses.i/n)*100}%"></i></div>${etiqueta(it)}
   <p class="pregunta">${esc(p.q)}</p>`;
   if(piensa)h+=`<div class="piensa" id="piensa"><p>Antes de ver las opciones, di la respuesta en voz alta o en tu cabeza.</p><div class="acciones"><button class="btn" id="verop">Ya la tengo: ver opciones</button><button class="btn sec" id="nose">No lo sé</button></div></div>`;
@@ -954,7 +1018,6 @@ function pregunta(){
   h+='</div><div id="tras"></div>';
   app.innerHTML=h;
   let noSe=false;
-  document.getElementById("tgp").onclick=()=>{datos._cfg.piensa=!piensa;guardar(datos);pregunta()};
   if(piensa){
     const ver=()=>{document.getElementById("piensa").remove();const o=document.getElementById("ops");o.hidden=false;o.querySelector(".op").focus({preventScroll:true})};
     document.getElementById("verop").onclick=ver;
@@ -1051,8 +1114,8 @@ function resultado(){
   h=`<h1>Resultado</h1><p class="nota">${a} de ${n}</p><p class="lead">${msg}</p>${desglose}<div class="acciones">`;
   if(ses.tipo==="tema"){
     const s=estado(opo.id,ses.t.id), f=ses.t.preguntas.filter(p=>s.falladas.includes(fk(p))).length;
-    h+=`<button class="btn" id="rep">Repetir el test</button><button class="btn sec" id="fal" ${f?"":"disabled"}>Repasar falladas (${f})</button>`;
-  }else h+='<button class="btn" id="rep">Otro popurrí igual</button><button class="btn sec" id="aj">Cambiar ajustes</button>';
+    h+=`<button class="btn" id="rep">Repetir el test</button><button class="btn sec" id="fal" ${f?"":"disabled"}>Flashcards de las falladas (${f})</button>`;
+  }else h+='<button class="btn" id="rep">Otra tanda igual</button><button class="btn sec" id="aj">Volver</button>';
   h+=`<button class="btn sec" id="vol">${opo?"Volver a los temas":"Volver al inicio"}</button></div>`;
   if(ses.tipo!=="tema")h+=tablaTemas(ses.items,ses.comun);
   h+=listaFallos(ses.fallos,false);
@@ -1061,7 +1124,7 @@ function resultado(){
   app.innerHTML=h;
   const tid=ses.t&&ses.t.id;
   document.getElementById("rep").onclick=ses.repetir;
-  if(ses.tipo==="tema")document.getElementById("fal").onclick=()=>empezarTema(tid,"falladas");
+  if(ses.tipo==="tema")document.getElementById("fal").onclick=()=>{const t=ses.t,s=estado(opo.id,t.id);flashcards(barajar(t.preguntas.filter(p=>s.falladas.includes(fk(p)))).map(p=>({p,o:opo,t})),(t.sig||"")+" · falladas",()=>temas(opo.id,OPOSICIONES.length===1))};
   else document.getElementById("aj").onclick=ses.ajustes;
   document.getElementById("vol").onclick=volverTemas;
   arriba();

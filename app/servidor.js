@@ -130,6 +130,7 @@ function api(accion, json) {
   var out;
   switch (accion) {
     case 'list': out = listar_(a.col); break;
+    case 'lote': out = lote_(a.cols || []); break;
     case 'get': out = obtener_(a.col, a.id); break;
     case 'set': out = guardar_(a.col, a.id, a.data, false); break;
     case 'update': out = guardar_(a.col, a.id, a.data, true); break;
@@ -202,6 +203,15 @@ function listar_(col) {
   var sh = hoja_(col, false);
   if (!sh) return [];
   return filas_(sh).filas.map(function (r) { return { id: r.id, data: r.data }; });
+}
+/** Varias pestañas en una sola llamada: el panel pide todo junto al abrirse en vez de hacer una
+ *  llamada por pestaña (cada llamada es un arranque aparte en Google y, si son muchas a la vez, se atascan). */
+function lote_(cols) {
+  var out = {};
+  cols.slice(0, 40).forEach(function (c) {
+    try { out[c] = listar_(c); } catch (e) { out[c] = { __error: String(e && e.message || e) }; }
+  });
+  return out;
 }
 function obtener_(col, id) {
   var sh = hoja_(col, false);
