@@ -3,6 +3,19 @@
    pero guardando todo en la hoja de Google «Centro de Control – datos» a través de google.script.run. */
 (function () {
   var CDC = window.__CDC || {};
+  /* Si algún script de la página falla, se enseña el error abajo (en vez de quedarse todo en «Cargando…»).
+     Así se puede saber qué pasa en el móvil sin herramientas de desarrollo. */
+  window.addEventListener("error", function (ev) {
+    try {
+      var t = (ev && ev.message ? ev.message : "Error") + (ev && ev.lineno ? " (línea " + ev.lineno + (ev.colno ? ":" + ev.colno : "") + ")" : "") + (ev && ev.filename ? " · " + String(ev.filename).split("/").pop() : "");
+      var pon = function () {
+        var d = document.getElementById("cdc-error");
+        if (!d) { d = document.createElement("div"); d.id = "cdc-error"; d.style.cssText = "position:fixed;left:8px;right:8px;bottom:8px;z-index:9999;background:#7a1f16;color:#fff;border-radius:10px;padding:10px 12px;font:13px/1.4 system-ui,sans-serif;white-space:pre-wrap"; document.body.appendChild(d); d.textContent = "Fallo en la página (haz captura y mándasela a Claude):"; }
+        d.textContent += "\n• " + t;
+      };
+      if (document.body) pon(); else document.addEventListener("DOMContentLoaded", pon);
+    } catch (e) {}
+  });
   /* Llamadas a Google con reintentos.
      Si Google tarda o falla (pasa a veces, sobre todo con varias cuentas abiertas o justo al abrir),
      se reintenta sola dos veces antes de avisar, en vez de dejar la sección en «Cargando…». */
