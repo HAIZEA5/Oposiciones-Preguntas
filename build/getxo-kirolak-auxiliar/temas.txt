@@ -1,20 +1,20 @@
-t01 | Tema 1 | Tema 1. La Constitución Española: derechos y deberes fundamentales | Título I de la Constitución. Preguntas de la batería oficial de Getxo Kirolak (primera prueba). |
+t01 | Tema 1 | Tema 1. La Constitución Española: derechos y deberes fundamentales | Título I de la Constitución. Preguntas de la batería oficial de Getxo Kirolak (primera prueba). | ehu-administrativa/b01:6-10, ehu-administrativa/b05:11, ehu-administrativa/b08:58, ehu-administrativa/b11:27
 t02 | Tema 2 | Tema 2. Organización territorial del Estado y Comunidades Autónomas | Título VIII de la Constitución. Batería oficial. |
-t03 | Tema 3 | Tema 3. Estatuto de Autonomía del País Vasco: competencias | Título I de la LO 3/1979. Batería oficial. |
-t04 | Tema 4 | Tema 4. Ley 10/1982 de normalización del uso del euskera | Título Preliminar, Título I y Capítulo I del Título II. Batería oficial. |
-t05 | Tema 5 | Tema 5. Igualdad: LO 3/2007 (Título II) y Decreto Legislativo 1/2023 (Título Preliminar) | Batería oficial. |
-t06 | Tema 6 | Tema 6. Ley 31/1995 de Prevención de Riesgos Laborales: Capítulo III | Derechos y obligaciones. Batería oficial. |
-t07 | Tema 7 | Tema 7. Ley 39/2015: interesados y actividad de las Administraciones (Títulos I y II) | Segunda prueba. | getxo-administrativo/t09, biblioteca-dfb/t06
-t08 | Tema 8 | Tema 8. Ley 39/2015: los actos administrativos (Título III) | Segunda prueba. | getxo-administrativo/t12
-t09 | Tema 9 | Tema 9. Ley 40/2015: disposiciones generales, órganos y potestad sancionadora (Título Preliminar, Caps. I a III) | Segunda prueba. | getxo-administrativo/t17, getxo-administrativo/t18:1-12
-t10 | Tema 10 | Tema 10. Ley 40/2015: responsabilidad patrimonial (Título Preliminar, Cap. IV) | Segunda prueba. | getxo-administrativo/t18:13-30
-t11 | Tema 11 | Tema 11. LO 3/2018 de protección de datos (Títulos I, II y III) | Segunda prueba. | getxo-administrativo/t07
+t03 | Tema 3 | Tema 3. Estatuto de Autonomía del País Vasco: competencias | Título I de la LO 3/1979. Batería oficial. | ehu-administrativa/b01:15+17-18
+t04 | Tema 4 | Tema 4. Ley 10/1982 de normalización del uso del euskera | Título Preliminar, Título I y Capítulo I del Título II. Batería oficial. | ehu-administrativa/b05:58-60, ehu-administrativa/b06:1-4
+t05 | Tema 5 | Tema 5. Igualdad: LO 3/2007 (Título II) y Decreto Legislativo 1/2023 (Título Preliminar) | Batería oficial. | ehu-administrativa/b05:46, ehu-administrativa/b06:20, ehu-administrativa/b08:1-4, ehu-administrativa/b12:49
+t06 | Tema 6 | Tema 6. Ley 31/1995 de Prevención de Riesgos Laborales: Capítulo III | Derechos y obligaciones. Batería oficial. | ehu-administrativa/b05:50, ehu-administrativa/b09:26+35+37+40
+t07 | Tema 7 | Tema 7. Ley 39/2015: interesados y actividad de las Administraciones (Títulos I y II) | Segunda prueba. | getxo-administrativo/t09, biblioteca-dfb/t06, ehu-administrativa/b03:4+22+24, ehu-administrativa/b05:57, ehu-administrativa/b07:33, ehu-administrativa/b08:10-13+15+22-23+29-30
+t08 | Tema 8 | Tema 8. Ley 39/2015: los actos administrativos (Título III) | Segunda prueba. | getxo-administrativo/t12, ehu-administrativa/b03:14+26-28+31+34+36, ehu-administrativa/b05:41, ehu-administrativa/b06:7, ehu-administrativa/b08:14+17-21+33, ehu-administrativa/b09:14
+t09 | Tema 9 | Tema 9. Ley 40/2015: disposiciones generales, órganos y potestad sancionadora (Título Preliminar, Caps. I a III) | Segunda prueba. | getxo-administrativo/t17, getxo-administrativo/t18:1-12, ehu-administrativa/b03:3+10-12, ehu-administrativa/b08:47+72
+t10 | Tema 10 | Tema 10. Ley 40/2015: responsabilidad patrimonial (Título Preliminar, Cap. IV) | Segunda prueba. | getxo-administrativo/t18:13-30, ehu-administrativa/b08:24-28
+t11 | Tema 11 | Tema 11. LO 3/2018 de protección de datos (Títulos I, II y III) | Segunda prueba. | getxo-administrativo/t07, ehu-administrativa/b08:63-65+67-70, ehu-administrativa/b09:2, ehu-administrativa/b10:4
 t12 | Tema 12 | Tema 12. Ley 19/2013 de transparencia (Título I) | Segunda prueba. |
-t13 | Tema 13 | Tema 13. La comunicación en la Administración. Lenguaje administrativo y no sexista | Segunda prueba (temario IVAP). |
-t14 | Tema 14 | Tema 14. Comunicación oral: atención presencial y telefónica. Comunicación no verbal | Segunda prueba (temario IVAP). |
-t15 | Tema 15 | Tema 15. El expediente administrativo. Documentos, copias y certificaciones | Segunda prueba (temario IVAP). |
+t13 | Tema 13 | Tema 13. La comunicación en la Administración. Lenguaje administrativo y no sexista | Segunda prueba (temario IVAP). | ehu-administrativa/b07:19-24+30, ehu-administrativa/b09:6-8+10, ehu-administrativa/b10:8-9+11-17, ehu-administrativa/b11:8
+t14 | Tema 14 | Tema 14. Comunicación oral: atención presencial y telefónica. Comunicación no verbal | Segunda prueba (temario IVAP). | ehu-administrativa/b07:18+25-29+31-32+34-35, ehu-administrativa/b08:48-53+55-57+59+73, ehu-administrativa/b09:4-5+9+11-12, ehu-administrativa/b10:5+10+18-27+29-36+38
+t15 | Tema 15 | Tema 15. El expediente administrativo. Documentos, copias y certificaciones | Segunda prueba (temario IVAP). | ehu-administrativa/b03:9+25+29-30+33, ehu-administrativa/b06:5, ehu-administrativa/b08:32+34-35+45-46
 t16 | Tema 16 | Tema 16. Archivos de oficina, documentación electrónica y archivo de la Administración vasca | Segunda prueba (temario IVAP). |
 t17 | Tema 17 | Tema 17. Correspondencia y paquetería | Segunda prueba (temario IVAP). |
 t18 | Tema 18 | Tema 18. Competencia digital 1.1: navegar, buscar y filtrar información | Segunda prueba (temario IVAP). |
-t19 | Tema 19 | Tema 19. Derechos de la ciudadanía y acceso a archivos y registros | Segunda prueba. |
+t19 | Tema 19 | Tema 19. Derechos de la ciudadanía y acceso a archivos y registros | Segunda prueba. | ehu-administrativa/b03:7+16+19, ehu-administrativa/b08:40+43+54+60, ehu-administrativa/b09:1
 t20 | Tema 20 | Tema 20. Reglamento de uso de las instalaciones de Getxo Kirolak | Segunda prueba. |

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera data/<oposicion>.js a partir de build/<oposicion>/temas.txt y build/<oposicion>/tNN.txt.
+"""Genera app/tests/data/<oposicion>.js (y su copia en data/) a partir de build/<oposicion>/temas.txt y build/<oposicion>/tNN.txt.
 
 Formato de cada archivo de preguntas (bloques separados por línea en blanco).
 Una línea «F» hace que las opciones se muestren en el orden escrito (para «todas las anteriores»).
@@ -69,7 +69,9 @@ def build(opo, nombre, sub):
         temas.append(t)
     o = {"id": opo, "nombre": nombre, "sub": sub, "temas": temas}
     js = "/* Generado por build/build.py. No editar a mano. */\nOPOSICIONES.push(" + json.dumps(o, ensure_ascii=False) + ");\n"
-    open(os.path.join(ROOT, "data", opo + ".js"), "w", encoding="utf-8").write(js)
+    # Una sola versión: los tests de Google (app/tests) y la copia de GitHub Pages (raíz) usan el mismo archivo
+    for carpeta in (os.path.join(ROOT, "app", "tests", "data"), os.path.join(ROOT, "data")):
+        open(os.path.join(carpeta, opo + ".js"), "w", encoding="utf-8").write(js)
     n = sum(len(t["preguntas"]) for t in temas)
     print(f"{opo}: {len(temas)} temas, {n} preguntas propias")
 

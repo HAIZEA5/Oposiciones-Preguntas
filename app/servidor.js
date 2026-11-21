@@ -130,7 +130,7 @@ function api(accion, json) {
   var out;
   switch (accion) {
     case 'list': out = listar_(a.col); break;
-    case 'lote': out = lote_(a.cols || []); break;
+    case 'lote': out = lote_(a.cols || [], a.mcp || []); break;
     case 'get': out = obtener_(a.col, a.id); break;
     case 'set': out = guardar_(a.col, a.id, a.data, false); break;
     case 'update': out = guardar_(a.col, a.id, a.data, true); break;
@@ -162,12 +162,21 @@ function hoja_(col, crear) {
  * Lo que pasa de MAX_CELDA se guarda en un archivo de Drive y la celda apunta a él.
  */
 var PARECE_OTRO_TIPO = /^([\[{"]|-?\d+(\.\d+)?(e[+-]?\d+)?$|true$|false$|null$)/i;
-function codificar_(v) {
+/* Un valor de más de MAX_CELDA letras (p. ej. el progreso de los tests) se reparte en trozos:
+   la celda del campo dice «@trozos:N» y los trozos van en columnas «campo~0», «campo~1»… de la misma fila.
+   Así no se crea un archivo de Drive en cada guardado. Solo si pasa de MAX_TROZOS trozos va a Drive. */
+var MAX_TROZOS = 40;
+function texto_(v) {
   if (v === undefined) return '';
-  var t = typeof v !== 'string' ? JSON.stringify(v) : (PARECE_OTRO_TIPO.test(v) ? JSON.stringify(v) : v);
-  if (t.length > MAX_CELDA) return '@archivo:' + carpeta_().createFile('dato.json', t, MimeType.PLAIN_TEXT).getId();
+  return typeof v !== 'string' ? JSON.stringify(v) : (PARECE_OTRO_TIPO.test(v) ? JSON.stringify(v) : v);
+}
+function codificar_(v) {
+  var t = texto_(v);
+  if (t.length > MAX_CELDA * MAX_TROZOS) return '@archivo:' + carpeta_().createFile('dato.json', t, MimeType.PLAIN_TEXT).getId();
   return t;
 }
+function esTrozos_(c) { return /^@trozos:\d+$/.test(String(c)); }
+function esColTrozo_(k) { return /~\d+$/.test(k); }
 function decodificar_(c) {
   if (c === '' || c === null || c === undefined) return undefined;
   var t = String(c);
@@ -185,14 +194,21 @@ function soltarArchivos_(celdas) {
 function filas_(sh) {
   var v = sh.getDataRange().getValues();
   var cab = v[0].map(String);
+  var pos = {}; cab.forEach(function (k, j) { pos[k] = j; });
   var out = [];
   for (var i = 1; i < v.length; i++) {
     var id = String(v[i][0] || '');
     if (!id) continue;
     var d = {};
     for (var j = 1; j < cab.length; j++) {
-      if (!cab[j]) continue;
-      var x = decodificar_(v[i][j]);
+      if (!cab[j] || esColTrozo_(cab[j])) continue;
+      var c = v[i][j];
+      if (esTrozos_(c)) {
+        var n = +String(c).slice(8), txt = '';
+        for (var p = 0; p < n; p++) { var q = pos[cab[j] + '~' + p]; txt += q === undefined ? '' : String(v[i][q]).replace(/^~/, ''); }
+        c = txt;
+      }
+      var x = decodificar_(c);
       if (x !== undefined) d[cab[j]] = x;
     }
     out.push({ id: id, data: d, fila: i + 1, celdas: v[i] });
@@ -206,11 +222,19 @@ function listar_(col) {
 }
 /** Varias pestañas en una sola llamada: el panel pide todo junto al abrirse en vez de hacer una
  *  llamada por pestaña (cada llamada es un arranque aparte en Google y, si son muchas a la vez, se atascan). */
-function lote_(cols) {
+function lote_(cols, mcp) {
   var out = {};
   cols.slice(0, 40).forEach(function (c) {
     try { out[c] = listar_(c); } catch (e) { out[c] = { __error: String(e && e.message || e) }; }
   });
+  /* Lecturas de calendario y hojas (Dinero) en la misma llamada */
+  if (mcp && mcp.length) {
+    out.__mcp = {};
+    mcp.slice(0, 20).forEach(function (m) {
+      try { out.__mcp[m.id] = conector_(m.server, m.tool, m.args || {}); }
+      catch (e) { out.__mcp[m.id] = { __error: String(e && e.message || e) }; }
+    });
+  }
   return out;
 }
 function obtener_(col, id) {
@@ -269,7 +293,18 @@ function asegurarColumnas_(sh, cab, campos) {
   });
 }
 function escribirFila_(sh, n, cab, id, d) {
-  var fila = cab.map(function (k, j) { return j === 0 ? String(id) : (k in d ? codificar_(d[k]) : ''); });
+  var val = {};
+  Object.keys(d).forEach(function (k) {
+    var t = codificar_(d[k]);
+    if (t.length > MAX_CELDA) {
+      /* Cada trozo lleva delante «~» para que Google nunca lo tome por fórmula o número (se quita al leer). */
+      var m = Math.ceil(t.length / MAX_CELDA);
+      val[k] = '@trozos:' + m;
+      for (var p = 0; p < m; p++) val[k + '~' + p] = '~' + t.slice(p * MAX_CELDA, (p + 1) * MAX_CELDA);
+    } else val[k] = t;
+  });
+  asegurarColumnas_(sh, cab, Object.keys(val));
+  var fila = cab.map(function (k, j) { return j === 0 ? String(id) : (k in val ? val[k] : ''); });
   sh.getRange(n, 1, 1, fila.length).setNumberFormat('@').setValues([fila]);
 }
 

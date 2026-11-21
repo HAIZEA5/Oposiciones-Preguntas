@@ -280,8 +280,9 @@ function textoFlojos(o){
 }
 /* Fechas de examen de las oposiciones que tienen tests */
 /* Oposiciones a las que no me presento: no salen en la lista, pero sus preguntas siguen cargadas y se reutilizan en otras (incluye) y en el popurrí común */
-const OCULTAS=["abanto-administrativo"];
-const EXAMENES=[{id:"getxo-conserje",fecha:"2026-10-27",txt:"martes 27/10, BEC"},{id:"getxo-administrativo",fecha:"2026-10-27",txt:"martes 27/10"},{id:"ehu-administrativa",fecha:"2026-11-21",txt:"sábado 21/11 a las 10:00, BEC"},{id:"biblioteca-dfb",fecha:"2026-11-30",txt:"lunes 30/11 (Auxiliar y Ayudante técnico/a)"},{id:"gobierno-vasco-administrativo",fecha:"2027-01-16",txt:"sábado 16/01/2027 (fecha prevista: 1.ª prueba por la mañana y 2.ª por la tarde)"}];
+/* La UPV/EHU se oculta al acabar su examen (21/11, 12:00); sus preguntas siguen sirviendo en los temas de las demás (incluye). */
+const OCULTAS=["abanto-administrativo","getxo-administrativo"].concat(Date.now()>=Date.parse("2026-11-21T12:00:00+01:00")?["ehu-administrativa"]:[]);
+const EXAMENES=[{id:"getxo-conserje",fecha:"2026-11-30",txt:"lunes 30/11: 2.º ejercicio (supuesto práctico), 9:00 Conserje y 11:30 Conserje de escuela, Polideportivo Gobela"},{id:"ehu-administrativa",fecha:"2026-11-21",txt:"sábado 21/11 a las 10:00, BEC"},{id:"biblioteca-dfb",fecha:"2026-11-30",txt:"lunes 30/11 (Auxiliar y Ayudante técnico/a)"},{id:"gobierno-vasco-administrativo",fecha:"2027-01-16",txt:"sábado 16/01/2027 (fecha prevista: 1.ª prueba por la mañana y 2.ª por la tarde)"}];
 function proximoExamen(){const h=hoyISO();return EXAMENES.filter(e=>e.fecha>=h&&OPOSICIONES.some(o=>o.id===e.id)).sort((a,b)=>a.fecha.localeCompare(b.fecha))[0]||null}
 const diasHasta=f=>{const [y,m,d]=f.split("-").map(Number);const a=new Date(y,m-1,d),n=new Date();n.setHours(0,0,0,0);return Math.round((a-n)/86400000)};
 /* Selección del día: primero lo que toca repasar, luego lo no visto de los temas más flojos, luego el resto no visto */
@@ -427,6 +428,31 @@ const fk=p=>p._inc?p.k:p.id;
 const KEY="tests-oposiciones-v1";
 function cargar(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
 let syncDoc=null, syncTimer=null, syncEstado="local";
+/* Junta el progreso de este dispositivo con el guardado en tu cuenta, pregunta a pregunta,
+   en vez de quedarse con uno entero y perder lo del otro. Gana lo más reciente; las falladas se suman
+   salvo las que el más reciente ya ha respondido. */
+function fusionar(a,b){
+  a=a||{};b=b||{};
+  const nu=(a._t||0)>=(b._t||0)?a:b, vi=nu===a?b:a, o={};
+  const mez=k=>Object.assign({},vi[k]||{},nu[k]||{});
+  Object.keys(vi).concat(Object.keys(nu)).forEach(k=>{
+    if(k in o)return;
+    if(/^_(q|sr|conf|leido|secs|sup|apr|dias)$/.test(k))o[k]=mez(k);
+    else if(k==="_hist"){o[k]={};Object.keys(Object.assign({},vi._hist,nu._hist)).forEach(d=>o[k][d]=Object.assign({},(vi._hist||{})[d],(nu._hist||{})[d]))}
+    else if(k==="_sims"){const v=new Set(),L=[];(vi._sims||[]).concat(nu._sims||[]).forEach(x=>{const id=JSON.stringify(x);if(!v.has(id)){v.add(id);L.push(x)}});o[k]=L}
+    else if(k==="_avisos"){o[k]=(vi._avisos||[]).concat((nu._avisos||[]).filter(x=>!(vi._avisos||[]).some(y=>y.k===x.k&&y.t===x.t)))}
+    else if(k.startsWith("_"))o[k]=k in nu?nu[k]:vi[k];
+    else{
+      const x=nu[k]||{}, y=vi[k]||{}, opo=k.split("/")[0];
+      const yaRespondida=f=>{const g=f.includes("/")?f:opo+"/"+f;return (nu._q||{})[g]!==undefined&&!(x.falladas||[]).includes(f)};
+      const fall=(x.falladas||[]).slice();(y.falladas||[]).forEach(f=>{if(!fall.includes(f)&&!yaRespondida(f))fall.push(f)});
+      const mj=[x.mejor,y.mejor].filter(v=>v!=null);
+      o[k]={mejor:mj.length?Math.max(...mj):null,falladas:fall};
+    }
+  });
+  o._t=Math.max(a._t||0,b._t||0);
+  return o;
+}
 function guardar(d){
   d._t=Date.now();
   try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}
@@ -1250,11 +1276,13 @@ function simResultado(){
     const snap=await ref.get();
     syncDoc=ref;
     const remoto=snap.exists?snap.data():null;
-    if(remoto&&remoto.json&&(remoto.t||0)>(datos._t||0)){
+    if(remoto&&remoto.json){
       try{
-        const r=JSON.parse(remoto.json);
+        const r=fusionar(datos,JSON.parse(remoto.json));
+        const subirDespues=JSON.stringify(r)!==remoto.json;
         datos=r;datos._conf=datos._conf||{};datos._leido=datos._leido||{};datos._secs=datos._secs||{};datos._sup=datos._sup||{};datos._q=datos._q||{};datos._cfg=datos._cfg||{};datos._sr=datos._sr||{};datos._dia=datos._dia||{};datos._sims=datos._sims||[];datos._hist=datos._hist||{};datos._dias=datos._dias||Object.assign({},datos._dia);
         try{localStorage.setItem(KEY,JSON.stringify(datos))}catch(e){}
+        if(subirDespues)await subir();
       }catch(e){}
     }else if(Object.keys(datos).some(k=>!k.startsWith("_"))||Object.keys(datos._q||{}).length){
       await subir();

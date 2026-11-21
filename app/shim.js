@@ -38,7 +38,14 @@
 
   /* Lecturas agrupadas: lo que se pide a la vez (en 40 ms) va a Google en UNA sola llamada («lote»).
      Si la misma pestaña ya se está pidiendo, se reutiliza esa petición. */
-  var cola = {}, enCurso = {}, sinLote = false, temporizador = null;
+  var cola = {}, enCurso = {}, sinLote = false, temporizador = null, colaMcp = [];
+  /* Lecturas de calendario y hojas (Dinero): van en el mismo lote que las pestañas */
+  function leerMcp(server, tool, args) {
+    return new Promise(function (res, rej) {
+      colaMcp.push({ id: "m" + colaMcp.length + "_" + Date.now().toString(36), server: server, tool: tool, args: args || {}, res: res, rej: rej });
+      if (!temporizador) temporizador = setTimeout(vaciar, 40);
+    });
+  }
   function listar(tab, nueva) {
     if (cola[tab]) return cola[tab].p;              // aún no ha salido: vale también para «nueva»
     if (enCurso[tab] && !nueva) return enCurso[tab];
@@ -53,19 +60,27 @@
   function vaciar() {
     temporizador = null;
     var pend = cola; cola = {};
+    var ms = colaMcp; colaMcp = [];
     var tabs = Object.keys(pend);
-    if (!tabs.length) return;
+    if (!tabs.length && !ms.length) return;
     var uno = function (t) { run("list", { col: t }).then(function (r) { guardarLocal(t, r); pend[t].res(r); }, pend[t].rej); };
-    if (tabs.length === 1 || sinLote) { tabs.forEach(uno); return; }
-    run("lote", { cols: tabs }).then(function (out) {
+    var unoMcp = function (m) { run("mcp", { server: m.server, tool: m.tool, args: m.args }).then(m.res, m.rej); };
+    if (sinLote || (tabs.length + ms.length === 1)) { tabs.forEach(uno); ms.forEach(unoMcp); return; }
+    run("lote", { cols: tabs, mcp: ms.map(function (m) { return { id: m.id, server: m.server, tool: m.tool, args: m.args }; }) }).then(function (out) {
       tabs.forEach(function (t) {
         var r = out && out[t];
         if (r && r.__error) pend[t].rej(new Error(r.__error));
         else { guardarLocal(t, r || []); pend[t].res(r || []); }
       });
+      var om = out && out.__mcp;
+      ms.forEach(function (m) {
+        if (!om) return unoMcp(m);                       // servidor sin lecturas en lote: una a una
+        var r = om[m.id];
+        if (r && r.__error) m.rej(new Error(r.__error)); else m.res(r);
+      });
     }, function (e) {
-      if (/Acción desconocida/.test(String(e && e.message || e))) { sinLote = true; tabs.forEach(uno); }   // servidor antiguo
-      else tabs.forEach(function (t) { pend[t].rej(e); });
+      if (/Acción desconocida/.test(String(e && e.message || e))) { sinLote = true; tabs.forEach(uno); ms.forEach(unoMcp); }   // servidor antiguo
+      else { tabs.forEach(function (t) { pend[t].rej(e); }); ms.forEach(function (m) { m.rej(e); }); }
     });
   }
 
@@ -141,8 +156,8 @@
   var mcp = Object.freeze({
     callTool: function (server, tool, args) {
       var lectura = /^(list_events|get_values|read_file_content)$/.test(tool);
-      var p = run("mcp", { server: server, tool: tool, args: args || {} });
-      if (!lectura) return p.then(function (r) { return { payload: r }; });
+      if (!lectura) return run("mcp", { server: server, tool: tool, args: args || {} }).then(function (r) { return { payload: r }; });
+      var p = leerMcp(server, tool, args);
       /* Lecturas (calendario, hojas): si Google tarda más de 6 s y hay una copia de la última vez, se usa esa
          y la nueva se guarda para la próxima. La copia solo vale si se pidió lo mismo (mismas fechas). */
       var clave = "mcp:" + server + ":" + tool + ":" + JSON.stringify(args || {});
